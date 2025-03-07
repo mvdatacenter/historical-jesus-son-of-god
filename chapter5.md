@@ -1,11 +1,19 @@
 # Chapter 5 - Purple Phoenix Raises
 
-Finally in this chapter we look at the wrtings of the church fathers from the prism of the Byzantine Empire resurgence.
+Finally in this chapter we look at the writings of the church fathers from the prism of the Byzantine Empire resurgence.
 
 #### 1. Many other early Christian texts were written to seemingly promote the restoration of the Eastern Roman Empire.
 The Clement of Alexandria, a very prominent early Christian theologian, wrote in his book "Stromata" that the true philosophy was the Greek philosophy, and that the Greek philosophy was the true philosophy.
 He wrote of the bird Phoenix, which was a symbol of the Eastern Roman Empire, and that the bird was purple, which was the color of the Eastern Roman Empire.
 Universally the phoenix has been assumed to be a symbol of the resurrection of Jesus, but the phoenix was a symbol of the Eastern Roman Empire.
+
+#### 2. The very famous shields of with the Chi-Rho symbol were a symbol of the creation of the Eastern Roman Empire.
+
+The creation of the Eastern Roman Empire as a kingdom of God ruled by the Christ by a Christian army of Christian emperor Constantine was a very important event in the history of the world.
+At that point the symbol of the soldiers was not a cross. The symbol of the soldiers was the Chi-Rho symbol, which was a symbol of the Christos.
+Note the shields only signified the Christos on them and not Jesus directly, which may have been a designation that we are the soldiers of the Christ, rightful king of the kingdom of God, and the battles for the restoration of the kingdom of the Christos.
+If the war was thought for religious reasons primarily, there would have likely been a lot more emphasis on the cross and mass conversions to Christianity and we do not that being strongly emphasized in the historical records of this particular war.
+We do however see the large emphasis on political changes and restoring the rule in the East.
 
 #### 2. Rome converting to Christianity matched in time with Rome splitting into two empires, the Western Roman Empire and the Eastern Roman Empire.
 The restoration of the Eastern Roman Empire was the actual goal of the christians and christians taking over corresponded with the restoration of the Eastern Roman Empire.

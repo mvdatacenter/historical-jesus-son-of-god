@@ -9,9 +9,28 @@ Alexander was the son of God and so were the Seleucids. The title was used for t
 #### 2. Jesus is the Son Of Father.
 The well known ruler of Egypt, Cleopatra, was given the title "father loving goddess".
 Seleucus IV Philopator was also given the title "father loving god".
+This or similar title was used by countless other rulers in the greek world.
+In this context the multiple references to being the only begotten son of the father signify the rightful heir, and the only rightful claim to the throne.
+
+#### 3. Jesus is the Logos, the Word of God.
+The Stoics, particularly Zeno of Citium (c. 334–262 BCE) and later Chrysippus, played a significant role in further developing the idea of Logos.
+In Stoic thought, Logos became the rational principle that permeates and organizes the cosmos.
+It was understood as a divine rationality that was present in the universe, giving it structure and coherence.
+Very notably, Philo of Alexandria who was closely related to the Herodian and Hasmonean dynasties and contemporary to Jesus, described the Logos as a mediator between God and the world.
+Thus if Jesus and some of the other members of the court were indeed visiting Alexandria in Jesus's youth, they must have had close expose to the idea of logos.
+Based on the age difference and the family relations, Jesus would have likely treated Philo as his distinguished uncle, and so would John the Evangelist.
+
+Notably in the context of the greek empire, the Logos was a divine principle that was both God's expression and as such the ruler would have been considered to speak the Logos of the God.
+This is consistent with the idea of multiple quotes as nobody can get to the father except through me.
+
+Notably Philo described the Logos as the firstborn son of God, and so the rightful heir to the throne and the intermediary between God and the world.
+
+Even though countless philosophers claimed rulers should follow the Logos and called the Logos the divine, the title of the Logos itself does not appear to have been given to any ruler prior to John's gospel.
+And as the idea of Logos in John appears so closely to the evolution of the Logos idea from Philo, it increases the likelihood that indeed John was in a close contact with Philo.
 
 #### 3. Jesus is the God manifested in the flesh.
-Epiphanes is a title given to Antiochus IV and Ptolemy V to signify he is the god manifested in the flesh.
+Epiphanes is a title given to multiple rulers, such as Antiochus IV and Ptolemy V. 
+The title signify the ruler is the god manifested in the flesh.
 
 #### 4. Jesus is the Savior of the World.
 Essentially every other ruler of the greek empire was given Soter as a title, which means savior.
