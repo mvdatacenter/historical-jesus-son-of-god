@@ -43,6 +43,8 @@ Judea and Surrounding Regions:
 |                           | Corinth      | Acts 18:1                             | Where Paul stayed and established a Christian community, and where he later wrote 1 and 2 Corinthians. |
 | Macedonia and the Surrounding Areas | Neapolis     | Acts 16:11                            | Port city in Macedonia, where Paul and his companions arrived after sailing from Troas. |
 |                           | Philippi     | Acts 16:12                            | Mentioned earlier in Greece.                                          |
+| Egypt	| Alexandria |	Acts 6:9, 18:24	| Apollos was from here; a major Jewish and early Christian hub. |
+| Libya (North Africa) |	Cyrene |	Acts 2:10, 11:20	| Home of Simon of Cyrene; some early Christians were from here. |
 | Italy and Rome            | Puteoli      | Acts 28:13                            | Port city in Italy where Paul arrived after sailing from Malta.       |
 |                           | Rome         | Acts 28:16                            | Where Paul was taken as a prisoner and spent two years under house arrest. |
 | Other Notable Cities      | Cyprus       | Acts 13:4                             | Where Paul and Barnabas first traveled for missionary work.           |
@@ -76,6 +78,8 @@ Regions and Cities in the Epistles:
 | Berea         | Acts, 1 Thessalonians | Acts 17:10, 1 Thessalonians 1:7                                   |
 | Paphos        | Acts, Titus  | Titus 1:5                                                                |
 | Puteoli       | Romans       | Romans 16:3-4                                                            |
+
+
 
 #### 3. The striking statistics of the cities mentioned in the acts and the epistles are that they are all in the former greek empire, and not one mention of a city in the Roman empire that was not part of the former greek empire.
 This fact makes any theory that deems Christianity as a religious and not a political movement immediately highly implausible.

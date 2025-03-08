@@ -42,7 +42,9 @@ cities_coordinates = {
     "Bithynia": (40.5000, 30.0000),
     "Macedonia": (41.0000, 22.0000),
     "Troas": (39.8333, 26.1667),
-    "Syria": (34.8021, 38.9968)
+    "Syria": (34.8021, 38.9968),
+    "Cyrene": (32.8231, 21.8639),
+    "Alexandria": (31.2001, 29.9187),
 }
 
 # Main function
