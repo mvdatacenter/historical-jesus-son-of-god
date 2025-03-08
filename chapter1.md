@@ -61,3 +61,62 @@ Jesus said pharisees were very hypocritical.
 
 #### 14. He saw these groups and the Jews as taking what was rightfully his, the kindom of Judea.
 He got very angry and overturned the tables of the money changers in the temple.
+
+#### 15. The first historical mention of Jesus is in the writings of Mar Bar Serapion, a stoic philosopher, who wrote a letter to his son from prison.
+The testimony of Serapion of Syria is a very important piece of evidence for the existence of Jesus.
+The testimony from 73AD reads: "What advantage did the Athenians gain from putting Socrates to death? Famine and plague came upon them as a judgment for their crime.
+Or the people of Samos for burning Pythagoras? In one moment their country was covered by sand.
+Or the Jews by murdering their wise king? After that their kingdom was abolished.
+
+#### 16. Testimonium Flavianum - Josephus, a Jewish historian, mentions Jesus in his Antiqu
+Jesper Flavius, a Jewish historian, mentions Jesus in his Antiqus, which was written in 93 AD.
+The passage reads: "At this time there appeared Jesus, a wise man. For he was a doer of startling deeds, a teacher of people who receive the truth with pleasure. 
+And he gained a following both among many Jews and among the Greeks. He was the Christ."
+This passage has been heavily debated by scholars, but the evidence for its authenticity is very strong.
+The questions is why would a Jewish historian known to have no sympathy for Christianity call Jesus a Christ?
+The only plausible explanation is that he was a Christ, a rightful heir to the Greek empire, and not a Jewish Messiah.
+
+This passage poses a very strong conundrum for the scholars who believe that Jesus was a Jewish Messiah and not a Greek Christ.
+The typical explanation is that the passage was interpolated by later Christian scribes is not supported by evidence and would require an extraordinary high level of conspiracy.
+
+The conundrum is further deepened by the fact that in another passage that is also considered authentic by the scholars and much less likely to be an interpolation, 
+Josephus mentions that Jesus the Christ was the brother of James, who was the high priest of the temple in Jerusalem.
+
+#### 17. Cornelius Tacitus, a one of the most prominent Roman historians, mentions Jesus in his Annals, which was written in 116 AD.
+
+The passage reads: "The founder of this name, Christ, was put to death by Pontius Pilate, procurator of Judea in the reign of Tiberius."
+The overwhelming majority of scholars consider this passage to be authentic, and evidence against a possible interpolation is very strong.
+This is both because of the style of writing and the difficulty of the passage to be interpolated given the high popularity and importance of his works.
+A single church father would have had a very hard time to interpolate such a wide-spead work.
+Given how skilled Tacitus was at historical writing it is an extraordinary corroborating evidence for Jesus being a Christ.
+
+It is thus very compelling that the three earliest mentions of Jesus are from a stoic philosopher, a Jewish historian,
+both of whom had no reason to lie about Jesus's identity and all of whom are know not to believe in Jesus's divinity clearly state that Jesus was a Christ and a king of the Jews.
+
+#### 18. Pliny the Younger, a Roman governor, mentions Jesus in his letters to the emperor Trajan, which were written in 112 AD.
+The passage reads: "But they asserted that the sum and substance of their fault or error had been that they were accustomed to meet on a fixed day before dawn and sing responsively a hymn to Christ as to a god."
+The authenticity of this letter is sometimes debated, but regardless of its authenticity, it highlights the fact that was know about Jesus was that he was a Christ.
+So even though this passage adds little to the historical evidence of existence of Jesus, it does add to the evidence that Jesus was a Christ.
+Note that once again, it is not Jesus the wise man or Jesus of Nazareth, but Jesus the Christ.
+
+#### 19. Suetonius, a Roman historian, mentions Jesus in his Life of Claudius, which was written in 121 AD.
+Suetonius writes briefly about Jesus as an instigator. This is notable as highlights Jesus was not just a preacher but a political figure.
+
+#### 20. Lucian of Samosata, a satirist, mentions Jesus in his work The Passing of Peregrinus, which was written in 170 AD.
+The part of the passage reads "and they worship the same crucified sophist and live after his laws."
+In here Jesus is called a sophist, which was a common term for a philosopher in the Greek world.
+
+This passage is much later, but highlights the fact that Jesus was considered a philosopher by the Greeks which would corroborate Jesus's noble Greek lineage.
+Again, we are talking about cultural ties here, someone who was closely related to and promoting Greek culture.
+
+#### 21. Clark Kent argument
+There is something to be said about the fact of the wealth of historical records surrounding Jesus Christ and his apostles.
+"In total, we have 42 sources dating to less than 150 years after Jesus's death that mention his existence, 9 of which are non-Christian.
+In comparison, regarding Julius Caesar, only five sources report his military operations."
+
+The argument goes that if Jesus was an apocalyptic preacher, or just a wise man, why would there be so many sources mentioning him?
+There were no books about Clark Kent, but there are many about Superman.
+For this argument we have to consider both independent sources and the sources that are not Christian.
+
+The wealth of the available records can would be hard to explain by Jesus without supernatural powers or not being a very prominent political figure of major significance.
+In fact the only non-supernatural plausible explanation may be that Christianity was a loyalist movement attempting to restore the Greek empire.

@@ -3,6 +3,9 @@
 
 #### 1. The early dating of the gospels can make the letters of Paul more plausible as it seems Paul already has the knowledge of at least one of the gospels and the acts.
 
+Many scholars dispute the existence of Paul based on the striking contradiction in mainstream scholarship that authors of Pauline epistles seem to have the knowledge of the gospels and the acts, and yet the gospels and the acts are unanimously dated to be written after the Pauline epistles.
+In here the existence of Paul can once more be reconsidered if we acknowledge the early dating of the gospels and the gospel of John in being written by an eyewitness of Jesus's life.
+
 #### 2. What is quite striking is that Paul and others write to so many different churches over the short period of time.
 There is a major challenge for the traditional timeline of the apostles establishing so many churches in such a short period of time.
 These churches would have to all be established, grow, keep up to date with the fastly shifting theology, and then do nearly nothing for the next 100 years.
@@ -40,6 +43,8 @@ Judea and Surrounding Regions:
 |                           | Corinth      | Acts 18:1                             | Where Paul stayed and established a Christian community, and where he later wrote 1 and 2 Corinthians. |
 | Macedonia and the Surrounding Areas | Neapolis     | Acts 16:11                            | Port city in Macedonia, where Paul and his companions arrived after sailing from Troas. |
 |                           | Philippi     | Acts 16:12                            | Mentioned earlier in Greece.                                          |
+| Egypt	| Alexandria |	Acts 6:9, 18:24	| Apollos was from here; a major Jewish and early Christian hub. |
+| Libya (North Africa) |	Cyrene |	Acts 2:10, 11:20	| Home of Simon of Cyrene; some early Christians were from here. |
 | Italy and Rome            | Puteoli      | Acts 28:13                            | Port city in Italy where Paul arrived after sailing from Malta.       |
 |                           | Rome         | Acts 28:16                            | Where Paul was taken as a prisoner and spent two years under house arrest. |
 | Other Notable Cities      | Cyprus       | Acts 13:4                             | Where Paul and Barnabas first traveled for missionary work.           |
@@ -73,6 +78,13 @@ Regions and Cities in the Epistles:
 | Berea         | Acts, 1 Thessalonians | Acts 17:10, 1 Thessalonians 1:7                                   |
 | Paphos        | Acts, Titus  | Titus 1:5                                                                |
 | Puteoli       | Romans       | Romans 16:3-4                                                            |
+
+It is important to actually visualize the locations mentioned in the acts and the epistles to see the striking pattern of the locations mentioned in the acts and the epistles being the same as the most significant greek speaking cities.
+
+![Description of the image](locations_map.png)
+
+For those geographically inclined you can spot the near perfect correlation with the borders of Eastern Roman Empire. Of note is the trip to Rome, which was substantially different in nature to the other trips.
+[Rome Map](https://en.wikipedia.org/wiki/Byzantine_Empire_under_the_Theodosian_dynasty#/media/File:4KTHEODOSIAN.png)
 
 #### 3. The striking statistics of the cities mentioned in the acts and the epistles are that they are all in the former greek empire, and not one mention of a city in the Roman empire that was not part of the former greek empire.
 This fact makes any theory that deems Christianity as a religious and not a political movement immediately highly implausible.

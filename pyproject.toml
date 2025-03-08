@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "historical-jesus-son-of-god"
+version = "0.1.0"
+description = "A project to map historical locations related to Jesus."
+authors = [
+    { name = "Your Name", email = "your.email@example.com" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12.2"
+folium = "^0.19.5"
+
+[tool.poetry.scripts]
+map = "map:main"
