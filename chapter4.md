@@ -79,7 +79,12 @@ Regions and Cities in the Epistles:
 | Paphos        | Acts, Titus  | Titus 1:5                                                                |
 | Puteoli       | Romans       | Romans 16:3-4                                                            |
 
+It is important to actually visualize the locations mentioned in the acts and the epistles to see the striking pattern of the locations mentioned in the acts and the epistles being the same as the most significant greek speaking cities.
 
+![Description of the image](locations_map.png)
+
+For those geographically inclined you can spot the near perfect correlation with the borders of Eastern Roman Empire. Of note is the trip to Rome, which was substantially different in nature to the other trips.
+[Rome Map](https://en.wikipedia.org/wiki/Byzantine_Empire_under_the_Theodosian_dynasty#/media/File:4KTHEODOSIAN.png)
 
 #### 3. The striking statistics of the cities mentioned in the acts and the epistles are that they are all in the former greek empire, and not one mention of a city in the Roman empire that was not part of the former greek empire.
 This fact makes any theory that deems Christianity as a religious and not a political movement immediately highly implausible.
