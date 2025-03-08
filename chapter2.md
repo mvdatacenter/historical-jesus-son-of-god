@@ -84,3 +84,32 @@ There are many parables of Jesus that seem to hint at him being a good ambassado
 The parable of the talents, the parable of the sower, the parable of the lost sheep, the parable of the prodigal son, the parable of the good samaritan, the parable of the wedding feast, the parable of the ten virgins, the parable of the wise and foolish builders, the parable of the rich fool, the parable of the barren fig tree, the parable of the great banquet, the parable of the mustard seed, the parable of the yeast, the parable of the hidden treasure, the parable of the pearl, the parable of the net,
  all seem to hint at a future kingdom that Jesus would rule over.
 
+## Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven
+
+#### 1. Mary was the rightful heiress to the Hasmonean dynasty and so the royal titles we know very well today also correspond to the titles of the Greek rulers.
+There were countless greek female rulers with highly distinguished, divine titles, such as Cleopatra, who was also a common name in the Hasmonean dynasty.
+
+#### 2. Holy Mary mother of God.
+As Jesus was the Son of God, as a rightful heir, Mary as the mother of future ruler would have been considered the Mother of God.
+
+"Mother of the Lord" (Μήτηρ τοῦ Κυρίου) – Found in Luke 1:43, where Elizabeth calls Mary the “Mother of my Lord.” This implies royal status since "Lord" (Kyrios) could mean a divine or kingly ruler.
+Elizabeth greets Mary: "And why is this granted to me, that the mother of my Lord should come to me?"
+
+#### 3. Mary was a perpetual virgin.
+A very common trope in the greek world was that the royal women were pure often called perpetual virgins. This is something that fits really well with the idea of Mary as royal but seems at odds with the idea of Mary as a mother to Jesus.
+
+#### 4. Mary was the Queen of Heaven.
+The earliest known hymns and prayers to Mary refer to her as
+Βασίλισσα τῶν Οὐρανῶν – explicit royal status.
+
+"The Woman Clothed with the Sun" – Revelation 12:1
+"A great sign appeared in heaven: a woman clothed with the sun, with the moon under her feet, and a crown of twelve stars on her head."
+While this passage refers to Israel, early Christian writings (Hippolytus, 3rd century AD) link it to Mary as a royal mother figure.
+
+#### 5. Mary was Blessed among all women
+Highlighting Mary's royal lineage
+
+#### 6. Mary was the New Eve
+"New Eve" – Early Church Fathers (Justin Martyr, Irenaeus) described Mary as the new Eve, implying a role in a divine dynasty.
+Protoevangelium of James (c. 2nd century AD) – While emphasizing her perpetual virginity, it also hints at a priestly and royal lineage, calling her “set apart for the Lord.”
+

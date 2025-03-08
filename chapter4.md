@@ -3,6 +3,9 @@
 
 #### 1. The early dating of the gospels can make the letters of Paul more plausible as it seems Paul already has the knowledge of at least one of the gospels and the acts.
 
+Many scholars dispute the existence of Paul based on the striking contradiction in mainstream scholarship that authors of Pauline epistles seem to have the knowledge of the gospels and the acts, and yet the gospels and the acts are unanimously dated to be written after the Pauline epistles.
+In here the existence of Paul can once more be reconsidered if we acknowledge the early dating of the gospels and the gospel of John in being written by an eyewitness of Jesus's life.
+
 #### 2. What is quite striking is that Paul and others write to so many different churches over the short period of time.
 There is a major challenge for the traditional timeline of the apostles establishing so many churches in such a short period of time.
 These churches would have to all be established, grow, keep up to date with the fastly shifting theology, and then do nearly nothing for the next 100 years.

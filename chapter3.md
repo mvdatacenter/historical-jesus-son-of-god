@@ -138,6 +138,30 @@ In that moment, she wasn’t just an eyewitness; she was the one who couldn’t 
 This explains why the resurrection account in John is so intimate and personal, focusing on Mary’s grief, confusion, and joy.
 This explains why it is only Mary who sees Jesus first, and why she doesn’t recognize him at first—her vision is clouded by tears and despair.
 
+### Miracles in John
+There are seven miracles in John, which are often called the "signs" because they point to Jesus’ identity and mission.
+It is very worth pointing out that the miracles are not just random show of magic, but all are conveying the royal authority of Jesus.
+Also the miracles may not be completely a metaphor. Jesus as a ruler very well learned could have been a skilled healer, or perceived as a skilled healer with the power of confirmation bias.
+Notably it is not hard to believe that if Jesus visited a sick person and the person got better from just a placebo effect, then the person writing his royal biography would have been very keen to write about it.
+Similarly, if Jesus had the resources to provide food for the hungry, and he showed the high generosity of a ruler, then the person writing his royal biography would have been very keen to write about it.
+
+The seven signs in John are as follows:
+#### 1. Water into wine (John 2:1-11)
+   The transformation of water into wine signifies the arrival of a new covenant, just as royal feasts marked the legitimacy of kings.
+#### 2. Healing the official’s son in Herod's court (John 4:46-54)
+   The healing of the official’s son and the paralytic demonstrate his power over life and sickness, which in the ancient world were under divine royal prerogative.
+#### 3. Healing the paralytic (John 5:1-9)
+#### 4. Feeding the 5,000 (John 6:1-14)
+   Feeding the 5,000 mirrors the provision of a ruler to his people, akin to divine kingship in Hellenistic and Jewish traditions.
+#### 5. Walking on water (John 6:16-21)
+   Walking on water recalls dominion over the elements, a sign of imperial and divine control in both Greek and Jewish thought. 
+#### 6. Healing the man born blind (John 9:1-12)
+#### 7. Raising Lazarus from the dead (John 11:1-44)
+   Healing the blind and raising Lazarus emphasize his authority over fate itself—challenging even the most immutable conditions of human existence.
+
+So although the miracles are not necessarily completely historically accurate, there is no compelling reason to believe they were not simply slightly exaggerated versions of the truth,
+the highlight of actual events where Jesus showed his leadership skills, knowledge of medicine, and generosity, just embellished as would have been expected from a royal biography, especially if the author was in love with Jesus.
+
 ## Synoptic Gospels
 
 #### 1. The main argument for the dating of the synoptic gospels to after year 70AD is the destruction of the temple by the Romans.
