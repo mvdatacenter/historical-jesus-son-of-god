@@ -10,7 +10,14 @@ The gospel itself claims to be written by the disciple whom Jesus loved, which i
 #### 2. ὁ μαθητὴς ὃν ἠγάπα ὁ Ἰησοῦς
 . Notably this is a disciple not an apostle, which would indicate that the gospel was written by a disciple of Jesus, but not one of the twelve apostles.
 #### 3. Γύναι, ἰδοὺ ὁ υἱός σου
-Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue.
+Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue, for example, Ramon K. Jusino  1998.
+All the arguments below show very strong evidence for eyewitness woman in a romantic relationship to Jesus or potentially Jesus's family member.
+Mary Magdalene is the most likely candidate, but not the only one. And a closer look is in order as there are hints in the text the beloved disciple and Mary Magdalene are not the same person.
+
+It is also entirely possible that the author is one of the other women from the court of Herod, like Joanna, who was another woman who named in the gospel of Luke as a follower of Jesus, and who was one of three women who visited the tomb of Jesus to anoint his body.
+Many scholars link Joanna to the court of Herod, and she was the wife of Chuza, the manager of Herod's household, which would make her a very powerful and influential.
+She is also frequently linked to Junia. As the name Junia is not mentioned in the gospels, yet Paul considers her to be the foremost among all the apostles, the connection to the Jesus's beloved disciple and a biographer of his life seems very plausible.
+Finally, this would also explain the authorship of the gospel as John not disputed by the early church fathers, as the author would be a disciple of Jesus, Joanna.
 
 #### 4. When the authors of the apocryphal gospel of Mary or other early texts try to argue who the beloved disciple is, they argue that it is Mary Magdalene rather then Peter.
 No source says it was Mary Magdalene over John, which is what the sources would say the the prevalent view was that John was the most beloved one.
@@ -51,6 +58,15 @@ Please genuinely check how many male writers like to fantasize about weddings an
 
 #### 11. The anointing of Jesus by a woman with expensive perfume (John 12:3, Mark 14:3-9)
 Please genuinely check how many male writers like to provide details on the perfume selection.
+
+Similarly, smell is emphasized when Jesus raises Lazarus from the dead, something that is very unlikely to be emphasized by a male writer.
+
+#### 12. The gospel of John passes the Bechdel test.
+The Bechdel test is almost universally determining if a story is written by a woman.
+
+Notably the gospel of Luke also passes the Bechdel test even better, but in that case the author is focusing on many female characters may be due to the sources and sponsors he or she has.
+Luke also mentions unusually frequently the words like womb, nursing, mother, birth and much higher female agency including annunciation to Mary and not Joseph.
+Whereas the gospel of John seems to be an original text, Luke is very clearly a compilation of many sources as admitted by the author, and overwhelmingly agreed upon by scholars.
 
 #### 12. Note the women traveling with Jesus and the disciples are also linked to the royal family of Herod.
 "The Twelve were with him, and also some women who had been cured of evil spirits and diseases: Mary (called Magdalene) from whom seven demons had come out; Joanna the wife of Chuza, the manager of Herod’s household; Susanna; and many others. These women were helping to support them out of their own means."

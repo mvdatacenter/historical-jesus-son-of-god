@@ -93,16 +93,27 @@ This fact makes any theory that deems Christianity as a religious and not a poli
 The new religion was accepted by the masses in the former greek empire, and not a single mention of any resistance to the new religion.
 This can be explained if this was already a pre-existing imperial cult.
 
-#### 5. We should also consider that even though the religion was so successful at converting the masses, it still had all the conspiratorials parts to it.
+#### 5. We should also consider that even though the religion was so successful at converting the masses, it still had all the conspiratorial parts to it.
 Early christians used secret symbols to identify each other, they frequently met in secret, often at night in the catacombs.
 
 #### 6. Consider why the religion was seemingly much more prosecuted than any other religion in the Roman empire.
 The Roman empire was very tolerant of other religions, and the only time they would prosecute a religion was if it was a threat to the empire.
 There are some claims that other religions were not exclusive and people could believe in multiple gods, and give offerings to Zeus, but very little has ever been produced to support this very dubious claim.
 
-
 #### 7. The phrase "soldiers of Christ" is not used explicitly in the Gospels, but it appears prominently in the Pauline Epistles, particularly in the context of the Christian life being compared to a military struggle or a spiritual battle.
 The most famous reference to "soldiers of Christ" comes from 2 Timothy 2:3-4, where Paul uses military imagery to describe the commitment and discipline required for Christian ministry:
 2 Timothy 2:3-4 (NIV):
 "Join with me in suffering, like a good soldier of Christ Jesus. No one serving as a soldier gets entangled in civilian affairs, but rather tries to please his commanding officer."
 This metaphor emphasizes the dedication and discipline expected from Christians, likening them to soldiers who are focused on their mission and loyalty to their leader, which in this case is Christ Jesus.
+
+#### 8. Paul barely mentions the life of Jesus, and almost never quotes him.
+
+It is frequently claimed that Paul's religion is not the religion of Jesus, but the religion about Jesus.
+There is a shocking lack of references to any of the teachings of Jesus, the Jewish law, and any of the events surrounding Jesus's life and death.
+So we may go one step further. 
+It is a religion focusing on restoring the kingdom of God by resurrecting the office of the Christos, the rightful king of the kingdom of God.
+And so to Paul and all the early Christian, it was a all about resurrecting a Christ not teaching of the particular Jesus Christ.
+The idea that the God will once again send a king that will restore the greek empire, the kingdom of God, headed by Christos, the rightful earthly king of the kingdom of God.
+
+#### 9. Using this conspiratorial language clearly worked 
+The Rome did not even realize the new religion's goal was to restore the Eastern Empire until it actually happened.
