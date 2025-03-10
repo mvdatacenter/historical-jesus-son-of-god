@@ -10,7 +10,14 @@ The gospel itself claims to be written by the disciple whom Jesus loved, which i
 #### 2. ὁ μαθητὴς ὃν ἠγάπα ὁ Ἰησοῦς
 . Notably this is a disciple not an apostle, which would indicate that the gospel was written by a disciple of Jesus, but not one of the twelve apostles.
 #### 3. Γύναι, ἰδοὺ ὁ υἱός σου
-Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue.
+Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue, for example, Ramon K. Jusino  1998.
+All the arguments below show very strong evidence for eyewitness woman in a romantic relationship to Jesus or potentially Jesus's family member.
+Mary Magdalene is the most likely candidate, but not the only one. And a closer look is in order as there are hints in the text the beloved disciple and Mary Magdalene are not the same person.
+
+It is also entirely possible that the author is one of the other women from the court of Herod, like Joanna, who was another woman who named in the gospel of Luke as a follower of Jesus, and who was one of three women who visited the tomb of Jesus to anoint his body.
+Many scholars link Joanna to the court of Herod, and she was the wife of Chuza, the manager of Herod's household, which would make her a very powerful and influential.
+She is also frequently linked to Junia. As the name Junia is not mentioned in the gospels, yet Paul considers her to be the foremost among all the apostles, the connection to the Jesus's beloved disciple and a biographer of his life seems very plausible.
+Finally, this would also explain the authorship of the gospel as John not disputed by the early church fathers, as the author would be a disciple of Jesus, Joanna.
 
 #### 4. When the authors of the apocryphal gospel of Mary or other early texts try to argue who the beloved disciple is, they argue that it is Mary Magdalene rather then Peter.
 No source says it was Mary Magdalene over John, which is what the sources would say the the prevalent view was that John was the most beloved one.
@@ -51,6 +58,15 @@ Please genuinely check how many male writers like to fantasize about weddings an
 
 #### 11. The anointing of Jesus by a woman with expensive perfume (John 12:3, Mark 14:3-9)
 Please genuinely check how many male writers like to provide details on the perfume selection.
+
+Similarly, smell is emphasized when Jesus raises Lazarus from the dead, something that is very unlikely to be emphasized by a male writer.
+
+#### 12. The gospel of John passes the Bechdel test.
+The Bechdel test is almost universally determining if a story is written by a woman.
+
+Notably the gospel of Luke also passes the Bechdel test even better, but in that case the author is focusing on many female characters may be due to the sources and sponsors he or she has.
+Luke also mentions unusually frequently the words like womb, nursing, mother, birth and much higher female agency including annunciation to Mary and not Joseph.
+Whereas the gospel of John seems to be an original text, Luke is very clearly a compilation of many sources as admitted by the author, and overwhelmingly agreed upon by scholars.
 
 #### 12. Note the women traveling with Jesus and the disciples are also linked to the royal family of Herod.
 "The Twelve were with him, and also some women who had been cured of evil spirits and diseases: Mary (called Magdalene) from whom seven demons had come out; Joanna the wife of Chuza, the manager of Herod’s household; Susanna; and many others. These women were helping to support them out of their own means."
@@ -138,6 +154,23 @@ In that moment, she wasn’t just an eyewitness; she was the one who couldn’t 
 This explains why the resurrection account in John is so intimate and personal, focusing on Mary’s grief, confusion, and joy.
 This explains why it is only Mary who sees Jesus first, and why she doesn’t recognize him at first—her vision is clouded by tears and despair.
 
+#### 22. Description of nudity in Miraculous Catch of Fish (John 21:7)
+
+There is an unusual detail of Simon Peter being naked in the presence of the disciple whom Jesus loved.
+This detail seems to have no place in the narrative, and it is not clear why it is included.
+
+Although more sophisticated readings of this passage have been proposed, the most direct explanation stands out.
+A woman, emotionally close to Peter or Jesus, remembering this odd, slightly intimate moment:
+“He was basically naked, saw Jesus, and scrambled to cover up before jumping in.”
+Peter being "γυμνός" (naked or underdressed) is a kind of detail a woman would be more likely to remember vividly and include in her account, especially if she was reminiscing the stories of her youth.
+Feels less like theology, more like memory.
+
+
+#### 23. The lack of description of physical appearance of Jesus in John seems to contradict the idea that the author was an eyewitness a woman and a lover of Jesus.
+
+Given all the other tropes of female writing, it is something very surprising at first. One explanation of this is that Philo of Alexandria, from whom the author of John seems to have borrowed a lot of ideas, also actively avoided describing the physical appearance of anyone in his works.
+It is possible that Philo conveyed this unusual to us idea to the author of John, and the author of John tried to follow the best practices of their teacher.
+
 ### Miracles in John
 There are seven miracles in John, which are often called the "signs" because they point to Jesus’ identity and mission.
 It is very worth pointing out that the miracles are not just random show of magic, but all are conveying the royal authority of Jesus.
@@ -159,8 +192,19 @@ The seven signs in John are as follows:
 #### 7. Raising Lazarus from the dead (John 11:1-44)
    Healing the blind and raising Lazarus emphasize his authority over fate itself—challenging even the most immutable conditions of human existence.
 
-So although the miracles are not necessarily completely historically accurate, there is no compelling reason to believe they were not simply slightly exaggerated versions of the truth,
+#### 8. The non-miracle at the death of Jesus.
+
+It is also interesting to note that the gospel of John is the only gospel that does not mention the miracles at the death of Jesus.
+As a gospel written by an eyewitness, it is very likely that the author was present at the crucifixion of Jesus, and would have been able to see the miracles that happened at the time.
+
+#### 9. Conclusion
+The lack of mention of the miracles at the death of Jesus in the gospel of John is a strong indication that the author was actually attempting to write an accurate account of the events that happened at the time, and not just a theological treatise.
+As if you were to introduce a miracle for theological reasons this would be the number one place to do it.
+So although the seven miracles are not necessarily completely historically accurate, there is no compelling reason to believe they were not simply slightly exaggerated versions of the truth,
 the highlight of actual events where Jesus showed his leadership skills, knowledge of medicine, and generosity, just embellished as would have been expected from a royal biography, especially if the author was in love with Jesus.
+
+What is really worth considering is that the events of the seven signs were really reported by the beloved disciple by Jesus as accurate.
+For I tell you, let him who never exaggerated their manly deeds to their love interest be the one to cast the first stone.
 
 ## Synoptic Gospels
 
