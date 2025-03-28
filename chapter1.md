@@ -2,13 +2,24 @@
 
 In the first chapter we will list interesting questions regarding the origins and identity of Jesus Christ.
 
-#### 1. One of the most ridiculed but still very interesting questions is could Jesus Christ actually be the son of Joseph and Mary Christ and not the Jewish Messiah.
-Mixing up the term Christos and Messiah is so very deeply rooted in historiography of Jesus
-almost everyone forgets that Christos is a Greek term for a royal figure and Messiah is a Jewish term for a prophesized apocalyptic figure
-and the term Christos is almost exclusively used throughout the new testament whereas the term Messiah is used only a couple of times in encounters with Jewish figures.
-As such the term Messiah seems to only be used to convince specific jewish people that Jesus Christos is also a Jewish Messiah and not only the Greek Christos.
+There is a long standing assumption that historical Jesus and his apostles and companions were illiterate Jewish peasants from Judea and Galilee which were a backwater of the Roman empire.
+This assumption underlays nearly all of modern scholarship and is treated as gospel while there is barely any evidence to support it, while there is overwhelming evidence to the contrary.
+Breaking this assumption can categorically change the way we assign the probabilities to various theories about the life and death of Jesus Christ and the rise of Christianity.
 
-#### 2. With that said could Jesus have become a Christos because he had a royal lineage through his mother Mary Christ.
+#### 0. Historical background
+While this book questions a lot of seemingly core concepts of the historical Jesus scholarship, the general timeline is assumed to be correct.
+All the arguments about time shifts and Jesus living and dying in even slightly different times are not considered in this book and not supported by any evidence.
+The book assumes the historical timeline in the gospel of Matthew is correct and that Jesus was born in 4 BC and died in 33 AD.
+Jesus was born in Betlehem, and did flee to Alexandria, Egypt, as an infant and spent a meaningful part of his childhood there.
+Later in life he moved to Galilee, although the exact time of the move is not known. It could have been at 2 years old, but also at 12 years old.
+
+#### 1. One of the most ridiculed but still very interesting questions is could Jesus Christ actually be the son of Joseph and Mary Christ and not the Jewish Messiah.
+Mixing up the term Christos and Messiah is very deeply rooted in historiography of Jesus.
+Nearly every historical treatment of the topic forgets that Christos is a Greek term for the chosen one, or a royal figure and Messiah is a Jewish term for a prophesized apocalyptic figure.
+The term Christos is almost exclusively used throughout the new testament whereas the term Messiah is used only a couple of times in encounters with Jewish figures.
+As such, the term Messiah seems to only be used to convince specific Jewish people that Jesus Christos is also a Jewish Messiah and not only the Greek Christos.
+
+#### 2. Jesus could have become a Christos because he had a royal lineage through his mother Mary Christ.
 The lineage of Jesus is described in the gospels of Matthew and Luke, and with the Luke gospel traditionally linking the lineage of Jesus through his mother Mary.
 From that alone we know that both Mary and Joseph were also considered to be of royal lineage.
 This topic has been very deeply discussed by James Tabor in his book "The Jesus Dynasty", and for an even longer expanded list of arguments and more more in depth discussion as to why Jesus descended from the Hasmonean dynasty, please refer to the book.
@@ -30,6 +41,15 @@ Celsus, a very well educated prominent philosopher, who used the name Panthera a
 Shabbat 104b & Tosefta Hullin 2:22 – Contains indirect references to Jesus and Mary (Miriam), implying she was accused of adultery.
 
 #### 5. Jesus was born in Bethlehem, the city of the Hasmonean dynasty and the birthplace of the Christs.
+
+#### 5.1. Jesus fleeing to Egypt can be a historical fact as the Hasmonean family had very close ties to Egypt.
+Notably according to Luke genealogy, Jesus's great-great-great grandfather was Alexander Jannaeus, who was a very prominent figure in the Hasmonean dynasty.
+The son of Jannaeus, Aristobulus II had a daughter Alexandra, married Philippion, a member of the Ptolemaic dynasty.
+It is also highly 
+
+#### 5.5. The other brothers of Jesus, James, Simon and Judas, also prominently feature in the New Testament
+The importance of brothers taking over is a very common characteristic of dynasties, not religious movements.
+
 #### 6. Antipater had been designated as Herod's successor, but his ambition and the growing animosity between him and his father led to his downfall.
 As a result Joseph and Mary fled to Egypt, where they lived for several years.
 

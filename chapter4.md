@@ -1,6 +1,5 @@
 # Chapter 4 - Pauline Epistles to All Nations
 
-
 #### 1. The early dating of the gospels can make the letters of Paul more plausible as it seems Paul already has the knowledge of at least one of the gospels and the acts.
 
 Many scholars dispute the existence of Paul based on the striking contradiction in mainstream scholarship that authors of Pauline epistles seem to have the knowledge of the gospels and the acts, and yet the gospels and the acts are unanimously dated to be written after the Pauline epistles.
@@ -117,3 +116,24 @@ The idea that the God will once again send a king that will restore the greek em
 
 #### 9. Using this conspiratorial language clearly worked 
 The Rome did not even realize the new religion's goal was to restore the Eastern Empire until it actually happened.
+
+### James the Just
+
+#### 1. James the Just also wrote an epistle to all nations.
+He was the brother of Jesus, and the next in line to the throne.
+
+Much like Jesus Christ the Soter, James also held a royal title, the Just.
+
+James the Just also wrote an epistle to all nations, which is included in the New Testament.
+Interestingly, James, like John, refers to the same understanding of Logos as Philo of Alexandria.
+
+The writing style of James and John also bear a striking resemblance to the writing style of Philo of Alexandria.
+
+In Greek, James 1:21 reads as:
+"Διὸ ἀποθέμενοι πάσαν ἀκαθαρσίαν καὶ περισσείαν κακίας ἐν πραΰτητι δέξασθε τὸν ἐμφυτον λόγον, ὃς δύναται σῶσαι τὰς ψυχὰς ὑμῶν."
+Transliteration: "Dio apothemenoi pasan akatharsian kai perisseian kakias en prautēti dexasthē ton emphuton logon, hos dynatai sōsai tas psychas hymōn."
+A literal translation would be:
+"Therefore, putting away all filthiness and the overflow of wickedness, with meekness receive the implanted word, which is able to save your souls."
+
+It should go without saying that the advanced writing style of James and John is not something that would be expected from a simple fisherman or a son of a carpenter.
+
