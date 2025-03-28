@@ -1,6 +1,18 @@
 # Chapter 5 - Purple Phoenix Raises
 
-Finally in this chapter we look at the writings of the church fathers from the prism of the Byzantine Empire resurgence.
+Another unassailable but blatantly wrong assumption of modern scholarship is that all early christian literature was written in Greek because Greek was the lingua franca of the Roman empire.
+
+According to this claim we would expect Julius Caesar, the People and the Senate of Rome, Virgil, Seneca to all be fluent and write and speak extensively in Greek.
+
+In fact, it is correct Greek was the administrative language of nearly the oll of the former Greek empire which later became known as the Eastern Roman Empire.
+
+Notably all of the Christian writers Clement of Rome, Ignatius of Antioch, Polycarp, Justin Martyr, Irenaeus, Origen also wrote in Greek.
+
+The first non-greek church father is Tertullian close to the end of second century.
+
+In this chapter we want to highlight that Christianity was Greek-only religion, while there were many mentions of Jesus in non-greek sources, and very notably, religious sources about written in coptic, were not considered the same religion as Christianity.
+
+In this chapter we look at the writings of the church fathers from the prism of the Byzantine Empire resurgence.
 
 #### 1. Many other early Christian texts were written to seemingly promote the restoration of the Eastern Roman Empire.
 The Clement of Alexandria, a very prominent early Christian theologian, wrote in his book "Stromata" that the true philosophy was the Greek philosophy, and that the Greek philosophy was the true philosophy.

@@ -154,7 +154,7 @@ In that moment, she wasn’t just an eyewitness; she was the one who couldn’t 
 This explains why the resurrection account in John is so intimate and personal, focusing on Mary’s grief, confusion, and joy.
 This explains why it is only Mary who sees Jesus first, and why she doesn’t recognize him at first—her vision is clouded by tears and despair.
 
-#### 22. Description of nudity in Miraculous Catch of Fish (John 21:7)
+#### 22. Description of male nudity
 
 There is an unusual detail of Simon Peter being naked in the presence of the disciple whom Jesus loved.
 This detail seems to have no place in the narrative, and it is not clear why it is included.
@@ -165,11 +165,21 @@ A woman, emotionally close to Peter or Jesus, remembering this odd, slightly int
 Peter being "γυμνός" (naked or underdressed) is a kind of detail a woman would be more likely to remember vividly and include in her account, especially if she was reminiscing the stories of her youth.
 Feels less like theology, more like memory.
 
+And then finally the Jesus's resurrection is described by the shroud being left in the tomb with the implication that Jesus was naked when he met Mary Magdalene.
+Portraying Jesus as naked meeting a woman would be a very fit conclusion for a female author romance writer, but would make very little sense in any other scenario.
 
 #### 23. The lack of description of physical appearance of Jesus in John seems to contradict the idea that the author was an eyewitness a woman and a lover of Jesus.
 
 Given all the other tropes of female writing, it is something very surprising at first. One explanation of this is that Philo of Alexandria, from whom the author of John seems to have borrowed a lot of ideas, also actively avoided describing the physical appearance of anyone in his works.
 It is possible that Philo conveyed this unusual to us idea to the author of John, and the author of John tried to follow the best practices of their teacher.
+
+### The Message
+
+Finally, the traditional view of John being a man. We have to keep in mind that most scholars agree the very early Christian communities had very strong influence from women.
+Figures like Mary Magdalene, Tecla, Priscilla were all at the forefront of the early church. However, when the gospels were brought to the Roman writers, text had to be interpolated to the modern audience.
+Women leaders were erased from history, Mary Magdalene made into a prostitute, and Saint Paul 50 years after his death stared to tell all good Christian women to be silent and let their husbands do the talking.
+In that context do we really have any doubt a gospel written by a Joanna or Mary Magdalene would have been attributed to a John?
+There is always a concern that John the beloved disciple is not mentioned in the synoptic gospels, but maybe they the beloved disciple is actually one of the women mentioned in the synoptic gospels.
 
 ### Miracles in John
 There are seven miracles in John, which are often called the "signs" because they point to Jesus’ identity and mission.
@@ -294,7 +304,7 @@ In the context of the greek empire, the term would have been used to refer to al
 
 #### 17. The gospel of Matthew also includes the genealogy of Jesus, which is widely accepted as not-genuine or lost to history.
 However, with the acceptance of the theory that Jesus was the grandson of Herod the Great, the genealogy of Jesus through Joseph as his adopted father would requires a more thorough examination.
-One notable figure from this lineage are Zerubbabel, who was a governor of the Persian province of Yehud, and can be dated to around 520BC.
+One notable figure from this lineage are Zerubbabel, who was a governor of the Persian province of Yehud, or Judea, and can be dated to around 520BC.
 Making best guess estimates to the years of the other figures in the genealogy, the Eleazar fits very well with son Eleazar of Onias I, who was the high priest of the temple in Jerusalem.
 From these we can fairly obviously link Matthan to Mattathias Hasmonean, Father of Judas Maccabee, leader of Maccabean Revolt.
 
@@ -316,6 +326,13 @@ From these we can fairly obviously link Matthan to Mattathias Hasmonean, Father 
 ```
 Based on the estimated lifespans of the figures in the genealogy, the Jacob mentioned in the genealogy would be Alexander Jannaeus, whose unusual name is also mentioned in the lineage of Mary in the Luke gospel may have been recorded by Matthew as a more familiar sounding Jacob.
 Regardless of the exact identities of all figures, there is enough data here to conclude that the genealogy of Jesus in the gospel of Matthew is not a complete fabrication, but a genuine attempt to trace the lineage of Jesus through Joseph.
+It is true we may never find the true identity of Abuid, but for the argument to be valid, all we need to accept is that Matthew attempted to trace Jesus lineage though Hasmonean dynasty through some historical figures and focusing on more prominent ones.
+There were more figures between Mattathias and Jesus, but the genealogy is by design listing only the most prominent ones to show Jesus descent from the well known powerful kings, and not an attempt to list every single person in the family.
+
+Again, gospels are starting with baptism of Jesus, state Jesus's lineage and show Jesus teaching with parables, and perform miracles and forgave sin.
+This is precisely what you expect from royal chronicles of the time.
+Start add the lineage of the king, describe coronation, describe the reign when the rules shows wisdom and power control over nature and human fate.
+Then later version may add omens and prophecies of the king's birth, and the death. There is absolutely nothing special about gospels here.
 
 #### 18. Possibly the most prominent element of the gospel of Matthew is the reference to the Jewish scriptures and the fulfillment of the prophecies at seemingly every turn.
 As such the gospel seems to be with a very high probability written by a prominent Jewish priest, who was also a greek empire loyalist.
