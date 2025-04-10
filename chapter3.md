@@ -3,12 +3,19 @@
 Acknowledging Jesus as the rightful Christos and his companions as highly powerful and educated people can completely change the way we view the gospels.
 Most notably in this framework all arguments for early gospels become much more plausible and the arguments for late dating lose almost all of their plausibility.
 
+Moreover with the dating of the gospels, we can also revisit the dating of the large number of early apocryphal texts.
+The apocryphal texts are typically dated to the second century, but with extreme bias of past scholars placing them consistently later than the gospels regardless of the evidence.
+Famously gospel of John is attested the earliest and has the most prolific earliest sources, yet it is dated the latest, purely based on bias coming from invalid assumptions about "christology".
+By attested, we have a papyrus P52 of John, which is dated to 125AD. The allegedly oldest Mark, Matthew and Luke are attested by Irenaeus in 180AD together with several other gospels that are deemed by Irenaeus as heretical, and the earliest manuscript of Mark is dated to late 3rd century.
+Although the oldest mention of Marcion is from Tertullian, Tertullian himself gives credible attestation of Marcion in 140AD.
+So the order of historical attestation is John as the oldest, second is Marcion, then Mary Magdalene, Thomas, Judas, Mark, Matthew and Luke.
+
 ## John Gospel
 
 #### 1. The Gospel of John is widely accepted to be one gospel that indicates it was written by an eyewitness.
 The gospel itself claims to be written by the disciple whom Jesus loved, which is widely accepted to be John,
 #### 2. ὁ μαθητὴς ὃν ἠγάπα ὁ Ἰησοῦς
-. Notably this is a disciple not an apostle, which would indicate that the gospel was written by a disciple of Jesus, but not one of the twelve apostles.
+Notably this is a disciple not an apostle, which would indicate that the gospel was written by a disciple of Jesus, but not one of the twelve apostles.
 #### 3. Γύναι, ἰδοὺ ὁ υἱός σου
 Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue, for example, Ramon K. Jusino  1998.
 All the arguments below show very strong evidence for eyewitness woman in a romantic relationship to Jesus or potentially Jesus's family member.
@@ -181,6 +188,10 @@ Women leaders were erased from history, Mary Magdalene made into a prostitute, a
 In that context do we really have any doubt a gospel written by a Joanna or Mary Magdalene would have been attributed to a John?
 There is always a concern that John the beloved disciple is not mentioned in the synoptic gospels, but maybe they the beloved disciple is actually one of the women mentioned in the synoptic gospels.
 
+Keep in mind that there were many Eastern Roman empresses such as Theodora, Aelia Eudocia, and Zoe Porphyrogenita. The most famous scholar of the Byzantine empire, Hypatia was a woman, one possibly the only meaningful innovator astronomical and navigation tools for many centuries.
+
+Whereas in the Latin culture the most prominent women had power only by the virtue of indirect influence on their husband or son.
+
 ### Miracles in John
 There are seven miracles in John, which are often called the "signs" because they point to Jesus’ identity and mission.
 It is very worth pointing out that the miracles are not just random show of magic, but all are conveying the royal authority of Jesus.
@@ -347,3 +358,39 @@ If we accept that the gospel of Luke was written as a correspondence with the au
 #### 20. The gospel of Marcion deserves another look in this context.
 Even though the gospel of Marcion is dated to the 2nd century, the gospel is also remarkably missing the pre-cognition of the destruction of the temple.
 Much of modern textual analysis places the gospel not as an edited version of the gospel of Luke, but as an earlier version of the gospel of Luke, due to the simpler language and the lack of the birth narrative of Jesus.
+
+#### 21. The gospel of Luke is describes how Jesus engaged with temple leaders and the Jewish elite when he was a child.
+We are told Joseph and Mary settled in Galilee, but they traveled to Jerusalem for the Passover festival every year.
+This is consistent with Mary being a member of the Hasmonean dynasty, as the Hasmoneans were known to have a strong connection to the temple in Jerusalem.
+This theory fully explains how Jesus would realistically be able to engage with the temple leaders and the Jewish elite at such a young age.
+As per his wise man reputation, it is very likely that Jesus was a child prodigy, and would have been eager and able to engage with the temple leaders about scriptures and the law at a very young age.
+Likely if Jesus was a child prodigy, he would have been studying Jewish and Greek scriptures and philosophy in Egypt and in Galilee. Galilee libraries in Sepphoris would have been precisely well stocked with the works of the Greek philosophers and the Jewish scriptures fully accounting for Jesus's teachings.
+
+#### 22. Luke is using greek historical writing style, and the gospel is written, not a religious text.
+Ancient Greek Historians’ Opening Formula: Luke's opening in Luke 1:1-4 mirrors a well-established convention in Greek historical writing. 
+The common formula in works by historians like Herodotus and Thucydides begins with a clear intention to provide a factual account and a claim of reliable sources.
+The historian often says that he will provide a narrative based on careful research and interviews with eyewitnesses.
+Similarly, Luke introduces his gospel by stating that many have already written accounts, and he aims to write "an orderly account" based on what he has investigated carefully (Luke 1:3).
+This intro not only appeals to the authority of eyewitness testimony but establishes the writer's credibility—a trait highly valued in Greek historiography.
+
+By establishing this historian’s formula, Luke is distancing his account from mythical or legendary stories. 
+This is similar to the way Herodotus sets himself apart from storytellers or poets, aiming for historical accuracy. 
+His explicit claim of factual investigation is Greek historiographical technique.
+
+He says many have undertaken to draw up an account of the things that have been fulfilled among us, just as they were handed down to us by those who from the first were eyewitnesses and servants of the word.
+(note he was a servant of the word)
+
+Emphasis on Historical Accuracy: Luke consistently anchors his narrative with real, known political figures and chronological details. For example, he refers to the reign of Caesar Augustus (Luke 2:1), the governorship of Quirinius (Luke 2:2), and the rule of Pontius Pilate (Luke 23:1-25). This is highly reminiscent of Greek historians, especially Thucydides, who grounds his narrative in precise dates and political actors (e.g., the years of the Peloponnesian War).
+Public Acts and Decrees: The Roman census (Luke 2:1-3) is a key event that ties the story into the broader imperial political world. This is a hallmark of Greek historical writing, where historians would use official decrees or military campaigns as turning points in the narrative. Similarly, Acts uses references to imperial trials and Roman legal processes (e.g., Paul's trial before Gallio, Acts 18:12-17) as a means to legitimize Christianity and explain its spread through the empire.
+Roman Emperors and Local Leaders: The mention of Herod the Great in the narrative helps place the events within a concrete political framework. Like Polybius, who uses the actions of local leaders as windows into the larger workings of an empire, Luke does the same. He mentions Herod as a regional figure whose reign is significant not just in its own right but as a piece of the greater political puzzle.
+
+Luke’s precise use of geographical locations, like Judea, Galilee, and Capernaum, adds to this historical framework, providing context for the actions of Jesus and the early church in a way that closely resembles the method of ancient historians who anchored their stories in known historical settings.
+
+Unified Narrative: Luke and Acts together form a single, continuous narrative. The structure itself is highly methodical, resembling the way historians like Polybius wrote histories that were divided into books or volumes that followed the chronological development of key events. Luke’s work is divided between the story of Jesus’ life and ministry (Luke) and the early history of the Christian church (Acts). The transition from the life of Jesus to the apostles’ missions parallels how ancient historians would follow a ruler's life and then shift to his empire’s activities.
+
+Political and Religious Movements: Just as Polybius traces the rise and fall of Rome, or Suetonius traces the lives of emperors, Luke similarly focuses on political and religious figures and their movements through the empire. His narrative of Paul’s missionary journeys (in Acts) mirrors the structure of royal chronicles, detailing the challenges and legal trials faced by a prominent political figure (Paul) on his travels through the empire.
+
+Speech as Political Tool: Luke often uses speeches by Jesus and Paul to express core theological and political ideas. These speeches resemble the formal rhetoric found in Greek histories, where kings or political figures deliver speeches to clarify their goals and assert their legitimacy. In Acts, for instance, Paul’s speeches before kings (Agrippa, Acts 26) or the Sanhedrin (Acts 23) are presented in a historical context where the figure is asserting his political and religious identity.
+Strategic Use of Legal Trials and Defenses: Much like Plutarch or Suetonius, who present key speeches in the trials of emperors or important political figures, Luke uses trials and defenses (such as Paul's before Festus and Agrippa) to emphasize the legitimacy of the Christian message. These trials are strategically placed in the narrative to reflect not only political struggles but also theological defense—showing that the new movement aligns with or challenges imperial policy in ways that are deeply significant.
+
+The Divine Favor of Jesus and Paul: The portrayal of Jesus’ divine mission and Paul's apostolic authority mirrors the way Greek historians often depicted kings or emperors as possessing divine favor. Luke's consistent depiction of Jesus' miracles and Paul's visions and divine encounters frames the early Christian movement as divinely ordained, much like the way kings and rulers were seen as divinely chosen or supported in Greek histories.

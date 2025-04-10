@@ -58,6 +58,43 @@ As a result Joseph and Mary fled to Egypt, where they lived for several years.
 #### 8. The court official titles, Caspar, Melchior, and Balthazar derive from ancient Persian translations and would have been exceedingly hard to fabricate by even the most knowledgeable of scholars in the Roman empire that were not greek empire loyalists.
 Sanhedrin 67a – Mentions a figure called Ben Stada, who was accused of sorcery and brought from Egypt. Some later traditions tried to connect this figure to Jesus, but the identification is debated.
 
+#### 8. Herod dies in 10AD, not 4BC, and the gospels of Matthew and Luke are not in agreement on the date of Jesus's birth.
+There is a small difficulty in dating the Jesus birth to 7BC, common date used in modern scholarship.
+
+There is an apparent contradiction between the gospels of Matthew and Luke, as the gospel of Matthew states that Jesus was born during the reign of Herod the Great, who died in 4BC, while the gospel of Luke states that Jesus was born during the reign of Quirinius, who was governor of Syria from 6AD to 12AD.
+
+Even if we date the gospels very late to late second century, it is still hard to explain how the authors could be so right about so many historical background details, yet so wrong about such a critical part of the story.
+Other than birth, Luke would have to be wrong about Jesus age at the time of baptism, which is also a very critical part of the story.
+Adding to this, in this book we have a further discrepancy of Caspar, Melchior, and Balthazar journey in 7BC would make no sense as the Greek throne was still held by Strato III and this kingdom was not at the brink of collapse just yet.
+
+It is very overstated what we really know historically about this date. We know the Quirinius was governor of Syria from 6AD to 12AD.
+We know the census happened during his governorship, but we do not know when exactly.
+All we know from Josephus is that the census occurred shortly after the death of Herod the Great.
+We know Josephus placed the death of Herod the Great at the lunar eclipse just before the Passover.
+
+And here already comes a substantial mainstream scholarship error.
+The passage from Josephus that is used to date the death of Herod the Great states
+"the eclipse of the moon, which happened before his death, took place on the 10th day of the month Lous, which is Nisan."
+What is not admitted is that there were 51 lunar eclipses in the years 7BC to 12AD.
+Out of these, there were three that happened at night time in Nisan and would have been prominent enough to be seen by the people.
+The scholarly consensus is that this passage refers to the lunar eclipse of 4BC, however, upon closer inspection, in 4BC the lunar eclipse happened in Adar, a whole month earlier.
+
+The only possible dates for the lunar eclipse that happened close to 10 Nisan between 4pm UTC and 4am UTC, so could have been seen by the people in Jerusalem is:
+0012 Apr 24  22:38:24  10410 -24585   41   N   -a   1.4693  0.1335 -0.8101   96.4    -      -     11S   64E
+
+Notably the lunar eclipse always happens at full moon and the 15 Nisan is the full moon of the month of Nisan.
+However, as the lunar calendars do not align with solar, Jewish calendars introduce a second month of Adar, immediately before Nisan on leap years.
+And it so happens that in year 12AD, the extra month of Adar moved the 15th of Nisan a few days later, which explains why Josephus would have said the lunar eclipse happened on the 10th of Nisan.
+While on all other possible dates the lunar eclipse happened within a day of the 15th of Nisan.
+
+This readjustment actually solves a lot of problems with the dating of Jesus's birth and the census.
+And then the gospels would be in perfect agreement with each other.
+Quirinius may have conducted his census in 6AD, Jesus could have been both in 6AD.
+There was enough time to spend some time in Jerusalem in the first 2 years of Jesus's life, visiting the temple and being circumcised.
+The magi could have come to visit him in 8AD when he was a very young child, right at the time of the fall of Greco-Indian kingdom.
+Herod would have the time to order the slaughter of the innocents in 8AD, and Jesus could have fled to Egypt staying there for the next 4 years.
+And then settling in Nazareth once Herod Antipas took over the throne of Judea.
+
 #### 8. As Jesus grew up, he was heavily involved in the reconstruction of Nazareth and the surrounding areas which was destroyed by the Roman army.
 Hence the gospels call him tecton, which was misleadingly later translated as carpenter.
 
