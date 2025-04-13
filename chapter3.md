@@ -285,16 +285,34 @@ The title "Son of God" was used for kings in the Hebrew scriptures (e.g., 2 Samu
 In the context of ancient Jewish and Hellenistic practices, the act of baptism, particularly with water, was used in various rites of initiation or purification.
 However, in the case of Jesus, the combination of the heavenly voice, the dove, and the symbolic actions surrounding the baptism could be seen as a formal coronation—especially given the royal language and imagery associated with it.
 
+Finally a well known earlier variant of the the baptism quote is "Today I have begotten you" (Psalm 2:7),
+This phrase (Psalm 2:7), as used in the Gospel of the Hebrews during the baptism narrative, is not just about divine sonship. It is a Davidic enthronement formula.
+Psalm 2 is a royal psalm, spoken by God to the newly installed king of Israel (originally for Davidic kings).
+In Second Temple Judaism, it was widely understood as Messianic, referring to the anointed one (Christos) who would rule the nations.
+The Gospel of the Hebrews’ use of this verse explicitly identifies baptism as the moment Jesus is declared king—not metaphorically, but in the tradition of Hellenistic and Jewish coronation rituals.
+
+10.3 A very interesting but little known fact is that there exists a common early variant of Luke saying "You are my Son, today I have begotten you."
+This is a very important variant as it is a direct reference to jesus actually becoming the king or the son of God at the baptism.
+Much like the references to temple destruction and additional resurrection stories this variant was likely erased from the gospel of Luke when the understanding changed from more political to a religious one.
+
+#### 12. Gospel of the Hebrews variants of the baptism story
+In some fragments, Jesus is portrayed as baptizing others, not merely receiving baptism.
+
+This reverses the standard narrative and places Jesus in the position of the initiator, the one who commands and empowers.
+That act reflects imperial privilege—a king is not merely initiated, he is the one who now administers the rites of his reign.
+This underscores Jesus as king over a new order, already exercising regal authority.
+
+The Gospel of the Hebrews uniquely calls the Holy Spirit Jesus’s “Mother,” and she lifts him up by his hair and carries him to Mount Tabor.
+This echoes ancient royal investiture scenes, where a deity (or female embodiment of Wisdom) reveals or blesses a new ruler.
+Mount Tabor is symbolic — a “high place” often used in imperial and divine appearances in both Jewish and Hellenistic traditions.
+The motif of being lifted and carried by the Spirit recalls imperial enthronements where the new king is symbolically raised.
+
 #### 12. Royal Psalms:
 The Psalms contain numerous references to the king being God's anointed (e.g., Psalm 2:7, Psalm 45:7), and the baptism scene echoes these royal motifs. By identifying Jesus as the Son of God and anointing him with the Spirit, the Gospel writers could be alluding to these royal traditions, suggesting a coronation-like event rather than merely a religious cleansing.
 
 #### 13 The dove descending on Jesus at his baptism is a symbol of divine approval and empowerment.
 The Dove as a Divine Symbol: In Greek and Hellenistic cultures, the dove was often associated with various divine manifestations, particularly linked to gods like Zeus and Apollo. A dove descending from heaven was a common symbol of divine approval or empowerment, as in the case of Zeus transforming into a dove in some myths. In Hellenistic royal ideology, the idea of divine signs, such as a dove appearing at the moment of a king's or leader's coronation, was not unusual.
 Dove and the "Anointing" of Rulers: Greek rulers and Roman emperors were often seen as divinely chosen, and symbols of divine approval—such as a dove—would serve to emphasize this idea. The use of a dove in the baptism of Jesus could be interpreted as a sign that Jesus is divinely anointed for kingship, in line with how Hellenistic rulers were often anointed by the gods.
-
-10.3 A very interesting but little known fact is that there exists a common early variant of Luke saying "You are my Son, today I have begotten you."
-This is a very important variant as it is a direct reference to jesus actually becoming the king or the son of God at the baptism.
-Much like the references to temple destruction and additional resurrection stories this variant was likely erased from the gospel of Luke when the understanding changed from more political to a religious one.
 
 ####  14. The gospel of Matthew is includes the details of the birth of Jesus with the visit of the Magi.
 The visit of the Magi has been universally accepted as as allegory but as mentioned in the previous chapter, the titles of the Magi are exceedingly hard to fabricate by even the most knowledgeable of scholars in the Roman empire that were not greek empire loyalists.
@@ -353,7 +371,7 @@ That theory is also not generally accepted as it requires a pre-70AD dating of t
 #### 19. The gospel of Luke also includes a number of edits, most notably the birth narrative of Jesus.
 The birth narrative seems to be full of internal contradictions and is at odds with the gospel of Matthew the events of which have some of the extremely remarkable facts corroborating to the rest of this theory.
 The genealogy of Jesus in the gospel of Luke, notably has even more genuine figures from the Hasmonean dynasty down to the father of Mary, Heli, which is a short form of Eliakim, which is the same name as Joachim, which is the father of Mary in the protoevangelium of James.
-If we accept that the gospel of Luke was written as a correspondence with the author of the gospel of Matthew, the the dating of it would also not be far removed.
+If we accept that the gospel of Luke was written as a correspondence with the author of the gospel of Matthew, the dating of it would also not be far removed.
 
 #### 20. The gospel of Marcion deserves another look in this context.
 Even though the gospel of Marcion is dated to the 2nd century, the gospel is also remarkably missing the pre-cognition of the destruction of the temple.
@@ -394,3 +412,11 @@ Speech as Political Tool: Luke often uses speeches by Jesus and Paul to express 
 Strategic Use of Legal Trials and Defenses: Much like Plutarch or Suetonius, who present key speeches in the trials of emperors or important political figures, Luke uses trials and defenses (such as Paul's before Festus and Agrippa) to emphasize the legitimacy of the Christian message. These trials are strategically placed in the narrative to reflect not only political struggles but also theological defense—showing that the new movement aligns with or challenges imperial policy in ways that are deeply significant.
 
 The Divine Favor of Jesus and Paul: The portrayal of Jesus’ divine mission and Paul's apostolic authority mirrors the way Greek historians often depicted kings or emperors as possessing divine favor. Luke's consistent depiction of Jesus' miracles and Paul's visions and divine encounters frames the early Christian movement as divinely ordained, much like the way kings and rulers were seen as divinely chosen or supported in Greek histories.
+
+#### 23. Luke places the lineage of Jesus at the baptism, not at the birth.
+
+Scholars argue that Jesus lineage placed after birth narrative is an evidence that the birth narrative was added as a scribal edit.
+However, this is not a valid argument, as if the scribe went to the effort of adding major piece of text and blend it well into the narrative and the core idea of the author,
+how could he have just omitted moving the lineage to the beginning of the text?
+
+The obvious answer is that the lineage was not intended to be at the beginning of the text, and was given at the baptism of Jesus when proclaiming him as the rightful king.

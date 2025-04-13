@@ -14,6 +14,17 @@ In this chapter we want to highlight that Christianity was Greek-only religion, 
 
 In this chapter we look at the writings of the church fathers from the prism of the Byzantine Empire resurgence.
 
+#### 0. Alexandria Egypt suffered enormous hardship and persecution during the Roman Empire.
+
+The 200 year struggle of the Rome to conquer all of the Greek world ended in enormous tax burden of the newly conquered territories.
+Almost all tax revenue of the Roman Empire at the time of Jesus and shortly after was coming from the newly conquered territories of the Greeks and nearly half of it came from Egypt.
+It is often misunderstood that Egypt was simply so wealthy and more developed than the rest of the world that it could account for such a large share of the tax revenue.
+Egypt was indeed the richest, but by no means by such a large margin.
+The tax was simply so high to transfer the wealth of the Greeks to Rome and destroy the heartland of the Greek world and their capability to resist in the future.
+Given the hardships that the Greeks suffered, there should be no doubt they would seek to restore their kingdom of God and not be ruled by the beast of Rome.
+
+Egypt was considered property of the emperor and not subject to normal senatorial and imperial governance system.
+
 #### 1. Many other early Christian texts were written to seemingly promote the restoration of the Eastern Roman Empire.
 The Clement of Alexandria, a very prominent early Christian theologian, wrote in his book "Stromata" that the true philosophy was the Greek philosophy, and that the Greek philosophy was the true philosophy.
 He wrote of the bird Phoenix, which was a symbol of the Eastern Roman Empire, and that the bird was purple, which was the color of the Eastern Roman Empire.
