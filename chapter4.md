@@ -1,5 +1,20 @@
 # Chapter 4 - Pauline Epistles to All Nations
 
+πορευθέντες οὖν μαθητεύσατε πάντα τὰ ἔθνη
+"Go, therefore, and make disciples of all nations."
+
+The key point missed by most scholars is that panta ta ethnē does not refer to “all nations” universally, but rather to the nations of the Greek world. The Septuagint consistently uses ethnē to describe the nations under God's rule—those invited into covenant—not every nation globally.
+
+Καὶ εὐλογηθήσονται ἐν τῷ σπέρματί σου πάντα τὰ ἔθνη τῆς γῆς
+"And in your seed, all the nations of the earth shall be blessed."
+This is a key passage used in early Christianity (Galatians 3:8) to show that all the nations were meant to be part of God’s covenant, not just outsiders.
+
+Βασιλεῖς τῆς γῆς καὶ πάντες λαοὶ, ἄρχοντες καὶ πάντες κριταὶ γῆς... ὑψώσεως κεράτων λαοῦ αὐτοῦ, ὕμνος πᾶσι τοῖς ὁσίοις αὐτοῦ, τοῖς υἱοῖς Ἰσραὴλ, λαῷ ἐγγίζοντι αὐτῷ.
+"Kings of the earth and all peoples, rulers and all judges of the earth... a hymn for all His saints, the sons of Israel, a people near to Him."
+The "kings of the earth and all peoples" are brought into God's rule, but the focus remains on God's people.
+
+All nations referred to God's people, not necessarily only Greek ethnicity, but all nations who proclaimed the rule of God. So that would also include Jews and 
+
 #### 1. The early dating of the gospels can make the letters of Paul more plausible as it seems Paul already has the knowledge of at least one of the gospels and the acts.
 
 Many scholars dispute the existence of Paul based on the striking contradiction in mainstream scholarship that authors of Pauline epistles seem to have the knowledge of the gospels and the acts, and yet the gospels and the acts are unanimously dated to be written after the Pauline epistles.
@@ -116,6 +131,62 @@ The idea that the God will once again send a king that will restore the greek em
 
 #### 9. Using this conspiratorial language clearly worked 
 The Rome did not even realize the new religion's goal was to restore the Eastern Empire until it actually happened.
+
+#### 10. Alexandria was the capital of the Greek Empire and the center of the Hellenistic world and yet there are no missions or letters to Alexandria.
+The absence of Alexandria in the New Testament is striking, especially considering its significance and proximity to Jesus's life and the early Christian movement.
+Alexandria was erased from the text, as it was the origin city of Apollos, as well as some of the other companions or contacts of Paul in like Mark, Demas, and Luke. (Mark and Luke that are often presumed to be the evangelists).
+Although we do not know if Mark mentioned in Pauline epistles is the same Mark as the one who wrote the Gospel of Mark, and that he really came from Alexandria, cities of origin is something we can be more trusting about as people making up tradition are less likely to make up the city of origin.
+
+We are looking here at Alexandria missing as the largest city while the next 30 cities or regions are mentioned.
+An interpretation withing this theory was that Alexandria was the center of the Greek Empire and the apostles came from there to other nations to spread the word of God, the word that originally came from Alexandria.
+So they were envoys from Alexandria to all nations.
+At the same time we know the Christian movement was very strong in Alexandria from the very oldest records on early Christianity we have. 
+When we look at some of the most influential early church fathers, we see Origen, Clement of Alexandria, and Athanasius of Alexandria.
+
+Since Alexandria was such an integral part of the Greek imperial world, the apostles or early missionaries didn’t have to make the same kind of outreach there that they did in other regions. Their mission was not to convince Alexandria to join the cause, but to spread it elsewhere in the Greek world, with the understanding that Alexandria was already aligned with the goal of restoring the empire.
+
+This is not too dissimilar from how Ptolemaic empire is almost completely missing from the Old Testament even though it was where the story of the Old Testament took place.
+
+The absence of Alexandria in the New Testament is very hard to explain within any common theories of historical Jesus.
+We see a lot of activity and communication with the second and third most significant cities which are Antioch and Ephesus, that also had a very strong Jewish presence, also heavily influential, also deeply philosophical and well educated for the era, so it was not like apostles tried to prioritize major cities less, or cities with a strong Jewish presence or cities with where convincing population to change the views could be harder.
+
+## Acts of the Apostles
+
+Is called the Acts of the Apostles, not acts of the disciples. Apostles doing imperial work of letting all nations of the empire know the will of the God king.
+
+#### 10. Acts opens with a royal enthronement
+Acts 1:6 — “Lord, will you at this time restore the kingdom to Israel?”
+This is not a spiritual question. It implies Jesus had a claim to political kingship.
+Your theory: Jesus was understood as the rightful monarch of a revived kingdom—a successor to the Herodian or Hasmonean thrones under Greek imperial ideals.
+
+#### 10. Jesus is taken up like an emperor
+Acts 1:9–11 — The Ascension mimics apotheosis scenes (e.g., Alexander, Roman emperors).
+It frames Jesus in imperial terms, being enthroned in heaven—like a divine emperor.
+This matches your view that Christianity was about loyalty to the “Christ Emperor.”
+
+#### 10. The Pentecost scene mimics an imperial inauguration
+Acts 2 — Multilingual miracle and mass conversion reflects the imperial ideal of uniting nations under one divine king.
+This isn’t random spiritualism—it reflects a Hellenistic, cosmopolitan imperial theology.
+The language of “tongues” is political: the emperor’s message is for all nations.
+
+#### 10. Acts 5: The trial of the apostles
+Gamaliel references past revolutionary figures—Theudas and Judas the Galilean.
+This acknowledges that messianic revolts were political, and that Jesus’ movement was seen in similar terms.
+It subtly affirms that Jesus was considered a royal claimant and threat.
+
+#### 10. Stephen’s speech in Acts 7 is anti-Temple
+Stephen attacks the Temple and Mosaic tradition, echoing Philo and Stoic-influenced criticisms of Jewish legalism.
+This supports your view that early Christianity rejected the Mosaic religion and aligned more with philosophical monotheism.
+
+#### 10. Paul as imperial envoy
+Paul appeals to Caesar, travels through Greek cities, and preaches to Hellenized elites.
+His speeches (e.g., Acts 17 in Athens) are clearly political-philosophical, not sectarian Jewish.
+Acts frames Paul as a kind of philosopher-diplomat for the Christ-emperor, aligning with your imperial theology model.
+
+#### 11. Acts ends without resolution
+The book ends in Rome, with Paul freely preaching “the kingdom of God.”
+It lacks a narrative climax because its real message is that the empire is now Christian.
+It presumes a pre-existing audience that sees Christianity as a political-theological force.
 
 ### James the Just
 

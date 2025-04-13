@@ -40,6 +40,14 @@ Jannaeus is a very rare name and also mentioned in the lineage of Mary in the Lu
 Celsus, a very well educated prominent philosopher, who used the name Panthera as one of the main arguments against the divinity of Jesus, must have had a very solid source to make such a claim, otherwise, it would carry absolutely no impact.
 Shabbat 104b & Tosefta Hullin 2:22 – Contains indirect references to Jesus and Mary (Miriam), implying she was accused of adultery.
 
+We need to note here that the name of Herod's first-born son was Antipater, not Pantera.
+However, the name Antipater is already an english version of name Ἀντίπατρος.
+This name is not pronounceable in natural Hebrew which lacks the "nt" consonant cluster and in Hebrew names are frequently shortened.
+Notably, Alexander (Alexandros) was commonly called Sandros, Sendros, Sanra
+And the nt cluster was dropped in Antiochus which was often referred to as Yochus or Yuki (in some Jewish traditions)
+and Antipas who was called Pas or Pasi (later Talmudic contractions)
+Finally πατρος morphing back to Pantera as it passed from greek to hebrew and back to greek due to the propensity of the Hebrew language to drop and add single letters.
+
 #### 5. Jesus was born in Bethlehem, the city of the Hasmonean dynasty and the birthplace of the Christs.
 
 #### 5.1. Jesus fleeing to Egypt can be a historical fact as the Hasmonean family had very close ties to Egypt.
@@ -57,6 +65,43 @@ As a result Joseph and Mary fled to Egypt, where they lived for several years.
 
 #### 8. The court official titles, Caspar, Melchior, and Balthazar derive from ancient Persian translations and would have been exceedingly hard to fabricate by even the most knowledgeable of scholars in the Roman empire that were not greek empire loyalists.
 Sanhedrin 67a – Mentions a figure called Ben Stada, who was accused of sorcery and brought from Egypt. Some later traditions tried to connect this figure to Jesus, but the identification is debated.
+
+#### 8. Herod dies in 10AD, not 4BC, and the gospels of Matthew and Luke are not in agreement on the date of Jesus's birth.
+There is a small difficulty in dating the Jesus birth to 7BC, common date used in modern scholarship.
+
+There is an apparent contradiction between the gospels of Matthew and Luke, as the gospel of Matthew states that Jesus was born during the reign of Herod the Great, who died in 4BC, while the gospel of Luke states that Jesus was born during the reign of Quirinius, who was governor of Syria from 6AD to 12AD.
+
+Even if we date the gospels very late to late second century, it is still hard to explain how the authors could be so right about so many historical background details, yet so wrong about such a critical part of the story.
+Other than birth, Luke would have to be wrong about Jesus age at the time of baptism, which is also a very critical part of the story.
+Adding to this, in this book we have a further discrepancy of Caspar, Melchior, and Balthazar journey in 7BC would make no sense as the Greek throne was still held by Strato III and this kingdom was not at the brink of collapse just yet.
+
+It is very overstated what we really know historically about this date. We know the Quirinius was governor of Syria from 6AD to 12AD.
+We know the census happened during his governorship, but we do not know when exactly.
+All we know from Josephus is that the census occurred shortly after the death of Herod the Great.
+We know Josephus placed the death of Herod the Great at the lunar eclipse just before the Passover.
+
+And here already comes a substantial mainstream scholarship error.
+The passage from Josephus that is used to date the death of Herod the Great states
+"the eclipse of the moon, which happened before his death, took place on the 10th day of the month Lous, which is Nisan."
+What is not admitted is that there were 51 lunar eclipses in the years 7BC to 12AD.
+Out of these, there were three that happened at night time in Nisan and would have been prominent enough to be seen by the people.
+The scholarly consensus is that this passage refers to the lunar eclipse of 4BC, however, upon closer inspection, in 4BC the lunar eclipse happened in Adar, a whole month earlier.
+
+The only possible dates for the lunar eclipse that happened close to 10 Nisan between 4pm UTC and 4am UTC, so could have been seen by the people in Jerusalem is:
+0012 Apr 24  22:38:24  10410 -24585   41   N   -a   1.4693  0.1335 -0.8101   96.4    -      -     11S   64E
+
+Notably the lunar eclipse always happens at full moon and the 15 Nisan is the full moon of the month of Nisan.
+However, as the lunar calendars do not align with solar, Jewish calendars introduce a second month of Adar, immediately before Nisan on leap years.
+And it so happens that in year 12AD, the extra month of Adar moved the 15th of Nisan a few days later, which explains why Josephus would have said the lunar eclipse happened on the 10th of Nisan.
+While on all other possible dates the lunar eclipse happened within a day of the 15th of Nisan.
+
+This readjustment actually solves a lot of problems with the dating of Jesus's birth and the census.
+And then the gospels would be in perfect agreement with each other.
+Quirinius may have conducted his census in 6AD, Jesus could have been both in 6AD.
+There was enough time to spend some time in Jerusalem in the first 2 years of Jesus's life, visiting the temple and being circumcised.
+The magi could have come to visit him in 8AD when he was a very young child, right at the time of the fall of Greco-Indian kingdom.
+Herod would have the time to order the slaughter of the innocents in 8AD, and Jesus could have fled to Egypt staying there for the next 4 years.
+And then settling in Nazareth once Herod Antipas took over the throne of Judea.
 
 #### 8. As Jesus grew up, he was heavily involved in the reconstruction of Nazareth and the surrounding areas which was destroyed by the Roman army.
 Hence the gospels call him tecton, which was misleadingly later translated as carpenter.
@@ -140,3 +185,76 @@ For this argument we have to consider both independent sources and the sources t
 
 The wealth of the available records can would be hard to explain by Jesus without supernatural powers or not being a very prominent political figure of major significance.
 In fact the only non-supernatural plausible explanation may be that Christianity was a loyalist movement attempting to restore the Greek empire.
+
+#### 22. Ossuary of James
+
+The James Ossuary, which reads "James son of Joseph, brother of Jesus," has long been the subject of authenticity debates. However, when examined in the context of the Talpiot Tomb, it becomes a strong data point for Jesus having been a historical figure of high lineage — not a legendary peasant.
+
+Over 1,000 ossuaries have been excavated from the Jerusalem area, dated within a few decades of Jesus’s death. The practice of bone collection into ossuaries was limited primarily to urban, upper-class Jewish families due to cost and ritual precision. Most ossuaries found have no inscriptions — only a minority were inscribed, and among those, only prominent individuals typically had names written.
+
+Statisticians critical of the Talpiot Tomb theory have claimed that the names found — Yeshua (Jesus), Yosef (Joseph), Maria (Mary), Yose (a diminutive of Joseph), Matya (Matthew), Yehuda bar Yeshua (Judas son of Jesus), and Mariamne — were all common in 1st-century Judea. But this objection fails to consider two key statistical distortions:
+
+Only a small fraction of ossuaries have inscriptions, and the more elite the individual, the more likely the ossuary was inscribed. This filters the name sample to a specific social class, not the general population.
+Only one other known ossuary inscription among over 1,000 ever includes the phrase "brother of" — a highly unusual addition. The James Ossuary is the only one pairing “brother of” with names that correspond precisely to the Jesus of the Gospels. This feature alone radically shifts the statistical significance: the rarity of "brother of" in ossuary inscriptions is what transforms this find from coincidental to highly suggestive.
+Furthermore, geochemical analysis has shown that the patina of the James Ossuary matches that of the ossuaries in the Talpiot tomb, suggesting it was originally part of the same tomb. If so, then the presence of a "James son of Joseph, brother of Jesus" ossuary from that family tomb further increases the probability that this is indeed the burial site of the historical Jesus and his immediate family.
+
+This convergence of:
+
+Rare inscription format,
+Clustered familial names,
+Matching archaeological context,
+And elite-class burial indicators
+…invalidates assumptions of random name coincidence and suggests high plausibility that we are looking at a dynastic burial, not a later legend.
+
+Mariamnou is a fairly uncommon variant of the name Mary but held by Mary Magdalene.
+
+Some experts claim the change of these names with familial connections is 1 in a few hundred.
+That is simply very poor math skills of the mainstream scholars that everyone repeats and nobody mathematically oriented bothers to check.
+We know the change of Mary is about 25%, and the change of Joseph is about 10%, Jesus is about 1.5%, Jehuda is about 1.5%, and the change of James is about 1.5%.
+
+So when we combine the odds of Jesus son of Joseph, brother of James, two Marys with a Mariamnou variant.
+
+The way to do the math correctly is to estimate how many tombs with inscribed ossuaries were there in Jerusalem around the time of Jesus.
+
+We can estimate around 1000 tombs, and generously 200 tombs with inscribed ossuaries.
+
+The Talpiot tomb had 6 inscribed ossuaries, we add James ossuary to it as it was a chemical match.
+
+We have no record of Juda son of Jesus, and Mathew so we treat them as random names, plausibly close family members that we cannot assign with much probability to any particular person in any text or tradition.
+
+The statistical question is what is the probability of finding these 5 names within a tomb of 7 people given the number of tombs being 200.
+
+P(Jesus,Joseph,Jacob,Mary,Mariamnou in agroup of 7)=0.015×0.10×0.015×0.25×0.01 * 21,
+In 200 tombs this gives us 0.00023625
+
+Now from here, we need to account for Jesus and Jacob being sons of Joseph and Jesus brother of James. Given 3 known male names that are very likely to be brothers or sons of each other, that gives us a factor of 1 in 7.
+So interesting the strongest arguments given for the strength of the statistics which is brother-father relations only give a relatively minor boost to the probability.
+And even more interestingly, Jesus listed brother of James is thought to be a major factor in the probability of the ossuary being authentic, but actually it does not even change the probability calculation at all. Both Jesus and James are marked sons of Joseph already, so knowing Jesus and James being brother is already fully accounted for.
+
+But now finally out of 1000 inscribed ossuaries we have only one case of brother of, so having the brother of Jesus is 1 in 1000.
+
+That leaves us with a staggering 3.375e-8 probability. However, we cannot stop here. We need to consider the fact we would have also be stunned if we found another combination of 5 names.
+
+So for that Jesus, Joseph and Mary are pretty much required, but the other two people could plausibly be Joanna, Suzanna, Salome, Martha (other women mentioned in the gospels, could be romantic interests, but also sisters), Simon, Judas (Thaddaeus), John the Beloved disciple, 
+
+Overall we should estimate about up to 10 people filling up the other two names, albeit with some adjustment because Juda Thaddaeus and Suzanna are not as closely tied to Jesus as James and Mary Magdalene.
+For that we account for about 30 or so plausible combinations of people we would have plausibly identified as Jesus family members.
+
+And that gives us almost exactly one in a million chance a tomb exited with names and relations we would be leaning to identify as Jesus family.
+This is close to 5 sigma which is considered very strong evidence in natural sciences.
+
+#### 23. δεσπόσυνοι
+
+Although it is said Jesus never had a son Yehuda, that is necessarily true.
+
+The blood relatives of Jesus or δεσπόσυνοι are mentioned by Hegesippus, a prominent early Christian historian were brought to the attention of the Roman emperor Domitian.
+
+The people brought forward to the emperor were the descendents of Jude, not Jesus, not James. So although Jude is not directly identified as a son of Jesus, there is a possibility the Jude discussed by Hegesippus was a son of Jesus, not Jesus's brother.
+
+Note that James, Simon and Jude, sons of Joesph, are mentioned in the gospels as brothers of Jesus, but likely sons of Joseph, from a previous marriage, while Joseph was likely only an adoptive father of Jesus, not a biological father.
+
+Hence δεσπόσυνοι could likely not refer to the brother of Jude, but instead Jesus's son, who was also named Jude.
+
+Regardless of if Jude was the son or brother or step-brother, Why would the emperor be interested in the blood relatives of Jesus if Jesus did not have a royal lineage?
+
+
