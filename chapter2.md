@@ -6,8 +6,10 @@ That the events surrounding Jesus's life were consistent with the events surroun
 #### 0. Jesus is the Christ.
 In the gospels and all the earliest materials we can see by far the most common title given to Jesus is Christ. It is not the Messiah, but the Christ.
 In the very few cases the word Messiah is used, the gospels clearly state that Messiah is the Hebrew translation of the word Christ.
-Christ is the title used by Josephus, Christ is used by Pliny the Younger, Christ is used by Tacitus, Christ is used by Suetonius, Christ is used by Paul. Christ is the only term used by Jesus own highly educated, greek speaking brother James.
-It is not the other way around, Jesus was not actually called the Messiah, which later morphed into Christ. In the gospels the Messiah was just used to explain to the Hebrews what the Christ was, not the other way around.
+Christ is the title used by Josephus, Christ is used by Pliny the Younger, Christ is used by Tacitus, Christ is used by Suetonius, Christ is used by Paul. 
+Christ is the only term used by Jesus own highly educated, greek speaking brother James.
+It is not the other way around, Jesus was not actually called the Messiah, which later morphed into Christ.
+The gospels just use the Messiah to explain to the Hebrews what the Christ was, not the other way around.
 We should look at the usage of the word Christ in the context of the greek empire and not purely in the context of the Hebrew apocalyptic literature.
 
 #### 1. Jesus is the Son of God.
@@ -17,14 +19,14 @@ Alexander was the son of God and so were the Seleucids, Ptolemys. The title was 
 The well known ruler of Egypt, Cleopatra, was given the title "father loving goddess".
 Seleucus IV Philopator was also given the title "father loving god".
 This or similar title was used by countless other rulers in the greek world.
-In this context the multiple references to being the only begotten son of the father signify the rightful heir, and the only rightful claim to the throne.
+In this context the multiple references to being the only-begotten son of the father signify the rightful heir, and the only rightful claim to the throne.
 
 #### 3. Jesus is the Logos, the Word of God.
 The Stoics, particularly Zeno of Citium (c. 334–262 BCE) and later Chrysippus, played a significant role in further developing the idea of Logos.
 In Stoic thought, Logos became the rational principle that permeates and organizes the cosmos.
 It was understood as a divine rationality that was present in the universe, giving it structure and coherence.
 Very notably, Philo of Alexandria who was closely related to the Herodian and Hasmonean dynasties and contemporary to Jesus, described the Logos as a mediator between God and the world.
-Thus if Jesus and some of the other members of the court were indeed visiting Alexandria in Jesus's youth, they must have had close expose to the idea of logos.
+Thus, if Jesus and some of the other members of the court were indeed visiting Alexandria in Jesus's youth, they must have had close exposure to the idea of logos.
 Based on the age difference and the family relations, Jesus would have likely treated Philo as his distinguished uncle, and so would John the Evangelist.
 
 Notably in the context of the greek empire, the Logos was a divine principle that was both God's expression and as such the ruler would have been considered to speak the Logos of the God.
@@ -49,7 +51,7 @@ Plato taught that a true philosopher king is a good shepherd. Likely it stuck as
 
 #### 6. Jesus is the Light of the World.
 Here the title relates to the cave from Plato's Republic.
-The the journey from darkness to light symbolizes the philosopher’s ascent from ignorance to knowledge, particularly knowledge of the Good.
+The journey from darkness to light symbolizes the philosopher’s ascent from ignorance to knowledge, particularly knowledge of the Good.
 
 #### 7. Jesus is the King of Kings and Lord of Lords.
 Similarly, King of Kings and Lord of Lords was a title used for the rulers of empires, not only greeks, but also of India and Persia.
@@ -76,13 +78,13 @@ He described the Logos as a divine principle that was both God's expression and 
 This is the actual question that was asked to Jesus by the Roman governor Pontius Pilate.
 If Jesus really had the title of the last rightful heir to the greek empire, then he would have indeed posed a threat to the Roman empire.
 Generally apocalyptic preachers would not have been given this punishment, but a rightful heir to the greek empire would have been.
-Typically the punishment was reserved for those who posed a threat to the Roman empire.
+Typically, the punishment was reserved for those who posed a threat to the Roman empire.
 
 #### 12. The writing on the cross was "The King of the Jews"
 In the context of crucifixion being a punishment for those who posed a threat to the Roman empire, it would make sense that Romans would post a note like this not to mock Jesus, but to warn others against rebelling against the Roman empire.
 
 #### 13. Jesus was not left on the cross to be eaten by scavengers.
-Typically the bodies of the crucified were left on the cross to be eaten by scavengers, but Jesus was taken down from the cross and buried in a tomb.
+Typically, the bodies of the crucified were left on the cross to be eaten by scavengers, but Jesus was taken down from the cross and buried in a tomb.
 This is consistent with the Roman being harsh but ultimately not trying to overstep their bounds.
 In a case of a slave committing a crime, Jesus would be left on the cross, but as they could expect more rebellion if their cruelty had no bounds, it is conceivable that they would have allowed Jesus to be buried.
 

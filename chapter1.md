@@ -2,7 +2,7 @@
 
 In the first chapter we will list interesting questions regarding the origins and identity of Jesus Christ.
 
-There is a long standing assumption that historical Jesus and his apostles and companions were illiterate Jewish peasants from Judea and Galilee which were a backwater of the Roman empire.
+There is a long-standing assumption that historical Jesus and his apostles and companions were illiterate Jewish peasants from Judea and Galilee which were a backwater of the Roman empire.
 This assumption underlays nearly all of modern scholarship and is treated as gospel while there is barely any evidence to support it, while there is overwhelming evidence to the contrary.
 Breaking this assumption can categorically change the way we assign the probabilities to various theories about the life and death of Jesus Christ and the rise of Christianity.
 
@@ -10,10 +10,10 @@ Breaking this assumption can categorically change the way we assign the probabil
 While this book questions a lot of seemingly core concepts of the historical Jesus scholarship, the general timeline is assumed to be correct.
 All the arguments about time shifts and Jesus living and dying in even slightly different times are not considered in this book and not supported by any evidence.
 The book assumes the historical timeline in the gospel of Matthew is correct and that Jesus was born in 4 BC and died in 33 AD.
-Jesus was born in Betlehem, and did flee to Alexandria, Egypt, as an infant and spent a meaningful part of his childhood there.
+Jesus was born in Bethlehem, and did flee to Alexandria, Egypt, as an infant and spent a meaningful part of his childhood there.
 Later in life he moved to Galilee, although the exact time of the move is not known. It could have been at 2 years old, but also at 12 years old.
 
-#### 1. One of the most ridiculed but still very interesting questions is could Jesus Christ actually be the son of Joseph and Mary Christ and not the Jewish Messiah.
+#### 1. One of the most ridiculed but still very interesting questions is whether Jesus Christ could actually be the son of Joseph and Mary Christ and not a Jewish Messiah.
 Mixing up the term Christos and Messiah is very deeply rooted in historiography of Jesus.
 Nearly every historical treatment of the topic forgets that Christos is a Greek term for the chosen one, or a royal figure and Messiah is a Jewish term for a prophesized apocalyptic figure.
 The term Christos is almost exclusively used throughout the new testament whereas the term Messiah is used only a couple of times in encounters with Jewish figures.
@@ -22,25 +22,25 @@ As such, the term Messiah seems to only be used to convince specific Jewish peop
 #### 2. Jesus could have become a Christos because he had a royal lineage through his mother Mary Christ.
 The lineage of Jesus is described in the gospels of Matthew and Luke, and with the Luke gospel traditionally linking the lineage of Jesus through his mother Mary.
 From that alone we know that both Mary and Joseph were also considered to be of royal lineage.
-This topic has been very deeply discussed by James Tabor in his book "The Jesus Dynasty", and for an even longer expanded list of arguments and more more in depth discussion as to why Jesus descended from the Hasmonean dynasty, please refer to the book.
+This topic has been very deeply discussed by James Tabor in his book "The Jesus Dynasty", and for an even longer expanded list of arguments and more in depth discussion as to why Jesus descended from the Hasmonean dynasty, please refer to the book.
 
 #### 3. Jesus's mother was Mary Christ, the last rightful heiress to the Hasmonean dynasty.
-Marry's life was described in the Protoevangelium of James, which was was considered a very reliable source by the early church fathers.
+Marry's life was described in the Protoevangelium of James, which was considered a very reliable source by the early church fathers.
 Details of the Protoevangelium of James were also confirmed by the Jewish philosopher Celsus, who lived in the 2nd century AD, and was a very prominent critic of Christianity.
 The protoevangelium of James lists the father of Mary as Joachim with is in agreement with the gospel of Luke, which lists the father of Mary as Heli, a short form of Eliakim, which the same name as Joachim.
-Describing Mary as a perpetual virgin and the conception of Jesus as as immaculate, is in agreement with the sources on Greek princesses.
+Describing Mary as a perpetual virgin and the conception of Jesus as immaculate, is in agreement with the sources on Greek princesses.
 Making her a Christ, the rightful ruler of the Hasmonean dynasty would explain why there her story was recorded in this scribal biographical fashion.
 Mary's brother was Simon, who was the high priest of the temple in Jerusalem, and was killed by Herod the Great in 23 BC.
 Mary's birth name was Miriam, which was a very common name in the Hasmonean dynasty.
-Mary's birth place was Sepphoris.
+Mary's birthplace was Sepphoris.
 In 104 BC Alexander Jannaeus of the Hasmonean dynasty conquered Sepphoris and made it his capital.
 Jannaeus is a very rare name and also mentioned in the lineage of Mary in the Luke gospel.
 
 #### 4. Joseph was Mary's second husband and a widower, as Pantera was killed by Herod the Great soon after Jesus was conceived.
-Celsus, a very well educated prominent philosopher, who used the name Panthera as one of the main arguments against the divinity of Jesus, must have had a very solid source to make such a claim, otherwise, it would carry absolutely no impact.
+Celsus, a very well-educated prominent philosopher, who used the name Panthera as one of the main arguments against the divinity of Jesus, must have had a very solid source to make such a claim, otherwise, it would carry absolutely no impact.
 Shabbat 104b & Tosefta Hullin 2:22 – Contains indirect references to Jesus and Mary (Miriam), implying she was accused of adultery.
 
-We need to note here that the name of Herod's first-born son was Antipater, not Pantera.
+We need to note here that the name of Herod's firstborn son was Antipater, not Pantera.
 However, the name Antipater is already an english version of name Ἀντίπατρος.
 This name is not pronounceable in natural Hebrew which lacks the "nt" consonant cluster and in Hebrew names are frequently shortened.
 Notably, Alexander (Alexandros) was commonly called Sandros, Sendros, Sanra
@@ -84,7 +84,7 @@ And here already comes a substantial mainstream scholarship error.
 The passage from Josephus that is used to date the death of Herod the Great states
 "the eclipse of the moon, which happened before his death, took place on the 10th day of the month Lous, which is Nisan."
 What is not admitted is that there were 51 lunar eclipses in the years 7BC to 12AD.
-Out of these, there were three that happened at night time in Nisan and would have been prominent enough to be seen by the people.
+Out of these, there were three that happened at nighttime in Nisan and would have been prominent enough to be seen by the people.
 The scholarly consensus is that this passage refers to the lunar eclipse of 4BC, however, upon closer inspection, in 4BC the lunar eclipse happened in Adar, a whole month earlier.
 
 The only possible dates for the lunar eclipse that happened close to 10 Nisan between 4pm UTC and 4am UTC, so could have been seen by the people in Jerusalem is:
@@ -104,7 +104,7 @@ Herod would have the time to order the slaughter of the innocents in 8AD, and Je
 And then settling in Nazareth once Herod Antipas took over the throne of Judea.
 
 #### 8. As Jesus grew up, he was heavily involved in the reconstruction of Nazareth and the surrounding areas which was destroyed by the Roman army.
-Hence the gospels call him tecton, which was misleadingly later translated as carpenter.
+Hence, the gospels call him tecton, which was misleadingly later translated as carpenter.
 
 #### 9. As with his royal lineage Jesus was also exposed to a variety of scripture and was highly educated.
 The later connections of Jesus parables to many thoughts and principles of the Greek philosophers, especially the stoics, must imply Jesus was highly educated in the Greek way of life.
@@ -131,14 +131,14 @@ He got very angry and overturned the tables of the money changers in the temple.
 The testimony of Serapion of Syria is a very important piece of evidence for the existence of Jesus.
 The testimony from 73AD reads: "What advantage did the Athenians gain from putting Socrates to death? Famine and plague came upon them as a judgment for their crime.
 Or the people of Samos for burning Pythagoras? In one moment their country was covered by sand.
-Or the Jews by murdering their wise king? After that their kingdom was abolished.
+Or the Jews by murdering their wise king? After that their kingdom was abolished."
 
-#### 16. Testimonium Flavianum - Josephus, a Jewish historian, mentions Jesus in his Antiqu
-Jesper Flavius, a Jewish historian, mentions Jesus in his Antiqus, which was written in 93 AD.
+#### 16. Testimonium Flavianum - Josephus, a Jewish historian, mentions Jesus in his Antiquities
+Jesper Flavius, a Jewish historian, mentions Jesus in his Antiquities, which was written in 93 AD.
 The passage reads: "At this time there appeared Jesus, a wise man. For he was a doer of startling deeds, a teacher of people who receive the truth with pleasure. 
 And he gained a following both among many Jews and among the Greeks. He was the Christ."
 This passage has been heavily debated by scholars, but the evidence for its authenticity is very strong.
-The questions is why would a Jewish historian known to have no sympathy for Christianity call Jesus a Christ?
+The question is why would a Jewish historian known to have no sympathy for Christianity call Jesus a Christ?
 The only plausible explanation is that he was a Christ, a rightful heir to the Greek empire, and not a Jewish Messiah.
 
 This passage poses a very strong conundrum for the scholars who believe that Jesus was a Jewish Messiah and not a Greek Christ.
@@ -160,7 +160,7 @@ both of whom had no reason to lie about Jesus's identity and all of whom are kno
 
 #### 18. Pliny the Younger, a Roman governor, mentions Jesus in his letters to the emperor Trajan, which were written in 112 AD.
 The passage reads: "But they asserted that the sum and substance of their fault or error had been that they were accustomed to meet on a fixed day before dawn and sing responsively a hymn to Christ as to a god."
-The authenticity of this letter is sometimes debated, but regardless of its authenticity, it highlights the fact that was know about Jesus was that he was a Christ.
+The authenticity of this letter is sometimes debated, but regardless of its authenticity, it highlights the fact that what was known about Jesus was that he was a Christ.
 So even though this passage adds little to the historical evidence of existence of Jesus, it does add to the evidence that Jesus was a Christ.
 Note that once again, it is not Jesus the wise man or Jesus of Nazareth, but Jesus the Christ.
 
@@ -194,7 +194,8 @@ Over 1,000 ossuaries have been excavated from the Jerusalem area, dated within a
 
 Statisticians critical of the Talpiot Tomb theory have claimed that the names found — Yeshua (Jesus), Yosef (Joseph), Maria (Mary), Yose (a diminutive of Joseph), Matya (Matthew), Yehuda bar Yeshua (Judas son of Jesus), and Mariamne — were all common in 1st-century Judea. But this objection fails to consider two key statistical distortions:
 
-Only a small fraction of ossuaries have inscriptions, and the more elite the individual, the more likely the ossuary was inscribed. This filters the name sample to a specific social class, not the general population.
+Only a small fraction of ossuaries has inscriptions, and the more elite the individual, the more likely the ossuary was inscribed.
+This filters the name sample to a specific social class, not the general population.
 Only one other known ossuary inscription among over 1,000 ever includes the phrase "brother of" — a highly unusual addition. The James Ossuary is the only one pairing “brother of” with names that correspond precisely to the Jesus of the Gospels. This feature alone radically shifts the statistical significance: the rarity of "brother of" in ossuary inscriptions is what transforms this find from coincidental to highly suggestive.
 Furthermore, geochemical analysis has shown that the patina of the James Ossuary matches that of the ossuaries in the Talpiot tomb, suggesting it was originally part of the same tomb. If so, then the presence of a "James son of Joseph, brother of Jesus" ossuary from that family tomb further increases the probability that this is indeed the burial site of the historical Jesus and his immediate family.
 
@@ -224,7 +225,7 @@ We have no record of Juda son of Jesus, and Mathew so we treat them as random na
 
 The statistical question is what is the probability of finding these 5 names within a tomb of 7 people given the number of tombs being 200.
 
-P(Jesus,Joseph,Jacob,Mary,Mariamnou in agroup of 7)=0.015×0.10×0.015×0.25×0.01 * 21,
+P(Jesus,Joseph,Jacob,Mary,Mariamnou in a group of 7)=0.015×0.10×0.015×0.25×0.01 * 21,
 In 200 tombs this gives us 0.00023625
 
 Now from here, we need to account for Jesus and Jacob being sons of Joseph and Jesus brother of James. Given 3 known male names that are very likely to be brothers or sons of each other, that gives us a factor of 1 in 7.
@@ -233,11 +234,11 @@ And even more interestingly, Jesus listed brother of James is thought to be a ma
 
 But now finally out of 1000 inscribed ossuaries we have only one case of brother of, so having the brother of Jesus is 1 in 1000.
 
-That leaves us with a staggering 3.375e-8 probability. However, we cannot stop here. We need to consider the fact we would have also be stunned if we found another combination of 5 names.
+That leaves us with a staggering 3.375e-8 probability. However, we cannot stop here. We need to consider the fact we would have also been stunned if we found another combination of 5 names.
 
-So for that Jesus, Joseph and Mary are pretty much required, but the other two people could plausibly be Joanna, Suzanna, Salome, Martha (other women mentioned in the gospels, could be romantic interests, but also sisters), Simon, Judas (Thaddaeus), John the Beloved disciple, 
+So for that Jesus, Joseph and Mary are pretty much required, but the other two people could plausibly be Joanna, Suzanna, Salome, Martha (other women mentioned in the gospels, could be romantic interests, but also sisters), Simon, Judas (Thaddeus), John the Beloved disciple, 
 
-Overall we should estimate about up to 10 people filling up the other two names, albeit with some adjustment because Juda Thaddaeus and Suzanna are not as closely tied to Jesus as James and Mary Magdalene.
+Overall we should estimate about up to 10 people filling up the other two names, albeit with some adjustment because Juda Thaddeus and Suzanna are not as closely tied to Jesus as James and Mary Magdalene.
 For that we account for about 30 or so plausible combinations of people we would have plausibly identified as Jesus family members.
 
 And that gives us almost exactly one in a million chance a tomb exited with names and relations we would be leaning to identify as Jesus family.
@@ -253,7 +254,7 @@ The people brought forward to the emperor were the descendents of Jude, not Jesu
 
 Note that James, Simon and Jude, sons of Joesph, are mentioned in the gospels as brothers of Jesus, but likely sons of Joseph, from a previous marriage, while Joseph was likely only an adoptive father of Jesus, not a biological father.
 
-Hence δεσπόσυνοι could likely not refer to the brother of Jude, but instead Jesus's son, who was also named Jude.
+Hence, δεσπόσυνοι could likely not refer to the brother of Jude, but instead Jesus's son, who was also named Jude.
 
 Regardless of if Jude was the son or brother or step-brother, Why would the emperor be interested in the blood relatives of Jesus if Jesus did not have a royal lineage?
 
