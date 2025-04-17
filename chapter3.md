@@ -420,3 +420,9 @@ However, this is not a valid argument, as if the scribe went to the effort of ad
 how could he have just omitted moving the lineage to the beginning of the text?
 
 The obvious answer is that the lineage was not intended to be at the beginning of the text, and was given at the baptism of Jesus when proclaiming him as the rightful king.
+
+#### 24. Later gospels and apocryphal texts
+
+It is important to note that to judge the significance of the dating of the texts, or really any claims in any historical work, it is important to address all evidence available, not just the evidence supporting the claim.
+The emphasis is that while some texts like the gospel of Hebrews, the gospel of Marcion, the protoevangelium of James, gospel of Thomas, are indeed very likely very tied so independent source testimonies, there are a large number of writings, although seemingly expanded narrative, seem to be fully derived from other texts and do not bring any new source.
+One example is the very common gospel of Nicodemus or the Acts of Pilate, which, although it adds a lot of human interactions, does not seem to bring up any fresh or contradictory information at all that would not be a natural embellishment or interpolation of the original texts. Thus, it is very likely only composed based on other known texts and not on an unknown source or a direct testimony of first or second hand witness.

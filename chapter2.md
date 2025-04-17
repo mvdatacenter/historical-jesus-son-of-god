@@ -132,6 +132,59 @@ No other crucified person was buried in a tomb. They were left on the cross to b
 A regular revolutionary would have been left on the cross, but someone with a royal lineage could be given an extraordinary exception.
 As the Romans likely could have conceived of Jesus being more divine by his royal lineage, they may have already be afraid of Gods wrath at the time of crucifixion.
 
+### 17. Jesus was crucified on Wednesday in 31 AD.
+
+It is commonly believed that Jesus was crucified on Friday, but all the Christian sources actually very directly say that Jesus was crucified on Wednesday.
+This is not a new idea, but but for some unknown reason it is ignored by nearly all scholars.
+The Friday crucifixion is a later liturgical development and not present in the bible or earliest Christian sources.
+All gospels agree that Jesus was crucified on the day of preparation for the Passover.
+The common misunderstanding is that the day of preparation is the day before the Sabbath, which is Saturday, but in this context the passover is also a Sabbath.
+So for the texts to be consistent, the day of preparation must be Thursday. 
+If we assume Friday we have trials before Annas, Caiaphas, Sanhedrin, Herod, and Pilate, mocking, beatings, travel, flogging, crucifixion, death, burial before sunset all supposedly occurred on the same morning, which is highly implausible.
+There is obviously the extremely common statement that Jesus was in the tomb for three days and three nights which only works if we assume Jesus was crucified on Thursday.
+
+To summarize:
+Wednesday crucifixion in 34 AD (April 21 Julian) fits all the evidence:
+John 19:31 explicitly distinguishes the Sabbath following Jesus' death as a "high day" (i.e., not a regular Saturday Sabbath).
+Leviticus 23:7 establishes that Nisan 15 is a mandatory Sabbath regardless of weekday—this is the Feast of Unleavened Bread.
+Matthew 28:1 does indeed say "after the Sabbaths" (plural: σαββάτων), and this is not a scribal error.
+Mark 16:1 – “When the Sabbath was past, Mary Magdalene, and Mary the mother of James, and Salome, bought spices...”
+→ This refers to buying spices after the first (Thursday) Sabbath, so it must be Friday.
+“Three days and three nights” (Matthew 12:40) cannot be forced into a Friday-to-Sunday window without manipulating Jewish idiom or chronology.
+Luke 23:56 – “They returned and prepared spices and ointments; and rested on the Sabbath according to the commandment.”
+→ This refers to preparing spices on Friday, and then resting on Saturday.
+
+Day	Event
+Here’s the count if Jesus died Wednesday afternoon:
+Buried before sunset Wednesday
+Night 1: Wednesday night
+Day 1: Thursday (High Sabbath)
+Night 2: Thursday night
+Day 2: Friday (spice preparation day)
+Night 3: Friday night, third night in the tomb
+Day 3: Saturday (Weekly Sabbath), third day in the tomb
+Night 4: Jesus resurrected at the sundown of Saturday, that is the beginning of Sunday in Jewish calendar
+Day 4: Sunday (first day of the week) the tomb was found empty
+If resurrection occurred just after sunset on Saturday, it is exactly three days and three nights.
+Leading to Thursday, Friday, and Saturday being the three days and three nights, and the evening of Saturday when the resurrection allegedly occurred is the beginning of Sunday. So this is fully consistent with the numerous references to the resurrection on Sunday.
+
+Why the tomb was found empty Sunday:
+Because the women waited until the Sabbath ended (Saturday evening), then came at dawn Sunday (Matthew 28:1, Luke 24:1). That’s when the resurrection was discovered — not when it happened.
+
+So:
+✔ Three full days and nights: ✅
+✔ Resurrection not seen, only tomb found empty Sunday: ✅
+✔ Fits Jewish counting and Gospel timeline: ✅
+
+Then the crucifixion must have happened on Wednesday, April 21, 31 AD.
+
+Note that for example, the possibly oldest preserved Christian text, the Didache, explicitly states that fast on Wednesday and Friday.
+Friday is likely linked to Sabbath, but Wednesday is a new addition and most logically it would be the day of crucifixion.
+
+Notably the earliest Christian writers outside the gospels and before Tertullian (c. 160–220 AD) that talk about the resurrection are Justin Martyr (c. 100–165 AD) and Barnabas (c. 70–135 AD), both of whom place the resurrection on at the start of Sunday, but do not list the day of crucifixion.
+
+### 17. Jesus survived crucifixion
+
 In this context it is not even inconceivable that the Romans would have allowed Jesus to be picked up from the cross before death. It is highly speculative, but it has a really strong explanation power to it. 
 Perhaps something as trivial as lightnings and thunders could have already made the Roman soldiers and the crowds to superstitiously believe he truly was the son of God and got scared.
 Joseph of Arimathea and Nicodemus did receive an agreement from Pilate to pull him from the cross early, and Jesus could have simply survived the trauma and barely alive.
@@ -165,8 +218,11 @@ If Jesus were completely dead, the blood would have likely clotted in his body, 
 The fact that both blood and water "flowed out" immediately suggests the body still had some circulatory activity, meaning the heart might not have fully stopped yet.
 Pleural or pericardial effusion does NOT mean the person is already dead—it can happen before death in cases of extreme shock or injury.
 It would be likely more than enough to convince the centurion that Jesus was dead and pass the news to Pilate.
-
-Summarizing, although partially speculative, it may be the best explanation of widespread belief in Jesus resurrection that does not suffer from major logical flaws or inconsistencies.
+Joseph of Arimathea taking Jesus to his own garden to bury him there, is also highly suspect.
+The excuse that Jesus had to be buried quickly before the Sabbath in a temporary grave may actually be a plot to hide the fact that Jesus was not dead yet.
+It is also worth noting that using armed guards to protect the tomb is not a common practice. 
+Armed guards when the person is still alive would make a lot more sense.
+For example some of the opponents of Jesus suspected a foul play and wanted to make sure Jesus was really dead and not taken down from the cross alive.
 
 Many scholars point out that Arimathea is a place that does not exist, and so it is likely a made up name.
 However, Ar-Ram, also known as Ramathaim, today better known as Ramallah or Ram Allah, is an ancient town a few kilometers north of Jerusalem that is more than likely to be that place.
@@ -175,6 +231,29 @@ Notably early versions of Septuagint translated the birthplace as "Αρμαθα�
 It is a natural translation of the name into Greek, and the Septuagint should be considered as a strong evidence that Arimathea is indeed Ramallah.
 It is also notable enough and close enough to Jerusalem that it would have been very logical origin place for a prominent member of the Sanhedrin.
 It is also notable enough to have been mentioned in the gospels as a place elevating the status of Joseph of Arimathea and familiar enough to the people of the story to not be needing any further explanation.
+The doubting found in all the gospels is also highly natural.
+Simply Jesus being tortured and left for near-certain death but then eventually surviving would have still been treated as a miracle.
+Most likely the apostles really did not believe much in miracles and were not expecting Jesus to survive.
+
+Finally, many scholars point out that the victim of crucifixion were always left on the cross to be eaten by scavengers in every known record.
+However, even Philo of Alexandria, featured in many discussions in this book for unrelated reasons, described a case of numerous Jew insurrectionists in Alexandria in 38AD were actually taken down from the cross in exchange for a bribe.
+It is not completely clear from the text, but the more plausible reading is that some of the victims may have been taken down from the cross before they died.
+In this light it should not be considered as implausible that a member of the Sanhedrin would have been able to bargain with the centurion to convince Pilate Jesus already died.
+
+Josephus, Jewish War 4.5.2 (333):
+He says he recognized three of his acquaintances being crucified, asked for their removal, and one of them survived.
+
+Summarizing, although partially speculative, there is a lot of speculation that matches unexpectedly well on close inspection.
+We need to consider the possibilities that Jesus really died and then numerous propaganda stories were created with strictly controlled narrative.
+The non-resurrection theory actually does suffer very substantially from the problem of consistent narrative.
+The ungrounded claims would not be corroborated by everyone in the same way.
+There is bound to be more serious discrepancies in the story and more variants of the story.
+
+The other alternative is that there really was empty tomb and misunderstanding. For example, Joseph and Nicodemus really did use a temporary grave and then moved Jesus to a different grave without telling anyone. Then the women came to the grave and found it empty and spread the news to Peter and John and so the story started to spread.
+Then the empty grave was undeniable but everyone doubted the resurrection as they had no certainty that Jesus was resurrected or simply his body was secretly moved.
+
+So here we need to consider the plausibility that Jesus survived because of luck or a conspiracy of Joseph of Arimathea and Nicodemus, and contrast it with the alternative of the event being completely fabricated.
+
 
 ## Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven
 

@@ -192,7 +192,15 @@ The James Ossuary, which reads "James son of Joseph, brother of Jesus," has long
 
 Over 1,000 ossuaries have been excavated from the Jerusalem area, dated within a few decades of Jesus’s death. The practice of bone collection into ossuaries was limited primarily to urban, upper-class Jewish families due to cost and ritual precision. Most ossuaries found have no inscriptions — only a minority were inscribed, and among those, only prominent individuals typically had names written.
 
-Statisticians critical of the Talpiot Tomb theory have claimed that the names found — Yeshua (Jesus), Yosef (Joseph), Maria (Mary), Yose (a diminutive of Joseph), Matya (Matthew), Yehuda bar Yeshua (Judas son of Jesus), and Mariamne — were all common in 1st-century Judea. But this objection fails to consider two key statistical distortions:
+Critics of the Talpiot Tomb theory have claimed that the names found — Yeshua (Jesus), Yosef (Joseph, father of Jesus), Maria (Mary), Yose (a diminutive of Joseph), Matya (Matthew), Yehuda bar Yeshua (Judas son of Jesus), and Mariamne — were all common in 1st-century Judea. 
+And the critics are right to question all published statistical analyses as they are full of statistical and logical errors that critics very rightfully point out.
+Almost all the analysis already fail on even asking the right questions to judge the authenticity of the tomb.
+The right question to ask is what is the probability that this specific tomb could have existed at that time with these specific names in it and not be related to Jesus.
+P(this tomb exists | not-Jesus) — the probability this cluster arises in a non-Jesus family tomb, purely by chance.
+
+Here we will re-do the analysis correctly and using the priors of the theory that Jesus and his family were a prominent family deserving an inscription on their ossuaries.
+
+But this objection fails to consider two key statistical distortions:
 
 Only a small fraction of ossuaries has inscriptions, and the more elite the individual, the more likely the ossuary was inscribed.
 This filters the name sample to a specific social class, not the general population.
@@ -215,6 +223,9 @@ We know the change of Mary is about 25%, and the change of Joseph is about 10%, 
 
 So when we combine the odds of Jesus son of Joseph, brother of James, two Marys with a Mariamnou variant.
 
+Very notably this is a greek variant of the name Mary and that is because as a Herodian court member Mary Magdalene would have been a Greek speaker or at least very heavy hellenized.
+Finding that name in a tomb in Jerusalem would likely not be even close to 0.01, but for this analysis we will assume it is 0.01.
+
 The way to do the math correctly is to estimate how many tombs with inscribed ossuaries were there in Jerusalem around the time of Jesus.
 
 We can estimate around 1000 tombs, and generously 200 tombs with inscribed ossuaries.
@@ -236,13 +247,22 @@ But now finally out of 1000 inscribed ossuaries we have only one case of brother
 
 That leaves us with a staggering 3.375e-8 probability. However, we cannot stop here. We need to consider the fact we would have also been stunned if we found another combination of 5 names.
 
-So for that Jesus, Joseph and Mary are pretty much required, but the other two people could plausibly be Joanna, Suzanna, Salome, Martha (other women mentioned in the gospels, could be romantic interests, but also sisters), Simon, Judas (Thaddeus), John the Beloved disciple, 
+So for that Jesus and Mary are pretty much required, but the other three people could plausibly be Joanna, Suzanna, Salome, Martha (other women mentioned in the gospels, could be romantic interests, but also sisters), Simon, Judas (Thaddeus), John the Beloved disciple, Joseph the father of Jesus
 
 Overall we should estimate about up to 10 people filling up the other two names, albeit with some adjustment because Juda Thaddeus and Suzanna are not as closely tied to Jesus as James and Mary Magdalene.
 For that we account for about 30 or so plausible combinations of people we would have plausibly identified as Jesus family members.
 
+There is one caveat that Jose in the tomb is Joseph the brother of Jesus, and not Joseph the father of Jesus. Hence, it is referred to by a slightly different name variant than Joseph the father of Jesus.
+
+Note that although Joseph the father may actually not be in the ossuary in favor od the brother, he still needs to enter the statistics in a similar factor as Joseph the father is clearly inscribed as the father of Jesus and James.
+
+Joseph in the tomb bing the father of Jesus is actually the statistically much more probable case, and so for the authenticity calculation we only need to consider that case (Joseph the father of Jesus makes this one in a million as this accident being possible to occur, Joesph the brother of Jesus makes this less than one in 10 million chance).
+
 And that gives us almost exactly one in a million chance a tomb exited with names and relations we would be leaning to identify as Jesus family.
 This is close to 5 sigma which is considered very strong evidence in natural sciences.
+
+Finally, in a bayesian sense to answer if this tomb is authentic this needs to be adjusted with a prior of Jesus and some of his family having a tomb in Jerusalem.
+In the scenario of this book, this is a very likely scenario, close to one, but of course if we assign a large probability to Jesus was only a preacher or Jesus really ascending bodily to heaven, then the probability of this tomb being authentic will need to get adjusted by that factor.
 
 #### 23. δεσπόσυνοι
 
