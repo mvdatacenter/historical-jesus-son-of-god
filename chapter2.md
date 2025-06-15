@@ -6,8 +6,10 @@ That the events surrounding Jesus's life were consistent with the events surroun
 #### 0. Jesus is the Christ.
 In the gospels and all the earliest materials we can see by far the most common title given to Jesus is Christ. It is not the Messiah, but the Christ.
 In the very few cases the word Messiah is used, the gospels clearly state that Messiah is the Hebrew translation of the word Christ.
-Christ is the title used by Josephus, Christ is used by Pliny the Younger, Christ is used by Tacitus, Christ is used by Suetonius, Christ is used by Paul. Christ is the only term used by Jesus own highly educated, greek speaking brother James.
-It is not the other way around, Jesus was not actually called the Messiah, which later morphed into Christ. In the gospels the Messiah was just used to explain to the Hebrews what the Christ was, not the other way around.
+Christ is the title used by Josephus, Christ is used by Pliny the Younger, Christ is used by Tacitus, Christ is used by Suetonius, Christ is used by Paul. 
+Christ is the only term used by Jesus own highly educated, greek speaking brother James.
+It is not the other way around, Jesus was not actually called the Messiah, which later morphed into Christ.
+The gospels just use the Messiah to explain to the Hebrews what the Christ was, not the other way around.
 We should look at the usage of the word Christ in the context of the greek empire and not purely in the context of the Hebrew apocalyptic literature.
 
 #### 1. Jesus is the Son of God.
@@ -17,14 +19,14 @@ Alexander was the son of God and so were the Seleucids, Ptolemys. The title was 
 The well known ruler of Egypt, Cleopatra, was given the title "father loving goddess".
 Seleucus IV Philopator was also given the title "father loving god".
 This or similar title was used by countless other rulers in the greek world.
-In this context the multiple references to being the only begotten son of the father signify the rightful heir, and the only rightful claim to the throne.
+In this context the multiple references to being the only-begotten son of the father signify the rightful heir, and the only rightful claim to the throne.
 
 #### 3. Jesus is the Logos, the Word of God.
 The Stoics, particularly Zeno of Citium (c. 334–262 BCE) and later Chrysippus, played a significant role in further developing the idea of Logos.
 In Stoic thought, Logos became the rational principle that permeates and organizes the cosmos.
 It was understood as a divine rationality that was present in the universe, giving it structure and coherence.
 Very notably, Philo of Alexandria who was closely related to the Herodian and Hasmonean dynasties and contemporary to Jesus, described the Logos as a mediator between God and the world.
-Thus if Jesus and some of the other members of the court were indeed visiting Alexandria in Jesus's youth, they must have had close expose to the idea of logos.
+Thus, if Jesus and some of the other members of the court were indeed visiting Alexandria in Jesus's youth, they must have had close exposure to the idea of logos.
 Based on the age difference and the family relations, Jesus would have likely treated Philo as his distinguished uncle, and so would John the Evangelist.
 
 Notably in the context of the greek empire, the Logos was a divine principle that was both God's expression and as such the ruler would have been considered to speak the Logos of the God.
@@ -49,7 +51,7 @@ Plato taught that a true philosopher king is a good shepherd. Likely it stuck as
 
 #### 6. Jesus is the Light of the World.
 Here the title relates to the cave from Plato's Republic.
-The the journey from darkness to light symbolizes the philosopher’s ascent from ignorance to knowledge, particularly knowledge of the Good.
+The journey from darkness to light symbolizes the philosopher’s ascent from ignorance to knowledge, particularly knowledge of the Good.
 
 #### 7. Jesus is the King of Kings and Lord of Lords.
 Similarly, King of Kings and Lord of Lords was a title used for the rulers of empires, not only greeks, but also of India and Persia.
@@ -76,13 +78,13 @@ He described the Logos as a divine principle that was both God's expression and 
 This is the actual question that was asked to Jesus by the Roman governor Pontius Pilate.
 If Jesus really had the title of the last rightful heir to the greek empire, then he would have indeed posed a threat to the Roman empire.
 Generally apocalyptic preachers would not have been given this punishment, but a rightful heir to the greek empire would have been.
-Typically the punishment was reserved for those who posed a threat to the Roman empire.
+Typically, the punishment was reserved for those who posed a threat to the Roman empire.
 
 #### 12. The writing on the cross was "The King of the Jews"
 In the context of crucifixion being a punishment for those who posed a threat to the Roman empire, it would make sense that Romans would post a note like this not to mock Jesus, but to warn others against rebelling against the Roman empire.
 
 #### 13. Jesus was not left on the cross to be eaten by scavengers.
-Typically the bodies of the crucified were left on the cross to be eaten by scavengers, but Jesus was taken down from the cross and buried in a tomb.
+Typically, the bodies of the crucified were left on the cross to be eaten by scavengers, but Jesus was taken down from the cross and buried in a tomb.
 This is consistent with the Roman being harsh but ultimately not trying to overstep their bounds.
 In a case of a slave committing a crime, Jesus would be left on the cross, but as they could expect more rebellion if their cruelty had no bounds, it is conceivable that they would have allowed Jesus to be buried.
 
@@ -130,6 +132,59 @@ No other crucified person was buried in a tomb. They were left on the cross to b
 A regular revolutionary would have been left on the cross, but someone with a royal lineage could be given an extraordinary exception.
 As the Romans likely could have conceived of Jesus being more divine by his royal lineage, they may have already be afraid of Gods wrath at the time of crucifixion.
 
+### 17. Jesus was crucified on Wednesday in 31 AD.
+
+It is commonly believed that Jesus was crucified on Friday, but all the Christian sources actually very directly say that Jesus was crucified on Wednesday.
+This is not a new idea, but but for some unknown reason it is ignored by nearly all scholars.
+The Friday crucifixion is a later liturgical development and not present in the bible or earliest Christian sources.
+All gospels agree that Jesus was crucified on the day of preparation for the Passover.
+The common misunderstanding is that the day of preparation is the day before the Sabbath, which is Saturday, but in this context the passover is also a Sabbath.
+So for the texts to be consistent, the day of preparation must be Thursday. 
+If we assume Friday we have trials before Annas, Caiaphas, Sanhedrin, Herod, and Pilate, mocking, beatings, travel, flogging, crucifixion, death, burial before sunset all supposedly occurred on the same morning, which is highly implausible.
+There is obviously the extremely common statement that Jesus was in the tomb for three days and three nights which only works if we assume Jesus was crucified on Thursday.
+
+To summarize:
+Wednesday crucifixion in 34 AD (April 21 Julian) fits all the evidence:
+John 19:31 explicitly distinguishes the Sabbath following Jesus' death as a "high day" (i.e., not a regular Saturday Sabbath).
+Leviticus 23:7 establishes that Nisan 15 is a mandatory Sabbath regardless of weekday—this is the Feast of Unleavened Bread.
+Matthew 28:1 does indeed say "after the Sabbaths" (plural: σαββάτων), and this is not a scribal error.
+Mark 16:1 – “When the Sabbath was past, Mary Magdalene, and Mary the mother of James, and Salome, bought spices...”
+→ This refers to buying spices after the first (Thursday) Sabbath, so it must be Friday.
+“Three days and three nights” (Matthew 12:40) cannot be forced into a Friday-to-Sunday window without manipulating Jewish idiom or chronology.
+Luke 23:56 – “They returned and prepared spices and ointments; and rested on the Sabbath according to the commandment.”
+→ This refers to preparing spices on Friday, and then resting on Saturday.
+
+Day	Event
+Here’s the count if Jesus died Wednesday afternoon:
+Buried before sunset Wednesday
+Night 1: Wednesday night
+Day 1: Thursday (High Sabbath)
+Night 2: Thursday night
+Day 2: Friday (spice preparation day)
+Night 3: Friday night, third night in the tomb
+Day 3: Saturday (Weekly Sabbath), third day in the tomb
+Night 4: Jesus resurrected at the sundown of Saturday, that is the beginning of Sunday in Jewish calendar
+Day 4: Sunday (first day of the week) the tomb was found empty
+If resurrection occurred just after sunset on Saturday, it is exactly three days and three nights.
+Leading to Thursday, Friday, and Saturday being the three days and three nights, and the evening of Saturday when the resurrection allegedly occurred is the beginning of Sunday. So this is fully consistent with the numerous references to the resurrection on Sunday.
+
+Why the tomb was found empty Sunday:
+Because the women waited until the Sabbath ended (Saturday evening), then came at dawn Sunday (Matthew 28:1, Luke 24:1). That’s when the resurrection was discovered — not when it happened.
+
+So:
+✔ Three full days and nights: ✅
+✔ Resurrection not seen, only tomb found empty Sunday: ✅
+✔ Fits Jewish counting and Gospel timeline: ✅
+
+Then the crucifixion must have happened on Wednesday, April 21, 31 AD.
+
+Note that for example, the possibly oldest preserved Christian text, the Didache, explicitly states that fast on Wednesday and Friday.
+Friday is likely linked to Sabbath, but Wednesday is a new addition and most logically it would be the day of crucifixion.
+
+Notably the earliest Christian writers outside the gospels and before Tertullian (c. 160–220 AD) that talk about the resurrection are Justin Martyr (c. 100–165 AD) and Barnabas (c. 70–135 AD), both of whom place the resurrection on at the start of Sunday, but do not list the day of crucifixion.
+
+### 17. Jesus survived crucifixion
+
 In this context it is not even inconceivable that the Romans would have allowed Jesus to be picked up from the cross before death. It is highly speculative, but it has a really strong explanation power to it. 
 Perhaps something as trivial as lightnings and thunders could have already made the Roman soldiers and the crowds to superstitiously believe he truly was the son of God and got scared.
 Joseph of Arimathea and Nicodemus did receive an agreement from Pilate to pull him from the cross early, and Jesus could have simply survived the trauma and barely alive.
@@ -148,6 +203,11 @@ Further support to the story is In Mark 15:44, Pilate is described as being surp
 "Pilate was surprised to hear that he was already dead. Summoning the centurion, he asked him if Jesus had already died. When he learned from the centurion that it was so, he gave the body to Joseph."
 This detail suggests that Jesus’ death was unexpectedly quick. Crucifixion was a prolonged form of execution designed to last for hours, if not days, as the condemned person typically died from a combination of blood loss, exposure, and suffocation. For Pilate to be surprised, it could imply that Jesus' death occurred more quickly than usual, which is significant because:
 
+Jesus cries out loudly before dying (Mark 15:37, Luke 23:46):
+Crucifixion victims typically die slowly, often suffocating, with fading strength. 
+A loud cry right before death is unusual and may imply he still had significant strength—suggesting he was not yet at death’s door.
+A burst of strength like this would point more towards a theatrical performance to convince the others the death was real.
+
 Roman soldiers were typically experienced in carrying out executions, and the death on the cross was intended to be slow and torturous.
 The standard time for death was several hours, and for someone to die within less than six hours, as Jesus did, would have been unusual. 
 Pilate's surprise may indicate that Jesus' death was significantly quicker than expected.
@@ -163,8 +223,17 @@ If Jesus were completely dead, the blood would have likely clotted in his body, 
 The fact that both blood and water "flowed out" immediately suggests the body still had some circulatory activity, meaning the heart might not have fully stopped yet.
 Pleural or pericardial effusion does NOT mean the person is already dead—it can happen before death in cases of extreme shock or injury.
 It would be likely more than enough to convince the centurion that Jesus was dead and pass the news to Pilate.
-
-Summarizing, although partially speculative, it may be the best explanation of widespread belief in Jesus resurrection that does not suffer from major logical flaws or inconsistencies.
+Joseph of Arimathea taking Jesus to his own garden, according to the gospel of Peter, to bury him there, is also highly suspect.
+If Jesus were truly dead, it would be strange for Joseph, not his family, to take initiative.
+But if alive, placing him in a personal tomb under control of a sympathizer makes sense.
+The excuse that Jesus had to be buried quickly before the Sabbath in a temporary grave may actually be a plot to hide the fact that Jesus was not dead yet.
+Aloes and myrrh for treatment, not burial (John 19:39):
+75 pounds of myrrh and aloes were brought by Nicodemus.
+That’s far more than needed for burial alone and both have known medicinal properties—especially for healing wounds.
+The quantity hints at treatment, not embalming.
+It is also worth noting that using armed guards to protect the tomb is not a common practice. 
+Armed guards when the person is still alive would make a lot more sense.
+For example some of the opponents of Jesus suspected a foul play and wanted to make sure Jesus was really dead and not taken down from the cross alive.
 
 Many scholars point out that Arimathea is a place that does not exist, and so it is likely a made up name.
 However, Ar-Ram, also known as Ramathaim, today better known as Ramallah or Ram Allah, is an ancient town a few kilometers north of Jerusalem that is more than likely to be that place.
@@ -173,6 +242,61 @@ Notably early versions of Septuagint translated the birthplace as "Αρμαθα�
 It is a natural translation of the name into Greek, and the Septuagint should be considered as a strong evidence that Arimathea is indeed Ramallah.
 It is also notable enough and close enough to Jerusalem that it would have been very logical origin place for a prominent member of the Sanhedrin.
 It is also notable enough to have been mentioned in the gospels as a place elevating the status of Joseph of Arimathea and familiar enough to the people of the story to not be needing any further explanation.
+The doubting found in all the gospels is also highly natural.
+Simply Jesus being tortured and left for near-certain death but then eventually surviving would have still been treated as a miracle.
+Most likely the apostles really did not believe much in miracles and were not expecting Jesus to survive.
+
+Finally, many scholars point out that the victim of crucifixion were always left on the cross to be eaten by scavengers in every known record.
+However, even Philo of Alexandria, featured in many discussions in this book for unrelated reasons, described a case of numerous Jew insurrectionists in Alexandria in 38AD were actually taken down from the cross in exchange for a bribe.
+It is not completely clear from the text, but the more plausible reading is that some of the victims may have been taken down from the cross before they died.
+In this light it should not be considered as implausible that a member of the Sanhedrin would have been able to bargain with the centurion to convince Pilate Jesus already died.
+
+Josephus, Jewish War 4.5.2 (333):
+He says he recognized three of his acquaintances being crucified, asked for their removal, and one of them survived.
+
+Indications do not fully end at the burial, Thomas' request to touch wounds (John 20:27)
+only makes sense if the wounds are fresh and still healing—rather than glorified.
+
+Summarizing, although partially speculative, there is a lot of speculation that matches unexpectedly well on close inspection.
+Addition of so much of this detail 
+We need to consider the possibilities that Jesus really died and then numerous propaganda stories were created with strictly controlled narrative.
+The non-resurrection theory actually does suffer very substantially from the problem of consistent narrative.
+The ungrounded claims would not be corroborated by everyone in the same way.
+There is bound to be more serious discrepancies in the story and more variants of the story.
+To witness the fact, there is famously very serious discrepancy between all the gospels as to how the resurrection was discovered.
+This actually strongly corroborates the idea that a lot of earlier highly consistent narratives were actually independently attested in the gospels, while the discovery of the missing body must have been a deliberate attempt to cover up the actual story.
+
+The other alternative is that there really was empty tomb and misunderstanding. For example, Joseph and Nicodemus really did use a temporary grave and then moved Jesus to a different grave without telling anyone. Then the women came to the grave and found it empty and spread the news to Peter and John and so the story started to spread.
+Then the empty grave was undeniable but everyone doubted the resurrection as they had no certainty that Jesus was resurrected or simply his body was secretly moved.
+
+So here we need to consider the plausibility that Jesus survived because of luck or a conspiracy of Joseph of Arimathea and Nicodemus, and contrast it with the alternative of the event being completely fabricated.
+
+## Was God the Father the God of Moses or the God of Plato?
+
+In modern Christianity it is completely beyond doubt that God the Father is YHWH, the God of Moses, the God of Abraham, Isaac and Jacob.
+
+Not many are aware that this is actuall a surprisingly recent development in Christianity.
+Many believe that the distinction of God the Father from the God of Moses was the heresy of Marcion and one Marcion has been excommunicated, the Church has always believed that God the Father is the God of Moses.
+However, this is not the case. Marcion's theory went further than that, he believed that the God of Moses was an evil god, and that the God of Jesus was a good god.
+This theory was far more radical than the idea that God the Father is not the God of Moses, and that was what was condemned by other thinkers of the early Church.
+
+In the Gospel of John, Jesus is described as the Logos, the Word of God with is very unequivocal reference to the Greek creator deity and not the God of Moses.
+A lot more of the philosophy and theology of Logos has been described by Philo who seems to have had very substantial influence on the New Testament texts.
+Saint Paul refers to the God the Father by “For we are indeed his offspring” which was one of the most common phrases related to Zeus.
+Just a moment later he uses the common greek thought “The God who made the world and everything in it… does not live in temples… we should not think the divine being is like gold or silver… In him we live and move and have our being.”
+
+Perhaps the most common perspective was expressed by Clement of Alexandria “God is one and the same, the universal Father, being known under many names.”
+
+An epitaph from the 5th century AD, written by deeply Christian family, reads:
+“Weak at birth with defence of crosses walled,
+Guiltless of any dark stain of sin,
+Little Theodosius, who with pure mind parents
+Chose to dip in the sacred baptismal font
+Cruel death seized. May the ruler of Olympus’ height
+Give rest to these members with the noble sign
+Of the cross marked, proclaiming an heir of Christ.”
+
+Then we obviously have the images of God
 
 ## Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven
 

@@ -1,14 +1,14 @@
 # Chapter 5 - Purple Phoenix Raises
 
-Another unassailable but blatantly wrong assumption of modern scholarship is that all early christian literature was written in Greek because Greek was the lingua franca of the Roman empire.
+A common unassailable but certainly wrong assumption of modern scholarship is that all early christian literature was written in Greek because Greek was the lingua franca of the Roman empire.
 
 According to this claim we would expect Julius Caesar, the People and the Senate of Rome, Virgil, Seneca to all be fluent and write and speak extensively in Greek.
 
 In fact, it is correct Greek was the administrative language of nearly the oll of the former Greek empire which later became known as the Eastern Roman Empire.
 
-Notably all of the Christian writers Clement of Rome, Ignatius of Antioch, Polycarp, Justin Martyr, Irenaeus, Origen also wrote in Greek.
+Notably nearly all Christian writers including Clement of Rome, Ignatius of Antioch, Polycarp, Justin Martyr, Irenaeus, Origen wrote in Greek.
 
-The first non-greek church father is Tertullian close to the end of second century.
+The first non-greek church father is Tertulian close to the end of second century.
 
 In this chapter we want to highlight that Christianity was Greek-only religion, while there were many mentions of Jesus in non-greek sources, and very notably, religious sources about written in coptic, were not considered the same religion as Christianity.
 
@@ -16,7 +16,7 @@ In this chapter we look at the writings of the church fathers from the prism of 
 
 #### 0. Alexandria Egypt suffered enormous hardship and persecution during the Roman Empire.
 
-The 200 year struggle of the Rome to conquer all of the Greek world ended in enormous tax burden of the newly conquered territories.
+The 200-year struggle of the Rome to conquer all the Greek world ended in enormous tax burden of the newly conquered territories.
 Almost all tax revenue of the Roman Empire at the time of Jesus and shortly after was coming from the newly conquered territories of the Greeks and nearly half of it came from Egypt.
 It is often misunderstood that Egypt was simply so wealthy and more developed than the rest of the world that it could account for such a large share of the tax revenue.
 Egypt was indeed the richest, but by no means by such a large margin.
@@ -35,7 +35,7 @@ Universally the phoenix has been assumed to be a symbol of the resurrection of J
 The creation of the Eastern Roman Empire as a kingdom of God ruled by the Christ by a Christian army of Christian emperor Constantine was a very important event in the history of the world.
 At that point the symbol of the soldiers was not a cross. The symbol of the soldiers was the Chi-Rho symbol, which was a symbol of the Christos.
 Note the shields only signified the Christos on them and not Jesus directly, which may have been a designation that we are the soldiers of the Christ, rightful king of the kingdom of God, and the battles for the restoration of the kingdom of the Christos.
-If the war was thought for religious reasons primarily, there would have likely been a lot more emphasis on the cross and mass conversions to Christianity and we do not that being strongly emphasized in the historical records of this particular war.
+If the war was thought for religious reasons primarily, there would have likely been a lot more emphasis on the cross and mass conversions to Christianity, and we do not that being strongly emphasized in the historical records of this particular war.
 We do however see the large emphasis on political changes and restoring the rule in the East.
 
 #### 2. Rome converting to Christianity matched in time with Rome splitting into two empires, the Western Roman Empire and the Eastern Roman Empire.
@@ -62,7 +62,7 @@ In his work Ecclesiastical History and Life of Constantine, Eusebius explicitly 
 In his writings, particularly in his defense against Arianism and his theological works, Athanasius talks about the cosmic victory of Christ over evil, which has implications for the empire's restoration. He often frames the Christian emperor as the rightful ruler under divine guidance, which could be seen as linking the restoration of the empire to Christ’s victory.
 
 #### 10. Victorinus of Pettau (c. 250–303 AD)
-In his Commentary on the Apocalypse, Victorinus draws connections between the Roman Empire and the eventual triumph of Christianity. Like many of his contemporaries, he believes that the empire is part of God's plan and that its ultimate transformation into a Christian empire would bring about the fulfillment of prophecy. This can be seen as a form of "restoration" through the Christianization of the empire.
+In his Commentary on the Apocalypse, Victorinus draws connections between the Roman Empire and the eventual triumph of Christianity. Like many of his contemporaries, he believes that the empire is part of God's plan and that its ultimate transformation into a Christian empire would bring about the fulfillment of prophecy. This can be seen as a form of "restoration" through the christianization of the empire.
 
 #### 11. The revolt is not militaristic Rome chose to spiritually convert to Christianity, and the Eastern Roman Empire was restored peacefully while the Christian writers started to praise rome.
 
