@@ -203,6 +203,11 @@ Further support to the story is In Mark 15:44, Pilate is described as being surp
 "Pilate was surprised to hear that he was already dead. Summoning the centurion, he asked him if Jesus had already died. When he learned from the centurion that it was so, he gave the body to Joseph."
 This detail suggests that Jesus’ death was unexpectedly quick. Crucifixion was a prolonged form of execution designed to last for hours, if not days, as the condemned person typically died from a combination of blood loss, exposure, and suffocation. For Pilate to be surprised, it could imply that Jesus' death occurred more quickly than usual, which is significant because:
 
+Jesus cries out loudly before dying (Mark 15:37, Luke 23:46):
+Crucifixion victims typically die slowly, often suffocating, with fading strength. 
+A loud cry right before death is unusual and may imply he still had significant strength—suggesting he was not yet at death’s door.
+A burst of strength like this would point more towards a theatrical performance to convince the others the death was real.
+
 Roman soldiers were typically experienced in carrying out executions, and the death on the cross was intended to be slow and torturous.
 The standard time for death was several hours, and for someone to die within less than six hours, as Jesus did, would have been unusual. 
 Pilate's surprise may indicate that Jesus' death was significantly quicker than expected.
@@ -218,8 +223,14 @@ If Jesus were completely dead, the blood would have likely clotted in his body, 
 The fact that both blood and water "flowed out" immediately suggests the body still had some circulatory activity, meaning the heart might not have fully stopped yet.
 Pleural or pericardial effusion does NOT mean the person is already dead—it can happen before death in cases of extreme shock or injury.
 It would be likely more than enough to convince the centurion that Jesus was dead and pass the news to Pilate.
-Joseph of Arimathea taking Jesus to his own garden to bury him there, is also highly suspect.
+Joseph of Arimathea taking Jesus to his own garden, according to the gospel of Peter, to bury him there, is also highly suspect.
+If Jesus were truly dead, it would be strange for Joseph, not his family, to take initiative.
+But if alive, placing him in a personal tomb under control of a sympathizer makes sense.
 The excuse that Jesus had to be buried quickly before the Sabbath in a temporary grave may actually be a plot to hide the fact that Jesus was not dead yet.
+Aloes and myrrh for treatment, not burial (John 19:39):
+75 pounds of myrrh and aloes were brought by Nicodemus.
+That’s far more than needed for burial alone and both have known medicinal properties—especially for healing wounds.
+The quantity hints at treatment, not embalming.
 It is also worth noting that using armed guards to protect the tomb is not a common practice. 
 Armed guards when the person is still alive would make a lot more sense.
 For example some of the opponents of Jesus suspected a foul play and wanted to make sure Jesus was really dead and not taken down from the cross alive.
@@ -243,17 +254,49 @@ In this light it should not be considered as implausible that a member of the Sa
 Josephus, Jewish War 4.5.2 (333):
 He says he recognized three of his acquaintances being crucified, asked for their removal, and one of them survived.
 
+Indications do not fully end at the burial, Thomas' request to touch wounds (John 20:27)
+only makes sense if the wounds are fresh and still healing—rather than glorified.
+
 Summarizing, although partially speculative, there is a lot of speculation that matches unexpectedly well on close inspection.
+Addition of so much of this detail 
 We need to consider the possibilities that Jesus really died and then numerous propaganda stories were created with strictly controlled narrative.
 The non-resurrection theory actually does suffer very substantially from the problem of consistent narrative.
 The ungrounded claims would not be corroborated by everyone in the same way.
 There is bound to be more serious discrepancies in the story and more variants of the story.
+To witness the fact, there is famously very serious discrepancy between all the gospels as to how the resurrection was discovered.
+This actually strongly corroborates the idea that a lot of earlier highly consistent narratives were actually independently attested in the gospels, while the discovery of the missing body must have been a deliberate attempt to cover up the actual story.
 
 The other alternative is that there really was empty tomb and misunderstanding. For example, Joseph and Nicodemus really did use a temporary grave and then moved Jesus to a different grave without telling anyone. Then the women came to the grave and found it empty and spread the news to Peter and John and so the story started to spread.
 Then the empty grave was undeniable but everyone doubted the resurrection as they had no certainty that Jesus was resurrected or simply his body was secretly moved.
 
 So here we need to consider the plausibility that Jesus survived because of luck or a conspiracy of Joseph of Arimathea and Nicodemus, and contrast it with the alternative of the event being completely fabricated.
 
+## Was God the Father the God of Moses or the God of Plato?
+
+In modern Christianity it is completely beyond doubt that God the Father is YHWH, the God of Moses, the God of Abraham, Isaac and Jacob.
+
+Not many are aware that this is actuall a surprisingly recent development in Christianity.
+Many believe that the distinction of God the Father from the God of Moses was the heresy of Marcion and one Marcion has been excommunicated, the Church has always believed that God the Father is the God of Moses.
+However, this is not the case. Marcion's theory went further than that, he believed that the God of Moses was an evil god, and that the God of Jesus was a good god.
+This theory was far more radical than the idea that God the Father is not the God of Moses, and that was what was condemned by other thinkers of the early Church.
+
+In the Gospel of John, Jesus is described as the Logos, the Word of God with is very unequivocal reference to the Greek creator deity and not the God of Moses.
+A lot more of the philosophy and theology of Logos has been described by Philo who seems to have had very substantial influence on the New Testament texts.
+Saint Paul refers to the God the Father by “For we are indeed his offspring” which was one of the most common phrases related to Zeus.
+Just a moment later he uses the common greek thought “The God who made the world and everything in it… does not live in temples… we should not think the divine being is like gold or silver… In him we live and move and have our being.”
+
+Perhaps the most common perspective was expressed by Clement of Alexandria “God is one and the same, the universal Father, being known under many names.”
+
+An epitaph from the 5th century AD, written by deeply Christian family, reads:
+“Weak at birth with defence of crosses walled,
+Guiltless of any dark stain of sin,
+Little Theodosius, who with pure mind parents
+Chose to dip in the sacred baptismal font
+Cruel death seized. May the ruler of Olympus’ height
+Give rest to these members with the noble sign
+Of the cross marked, proclaiming an heir of Christ.”
+
+Then we obviously have the images of God
 
 ## Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven
 

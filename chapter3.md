@@ -26,10 +26,10 @@ Many scholars link Joanna to the court of Herod, and she was the wife of Chuza, 
 She is also frequently linked to Junia. As the name Junia is not mentioned in the gospels, yet Paul considers her to be the foremost among all the apostles, the connection to the Jesus's beloved disciple and a biographer of his life seems very plausible.
 Finally, this would also explain the authorship of the gospel as John not disputed by the early church fathers, as the author would be a disciple of Jesus, Joanna.
 
-#### 4. When the authors of the apocryphal gospel of Mary or other early texts try to argue who the beloved disciple is, they argue that it is Mary Magdalene rather then Peter.
+#### 4. When the authors of the apocryphal gospel of Mary or other early texts try to argue who the beloved disciple is, they argue that it is Mary Magdalene rather than Peter.
 No source says it was Mary Magdalene over John, which is what the sources would say the the prevalent view was that John was the most beloved one.
 
-#### 5. Finally a woman writer would have been very likely to describe themselves based on the feelings towards towards others, not many male authors write like this.
+#### 5. Finally, a woman writer would have been very likely to describe themselves based on the feelings towards others, not many male authors write like this.
 She says Jesus loved Lazarus, not in a romantic way, but in a way a female writer would describe close friendship. Jesus is weeping, which is a thing a female would write about Jesus, not a true man.
 
 #### 6. Jesus interactions towards Nicodemus are also very feminine, close and personal, Jesus is talking about being born again.
@@ -47,7 +47,7 @@ It is far more likely though women would have been allowed to stay and not prose
 
 #### 9. Mary Magdalene (John 20:11-18) – A Moment of Pure Devotion
 Mary is weeping alone at the empty tomb, showing deep grief.
-Jesus appears but she doesn’t recognize him at first, thinking he’s the gardener.
+Jesus appears, but she doesn’t recognize him at first, thinking he’s the gardener.
 The moment becomes deeply personal when Jesus simply says her name, "Mary", and she immediately recognizes him.
 She calls him ῥαββωνί (Teacher), showing a deeply personal bond.
 He then entrusts her with the first announcement of the Resurrection, making her the first witness of Easter.
@@ -80,7 +80,7 @@ Whereas the gospel of John seems to be an original text, Luke is very clearly a 
 Mary Magdalene, Joanna, and Susanna are specifically named as financial supporters.
 Joanna was connected to Herod’s court, meaning she had access to wealth and influence.
 The phrase “out of their own means” implies they personally funded Jesus’ ministry.
-Note, much like Sepphoris, Migdala is also within the some township as Nazareth.
+Note, much like Sepphoris, Migdala is also within the same township as Nazareth.
 If Mary Magdalene was also highly positioned in the Herod's court, then it would make sense that she would have been a skilled writer, yet perhaps not as skilled as the most prominent classics.
 This explains the very deep knowledge of royal greek cult, while still maintaining some lack of literary sophistication.
 
@@ -99,22 +99,22 @@ Though she was initially marginalized, she held an important role in early Chris
 The Gospel of Mary, a non-canonical text, suggests that Mary Magdalene had an influential role, potentially even as a leader among the disciples.
 Furthermore, early Christian communities were not as rigid in terms of gender roles as sometimes portrayed, and there is evidence that women held significant positions in the early church (e.g., Priscilla, Phoebe, Thecla).
 
-#### 15. The Gospel of John emphasizes the Jesus was the only begotten son of God.
-Unique Relationship with God: Jesus is depicted as having a unique and intimate relationship with God the Father, one that is unlike any other. In John 1:14, 18, and 3:16, Jesus is referred to as the “only begotten Son” (Greek: μονογενής, monogenēs).
+#### 15. The Gospel of John emphasizes the Jesus was the only-begotten son of God.
+Unique Relationship with God: Jesus is depicted as having a unique and intimate relationship with God the Father, one that is unlike any other. In John 1:14, 18, and 3:16, Jesus is referred to as the “only-begotten Son” (Greek: μονογενής, monogenēs).
 This term emphasizes the uniqueness of Jesus as the Son, as no other figure shares this same divine sonship.
 
 #### 16. Here there is a very interesting perspective linking the gnostic gospel of Thomas with John:
-"Jesus said, 'If they say to you, ‘Where did you come from?’ say to them, ‘We came from the light, the place where the light came into being by itself, established itself and became manifest through their image.’ If they say to you, ‘Who are you?’ say, ‘We are its children, and we are the elect of the living Father.’’"
+"Jesus said, 'If they say to you, `Where did you come from?` say to them, `We came from the light, the place where the light came into being by itself, established itself and became manifest through their image.`If they say to you, `Who are you?` say, `We are its children, and we are the elect of the living Father.`'"
 There are a few places where Thomas seems to indicate "we" are all children of God.
 The uniqueness of the sonship seems to be very heavily emphasized in John to the point where it almost seems to become the core concept of the gospel.
 Interestingly simultaneously John is making Thomas into the non-conformist and disbeliever.
 ch 11. All the disciples are afraid to go to Jerusalem, but Thomas says, "Let us also go, that we may die with him."
-ch 14. Jesus mentioning he will go to his father. Thomas doubts. Then Jesus says, "I am the way, the truth, and the life. No one comes to the Father except through me." You can only come to the father through the only begotten son.
+ch 14. Jesus mentioning he will go to his father. Thomas doubts. Then Jesus says, "I am the way, the truth, and the life. No one comes to the Father except through me." You can only come to the father through the only-begotten son.
 ch 20. Thomas recognizes. You are my Lord and my God.
 This shows Thomas despite being Jesus brother or twin, likely holding a meaningful claim himself, John may try to emphasize Thomas could have contested Jesus at first, but then recognized him as the only rightful heir.
 
 14 John 12:31 (NIV):
-Now is the time for judgment on this world; now the prince (archon) of this world will be driven out."
+"Now is the time for judgment on this world; now the prince (archon) of this world will be driven out."
 In this verse, "archon" refers to Rome or the prince of this world.
 It signifies authority and power over the world, but it's used in a negative sense to describe the ruler of evil.
 
@@ -123,7 +123,7 @@ This argument is usually applied to the synoptic gospels, but needs a bit of a d
 One note though that in case of John "Destroy this temple, and I will raise it again in three days."
 Unlike in Olivet discourse, the identity  and the prophecy of the destruction of the particular temple in Jerusalem in 70AD is much more questionable.
 And that if we do not overemphasize the Mosaic beliefs of the gospel of John, then the temple could be one of the many many many other temples destroyed, not necessarily the main temple in Jerusalem.
-Note that the temple in Jerusalem was already destroyed by the Babylonians and then rebuilt and already sieged by romans in 63BC.
+Note that the temple in Jerusalem was already destroyed by the Babylonians and then rebuilt and already besieged by romans in 63BC.
  It must not have been a very big stretch it could be destroyed again.
 Note that Sepphoris was also destroyed by the Roman army during the life of Jesus, and Jesus was heavily involved in the reconstruction of Sepphoris.
 
@@ -132,12 +132,12 @@ True—there were multiple female rulers in both the Ptolemaic dynasty and the H
 This definitely weakens the argument that a woman couldn't have written John just because of gender. If elite women in those circles had power, wealth, and influence, then a female gospel author (like Mary Magdalene or another court-connected woman) wouldn’t be impossible.
 In John 11:27, Martha says:
 "ναί, κύριε· ἐγὼ πεπίστευκα ὅτι σὺ εἶ ὁ Χριστὸς ὁ υἱὸς τοῦ θεοῦ ὁ εἰς τὸν κόσμον ἐρχόμενος."
-She uses "Χριστός" (Christos), not "Μεσσίας" (Messias).
+She uses "Χριστός" (Christos), not "Μεσσίας" (Messiah).
 This is significant because John does use "Μεσσίας" in other places (John 1:41 and John 4:25), but here, Martha is speaking in Greek terminology. This aligns with John’s overall Greek imperial framework, rather than a purely Jewish messianic expectation.
 
-John never uses Μεσσίας (Messias) alone—he immediately translates it as Χριστός, meaning his audience wouldn't naturally recognize "Messiah" as a meaningful title.
-John 1:41 – "He first finds his own brother Simon and says to him, ‘We have found the Messias’ (which is translated Christos)." (εὑρήκαμεν τὸν Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον Χριστός).
-John 4:25 – "The woman said to him, ‘I know that Messias is coming’ (who is called Christos)." (Οἶδα ὅτι Μεσσίας ἔρχεται, ὁ λεγόμενος Χριστός).
+John never uses Μεσσίας (Messiah) alone—he immediately translates it as Χριστός, meaning his audience wouldn't naturally recognize "Messiah" as a meaningful title.
+John 1:41 – "He first finds his own brother Simon and says to him, ‘We have found the Messiah’ (which is translated Christos)." (εὑρήκαμεν τὸν Μεσσίαν, ὅ ἐστιν μεθερμηνευόμενον Χριστός).
+John 4:25 – "The woman said to him, ‘I know that Messiah is coming’ (who is called Christos)." (Οἶδα ὅτι Μεσσίας ἔρχεται, ὁ λεγόμενος Χριστός).
 Both times, it appears in direct speech, meaning these are Jewish characters (Andrew and the Samaritan woman) using a Jewish term, not the narrator or author.
 This is the case where the greeks tried to convince the Jews to accept Jesus as their rightful ruler as well to additionally bolster his claim and gather more support.
 
@@ -155,7 +155,7 @@ So, when she calls him "Lord" or when Thomas says "My Lord and my God" in John, 
 Grief can do powerful things to the mind.
 Faced with such a loss, she might have experienced visions, dreams, or an overwhelming sense that he couldn’t really be gone.
 The idea that he had risen wouldn’t have started as a theological claim—it would have been a desperate, emotional response to the unbearable pain of losing him.
-In that moment, she wasn’t just an eyewitness; she was the one who couldn’t let go.
+At that moment, she wasn’t just an eyewitness; she was the one who couldn’t let go.
 
 #### 21. The resurrection story in John isn’t just a theological claim—it’s a deeply personal, emotional experience that reflects the profound impact Jesus had on her life.
 This explains why the resurrection account in John is so intimate and personal, focusing on Mary’s grief, confusion, and joy.
@@ -180,13 +180,35 @@ Portraying Jesus as naked meeting a woman would be a very fit conclusion for a f
 Given all the other tropes of female writing, it is something very surprising at first. One explanation of this is that Philo of Alexandria, from whom the author of John seems to have borrowed a lot of ideas, also actively avoided describing the physical appearance of anyone in his works.
 It is possible that Philo conveyed this unusual to us idea to the author of John, and the author of John tried to follow the best practices of their teacher.
 
+#### 24. John leaves out the institution of the Eucharist.
+
+The Last Supper is a key moment in the synoptic gospels, where Jesus breaks bread and shares wine with his disciples, establishing the Eucharist.
+In John, this moment is replaced with the foot-washing scene (John 13:1-17), which emphasizes servanthood and humility rather than the sacramental act of communion.
+
+In the context of Jesus being an observer of Greek religious traditions, the Eucharist would have been already a set tradition.
+Unlike in Greek feasts, a Jewish passover meal would have been centered around the lamb, and bread and wine rituals would not have been the center of the meal.
+Most notably the widespread around that time, Dionysian feasts would have been centered around the wine and bread rituals.
+While drinking metaphorical blood and body of Dionysus would have been a widespread practice,
+the drinking of the blood and body in a Jewish banquet would have been considered a major blasphemy.
+
+Even if we discount synoptic gospels and the letter to Corinthians, 
+the Didache, a very early Christian text, also mentions the Eucharist as a well-established tradition.
+
+If the Eucharist was a well-established tradition, and already a centerpiece of the Christian faith by the late first century, then how can one possibly explain it just slipped John's mind?
+
+Also noteworthy, John describes Jesus talking about flesh and blood in the context of logos, so a modernized version of the Greco-Roman feast.
+This is exactly a modern perspective Philo would have embraced, and it is very likely that the author of John was trying to convey the same message.
+
+To note, Justin Martyr and Tertullian both accuse followers of Mythras of copying the Eucharist from the Christians.
+This only gives a string indication that the ritual was already prevalent in the pre-Jesus Greek world.
+
 ### The Message
 
 Finally, the traditional view of John being a man. We have to keep in mind that most scholars agree the very early Christian communities had very strong influence from women.
 Figures like Mary Magdalene, Tecla, Priscilla were all at the forefront of the early church. However, when the gospels were brought to the Roman writers, text had to be interpolated to the modern audience.
 Women leaders were erased from history, Mary Magdalene made into a prostitute, and Saint Paul 50 years after his death stared to tell all good Christian women to be silent and let their husbands do the talking.
 In that context do we really have any doubt a gospel written by a Joanna or Mary Magdalene would have been attributed to a John?
-There is always a concern that John the beloved disciple is not mentioned in the synoptic gospels, but maybe they the beloved disciple is actually one of the women mentioned in the synoptic gospels.
+There is always a concern that John the beloved disciple is not mentioned in the synoptic gospels, but maybe the beloved disciple is actually one of the women mentioned in the synoptic gospels.
 
 Keep in mind that there were many Eastern Roman empresses such as Theodora, Aelia Eudocia, and Zoe Porphyrogenita. The most famous scholar of the Byzantine empire, Hypatia was a woman, one possibly the only meaningful innovator astronomical and navigation tools for many centuries.
 
@@ -195,7 +217,7 @@ Whereas in the Latin culture the most prominent women had power only by the virt
 ### Miracles in John
 There are seven miracles in John, which are often called the "signs" because they point to Jesus’ identity and mission.
 It is very worth pointing out that the miracles are not just random show of magic, but all are conveying the royal authority of Jesus.
-Also the miracles may not be completely a metaphor. Jesus as a ruler very well learned could have been a skilled healer, or perceived as a skilled healer with the power of confirmation bias.
+Also, the miracles may not be completely a metaphor. Jesus as a ruler very well learned could have been a skilled healer, or perceived as a skilled healer with the power of confirmation bias.
 Notably it is not hard to believe that if Jesus visited a sick person and the person got better from just a placebo effect, then the person writing his royal biography would have been very keen to write about it.
 Similarly, if Jesus had the resources to provide food for the hungry, and he showed the high generosity of a ruler, then the person writing his royal biography would have been very keen to write about it.
 
@@ -239,7 +261,7 @@ In the rest of the Gospel, Mark tends to favor more direct and accessible expres
 The “abomination of desolation” is a very specific, technical term that feels more aligned with prophetic, liturgical, or later theological writing.
 This suggests it could be an editorial addition, introduced to reflect later theological concerns (like the destruction of the Temple in 70 CE) or to align the passage with more familiar Old Testament imagery.
 
-#### 4. But in those days, after that tribulation...” (Mark 13:24)
+#### 4. "But in those days, after that tribulation..." (Mark 13:24)
 The phrase “after that tribulation” introduces a more formal, structured apocalyptic expression that contrasts with the more immediate and direct tone of earlier sections in Mark.
 Mark’s Gospel typically uses simple, conversational language, but this phrase carries a more stylized apocalyptic tone, characteristic of later prophetic writings.
 It introduces a period of cosmic upheaval, which is a prominent feature of later apocalyptic literature (including the Book of Revelation and some Jewish apocalyptic texts), but less common in the earlier parts of the Gospel.
@@ -278,14 +300,14 @@ The baptism of Jesus is a very important event in the gospels, as it is the even
 Courtly scribes often start at the beginning of the reign of the king, and the baptism of Jesus is likely the event that would have been considered the beginning of his reign.
 Traditional scholarship does not provide a good explanation for why the story of Jesus would start with the baptism by John the Baptist, but in the context of Jesus being the rightful heir to the greek empire, it makes perfect sense.
 The story of baptism is also portrayed as a very public event, which would have been a very important event for the people to know about.
-In all four Gospels, during Jesus' baptism, a voice from heaven declares: "This is my Son, whom I love; with him I am well pleased" (Matthew 3:17, Mark 1:11, Luke 3:22, John 1:34).
+In all four Gospels, during Jesus' baptism, a voice from heaven declares: "This is my Son, whom I love; with him, I am well pleased" (Matthew 3:17, Mark 1:11, Luke 3:22, John 1:34).
 This is significant because, in ancient Jewish and Hellenistic traditions, the declaration of someone as a "son of God" often had royal connotations, signifying divine legitimacy or appointment to a kingship.
 The title "Son of God" was used for kings in the Hebrew scriptures (e.g., 2 Samuel 7:14) and in Hellenistic traditions for emperors and rulers.
 
 In the context of ancient Jewish and Hellenistic practices, the act of baptism, particularly with water, was used in various rites of initiation or purification.
 However, in the case of Jesus, the combination of the heavenly voice, the dove, and the symbolic actions surrounding the baptism could be seen as a formal coronation—especially given the royal language and imagery associated with it.
 
-Finally a well known earlier variant of the the baptism quote is "Today I have begotten you" (Psalm 2:7),
+Finally, a well known earlier variant of the baptism quote is "Today I have begotten you" (Psalm 2:7),
 This phrase (Psalm 2:7), as used in the Gospel of the Hebrews during the baptism narrative, is not just about divine sonship. It is a Davidic enthronement formula.
 Psalm 2 is a royal psalm, spoken by God to the newly installed king of Israel (originally for Davidic kings).
 In Second Temple Judaism, it was widely understood as Messianic, referring to the anointed one (Christos) who would rule the nations.
@@ -314,13 +336,13 @@ The Psalms contain numerous references to the king being God's anointed (e.g., P
 The Dove as a Divine Symbol: In Greek and Hellenistic cultures, the dove was often associated with various divine manifestations, particularly linked to gods like Zeus and Apollo. A dove descending from heaven was a common symbol of divine approval or empowerment, as in the case of Zeus transforming into a dove in some myths. In Hellenistic royal ideology, the idea of divine signs, such as a dove appearing at the moment of a king's or leader's coronation, was not unusual.
 Dove and the "Anointing" of Rulers: Greek rulers and Roman emperors were often seen as divinely chosen, and symbols of divine approval—such as a dove—would serve to emphasize this idea. The use of a dove in the baptism of Jesus could be interpreted as a sign that Jesus is divinely anointed for kingship, in line with how Hellenistic rulers were often anointed by the gods.
 
-####  14. The gospel of Matthew is includes the details of the birth of Jesus with the visit of the Magi.
-The visit of the Magi has been universally accepted as as allegory but as mentioned in the previous chapter, the titles of the Magi are exceedingly hard to fabricate by even the most knowledgeable of scholars in the Roman empire that were not greek empire loyalists.
+####  14. The gospel of Matthew includes the details of the birth of Jesus with the visit of the Magi.
+The visit of the Magi has been universally accepted as an allegory but as mentioned in the previous chapter, the titles of the Magi are exceedingly hard to fabricate by even the most knowledgeable of scholars in the Roman empire that were not greek empire loyalists.
 The Herod's massacre of the innocents is also universally accepted as allegory, but as outlined in the Jesus Dynasty, the massacre of the innocents likely refers to Herod's killing of multiple of his own children and their families.
 In the context that Joseph was likely too of the Hasmonean family, giving birth in the city of the Hasmonean dynasty, Bethlehem, is again a lot more likely to be a real event than an allegory.
-Similarly the flight to Egypt is likely a real event as a noble family would have had more than enough resources to flee to and be welcomed in Egypt for a few years.
+Similarly, the flight to Egypt is likely a real event as a noble family would have had more than enough resources to flee to and be welcomed in Egypt for a few years.
 
-#### 15. Finally the gospel of Matthew includes the great commission, which is likely an edit to the original gospel of Mark.
+#### 15. Finally, the gospel of Matthew includes the great commission, which is likely an edit to the original gospel of Mark.
 πορευθέντες οὖν μαθητεύσατε πάντα τὰ ἔθνη
 Make disciples of all nations – Spread the teachings of Jesus to people all over the world. Here the word "nations" is a translation of the Greek word "ethne," which can also be translated as "Gentiles" or "non
 Baptize them in the name of the Father, the Son, and the Holy Spirit – Initiate them into the faith through baptism.
@@ -332,7 +354,7 @@ The great commission is essentially what the emissaries of the greek empire woul
 In the context of the greek empire, the term would have been used to refer to all the greek people across the empire, all the nations, kingdoms or tribes that were part of the greek empire.
 
 #### 17. The gospel of Matthew also includes the genealogy of Jesus, which is widely accepted as not-genuine or lost to history.
-However, with the acceptance of the theory that Jesus was the grandson of Herod the Great, the genealogy of Jesus through Joseph as his adopted father would requires a more thorough examination.
+However, with the acceptance of the theory that Jesus was the grandson of Herod the Great, the genealogy of Jesus through Joseph as his adopted father would require a more thorough examination.
 One notable figure from this lineage are Zerubbabel, who was a governor of the Persian province of Yehud, or Judea, and can be dated to around 520BC.
 Making best guess estimates to the years of the other figures in the genealogy, the Eleazar fits very well with son Eleazar of Onias I, who was the high priest of the temple in Jerusalem.
 From these we can fairly obviously link Matthan to Mattathias Hasmonean, Father of Judas Maccabee, leader of Maccabean Revolt.
@@ -360,7 +382,7 @@ There were more figures between Mattathias and Jesus, but the genealogy is by de
 
 Again, gospels are starting with baptism of Jesus, state Jesus's lineage and show Jesus teaching with parables, and perform miracles and forgave sin.
 This is precisely what you expect from royal chronicles of the time.
-Start add the lineage of the king, describe coronation, describe the reign when the rules shows wisdom and power control over nature and human fate.
+Start add the lineage of the king, describe coronation, describe the reign when the rules show wisdom and power control over nature and human fate.
 Then later version may add omens and prophecies of the king's birth, and the death. There is absolutely nothing special about gospels here.
 
 #### 18. Possibly the most prominent element of the gospel of Matthew is the reference to the Jewish scriptures and the fulfillment of the prophecies at seemingly every turn.
@@ -377,7 +399,7 @@ If we accept that the gospel of Luke was written as a correspondence with the au
 Even though the gospel of Marcion is dated to the 2nd century, the gospel is also remarkably missing the pre-cognition of the destruction of the temple.
 Much of modern textual analysis places the gospel not as an edited version of the gospel of Luke, but as an earlier version of the gospel of Luke, due to the simpler language and the lack of the birth narrative of Jesus.
 
-#### 21. The gospel of Luke is describes how Jesus engaged with temple leaders and the Jewish elite when he was a child.
+#### 21. The gospel of Luke describes how Jesus engaged with temple leaders and the Jewish elite when he was a child.
 We are told Joseph and Mary settled in Galilee, but they traveled to Jerusalem for the Passover festival every year.
 This is consistent with Mary being a member of the Hasmonean dynasty, as the Hasmoneans were known to have a strong connection to the temple in Jerusalem.
 This theory fully explains how Jesus would realistically be able to engage with the temple leaders and the Jewish elite at such a young age.

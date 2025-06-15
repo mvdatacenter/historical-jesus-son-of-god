@@ -76,9 +76,12 @@ Other than birth, Luke would have to be wrong about Jesus age at the time of bap
 Adding to this, in this book we have a further discrepancy of Caspar, Melchior, and Balthazar journey in 7BC would make no sense as the Greek throne was still held by Strato III and this kingdom was not at the brink of collapse just yet.
 
 It is very overstated what we really know historically about this date. We know the Quirinius was governor of Syria from 6AD to 12AD.
+It is worth emphasizing that Quirinius being a governor of Syria does not imply Judea was annexed the second day he came to power.
+It does not violate any historical records to assume Judea was annexed just before he left the office in 12AD.
 We know the census happened during his governorship, but we do not know when exactly.
-All we know from Josephus is that the census occurred shortly after the death of Herod the Great.
+Josephus does not claim the census occurred after the death of Herod the Great.
 We know Josephus placed the death of Herod the Great at the lunar eclipse just before the Passover.
+Note that he specifically emphasized he died after a long illness, which is consistent with the fact he may have spent a few years with the power shifted to his son Archelaus.
 
 And here already comes a substantial mainstream scholarship error.
 The passage from Josephus that is used to date the death of Herod the Great states
@@ -102,6 +105,26 @@ There was enough time to spend some time in Jerusalem in the first 2 years of Je
 The magi could have come to visit him in 8AD when he was a very young child, right at the time of the fall of Greco-Indian kingdom.
 Herod would have the time to order the slaughter of the innocents in 8AD, and Jesus could have fled to Egypt staying there for the next 4 years.
 And then settling in Nazareth once Herod Antipas took over the throne of Judea.
+
+With this new dating, there come some apparent contradictions with the records.
+Most notably the traditional dating of the reign of Herod Archelaus, who was the son of Herod the Great and was the ruler of Judea from 4BC to 6AD.
+Do note that Herod the Great was a tetrarch of Judea and not a king, and the title subsumed 
+Judea proper
+Galilee
+Perea
+Idumea
+Samaria
+And other parts adjacent to Nabataea and the Decapolis.
+
+At that time Archelaus was given the title of ethnarch, which was only a king of the Jews. Josephus also quite clearly states that Archelaus ruled while Herod the Great was still alive.
+
+Heir	Territory	Title
+Archelaus	Judea, Samaria, Idumea	Ethnarch (not King)
+Herod Antipas	Galilee, Perea	Tetrarch
+Philip	Gaulanitis, Batanea, Trachonitis, Iturea	Tetrarch
+
+It is also important to highlight the tenures of the Roman governors of Judea is also actually tied to the reign of Herod Archelaus and the know dates are not attested from other sources.
+So if the reign of Herod Archelaus ended in 12AD, there is still plenty of time to plausibly fit Coponius, Ambivulus, Annius Rufus  and Valerius Gratus, the predecessors of Pontius Pilate, into the timeline.
 
 #### 8. As Jesus grew up, he was heavily involved in the reconstruction of Nazareth and the surrounding areas which was destroyed by the Roman army.
 Hence, the gospels call him tecton, which was misleadingly later translated as carpenter.

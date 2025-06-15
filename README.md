@@ -1,22 +1,32 @@
 # Historical Jesus as the Son of God: Glory to the Newborn King
 
-The following book presents a perspective on the historical Jesus Christ as the Son of God.
-It is a unique attempt to portray Jesus as Christ and the gospels as a reliable historical source following the true historical method without any bias or prejudice.
-When we talk about historical method the main goal is to determine what probably happened and that automatically excludes any supernatural explanations.
-As such the book is not a theological treatise but a historical one, and we do not intend to alter the beliefs of the reader.
-We think both the believer and the non-believer can truly benefit from the very unique perspective presented in this book.
-When we discuss the topic of historical Jesus we attempt to gather a large amount of historical data and have a deep understanding of the historical and geographical context of the events preceding and following the life of Jesus and the rise of Christianity.
-With the historical data we also attempt to gather a large amount of scholarly discourse on the topic and select the set of interesting questions about the material.
-There questions include many of the ones frequently deeply discussed like why was Thomas portrayed as the doubter, or why some variants of Jesus's baptism say "you are my son. today I have begotten you".
-But what we believe is unique about this book is that we also attempt to use large data analysis and state of the art artificial intelligence to identify and answer the questions that are less frequently discussed.
-These questions are why nearly all list of locations in the new testament is almost precisely the same as list of most significant greek speaking cities.
-Or why are the names of the Magi allegedly fabricated much later so seemingly similar to the names of imperial court positions of the past era.
-Finally, with the new perspective we reopen the questions of early dating and the authorship of the gospels and the understanding of the earliest Christian movement.
+This book presents a perspective on the historical Jesus Christ as the Son of God. 
+It is a unique attempt to portray Jesus as Christ and the Gospels as reliable historical sources, guided by rigorous historical method, without bias or theological presupposition.
 
-While we do not intend to alter any religious beliefs of the reader, we most certainly hope to force the reader to open their mind to new interesting questions and perspectives on the historical Jesus and the rise of Christianity.
- 
-> NOTE: We are working here on the best possible AI looking for gaps in mainstream scholarship and asking interesting questions.
-> The goal at this time is to just list the questions and briefly comment on them. There is no coherent narrative on short scale yet and no effort was made to write well.
+By “historical method,” we mean the effort to determine what most probably happened — which, by definition, excludes supernatural explanations.
+This is not a theological work, and it does not aim to change the reader’s religious beliefs.
+Rather, it seeks to offer a new framework that both deeply committed Christians and those with no religious affiliation — whether casual readers or professional scholars — may find intellectually valuable.
+While we do not seek to challenge anyone’s faith, we do seek to challenge assumptions widely held about the story of Jesus and his early followers.
+Our aim is to invite readers to confront new and important questions about the historical Jesus and the origins of Christianity.
+
+The central methodology of this project is the use of the world’s most advanced artificial intelligence to examine an enormous body of historical sources and scholarly literature — far beyond what any human could process in a lifetime.
+This enables us to identify patterns, contradictions, and questions that have often remained hidden in plain sight, became forgotten, or were curiously overlooked in mainstream discussions.
+
+Some examples of central but nearly overlooked questions include:
+* Why does the list of cities mentioned in the New Testament so closely match the list of the most important Greek-speaking cities of the time?
+* Why do the allegedly much-later names of the Magi closely resemble imperial court titles from an earlier era?
+
+There are many questions that are already well known but can be brought into a new light by considering them in Greek-Christian rather than Judeo-Christian context:
+* Why is Thomas portrayed as the doubter? 
+* Why do certain versions of Jesus’s baptism read, “You are my Son. Today I have begotten you”?
+
+Other than asking questions, the AI is also deeply capable at spotting contradictions and inconsistencies in the traditional narratives. 
+In particular, we revisit the mainstream scholarship consensus on issues such as the dating and authorship of the Gospels and the original structure of the earliest Christian movement.
+Examples of issues that seem to have a strong of evidence behind them, but are nearly inexplicably dismissed in favor of alternatives with far poorer evidence, include:
+* Johanine primacy
+* Late dating of Jesus’s birth
+
+> At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
 # Table of Contents
 
