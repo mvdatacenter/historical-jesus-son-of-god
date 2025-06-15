@@ -10,23 +10,29 @@ While we do not seek to challenge anyone’s faith, we do seek to challenge assu
 Our aim is to invite readers to confront new and important questions about the historical Jesus and the origins of Christianity.
 
 The central methodology of this project is the use of the world’s most advanced artificial intelligence to examine an enormous body of historical sources and scholarly literature — far beyond what any human could process in a lifetime.
-This enables us to identify patterns, contradictions, and questions that have often remained hidden in plain sight, became forgotten, or were curiously overlooked in mainstream discussions.
+This enables us to identify patterns, contradictions, and questions that have often remained hidden in plain sight, were forgotten, or were curiously overlooked in mainstream discussions.
 
-Some examples of central but nearly overlooked questions include:
-* Why does the list of cities mentioned in the New Testament so closely match the list of the most important Greek-speaking cities of the time?
-* Why do the allegedly much-later names of the Magi closely resemble imperial court titles from an earlier era?
+The most prominent pattern emerging from this analysis is a strong and persistent modern theological and scholarly consensus in favor of Judeo-Christian interpretations — even in cases where the historical evidence overwhelmingly supports a Greco-Christian perspective.
+A second major pattern is the continued reliance on early Christian scholars from past centuries who worked with far more limited sources and tools, yet remain virtually immune to critique as the founding authorities of the scholarly tradition.
+The third major pattern is the tendency to deny any possibility of Christianity’s institutional foundations, treating it instead as an isolated rural cult that began from zero with Jesus and John the Baptist.
 
-There are many questions that are already well known but can be brought into a new light by considering them in Greek-Christian rather than Judeo-Christian context:
-* Why is Thomas portrayed as the doubter? 
-* Why do certain versions of Jesus’s baptism read, “You are my Son. Today I have begotten you”?
+Some examples of central but nearly overlooked questions pointing to a Greco-Christian rather than Judeo-Christian historical interpretation include:
+* Why does the list of cities mentioned in the New Testament so closely match the list of the most important Greek-speaking cities of the time? - Perhaps Christianity has more to do with the continuation of Greek empire than has been proposed so far.
+* Why do the allegedly much-later names of the Magi closely resemble imperial court titles from an earlier era? - Perhaps some elements of the biblical story that are often unequivocally considered late legendary inventions have more to them than meets the eye?
+ 
+There are many questions that are already well known but can be brought into a new light by considering them in Greek-Christian context:
+* Why do many early Gospel manuscripts describe Jesus’s baptism with the words, ‘You are my Son. Today I have begotten you’? - Can the baptism of Jesus be understood as a dynastic succession rite commonly described in by Greek royal historians?
+* Why is Thomas portrayed as the doubter? - Can Thomas’s behavior be grounded in dynastic succession?
 
-Other than asking questions, the AI is also deeply capable at spotting contradictions and inconsistencies in the traditional narratives. 
+Beyond identifying questions, AI tools are also highly effective at spotting contradictions and inconsistencies in the traditional narratives. 
 In particular, we revisit the mainstream scholarship consensus on issues such as the dating and authorship of the Gospels and the original structure of the earliest Christian movement.
-Examples of issues that seem to have a strong of evidence behind them, but are nearly inexplicably dismissed in favor of alternatives with far poorer evidence, include:
-* Johanine primacy
-* Late dating of Jesus’s birth
+Examples of issues that seem to have a strong body of evidence behind them, but are nearly inexplicably dismissed in favor of alternatives with far poorer evidence, include:
+* Johannine primacy and authorship - Was the author of John a woman and a direct eye-witness to the events described in the Gospels?
+* Late dating of Jesus’s birth - Can there be a plausible explanation for the deep discrepancies in the biblical birth narratives of Jesus?
 
-> At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
+While not every question has a certain answer, this project ultimately aims to spark curiosity, deepen engagement with the Christian story, and inspire a renewed search for understanding through historical inquiry.
+
+> At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still a work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
 # Table of Contents
 

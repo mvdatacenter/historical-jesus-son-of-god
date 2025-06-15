@@ -5,21 +5,59 @@ Most notably in this framework all arguments for early gospels become much more 
 
 Moreover with the dating of the gospels, we can also revisit the dating of the large number of early apocryphal texts.
 The apocryphal texts are typically dated to the second century, but with extreme bias of past scholars placing them consistently later than the gospels regardless of the evidence.
-Famously gospel of John is attested the earliest and has the most prolific earliest sources, yet it is dated the latest, purely based on bias coming from invalid assumptions about "christology".
-By attested, we have a papyrus P52 of John, which is dated to 125AD. The allegedly oldest Mark, Matthew and Luke are attested by Irenaeus in 180AD together with several other gospels that are deemed by Irenaeus as heretical, and the earliest manuscript of Mark is dated to late 3rd century.
-Although the oldest mention of Marcion is from Tertullian, Tertullian himself gives credible attestation of Marcion in 140AD.
-So the order of historical attestation is John as the oldest, second is Marcion, then Mary Magdalene, Thomas, Judas, Mark, Matthew and Luke.
 
 ## John Gospel
 
+#### 0. Dating of the Gospel of John
+Famously gospel of John is attested the earliest and has the most prolific earliest sources, yet it is dated the latest, purely based on bias coming from invalid assumptions about "christology".
+This is one of these 19th century assumptions of early biblical scholars that falls apart completely when under any detailed scrutiny, but remains a dogma of the modern biblical scholarship.
+
+By attested, we have a papyrus P52 of John, which is dated to 125AD. The allegedly oldest Mark, Matthew and Luke are attested by Irenaeus in 180AD together with several other gospels that are deemed by Irenaeus as heretical, and the earliest manuscript of Mark is dated to late 3rd century.
+Although the oldest mention of Marcion is from Tertullian, Tertullian himself gives credible attestation of Marcion in 140AD.
+So, by current manuscript and reference chronology, the order of attestation is: John first, followed by Marcion, then Mary Magdalene, Thomas, Judas, and only later Mark, Matthew, and Luke.
+
+This alone can be explained by the accident of history, most early sources were lost, and the oldest was John, just by accident.
+However, we need to consider this gospel of John was found not alone, but as a part of a large library with many texts, including other gospels, and many documents of all kinds, including dated tax documents.
+The Oxyrhynchus papyrus P52, was unequivocally written in a script style that matched the style of dated to around 125AD, but the texts of other gospels in Oxyrhynchus were certainly at least 25-50 years older.
+
+Although the dating can be disputed, on the basis of geography, in Oxyrhynchus, Egypt, we have gospels that were written likely in the same room by the same group of people, so the relative dating of the gospels as they arrived to Oxyrhynchus is rather certain.
+
+Certainly, it could be the case that the synoptic gospels arrived to Oxyrhynchus much later just by accident, however, the same pattern is repeated in the second oldest source of manuscripts, the Nag Hammadi library, where the Gospel of John is also the oldest and the most prolific text, and the synoptic gospels are not present at all.
+Nag Hammadi manuscripts are a bit older, but the originals allegedly date to mid 2nd century texts.
+
+The third source fairly securely dated to second century and likely early second century is the Bodmer papyrus, P66 with the Gospel of John. As in the other cases, the Gospel of John pre-dates the synoptic Gospels in the Bodmer collection by at least 25-50 years.
+
+This is essentially it for Gospel references pre-140AD. The only possible earlier references to Gospels are Papias, Polycarp and Clement, who plausibly wrote before 140AD.
+In case of Papias, he refers to gospels not written in Greek, so they are almost certainly not any of the canonical gospels nor any of the widely known apocryphal gospels.
+Clement and Polycarp are quoting Jesus as in the Gospels, but regardless of whether Jesus really did say the words, there is no indication whether they quoted the gospels or the gospels from them or mostl likely they simply quoted the same text or oral tradition.
+The next reference is Justin Martyr, and he again is most likely quoting the Gospel of John, notably not any quote of Jesus recorded in the Gospel of John, but a known fragment of John.
+
+Then the later references from Tertullian, Irenaeus, and Origen all contain unambiguous references to all the canonical gospels as already mature and wide-spread texts, but at this point we are already in the year 180AD and later.
+
+To be very clear, this does not indicate John was written in 125AD, nor that Marcion was written in 140AD. 
+John may have been written in right after the events described, or it may have been written in 100AD.
+
+What that does show is that based on the dates of manuscripts and references, it should be John to have the highest probability of being the earliest gospel, and not Mark, Matthew or Luke.
+
 #### 1. The Gospel of John is widely accepted to be one gospel that indicates it was written by an eyewitness.
-The gospel itself claims to be written by the disciple whom Jesus loved, which is widely accepted to be John,
+The gospel itself claims to be written by the disciple whom Jesus loved, which is widely accepted to be John.
+Notably all the other gospels themselves had ample opportunity to claim to be written by an eyewitness, but none of them do.
+Mark portrays himself as an omniscient narrator, telling a story clearly in third person, does not seem correct about the geography of the area where the events took place.
+Luke claims to have compiled the stories from the eyewitnesses, which is a clear admission that he was not an eyewitness himself.
+Matthew is clealy copying Mark and a source like Luke, while also writing in very detached third person, not something an eyewitness conceivably would do.
+
 #### 2. ὁ μαθητὴς ὃν ἠγάπα ὁ Ἰησοῦς
-Notably this is a disciple not an apostle, which would indicate that the gospel was written by a disciple of Jesus, but not one of the twelve apostles.
+The frequent reference to the disciple whom Jesus loved, may also be an indication the disciple was not one of the twelve apostles, as the gospel of John does not mention the names of the apostles at all.
+
+Notably the gospel of John does name the Twelve on multiple occasions, but the disciple whom Jesus loved does not seem to be one of them, while it would have been logical to note that if that were the case.
+The disciple whom Jesus loved seems separate from the Peter's group.
+Most notably all gospels seem to strongly indicate all male apostles fled after the arrest of Jesus, and the only ones who stayed were women.
+“There were also women looking on from a distance… Mary Magdalene, Mary the mother of James… and many other women…”
+This means we are faced with either a very major contradiction between John and all three Synoptics where there was no reason to introduce one, or — far more plausibly — the Beloved Disciple was not one of the Twelve, and was a woman, preserved anonymously but recognized within the early community as an authoritative witness.
+
 #### 3. Γύναι, ἰδοὺ ὁ υἱός σου
-Notably a child of ambiguous gender and not specifically a son, so it is possibly Mary Magdalene, so some scholars argue, for example, Ramon K. Jusino  1998.
-All the arguments below show very strong evidence for eyewitness woman in a romantic relationship to Jesus or potentially Jesus's family member.
-Mary Magdalene is the most likely candidate, but not the only one. And a closer look is in order as there are hints in the text the beloved disciple and Mary Magdalene are not the same person.
+The famous words of Jesus on the cross — “Woman, behold your son” (John 19:26) — have traditionally been interpreted as referring to the Beloved Disciple, but the wording itself is deliberately ambiguous.
+The Greek phrase υἱός σου means “your child” or “your son,” but it is not inherently gender-specific in context. Some scholars, such as Ramon K. Jusino (1998), have argued that this may point to Mary Magdalene, especially given her presence at the crucifixion and her prominent role in resurrection narratives.
 
 It is also entirely possible that the author is one of the other women from the court of Herod, like Joanna, who was another woman who named in the gospel of Luke as a follower of Jesus, and who was one of three women who visited the tomb of Jesus to anoint his body.
 Many scholars link Joanna to the court of Herod, and she was the wife of Chuza, the manager of Herod's household, which would make her a very powerful and influential.
@@ -30,7 +68,8 @@ Finally, this would also explain the authorship of the gospel as John not disput
 No source says it was Mary Magdalene over John, which is what the sources would say the the prevalent view was that John was the most beloved one.
 
 #### 5. Finally, a woman writer would have been very likely to describe themselves based on the feelings towards others, not many male authors write like this.
-She says Jesus loved Lazarus, not in a romantic way, but in a way a female writer would describe close friendship. Jesus is weeping, which is a thing a female would write about Jesus, not a true man.
+She says Jesus loved Lazarus, not in a romantic way, but in a way a female writer would describe close friendship.
+Jesus is weeping, which is a thing a female would write about Jesus, not a true man.
 
 #### 6. Jesus interactions towards Nicodemus are also very feminine, close and personal, Jesus is talking about being born again.
 This very likely is not necessarily suggesting Jesus had some homosexual tendencies, but rather that the author of the gospel had some romantic feelings towards Jesus.

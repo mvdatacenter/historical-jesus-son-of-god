@@ -1,6 +1,6 @@
 # Chapter 5 - Purple Phoenix Raises
 
-Another unassailable but blatantly wrong assumption of modern scholarship is that all early christian literature was written in Greek because Greek was the lingua franca of the Roman empire.
+A common unassailable but certainly wrong assumption of modern scholarship is that all early christian literature was written in Greek because Greek was the lingua franca of the Roman empire.
 
 According to this claim we would expect Julius Caesar, the People and the Senate of Rome, Virgil, Seneca to all be fluent and write and speak extensively in Greek.
 
