@@ -275,7 +275,7 @@ So here we need to consider the plausibility that Jesus survived because of luck
 
 In modern Christianity it is completely beyond doubt that God the Father is YHWH, the God of Moses, the God of Abraham, Isaac and Jacob.
 
-Not many are aware that this is actuall a surprisingly recent development in Christianity.
+Not many are aware that this is actually a surprisingly recent development in Christianity.
 Many believe that the distinction of God the Father from the God of Moses was the heresy of Marcion and one Marcion has been excommunicated, the Church has always believed that God the Father is the God of Moses.
 However, this is not the case. Marcion's theory went further than that, he believed that the God of Moses was an evil god, and that the God of Jesus was a good god.
 This theory was far more radical than the idea that God the Father is not the God of Moses, and that was what was condemned by other thinkers of the early Church.
@@ -297,6 +297,101 @@ Give rest to these members with the noble sign
 Of the cross marked, proclaiming an heir of Christ.”
 
 Then we obviously have the images of God
+
+### Pater Noster
+
+In catechisms and commentaries the Pater Noster is presented as a quintessentially Jewish prayer. Two Gospel forms survive—Matthew 6:9–13 (Sermon on the Mount) and Luke 11:2–4 (disciple request). Its usual gloss runs like this:
+•	“Our Father in heaven” echoes synagogue formulas (e.g., the later Kaddish: “Exalted and hallowed be His great Name”).
+•	“Hallowed be thy Name” = sanctifying YHWH’s Name (already holy in Israel).
+•	“Thy kingdom come / Thy will be done on earth as in heaven” = Israel’s hope from Daniel and the Prophets.
+•	“Give us today our daily bread” = manna typology or Psalmic providence.
+•	“Forgive us our debts… as we forgive” = Jubilee/Leviticus ethic.
+•	“Lead us not into temptation, but deliver us from evil” = moral temptations; God’s protection from sin.
+On this reading the prayer is “Second-Temple Jewish” through and through.
+
+2) Why that neat picture collapses
+
+Read closely, the prayer pointedly avoids Israel’s covenant markers. There is no Sinai, no Torah, no Zion, no Abraham, no Sabbath, no sacrifices—nothing that nails it to Moses. Instead, the vocabulary is cosmic, royal, solar:
+•	A universal Father in the heavens, not the covenant God “who brought you out of Egypt.”
+•	A sanctified Name without the Tetragrammaton or Temple.
+•	A Kingdom that descends from heaven to earth (cosmic axis), not the restoration of David on Mount Zion.
+•	A petition for daily bread does not echo manna (which was not daily) or psalmic providence (which is not daily).
+•	A trial (Greek peirasmos) and rescue from the Evil One that ring like an eschatological ordeal with a devouring adversary, not like a generic plea about private temptations.
+
+The standard reading “works” only by importing background the text doesn’t supply, while ignoring the imagery it does supply.
+
+3) The Egyptian solar–royal reading (what fits cleanly, line by line)
+
+(a) “Our Father in the heavens”
+Egyptian hymns to Aten and Amun-Ra address the high god as father of all; the Pharaoh is the son of the Sun. The address is cosmic, not ethnic. It’s the right register for the prayer.
+
+(b) “Hallowed be thy Name” (ἁγιασθήτω τὸ ὄνομά σου)
+Egyptian piety centers on the Name (rèn). Amun literally means “the Hidden (One)”; his hidden Name is praised and protected. Refrains like “Your name is Amun—Amun, Amun” are liturgical. This is precisely a sanctified Name without pronouncing it—a far tighter fit than Moses’ tetragrammaton practices as usually described for lay prayer.
+
+(c) “Thy kingdom come. Thy will be done on earth as in heaven.”
+Every dawn the Sun restores Maʿat (order) in the heavens and, through the king, on earth. Solar kingship is a heaven-to-earth pipeline of will/order. That is exactly the structure of this petition.
+
+(d) “Give us today our daily bread” (τὸν ἄρτον… τὸν ἐπιούσιον)
+The Great Hymn to Aten praises the god who “daily makes bread for humankind.” Egyptian offering formulas (“bread and beer, daily”) are standard temple language. This line is almost a quotation in sense.
+
+(e) “Forgive us our debts as we forgive our debtors.”
+Egypt frames justice as weight at judgment—the heart weighed against the feather of Maʿat. Being “set right” (absolved of moral weight/debt) is the difference between survival and obliteration. The ethical turn (“as we forgive”) binds the worshiper to enact Maʿat socially. This is far closer to Egyptian moral weight/debt than to later juridical hair-splitting.
+
+(f) “Do not bring us into the time of trial, but deliver us from the Evil One.” (μὴ εἰσενέγκῃς… εἰς πειρασμόν… ῥῦσαι ἀπὸ τοῦ πονηροῦ)
+Peirasmos = trial/ordeal, not chiefly “temptation.” Read apocalyptically, it is the great ordeal; read visually, it is the judgment scene. And the Evil One is not an abstraction: in Egyptian iconography the failed soul is devoured by Ammit (crocodile-lion-hippo) as the scales tip. “Deliver us from the devourer” is exactly how the scene works.
+
+(g) “Amen.”
+Before we pretend “amen” is safely, uniquely Hebrew, note the liturgical practice: Egyptian hymns and responses end with acclamations of Amun; congregational call-and-response reinforces the Name. The sound and function of the close match the prayer’s cadence (whatever the etymology textbooks insist). In worship, “All say Amun/Amen!” is the logic.
+
+Bottom line: every clause fits solar-royal liturgy without strain. The “Jewish only” reading must paper over the prayer’s cosmic grammar; the Egyptian reading doesn’t.
+
+4) The historical pipeline (why this imagery would still be alive)
+
+This isn’t Bronze-Age dust accidentally stuck to a 1st-century text. It’s continuous culture:
+•	Egypt in Canaan (c. 1500–1150 BC). For centuries the southern Levant was an Egyptian province. Jerusalem appears in the Amarna archive (~1350 BC), with its ruler Abdi-Heba writing Pharaoh as “my Sun.” Egyptian garrisons and cult stood at Beth-Shean, Jaffa, Deir el-Balah, etc.
+•	Davidic psalmic core (c. 1150–970 BC). The linguistically older psalms are drenched in sun, light, heaven, earth, kingship, divine rule (Ps 19; 29; 68; 84; 104). These read like Hebrew adaptations of solar hymns, not Torah homilies.
+•	Aten’s revolution and Amun-Ra’s supremacy. Akhenaten’s Aten-monotheism collapses, but Amun-Ra returns stronger; the solar-monotheist pressure never disappears.
+•	Ptolemaic Egypt (3rd–1st c. BC). The dynasty crafts Serapis/Isis cult and keeps solar divine kingship explicit. Cleopatra’s death (30 BC) is within grandparent memory of Jesus’ generation.
+•	Jesus’ milieu. A “king of the Jews” claim sits inside Roman Syria-Palestine, saturated with Helios/Sol imagery. Early Christian art happily paints Christ as Helios; the holy day is Sunday. The solar-royal idiom is not alien—it is the water everyone swims in.
+
+Seen through this pipeline, the Pater Noster doesn’t borrow a few Egyptian phrases; it belongs to the solar-royal register that ran from Aten → Amun-Ra → Ptolemaic kingship straight into the first century.
+
+5) “But isn’t it still Jewish?” — the honest reconciliation
+
+Yes, the prayer can be prayed in a Jewish key (and was). Luke embeds it in a lesson on dependence; Matthew frames it within piety and forgiveness. The wording genuinely overlaps later synagogue language (“hallowed be His Name”). But that overlap proves adaptability, not origin. Crucially, the prayer:
+•	avoids covenant particulars,
+•	speaks in universal solar-cosmic grammar, and
+•	lands perfectly inside Egyptian/Ptolemaic royal theology.
+
+The better model is fusion: Israel’s high-God devotion absorbed, translated, and reused the dominant solar-royal grammar everyone understood. If Jesus stands—as our thesis argues—as a royal claimant in the wake of a just-collapsed Ptolemaic world, then this prayer reads not as a synagogue formula but as a dynastic solar-royal prayer: heavenly Father (Sun), kingdom descending, daily sustenance, righteous scales, rescue from the devourer—Amen.
+
+6) Clause-by-clause gloss (for the reader who wants the map)
+   •	Father in heaven → Solar source (Aten/Amun-Ra) and royal sonship.
+   •	Hallowed Name → the hidden Name exalted (Amun’s rèn).
+   •	Kingdom come / will be done → Maʿat restored from heaven to earth via the king.
+   •	Daily bread → the sun-god who daily provides bread.
+   •	Forgive debts → lighten the moral weight at the scales; enact Maʿat with others.
+   •	Do not bring into the trial → spare us the ordeal/judgment.
+   •	Deliver from the Evil One → rescue from the devourer who consumes the failed.
+   •	Amen → the communal seal, functionally identical to Amun-acclamation.
+
+⸻
+
+Coda: Why this matters for David and Jesus
+•	David (1150–970 BC) sits close enough to the Amarna horizon for Egyptian solar kingship to be living memory; the oldest psalms sound like it because they grew in it.
+•	Jesus (early 1st c. AD) stands within living memory of Ptolemaic solar monarchy. If he is (as our book argues) a royal figure inside that political theology, the Pater Noster is exactly the kind of solar-royal prayer a claimant would teach: it translates Egypt’s oldest grammar of kingship into a form his followers can pray anywhere.
+
+That is the reading that explains everything the text actually says—without importing Sinai—and explains why the prayer crossed languages and empires so effortlessly.
+
+## Jesus Christ believed in true immortal soul
+
+Sometimes overlooked, the idea of soul in greek and jewish beliefs is very different.
+“Do not fear those who kill the body but cannot kill the soul” ψυχή (psyche) ≠ body (Matt 10:28)
+“What does it profit a man to gain the world and forfeit his soul?” (Matt 16:26)
+“Today you will be with me in Paradise” (Luke 23:43)
+
+The belief in post mortem conscious existence as a continuation of soul is not a the belief of the Old Testament, but it is a common belief in the Greek world.
+The Jews of that time believed in a resurrection of the body, but not in the immortality of the soul.
 
 ## Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven
 
