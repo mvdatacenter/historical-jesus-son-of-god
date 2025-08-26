@@ -288,6 +288,22 @@ the highlight of actual events where Jesus showed his leadership skills, knowled
 What is really worth considering is that the events of the seven signs were really reported by the beloved disciple by Jesus as accurate.
 For I tell you, let him who never exaggerated their manly deeds to their love interest be the one to cast the first stone.
 
+#### 10. The Gospel of John point
+
+While we discuss the historical Jesus and historical John, there is one thought that keeps coming back to me.
+
+Nearly every discussion of the Gospel of John is about its theology. We argue over doctrine and vocabulary and historic accuracy, but maybe we actually miss the single most important thing in the text.
+
+We have lost the author. We have lost the community that first carried it. We have lost the Jesus they knew, and the beliefs of the first church.
+What survives are copies of copies of copies, shaped by centuries of shifting theology and changing cultures.
+
+But perhaps the best evidence for the true authorship of the Gospel of John is not the in any of the individual hard evidence, but rather the overall message of the Gospel itself.
+What if the message of love is so strong, so deep, that it actually became the root of Christianity.
+Perhaps when the billions of Christians read the Gospel of John, they may not realize, but they are subconsciously feeling the love that the author had for Jesus.
+Perhaps an ancient letter about a lost love has become the most powerful and enduring message of love in human history.
+Perhaps it is true that love is the only thing we’re capable of perceiving that transcends the dimensions of time and space.
+
+
 ## Synoptic Gospels
 
 #### 1. The main argument for the dating of the synoptic gospels to after year 70AD is the destruction of the temple by the Romans.
