@@ -1,10 +1,24 @@
 \documentclass[12pt]{book}
-\usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage{fontspec} % Use fontspec for font management
+\usepackage{polyglossia} % For multilingual support
+\setmainlanguage{english}
+\setotherlanguage{greek}
+
+% Set a font that supports both English and Greek
+\setmainfont{Times New Roman} % Example font, replace with any suitable font installed on your system
+
+% Define \tightlist to handle Pandoc's list conversion
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Include necessary packages for tables and hyperlinks
+\usepackage{amssymb} % Provides additional symbols
+\usepackage{longtable} % For long tables
+\usepackage{booktabs} % For better table rules
+\usepackage{hyperref} % For hyperlinks
 
 \title{Historical Jesus as the Son of God: Glory to the Newborn King}
-\author{MV Data sp.
-z o.o.}
+\author{MV Data sp. z o.o.}
 \date{2025}
 
 \begin{document}
@@ -14,21 +28,21 @@ z o.o.}
 \tableofcontents
 
 \chapter*{Preface}
-\input{preface.md}
+\input{preface}
 
-\chapter{Jesus Christ, Son of Joseph and Mary Christ}\label{par:ch:jesus-christ-son-of-joseph-and-mary-christ}
-\input{chapter1.md}
+\chapter{Jesus Christ, Son of Joseph and Mary Christ}\label{ch:jesus-christ-son-of-joseph-and-mary-christ}
+\input{chapter1}
 
-\chapter{He Truly was the Son of God}\label{par:ch:he-truly-was-the-son-of-god}
-\input{chapter2.md}
+\chapter{He Truly was the Son of God}\label{ch:he-truly-was-the-son-of-god}
+\input{chapter2}
 
-\chapter{Gospels are Historically Reliable}\label{par:ch:gospels-are-historically-reliable}
-\input{chapter3.md}
+\chapter{Gospels are Historically Reliable}\label{ch:gospels-are-historically-reliable}
+\input{chapter3}
 
-\chapter{Pauline Epistles to All Nations}\label{par:ch:pauline-epistles-to-all-nations}
-\input{chapter4.md}
+\chapter{Pauline Epistles to All Nations}\label{ch:pauline-epistles-to-all-nations}
+\input{chapter4}
 
-\chapter{The Purple Phoenix Raises Again}\label{par:ch:the-purple-phoenix-raises-again}
-\input{chapter5.md}
+\chapter{The Purple Phoenix Raises Again}\label{ch:the-purple-phoenix-raises-again}
+\input{chapter5}
 
 \end{document}
