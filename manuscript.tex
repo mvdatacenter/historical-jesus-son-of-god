@@ -1,23 +1,41 @@
 \documentclass[12pt]{book}
-\usepackage{fontspec} % Use fontspec for font management
-\usepackage{polyglossia} % For multilingual support
+
+% Require LuaLaTeX or XeLaTeX
+\usepackage{iftex}
+\usepackage{currfile}
+\ifPDFTeX
+\PackageError{engine}{This book must be compiled with XeLaTeX or LuaLaTeX}{}
+\fi
+
+% ----- Fonts & languages -----
+\usepackage{fontspec}
+\usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguage{greek}
+\setotherlanguage{hebrew}
 
-% Set a font that supports both English and Greek
-\setmainfont{Times New Roman} % Example font, replace with any suitable font installed on your system
+% Build a stable absolute path to the fonts dir (works even when latexmk runs in out/)
+\newcommand*\RepoFontPath{\currfileabsdir fonts/}
 
-% Define \tightlist to handle Pandoc's list conversion
+% EB Garamond for everything
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{EB Garamond}
+\newfontfamily\greekfont{EB Garamond}
+\newfontfamily\hebrewfont{SBL_Hbrw.ttf}[Path={\RepoFontPath}, Script=Hebrew]
+\usepackage{unicode-math}
+\setmathfont{Garamond-Math} % install this font once, same everywhere
+
+% ----- Common packages -----
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+% Pandoc list helper
 \providecommand{\tightlist}{%
-  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-% Include necessary packages for tables and hyperlinks
-\usepackage{amssymb} % Provides additional symbols
-\usepackage{longtable} % For long tables
-\usepackage{booktabs} % For better table rules
-\usepackage{hyperref}
-\usepackage{graphicx} % For hyperlinks
-
+% Book metadata
 \title{Historical Jesus as the Son of God: Glory to the Newborn King}
 \author{MV Data sp. z o.o.}
 \date{2025}
