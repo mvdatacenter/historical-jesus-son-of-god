@@ -36,11 +36,12 @@ While not every question has a certain answer, this project ultimately aims to s
 
 # Table of Contents
 
-- [Preface](./preface.tex)
-- [Chapter 1: Jesus Christ, Son of Joseph and Mary Christ](./chapter1.tex)
-- [Chapter 2: He Truly was the Son of God](./chapter2.tex)
-- [Chapter 3: Gospels are Historically Reliable](./chapter3.tex)
-- [Chapter 4: Pauline Epistles to All Nations](./chapter4.tex)
-- [Chapter 5: The Purple Phoenix Raises Again](./chapter5.tex)
+- [Preface](preface.tex)
+- [Chapter 1: Jesus Christ, Son of Joseph and Mary Christ](chapter1.tex)
+- [Chapter 2: Jesus Christ, Son of Joseph and Mary Christ](chapter2.tex)
+- [Chapter 3: He Truly was the Son of God](chapter3.tex)
+- [Chapter 4: Gospels are Historically Reliable](chapter4.tex)
+- [Chapter 5: Pauline Epistles to All Nations](chapter5.tex)
+- [Chapter 6: The Purple Phoenix Raises Again](chapter6.tex)
 
 © 2025 MV Data sp. z o.o. . All rights reserved.
