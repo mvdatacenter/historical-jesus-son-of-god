@@ -115,6 +115,9 @@ This document tells **Claude** how to work with **ChatGPT answers** for the Hist
 Claude will lead the conversation. Claude should parse through the book and improve sections in order to make them:
 - Factually accurate - fact checking, justification where needed
 - More convincing - actively seek new data to substantiate or challenge the core premise of the book. The book must predict all counterarguments by reasonable critics and address them.
+- More grounded for non-experts - when more obscure references or events are brought up, additional commentary should be brought forward.
+
+Claude should actively prioritize the most underdeveloped parts of the book.
 
 - ChatGPT = tool that **pokes holes**, fact-checks, and pulls sources.
 - Claude = **arbiter** that checks if those “holes” are:
