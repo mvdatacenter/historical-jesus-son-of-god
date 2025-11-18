@@ -43,6 +43,62 @@ python map.py
 
 This uses Python 3.12.2+ with the `folium` library for geographical visualization.
 
+### ChatGPT Integration
+
+This project uses ChatGPT (via web browser automation with Playwright) for fact-checking and bias-corrected research.
+
+**Prerequisites:**
+- Playwright installed via Poetry (already in dependencies)
+- Chromium browser installed: `poetry run playwright install chromium`
+- **ONE-TIME SETUP**: Login to ChatGPT web:
+  ```bash
+  poetry run python scripts/chatgpt_web.py init
+  ```
+  This opens a browser window. Log in to ChatGPT, then close the window. Your session is saved in `chatgpt_profile/` directory.
+
+**How Claude Should Use It:**
+
+```bash
+# Basic usage - ask a question and get response
+poetry run python scripts/ask_chatgpt.py "Your query here"
+
+# Via Bash tool in Claude Code with MASTER DIRECTIVE template
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+Use a broad, multi-tradition mode.
+
+Important:
+You are often biased toward American evangelical, old German/Anglo consensus...
+[use template from MASTER DIRECTIVE section 9]
+
+Here is the text / question:
+[your actual question]
+EOF
+)"
+```
+
+**Low-level commands (for debugging):**
+
+```bash
+# Send a prompt and wait for response
+poetry run python scripts/chatgpt_web.py send "Your question"
+
+# Read last response without sending
+poetry run python scripts/chatgpt_web.py read
+
+# Send without waiting for response
+poetry run python scripts/chatgpt_web.py send --no-wait "Your question"
+```
+
+**Important:** Always use the reusable prompt skeleton from the MASTER DIRECTIVE (section 9) to counter ChatGPT's biases when querying.
+
+**Example Claude workflow:**
+1. Identify claim needing verification (e.g., "Damascus steel dating")
+2. Construct query using MASTER DIRECTIVE template
+3. Call via Bash tool: `poetry run python scripts/ask_chatgpt.py "..."`
+4. Analyze response for biases (sections 1-7 of MASTER DIRECTIVE)
+5. If biased, ask follow-up to broaden perspective
+6. Synthesize final answer correcting for biases
+
 ## Architecture
 
 ### Document Structure
