@@ -18,13 +18,13 @@ SCRIPT_DIR = Path(__file__).parent
 CHATGPT_DESKTOP_SCRIPT = SCRIPT_DIR / "chatgpt_desktop.py"
 
 
-def ask_chatgpt(query: str, wait_seconds: int = 10) -> str:
+def ask_chatgpt(query: str, wait_seconds: int = 180) -> str:
     """
     Send a query to ChatGPT Desktop App and return the response.
 
     Args:
         query: The question/prompt to send
-        wait_seconds: How long to wait for response to stabilize
+        wait_seconds: How long to wait for response to stabilize (default: 180s for complex queries with web search)
 
     Returns:
         ChatGPT's response text
