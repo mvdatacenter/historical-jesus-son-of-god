@@ -331,7 +331,7 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
 
     # Timeout - check if response was still growing
     if last_length > 0:
-        if last_length > len(last_text) * 0.9:  # Still growing near end
+        if stable_count > 0:  # Text was changing near timeout (not yet stable)
             print(f"[WARNING] Timeout reached but response still streaming ({last_length} chars)", file=sys.stderr)
             print(f"[WARNING] Returning partial response. Consider increasing --wait-seconds", file=sys.stderr)
         else:
@@ -381,7 +381,7 @@ def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
 
     if show_all:
         # Return all messages, separated by horizontal rules
-        return "\n\n" + "="*60 + "\n\n".join(meaningful_messages)
+        return ("\n\n" + "="*60 + "\n\n").join(meaningful_messages)
 
     # Return longest message (most likely the main response)
     longest = max(meaningful_messages, key=len)
