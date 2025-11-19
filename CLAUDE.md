@@ -91,13 +91,40 @@ poetry run python scripts/chatgpt_web.py send --no-wait "Your question"
 
 **Important:** Always use the reusable prompt skeleton from the MASTER DIRECTIVE (section 9) to counter ChatGPT's biases when querying.
 
-**Example Claude workflow:**
-1. Identify claim needing verification (e.g., "Damascus steel dating")
-2. Construct query using MASTER DIRECTIVE template
-3. Call via Bash tool: `poetry run python scripts/ask_chatgpt.py "..."`
-4. Analyze response for biases (sections 1-7 of MASTER DIRECTIVE)
-5. If biased, ask follow-up to broaden perspective
-6. Synthesize final answer correcting for biases
+### How to Use ChatGPT Properly: Filter for Strongest Evidence
+
+**DO NOT just dump questions and copy ChatGPT's response.** Instead, have a DISCUSSION to identify hard evidence:
+
+1. **Initial query** - Ask the broad question using MASTER DIRECTIVE template
+2. **Filter for strongest evidence** - Follow up: "From your arguments, which 2-3 are direct textual evidence (specific Greek words, verses) or structural facts that can't be disputed? Don't give me interpretive arguments like 'suggests' - give me rock-solid evidence."
+3. **Play devil's advocate** - Challenge each piece: "Play devil's advocate against your own arguments. For each one, what's the strongest counter-argument? What are the weaknesses?"
+4. **Rank by undeniability** - Ask: "If you could only pick ONE piece of evidence that even a skeptical mainstream scholar would have hardest time dismissing, which would it be?"
+5. **Get sources** - If the evidence is strong: "Where does this appear? Give me specific primary sources (texts, inscriptions, archaeological sites)."
+
+**Example workflow:**
+```bash
+# Step 1: Initial question with MASTER DIRECTIVE
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+Use a broad, multi-tradition mode.
+[MASTER DIRECTIVE template]
+Question: Why is non-coronation interpretation of baptism problematic?
+EOF
+)"
+
+# Step 2: Filter for hard evidence
+poetry run python scripts/ask_chatgpt.py "From your arguments, which 2-3 are direct textual evidence or structural facts that can't be disputed?"
+
+# Step 3: Devil's advocate
+poetry run python scripts/ask_chatgpt.py "Play devil's advocate against your own arguments. What are the weaknesses?"
+
+# Step 4: Rank by strength
+poetry run python scripts/ask_chatgpt.py "If you could only pick ONE piece of evidence a skeptical scholar would have hardest time dismissing, which would it be?"
+
+# Step 5: Get sources
+poetry run python scripts/ask_chatgpt.py "Where does the three-part coronation structure appear? Give specific primary sources."
+```
+
+**Goal:** Extract hard data (Greek terms, structural patterns, primary sources) that can't be dismissed as interpretation.
 
 ## Architecture
 
@@ -212,11 +239,80 @@ For each ChatGPT answer:
 3. For each bias you detect:
     - Call it out explicitly (internally in your reasoning, and where helpful, in your output).
     - Ask ChatGPT a **follow-up prompt** to broaden, correct, or challenge its framing.
-4. When ChatGPT “pokes holes” in the user’s text:
+4. When ChatGPT "pokes holes" in the user's text:
     - Decide if the hole is **real** or **overstated / biased**.
     - If overstated, **argue back** using other traditions, sources, or logic.
 5. Where ChatGPT gives only one view:
     - Ask it to search for **alternative or minority scholarly views** and **non-US traditions** online.
+
+## 0.3 CRITICAL: Do Not Dilute Arguments
+
+**MOST IMPORTANT RULE:**
+
+- **ChatGPT's lack of sources ≠ the claim is wrong.**
+- **DO NOT weaken strong arguments based on ChatGPT's ignorance.**
+- **Your role is to STRENGTHEN arguments with context, NOT dilute them.**
+
+### When to Dilute vs Track for Review
+
+**DO dilute an argument if:**
+- ChatGPT provides **specific contradictory data** from a named source
+  - Example: "Article X says 500 tons, not 1600 tons"
+  - Example: "Archaeological survey Y measured 800 tons maximum"
+- Multiple independent sources with hard data contradict the claim
+- The claim is demonstrably factually false
+
+**DO NOT dilute if:**
+- ChatGPT says "I can't find peer-reviewed sources"
+- ChatGPT says "this is not confirmed in the literature"
+- ChatGPT lacks sources in its training data (absence of evidence)
+
+**Instead, use the Q&A workflow:**
+
+### Q&A Workflow for Doubts
+
+When ChatGPT raises doubts based on **lack of sources** (not contradictory sources):
+
+1. **Create/update Q&A file** in `scripts/chN_qa.md` for the relevant chapter
+2. **Add entry** in this format:
+   ```markdown
+   - (chatgpt says we need source on whether the Baalbek temple is really impressive or if exaggerated by mass media articles)
+   - (chatgpt says Damascus steel dating is unclear - needs primary sources)
+   ```
+3. **Do NOT modify the book text** based on these doubts
+4. **User will review** the Q&A file and comment:
+   - "this is bogus" (Western bias, ignore)
+   - "needs more research" (legitimate question to investigate)
+
+### Example of the Workflow
+
+**Scenario:** User's text says "Baalbek has 1600-ton stones"
+
+❌ **Bad Response (Old Approach):**
+- ChatGPT: "Not confirmed in peer-reviewed literature"
+- Claude: "We should say 'estimated' and note uncertainty"
+- **WRONG.** This dilutes based on ChatGPT's ignorance.
+
+✅ **Good Response (Specific Contradiction):**
+- ChatGPT: "According to Lebanese Archaeological Survey 2015, the largest verified block is 800 tons, not 1600"
+- Claude: "I found contradictory data. Adding to Q&A: (chatgpt claims Lebanese survey says 800 tons max, contradicts our 1600 ton claim)"
+- **CORRECT.** Specific source with data = worth tracking.
+
+✅ **Good Response (Lack of Sources):**
+- ChatGPT: "I can't find peer-reviewed sources confirming 1600 tons"
+- Claude: "This is absence of evidence, not contradictory data. Adding to Q&A: (chatgpt says needs sources for 1600-ton claim, only found English blogs)"
+- Claude: "Meanwhile, I'll strengthen the argument by pushing ChatGPT for Arabic sources, UNESCO docs, regional scholarship"
+- **CORRECT.** Track the doubt but don't dilute.
+
+### Key Principle
+
+**If the user has a strong argument backed by physical evidence or regional scholarship:**
+- **Add context** (comparisons, scale, modern equivalents)
+- **Find supporting sources** (regional, non-English, UNESCO, etc.)
+- **Strengthen** the argument
+- **Track doubts** in Q&A files for user review
+
+**Do NOT dilute it based on ChatGPT's training data gaps.**
 
 ---
 

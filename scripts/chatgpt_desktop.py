@@ -173,14 +173,14 @@ def click_at_position(x: float, y: float):
     CGEventPost(kCGHIDEventTap, mouse_up)
 
 
-def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 60) -> str:
+def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 180) -> str:
     """
     Send a prompt to ChatGPT Desktop App and optionally wait for response.
 
     Args:
         prompt: The text to send
         wait_for_reply: Whether to wait for and return the response
-        wait_seconds: Maximum seconds to wait for response (default: 60 for web searches)
+        wait_seconds: Maximum seconds to wait for response (default: 180s for complex queries with web search)
 
     Returns:
         The response text if wait_for_reply is True, empty string otherwise
@@ -228,36 +228,48 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 60
 
     if not send_button:
         print("ERROR: Could not find Send button", file=sys.stderr)
+        print("[DEBUG] Check if ChatGPT response already exists with 'read' command", file=sys.stderr)
         sys.exit(1)
 
     # Get button position and click it
     position = ax_attr(send_button, kAXPositionAttribute)
     size = ax_attr(send_button, kAXSizeAttribute)
 
-    if position and size:
-        pos_str = str(position)
-        size_str = str(size)
-
-        pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
-        size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
-
-        if pos_match and size_match:
-            pos_x = float(pos_match.group(1))
-            pos_y = float(pos_match.group(2))
-            width = float(size_match.group(1))
-            height = float(size_match.group(2))
-
-            # Click in the center of the button
-            x = pos_x + width / 2
-            y = pos_y + height / 2
-            click_at_position(x, y)
-            time.sleep(1.0)
-        else:
-            print("ERROR: Could not parse button position", file=sys.stderr)
-            sys.exit(1)
-    else:
-        print("ERROR: Could not get button position", file=sys.stderr)
+    if not position or not size:
+        print("ERROR: Could not get Send button position/size", file=sys.stderr)
         sys.exit(1)
+
+    pos_str = str(position)
+    size_str = str(size)
+
+    pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
+    size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
+
+    if not pos_match or not size_match:
+        print("ERROR: Could not parse button position", file=sys.stderr)
+        print(f"[DEBUG] position={pos_str}, size={size_str}", file=sys.stderr)
+        sys.exit(1)
+
+    pos_x = float(pos_match.group(1))
+    pos_y = float(pos_match.group(2))
+    width = float(size_match.group(1))
+    height = float(size_match.group(2))
+
+    # Click in the center of the button
+    x = pos_x + width / 2
+    y = pos_y + height / 2
+    click_at_position(x, y)
+    time.sleep(1.0)
+    print("[DEBUG] Clicked Send button", file=sys.stderr)
+
+    # Verify message was sent by checking if input field is now empty
+    time.sleep(0.5)
+    current_value = ax_attr(text_input, kAXValueAttribute)
+    if current_value and len(current_value.strip()) > 0:
+        print("ERROR: Message was not sent - input field still contains text", file=sys.stderr)
+        print(f"[DEBUG] Input field value: {current_value[:100]}...", file=sys.stderr)
+        sys.exit(1)
+    print("[DEBUG] Message sent successfully (input field cleared)", file=sys.stderr)
 
     # Move app to background
     ns_app.hide()
@@ -267,13 +279,17 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 60
         return ""
 
     # Poll for response
+    print(f"[DEBUG] Waiting for response (timeout: {wait_seconds}s)...", file=sys.stderr)
     time.sleep(3)  # Initial wait for response to start
 
     last_text = ""
+    last_length = 0
     stable_count = 0
     max_polls = wait_seconds * 2  # Poll every 0.5s
+    poll_count = 0
+    last_progress_report = 0
 
-    for _ in range(max_polls):
+    for poll_count in range(max_polls):
         messages = []
         collect_assistant_messages(ax_app, messages)
 
@@ -292,18 +308,37 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 60
             else:
                 current_text = ""
 
+            current_length = len(current_text)
+
+            # Progress reporting every 10 seconds if text is growing
+            elapsed = poll_count * 0.5
+            if current_length > last_length and elapsed - last_progress_report >= 10:
+                print(f"[DEBUG] Response streaming... ({current_length} chars, {elapsed:.0f}s elapsed)", file=sys.stderr)
+                last_progress_report = elapsed
+
             # Only consider non-empty responses as stable
             if current_text and current_text == last_text:
                 stable_count += 1
                 if stable_count >= 4:  # Stable for 2 seconds
+                    print(f"[DEBUG] Response complete ({current_length} chars)", file=sys.stderr)
                     return current_text
             else:
                 last_text = current_text
+                last_length = current_length
                 stable_count = 0
 
         time.sleep(0.5)
 
-    # Timeout - return what we have
+    # Timeout - check if response was still growing
+    if last_length > 0:
+        if last_length > len(last_text) * 0.9:  # Still growing near end
+            print(f"[WARNING] Timeout reached but response still streaming ({last_length} chars)", file=sys.stderr)
+            print(f"[WARNING] Returning partial response. Consider increasing --wait-seconds", file=sys.stderr)
+        else:
+            print(f"[DEBUG] Timeout reached, returning response ({last_length} chars)", file=sys.stderr)
+    else:
+        print("[WARNING] No response received - ChatGPT may be rate-limiting or query failed", file=sys.stderr)
+
     return last_text
 
 
@@ -366,8 +401,8 @@ def build_parser():
     p_send.add_argument(
         "--wait-seconds",
         type=int,
-        default=60,
-        help="Maximum seconds to wait for response (default: 60).",
+        default=180,
+        help="Maximum seconds to wait for response (default: 180).",
     )
     p_send.set_defaults(func=cmd_send)
 
