@@ -139,6 +139,62 @@ EOF
 
 **Goal:** Extract hard data (Greek terms, structural patterns, primary sources) that can't be dismissed as interpretation, then ensure your additions flow naturally with the existing book style.
 
+### Argument Coverage: When to Use All Arguments vs Top 2-3
+
+**CRITICAL BALANCING ACT:**
+
+When ChatGPT provides multiple strong arguments, you must assess topic centrality:
+
+**For MINOR/PERIPHERAL topics:**
+- Use top 2-3 strongest arguments only
+- Example: "What kind of perfume was used?" → Pick 2-3 best points
+- Avoid over-elaboration on minor details
+
+**For CENTRAL THESIS/MAJOR CLAIMS:**
+- Analyze ALL strong arguments ChatGPT provides
+- Read the FULL response (don't stop at first few points)
+- Cross-reference with existing book content
+- Identify which strong arguments are NEW and non-redundant
+- Incorporate ALL non-redundant strong arguments
+
+**How to assess centrality:**
+- Ask: "Is this a core argument of the chapter/book?"
+- Ask: "Would leaving out arguments weaken the central thesis?"
+- Examples of CENTRAL questions:
+  - "Was Gospel of John written by a woman?" (Chapter 4 thesis)
+  - "Was Jesus baptism a coronation?" (Major claim)
+  - "Is Jesus of royal descent?" (Book-level argument)
+- Examples of MINOR questions:
+  - "What perfume brand was used at anointing?"
+  - "What time of day did events occur?"
+  - "Which specific road did they travel?"
+
+**Workflow for central questions:**
+
+1. **Read ChatGPT's full response** - Don't truncate at first 2-3 points
+2. **List all strong arguments** - Make explicit inventory
+3. **Check book for redundancy** - Which are already covered?
+4. **Incorporate all NEW strong arguments** - Don't leave evidence on the table
+5. **Verify coverage** - Before finalizing, ask: "Did I use all the strong evidence ChatGPT provided for this central claim?"
+
+**Example - Female Authorship (CENTRAL):**
+
+ChatGPT provided 9+ strong arguments:
+1. Gender pairs (Nicodemus/Samaritan woman)
+2. Longest Gospel conversation with woman
+3. Women at all structural hinges
+4. Olfactory descriptions (unique in NT)
+5. Seven named women with speaking roles
+6. Quasi-apostolic roles for women
+7. Peter vs Mary Magdalene at tomb
+8. Martha's confession rivaling Peter's
+9. Women as "genuine dialogue partners"
+
+✅ **Correct:** Use all 9 arguments (non-redundant with existing text)
+❌ **Wrong:** Only use top 3 and ignore the rest
+
+**Goal:** For central theses, provide comprehensive evidence that fully substantiates the claim. For minor details, be concise and focused.
+
 ## Architecture
 
 ### Document Structure
