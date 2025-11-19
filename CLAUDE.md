@@ -100,6 +100,7 @@ poetry run python scripts/chatgpt_web.py send --no-wait "Your question"
 3. **Play devil's advocate** - Challenge each piece: "Play devil's advocate against your own arguments. For each one, what's the strongest counter-argument? What are the weaknesses?"
 4. **Rank by undeniability** - Ask: "If you could only pick ONE piece of evidence that even a skeptical mainstream scholar would have hardest time dismissing, which would it be?"
 5. **Get sources** - If the evidence is strong: "Where does this appear? Give me specific primary sources (texts, inscriptions, archaeological sites)."
+6. **Review additions for style** - After writing new text based on the evidence, ask ChatGPT to review it: "I added new text to the book. Does it match the existing writing style? Is the tone consistent? Any awkward transitions or sentences that need fixing?" Include samples of existing text for style reference.
 
 **Example workflow:**
 ```bash
@@ -122,9 +123,21 @@ poetry run python scripts/ask_chatgpt.py "If you could only pick ONE piece of ev
 
 # Step 5: Get sources
 poetry run python scripts/ask_chatgpt.py "Where does the three-part coronation structure appear? Give specific primary sources."
+
+# Step 6: Review your additions for style consistency
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+I added new text to a book chapter. Here's the EXISTING text style:
+[paste sample of existing text]
+
+Here's the NEW text I added:
+[paste your addition]
+
+Does my new text match the writing style? Is the tone consistent? Any awkward transitions or sentences that need fixing?
+EOF
+)"
 ```
 
-**Goal:** Extract hard data (Greek terms, structural patterns, primary sources) that can't be dismissed as interpretation.
+**Goal:** Extract hard data (Greek terms, structural patterns, primary sources) that can't be dismissed as interpretation, then ensure your additions flow naturally with the existing book style.
 
 ## Architecture
 
