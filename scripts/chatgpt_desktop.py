@@ -342,8 +342,16 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     return last_text
 
 
-def read_last_reply() -> str:
-    """Read the last assistant message from ChatGPT Desktop App."""
+def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
+    """Read the last assistant message from ChatGPT Desktop App.
+
+    Args:
+        show_all: If True, return all messages separated by newlines
+        debug: If True, print debug info about messages found
+
+    Returns:
+        The assistant's response text
+    """
     ax_app, _ = find_chatgpt_app()
     if not ax_app:
         print("ERROR: ChatGPT app not found. Is it running?", file=sys.stderr)
@@ -353,14 +361,35 @@ def read_last_reply() -> str:
     collect_assistant_messages(ax_app, messages)
 
     if not messages:
+        if debug:
+            print("[DEBUG] No messages found", file=sys.stderr)
         return ""
 
-    # Return longest message (likely the actual response, not placeholder)
+    # Filter to meaningful messages (ASCII text, more than 1 char)
     meaningful_messages = [msg for msg in messages if len(msg) > 1 and ord(msg[0]) < 128]
-    if meaningful_messages:
-        return max(meaningful_messages, key=len)
 
-    return messages[-1]
+    if debug:
+        print(f"[DEBUG] Found {len(messages)} total messages, {len(meaningful_messages)} meaningful", file=sys.stderr)
+        for i, msg in enumerate(meaningful_messages):
+            preview = msg[:80].replace('\n', ' ')
+            print(f"[DEBUG] Message {i+1}: {len(msg)} chars - {preview}...", file=sys.stderr)
+
+    if not meaningful_messages:
+        if debug:
+            print("[DEBUG] No meaningful messages, returning last raw message", file=sys.stderr)
+        return messages[-1]
+
+    if show_all:
+        # Return all messages, separated by horizontal rules
+        return "\n\n" + "="*60 + "\n\n".join(meaningful_messages)
+
+    # Return longest message (most likely the main response)
+    longest = max(meaningful_messages, key=len)
+
+    if debug and len(meaningful_messages) > 1:
+        print(f"[DEBUG] Multiple messages found, returning longest ({len(longest)} chars)", file=sys.stderr)
+
+    return longest
 
 
 # --------------- CLI layer --------------- #
@@ -379,7 +408,7 @@ def cmd_send(args):
 
 
 def cmd_read(args):
-    text = read_last_reply()
+    text = read_last_reply(show_all=args.all, debug=args.debug)
     sys.stdout.write(text)
     if not text.endswith("\n"):
         sys.stdout.write("\n")
@@ -407,6 +436,16 @@ def build_parser():
     p_send.set_defaults(func=cmd_send)
 
     p_read = sub.add_parser("read", help="Read the last assistant reply from ChatGPT.")
+    p_read.add_argument(
+        "--all",
+        action="store_true",
+        help="Show all messages found, not just the longest",
+    )
+    p_read.add_argument(
+        "--debug",
+        action="store_true",
+        help="Show debug info about messages found",
+    )
     p_read.set_defaults(func=cmd_read)
 
     return p
