@@ -734,325 +734,98 @@ Tasks:
 
 ---
 
-# 10. CONTENT ADDITION AND EDITING WORKFLOW
+# 10. WORKFLOW FOR ADDING CONTENT TO CHAPTERS
 
-## 10.1 The Core Problem
+## Core Rules
 
-When adding new content to chapters, Claude often creates duplicate sections because it doesn't check what already exists in the chapter.
+1. **ChatGPT writes, Claude reviews** - Claude is bad at writing in the book's style
+2. **Check existing content first** - Don't duplicate what's already there
+3. **No AI word-salad** - Direct, punchy style only
+4. **Get approval before adding** - Present plan to user first
 
-**Common mistake pattern:**
-1. Claude wants to add insights about "Lord's Prayer political meaning"
-2. Claude immediately writes a new section and adds it
-3. But the chapter already has a "Pater Noster" section discussing Lord's Prayer
-4. Result: Duplication, wasted effort, user frustration
+## Step-by-Step Workflow
 
-## 10.2 Mandatory Pre-Addition Workflow
+### Step 1: Check What Already Exists
+- Read the FULL chapter file
+- Grep for keywords related to your planned addition
+- Find where topic is already discussed (if anywhere)
 
-**BEFORE adding ANY new content to a chapter, Claude MUST:**
+### Step 2: Determine Action
+- **If topic exists:** Plan to ENHANCE that section, not create new one
+- **If topic doesn't exist:** Verify by searching synonyms, then can add new section
 
-### Step 1: Read the Entire Chapter
-- Use Read tool to read the FULL chapter file from start to end
-- Don't skip this step, even if you think you know what's in the chapter
-- Note approximate line numbers for all major sections
-
-### Step 2: Search for Related Content
-- Use Grep to search for keywords related to your planned addition
-- Example: If adding about "baptism as coronation", search for: "baptism", "coronation", "John the Baptist", "anointing", "Spirit descent"
-- Document what you find: "Found existing baptism discussion at lines X-Y"
-
-### Step 3: Determine Enhancement vs New Section
-For each piece of content you want to add:
-
-**If topic already exists:**
-- ✅ **ENHANCE the existing section** - Don't create a new one
-- Add your new insights to where the topic is already discussed
-- Example: "Lord's Prayer already discussed at lines 114-230, I should enhance line 165 discussion of doxology"
-
-**If topic genuinely doesn't exist:**
-- ✅ **Can add new section** - But verify it's truly new
-- Double-check by searching for synonyms and related terms
-- Example: If no discussion of "hamartia as political failure" exists anywhere, can add new section
-
-### Step 4: Present Analysis to User (in Plan Mode)
-Before making ANY changes, tell the user:
-
-```
-I want to add content about [TOPIC].
-
-ANALYSIS:
-- Lines X-Y already discuss [related topic]
-- Lines A-B mention [keyword]
-- Lines M-N cover [similar concept]
-
-PLAN:
-- [Option 1]: Enhance existing section at lines X-Y by adding [specific new insights]
-- [Option 2]: This topic doesn't exist, add new section after line Z
-
-QUESTION: Should I proceed with Option 1 or Option 2?
-```
-
-### Step 5: Execute Only After Approval
-- Make changes only after user confirms the plan
-- Commit with clear message indicating what was enhanced vs what was new
-
-## 10.3 Red Flags That Indicate Duplication
-
-Watch for these warning signs that you're about to duplicate:
-
-- You're writing about a topic that seems "important" or "central" to the chapter
-  - **Red flag:** Important topics are likely already discussed
-- You're adding content about something mentioned in chapter title/section headings
-  - **Red flag:** Core chapter themes are already covered
-- You're writing about a famous text (Lord's Prayer, baptism, key Gospel verses)
-  - **Red flag:** Famous texts are probably already analyzed
-
-## 10.4 Examples of Correct Workflow
-
-### Example 1: Lord's Prayer Political Meaning (CORRECT)
-
-**Initial idea:** "I want to add that Lord's Prayer is imperial oath"
-
-**Step 1:** Read full chapter3.tex
-**Step 2:** Search for "Lord's Prayer", "Pater Noster", "kingdom and power and glory"
-**Step 3:** Found existing section:
-- Lines 114-230: Full "Pater Noster" subsection
-- Line 165: Already discusses doxology "For thine is the kingdom, and the power, and the glory"
-
-**Step 4:** Present to user:
-> "I found Lord's Prayer already extensively discussed at lines 114-230. Line 165 mentions the doxology. Should I ENHANCE line 165 by adding the imperial oath / loyalty transfer insight, rather than creating a new section?"
-
-**Step 5:** After approval, enhance existing line 165 (not create new section)
-
-### Example 2: Duplication Mistake (WRONG)
-
-**What Claude did wrong:**
-1. ❌ Skipped reading full chapter
-2. ❌ Immediately wrote new section "Lord's Prayer as Imperial Oath" (lines 692-708)
-3. ❌ Didn't notice lines 114-230 already discuss Lord's Prayer extensively
-4. ❌ Created 17 lines of duplicate content
-
-**Result:** User frustration, wasted time, had to revert changes
-
-## 10.5 Special Case: Multi-Topic Additions
-
-When you have MULTIPLE insights to add (e.g., from ChatGPT research):
-
-1. **Make a checklist:** List each distinct insight/topic
-2. **For EACH item on checklist:**
-   - Run the full workflow (search for existing discussion)
-   - Determine: enhance existing vs new section
-3. **Present consolidated plan:**
-   ```
-   I have 5 insights to add:
-   1. [Topic A] - Found at lines X-Y, will enhance
-   2. [Topic B] - Found at lines M-N, will enhance
-   3. [Topic C] - Doesn't exist, will add new section
-   4. [Topic D] - Found at lines P-Q, will enhance
-   5. [Topic E] - Doesn't exist, will add new section
-
-   Proceed?
-   ```
-4. **After approval:** Execute all enhancements + additions in logical order
-
-## 10.6 Enforcement
-
-This is not optional. If Claude adds content without following this workflow:
-- User will stop Claude immediately
-- Claude must revert changes
-- Claude must start over with proper workflow
-
-The workflow exists to prevent wasted effort and maintain chapter coherence.
-
----
-
-# 11. WRITING STYLE: NO AI WORD-SALAD
-
-## 11.1 The Problem
-
-Claude often writes in verbose ChatGPT-style with bloated, padded explanations. The book's style is DIRECT and PUNCHY. Every unnecessary word must be cut.
-
-## 11.2 Forbidden AI-Speak Patterns
-
-**NEVER use these types of phrases:**
-
-❌ "preserved in Greek liturgy and repeated by Christians for centuries"
-❌ "When Christians recited this formula daily, they were performing a loyalty transfer"
-❌ "No Roman official hearing this prayer would mistake it for private piety"
-❌ "It was sedition spoken aloud, a daily public declaration that..."
-❌ "This is the quintessential royal acclamation, the kind of formula shouted in honor of..."
-
-**Why these are bad:**
-- Bloated and verbose
-- Explain things the reader can infer
-- Sound like AI-generated padding
-- Don't match the book's direct style
-
-## 11.3 The Book's Actual Style
-
-Look at existing text in the chapters. The style is:
-
-✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Punchy:** Short declarative sentences
-✅ **Evidence-first:** Show the data, minimal interpretation
-✅ **No padding:** Every word must earn its place
-
-**Good example from the book:**
-> "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
-
-**Bad (AI-padded) version:**
-> "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
-
-## 11.4 Mandatory Before Adding Content
-
-Before adding ANY text to chapters:
-
-1. **Write the content**
-2. **Cut everything that isn't essential**
-3. **Read similar sections in the book** - does your addition match the style?
-4. **If it sounds like ChatGPT explaining something, REWRITE IT**
-
-## 11.5 Red Flags Your Writing is AI Padding
-
-- Using phrases like "it is important to note"
-- Explaining what the reader can infer themselves
-- Multiple clauses where one would do
-- Describing what something "does" rather than stating what it IS
-- Hedging language: "can be seen as", "may suggest", "would indicate"
-
-## 11.6 How to Fix AI-Padded Text
-
-**Step 1:** Identify the core claim
-**Step 2:** Cut everything else
-**Step 3:** State it directly
-
-**Example:**
-
-❌ **AI-padded version:**
-"When Christians recited this formula daily, they were performing a loyalty transfer: not Caesar's empire, not Rome's power, not the emperor's glory, but yours—God's."
-
-✅ **Direct version:**
-"Not Caesar's empire—God's. Not Rome's power—God's. Not the emperor's glory—God's."
-
-## 11.7 Enforcement
-
-If Claude adds AI word-salad to chapters:
-- User will stop Claude immediately
-- Claude must rewrite in direct style OR revert entirely
-- No AI-speak is acceptable in the manuscript
-
----
-
-# 12. CONTENT CREATION WORKFLOW: CHATGPT WRITES, CLAUDE REVIEWS
-
-## 12.1 The Problem
-
-Claude writes content itself instead of using ChatGPT to draft it. Claude is BAD at writing in the book's style. ChatGPT is BETTER at writing style-matched content when properly prompted.
-
-## 12.2 The Correct Workflow
-
-**When adding content to chapters:**
-
-1. **ChatGPT drafts the content** - Ask ChatGPT to write text that matches the book's style
-2. **Claude reviews** - Check for accuracy, bias, factual errors
-3. **Claude edits minimally** - Fix errors but keep ChatGPT's phrasing
-4. **Claude does NOT write original manuscript content**
-
-## 12.3 How to Prompt ChatGPT for Drafts
-
-When asking ChatGPT to write text for the book:
-
+### Step 3: Have ChatGPT Draft the Text
 ```bash
 poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
-I need you to write text for a scholarly book. Here's the existing style:
+Here's the existing text style from the book:
+[PASTE 2-3 PARAGRAPHS SHOWING STYLE]
 
-[PASTE 2-3 PARAGRAPHS FROM THE BOOK SHOWING THE STYLE]
+Write text covering:
+- [Point A]
+- [Point B]
+- [Point C]
 
-Now write [DESCRIPTION OF WHAT YOU NEED]:
-- Topic: [X]
-- Key points to cover: [A, B, C]
-- Length: ~[N] lines
-- Match the direct, punchy style above
-- No AI padding or verbose explanations
+Requirements:
+- Direct, punchy sentences
+- No AI padding ("preserved in liturgy for centuries", "performing a loyalty transfer", etc.)
 - Evidence-first, minimal interpretation
+- ~[N] lines
 
 Write the text.
 EOF
 )"
 ```
 
-**Key elements:**
-- Show ChatGPT actual examples of the book's style
-- Explicitly tell it "direct, punchy, no AI padding"
-- Give specific points to cover
-- Specify approximate length
+### Step 4: Review ChatGPT's Draft
+- Check factual accuracy
+- Check for Western/Protestant bias
+- Check style match with existing text
+- Cut any remaining AI padding
+- Make minimal edits only
 
-## 12.4 Example: Correct Workflow
-
-**Task:** Add content about "Lord's Prayer as imperial oath" to chapter 3
-
-**Step 1:** Read chapter 3, find it already discusses Lord's Prayer at lines 114-230
-
-**Step 2:** Ask ChatGPT to write enhancement for existing line 165:
-
-```bash
-poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
-I need text for a book about Jesus and Greek royal ideology. Here's the existing style:
-
-[PASTE lines 160-170 from chapter3.tex showing existing Pater Noster discussion]
-
-Now write 3-4 sentences enhancing the doxology discussion to show:
-- The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions
-- This makes the Lord's Prayer a loyalty oath structure
-- Saying it daily = declaring political loyalty to God's empire, not Caesar's
-
-Match the direct, punchy style above. No verbose explanations.
-EOF
-)"
+### Step 5: Present Plan to User
+```
+ANALYSIS: [What exists, what doesn't]
+PLAN: [Enhance lines X-Y vs add new section]
+DRAFT: [Show the text ChatGPT wrote + your edits]
 ```
 
-**Step 3:** ChatGPT provides draft text
+### Step 6: After Approval, Add and Commit
 
-**Step 4:** Claude reviews for:
-- Factual accuracy (is the claim about Hellenistic inscriptions correct?)
-- Bias (any Western/Protestant assumptions?)
-- Style match (does it fit the existing text?)
+## Red Flags = Stop and Check
 
-**Step 5:** Claude makes minimal edits if needed, then adds to chapter
+**You're about to duplicate if:**
+- Topic seems "important" (probably already covered)
+- Famous text (Lord's Prayer, baptism, etc.)
+- Mentioned in chapter title/headings
 
-**Step 6:** Ask ChatGPT to review the integration:
+**You're writing AI garbage if:**
+- "preserved in X and repeated for centuries"
+- "When Christians recited this formula daily, they were..."
+- "This is the quintessential..."
+- "It is important to note..."
+- Multiple clauses where one would do
 
-```bash
-poetry run python scripts/ask_chatgpt.py "Here's the existing text with my addition. Does it flow? Any awkward transitions?"
-```
+## Examples
 
-## 12.5 What Claude Should NOT Do
+### Good: "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
 
-❌ **Write original manuscript content yourself**
-❌ **Draft new sections without showing ChatGPT the style first**
-❌ **Add text without getting ChatGPT to review integration**
+### Bad: "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
 
-## 12.6 When Claude Can Write
+## What Claude Can/Cannot Write
 
-Claude CAN write:
-- Commit messages
-- This CLAUDE.md directive file
-- Code/scripts
-- File organization
-- Plans and analyses
+**CAN write:**
+- Commit messages, code, plans, this directive file
 
-Claude CANNOT write:
-- Chapter content (chapters 1-6, preface, epilogue)
-- New sections or subsections
-- Paragraph-level additions
+**CANNOT write:**
+- Chapter content, sections, paragraphs (ChatGPT does that)
 
-## 12.7 Enforcement
+## Enforcement
 
-If Claude writes manuscript content without using ChatGPT first:
-- User will stop Claude immediately
-- Claude must delete the content
-- Claude must redo using ChatGPT drafting workflow
-
-The rule is: **ChatGPT writes, Claude reviews.**
+If Claude violates this workflow:
+- User stops immediately
+- Revert changes
+- Redo properly
 
 ## Historical Cities Map
 
