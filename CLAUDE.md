@@ -863,6 +863,83 @@ This is not optional. If Claude adds content without following this workflow:
 
 The workflow exists to prevent wasted effort and maintain chapter coherence.
 
+---
+
+# 11. WRITING STYLE: NO AI WORD-SALAD
+
+## 11.1 The Problem
+
+Claude often writes in verbose ChatGPT-style with bloated, padded explanations. The book's style is DIRECT and PUNCHY. Every unnecessary word must be cut.
+
+## 11.2 Forbidden AI-Speak Patterns
+
+**NEVER use these types of phrases:**
+
+❌ "preserved in Greek liturgy and repeated by Christians for centuries"
+❌ "When Christians recited this formula daily, they were performing a loyalty transfer"
+❌ "No Roman official hearing this prayer would mistake it for private piety"
+❌ "It was sedition spoken aloud, a daily public declaration that..."
+❌ "This is the quintessential royal acclamation, the kind of formula shouted in honor of..."
+
+**Why these are bad:**
+- Bloated and verbose
+- Explain things the reader can infer
+- Sound like AI-generated padding
+- Don't match the book's direct style
+
+## 11.3 The Book's Actual Style
+
+Look at existing text in the chapters. The style is:
+
+✅ **Direct:** "This is X" not "This can be understood as X"
+✅ **Punchy:** Short declarative sentences
+✅ **Evidence-first:** Show the data, minimal interpretation
+✅ **No padding:** Every word must earn its place
+
+**Good example from the book:**
+> "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
+
+**Bad (AI-padded) version:**
+> "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
+
+## 11.4 Mandatory Before Adding Content
+
+Before adding ANY text to chapters:
+
+1. **Write the content**
+2. **Cut everything that isn't essential**
+3. **Read similar sections in the book** - does your addition match the style?
+4. **If it sounds like ChatGPT explaining something, REWRITE IT**
+
+## 11.5 Red Flags Your Writing is AI Padding
+
+- Using phrases like "it is important to note"
+- Explaining what the reader can infer themselves
+- Multiple clauses where one would do
+- Describing what something "does" rather than stating what it IS
+- Hedging language: "can be seen as", "may suggest", "would indicate"
+
+## 11.6 How to Fix AI-Padded Text
+
+**Step 1:** Identify the core claim
+**Step 2:** Cut everything else
+**Step 3:** State it directly
+
+**Example:**
+
+❌ **AI-padded version:**
+"When Christians recited this formula daily, they were performing a loyalty transfer: not Caesar's empire, not Rome's power, not the emperor's glory, but yours—God's."
+
+✅ **Direct version:**
+"Not Caesar's empire—God's. Not Rome's power—God's. Not the emperor's glory—God's."
+
+## 11.7 Enforcement
+
+If Claude adds AI word-salad to chapters:
+- User will stop Claude immediately
+- Claude must rewrite in direct style OR revert entirely
+- No AI-speak is acceptable in the manuscript
+
 ## Historical Cities Map
 
 The `map.py` script generates an interactive Folium map of 40+ cities mentioned in the New Testament, including Jerusalem, Antioch, Ephesus, Rome, Athens, Corinth, etc. This supports the book's argument about Christianity's connection to Greek-speaking urban centers.
