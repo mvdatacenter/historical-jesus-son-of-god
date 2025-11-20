@@ -732,6 +732,137 @@ Tasks:
 6. Provide links to multiple scholarly or serious sources.
 ```
 
+---
+
+# 10. CONTENT ADDITION AND EDITING WORKFLOW
+
+## 10.1 The Core Problem
+
+When adding new content to chapters, Claude often creates duplicate sections because it doesn't check what already exists in the chapter.
+
+**Common mistake pattern:**
+1. Claude wants to add insights about "Lord's Prayer political meaning"
+2. Claude immediately writes a new section and adds it
+3. But the chapter already has a "Pater Noster" section discussing Lord's Prayer
+4. Result: Duplication, wasted effort, user frustration
+
+## 10.2 Mandatory Pre-Addition Workflow
+
+**BEFORE adding ANY new content to a chapter, Claude MUST:**
+
+### Step 1: Read the Entire Chapter
+- Use Read tool to read the FULL chapter file from start to end
+- Don't skip this step, even if you think you know what's in the chapter
+- Note approximate line numbers for all major sections
+
+### Step 2: Search for Related Content
+- Use Grep to search for keywords related to your planned addition
+- Example: If adding about "baptism as coronation", search for: "baptism", "coronation", "John the Baptist", "anointing", "Spirit descent"
+- Document what you find: "Found existing baptism discussion at lines X-Y"
+
+### Step 3: Determine Enhancement vs New Section
+For each piece of content you want to add:
+
+**If topic already exists:**
+- ✅ **ENHANCE the existing section** - Don't create a new one
+- Add your new insights to where the topic is already discussed
+- Example: "Lord's Prayer already discussed at lines 114-230, I should enhance line 165 discussion of doxology"
+
+**If topic genuinely doesn't exist:**
+- ✅ **Can add new section** - But verify it's truly new
+- Double-check by searching for synonyms and related terms
+- Example: If no discussion of "hamartia as political failure" exists anywhere, can add new section
+
+### Step 4: Present Analysis to User (in Plan Mode)
+Before making ANY changes, tell the user:
+
+```
+I want to add content about [TOPIC].
+
+ANALYSIS:
+- Lines X-Y already discuss [related topic]
+- Lines A-B mention [keyword]
+- Lines M-N cover [similar concept]
+
+PLAN:
+- [Option 1]: Enhance existing section at lines X-Y by adding [specific new insights]
+- [Option 2]: This topic doesn't exist, add new section after line Z
+
+QUESTION: Should I proceed with Option 1 or Option 2?
+```
+
+### Step 5: Execute Only After Approval
+- Make changes only after user confirms the plan
+- Commit with clear message indicating what was enhanced vs what was new
+
+## 10.3 Red Flags That Indicate Duplication
+
+Watch for these warning signs that you're about to duplicate:
+
+- You're writing about a topic that seems "important" or "central" to the chapter
+  - **Red flag:** Important topics are likely already discussed
+- You're adding content about something mentioned in chapter title/section headings
+  - **Red flag:** Core chapter themes are already covered
+- You're writing about a famous text (Lord's Prayer, baptism, key Gospel verses)
+  - **Red flag:** Famous texts are probably already analyzed
+
+## 10.4 Examples of Correct Workflow
+
+### Example 1: Lord's Prayer Political Meaning (CORRECT)
+
+**Initial idea:** "I want to add that Lord's Prayer is imperial oath"
+
+**Step 1:** Read full chapter3.tex
+**Step 2:** Search for "Lord's Prayer", "Pater Noster", "kingdom and power and glory"
+**Step 3:** Found existing section:
+- Lines 114-230: Full "Pater Noster" subsection
+- Line 165: Already discusses doxology "For thine is the kingdom, and the power, and the glory"
+
+**Step 4:** Present to user:
+> "I found Lord's Prayer already extensively discussed at lines 114-230. Line 165 mentions the doxology. Should I ENHANCE line 165 by adding the imperial oath / loyalty transfer insight, rather than creating a new section?"
+
+**Step 5:** After approval, enhance existing line 165 (not create new section)
+
+### Example 2: Duplication Mistake (WRONG)
+
+**What Claude did wrong:**
+1. ❌ Skipped reading full chapter
+2. ❌ Immediately wrote new section "Lord's Prayer as Imperial Oath" (lines 692-708)
+3. ❌ Didn't notice lines 114-230 already discuss Lord's Prayer extensively
+4. ❌ Created 17 lines of duplicate content
+
+**Result:** User frustration, wasted time, had to revert changes
+
+## 10.5 Special Case: Multi-Topic Additions
+
+When you have MULTIPLE insights to add (e.g., from ChatGPT research):
+
+1. **Make a checklist:** List each distinct insight/topic
+2. **For EACH item on checklist:**
+   - Run the full workflow (search for existing discussion)
+   - Determine: enhance existing vs new section
+3. **Present consolidated plan:**
+   ```
+   I have 5 insights to add:
+   1. [Topic A] - Found at lines X-Y, will enhance
+   2. [Topic B] - Found at lines M-N, will enhance
+   3. [Topic C] - Doesn't exist, will add new section
+   4. [Topic D] - Found at lines P-Q, will enhance
+   5. [Topic E] - Doesn't exist, will add new section
+
+   Proceed?
+   ```
+4. **After approval:** Execute all enhancements + additions in logical order
+
+## 10.6 Enforcement
+
+This is not optional. If Claude adds content without following this workflow:
+- User will stop Claude immediately
+- Claude must revert changes
+- Claude must start over with proper workflow
+
+The workflow exists to prevent wasted effort and maintain chapter coherence.
+
 ## Historical Cities Map
 
 The `map.py` script generates an interactive Folium map of 40+ cities mentioned in the New Testament, including Jerusalem, Antioch, Ephesus, Rome, Athens, Corinth, etc. This supports the book's argument about Christianity's connection to Greek-speaking urban centers.
