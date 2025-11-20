@@ -342,12 +342,13 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     return last_text
 
 
-def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
+def read_last_reply(show_all: bool = False, debug: bool = False, limit: int = None) -> str:
     """Read the last assistant message from ChatGPT Desktop App.
 
     Args:
         show_all: If True, return all messages separated by newlines
         debug: If True, print debug info about messages found
+        limit: If specified, return only the last N messages (when show_all=True)
 
     Returns:
         The assistant's response text
@@ -368,8 +369,20 @@ def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
     # Filter to meaningful messages (ASCII text, more than 1 char)
     meaningful_messages = [msg for msg in messages if len(msg) > 1 and ord(msg[0]) < 128]
 
+    # Remove duplicates while preserving order
+    seen = set()
+    unique_messages = []
+    for msg in meaningful_messages:
+        # Use first 100 chars as key to detect duplicates
+        key = msg[:100]
+        if key not in seen:
+            seen.add(key)
+            unique_messages.append(msg)
+
+    meaningful_messages = unique_messages
+
     if debug:
-        print(f"[DEBUG] Found {len(messages)} total messages, {len(meaningful_messages)} meaningful", file=sys.stderr)
+        print(f"[DEBUG] Found {len(messages)} total messages, {len(meaningful_messages)} meaningful unique", file=sys.stderr)
         for i, msg in enumerate(meaningful_messages):
             preview = msg[:80].replace('\n', ' ')
             print(f"[DEBUG] Message {i+1}: {len(msg)} chars - {preview}...", file=sys.stderr)
@@ -380,8 +393,22 @@ def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
         return messages[-1]
 
     if show_all:
-        # Return all messages, separated by horizontal rules
-        return ("\n\n" + "="*60 + "\n\n").join(meaningful_messages)
+        # Apply limit if specified (take last N messages)
+        if limit and limit > 0:
+            meaningful_messages = meaningful_messages[-limit:]
+            if debug:
+                print(f"[DEBUG] Limited to last {limit} messages", file=sys.stderr)
+
+        # Sort messages by length to get them in rough chronological order
+        # (earlier messages tend to be shorter, later ones longer)
+        # But reverse so newest is last
+        sorted_messages = sorted(meaningful_messages, key=len)
+
+        # Return all messages, separated by horizontal rules and numbered
+        result = []
+        for i, msg in enumerate(sorted_messages, 1):
+            result.append(f"=== MESSAGE {i}/{len(sorted_messages)} ({len(msg)} chars) ===\n\n{msg}")
+        return "\n\n" + "="*60 + "\n\n".join(result)
 
     # Return longest message (most likely the main response)
     longest = max(meaningful_messages, key=len)
@@ -408,7 +435,7 @@ def cmd_send(args):
 
 
 def cmd_read(args):
-    text = read_last_reply(show_all=args.all, debug=args.debug)
+    text = read_last_reply(show_all=args.all, debug=args.debug, limit=args.limit)
     sys.stdout.write(text)
     if not text.endswith("\n"):
         sys.stdout.write("\n")
@@ -445,6 +472,12 @@ def build_parser():
         "--debug",
         action="store_true",
         help="Show debug info about messages found",
+    )
+    p_read.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="Limit to last N messages (only with --all)",
     )
     p_read.set_defaults(func=cmd_read)
 
