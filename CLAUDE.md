@@ -940,6 +940,120 @@ If Claude adds AI word-salad to chapters:
 - Claude must rewrite in direct style OR revert entirely
 - No AI-speak is acceptable in the manuscript
 
+---
+
+# 12. CONTENT CREATION WORKFLOW: CHATGPT WRITES, CLAUDE REVIEWS
+
+## 12.1 The Problem
+
+Claude writes content itself instead of using ChatGPT to draft it. Claude is BAD at writing in the book's style. ChatGPT is BETTER at writing style-matched content when properly prompted.
+
+## 12.2 The Correct Workflow
+
+**When adding content to chapters:**
+
+1. **ChatGPT drafts the content** - Ask ChatGPT to write text that matches the book's style
+2. **Claude reviews** - Check for accuracy, bias, factual errors
+3. **Claude edits minimally** - Fix errors but keep ChatGPT's phrasing
+4. **Claude does NOT write original manuscript content**
+
+## 12.3 How to Prompt ChatGPT for Drafts
+
+When asking ChatGPT to write text for the book:
+
+```bash
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+I need you to write text for a scholarly book. Here's the existing style:
+
+[PASTE 2-3 PARAGRAPHS FROM THE BOOK SHOWING THE STYLE]
+
+Now write [DESCRIPTION OF WHAT YOU NEED]:
+- Topic: [X]
+- Key points to cover: [A, B, C]
+- Length: ~[N] lines
+- Match the direct, punchy style above
+- No AI padding or verbose explanations
+- Evidence-first, minimal interpretation
+
+Write the text.
+EOF
+)"
+```
+
+**Key elements:**
+- Show ChatGPT actual examples of the book's style
+- Explicitly tell it "direct, punchy, no AI padding"
+- Give specific points to cover
+- Specify approximate length
+
+## 12.4 Example: Correct Workflow
+
+**Task:** Add content about "Lord's Prayer as imperial oath" to chapter 3
+
+**Step 1:** Read chapter 3, find it already discusses Lord's Prayer at lines 114-230
+
+**Step 2:** Ask ChatGPT to write enhancement for existing line 165:
+
+```bash
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+I need text for a book about Jesus and Greek royal ideology. Here's the existing style:
+
+[PASTE lines 160-170 from chapter3.tex showing existing Pater Noster discussion]
+
+Now write 3-4 sentences enhancing the doxology discussion to show:
+- The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions
+- This makes the Lord's Prayer a loyalty oath structure
+- Saying it daily = declaring political loyalty to God's empire, not Caesar's
+
+Match the direct, punchy style above. No verbose explanations.
+EOF
+)"
+```
+
+**Step 3:** ChatGPT provides draft text
+
+**Step 4:** Claude reviews for:
+- Factual accuracy (is the claim about Hellenistic inscriptions correct?)
+- Bias (any Western/Protestant assumptions?)
+- Style match (does it fit the existing text?)
+
+**Step 5:** Claude makes minimal edits if needed, then adds to chapter
+
+**Step 6:** Ask ChatGPT to review the integration:
+
+```bash
+poetry run python scripts/ask_chatgpt.py "Here's the existing text with my addition. Does it flow? Any awkward transitions?"
+```
+
+## 12.5 What Claude Should NOT Do
+
+❌ **Write original manuscript content yourself**
+❌ **Draft new sections without showing ChatGPT the style first**
+❌ **Add text without getting ChatGPT to review integration**
+
+## 12.6 When Claude Can Write
+
+Claude CAN write:
+- Commit messages
+- This CLAUDE.md directive file
+- Code/scripts
+- File organization
+- Plans and analyses
+
+Claude CANNOT write:
+- Chapter content (chapters 1-6, preface, epilogue)
+- New sections or subsections
+- Paragraph-level additions
+
+## 12.7 Enforcement
+
+If Claude writes manuscript content without using ChatGPT first:
+- User will stop Claude immediately
+- Claude must delete the content
+- Claude must redo using ChatGPT drafting workflow
+
+The rule is: **ChatGPT writes, Claude reviews.**
+
 ## Historical Cities Map
 
 The `map.py` script generates an interactive Folium map of 40+ cities mentioned in the New Testament, including Jerusalem, Antioch, Ephesus, Rome, Athens, Corinth, etc. This supports the book's argument about Christianity's connection to Greek-speaking urban centers.
