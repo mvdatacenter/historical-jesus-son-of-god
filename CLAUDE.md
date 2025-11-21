@@ -69,6 +69,25 @@ Don't dump ChatGPT responses. Have a DISCUSSION:
 
 **Example - Bad:** "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
 
+### Jargon: When to Use vs. Replace
+
+**Target reader:** Simple English speaker, no academic background
+
+✅ **KEEP jargon when:**
+- No simpler accurate word exists ("liturgical" - there's no replacement)
+- Domain-standard term readers will encounter ("apocalyptically" - common in this field)
+
+❌ **REPLACE jargon when:**
+- It's just decoration ("epithet" → "title", "juridical" → "legal")
+- Simpler word works ("utilize" → "use", "commence" → "start")
+- It's academic showing-off ("hermeneutical" → "interpretation")
+
+**Examples:**
+- "liturgical practice" ✅ (keep - no simpler term)
+- "the precise epithet" ❌ → "the precise title"
+- "juridical hair-splitting" ❌ → "legal hair-splitting"
+- "apocalyptically" ✅ (keep - domain standard)
+
 ## Red Flags = Stop
 
 **Duplication:**
