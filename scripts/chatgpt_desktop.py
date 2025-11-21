@@ -201,9 +201,35 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     ns_app.activateWithOptions_(1)  # NSApplicationActivateIgnoringOtherApps
     time.sleep(0.5)
 
-    # Click into text area
-    AXUIElementPerformAction(text_input, kAXPressAction)
-    time.sleep(0.5)
+    # Click into text area using mouse events (more reliable than kAXPressAction)
+    position = ax_attr(text_input, kAXPositionAttribute)
+    size = ax_attr(text_input, kAXSizeAttribute)
+
+    if position and size:
+        pos_str = str(position)
+        size_str = str(size)
+        pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
+        size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
+
+        if pos_match and size_match:
+            pos_x = float(pos_match.group(1))
+            pos_y = float(pos_match.group(2))
+            width = float(size_match.group(1))
+            height = float(size_match.group(2))
+
+            # Click in the center of the text input
+            click_x = pos_x + width / 2
+            click_y = pos_y + height / 2
+            click_at_position(click_x, click_y)
+            time.sleep(0.5)
+        else:
+            # Fallback to AX action
+            AXUIElementPerformAction(text_input, kAXPressAction)
+            time.sleep(0.5)
+    else:
+        # Fallback to AX action
+        AXUIElementPerformAction(text_input, kAXPressAction)
+        time.sleep(0.5)
 
     # Select all and paste
     press_cmd_a()
@@ -414,6 +440,44 @@ def cmd_read(args):
         sys.stdout.write("\n")
 
 
+def cmd_test(args):
+    """Test if ChatGPT app can be found and basic connectivity works."""
+    print("Testing ChatGPT Desktop automation...", file=sys.stderr)
+
+    ax_app, ns_app = find_chatgpt_app()
+    if not ax_app:
+        print("✗ FAIL: ChatGPT app not found. Is it running?", file=sys.stderr)
+        sys.exit(1)
+
+    print("✓ ChatGPT app found", file=sys.stderr)
+
+    # Try to find text input
+    text_input = find_text_input(ax_app)
+    if not text_input:
+        print("✗ FAIL: Could not find text input field", file=sys.stderr)
+        sys.exit(1)
+
+    print("✓ Text input field found", file=sys.stderr)
+
+    # Try to collect buttons
+    buttons = []
+    collect_all_buttons(ax_app, buttons)
+    send_button = None
+    for btn, desc in buttons:
+        if desc and desc == 'Send':
+            send_button = btn
+            break
+
+    if send_button:
+        print("✓ Send button found", file=sys.stderr)
+    else:
+        print("⚠ Send button not found (ChatGPT may already be responding)", file=sys.stderr)
+        print("  This is normal if there's already a response ready", file=sys.stderr)
+
+    print("\n✓ TEST PASSED: ChatGPT Desktop automation is functional", file=sys.stderr)
+    sys.exit(0)
+
+
 def build_parser():
     p = argparse.ArgumentParser(
         description="Automate ChatGPT Desktop App via macOS Accessibility API."
@@ -447,6 +511,9 @@ def build_parser():
         help="Show debug info about messages found",
     )
     p_read.set_defaults(func=cmd_read)
+
+    p_test = sub.add_parser("test", help="Test if ChatGPT Desktop automation is working.")
+    p_test.set_defaults(func=cmd_test)
 
     return p
 
