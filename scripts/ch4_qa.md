@@ -59,3 +59,64 @@ After line 630 (current mention of "initiation or purification"), insert detaile
 
 This would strengthen the argument significantly by showing why non-coronation readings are problematic, not just asserting coronation is correct.
 
+---
+
+## Female Authorship Evidence (ChatGPT Response - 2025-11-21)
+
+**Query:** Evidence from Gospel of John suggesting female authorship (for expanding 3 sections: Nicodemus, perfume anointing, Bechdel test)
+
+**Key findings** (ChatGPT: "can't prove female authorship, but stubborn textual patterns"):
+
+### 1. Structural fact: Women occupy ALL key narrative hinges
+
+**Countable data:**
+- 7 women with speaking roles (Jesus' mother, Samaritan woman, woman caught in adultery, Martha, Mary of Bethany, Mary Magdalene, another Mary at cross)
+- Women at EVERY major pivot:
+  - First sign: Cana (Jesus' mother initiates)
+  - First full theological dialogue: John 4 (Samaritan woman)
+  - Climactic "I am resurrection" confession: John 11 (Martha)
+  - Anointing before death: John 12 (Mary of Bethany)
+  - First resurrection witness: John 20 (Mary Magdalene)
+
+**Evidence type:** Structural (not interpretation) - can be presented as table
+**Comparison:** "Unusually prominent, individualized, theologically central compared to ANY male-authored Jewish or Greco-Roman text of the period" (Brown, Schneiders, others)
+
+### 2. Gender pairs: Women systematically outperform men
+
+**Key pairs with measurable contrasts:**
+
+**Nicodemus (John 3) vs Samaritan woman (John 4):**
+- Nicodemus: male, elite, night meeting, misunderstands, fades to half-hearted loyalty
+- Samaritan woman: foreign, marginal, noon meeting, sustained theological debate, becomes first evangelist ("many Samaritans believed because of woman's testimony")
+- **Measurable**: word count, setting (night vs noon), outcome (confusion vs proclamation)
+
+**Peter vs Mary Magdalene at tomb (John 20):**
+- Peter: inspects empty tomb, goes home
+- Mary: stays, weeps, recognizes risen Jesus, receives commission "go to my brothers", delivers resurrection proclamation
+- **Measurable**: who stays, who receives commission, who proclaims
+
+**Martha of Bethany vs Peter:**
+- Martha gets climactic confession: "I believe you are the Christ, the Son of God, who is coming into the world"
+- This "rivals or surpasses Peter's confession in Synoptics in density of titles"
+
+### 3. Longest dialogues are with women
+
+**HARD DATA:**
+- Longest conversation Jesus has with ANY individual in ANY Gospel: Samaritan woman (John 4)
+- Extended dialogues with Martha (11:20-27) and Mary Magdalene (20:11-18) where Jesus reveals identity
+- Women are "genuine dialogue partners" not foils - their questions drive discourse
+
+**Comparison to male-authored texts:**
+- Greco-Roman/Jewish prose: women rarely get long dialogues unless negative examples (seductress, lamenting mother)
+- In John: women are theologians, confessors, missionaries
+
+### For Chapter 4 expansions:
+
+**Nicodemus section:** Make gender pair explicit. Show contrast is OBJECTIVE (word count, setting, outcome). Samaritan woman has more detail, more intimacy, more theological success.
+
+**Perfume/olfactory section:** [Response was cut off, but existing evidence from earlier queries covers this]
+
+**Bechdel section:** Use structural hinge data - present as table showing every major turning point centers a woman. "Count scenes recognized by ANY commentary as narrative junctions, identify which character drives them, result: every major turning point centers a woman." This is "statistically unusual for male-authored antiquity."
+
+**Sources cited:** Brown, Schneiders, Miller, Thomaskutty, Dodoo (feminist and non-Western readers)
+
