@@ -53,6 +53,25 @@ def ax_attr(element, attr_name: str):
     return None
 
 
+def is_chatgpt_thinking(element) -> bool:
+    """
+    Check if ChatGPT is thinking by looking for Stop button.
+
+    When ChatGPT is generating a response, the Send button is replaced
+    with a Stop button (labeled "Stop" or "Stop generating").
+    So if we find a Stop button, ChatGPT is thinking.
+    """
+    buttons = []
+    collect_all_buttons(element, buttons)
+
+    for btn, desc in buttons:
+        if desc and 'Stop' in desc:
+            print(f"[DEBUG] ChatGPT is thinking (Stop button found: '{desc}')", file=sys.stderr)
+            return True
+
+    return False
+
+
 def find_chatgpt_app():
     """Find the ChatGPT desktop app and return AX element and NSRunningApplication."""
     workspace = NSWorkspace.sharedWorkspace()
@@ -90,14 +109,25 @@ def find_text_input(element, depth=0, max_depth=15) -> Optional[object]:
 
 
 def collect_all_buttons(element, buttons: List, depth=0, max_depth=20):
-    """Recursively collect all buttons with their descriptions."""
+    """Recursively collect all buttons with their labels.
+
+    Checks multiple attributes since different apps use different attributes for labels:
+    - AXDescription (most common)
+    - kAXTitleAttribute (some apps)
+    - kAXValueAttribute (fallback)
+    """
     if depth > max_depth:
         return
 
     role = ax_attr(element, kAXRoleAttribute)
 
     if role == "AXButton":
+        # Try multiple attributes to find the button label
         desc = ax_attr(element, kAXDescriptionAttribute)
+        if not desc:
+            desc = ax_attr(element, "AXTitle")
+        if not desc:
+            desc = ax_attr(element, kAXValueAttribute)
         buttons.append((element, desc))
 
     children = ax_attr(element, kAXChildrenAttribute)
@@ -195,6 +225,36 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
         print("ERROR: Could not find text input field", file=sys.stderr)
         sys.exit(1)
 
+    # CRITICAL: Wait for ChatGPT to finish thinking before proceeding
+    print("[DEBUG] Checking if ChatGPT is thinking...", file=sys.stderr)
+    max_wait_for_thinking = 300  # 5 minutes max
+    thinking_check_count = 0
+    while is_chatgpt_thinking(ax_app):
+        if thinking_check_count == 0:
+            print("[DEBUG] ChatGPT is thinking - waiting for it to finish...", file=sys.stderr)
+        thinking_check_count += 1
+        time.sleep(2)
+        if thinking_check_count * 2 >= max_wait_for_thinking:
+            print("ERROR: ChatGPT still thinking after 5 minutes - aborting", file=sys.stderr)
+            sys.exit(1)
+        # Progress update every 30 seconds
+        if thinking_check_count % 15 == 0:
+            print(f"[DEBUG] Still waiting for thinking to complete ({thinking_check_count * 2}s elapsed)...", file=sys.stderr)
+
+    if thinking_check_count > 0:
+        print(f"[DEBUG] Thinking complete after {thinking_check_count * 2}s", file=sys.stderr)
+    else:
+        print("[DEBUG] ChatGPT is ready (not thinking)", file=sys.stderr)
+
+    # CRITICAL: Check if input field already has unsent text
+    existing_input = ax_attr(text_input, kAXValueAttribute)
+    if existing_input and len(existing_input.strip()) > 0:
+        print("ERROR: Input field already contains unsent text - cannot send new message", file=sys.stderr)
+        print(f"[DEBUG] Existing text: {existing_input[:200]}...", file=sys.stderr)
+        print("[DEBUG] Please clear the input field manually or send the existing message first", file=sys.stderr)
+        sys.exit(1)
+    print("[DEBUG] Input field is clear", file=sys.stderr)
+
     # Set clipboard and activate app
     set_clipboard(prompt)
 
@@ -248,8 +308,9 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
 
     send_button = None
     for btn, desc in buttons:
-        if desc and desc == 'Send':
+        if desc and 'Send' in desc:
             send_button = btn
+            print(f"[DEBUG] Found Send button: '{desc}'", file=sys.stderr)
             break
 
     if not send_button:
@@ -498,7 +559,7 @@ def cmd_test(args):
     collect_all_buttons(ax_app, buttons)
     send_button = None
     for btn, desc in buttons:
-        if desc and desc == 'Send':
+        if desc and 'Send' in desc:
             send_button = btn
             break
 
