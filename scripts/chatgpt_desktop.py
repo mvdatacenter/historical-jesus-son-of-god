@@ -368,11 +368,12 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     return last_text
 
 
-def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
+def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False) -> str:
     """Read the last assistant message from ChatGPT Desktop App.
 
     Args:
         show_all: If True, return all messages separated by newlines
+        latest: If True, return the most recent message (default: longest message)
         debug: If True, print debug info about messages found
 
     Returns:
@@ -409,6 +410,12 @@ def read_last_reply(show_all: bool = False, debug: bool = False) -> str:
         # Return all messages, separated by horizontal rules
         return ("\n\n" + "="*60 + "\n\n").join(meaningful_messages)
 
+    if latest:
+        # Return the last (most recent) message
+        if debug and len(meaningful_messages) > 1:
+            print(f"[DEBUG] Multiple messages found, returning latest ({len(meaningful_messages[-1])} chars)", file=sys.stderr)
+        return meaningful_messages[-1]
+
     # Return longest message (most likely the main response)
     longest = max(meaningful_messages, key=len)
 
@@ -434,7 +441,7 @@ def cmd_send(args):
 
 
 def cmd_read(args):
-    text = read_last_reply(show_all=args.all, debug=args.debug)
+    text = read_last_reply(show_all=args.all, latest=args.latest, debug=args.debug)
     sys.stdout.write(text)
     if not text.endswith("\n"):
         sys.stdout.write("\n")
@@ -504,6 +511,11 @@ def build_parser():
         "--all",
         action="store_true",
         help="Show all messages found, not just the longest",
+    )
+    p_read.add_argument(
+        "--latest",
+        action="store_true",
+        help="Show the most recent message (default: longest message)",
     )
     p_read.add_argument(
         "--debug",
