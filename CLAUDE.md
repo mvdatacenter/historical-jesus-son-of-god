@@ -12,10 +12,18 @@ Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" 
 
 ## Core Workflow for Adding Content to Chapters
 
-1. **ChatGPT writes, Claude reviews** - Don't write content yourself
+1. **Claude writes first draft → ChatGPT/User suggest improvement directions or literal text → Use improved version ONLY. Never commit any text without positive review. **
 2. **Check existing content first** - Read full chapter, grep for keywords
 3. **No AI word-salad** - Direct, punchy style only
 4. **Get approval before adding** - Present plan to user
+
+**CRITICAL RULE**: Claude is an absolute moron at writing and turns prose into blabber of an idiot monkey. Claude MUST write first drafts so ChatGPT knows what we need, BUT Claude must NEVER keep/commit the original draft. The workflow is:
+- Claude drafts manuscript text (necessary for GPT context)
+- Send draft to ChatGPT for review/improvement
+- ALWAYS replace Claude's draft with the improved version OR confirm with GPT the text meets the guidelines (rare but sometimes it is ok)
+- NEVER commit Claude's original text as chapter text without any checks or reviews
+
+The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
 
 ### Step-by-Step Process
 
