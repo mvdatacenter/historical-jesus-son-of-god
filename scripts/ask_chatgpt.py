@@ -4,10 +4,27 @@ ask_chatgpt.py
 
 High-level wrapper for Claude to query ChatGPT via macOS Desktop App.
 
-Usage:
-    poetry run python scripts/ask_chatgpt.py "Your query here"
+CAPABILITIES:
+  1. SEND a new query and get the response:
+     poetry run python scripts/ask_chatgpt.py "Your query here"
 
-Returns ChatGPT's response to stdout.
+  2. READ previous turns from the ChatGPT conversation:
+     poetry run python scripts/chatgpt_desktop.py read --all --limit 4
+     (reads last 4 turns from the conversation)
+
+     Options for reading:
+       --all      Show all turns, not just the longest
+       --latest   Show the most recent turn
+       --limit N  Limit to last N turns (auto-scrolls to load them)
+       --scroll   Manually scroll up to load more turns
+       --debug    Show debug info about turns found
+
+IMPORTANT FOR CLAUDE:
+  - The ChatGPT Desktop App maintains a conversation history
+  - You can read previous turns using the 'read' command
+  - Use 'read --all --limit N' to get the last N turns from the user's conversation
+  - The script will automatically scroll up to load turns when --limit is used
+  - This is useful when the user says "read my last N turns from GPT"
 """
 
 import sys
