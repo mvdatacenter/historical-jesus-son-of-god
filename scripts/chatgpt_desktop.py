@@ -35,13 +35,17 @@ from AppKit import NSWorkspace, NSPasteboard
 from Quartz.CoreGraphics import (
     CGEventCreateKeyboardEvent,
     CGEventCreateMouseEvent,
+    CGEventCreateScrollWheelEvent,
     CGEventPost,
     CGEventSetFlags,
+    CGEventSetLocation,
     kCGHIDEventTap,
     kCGEventFlagMaskCommand,
     kCGEventLeftMouseDown,
     kCGEventLeftMouseUp,
+    kCGEventMouseMoved,
     kCGMouseButtonLeft,
+    kCGScrollEventUnitLine,
 )
 
 
@@ -160,6 +164,42 @@ def collect_assistant_messages(element, messages: List[str], depth=0, max_depth=
             collect_assistant_messages(child, messages, depth + 1, max_depth)
 
 
+def collect_messages_with_position(element, messages: List[tuple], depth=0, max_depth=20):
+    """Recursively collect messages with their X position to distinguish user vs assistant.
+
+    Returns list of (text, x_position) tuples.
+    User messages are typically right-aligned, assistant messages left-aligned.
+    """
+    if depth > max_depth:
+        return
+
+    role = ax_attr(element, kAXRoleAttribute)
+
+    # Check if this is a text element
+    if role in ["AXStaticText", "AXTextArea", "AXTextField"]:
+        desc = ax_attr(element, kAXDescriptionAttribute)
+        value = ax_attr(element, kAXValueAttribute)
+
+        text_content = desc or value
+        if text_content and isinstance(text_content, str) and text_content.strip():
+            # Get position
+            position = ax_attr(element, kAXPositionAttribute)
+            x_pos = 0
+            if position:
+                pos_str = str(position)
+                pos_match = re.search(r'x:([\d.]+)', pos_str)
+                if pos_match:
+                    x_pos = float(pos_match.group(1))
+
+            messages.append((text_content.strip(), x_pos))
+
+    # Recurse through children
+    children = ax_attr(element, kAXChildrenAttribute)
+    if children:
+        for child in children:
+            collect_messages_with_position(child, messages, depth + 1, max_depth)
+
+
 def set_clipboard(text: str):
     """Set clipboard content."""
     pb = NSPasteboard.generalPasteboard()
@@ -201,6 +241,352 @@ def click_at_position(x: float, y: float):
     CGEventPost(kCGHIDEventTap, mouse_down)
     time.sleep(0.05)
     CGEventPost(kCGHIDEventTap, mouse_up)
+
+
+def get_chatgpt_message_area_coords(ax_app):
+    """Get coordinates for the message area (right 2/3 of window, middle height).
+
+    Returns (x, y) tuple or None if window not found.
+    """
+    windows = ax_attr(ax_app, "AXWindows")
+    if not windows or len(windows) == 0:
+        return None
+
+    window = windows[0]
+    position = ax_attr(window, kAXPositionAttribute)
+    size = ax_attr(window, kAXSizeAttribute)
+
+    if not position or not size:
+        return None
+
+    pos_str = str(position)
+    size_str = str(size)
+    pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
+    size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
+
+    if not pos_match or not size_match:
+        return None
+
+    win_x = float(pos_match.group(1))
+    win_y = float(pos_match.group(2))
+    win_width = float(size_match.group(1))
+    win_height = float(size_match.group(2))
+
+    # Message area is right 2/3 of window, middle height
+    x = win_x + win_width * 0.7
+    y = win_y + win_height * 0.5
+
+    return (x, y)
+
+
+def do_scroll_events(scroll_x: float, scroll_y: float, direction: str, count: int):
+    """Send scroll wheel events. direction: "up" or "down"."""
+    scroll_lines = 50 if direction == "up" else -50
+    for _ in range(count):
+        scroll_event = CGEventCreateScrollWheelEvent(None, kCGScrollEventUnitLine, 1, scroll_lines)
+        CGEventSetLocation(scroll_event, (scroll_x, scroll_y))
+        CGEventPost(kCGHIDEventTap, scroll_event)
+        time.sleep(0.1)
+
+
+def get_visible_message_snapshot(ax_app) -> set:
+    """Get a snapshot of currently visible message text (first 100 chars of each)."""
+    messages = []
+    collect_assistant_messages(ax_app, messages)
+    # Use first 100 chars as key
+    return set(msg[:100] for msg in messages if len(msg) > 20)
+
+
+def scroll_to_bottom(ax_app, ns_app, debug: bool = False) -> bool:
+    """Scroll to the very bottom of ChatGPT conversation.
+
+    Strategy: Keep scrolling down until the visible messages stop changing.
+
+    Returns True if successful.
+    """
+    coords = get_chatgpt_message_area_coords(ax_app)
+    if not coords:
+        if debug:
+            print("[DEBUG] Could not get message area coordinates", file=sys.stderr)
+        return False
+
+    scroll_x, scroll_y = coords
+
+    # Activate app and move mouse
+    ns_app.activateWithOptions_(1)
+    time.sleep(0.3)
+    move_event = CGEventCreateMouseEvent(None, kCGEventMouseMoved, (scroll_x, scroll_y), 0)
+    CGEventPost(kCGHIDEventTap, move_event)
+    time.sleep(0.2)
+
+    if debug:
+        print(f"[DEBUG] Starting scroll to bottom at ({scroll_x:.0f}, {scroll_y:.0f})", file=sys.stderr)
+
+    # Keep scrolling down until content stops changing
+    last_snapshot = get_visible_message_snapshot(ax_app)
+    stable_count = 0
+    max_rounds = 50  # Safety limit
+
+    for round_num in range(max_rounds):
+        # Scroll down aggressively
+        do_scroll_events(scroll_x, scroll_y, "down", 5)
+        time.sleep(0.3)
+
+        # Check if content changed
+        current_snapshot = get_visible_message_snapshot(ax_app)
+
+        if current_snapshot == last_snapshot:
+            stable_count += 1
+            if debug:
+                print(f"[DEBUG] Round {round_num+1}: stable ({stable_count}/3)", file=sys.stderr)
+            if stable_count >= 3:
+                # We're at the bottom
+                if debug:
+                    print(f"[DEBUG] Reached bottom after {round_num+1} rounds", file=sys.stderr)
+                break
+        else:
+            stable_count = 0
+            if debug:
+                print(f"[DEBUG] Round {round_num+1}: content changed, continuing", file=sys.stderr)
+
+        last_snapshot = current_snapshot
+
+    # Hide app
+    ns_app.hide()
+    time.sleep(0.2)
+
+    return True
+
+
+def collect_all_visible_messages(ax_app, x_threshold: float = 650) -> List[tuple]:
+    """Collect all visible messages with their role.
+
+    Returns list of (message_text, is_user) tuples.
+
+    KNOWN ISSUES / TODO:
+    - x_threshold=650 is hardcoded based on observed ChatGPT layout. May break if
+      window is resized or ChatGPT UI changes. Should dynamically calculate threshold
+      based on window width.
+    - Messages < 50 chars are filtered out, which could miss very short user messages.
+    - Non-ASCII first char filter (ord >= 128) may incorrectly skip valid messages
+      starting with unicode characters.
+    """
+    visible = []
+    collect_messages_with_position(ax_app, visible)
+
+    # Filter to meaningful messages
+    # TODO: This keyword list may not cover all UI elements
+    ui_keywords = {'search', 'new chat', 'chatgpt', 'gpt-4', 'upgrade', 'settings', 'today', 'yesterday'}
+    meaningful = []
+    for msg, x_pos in visible:
+        if len(msg) <= 50:
+            continue
+        if ord(msg[0]) >= 128:
+            continue
+        first_word = msg.split()[0].lower() if msg.split() else ""
+        if first_word in ui_keywords:
+            continue
+        # DESIGN CHOICE: User messages are right-aligned (higher X position)
+        # This was determined empirically by running debug-positions command
+        is_user = x_pos > x_threshold
+        meaningful.append((msg, is_user))
+
+    return meaningful
+
+
+def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str, debug: bool = False):
+    """Collect turns one pair at a time, writing each to a file immediately.
+
+    A "turn" is one user message followed by one assistant response.
+
+    Algorithm:
+    1. Scroll to bottom (most recent messages)
+    2. Find newest unseen assistant message
+    3. Scroll up to find the user message that prompted it
+    4. Write pair to file immediately
+    5. Repeat for num_turns
+    6. If we find multiple assistants in a row, mark them seen and keep scrolling
+    7. If we can't find expected message, throw RuntimeError (don't lie about success)
+
+    KNOWN ISSUES / TODO:
+    - scroll_amount=1 is very slow but necessary to not miss messages. Could be
+      made adaptive based on message density.
+    - 30 attempts per message search is arbitrary. May timeout on very long conversations.
+    - If ChatGPT conversation has unusual structure (e.g., multiple assistant responses
+      to one user message), this will mark extras as seen and may produce unexpected results.
+    - The "first 100 chars as key" deduplication could fail if two messages start identically.
+    """
+    import os
+
+    coords = get_chatgpt_message_area_coords(ax_app)
+    if not coords:
+        raise RuntimeError("Could not get ChatGPT window coordinates")
+
+    scroll_x, scroll_y = coords
+
+    # Scroll to bottom first
+    if debug:
+        print("[DEBUG] Scrolling to bottom...", file=sys.stderr)
+    scroll_to_bottom(ax_app, ns_app, debug=False)
+
+    # Activate app
+    ns_app.activateWithOptions_(1)
+    time.sleep(0.3)
+    move_event = CGEventCreateMouseEvent(None, kCGEventMouseMoved, (scroll_x, scroll_y), 0)
+    CGEventPost(kCGHIDEventTap, move_event)
+    time.sleep(0.2)
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    collected_turns = []
+    seen_keys = set()  # Track what we've already collected (first 100 chars as key)
+    scroll_amount = 1  # Small scrolls to not miss messages
+
+    def find_new_message(expected_role: str) -> tuple:
+        """Find a new unseen message. expected_role is 'user' or 'assistant'.
+        Returns (msg, is_user) or (None, None).
+        """
+        ax_app_local, _ = find_chatgpt_app()
+        all_msgs = collect_all_visible_messages(ax_app_local)
+
+        for msg, is_user in all_msgs:
+            key = msg[:100]
+            if key not in seen_keys:
+                return msg, is_user
+        return None, None
+
+    turn_num = 0
+    while turn_num < num_turns:
+        if debug:
+            print(f"[DEBUG] Collecting turn {turn_num + 1}/{num_turns}...", file=sys.stderr)
+
+        assistant_msg = None
+        user_msg = None
+        retry_count = 0
+        max_retries = 3
+
+        # Step 1: Find assistant message
+        for attempt in range(30):
+            msg, is_user = find_new_message('assistant')
+
+            if msg:
+                key = msg[:100]
+                if not is_user:
+                    # Found assistant
+                    assistant_msg = msg
+                    seen_keys.add(key)
+                    if debug:
+                        print(f"[DEBUG]   Found assistant ({len(msg)} chars)", file=sys.stderr)
+                    break
+                else:
+                    # Found user when expecting assistant - we scrolled too far
+                    # This user belongs to an OLDER turn, skip it
+                    seen_keys.add(key)
+                    if debug:
+                        print(f"[DEBUG]   Skipping user message (looking for assistant)", file=sys.stderr)
+
+            # Scroll up to find more
+            do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
+            time.sleep(0.3)
+
+        if not assistant_msg:
+            raise RuntimeError(f"Could not find assistant message for turn {turn_num + 1}")
+
+        # Step 2: Find user message (scroll up from assistant)
+        for attempt in range(30):
+            # Scroll up first
+            do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
+            time.sleep(0.3)
+
+            msg, is_user = find_new_message('user')
+
+            if msg:
+                key = msg[:100]
+                if is_user:
+                    # Found user
+                    user_msg = msg
+                    seen_keys.add(key)
+                    if debug:
+                        print(f"[DEBUG]   Found user ({len(msg)} chars)", file=sys.stderr)
+                    break
+                else:
+                    # Found another assistant - this shouldn't happen in normal conversation
+                    # Mark as seen and keep scrolling
+                    seen_keys.add(key)
+                    retry_count += 1
+                    if debug:
+                        print(f"[DEBUG]   Found another assistant, marking seen and continuing (retry {retry_count})", file=sys.stderr)
+                    if retry_count > max_retries:
+                        raise RuntimeError(f"Found {retry_count} assistant messages in a row without user. Conversation may have unusual structure.")
+
+        if not user_msg:
+            raise RuntimeError(f"Could not find user message for turn {turn_num + 1}. Found assistant but no preceding user message.")
+
+        # Write the pair to file
+        turn_num += 1
+        filename = os.path.join(output_dir, f"turn{turn_num}.txt")
+        with open(filename, 'w') as f:
+            f.write("[USER]\n\n")
+            f.write(user_msg)
+            f.write("\n\n[ASSISTANT]\n\n")
+            f.write(assistant_msg)
+        print(f"Wrote {filename}", file=sys.stderr)
+
+        collected_turns.append({"user": user_msg, "assistant": assistant_msg})
+
+    # Scroll back to bottom
+    if debug:
+        print("[DEBUG] Scrolling back to bottom...", file=sys.stderr)
+    do_scroll_events(scroll_x, scroll_y, "down", 50)
+    time.sleep(0.3)
+
+    # Hide app
+    ns_app.hide()
+
+    return collected_turns
+
+
+def scroll_chatgpt(ax_app, ns_app, direction: str, amount: int = 5, debug: bool = False):
+    """Scroll in ChatGPT message area.
+
+    Args:
+        ax_app: AX application element
+        ns_app: NSRunningApplication
+        direction: "up" or "down"
+        amount: number of scroll events (each ~50 lines)
+        debug: print debug info
+
+    Returns True if scroll was performed, False on error.
+    """
+    coords = get_chatgpt_message_area_coords(ax_app)
+    if not coords:
+        if debug:
+            print("[DEBUG] Could not get message area coordinates", file=sys.stderr)
+        return False
+
+    scroll_x, scroll_y = coords
+
+    # Activate app
+    ns_app.activateWithOptions_(1)
+    time.sleep(0.3)
+
+    # Move mouse to message area (no click)
+    move_event = CGEventCreateMouseEvent(None, kCGEventMouseMoved, (scroll_x, scroll_y), 0)
+    CGEventPost(kCGHIDEventTap, move_event)
+    time.sleep(0.2)
+
+    if debug:
+        print(f"[DEBUG] Scrolling {direction} at ({scroll_x:.0f}, {scroll_y:.0f}), {amount} events", file=sys.stderr)
+
+    do_scroll_events(scroll_x, scroll_y, direction, amount)
+
+    time.sleep(0.3)
+
+    # Hide app
+    ns_app.hide()
+    time.sleep(0.2)
+
+    return True
 
 
 def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 180) -> str:
@@ -429,23 +815,54 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     return last_text
 
 
-def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False, limit: int = None) -> str:
+def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False, limit: int = None, output_dir: str = None) -> str:
     """Read the last assistant message from ChatGPT Desktop App.
 
     Args:
         show_all: If True, return all messages separated by newlines
         latest: If True, return the most recent message (default: longest message)
         debug: If True, print debug info about messages found
-        limit: If specified, return only the last N messages (when show_all=True)
+        limit: If specified with show_all, use scrolling to collect last N turns
+        output_dir: If specified, write each turn to a separate file in this directory
 
     Returns:
         The assistant's response text
     """
-    ax_app, _ = find_chatgpt_app()
+    import os
+
+    ax_app, ns_app = find_chatgpt_app()
     if not ax_app:
         print("ERROR: ChatGPT app not found. Is it running?", file=sys.stderr)
         sys.exit(1)
 
+    # If --all --limit N is specified, use scrolling to collect turns
+    if show_all and limit and limit > 0:
+        if debug:
+            print(f"[DEBUG] Collecting {limit} turns", file=sys.stderr)
+
+        # If output_dir specified, use incremental collection (one pair at a time)
+        if output_dir:
+            try:
+                collected = collect_turns_incrementally(ax_app, ns_app, limit, output_dir, debug=debug)
+                return f"Wrote {len(collected)} turns to {output_dir}"
+            except RuntimeError as e:
+                print(f"ERROR: {e}", file=sys.stderr)
+                sys.exit(1)
+
+        # Non-output-dir mode: not supported with new incremental approach
+        print("ERROR: --limit requires --output-dir", file=sys.stderr)
+        sys.exit(1)
+
+        # Format output
+        result = []
+        total = len(turns)
+        for i, (msg, is_user) in enumerate(turns, 1):
+            role = "USER" if is_user else "ASSISTANT"
+            label = "LATEST" if i == total else ""
+            result.append(f"=== TURN {i}/{total} [{role}] {label} ({len(msg)} chars) ===\n\n{msg}")
+        return "\n\n" + "="*60 + "\n\n".join(result)
+
+    # Original behavior for non-scrolling cases
     messages = []
     collect_assistant_messages(ax_app, messages)
 
@@ -481,12 +898,6 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
         return messages[-1]
 
     if show_all:
-        # Apply limit if specified (take last N messages)
-        if limit and limit > 0:
-            meaningful_messages = meaningful_messages[-limit:]
-            if debug:
-                print(f"[DEBUG] Limited to last {limit} messages", file=sys.stderr)
-
         # Sort messages by length to get them in rough chronological order
         # (earlier messages tend to be shorter, later ones longer)
         # But reverse so newest is last
@@ -529,7 +940,7 @@ def cmd_send(args):
 
 
 def cmd_read(args):
-    text = read_last_reply(show_all=args.all, latest=args.latest, debug=args.debug, limit=args.limit)
+    text = read_last_reply(show_all=args.all, latest=args.latest, debug=args.debug, limit=args.limit, output_dir=args.output_dir)
     sys.stdout.write(text)
     if not text.endswith("\n"):
         sys.stdout.write("\n")
@@ -573,6 +984,54 @@ def cmd_test(args):
     sys.exit(0)
 
 
+def cmd_debug_positions(args):
+    """Debug: show message positions to understand user vs assistant alignment."""
+    ax_app, _ = find_chatgpt_app()
+    if not ax_app:
+        print("ERROR: ChatGPT app not found. Is it running?", file=sys.stderr)
+        sys.exit(1)
+
+    messages = []
+    collect_messages_with_position(ax_app, messages)
+
+    # Filter meaningful messages
+    meaningful = [(text, x) for text, x in messages if len(text) > 50]
+
+    print(f"Found {len(meaningful)} messages with positions:\n")
+    for text, x_pos in meaningful:
+        preview = text[:60].replace('\n', ' ')
+        print(f"X={x_pos:6.0f}  {preview}...")
+
+
+def cmd_scroll(args):
+    """Test scroll functionality."""
+    ax_app, ns_app = find_chatgpt_app()
+    if not ax_app:
+        print("ERROR: ChatGPT app not found. Is it running?", file=sys.stderr)
+        sys.exit(1)
+
+    direction = args.direction
+
+    if direction == "bottom":
+        print("Scrolling to bottom...", file=sys.stderr)
+        success = scroll_to_bottom(ax_app, ns_app, debug=True)
+        if success:
+            print("✓ Scrolled to bottom", file=sys.stderr)
+        else:
+            print("✗ Scroll failed", file=sys.stderr)
+            sys.exit(1)
+    else:
+        amount = args.amount
+        print(f"Scrolling {direction} {amount} times...", file=sys.stderr)
+        success = scroll_chatgpt(ax_app, ns_app, direction, amount, debug=True)
+
+        if success:
+            print(f"✓ Scroll {direction} complete", file=sys.stderr)
+        else:
+            print(f"✗ Scroll failed", file=sys.stderr)
+            sys.exit(1)
+
+
 def build_parser():
     p = argparse.ArgumentParser(
         description="Automate ChatGPT Desktop App via macOS Accessibility API."
@@ -614,12 +1073,35 @@ def build_parser():
         "--limit",
         type=int,
         default=None,
-        help="Limit to last N messages (only with --all)",
+        help="Limit to last N turns (uses scrolling to collect them)",
+    )
+    p_read.add_argument(
+        "--output-dir",
+        type=str,
+        default=None,
+        help="Write each turn to a separate file (turn1.txt, turn2.txt, etc.) in this directory",
     )
     p_read.set_defaults(func=cmd_read)
 
     p_test = sub.add_parser("test", help="Test if ChatGPT Desktop automation is working.")
     p_test.set_defaults(func=cmd_test)
+
+    p_debug = sub.add_parser("debug-positions", help="Debug: show X positions of messages")
+    p_debug.set_defaults(func=cmd_debug_positions)
+
+    p_scroll = sub.add_parser("scroll", help="Scroll in ChatGPT message area (for testing).")
+    p_scroll.add_argument(
+        "direction",
+        choices=["up", "down", "bottom"],
+        help="Scroll direction: up, down, or 'bottom' to scroll all the way down",
+    )
+    p_scroll.add_argument(
+        "--amount",
+        type=int,
+        default=5,
+        help="Number of scroll events (default: 5, ignored for 'bottom')",
+    )
+    p_scroll.set_defaults(func=cmd_scroll)
 
     return p
 
