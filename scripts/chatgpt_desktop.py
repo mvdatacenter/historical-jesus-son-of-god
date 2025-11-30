@@ -167,40 +167,101 @@ def collect_assistant_messages(element, messages: List[str], depth=0, max_depth=
             collect_assistant_messages(child, messages, depth + 1, max_depth)
 
 
-def collect_messages_with_position(element, messages: List[tuple], depth=0, max_depth=20):
-    """Recursively collect messages with their X position to distinguish user vs assistant.
-
-    Returns list of (text, x_position) tuples.
-    User messages are typically right-aligned, assistant messages left-aligned.
-    """
+def collect_all_text_from_element(element, texts: List[str], depth=0, max_depth=20):
+    """Recursively collect ALL text from an element and its children."""
     if depth > max_depth:
         return
 
     role = ax_attr(element, kAXRoleAttribute)
 
-    # Check if this is a text element
     if role in ["AXStaticText", "AXTextArea", "AXTextField"]:
         desc = ax_attr(element, kAXDescriptionAttribute)
         value = ax_attr(element, kAXValueAttribute)
-
         text_content = desc or value
         if text_content and isinstance(text_content, str) and text_content.strip():
-            # Get position
-            position = ax_attr(element, kAXPositionAttribute)
-            x_pos = 0
-            if position:
-                pos_str = str(position)
-                pos_match = re.search(r'x:([\d.]+)', pos_str)
-                if pos_match:
-                    x_pos = float(pos_match.group(1))
+            texts.append(text_content.strip())
 
-            messages.append((text_content.strip(), x_pos))
-
-    # Recurse through children
     children = ax_attr(element, kAXChildrenAttribute)
     if children:
         for child in children:
-            collect_messages_with_position(child, messages, depth + 1, max_depth)
+            collect_all_text_from_element(child, texts, depth + 1, max_depth)
+
+
+def has_descendant_group_with_text(element, min_text_len=50, depth=0, max_depth=10):
+    """Check if element has any DESCENDANT AXGroup that contains substantial text.
+
+    This recursively checks all descendants, not just direct children.
+    """
+    if depth > max_depth:
+        return False
+
+    children = ax_attr(element, kAXChildrenAttribute) or []
+    for child in children:
+        child_role = ax_attr(child, kAXRoleAttribute)
+        if child_role == "AXGroup":
+            texts = []
+            collect_all_text_from_element(child, texts, 0, 10)
+            substantial = [t for t in texts if len(t) > min_text_len]
+            if substantial:
+                return True
+        # Recurse into children regardless of role
+        if has_descendant_group_with_text(child, min_text_len, depth + 1, max_depth):
+            return True
+    return False
+
+
+def collect_messages_with_position(element, messages: List[tuple], depth=0, max_depth=20, seen_texts=None):
+    """Recursively collect messages with their X and Y position.
+
+    This function finds the DEEPEST AXGroup containers that hold message content.
+    It skips parent AXGroups that contain child AXGroups with text, ensuring we
+    collect at the message level, not at a parent container level.
+
+    Returns list of (text, x_position, y_position) tuples.
+    User messages are typically right-aligned, assistant messages left-aligned.
+    """
+    if seen_texts is None:
+        seen_texts = set()
+    if depth > max_depth:
+        return
+
+    role = ax_attr(element, kAXRoleAttribute)
+    children = ax_attr(element, kAXChildrenAttribute) or []
+
+    # Check if this AXGroup is a LEAF message container (no descendant groups with text)
+    if role == "AXGroup" and not has_descendant_group_with_text(element):
+        texts = []
+        collect_all_text_from_element(element, texts, 0, 10)
+
+        # Filter to substantial texts only
+        substantial = [t for t in texts if len(t) > 50]
+
+        if len(substantial) >= 1:
+            # Join all text from this container as one message
+            joined = "\n\n".join(substantial)
+
+            # Avoid duplicates
+            key = joined[:200]
+            if key not in seen_texts:
+                seen_texts.add(key)
+
+                # Get position of the container
+                position = ax_attr(element, kAXPositionAttribute)
+                x_pos = 0
+                y_pos = 0
+                if position:
+                    pos_str = str(position)
+                    pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
+                    if pos_match:
+                        x_pos = float(pos_match.group(1))
+                        y_pos = float(pos_match.group(2))
+
+                messages.append((joined, x_pos, y_pos))
+                return  # Don't recurse into children - we already got their text
+
+    # Recurse through children
+    for child in children:
+        collect_messages_with_position(child, messages, depth + 1, max_depth, seen_texts)
 
 
 def set_clipboard(text: str):
@@ -424,37 +485,39 @@ def is_at_scroll_top() -> bool:
 def collect_all_visible_messages(ax_app, x_threshold: float = 650) -> List[tuple]:
     """Collect all visible messages with their role.
 
-    Returns list of (message_text, is_user) tuples.
+    Returns list of (message_text, is_user) tuples, sorted by Y position (top to bottom).
+
+    Messages are collected at the AXGroup container level, so fragments of the same
+    response are automatically joined.
 
     KNOWN ISSUES / TODO:
     - x_threshold=650 is hardcoded based on observed ChatGPT layout. May break if
       window is resized or ChatGPT UI changes. Should dynamically calculate threshold
       based on window width.
-    - Messages < 50 chars are filtered out, which could miss very short user messages.
-    - Non-ASCII first char filter (ord >= 128) may incorrectly skip valid messages
-      starting with unicode characters.
     """
     visible = []
     collect_messages_with_position(ax_app, visible)
 
-    # Filter to meaningful messages
-    # TODO: This keyword list may not cover all UI elements
+    # Filter out UI elements
     ui_keywords = {'search', 'new chat', 'chatgpt', 'gpt-4', 'upgrade', 'settings', 'today', 'yesterday'}
-    meaningful = []
-    for msg, x_pos in visible:
+    filtered = []
+    for msg, x_pos, y_pos in visible:
         if len(msg) <= 50:
             continue
-        if ord(msg[0]) >= 128:
+        if msg and ord(msg[0]) >= 128:
             continue
         first_word = msg.split()[0].lower() if msg.split() else ""
         if first_word in ui_keywords:
             continue
         # DESIGN CHOICE: User messages are right-aligned (higher X position)
-        # This was determined empirically by running debug-positions command
         is_user = x_pos > x_threshold
-        meaningful.append((msg, is_user))
+        filtered.append((msg, is_user, y_pos))
 
-    return meaningful
+    # Sort by Y position (top to bottom)
+    filtered.sort(key=lambda x: x[2])
+
+    # Return without Y position
+    return [(msg, is_user) for msg, is_user, y_pos in filtered]
 
 
 def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str, debug: bool = False):
@@ -932,17 +995,30 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
 
         time.sleep(0.5)
 
-    # Timeout - check if response was still growing
+    # Timeout - FAIL if response incomplete
+    # CRITICAL: Never return partial data. Either complete or nothing.
     if last_length > 0:
-        if stable_count > 0:  # Text was changing near timeout (not yet stable)
-            print(f"[WARNING] Timeout reached but response still streaming ({last_length} chars)", file=sys.stderr)
-            print(f"[WARNING] Returning partial response. Consider increasing --wait-seconds", file=sys.stderr)
+        if stable_count < 4:  # Response was still changing - incomplete
+            print(f"\n{'='*60}", file=sys.stderr)
+            print("FATAL ERROR - RESPONSE INCOMPLETE", file=sys.stderr)
+            print('='*60, file=sys.stderr)
+            print(f"Response was still streaming at timeout ({last_length} chars)", file=sys.stderr)
+            print(f"Increase --wait-seconds and try again", file=sys.stderr)
+            print(f"{'='*60}", file=sys.stderr)
+            print("NO OUTPUT - refusing to return partial response", file=sys.stderr)
+            print(f"{'='*60}\n", file=sys.stderr)
+            sys.exit(1)
         else:
-            print(f"[DEBUG] Timeout reached, returning response ({last_length} chars)", file=sys.stderr)
+            # Response stopped changing but we hit timeout after it stabilized
+            print(f"[DEBUG] Response complete at timeout ({last_length} chars)", file=sys.stderr)
+            return last_text
     else:
-        print("[WARNING] No response received - ChatGPT may be rate-limiting or query failed", file=sys.stderr)
-
-    return last_text
+        print(f"\n{'='*60}", file=sys.stderr)
+        print("FATAL ERROR - NO RESPONSE", file=sys.stderr)
+        print('='*60, file=sys.stderr)
+        print("ChatGPT may be rate-limiting or query failed", file=sys.stderr)
+        print(f"{'='*60}\n", file=sys.stderr)
+        sys.exit(1)
 
 
 def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False, limit: int = None, output_dir: str = None) -> str:
@@ -989,40 +1065,22 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
             result.append(f"=== TURN {i}/{total} [{role}] {label} ({len(msg)} chars) ===\n\n{msg}")
         return "\n\n" + "="*60 + "\n\n".join(result)
 
-    # Original behavior for non-scrolling cases
-    messages = []
-    collect_assistant_messages(ax_app, messages)
+    # Use grouped message collection (joins fragments of same response)
+    all_messages = collect_all_visible_messages(ax_app)
 
-    if not messages:
-        if debug:
-            print("[DEBUG] No messages found", file=sys.stderr)
-        return ""
-
-    # Filter to meaningful messages (ASCII text, more than 1 char)
-    meaningful_messages = [msg for msg in messages if len(msg) > 1 and ord(msg[0]) < 128]
-
-    # Remove duplicates while preserving order
-    seen = set()
-    unique_messages = []
-    for msg in meaningful_messages:
-        # Use first 100 chars as key to detect duplicates
-        key = msg[:100]
-        if key not in seen:
-            seen.add(key)
-            unique_messages.append(msg)
-
-    meaningful_messages = unique_messages
+    # Filter to assistant messages only (is_user=False)
+    meaningful_messages = [msg for msg, is_user in all_messages if not is_user]
 
     if debug:
-        print(f"[DEBUG] Found {len(messages)} total messages, {len(meaningful_messages)} meaningful unique", file=sys.stderr)
+        print(f"[DEBUG] Found {len(all_messages)} total messages, {len(meaningful_messages)} assistant messages", file=sys.stderr)
         for i, msg in enumerate(meaningful_messages):
             preview = msg[:80].replace('\n', ' ')
             print(f"[DEBUG] Message {i+1}: {len(msg)} chars - {preview}...", file=sys.stderr)
 
     if not meaningful_messages:
         if debug:
-            print("[DEBUG] No meaningful messages, returning last raw message", file=sys.stderr)
-        return messages[-1]
+            print("[DEBUG] No assistant messages found", file=sys.stderr)
+        return ""
 
     if show_all:
         # Sort messages by length to get them in rough chronological order
@@ -1261,7 +1319,7 @@ def build_parser():
     )
     p_read_latest.set_defaults(func=cmd_read_latest)
 
-    p_read_all = sub.add_parser("read_all", help="Read the ENTIRE conversation by scrolling (outputs to stdout).")
+    p_read_all = sub.add_parser("extensive_scrape_history", help="EXPENSIVE: Scrape ENTIRE conversation history by scrolling. Use sparingly.")
     p_read_all.add_argument(
         "--debug",
         action="store_true",
@@ -1287,7 +1345,7 @@ def build_parser():
     p_debug = sub.add_parser("debug-positions", help="Debug: show X positions of messages")
     p_debug.set_defaults(func=cmd_debug_positions)
 
-    # NOTE: scroll command removed - scrolling should only happen internally as part of read_all
+    # NOTE: scroll command removed - scrolling should only happen internally as part of extensive_scrape_history
     # Exposing scroll as standalone command allows destructive state changes that lose data
 
     return p
