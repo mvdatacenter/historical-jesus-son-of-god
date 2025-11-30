@@ -975,11 +975,37 @@ def cmd_send(args):
             sys.stdout.write("\n")
 
 
-def cmd_read(args):
-    text = read_last_reply(show_all=args.all, latest=args.latest, debug=args.debug, limit=args.limit, output_dir=args.output_dir)
+def cmd_read_latest(args):
+    """Read the most recent assistant message."""
+    text = read_last_reply(show_all=False, latest=True, debug=args.debug, limit=None, output_dir=None)
     sys.stdout.write(text)
     if not text.endswith("\n"):
         sys.stdout.write("\n")
+
+
+def cmd_read_all(args):
+    """Read the entire conversation by scrolling."""
+    # Default to 100 turns if not specified
+    limit = args.limit if args.limit else 100
+    output_dir = args.output_dir if args.output_dir else "/tmp/chatgpt_conversation"
+
+    # Create output dir if needed
+    import os
+    os.makedirs(output_dir, exist_ok=True)
+
+    text = read_last_reply(show_all=True, latest=False, debug=args.debug, limit=limit, output_dir=output_dir)
+    print(text, file=sys.stderr)
+
+    # Now cat all the files to stdout
+    files = sorted([f for f in os.listdir(output_dir) if f.startswith("turn") and f.endswith(".txt")])
+    for f in files:
+        filepath = os.path.join(output_dir, f)
+        with open(filepath, 'r') as fp:
+            content = fp.read()
+            print(f"\n{'='*60}")
+            print(f"=== {f} ===")
+            print('='*60)
+            print(content)
 
 
 def cmd_test(args):
@@ -1089,35 +1115,33 @@ def build_parser():
     )
     p_send.set_defaults(func=cmd_send)
 
-    p_read = sub.add_parser("read", help="Read the last assistant reply from ChatGPT.")
-    p_read.add_argument(
-        "--all",
-        action="store_true",
-        help="Show all messages found, not just the longest",
-    )
-    p_read.add_argument(
-        "--latest",
-        action="store_true",
-        help="Show the most recent message (default: longest message)",
-    )
-    p_read.add_argument(
+    p_read_latest = sub.add_parser("read_latest", help="Read the most recent assistant message.")
+    p_read_latest.add_argument(
         "--debug",
         action="store_true",
         help="Show debug info about messages found",
     )
-    p_read.add_argument(
+    p_read_latest.set_defaults(func=cmd_read_latest)
+
+    p_read_all = sub.add_parser("read_all", help="Read the ENTIRE conversation by scrolling (outputs to stdout).")
+    p_read_all.add_argument(
+        "--debug",
+        action="store_true",
+        help="Show debug info about messages found",
+    )
+    p_read_all.add_argument(
         "--limit",
         type=int,
-        default=None,
-        help="Limit to last N turns (uses scrolling to collect them)",
+        default=100,
+        help="Maximum turns to collect (default: 100)",
     )
-    p_read.add_argument(
+    p_read_all.add_argument(
         "--output-dir",
         type=str,
-        default=None,
-        help="Write each turn to a separate file (turn1.txt, turn2.txt, etc.) in this directory",
+        default="/tmp/chatgpt_conversation",
+        help="Directory to write turn files (default: /tmp/chatgpt_conversation)",
     )
-    p_read.set_defaults(func=cmd_read)
+    p_read_all.set_defaults(func=cmd_read_all)
 
     p_test = sub.add_parser("test", help="Test if ChatGPT Desktop automation is working.")
     p_test.set_defaults(func=cmd_test)
