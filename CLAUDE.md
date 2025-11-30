@@ -55,7 +55,7 @@ Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N 
 
 Don't dump ChatGPT responses. Have a DISCUSSION:
 1. Ask broad question with bias-aware prompt (see template in WORKING WITH CHATGPT)
-2. **Filter:** "Which 2-3 are direct textual evidence that can't be disputed?"
+2. **Filter:** "Does it add or detract from the value to the reader?"
 3. **Challenge:** "Play devil's advocate. What are weaknesses?"
 4. **Rank:** "Pick ONE piece even skeptical scholars can't dismiss."
 5. **Sources:** "Where does this appear? Give primary sources."
@@ -63,8 +63,11 @@ Don't dump ChatGPT responses. Have a DISCUSSION:
 ## Writing Style Rules
 
 ✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Punchy:** Short declarative sentences
+✅ **Confident:** State claims without hedging
 ✅ **Evidence-first:** Show data, minimal interpretation
+✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
+
+**FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
 ❌ **AI garbage:**
 - "preserved in X and repeated for centuries"

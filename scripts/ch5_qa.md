@@ -511,3 +511,83 @@ If Christianity spread through missionary preaching, we should see:
 "Diaspora synagogues themselves functioned with civic-administrative features—officers, treasurers, communal courts—making them compatible with the civic ekklesia frame."
 
 ---
+
+## Ecclesia Existed BEFORE Jesus - Apostles Converted Existing Assemblies (ADDED to chapter)
+
+### Core thesis (refined framing):
+
+**PART 1: The ecclesia structure (today's Mass) existed during/before Jesus's lifetime**
+- Civic-religious assemblies with: bells, processions, sacred silence, readings by herald, deacons assisting presider, communal meal of bread and wine, hymns, formal dress, collection of money
+- Already covered in chapter 2 ("Did Jesus go to church growing up?")
+- Need: archaeological/epigraphic evidence these assemblies were active in Paul's exact cities
+
+**PART 2: Apostles converted EXISTING assemblies, not created new ones**
+- The "conversion" was political allegiance (Christ as king vs Caesar), not change in religious practices
+- The structure, offices, rituals stayed the same - only the loyalty changed
+- Christianity = administrative/political coup inside existing civic-religious infrastructure
+
+### Three pillars of evidence needed:
+
+**PILLAR 1: Civic ekklesiai still active in 1st c. CE**
+
+Inscriptions showing ekklesia kyria (formal citizen assembly) functioning under Rome:
+- Termessos (Pisidia): ekklesia kyria attested 281 BC, continues into Roman period
+- Mylasa, Olymos, other Carian/Lydian cities: multiple inscriptions with ekklesia kyria as "principal assembly"
+- Need: inscriptions from Paul's actual cities (Corinth, Ephesus, Thessalonica, Philippi) - check SEG volumes, Monumenta Asiae Minoris Antiqua
+
+Sources:
+- Körner, Park on ekklesia in inscriptions
+- Lambert's work on British Museum decrees (Attic comparanda)
+- Regional studies on Pisidian cities
+
+**PILLAR 2: Episkopos and diakonos as pre-Christian civic/cultic offices**
+
+Episkopos as civic overseer:
+- Erythrai decree (5th c. BC, AIO 296): "The overseers (episkopoi) and the garrison commander shall allot and install the Council"
+- Rhodes: civic official lists include episkopoi as magistrates
+- Ephesus under Flavians: episkopos appointed by emperor to oversee local magistrates
+- Studies on NT episkopos origin stress term is standard in Hellenistic civic/association contexts
+
+Diakonos as cultic office:
+- Syeris, diakonos of Lysimache (IG II² 3464, Athens, 4th-3rd c. BC): statue base on Acropolis honours cult assistant in state cult of Athena Polias - female, embedded in civic religious system
+- Survey article: "Diakonoi in the Greek-speaking World until 1st c. CE" - catalogues occurrences as cultic personnel, intermediaries
+- Jewish diaspora inscription from Asia Minor: office lists including gerousiarch, grammateus, diakonos, anagnostes
+- Papyri: "Apollo diakonos" and other cultic/intermediary uses
+
+**PILLAR 3: Same buildings/officers transition pagan → Christian**
+
+Assembly hall → church with episkopos:
+- Messene (Peloponnese, 4th c.): assembly hall remodeled by episkopos Theodoulos - donor inscription in mosaic floor ("Theodoulos, episkopos, builds/makes this")
+- Pattern: civic/assembly architecture → Christian remodeling → same lexical field (ekklesia, episkopos) → bishop as patron where civic benefactors were named
+
+Inscriptional continuity:
+- Christian inscriptions in Asia Minor use same epigraphic style for episkopoi, presbyteroi, diakonoi as previously used for civic magistrates
+- Not new inscriptional genre - Christianity moves INTO the civic one
+
+Papyri showing churches as corporate actors:
+- P.Oxy. 8.1138: tax receipt for money paid "on behalf of the ekklesia (church)"
+- P.Oxy. 33.2673: Great Persecution - official confiscation of church property with standard bureaucratic formulae
+- Shows: ekklesia visible to Roman officials, treated like other corporate property owners
+
+### Key rhetorical move:
+
+"We do not yet possess an inscription that says 'the ekklesia of Ephesus, which once sacrificed to Artemis, now recognizes Christos.' What we do have is: (1) continued civic ekklesiai under Rome, (2) the same office-titles migrating into Christian usage, and (3) concrete late-antique cases where an assembly hall and its epigraphic habit are taken over by a Christian episkopos. That is enough to make the 'administrative coup' reading more than theology-talk, even if it stops short of a perfect bilingual graffiti saying 'new management'."
+
+### Research tasks:
+
+1. **Epigraphic survey of pre-70 civic assemblies in Paul's cities**
+   - Monumenta Asiae Minoris Antiqua, SEG volumes for: Ephesus, Corinth, Thessalonica, Philippi, Antioch
+   - Goal: at least one inscription per city explicitly mentioning ekklesia or ekklesia kyria
+
+2. **Office-title continuity table**
+   - Date, place, context (polis/association/synagogue/Christian), office list
+   - Using: Diakonoi survey, episkopos origin studies
+
+3. **Case-study dossiers**
+   - Messene: excavation + inscription reports on assembly hall / church with episkopos Theodoulos
+   - One Asia Minor city with good Christian and civic epigraphy (Nikaia, Laodicea, Ancyra)
+
+4. **Papyri continuity**
+   - P.Oxy. indices for: ekklesia as corporate taxpayer, episkopos/presbyteros in administrative letters
+
+---
