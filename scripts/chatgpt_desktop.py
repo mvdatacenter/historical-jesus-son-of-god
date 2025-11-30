@@ -468,6 +468,8 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
         max_retries = 3
 
         # Step 1: Find assistant message
+        last_seen_count = len(seen_keys)
+        no_new_messages_count = 0
         for attempt in range(30):
             msg, is_user = find_new_message('assistant')
 
@@ -487,14 +489,33 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                     if debug:
                         print(f"[DEBUG]   Skipping user message (looking for assistant)", file=sys.stderr)
 
+            # Check if we're at the top (no new messages after scrolling)
+            if len(seen_keys) == last_seen_count:
+                no_new_messages_count += 1
+                if no_new_messages_count >= 5:
+                    # We've scrolled 5 times with no new messages - we're at the top
+                    if debug:
+                        print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
+                    return collected_turns
+            else:
+                no_new_messages_count = 0
+                last_seen_count = len(seen_keys)
+
             # Scroll up to find more
             do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
             time.sleep(0.3)
 
         if not assistant_msg:
+            # One more check - if we found no new messages, we're at the top
+            if no_new_messages_count >= 3:
+                if debug:
+                    print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
+                return collected_turns
             raise RuntimeError(f"Could not find assistant message for turn {turn_num + 1}")
 
         # Step 2: Find user message (scroll up from assistant)
+        last_seen_count_user = len(seen_keys)
+        no_new_messages_count_user = 0
         for attempt in range(30):
             # Scroll up first
             do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
@@ -521,7 +542,25 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                     if retry_count > max_retries:
                         raise RuntimeError(f"Found {retry_count} assistant messages in a row without user. Conversation may have unusual structure.")
 
+            # Check if we're at the top (no new messages after scrolling)
+            if len(seen_keys) == last_seen_count_user:
+                no_new_messages_count_user += 1
+                if no_new_messages_count_user >= 5:
+                    # We're at the top - this assistant message has no user (first message in convo)
+                    # This is unusual but possible - return what we have
+                    if debug:
+                        print(f"[DEBUG] Reached top of conversation (orphan assistant at start)", file=sys.stderr)
+                    return collected_turns
+            else:
+                no_new_messages_count_user = 0
+                last_seen_count_user = len(seen_keys)
+
         if not user_msg:
+            # Check if we're at top
+            if no_new_messages_count_user >= 3:
+                if debug:
+                    print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
+                return collected_turns
             raise RuntimeError(f"Could not find user message for turn {turn_num + 1}. Found assistant but no preceding user message.")
 
         # Write the pair to file
