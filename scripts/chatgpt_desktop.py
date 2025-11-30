@@ -984,20 +984,50 @@ def cmd_read_latest(args):
 
 
 def cmd_read_all(args):
-    """Read the entire conversation by scrolling."""
+    """Read the entire conversation by scrolling.
+
+    CRITICAL: This command fails completely if collection is incomplete.
+    No partial output is produced - either we get everything or nothing.
+    This prevents hiding errors and proceeding with incomplete data.
+    """
+    import os
+    import shutil
+
     # Default to 100 turns if not specified
     limit = args.limit if args.limit else 100
     output_dir = args.output_dir if args.output_dir else "/tmp/chatgpt_conversation"
 
-    # Create output dir if needed
-    import os
+    # Clean output dir first to avoid mixing with old data
+    if os.path.exists(output_dir):
+        shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
-    text = read_last_reply(show_all=True, latest=False, debug=args.debug, limit=limit, output_dir=output_dir)
+    # Attempt collection - read_last_reply will sys.exit(1) on failure
+    # BUT it may have written partial files before failing, so we must
+    # NOT output anything if we detect an error occurred
+    try:
+        text = read_last_reply(show_all=True, latest=False, debug=args.debug, limit=limit, output_dir=output_dir)
+    except SystemExit:
+        # Clean up partial files on failure
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
+        print("FATAL: Collection failed. No partial output produced.", file=sys.stderr)
+        print("FATAL: You MUST fix the issue and re-run to get complete data.", file=sys.stderr)
+        sys.exit(1)
+
     print(text, file=sys.stderr)
 
-    # Now cat all the files to stdout
+    # Output all collected files to stdout
     files = sorted([f for f in os.listdir(output_dir) if f.startswith("turn") and f.endswith(".txt")])
+
+    if not files:
+        print("FATAL: No turns collected. Conversation may be empty or script failed.", file=sys.stderr)
+        sys.exit(1)
+
+    print(f"\n{'='*60}", file=sys.stderr)
+    print(f"SUCCESS: Collected {len(files)} turns to {output_dir}", file=sys.stderr)
+    print(f"{'='*60}\n", file=sys.stderr)
+
     for f in files:
         filepath = os.path.join(output_dir, f)
         with open(filepath, 'r') as fp:
@@ -1149,19 +1179,8 @@ def build_parser():
     p_debug = sub.add_parser("debug-positions", help="Debug: show X positions of messages")
     p_debug.set_defaults(func=cmd_debug_positions)
 
-    p_scroll = sub.add_parser("scroll", help="Scroll in ChatGPT message area (for testing).")
-    p_scroll.add_argument(
-        "direction",
-        choices=["up", "down", "bottom"],
-        help="Scroll direction: up, down, or 'bottom' to scroll all the way down",
-    )
-    p_scroll.add_argument(
-        "--amount",
-        type=int,
-        default=5,
-        help="Number of scroll events (default: 5, ignored for 'bottom')",
-    )
-    p_scroll.set_defaults(func=cmd_scroll)
+    # NOTE: scroll command removed - scrolling should only happen internally as part of read_all
+    # Exposing scroll as standalone command allows destructive state changes that lose data
 
     return p
 
