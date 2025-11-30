@@ -39,6 +39,8 @@ from Quartz.CoreGraphics import (
     CGEventPost,
     CGEventSetFlags,
     CGEventSetLocation,
+    CGEventSourceCreate,
+    kCGEventSourceStateHIDSystemState,
     kCGHIDEventTap,
     kCGEventFlagMaskCommand,
     kCGEventLeftMouseDown,
@@ -632,14 +634,48 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     else:
         print("[DEBUG] ChatGPT is ready (not thinking)", file=sys.stderr)
 
-    # CRITICAL: Check if input field already has unsent text
+    # Clear any existing text in input field
     existing_input = ax_attr(text_input, kAXValueAttribute)
     if existing_input and len(existing_input.strip()) > 0:
-        print("ERROR: Input field already contains unsent text - cannot send new message", file=sys.stderr)
-        print(f"[DEBUG] Existing text: {existing_input[:200]}...", file=sys.stderr)
-        print("[DEBUG] Please clear the input field manually or send the existing message first", file=sys.stderr)
-        sys.exit(1)
-    print("[DEBUG] Input field is clear", file=sys.stderr)
+        print(f"[DEBUG] Clearing existing text: {existing_input[:50]}...", file=sys.stderr)
+        # Activate app and click into text area first
+        ns_app.activateWithOptions_(1)
+        time.sleep(0.3)
+
+        # Click into text area
+        position = ax_attr(text_input, kAXPositionAttribute)
+        size = ax_attr(text_input, kAXSizeAttribute)
+        if position and size:
+            pos_str = str(position)
+            size_str = str(size)
+            pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
+            size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
+            if pos_match and size_match:
+                click_x = float(pos_match.group(1)) + float(size_match.group(1)) / 2
+                click_y = float(pos_match.group(2)) + float(size_match.group(2)) / 2
+                click_at_position(click_x, click_y)
+                time.sleep(0.3)
+
+        # Select all (Cmd+A) and delete
+        source = CGEventSourceCreate(kCGEventSourceStateHIDSystemState)
+        # Cmd+A to select all
+        cmd_a_down = CGEventCreateKeyboardEvent(source, 0, True)  # 'a' key
+        CGEventSetFlags(cmd_a_down, kCGEventFlagMaskCommand)
+        cmd_a_up = CGEventCreateKeyboardEvent(source, 0, False)
+        CGEventSetFlags(cmd_a_up, kCGEventFlagMaskCommand)
+        CGEventPost(kCGHIDEventTap, cmd_a_down)
+        CGEventPost(kCGHIDEventTap, cmd_a_up)
+        time.sleep(0.2)
+
+        # Delete key to clear selection
+        delete_down = CGEventCreateKeyboardEvent(source, 51, True)  # delete key
+        delete_up = CGEventCreateKeyboardEvent(source, 51, False)
+        CGEventPost(kCGHIDEventTap, delete_down)
+        CGEventPost(kCGHIDEventTap, delete_up)
+        time.sleep(0.3)
+        print("[DEBUG] Cleared existing text", file=sys.stderr)
+    else:
+        print("[DEBUG] Input field is clear", file=sys.stderr)
 
     # Set clipboard and activate app
     set_clipboard(prompt)
