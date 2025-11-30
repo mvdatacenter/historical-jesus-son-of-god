@@ -878,12 +878,9 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
 
         # If output_dir specified, use incremental collection (one pair at a time)
         if output_dir:
-            try:
-                collected = collect_turns_incrementally(ax_app, ns_app, limit, output_dir, debug=debug)
-                return f"Wrote {len(collected)} turns to {output_dir}"
-            except RuntimeError as e:
-                print(f"ERROR: {e}", file=sys.stderr)
-                sys.exit(1)
+            # Let RuntimeError propagate up to cmd_read_all for proper handling
+            collected = collect_turns_incrementally(ax_app, ns_app, limit, output_dir, debug=debug)
+            return f"Wrote {len(collected)} turns to {output_dir}"
 
         # Non-output-dir mode: not supported with new incremental approach
         print("ERROR: --limit requires --output-dir", file=sys.stderr)
@@ -1002,17 +999,35 @@ def cmd_read_all(args):
         shutil.rmtree(output_dir)
     os.makedirs(output_dir, exist_ok=True)
 
-    # Attempt collection - read_last_reply will sys.exit(1) on failure
-    # BUT it may have written partial files before failing, so we must
-    # NOT output anything if we detect an error occurred
+    # Attempt collection - RuntimeError is raised on failure
+    # Clean up partial files on any failure - no partial output ever
     try:
         text = read_last_reply(show_all=True, latest=False, debug=args.debug, limit=limit, output_dir=output_dir)
-    except SystemExit:
+    except RuntimeError as e:
         # Clean up partial files on failure
         if os.path.exists(output_dir):
             shutil.rmtree(output_dir)
-        print("FATAL: Collection failed. No partial output produced.", file=sys.stderr)
-        print("FATAL: You MUST fix the issue and re-run to get complete data.", file=sys.stderr)
+        print(f"\n{'='*60}", file=sys.stderr)
+        print("FATAL ERROR - COLLECTION FAILED", file=sys.stderr)
+        print('='*60, file=sys.stderr)
+        print(f"REASON: {e}", file=sys.stderr)
+        print(f"{'='*60}", file=sys.stderr)
+        print("NO DATA OUTPUT - partial files deleted", file=sys.stderr)
+        print("You MUST fix the issue and re-run to get complete data.", file=sys.stderr)
+        print(f"{'='*60}\n", file=sys.stderr)
+        sys.exit(1)
+    except Exception as e:
+        # Catch any other unexpected errors
+        if os.path.exists(output_dir):
+            shutil.rmtree(output_dir)
+        print(f"\n{'='*60}", file=sys.stderr)
+        print("FATAL ERROR - UNEXPECTED FAILURE", file=sys.stderr)
+        print('='*60, file=sys.stderr)
+        print(f"TYPE: {type(e).__name__}", file=sys.stderr)
+        print(f"REASON: {e}", file=sys.stderr)
+        print(f"{'='*60}", file=sys.stderr)
+        print("NO DATA OUTPUT - partial files deleted", file=sys.stderr)
+        print(f"{'='*60}\n", file=sys.stderr)
         sys.exit(1)
 
     print(text, file=sys.stderr)
