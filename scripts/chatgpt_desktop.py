@@ -29,6 +29,7 @@ from ApplicationServices import (
     kAXChildrenAttribute,
     kAXPositionAttribute,
     kAXSizeAttribute,
+    kAXOrientationAttribute,
     kAXPressAction,
 )
 from AppKit import NSWorkspace, NSPasteboard
@@ -281,6 +282,49 @@ def get_chatgpt_message_area_coords(ax_app):
     return (x, y)
 
 
+def get_scroll_position(ax_app) -> float | None:
+    """Get current vertical scroll position of the CONVERSATION scrollbar.
+
+    Returns 0.0 = top, 1.0 = bottom, None if not found.
+
+    ChatGPT has multiple vertical scrollbars:
+    - Left sidebar (projects/conversations list) - lower X position
+    - Main conversation area - higher X position (rightmost)
+
+    We identify the conversation scrollbar by finding the vertical scrollbar
+    with the highest X position.
+    """
+    def find_all_vertical_scrollbars(element, depth=0, results=None):
+        if results is None:
+            results = []
+        if depth > 15:
+            return results
+        role = ax_attr(element, kAXRoleAttribute)
+        if role == "AXScrollBar":
+            orientation = ax_attr(element, kAXOrientationAttribute)
+            if orientation == "AXVerticalOrientation":
+                value = ax_attr(element, kAXValueAttribute)
+                position = ax_attr(element, kAXPositionAttribute)
+                if value is not None and position is not None:
+                    # Parse X position
+                    pos_str = str(position)
+                    pos_match = re.search(r'x:([\d.]+)', pos_str)
+                    x_pos = float(pos_match.group(1)) if pos_match else 0
+                    results.append((float(value), x_pos))
+        children = ax_attr(element, kAXChildrenAttribute) or []
+        for child in children:
+            find_all_vertical_scrollbars(child, depth + 1, results)
+        return results
+
+    scrollbars = find_all_vertical_scrollbars(ax_app)
+    if not scrollbars:
+        return None
+
+    # Find the scrollbar with highest X position (rightmost = conversation)
+    scrollbars.sort(key=lambda x: x[1], reverse=True)
+    return scrollbars[0][0]  # Return value of rightmost scrollbar
+
+
 def do_scroll_events(scroll_x: float, scroll_y: float, direction: str, count: int):
     """Send scroll wheel events. direction: "up" or "down"."""
     scroll_lines = 50 if direction == "up" else -50
@@ -330,9 +374,9 @@ def scroll_to_bottom(ax_app, ns_app, debug: bool = False) -> bool:
     max_rounds = 50  # Safety limit
 
     for round_num in range(max_rounds):
-        # Scroll down aggressively
-        do_scroll_events(scroll_x, scroll_y, "down", 5)
-        time.sleep(0.3)
+        # Scroll down aggressively - fast, we don't need to read content here
+        do_scroll_events(scroll_x, scroll_y, "down", 20)
+        time.sleep(0.1)
 
         # Check if content changed
         current_snapshot = get_visible_message_snapshot(ax_app)
@@ -358,6 +402,23 @@ def scroll_to_bottom(ax_app, ns_app, debug: bool = False) -> bool:
     time.sleep(0.2)
 
     return True
+
+
+def is_at_scroll_top() -> bool:
+    """Check if we're at the top of the conversation.
+
+    Uses the conversation scrollbar position (rightmost vertical scrollbar).
+    Returns True if scroll position is at or near 0 (top).
+
+    This function has NO side effects - it only reads the current state.
+    """
+    ax_app, _ = find_chatgpt_app()
+    pos = get_scroll_position(ax_app)
+
+    if pos is not None and pos <= 0.02:
+        return True
+
+    return False
 
 
 def collect_all_visible_messages(ax_app, x_threshold: float = 650) -> List[tuple]:
@@ -401,14 +462,20 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
 
     A "turn" is one user message followed by one assistant response.
 
+    CRITICAL DESIGN: All-or-nothing collection.
+    - Files are written to a TEMP directory during collection
+    - Only on COMPLETE success are files moved to output_dir
+    - On ANY failure, temp files are deleted and output_dir stays empty
+    - This prevents partial data from being accessible
+
     Algorithm:
     1. Scroll to bottom (most recent messages)
     2. Find newest unseen assistant message
     3. Scroll up to find the user message that prompted it
-    4. Write pair to file immediately
+    4. Write pair to temp file
     5. Repeat for num_turns
-    6. If we find multiple assistants in a row, mark them seen and keep scrolling
-    7. If we can't find expected message, throw RuntimeError (don't lie about success)
+    6. On success: move all temp files to output_dir
+    7. On failure: delete temp files, raise RuntimeError
 
     KNOWN ISSUES / TODO:
     - scroll_amount=1 is very slow but necessary to not miss messages. Could be
@@ -419,166 +486,160 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
     - The "first 100 chars as key" deduplication could fail if two messages start identically.
     """
     import os
+    import tempfile
+    import shutil
 
-    coords = get_chatgpt_message_area_coords(ax_app)
-    if not coords:
-        raise RuntimeError("Could not get ChatGPT window coordinates")
+    # Create temp directory for collection - files only move to output_dir on success
+    temp_dir = tempfile.mkdtemp(prefix="chatgpt_collect_")
+    state = {'complete': False}  # Mutable container for closure access
 
-    scroll_x, scroll_y = coords
+    def finalize_collection():
+        """Move files from temp to output on success, or delete temp on failure."""
+        if state['complete']:
+            # SUCCESS: Move all files from temp to output_dir
+            os.makedirs(output_dir, exist_ok=True)
+            for f in os.listdir(temp_dir):
+                shutil.move(os.path.join(temp_dir, f), os.path.join(output_dir, f))
+        # Always clean up temp dir
+        if os.path.exists(temp_dir):
+            shutil.rmtree(temp_dir)
 
-    # Scroll to bottom first
-    if debug:
-        print("[DEBUG] Scrolling to bottom...", file=sys.stderr)
-    scroll_to_bottom(ax_app, ns_app, debug=False)
+    try:
+        coords = get_chatgpt_message_area_coords(ax_app)
+        if not coords:
+            raise RuntimeError("Could not get ChatGPT window coordinates")
 
-    # Activate app
-    ns_app.activateWithOptions_(1)
-    time.sleep(0.3)
-    move_event = CGEventCreateMouseEvent(None, kCGEventMouseMoved, (scroll_x, scroll_y), 0)
-    CGEventPost(kCGHIDEventTap, move_event)
-    time.sleep(0.2)
+        scroll_x, scroll_y = coords
 
-    os.makedirs(output_dir, exist_ok=True)
-
-    collected_turns = []
-    seen_keys = set()  # Track what we've already collected (first 100 chars as key)
-    scroll_amount = 1  # Small scrolls to not miss messages
-
-    def find_new_message(expected_role: str) -> tuple:
-        """Find a new unseen message. expected_role is 'user' or 'assistant'.
-        Returns (msg, is_user) or (None, None).
-        """
-        ax_app_local, _ = find_chatgpt_app()
-        all_msgs = collect_all_visible_messages(ax_app_local)
-
-        for msg, is_user in all_msgs:
-            key = msg[:100]
-            if key not in seen_keys:
-                return msg, is_user
-        return None, None
-
-    turn_num = 0
-    while turn_num < num_turns:
+        # Scroll to bottom first
         if debug:
-            print(f"[DEBUG] Collecting turn {turn_num + 1}/{num_turns}...", file=sys.stderr)
+            print("[DEBUG] Scrolling to bottom...", file=sys.stderr)
+        scroll_to_bottom(ax_app, ns_app, debug=False)
 
-        assistant_msg = None
-        user_msg = None
-        retry_count = 0
-        max_retries = 3
+        # Activate app
+        ns_app.activateWithOptions_(1)
+        time.sleep(0.3)
+        move_event = CGEventCreateMouseEvent(None, kCGEventMouseMoved, (scroll_x, scroll_y), 0)
+        CGEventPost(kCGHIDEventTap, move_event)
+        time.sleep(0.2)
 
-        # Step 1: Find assistant message
-        no_new_messages_count = 0
-        for attempt in range(30):
-            msg, is_user = find_new_message('assistant')
+        collected_turns = []
+        seen_keys = set()  # Track what we've already collected (first 100 chars as key)
+        scroll_amount = 1  # Small scrolls to not miss messages
 
-            if msg:
+        def find_new_message(expected_role: str) -> tuple:
+            """Find a new unseen message of the expected role.
+            Returns (msg, is_user) or (None, None).
+            Only returns messages matching expected_role - skips others without marking seen.
+            """
+            ax_app_local, _ = find_chatgpt_app()
+            all_msgs = collect_all_visible_messages(ax_app_local)
+
+            for msg, is_user in all_msgs:
                 key = msg[:100]
-                no_new_messages_count = 0  # Reset - we found something new
-                if not is_user:
-                    # Found assistant
+                if key not in seen_keys:
+                    # Only return if it matches expected role
+                    if expected_role == 'assistant' and not is_user:
+                        return msg, is_user
+                    elif expected_role == 'user' and is_user:
+                        return msg, is_user
+                    # Otherwise skip this message (don't mark seen, don't return)
+            return None, None
+
+        turn_num = 0
+        at_top = False
+        while turn_num < num_turns and not at_top:
+            # Always show progress (no content info)
+            print(f"Collecting turn {turn_num + 1}/{num_turns}...", file=sys.stderr)
+
+            assistant_msg = None
+            user_msg = None
+
+            # Step 1: Find assistant message
+            for attempt in range(50):
+                msg, is_user = find_new_message('assistant')
+
+                if msg:
+                    key = msg[:100]
                     assistant_msg = msg
                     seen_keys.add(key)
-                    if debug:
-                        print(f"[DEBUG]   Found assistant ({len(msg)} chars)", file=sys.stderr)
+                    print(f"  Found assistant ({len(msg)} chars)", file=sys.stderr)
                     break
-                else:
-                    # Found user when expecting assistant - we scrolled too far
-                    # This user belongs to an OLDER turn, skip it
-                    seen_keys.add(key)
-                    if debug:
-                        print(f"[DEBUG]   Skipping user message (looking for assistant)", file=sys.stderr)
-            else:
-                # No new unseen message found at all
-                no_new_messages_count += 1
+
+                # Check if we're at top before scrolling
+                if is_at_scroll_top():
+                    at_top = True
+                    break
+
+                # Scroll up to find more
+                do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
+                time.sleep(0.3)
                 if debug:
-                    print(f"[DEBUG]   No new messages visible (attempt {no_new_messages_count})", file=sys.stderr)
-                if no_new_messages_count >= 8:
-                    # We've scrolled 8 times with no new messages - we're at the top
-                    if debug:
-                        print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
-                    return collected_turns
+                    print(f"  Scrolling for assistant... ({attempt + 1})", file=sys.stderr)
 
-            # Scroll up to find more
-            do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
-            time.sleep(0.3)
+            if at_top:
+                print(f"Reached top of conversation", file=sys.stderr)
+                break
 
-        if not assistant_msg:
-            # One more check - if we found no new messages, we're at the top
-            if no_new_messages_count >= 5:
-                if debug:
-                    print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
-                return collected_turns
-            raise RuntimeError(f"Could not find assistant message for turn {turn_num + 1}")
+            if not assistant_msg:
+                raise RuntimeError(f"Could not find assistant message for turn {turn_num + 1}")
 
-        # Step 2: Find user message (scroll up from assistant)
-        no_visible_messages_count = 0
-        for attempt in range(30):
-            # Scroll up first
-            do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
-            time.sleep(0.3)
+            # Step 2: Find user message (scroll up from assistant)
+            for attempt in range(50):
+                # Check for user first (might already be visible)
+                msg, is_user = find_new_message('user')
 
-            msg, is_user = find_new_message('user')
-
-            if msg:
-                key = msg[:100]
-                if is_user:
-                    # Found user
+                if msg:
+                    key = msg[:100]
                     user_msg = msg
                     seen_keys.add(key)
-                    if debug:
-                        print(f"[DEBUG]   Found user ({len(msg)} chars)", file=sys.stderr)
+                    print(f"  Found user ({len(msg)} chars)", file=sys.stderr)
                     break
-                else:
-                    # Found another assistant - mark as seen and keep scrolling
-                    seen_keys.add(key)
-                    retry_count += 1
-                    no_visible_messages_count = 0  # Reset - we found something new
-                    if debug:
-                        print(f"[DEBUG]   Found another assistant, marking seen and continuing (retry {retry_count})", file=sys.stderr)
-                    if retry_count > max_retries:
-                        raise RuntimeError(f"Found {retry_count} assistant messages in a row without user. Conversation may have unusual structure.")
-            else:
-                # No new unseen message found at all
-                no_visible_messages_count += 1
+
+                # Check if we're at top
+                if is_at_scroll_top():
+                    at_top = True
+                    break
+
+                # Scroll up to find more
+                do_scroll_events(scroll_x, scroll_y, "up", scroll_amount)
+                time.sleep(0.3)
                 if debug:
-                    print(f"[DEBUG]   No new messages visible (attempt {no_visible_messages_count})", file=sys.stderr)
-                if no_visible_messages_count >= 8:
-                    # We've scrolled 8 times with no new messages - we're at the top
-                    if debug:
-                        print(f"[DEBUG] Reached top of conversation (no user for this assistant)", file=sys.stderr)
-                    return collected_turns
+                    print(f"  Scrolling for user... ({attempt + 1})", file=sys.stderr)
 
-        if not user_msg:
-            # Check if we're at top
-            if no_visible_messages_count >= 5:
-                if debug:
-                    print(f"[DEBUG] Reached top of conversation after {turn_num} turns", file=sys.stderr)
-                return collected_turns
-            raise RuntimeError(f"Could not find user message for turn {turn_num + 1}. Found assistant but no preceding user message.")
+            if at_top:
+                print(f"Reached top of conversation", file=sys.stderr)
+                break
 
-        # Write the pair to file
-        turn_num += 1
-        filename = os.path.join(output_dir, f"turn{turn_num}.txt")
-        with open(filename, 'w') as f:
-            f.write("[USER]\n\n")
-            f.write(user_msg)
-            f.write("\n\n[ASSISTANT]\n\n")
-            f.write(assistant_msg)
-        print(f"Wrote {filename}", file=sys.stderr)
+            if not user_msg:
+                raise RuntimeError(f"Could not find user message for turn {turn_num + 1}. Found assistant but no preceding user message.")
 
-        collected_turns.append({"user": user_msg, "assistant": assistant_msg})
+            # Write the pair to TEMP file (not final output_dir yet)
+            turn_num += 1
+            filename = os.path.join(temp_dir, f"turn{turn_num}.txt")
+            with open(filename, 'w') as f:
+                f.write("[USER]\n\n")
+                f.write(user_msg)
+                f.write("\n\n[ASSISTANT]\n\n")
+                f.write(assistant_msg)
 
-    # Scroll back to bottom
-    if debug:
-        print("[DEBUG] Scrolling back to bottom...", file=sys.stderr)
-    do_scroll_events(scroll_x, scroll_y, "down", 50)
-    time.sleep(0.3)
+            collected_turns.append({"user": user_msg, "assistant": assistant_msg})
 
-    # Hide app
-    ns_app.hide()
+        # Scroll back to bottom - fast, no need to be careful
+        print(f"Scrolling back to bottom...", file=sys.stderr)
+        do_scroll_events(scroll_x, scroll_y, "down", 100)
+        time.sleep(0.1)
 
-    return collected_turns
+        # Hide app
+        ns_app.hide()
+
+        # Mark collection as complete - this allows finalize_collection to move files
+        state['complete'] = True
+        print(f"Collection complete: {turn_num} turns", file=sys.stderr)
+        return collected_turns
+
+    finally:
+        finalize_collection()
 
 
 def scroll_chatgpt(ax_app, ns_app, direction: str, amount: int = 5, debug: bool = False):
@@ -1076,14 +1137,13 @@ def cmd_read_all(args):
     print(f"SUCCESS: Collected {len(files)} turns to {output_dir}", file=sys.stderr)
     print(f"{'='*60}\n", file=sys.stderr)
 
+    # DO NOT output file contents to stdout - truncation would cause partial data exposure
+    # Only list the files so user can read them individually
+    print(f"Files collected ({len(files)} turns):", file=sys.stderr)
     for f in files:
         filepath = os.path.join(output_dir, f)
-        with open(filepath, 'r') as fp:
-            content = fp.read()
-            print(f"\n{'='*60}")
-            print(f"=== {f} ===")
-            print('='*60)
-            print(content)
+        size = os.path.getsize(filepath)
+        print(f"  {filepath} ({size} bytes)", file=sys.stderr)
 
 
 def cmd_test(args):
