@@ -44,7 +44,7 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ---
 
-## Jesus in Egypt / Philo of Alexandria Connection (TO ADD)
+## Jesus in Egypt / Philo of Alexandria Connection (ADDED to chapter)
 
 ### Summary from ChatGPT discussion
 
@@ -108,7 +108,7 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ---
 
-## Independent Egypt Accusations as Historical Signals (TO ADD)
+## Independent Egypt Accusations as Historical Signals (ADDED to chapter)
 
 ### Summary from ChatGPT discussion
 
