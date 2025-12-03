@@ -1,190 +1,336 @@
 #!/usr/bin/env python3
 """
-Unit tests for chatgpt_desktop.py
+Tests for chatgpt_desktop.py
 
-Tests core logic with mocked dependencies to ensure the script
-works correctly without requiring ChatGPT Desktop app to be running.
+These tests verify fixes for specific bugs. Each test would FAIL
+if the corresponding bug was reintroduced.
+
+Run with: poetry run python scripts/test_chatgpt_desktop.py
 """
 
 import sys
-import unittest
-from unittest.mock import Mock, patch, MagicMock
+import re
+sys.path.insert(0, 'scripts')
+
+import chatgpt_desktop
+from chatgpt_desktop import collect_messages_with_position, collect_all_visible_messages
 
 
-class TestChatGPTDesktop(unittest.TestCase):
-    """Test chatgpt_desktop.py core logic with mocks."""
+class MockPosition:
+    """Mock AXPosition value."""
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-    def setUp(self):
-        """Set up test fixtures."""
-        # Mock app objects
-        self.mock_ax_app = Mock()
-        self.mock_ns_app = Mock()
+    def __str__(self):
+        return f"x:{self.x} y:{self.y}"
 
-        # Mock UI elements
-        self.mock_text_input = Mock()
-        self.mock_send_button = Mock()
 
-        # Mock position/size attributes
-        self.mock_position = Mock()
-        self.mock_position.__str__ = Mock(return_value="x:100.0 y:200.0")
-        self.mock_size = Mock()
-        self.mock_size.__str__ = Mock(return_value="w:400.0 h:50.0")
+class MockAXElement:
+    """Mock AXUIElement for testing."""
+    def __init__(self, role=None, value=None, description=None, position=None, children=None, subrole=None):
+        self.attrs = {
+            "AXRole": role,
+            "AXValue": value,
+            "AXDescription": description,
+            "AXPosition": position,
+            "AXChildren": children or [],
+            "AXSubrole": subrole,
+        }
 
-    @patch('chatgpt_desktop.find_chatgpt_app')
-    def test_find_chatgpt_app_found(self, mock_find):
-        """Test finding ChatGPT app successfully."""
-        mock_find.return_value = (self.mock_ax_app, self.mock_ns_app)
+    def __iter__(self):
+        return iter(self.attrs.get("AXChildren", []))
 
-        ax_app, ns_app = mock_find()
 
-        self.assertIsNotNone(ax_app)
-        self.assertIsNotNone(ns_app)
+_original_ax_attr = chatgpt_desktop.ax_attr
 
-    @patch('chatgpt_desktop.find_chatgpt_app')
-    def test_find_chatgpt_app_not_found(self, mock_find):
-        """Test ChatGPT app not found."""
-        mock_find.return_value = (None, None)
+def mock_ax_attr(element, attr_name):
+    if isinstance(element, MockAXElement):
+        return element.attrs.get(attr_name)
+    return _original_ax_attr(element, attr_name)
 
-        ax_app, ns_app = mock_find()
+chatgpt_desktop.ax_attr = mock_ax_attr
 
-        self.assertIsNone(ax_app)
-        self.assertIsNone(ns_app)
 
-    @patch('chatgpt_desktop.find_text_input')
-    def test_find_text_input_found(self, mock_find_input):
-        """Test finding text input field successfully."""
-        mock_find_input.return_value = self.mock_text_input
+def build_tree(messages):
+    """Build mock AX tree from (text, y_pos, is_assistant) tuples."""
+    containers = []
+    for text, y_pos, is_assistant in messages:
+        text_el = MockAXElement(role="AXStaticText", value=text)
+        group = MockAXElement(
+            role="AXGroup",
+            position=MockPosition(251, y_pos),
+            children=[text_el],
+            subrole="AXHostingView" if is_assistant else None,
+        )
+        containers.append(group)
+    return MockAXElement(role="AXScrollArea", children=containers)
 
-        text_input = mock_find_input(self.mock_ax_app)
 
-        self.assertIsNotNone(text_input)
+# =============================================================================
+# BUG FIX #1: Negative Y coordinate regex
+#
+# OLD BUG: Pattern was y:([\d.]+) which only matched positive numbers.
+# When content scrolled up, Y became negative and messages were lost.
+# FIX: Pattern is now y:(-?[\d.]+)
+# =============================================================================
 
-    @patch('chatgpt_desktop.find_text_input')
-    def test_find_text_input_not_found(self, mock_find_input):
-        """Test text input field not found."""
-        mock_find_input.return_value = None
+def test_bug1_negative_y_must_be_parsed():
+    r"""
+    BUG #1: Regex must parse negative Y values.
 
-        text_input = mock_find_input(self.mock_ax_app)
+    OLD CODE: r'y:([\d.]+)' - FAILS on negative Y
+    NEW CODE: r'y:(-?[\d.]+)' - handles negative Y
 
-        self.assertIsNone(text_input)
+    This test uses Y=-1500 which the old regex would NOT match,
+    causing the message to be silently dropped.
+    """
+    tree = build_tree([
+        ("Message at Y=-1500 must be found", -1500, False),
+        ("Message at Y=-100 near bottom", -100, True),
+    ])
 
-    @patch('chatgpt_desktop.collect_all_buttons')
-    def test_collect_buttons_finds_send(self, mock_collect):
-        """Test collecting buttons finds Send button."""
-        buttons_list = []
+    result = collect_all_visible_messages(tree)
 
-        def side_effect(element, buttons, depth=0, max_depth=20):
-            buttons.append((self.mock_send_button, 'Send'))
-            buttons.append((Mock(), 'Cancel'))
+    # OLD BUG: Would return only 1 message (the Y=-100 one)
+    # FIXED: Returns both messages
+    assert len(result) == 2, (
+        f"BUG #1 REGRESSION: Only got {len(result)} messages!\n"
+        f"The Y=-1500 message was lost because regex doesn't match negative Y.\n"
+        f"Fix: Change y:([\\d.]+) to y:(-?[\\d.]+)"
+    )
 
-        mock_collect.side_effect = side_effect
+    # Verify the negative Y was actually parsed correctly
+    assert result[0][1] == -1500, (
+        f"Y position should be -1500, got {result[0][1]}\n"
+        f"Regex is not parsing negative numbers correctly."
+    )
 
-        buttons = []
-        mock_collect(self.mock_ax_app, buttons)
+    print("✓ BUG #1 FIXED: Negative Y values parsed correctly")
 
-        send_button = None
-        for btn, desc in buttons:
-            if desc and desc == 'Send':
-                send_button = btn
-                break
 
-        self.assertIsNotNone(send_button)
-        self.assertEqual(len(buttons), 2)
+def test_bug1_very_negative_y():
+    """
+    BUG #1 variant: Extremely negative Y (long conversation scrolled up).
+    """
+    tree = build_tree([
+        ("Ancient message from start of chat", -50000, False),
+        ("Recent message visible on screen", -100, True),
+    ])
 
-    @patch('chatgpt_desktop.collect_all_buttons')
-    def test_collect_buttons_no_send(self, mock_collect):
-        """Test collecting buttons when Send button missing."""
-        buttons_list = []
+    result = collect_all_visible_messages(tree)
 
-        def side_effect(element, buttons, depth=0, max_depth=20):
-            buttons.append((Mock(), 'Cancel'))
-            buttons.append((Mock(), 'Clear'))
+    assert len(result) == 2, (
+        f"BUG #1 REGRESSION: Lost message at Y=-50000\n"
+        f"Got {len(result)} messages instead of 2"
+    )
+    assert result[0][1] == -50000
 
-        mock_collect.side_effect = side_effect
+    print("✓ BUG #1 FIXED: Very negative Y (-50000) handled")
 
-        buttons = []
-        mock_collect(self.mock_ax_app, buttons)
 
-        send_button = None
-        for btn, desc in buttons:
-            if desc and desc == 'Send':
-                send_button = btn
-                break
+# =============================================================================
+# BUG FIX #2: Length-based role detection removed
+#
+# OLD BUG: Code had `is_user = len(msg) < 100` to guess user vs assistant.
+# This caused long user prompts (>100 chars) to be classified as "assistant".
+# When getting "latest assistant response", user's own prompt was returned.
+#
+# FIX: Removed all role detection. Messages sorted by Y position only.
+# =============================================================================
 
-        self.assertIsNone(send_button)
+def test_bug2_long_user_prompt_not_returned_as_response():
+    """
+    BUG #2: Long user message must NOT be returned as "latest response".
 
-    def test_position_parsing(self):
-        """Test parsing position and size strings."""
-        import re
+    OLD CODE: is_user = len(msg) < 100
+    This meant a 500-char user prompt was classified as "assistant"
+    and returned when asking for the latest response.
 
-        pos_str = "x:100.5 y:200.75"
-        size_str = "w:400.0 h:50.25"
+    SCENARIO: User pastes a long prompt, ChatGPT gives short reply.
+    OLD BUG: Returns the user's own prompt as the "response".
+    FIXED: Returns the actual assistant response (by Y position).
+    """
+    # User's long prompt (500+ chars) - would be is_user=False with old code!
+    long_prompt = """Please analyze the following code and explain what it does:
 
-        pos_match = re.search(r'x:([\d.]+)\s+y:([\d.]+)', pos_str)
-        size_match = re.search(r'w:([\d.]+)\s+h:([\d.]+)', size_str)
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
 
-        self.assertIsNotNone(pos_match)
-        self.assertIsNotNone(size_match)
+for i in range(10):
+    print(fibonacci(i))
 
-        pos_x = float(pos_match.group(1))
-        pos_y = float(pos_match.group(2))
-        width = float(size_match.group(1))
-        height = float(size_match.group(2))
+I need to understand the time complexity and suggest optimizations.
+Also explain the recursive call stack for fibonacci(5)."""
 
-        self.assertEqual(pos_x, 100.5)
-        self.assertEqual(pos_y, 200.75)
-        self.assertEqual(width, 400.0)
-        self.assertEqual(height, 50.25)
+    # Assistant's short response (50 chars) - would be is_user=True with old code!
+    short_response = "This code calculates Fibonacci numbers recursively."
 
-        # Test center calculation
-        click_x = pos_x + width / 2
-        click_y = pos_y + height / 2
+    assert len(long_prompt) > 100, "Test setup: prompt must be >100 chars"
+    assert len(short_response) < 100, "Test setup: response must be <100 chars"
 
-        self.assertEqual(click_x, 300.5)
-        self.assertEqual(click_y, 225.875)
+    tree = build_tree([
+        (long_prompt, -200, False),    # User prompt at Y=-200
+        (short_response, -100, True),  # Assistant response at Y=-100 (latest)
+    ])
 
-    @patch('chatgpt_desktop.set_clipboard')
-    def test_set_clipboard_called(self, mock_clipboard):
-        """Test clipboard is set with prompt text."""
-        prompt = "Test prompt"
-        mock_clipboard(prompt)
+    result = collect_all_visible_messages(tree)
 
-        mock_clipboard.assert_called_once_with(prompt)
+    # The latest message (highest Y = -100) should be the short response
+    latest = result[-1][0]
 
-    @patch('chatgpt_desktop.collect_assistant_messages')
-    def test_collect_messages_filters_duplicates(self, mock_collect):
-        """Test message collection handles duplicates."""
-        messages_list = []
+    assert latest == short_response, (
+        f"BUG #2 REGRESSION: Latest message is the user's prompt, not the response!\n"
+        f"This happens when code uses `is_user = len(msg) < 100`.\n"
+        f"Expected: {short_response!r}\n"
+        f"Got: {latest[:60]!r}...\n"
+        f"Fix: Remove all length-based role detection."
+    )
 
-        def side_effect(element, messages, depth=0, max_depth=20):
-            messages.extend([
-                "Response 1",
-                "Response 1",  # Duplicate
-                "Response 2",
-                "S",  # Too short (1 char)
-                "Response 3"
-            ])
+    print("✓ BUG #2 FIXED: Long user prompt not returned as response")
 
-        mock_collect.side_effect = side_effect
 
-        messages = []
-        mock_collect(self.mock_ax_app, messages)
+def test_bug2_extreme_length_difference():
+    """
+    BUG #2 variant: 2000-char user prompt, 10-char assistant response.
 
-        # Filter meaningful messages (>1 char, ASCII)
-        meaningful = [msg for msg in messages if len(msg) > 1 and ord(msg[0]) < 128]
+    With is_user = len(msg) < 100:
+    - 2000-char prompt -> is_user=False (WRONG - it's user!)
+    - 10-char response -> is_user=True (WRONG - it's assistant!)
 
-        # Remove duplicates
-        seen = set()
-        unique = []
-        for msg in meaningful:
-            key = msg[:100]
-            if key not in seen:
-                seen.add(key)
-                unique.append(msg)
+    Result: Everything backwards.
+    """
+    huge_prompt = "Explain this: " + ("x" * 2000)  # 2014 chars
+    tiny_response = "Sure, I will explain this for you."  # 35 chars
 
-        self.assertEqual(len(unique), 3)  # Response 1, Response 2, Response 3
+    tree = build_tree([
+        (huge_prompt, -200, False),
+        (tiny_response, -100, True),
+    ])
+
+    result = collect_all_visible_messages(tree)
+    latest = result[-1][0]
+
+    assert latest == tiny_response, (
+        f"BUG #2 REGRESSION: 2000-char user message returned as 'response'!\n"
+        f"Got: {latest[:50]!r}..."
+    )
+
+    print("✓ BUG #2 FIXED: Extreme length difference handled")
+
+
+def test_bug2_multiple_long_user_messages():
+    """
+    BUG #2 variant: Conversation with multiple long user messages.
+
+    If length heuristic exists, ALL long messages get classified wrong.
+    """
+    tree = build_tree([
+        ("First long user question about programming" * 5, -400, False),   # 215 chars
+        ("Short answer from the AI assistant.", -350, True),               # 35 chars
+        ("Second even longer user question" * 10, -300, False),            # 320 chars
+        ("Another brief response from assistant.", -250, True),            # 39 chars
+        ("Third massive user prompt with code" * 8, -200, False),          # 280 chars
+        ("Final short assistant response here.", -100, True),              # 36 chars
+    ])
+
+    result = collect_all_visible_messages(tree)
+
+    # Latest (Y=-100) must be "Final short assistant response"
+    latest = result[-1][0]
+    assert "Final short" in latest, (
+        f"BUG #2 REGRESSION: Latest is not the final response!\n"
+        f"Got: {latest[:50]!r}..."
+    )
+
+    # Check ordering is by Y, not by some role-based logic
+    assert result[0][1] == -400  # First message has lowest Y
+    assert result[-1][1] == -100  # Last message has highest Y
+
+    print("✓ BUG #2 FIXED: Multiple long user messages handled")
+
+
+# =============================================================================
+# Combined scenario: Both bugs together
+# =============================================================================
+
+def test_both_bugs_negative_y_and_long_prompt():
+    """
+    Combined: Negative Y + long user prompt.
+
+    This test would fail if EITHER bug is present.
+    """
+    long_prompt = "Detailed question: " + ("explain " * 50)  # 450+ chars
+
+    tree = build_tree([
+        (long_prompt, -5000, False),                           # Far up, long
+        ("Short reply from the assistant.", -4900, True),      # Far up, short
+        ("Another long question here" * 10, -200, False),      # Near bottom, long
+        ("The final response is this.", -100, True),           # Bottom, short
+    ])
+
+    result = collect_all_visible_messages(tree)
+
+    # Must have all 4 messages (bug #1 would lose the Y=-5000 ones)
+    assert len(result) == 4, (
+        f"Lost messages! Got {len(result)}, expected 4.\n"
+        f"Bug #1 (negative Y regex) may be present."
+    )
+
+    # Latest must be "The final response" (bug #2 would return the long prompt)
+    assert "final response" in result[-1][0], (
+        f"Wrong latest message!\n"
+        f"Bug #2 (length heuristic) may be present.\n"
+        f"Got: {result[-1][0][:50]!r}..."
+    )
+
+    # Verify Y ordering
+    ys = [y for _, y in result]
+    assert ys == sorted(ys), f"Messages not sorted by Y: {ys}"
+
+    print("✓ BOTH BUGS FIXED: Negative Y + long prompt handled")
+
+
+def run_all_tests():
+    tests = [
+        test_bug1_negative_y_must_be_parsed,
+        test_bug1_very_negative_y,
+        test_bug2_long_user_prompt_not_returned_as_response,
+        test_bug2_extreme_length_difference,
+        test_bug2_multiple_long_user_messages,
+        test_both_bugs_negative_y_and_long_prompt,
+    ]
+
+    print("=" * 60)
+    print("chatgpt_desktop.py - Bug Regression Tests")
+    print("=" * 60)
+    print("These tests FAIL if old bugs are reintroduced.\n")
+
+    passed = 0
+    failed = 0
+
+    for test in tests:
+        try:
+            test()
+            passed += 1
+        except AssertionError as e:
+            print(f"✗ FAILED: {test.__name__}")
+            print(f"  {e}\n")
+            failed += 1
+        except Exception as e:
+            print(f"✗ ERROR: {test.__name__}")
+            print(f"  {type(e).__name__}: {e}\n")
+            failed += 1
+
+    print("\n" + "=" * 60)
+    print(f"Results: {passed} passed, {failed} failed")
+    print("=" * 60)
+
+    return failed == 0
 
 
 if __name__ == '__main__':
-    # Run tests
-    unittest.main()
+    success = run_all_tests()
+    sys.exit(0 if success else 1)
