@@ -8,6 +8,16 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ---
 
+## Agent Critique - "Eyewitness Woman" Teaser (2025-12-07)
+
+**Agent said:** Preface line 52 claims "Gospel of John may preserve the earliest witness through an eyewitness woman" but provides no evidence - suggested removing teaser or adding preview.
+
+**User response:** The teaser is working as intended - once you spoil the teaser, it stops being a teaser. The evidence is overwhelming (see below) but belongs in Chapter 4, not the preface.
+
+**Resolution:** Not a gap. Teaser does its job - hooks readers to keep reading. The extensive evidence documented in this Q&A file supports the claim.
+
+---
+
 ## 15 Female Authorship Tests (ChatGPT 2025-11-29, Turn 2)
 
 **Query:** Deep-structure, intertextual, philological, and classical-literary arguments for female authorship
