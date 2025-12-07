@@ -51,6 +51,8 @@ Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N 
 
 **Don't use ChatGPT for:** Code, commits, plans, this directive file
 
+**IMPORTANT: ChatGPT has NO access to the manuscript files.** It cannot see line numbers, chapter content, or any text unless you paste it into the prompt. When asking ChatGPT to review or compare sections, you MUST paste the actual text. References like "lines 595-644" mean nothing to ChatGPT.
+
 ## Evidence Filtering (Critical)
 
 Don't dump ChatGPT responses. Have a DISCUSSION:
