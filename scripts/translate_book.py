@@ -133,7 +133,7 @@ def split_at_paragraphs(content: str, max_size: int) -> List[str]:
 
 def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
     """Create a prompt for translating a LaTeX fragment."""
-    return f"""Translate this LaTeX scholarly text to {target_lang}.
+    prompt = f"""Translate this LaTeX scholarly text to {target_lang}.
 
 RULES:
 1. Preserve ALL LaTeX commands exactly (\\section, \\textit, \\footnote, etc.)
@@ -141,11 +141,21 @@ RULES:
 3. Preserve Hebrew text - do NOT translate
 4. Translate proper nouns to {target_lang} equivalents (Jesus → Jezus in Polish, etc.)
 5. Keep paragraph structure and line breaks
-6. Output the translation inside a ```latex code block
+6. Output the translation inside a ```latex code block"""
+
+    # Add Polish-specific transliteration conventions
+    if target_lang.lower() == "polish":
+        prompt += """
+7. Use Polish academic transliteration conventions:
+   - Hebrew: sz for sh, j for y, drop macrons (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
+   - Greek: drop accent marks and macrons (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)"""
+
+    prompt += f"""
 
 Fragment {fragment_num}/{total}:
 
 {fragment}"""
+    return prompt
 
 
 def translate_fragment(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
