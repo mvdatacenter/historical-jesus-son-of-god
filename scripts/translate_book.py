@@ -139,16 +139,17 @@ def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int
         prompt = f"""Przetłumacz poniższy tekst naukowy LaTeX na język polski.
 
 ZASADY:
-1. Zachowaj WSZYSTKIE polecenia LaTeX dokładnie (\\section, \\textit, \\footnote, itd.)
-2. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
-3. Zachowaj tekst hebrajski - NIE tłumacz
-4. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, itd.)
-5. Zachowaj strukturę akapitów i podziały wierszy
-6. Wynik umieść w bloku kodu ```latex
-7. Użyj polskich konwencji transliteracji:
+1. PRIORYTET: Tekst musi brzmieć naturalnie po polsku. Możesz zmieniać szyk zdania, dzielić lub łączyć zdania, jeśli to pomoże w naturalnym brzmieniu. Lepsza naturalna polszczyzna niż dosłowna wierność.
+2. Zachowaj WSZYSTKIE polecenia LaTeX dokładnie (\\section, \\textit, \\footnote, itd.)
+3. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
+4. Zachowaj tekst hebrajski - NIE tłumacz
+5. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, itd.)
+6. Zachowaj strukturę akapitów i podziały wierszy
+7. Wynik umieść w bloku kodu ```latex
+8. Użyj polskich konwencji transliteracji:
    - Hebrajski: sz zamiast sh, j zamiast y, bez makronów (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
    - Grecki: bez znaków akcentu i makronów (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)
-8. Odpowiedz WYŁĄCZNIE po polsku.
+9. Odpowiedz WYŁĄCZNIE po polsku.
 
 Fragment {fragment_num}/{total}:
 
