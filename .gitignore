@@ -1,7 +1,9 @@
 eclipse.txt
 auxil
 out
-.claude/
+.claude/*
+!.claude/hooks/
+!.claude/settings.json
 chatgpt_profile/
 scripts/turns/
 scripts/research_gaps.md
