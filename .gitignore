@@ -8,5 +8,3 @@ scripts/research_gaps.md
 scripts/__pycache__/
 scripts/fix_latex.py
 scripts/fix_quotes.py
-scripts/translate_book.py
-translations/
