@@ -133,28 +133,41 @@ def split_at_paragraphs(content: str, max_size: int) -> List[str]:
 
 def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
     """Create a prompt for translating a LaTeX fragment."""
-    prompt = f"""Translate this LaTeX scholarly text to {target_lang}.
+
+    # Polish prompt in Polish for better translation quality
+    if target_lang.lower() == "polish":
+        prompt = f"""Przetłumacz poniższy tekst naukowy LaTeX na język polski.
+
+ZASADY:
+1. Zachowaj WSZYSTKIE polecenia LaTeX dokładnie (\\section, \\textit, \\footnote, itd.)
+2. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
+3. Zachowaj tekst hebrajski - NIE tłumacz
+4. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, itd.)
+5. Zachowaj strukturę akapitów i podziały wierszy
+6. Wynik umieść w bloku kodu ```latex
+7. Użyj polskich konwencji transliteracji:
+   - Hebrajski: sz zamiast sh, j zamiast y, bez makronów (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
+   - Grecki: bez znaków akcentu i makronów (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)
+8. Odpowiedz WYŁĄCZNIE po polsku.
+
+Fragment {fragment_num}/{total}:
+
+{fragment}"""
+    else:
+        prompt = f"""Translate this LaTeX scholarly text to {target_lang}.
 
 RULES:
 1. Preserve ALL LaTeX commands exactly (\\section, \\textit, \\footnote, etc.)
 2. Preserve Greek text in \\textgreek{{}} - do NOT translate
 3. Preserve Hebrew text - do NOT translate
-4. Translate proper nouns to {target_lang} equivalents (Jesus → Jezus in Polish, etc.)
+4. Translate proper nouns to {target_lang} equivalents
 5. Keep paragraph structure and line breaks
-6. Output the translation inside a ```latex code block"""
-
-    # Add Polish-specific transliteration conventions
-    if target_lang.lower() == "polish":
-        prompt += """
-7. Use Polish academic transliteration conventions:
-   - Hebrew: sz for sh, j for y, drop macrons (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
-   - Greek: drop accent marks and macrons (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)"""
-
-    prompt += f"""
+6. Output the translation inside a ```latex code block
 
 Fragment {fragment_num}/{total}:
 
 {fragment}"""
+
     return prompt
 
 
