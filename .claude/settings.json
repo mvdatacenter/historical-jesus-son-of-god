@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "/Users/viku/Desktop/AppDevelopment/historical-jesus-son-of-god/.claude/hooks/git-safety.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}
