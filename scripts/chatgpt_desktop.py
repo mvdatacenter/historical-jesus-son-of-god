@@ -937,8 +937,7 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
                 msg for msg in messages
                 if msg not in existing_texts
                 and len(msg) > 1
-                and ord(msg[0]) < 128
-                and prompt not in msg
+                and not msg.startswith(prompt[:50])  # Don't filter by first char - breaks non-ASCII responses
             ]
 
             if new_messages:
