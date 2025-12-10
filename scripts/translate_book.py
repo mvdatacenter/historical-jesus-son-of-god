@@ -140,16 +140,17 @@ def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int
 
 ZASADY:
 1. PRIORYTET: Tekst musi brzmieć naturalnie po polsku. Możesz zmieniać szyk zdania, dzielić lub łączyć zdania, jeśli to pomoże w naturalnym brzmieniu. Lepsza naturalna polszczyzna niż dosłowna wierność.
-2. Zachowaj WSZYSTKIE polecenia LaTeX dokładnie (\\section, \\textit, \\footnote, itd.)
+2. Zachowaj STRUKTURĘ poleceń LaTeX (\\section{{}}, \\textit{{}}, \\footnote{{}}, itd.) — ale TŁUMACZ tekst wewnątrz nawiasów klamrowych. Na przykład: \\section{{Crucifixion of Jesus}} → \\section{{Ukrzyżowanie Jezusa}}
 3. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
 4. Zachowaj tekst hebrajski - NIE tłumacz
-5. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, itd.)
-6. Zachowaj strukturę akapitów i podziały wierszy
-7. Wynik umieść w bloku kodu ```latex
-8. Użyj polskich konwencji transliteracji:
+5. NIE zmieniaj etykiet \\label{{}} - pozostaw je dokładnie tak jak są
+6. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, Mary → Maria, itd.)
+7. Zachowaj strukturę akapitów i podziały wierszy
+8. Wynik umieść w bloku kodu ```latex
+9. Użyj polskich konwencji transliteracji:
    - Hebrajski: sz zamiast sh, j zamiast y, bez makronów (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
    - Grecki: bez znaków akcentu i makronów (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)
-9. Odpowiedz WYŁĄCZNIE po polsku.
+10. Odpowiedz WYŁĄCZNIE po polsku.
 
 Fragment {fragment_num}/{total}:
 

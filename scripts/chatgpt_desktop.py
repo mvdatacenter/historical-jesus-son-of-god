@@ -168,18 +168,22 @@ def collect_assistant_messages(element, messages: List[str], depth=0, max_depth=
 
 
 def collect_all_text_from_element(element, texts: List[str], depth=0, max_depth=20):
-    """Recursively collect ALL text from an element and its children."""
+    """Recursively collect ALL text from an element and its children.
+
+    IMPORTANT: Only collect from AXDescription attribute, NOT AXValue.
+    ChatGPT puts actual message content in desc, but UI elements like
+    "Thought for a couple of seconds" are in value only.
+    """
     if depth > max_depth:
         return
 
     role = ax_attr(element, kAXRoleAttribute)
 
     if role in ["AXStaticText", "AXTextArea", "AXTextField"]:
+        # Only use desc - value contains UI garbage like thinking indicators
         desc = ax_attr(element, kAXDescriptionAttribute)
-        value = ax_attr(element, kAXValueAttribute)
-        text_content = desc or value
-        if text_content and isinstance(text_content, str) and text_content.strip():
-            texts.append(text_content.strip())
+        if desc and isinstance(desc, str) and desc.strip():
+            texts.append(desc.strip())
 
     children = ax_attr(element, kAXChildrenAttribute)
     if children:
@@ -254,10 +258,22 @@ def collect_messages_with_position(element, messages: List[tuple], depth=0, max_
                     if pos_match:
                         y_pos = float(pos_match.group(1))
 
-                # Determine if this is an assistant message by checking AXSubrole
-                # Assistant messages have AXSubrole='AXHostingView', user messages don't
-                subrole = ax_attr(element, "AXSubrole")
-                is_assistant = subrole == "AXHostingView"
+                # Determine if this is an assistant message by checking X position
+                # User messages are right-aligned (higher X ~800+), assistant messages are left-aligned (X ~500)
+                # We check the X position of the first AXStaticText child
+                is_assistant = True  # default
+                children = ax_attr(element, kAXChildrenAttribute) or []
+                for child in children:
+                    child_role = ax_attr(child, kAXRoleAttribute)
+                    if child_role == "AXStaticText":
+                        child_pos = ax_attr(child, kAXPositionAttribute)
+                        if child_pos:
+                            x_match = re.search(r'x:([\d.]+)', str(child_pos))
+                            if x_match:
+                                x_pos = float(x_match.group(1))
+                                # User messages have higher X (right side), threshold ~700
+                                is_assistant = x_pos < 700
+                        break
 
                 messages.append((joined, y_pos, is_assistant))
                 return  # Don't recurse into children - we already got their text
@@ -455,17 +471,21 @@ def scroll_to_bottom(ax_app, ns_app, debug: bool = False, hide_after: bool = Tru
 
 
 def is_at_scroll_top() -> bool:
-    """Check if we're at the top of the conversation.
+    """Check if we're at the VERY top of the conversation.
 
     Uses the conversation scrollbar position (rightmost vertical scrollbar).
-    Returns True if scroll position is at or near 0 (top).
+    Returns True ONLY if scroll position is essentially 0 (top).
 
     This function has NO side effects - it only reads the current state.
+
+    IMPORTANT: Use a very tight threshold (0.001) to avoid false positives.
+    A loose threshold (0.02) was causing early termination of scraping.
     """
     ax_app, _ = find_chatgpt_app()
     pos = get_scroll_position(ax_app)
 
-    if pos is not None and pos <= 0.02:
+    # Very tight threshold - only true if we're truly at the very top
+    if pos is not None and pos <= 0.001:
         return True
 
     return False
@@ -492,8 +512,7 @@ def collect_all_visible_messages(ax_app) -> List[tuple]:
     for msg, y_pos, _ in visible:
         if len(msg) <= 20:  # Minimum length to filter UI elements
             continue
-        if msg and ord(msg[0]) >= 128:
-            continue
+        # NOTE: Removed ord(msg[0]) >= 128 filter - it was blocking Polish/non-ASCII content
         first_word = msg.split()[0].lower() if msg.split() else ""
         if first_word in ui_keywords:
             continue
@@ -566,22 +585,48 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
         scroll_to_bottom(ax_app, ns_app, debug=False, hide_after=False)
 
         collected_turns = []
-        seen_keys = set()  # Track what we've already collected (first 100 chars as key)
+        seen_keys = set()  # Track what we've already collected (hash of full message)
         scroll_amount = 1  # Small scrolls to not miss messages
 
-        def find_new_message() -> str | None:
-            """Find the next unseen message (by Y position, bottom to top).
-            Returns message text or None if no new messages visible.
+        def msg_key(msg: str) -> str:
+            """Generate a unique key for a message.
+            Uses hash of full content because translation prompts often share the same prefix.
+            """
+            import hashlib
+            return hashlib.md5(msg.encode()).hexdigest()
 
-            Messages alternate user/assistant. We don't try to detect which is which -
-            we just collect them in order and the caller alternates expectations.
+        def find_new_assistant_message() -> str | None:
+            """Find the next unseen ASSISTANT message (by Y position, bottom to top).
+            Returns message text or None if no new assistant messages visible.
             """
             ax_app_local, _ = find_chatgpt_app()
-            all_msgs = collect_all_visible_messages(ax_app_local)
+            visible = []
+            collect_messages_with_position(ax_app_local, visible)
 
-            # Messages are sorted top-to-bottom by Y. We want bottom-to-top (newest first).
-            for msg, y_pos in reversed(all_msgs):
-                key = msg[:100]
+            # Filter to assistant messages only, sorted bottom to top
+            assistant_msgs = [(msg, y_pos) for msg, y_pos, is_asst in visible if is_asst]
+            assistant_msgs.sort(key=lambda x: x[1], reverse=True)  # highest Y (bottom) first
+
+            for msg, y_pos in assistant_msgs:
+                key = msg_key(msg)
+                if key not in seen_keys:
+                    return msg
+            return None
+
+        def find_new_user_message() -> str | None:
+            """Find the next unseen USER message (by Y position, bottom to top).
+            Returns message text or None if no new user messages visible.
+            """
+            ax_app_local, _ = find_chatgpt_app()
+            visible = []
+            collect_messages_with_position(ax_app_local, visible)
+
+            # Filter to user messages only, sorted bottom to top
+            user_msgs = [(msg, y_pos) for msg, y_pos, is_asst in visible if not is_asst]
+            user_msgs.sort(key=lambda x: x[1], reverse=True)  # highest Y (bottom) first
+
+            for msg, y_pos in user_msgs:
+                key = msg_key(msg)
                 if key not in seen_keys:
                     return msg
             return None
@@ -595,15 +640,14 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
             assistant_msg = None
             user_msg = None
 
-            # Step 1: Find first unseen message (should be assistant response at bottom)
+            # Step 1: Find ASSISTANT message (response)
             for attempt in range(50):
-                msg = find_new_message()
+                msg = find_new_assistant_message()
 
                 if msg:
-                    key = msg[:100]
                     assistant_msg = msg
-                    seen_keys.add(key)
-                    print(f"  Found message 1 ({len(msg)} chars)", file=sys.stderr)
+                    seen_keys.add(msg_key(msg))
+                    print(f"  Found ASSISTANT ({len(msg)} chars)", file=sys.stderr)
                     break
 
                 # Check if we're at top before scrolling
@@ -622,17 +666,16 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                 break
 
             if not assistant_msg:
-                raise RuntimeError(f"Could not find message 1 for turn {turn_num + 1}")
+                raise RuntimeError(f"Could not find ASSISTANT message for turn {turn_num + 1}")
 
-            # Step 2: Find second message (the one before, scrolling up)
+            # Step 2: Find USER message (the prompt that triggered the response)
             for attempt in range(50):
-                msg = find_new_message()
+                msg = find_new_user_message()
 
                 if msg:
-                    key = msg[:100]
                     user_msg = msg
-                    seen_keys.add(key)
-                    print(f"  Found message 2 ({len(msg)} chars)", file=sys.stderr)
+                    seen_keys.add(msg_key(msg))
+                    print(f"  Found USER ({len(msg)} chars)", file=sys.stderr)
                     break
 
                 # Check if we're at top
@@ -651,7 +694,7 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                 break
 
             if not user_msg:
-                raise RuntimeError(f"Could not find message 2 for turn {turn_num + 1}.")
+                raise RuntimeError(f"Could not find USER message for turn {turn_num + 1}.")
 
             # Write the pair to TEMP file (not final output_dir yet)
             turn_num += 1
