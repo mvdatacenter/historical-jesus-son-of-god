@@ -1,0 +1,71 @@
+{
+  "_comment": "Sample AX tree structure for a ChatGPT conversation with 2 turns (4 messages)",
+  "messages": [
+    {
+      "role": "AXGroup",
+      "subrole": "AXHostingView",
+      "x": 251.0,
+      "y": -3000.0,
+      "children": [
+        {
+          "role": "AXStaticText",
+          "x": 845.5,
+          "y": -2990.0,
+          "desc": "Translate the following text to Polish:\n\n\\section{Introduction}\nThis is the first section of the document."
+        }
+      ]
+    },
+    {
+      "role": "AXGroup",
+      "subrole": "AXHostingView",
+      "x": 251.0,
+      "y": -2500.0,
+      "children": [
+        {
+          "role": "AXStaticText",
+          "x": 509.5,
+          "y": -2490.0,
+          "desc": "\\section{Wprowadzenie}\nTo jest pierwsza sekcja dokumentu."
+        }
+      ]
+    },
+    {
+      "role": "AXGroup",
+      "subrole": "AXHostingView",
+      "x": 251.0,
+      "y": -2000.0,
+      "children": [
+        {
+          "role": "AXStaticText",
+          "x": 845.5,
+          "y": -1990.0,
+          "desc": "Translate the following text to Polish:\n\n\\section{Methods}\nThis describes the methodology."
+        }
+      ]
+    },
+    {
+      "role": "AXGroup",
+      "subrole": "AXHostingView",
+      "x": 251.0,
+      "y": -1500.0,
+      "children": [
+        {
+          "role": "AXStaticText",
+          "x": 509.5,
+          "y": -1490.0,
+          "desc": "\\section{Metody}\nTo opisuje metodologię."
+        }
+      ]
+    }
+  ],
+  "_expected_turns": [
+    {
+      "user": "Translate the following text to Polish:\n\n\\section{Methods}\nThis describes the methodology.",
+      "assistant": "\\section{Metody}\nTo opisuje metodologię."
+    },
+    {
+      "user": "Translate the following text to Polish:\n\n\\section{Introduction}\nThis is the first section of the document.",
+      "assistant": "\\section{Wprowadzenie}\nTo jest pierwsza sekcja dokumentu."
+    }
+  ]
+}

@@ -31,28 +31,46 @@ jobs:
           extra_system_packages: >-
             fontconfig
 
+      # --- Build Polish PDF with LuaLaTeX ---
+      - name: Compile Polish LaTeX to PDF
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: translations/polish/manuscript_po.tex
+          latexmk_use_lualatex: true
+          extra_system_packages: >-
+            fontconfig
+
       # --- Build HTML (self-contained so images work) ---
       - name: Install pandoc
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc
-      - name: Build HTML
+      - name: Build HTML (English)
         run: |
           mkdir -p public
           pandoc manuscript.tex \
             -s \
             --mathjax \
             -o public/index.html
-          # Optionally copy images/css if your .tex includes them:
-          # cp -r assets public/assets || true
           touch public/.nojekyll
 
-      # --- Make PDF available to downstream jobs ---
-      - name: Upload PDF artifact
+      - name: Build HTML (Polish)
+        run: |
+          mkdir -p public/pl
+          cd translations/polish
+          pandoc manuscript_po.tex \
+            -s \
+            --mathjax \
+            -o ../../public/pl/index.html
+
+      # --- Make PDFs available to downstream jobs ---
+      - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
         with:
           name: manuscript-pdf
-          path: manuscript.pdf
+          path: |
+            manuscript.pdf
+            translations/polish/manuscript_po.pdf
 
       # --- Prepare Pages artifact (HTML only) ---
       - name: Upload Pages artifact
@@ -80,10 +98,15 @@ jobs:
           name: manuscript-pdf
           path: .
 
-      - name: Create/Update Release and upload PDF
+      - name: Rename Polish PDF for clarity
+        run: mv translations/polish/manuscript_po.pdf manuscript_polish.pdf || true
+
+      - name: Create/Update Release and upload PDFs
         uses: softprops/action-gh-release@v2
         with:
           tag_name: auto-${{ github.run_number }}
           name: "Book PDF build #${{ github.run_number }}"
           body: "Automated build from commit ${{ github.sha }}."
-          files: manuscript.pdf
+          files: |
+            manuscript.pdf
+            manuscript_polish.pdf

@@ -6,6 +6,7 @@ out
 !.claude/settings.json
 chatgpt_profile/
 scripts/turns/
+scripts/chatgpt_conversation/
 scripts/research_gaps.md
 scripts/__pycache__/
 scripts/fix_latex.py

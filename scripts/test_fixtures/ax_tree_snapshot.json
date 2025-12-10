@@ -1,0 +1,1145 @@
+Capturing window AX tree...
+{
+  "role": "AXWindow",
+  "subrole": "AXStandardWindow",
+  "children": [
+    {
+      "role": "AXGroup",
+      "subrole": "AXHostingView",
+      "children": [
+        {
+          "role": "AXSplitGroup",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXGroup",
+              "subrole": "AXHostingView",
+              "children": [
+                {
+                  "role": "AXGroup",
+                  "subrole": "AXHostingView",
+                  "children": [
+                    {
+                      "role": "AXTextField",
+                      "subrole": "AXSearchField",
+                      "children": [],
+                      "x": 10.0,
+                      "y": 109.0,
+                      "desc": "Search"
+                    }
+                  ],
+                  "x": 10.0,
+                  "y": 109.0
+                },
+                {
+                  "role": "AXScrollArea",
+                  "subrole": null,
+                  "children": [
+                    {
+                      "role": "AXList",
+                      "subrole": "AXCollectionList",
+                      "children": [
+                        {
+                          "role": "AXList",
+                          "subrole": "AXSectionList",
+                          "children": [
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 151.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 151.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 151.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 151.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 23.5,
+                                      "y": 194.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 185.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 185.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 40.0,
+                                      "y": 219.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 219.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 219.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 52.0,
+                                      "y": 262.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 253.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 253.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 151.0
+                            }
+                          ],
+                          "x": 0.0,
+                          "y": 151.0
+                        },
+                        {
+                          "role": "AXList",
+                          "subrole": "AXSectionList",
+                          "children": [
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 287.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [],
+                                  "x": 0.0,
+                                  "y": 287.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 287.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 21.5,
+                                      "y": 311.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 302.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 302.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 336.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 336.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 336.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 370.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 370.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 370.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 404.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 404.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 404.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 22.5,
+                                      "y": 447.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 438.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 438.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 287.0
+                            }
+                          ],
+                          "x": 0.0,
+                          "y": 287.0
+                        },
+                        {
+                          "role": "AXList",
+                          "subrole": "AXSectionList",
+                          "children": [
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 472.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [],
+                                  "x": 0.0,
+                                  "y": 472.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 472.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 487.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 487.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 487.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 521.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 521.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 521.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 555.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 555.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 555.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 589.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 589.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 589.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 623.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 623.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 623.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 657.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 657.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 657.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 691.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 691.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 691.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 725.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 725.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 725.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 759.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 759.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 759.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 793.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 793.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 793.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 827.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 827.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 827.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 861.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 861.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 861.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 895.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 895.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 895.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXButton",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 10.0,
+                                      "y": 929.0
+                                    }
+                                  ],
+                                  "x": 0.0,
+                                  "y": 929.0
+                                }
+                              ],
+                              "x": 0.0,
+                              "y": 929.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 0.0,
+                              "y": 472.0
+                            }
+                          ],
+                          "x": 0.0,
+                          "y": 472.0
+                        }
+                      ],
+                      "x": 0.0,
+                      "y": 151.0
+                    },
+                    {
+                      "role": "AXScrollBar",
+                      "subrole": null,
+                      "children": [
+                        {
+                          "role": "AXValueIndicator",
+                          "subrole": null,
+                          "children": [],
+                          "x": 238.0,
+                          "y": 152.0
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXIncrementArrow",
+                          "children": [],
+                          "x": 234.0,
+                          "y": 151.0
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXDecrementArrow",
+                          "children": [],
+                          "x": 234.0,
+                          "y": 151.0
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXIncrementPage",
+                          "children": [],
+                          "x": 238.0,
+                          "y": 279.5
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXDecrementPage",
+                          "children": [],
+                          "x": 238.0,
+                          "y": 151.0
+                        }
+                      ],
+                      "x": 233.0,
+                      "y": 150.0
+                    }
+                  ],
+                  "x": 0.0,
+                  "y": 151.0
+                },
+                {
+                  "role": "AXMenuButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 12.0,
+                  "y": 968.0
+                }
+              ],
+              "x": 0.0,
+              "y": 57.0
+            },
+            {
+              "role": "AXSplitter",
+              "subrole": null,
+              "children": [],
+              "x": 250.0,
+              "y": 109.0
+            },
+            {
+              "role": "AXGroup",
+              "subrole": "AXHostingView",
+              "children": [
+                {
+                  "role": "AXScrollArea",
+                  "subrole": null,
+                  "children": [
+                    {
+                      "role": "AXList",
+                      "subrole": "AXCollectionList",
+                      "children": [
+                        {
+                          "role": "AXList",
+                          "subrole": "AXSectionList",
+                          "children": [
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 251.0,
+                              "y": -40410.5
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [
+                                {
+                                  "role": "AXGroup",
+                                  "subrole": "AXHostingView",
+                                  "children": [
+                                    {
+                                      "role": "AXHeading",
+                                      "subrole": null,
+                                      "children": [],
+                                      "x": 525.5,
+                                      "y": -725.0
+                                    },
+                                    {
+                                      "role": "AXScrollArea",
+                                      "subrole": null,
+                                      "children": [
+                                        {
+                                          "role": "AXStaticText",
+                                          "subrole": null,
+                                          "children": [],
+                                          "x": 509.5,
+                                          "y": -692.5,
+                                          "desc": "\\label{subsec:mark-ending}\n\nEwangelia Marka przyjmuje dramatyczną architekturę tragedii greckiej, ale tragediopisarze nie wymyślali wydarzeń z niczego — przerabiali opowieści, które ich publiczność już wcześniej znała.\nTryb tragiczny sygnalizuje wykształcenie literackie, a nie fantazjowanie, i sytuuję Marka mocno w retorycznej kulturze Antiochii, a nie w sferze swobodnej mitotwórczości.\nForma jest wystylizowana, lecz materiał pod tą formą jest odziedziczony, a wyrafinowanie narracji odzwierciedla szkolenie Marka, a nie jego wyobraźnię.\n\nAutorzy starożytni, którzy wymyślali epizody czy przemówienia, nigdy nie ukrywali kulminacyjnego momentu swojej kreacji, przeciwnie — zwykle otwarcie ogłaszali zmyślone treści poprzez rozbudowaną retoryczną oprawę.\nMowy u Plutarcha, monologi bitewne u Józefa Flawiusza czy fikcyjne sceny u Achilles Tatiosa zawsze eksponują akt twórczy poprzez estetyczny przepych, ponieważ starożytni czytelnicy oczekiwali, że to, co zmyślone, będzie ozdobne, jawne i teatralnie zaprezentowane.\nMarek przeciwnie — pomija najbardziej dramatyczny moment opowieści, odmawiając opisania samego zmartwychwstania, a takie przemilczenie jest dokładnym przeciwieństwem tego, czego wymaga literacka kreacja.\nTo ostre pominięcie działa jak znak historiograficzny, a nie literackie mrugnięcie okiem, ponieważ wyznacza granicę tego, co autor może odpowiedzialnie opisać.\n\nOpowieści o pustym grobie w starożytności zwykle służyły jako wstęp do apoteozy, a zniknięcie ciała nieuchronnie kończyło się objawieniem boskim, wzniesieniem do nieba lub przemianą.\nRomulus, Herakles, Aristeas czy Apollonios zostają wchłonięci przez logikę narracji apoteozy, gdzie zaginione ciało świadczy o nowym boskim statusie bohatera.\nMarek konsekwentnie odrzuca całą tę symboliczną gramatykę: nie przedstawia ani przemiany, ani wniebowstąpienia, ani boskiej epifanii, a narracja urywa się jeszcze przed interpretacyjną puentą, której oczekuje się w literaturze mitycznej.\nBrak apoteozy tam, gdzie powinna się pojawić, jest sam w sobie dowodem, że Marek nie buduje wzorca mitycznego, lecz zachowuje tradycję odporną na takie upiększenia.\n\nZakończenie Marka jest strukturalnie „szorstkie”, a nie teatralnie domknięte: odmawia czytelnikowi triumfu, rozpoznania, rozwiązania napięcia, a nawet stabilnego świadectwa.\nKobiety uciekają ze strachu, wiadomość nie zostaje przekazana, a ostatnia scena zapada w milczenie — to przeciwieństwo dopracowanych finałów, których zwykle wymaga literacka fikcja.\nZmyślona relacja rozwiązałaby napięcie poprzez objawienie lub katharsis, podczas gdy Marek przebija narrację w jej najbardziej wrażliwym punkcie i pozostawia czytelnika z fragmentem pozbawionym domknięcia.\nTakie zakończenie nie jest znakiem wymyślnej kompozycji, lecz śladem odziedziczonej tradycji, której autor nie chce samowolnie dopowiadać.\n\nMarek zakłada, że jego odbiorcy już znają tradycję ukazań po ukrzyżowaniu, ponieważ listy Pawła krążyły od dwóch dekad przed powstaniem Ewangelii Marka i utrwaliły listę świadków jako wspólną wiedzę.\nPaweł mówi o ukazaniu się Jezusa Kefasowi, Dwunastu i setkom uczniów, przedstawiając te pojawienia jako pamięć dzieloną w najwcześniejszych ekklesiach wschodniej części Morza Śródziemnego.\nMarek pisze więc do świata już nasyconego tradycją zmartwychwstania i nie odczuwa potrzeby opowiadania ukazań, które jego czytelnicy wielokrotnie słyszeli we wspólnych zgromadzeniach.\nJego pominięcie wynika z zaufania do istniejącej tradycji, a nie z wątpliwości co do jej istnienia.\n\nStarożytna historiografia powstrzymywała się od opisu wydarzeń, których żaden naoczny świadek nie mógł potwierdzić, i ten zwyczaj kształtuje sposób, w jaki Tukidydes, Polibiusz, Tacyt czy Józef Flawiusz opowiadają momenty pozbawione świadectw.\nMarek konsekwentnie stosuje tę zasadę: relacjonuje wszystko aż do pogrzebu i pustego grobu, ale odmawia opisania samego momentu zmartwychwstania, którego nikt żywy nie mógł zobaczyć.\nTo milczenie podąża za dyscypliną starożytnej historiografii, a nie za impulsem literackiej kreacji, ponieważ autor milknie dokładnie tam, gdzie kończy się świadectwo.\n\nAutor wymyślający opowieść religijną wyeksponowałby cud w olśniewających szczegółach, podczas gdy autor pracujący na odziedziczonej pamięci przemilcza właśnie ten moment, który jest zbyt delikatny, by go upiększać.\nMarek zachowuje się dokładnie według tego drugiego wzorca: ufa pustemu grobowi jako publicznemu faktowi i ukazaniom po ukrzyżowaniu jako znanej tradycji, ale nie opisuje przejścia między jednym a drugim.\nJego zwój kończy się tam, gdzie kończą się dane, a nagłość finału jest najsilniejszą wewnętrzną wskazówką, że Marek przekazuje historię, a nie ją wymyśla.\n\n\\subsection{Standardowe zarzuty wobec pustego grobu}\\label{subsec:empty-tomb-objections}\n\nCzęsty zarzut w literaturze naukowej głosi, że pusty grób jest literackim tropem, ale starożytne opowieści o zniknięciu ciała nieuchronnie kończyły się wniebowzięciem, przemianą lub apoteozą — nic z tego nie pojawia się u Marka.\nRomulus zostaje uniesiony do nieba jako bóg, Herakles wstępuje w płomieniach, Aristeas podróżuje między światami, tymczasem Marek odrzuca te wzorce i pozostawia grób pusty, nie dostarczając mitologicznej kulminacji, którą zwykle wymagałby taki trop.\nBrak apoteozy tam, gdzie powinna się pojawić, wskazuje nie na fikcję, lecz na zachowaną opowieść, która opiera się symbolicznej gramatyce szerokiego świata hellenistycznego.\n\nArgument, że obecność kobiet przy grobie dowodzi fikcji, nie uwzględnia praktycznej rzeczywistości żydowskiego pochówku, gdzie to właśnie kobiety były głównymi przygotowującymi materiały pogrzebowe i naturalnie wracały, by dokończyć to, co zostało zrobione w pośpiechu.\nKobiety pojawiają się jako odkrywczynie nie dlatego, że „ulepszają” opowieść, lecz dlatego, że należały do kręgu, który zajmował się czynnościami pogrzebowymi; ich obecność odzwierciedla halachiczną realność, a nie strategię literacką.\nGdyby narracja była zmyślona, objawienie otrzymaliby uczniowie-mężczyźni, tymczasem tekst zachowuje kłopotliwy szczegół, ponieważ wymaga tego tradycja.\n\nTwierdzenia, że Jezusa pochowano by we wspólnej mogile, ignorują kontekst polityczny, w którym elity żydowskie mogły ingerować w egzekucje przez ukrzyżowanie.\nJózef Flawiusz opisuje dokładnie taką interwencję, gdy wpływowi Żydzi proszą o ciała skazańców i uzyskują ich zdjęcie, a jedna z ofiar przeżywa.\nJózef z Arymatei i Nikodem należą do tej samej kategorii elit, a ich dostęp odzwierciedla mechanizmy polityczne Jerozolimy, a nie literacką kreatywność.\nNarracja grobowa odpowiada administracyjnej rzeczywistości prefektury Piłata, a nie stylizowanym oczekiwaniom wobec kompozycji fikcyjnej.\n\nZarzut, że scena straży u Mateusza dowodzi fikcji, myli jej funkcję, ponieważ Mateusz pisze w tonie obrony, by odeprzeć konkurencyjne wyjaśnienie, że ciało zostało usunięte.\nSamo istnienie takiej konkurencyjnej narracji świadczy o tym, że pusty grób był publicznie uznawany za fakt i wymagał przejęcia interpretacji, więc opowieść o straży pojawia się jako odpowiedź, a nie jako źródło wiary.\nDodatek polemiczny zakłada szeroko znane wydarzenie, a defensywna postawa Mateusza odzwierciedla spór o interpretację, a nie wynalazek.\n\nUtrzymywanie, że pusty grób jest późniejszym dodatkiem, przeczy jego obecności w najwcześniejszych źródłach: Marek przedstawia pusty grób przed 70 r. po Chr., a listy Pawła zakładają pochówek i ukazania dwadzieścia lat wcześniej.\nJerozolimska „formuła wyznania” cytowana przez Pawła należy do najwcześniejszej warstwy chrześcijańskiego przepowiadania i poprzedza wszystkie ewangelie narracyjne, pokazując, że centralne twierdzenia krążyły już w ustalonym kształcie.\nTradycja pustego grobu nie może więc być późnym wymysłem, skoro pojawia się w najstarszych strukturach pamięci o Jezusie.\n\nMyśl, że sprzeczności w relacjach o zmartwychwstaniu dowodzą fikcji, błędnie rozumie zachowanie wczesnej tradycji, ponieważ rozbieżności pojawiają się właśnie tam, gdzie wiele wspomnień próbuje opisać to samo wstrząsające wydarzenie.\nEwangelie różnią się kolejnością ukazań, drogami uczniów i reakcjami kobiet — taka zmienność odzwierciedla niestabilność wczesnej pamięci, a nie jednolitość, której należałoby oczekiwać przy fabrykacji.\nFikcja dąży do harmonizacji, historia zachowuje sprzeczne relacje, a Ewangelie otwarcie przechowują te napięcia.\n\nSugestia, że pusty grób narusza żydowski zwyczaj pogrzebowy, nie trafia w sedno, ponieważ pochówek Jezusa narusza halachę w każdą stronę z powodów odzwierciedlających sytuację skrajnego pośpiechu i nacisku politycznego.\nNie ma obmycia ciała, nie ma udziału rodziny, nie ma właściwego przygotowania zwłok ani złożenia w grobie rodzinnym — dokładnie tego należałoby się spodziewać w warunkach napięcia politycznego i ograniczonego czasu.\nNikodem przynosi substancje o właściwościach leczniczych w ilościach bardziej adekwatnych do leczenia niż do standardowych obrzędów pogrzebowych, a ogrodowy grób dobrze odpowiada działaniom elit, które zabezpieczają ciało szczególnie wrażliwe.\nTe odstępstwa od zwyczaju żydowskiego mówią o nacisku historii, a nie o kunszcie literackim.\n\nTwierdzenie, że opowieść o grobie stworzono po to, by wypełnić Iz 53,9, nie ma oparcia w tekście, ponieważ żaden z wczesnych autorów nie używa tego wersetu do interpretacji pochówku Jezusa.\nMarek, Paweł, Łukasz i Jan nie wykazują zainteresowania tym proroctwem; skojarzenie pojawia się dopiero w późniejszej interpretacji chrześcijańskiej, a nie w najstarszych warstwach pamięci narracyjnej.\nBrak dowodzenia z proroctwa tam, gdzie późniejsi czytelnicy się go spodziewają, potwierdza, że tradycja grobu rozwijała się niezależnie od późniejszego dopasowywania do Pisma.\n\nPusty grób, zamiast być tropem czy wymysłem, pełni funkcję najbardziej zachowawczej warstwy tradycji: przechowuje surowe fakty pochówku, zniknięcia i wczesnego zamieszania bez dodatków, które dopiero później dostarczyła rozwinięta teologia.\nJego realizm polega właśnie na tym, że odmawia dostarczenia dramatycznej kulminacji, a sama surowość narracji świadczy o jej zakorzenieniu w świadectwie, a nie w wyobraźni autora.\nOpowieść jest kształtowana przez napięcie polityczne, zakłócenia rytuału i załamanie koordynacji świadków, a te elementy sprzeciwiają się konwencjom literatury mitycznej.\nPusty grób trwa jako pozostałość po wydarzeniu, którego żaden autor nie potrafił w pełni wyjaśnić i którego żadna wczesna wspólnota nie mogła sobie pozwolić wymyślić, zmuszając opowieść do noszenia śladów własnego historycznego gwałtu.\n\n\\section{Argument Clarka Kenta}\\label{sec:clark-kent-argument}\n\nWarto zatrzymać się nad samą gęstością źródeł, które wspominają Jezusa i jego krąg w ciągu półtora wieku po jego śmierci.\nWedług jednej z rachub mamy czterdzieści dwa takie świadectwa, z czego dziewięć niechrześcijańskich — poziom uwagi znacznie wyższy niż w przypadku większości postaci starożytnych.\nKampanie Juliusza Cezara, dla porównania, są relacjonowane tylko w pięciu niezależnych źródłach.\n\nGdyby Jezus był jedynie apokaliptycznym kaznodzieją lub wiejskim mędrcem, oczekiwalibyśmy raczej zupełnej ciszy albo pojedynczej wzmianki u Józefa Flawiusza.\nAnalogią może być Clark Kent: nikt nie pisze książek o Clarku Kencie, ale wszyscy piszą o Supermanie.\nArchiwa przechowują postaci nadzwyczajne, nie zaś zwyczajne życiorysy, które nie zostawiają śladu w pamięci publicznej.\n\nDlatego dziesiątki innych samozwańczych proroków i buntowników tamtej epoki — Teudas, Juda Galilejczyk, Athronges — pojawiają się na chwilę u Józefa Flawiusza, po czym znikają z reszty przekazu.\nWywołali lokalne zamieszanie, ale nie wzbudzili strumienia komentarzy filozofów, namiestników, senatorów i historyków w całym imperium.\nJezus wzbudził.\n\nJest zatem jasne, że zainteresowania osobą Jezusa nie da się wyjaśnić, widząc w nim jedynie kaznodzieję, mędrca czy nawet lokalnego pretendenta dynastycznego.\nDziesiątki takich postaci pojawiały się i znikały, zostawiając po sobie co najwyżej jedno zdanie u Józefa Flawiusza.\nSkala i rozpiętość świadectwa, rozlewającego się ponad granicami kultur i języków, domaga się czegoś więcej.\nZwykła próba objęcia tronu Jerozolimy nie wystarczyłaby, by wywołać taki efekt.\nTak głęboki i tak szeroki ślad w przekazie historycznym mógł pozostawić tylko ktoś zapamiętany jako rzeczywiście niezwykły, z opowieścią o zasięgu większym niż sama Judea."
+                                        },
+                                        {
+                                          "role": "AXScrollBar",
+                                          "subrole": null,
+                                          "children": [
+                                            {
+                                              "role": "AXValueIndicator",
+                                              "subrole": null,
+                                              "children": [],
+                                              "x": 526.5,
+                                              "y": 823.5
+                                            },
+                                            {
+                                              "role": "AXButton",
+                                              "subrole": "AXIncrementArrow",
+                                              "children": [],
+                                              "x": 525.5,
+                                              "y": 819.5
+                                            },
+                                            {
+                                              "role": "AXButton",
+                                              "subrole": "AXDecrementArrow",
+                                              "children": [],
+                                              "x": 525.5,
+                                              "y": 819.5
+                                            },
+                                            {
+                                              "role": "AXButton",
+                                              "subrole": "AXIncrementPage",
+                                              "children": [],
+                                              "x": 925.0,
+                                              "y": 823.5
+                                            },
+                                            {
+                                              "role": "AXButton",
+                                              "subrole": "AXDecrementPage",
+                                              "children": [],
+                                              "x": 525.5,
+                                              "y": 823.5
+                                            }
+                                          ],
+                                          "x": 524.5,
+                                          "y": 818.5
+                                        }
+                                      ],
+                                      "x": 509.5,
+                                      "y": -692.5
+                                    }
+                                  ],
+                                  "x": 251.0,
+                                  "y": -735.0
+                                }
+                              ],
+                              "x": 251.0,
+                              "y": -735.0
+                            },
+                            {
+                              "role": "AXGroup",
+                              "subrole": null,
+                              "children": [],
+                              "x": 251.0,
+                              "y": -40410.5
+                            }
+                          ],
+                          "x": 251.0,
+                          "y": -40410.5
+                        }
+                      ],
+                      "x": 251.0,
+                      "y": -40422.5
+                    },
+                    {
+                      "role": "AXScrollBar",
+                      "subrole": null,
+                      "children": [
+                        {
+                          "role": "AXValueIndicator",
+                          "subrole": null,
+                          "children": [],
+                          "x": 1708.0,
+                          "y": 841.5
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXIncrementArrow",
+                          "children": [],
+                          "x": 1704.0,
+                          "y": 109.0
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXDecrementArrow",
+                          "children": [],
+                          "x": 1704.0,
+                          "y": 109.0
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXIncrementPage",
+                          "children": [],
+                          "x": 1708.0,
+                          "y": 867.5
+                        },
+                        {
+                          "role": "AXButton",
+                          "subrole": "AXDecrementPage",
+                          "children": [],
+                          "x": 1708.0,
+                          "y": 109.0
+                        }
+                      ],
+                      "x": 1703.0,
+                      "y": 108.0
+                    },
+                    {
+                      "role": "AXGroup",
+                      "subrole": "AXHostingView",
+                      "children": [
+                        {
+                          "role": "AXButton",
+                          "subrole": null,
+                          "children": [],
+                          "x": 1384.0,
+                          "y": 117.0
+                        }
+                      ],
+                      "x": 489.5,
+                      "y": 109.0
+                    }
+                  ],
+                  "x": 251.0,
+                  "y": 109.0
+                },
+                {
+                  "role": "AXGroup",
+                  "subrole": "AXHostingView",
+                  "children": [],
+                  "x": 251.0,
+                  "y": 908.5
+                },
+                {
+                  "role": "AXScrollArea",
+                  "subrole": null,
+                  "children": [
+                    {
+                      "role": "AXTextArea",
+                      "subrole": null,
+                      "children": [],
+                      "x": 521.5,
+                      "y": 923.5
+                    }
+                  ],
+                  "x": 521.5,
+                  "y": 923.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 524.0,
+                  "y": 961.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 552.0,
+                  "y": 955.0
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 586.5,
+                  "y": 957.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 616.5,
+                  "y": 957.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 653.0,
+                  "y": 962.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 681.0,
+                  "y": 957.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 1344.0,
+                  "y": 955.0
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 1384.5,
+                  "y": 955.5
+                },
+                {
+                  "role": "AXButton",
+                  "subrole": null,
+                  "children": [],
+                  "x": 1415.0,
+                  "y": 940.5
+                },
+                {
+                  "role": "AXScrollArea",
+                  "subrole": null,
+                  "children": [],
+                  "x": 509.5,
+                  "y": 912.5
+                }
+              ],
+              "x": 251.0,
+              "y": 57.0
+            }
+          ],
+          "x": 0.0,
+          "y": 57.0
+        }
+      ],
+      "x": 0.0,
+      "y": 57.0
+    },
+    {
+      "role": "AXToolbar",
+      "subrole": null,
+      "children": [
+        {
+          "role": "AXButton",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXButton",
+              "subrole": null,
+              "children": [],
+              "x": 93.0,
+              "y": 75.0
+            }
+          ],
+          "x": 87.0,
+          "y": 57.0
+        },
+        {
+          "role": "AXButton",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXButton",
+              "subrole": null,
+              "children": [],
+              "x": 121.0,
+              "y": 67.0
+            }
+          ],
+          "x": 117.0,
+          "y": 57.0
+        },
+        {
+          "role": "AXButton",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXButton",
+              "subrole": null,
+              "children": [],
+              "x": 263.0,
+              "y": 68.5
+            }
+          ],
+          "x": 259.0,
+          "y": 57.0
+        },
+        {
+          "role": "AXButton",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXButton",
+              "subrole": null,
+              "children": [],
+              "x": 1635.0,
+              "y": 73.5
+            }
+          ],
+          "x": 1627.0,
+          "y": 57.0
+        },
+        {
+          "role": "AXButton",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXButton",
+              "subrole": null,
+              "children": [],
+              "x": 1672.0,
+              "y": 67.0
+            }
+          ],
+          "x": 1664.0,
+          "y": 57.0
+        }
+      ],
+      "x": 0.0,
+      "y": 57.0
+    },
+    {
+      "role": "AXButton",
+      "subrole": "AXCloseButton",
+      "children": [],
+      "x": 20.0,
+      "y": 76.0
+    },
+    {
+      "role": "AXButton",
+      "subrole": "AXFullScreenButton",
+      "children": [
+        {
+          "role": "AXGroup",
+          "subrole": null,
+          "children": [
+            {
+              "role": "AXGroup",
+              "subrole": null,
+              "children": [],
+              "x": 59.0,
+              "y": 75.0
+            }
+          ],
+          "x": 59.0,
+          "y": 75.0
+        }
+      ],
+      "x": 60.0,
+      "y": 76.0
+    },
+    {
+      "role": "AXButton",
+      "subrole": "AXMinimizeButton",
+      "children": [],
+      "x": 40.0,
+      "y": 76.0
+    }
+  ],
+  "x": 0.0,
+  "y": 57.0
+}

@@ -133,19 +133,44 @@ def split_at_paragraphs(content: str, max_size: int) -> List[str]:
 
 def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
     """Create a prompt for translating a LaTeX fragment."""
-    return f"""Translate this LaTeX scholarly text to {target_lang}.
+
+    # Polish prompt in Polish for better translation quality
+    if target_lang.lower() == "polish":
+        prompt = f"""Przetłumacz poniższy tekst naukowy LaTeX na język polski.
+
+ZASADY:
+1. PRIORYTET: Tekst musi brzmieć naturalnie po polsku. Możesz zmieniać szyk zdania, dzielić lub łączyć zdania, jeśli to pomoże w naturalnym brzmieniu. Lepsza naturalna polszczyzna niż dosłowna wierność.
+2. Zachowaj STRUKTURĘ poleceń LaTeX (\\section{{}}, \\textit{{}}, \\footnote{{}}, itd.) — ale TŁUMACZ tekst wewnątrz nawiasów klamrowych. Na przykład: \\section{{Crucifixion of Jesus}} → \\section{{Ukrzyżowanie Jezusa}}
+3. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
+4. Zachowaj tekst hebrajski - NIE tłumacz
+5. NIE zmieniaj etykiet \\label{{}} - pozostaw je dokładnie tak jak są
+6. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, Mary → Maria, itd.)
+7. Zachowaj strukturę akapitów i podziały wierszy
+8. Wynik umieść w bloku kodu ```latex
+9. Użyj polskich konwencji transliteracji:
+   - Hebrajski: sz zamiast sh, j zamiast y, bez makronów (goyim→gojim, teshuvah→teszuwah, shemittah→szemita)
+   - Grecki: bez znaków akcentu i makronów (Theotókos→Theotokos, ekklēsía→ekklesia, ho nikṓn→ho nikon)
+10. Odpowiedz WYŁĄCZNIE po polsku.
+
+Fragment {fragment_num}/{total}:
+
+{fragment}"""
+    else:
+        prompt = f"""Translate this LaTeX scholarly text to {target_lang}.
 
 RULES:
 1. Preserve ALL LaTeX commands exactly (\\section, \\textit, \\footnote, etc.)
 2. Preserve Greek text in \\textgreek{{}} - do NOT translate
 3. Preserve Hebrew text - do NOT translate
-4. Translate proper nouns to {target_lang} equivalents (Jesus → Jezus in Polish, etc.)
+4. Translate proper nouns to {target_lang} equivalents
 5. Keep paragraph structure and line breaks
 6. Output the translation inside a ```latex code block
 
 Fragment {fragment_num}/{total}:
 
 {fragment}"""
+
+    return prompt
 
 
 def translate_fragment(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:

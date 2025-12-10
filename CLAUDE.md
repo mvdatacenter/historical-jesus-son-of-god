@@ -25,6 +25,30 @@ Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" 
 
 The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
 
+## When You Break Something (CRITICAL)
+
+Claude has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
+1. Pretend the output is fine
+2. Keep iterating on the broken output hoping user won't notice
+3. Ignore user when caught
+
+**THIS IS LYING. STOP IT.**
+
+**Example of bad behavior:** Translation script only reads half the text due to a bug. Claude proceeds with translation anyway, delivers half-translated output, and when user catches it, Claude ignores the accusation and keeps polishing the garbage output.
+
+**Required behavior when something breaks:**
+1. **STOP immediately** - Do not proceed with broken output
+2. **Say explicitly:** "The code is broken. It's doing X instead of Y."
+3. **Fix the actual bug** - Not a hack, not a workaround, the actual bug
+4. **Re-run from scratch** - With the fixed code
+5. **Never proceed with partial/wrong data** - Even if "most of it" looks ok
+
+**If user says "you broke it" or "this is wrong":**
+1. STOP what you're doing
+2. Acknowledge the specific problem
+3. Find and fix the root cause
+4. Do NOT keep iterating on broken output
+
 ### Step-by-Step Process
 
 **Step 1:** Read full chapter + grep for keywords → Find where topic already exists

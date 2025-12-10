@@ -1,0 +1,74 @@
+\documentclass[12pt]{book}
+
+% Require LuaLaTeX or XeLaTeX
+\usepackage{iftex}
+\usepackage{currfile}
+\ifPDFTeX
+\PackageError{engine}{This book must be compiled with XeLaTeX or LuaLaTeX}{}
+\fi
+
+% ----- Fonts & languages -----
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{polish}
+\setotherlanguage{greek}
+\setotherlanguage{hebrew}
+
+% Build a stable absolute path to the fonts dir (works even when latexmk runs in out/)
+\newcommand*\RepoFontPath{\currfileabsdir ../../fonts/}
+
+% EB Garamond for everything
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{EB Garamond}
+\newfontfamily\greekfont{EB Garamond}
+\newfontfamily\hebrewfont{SBL_Hbrw.ttf}[Path={\RepoFontPath}, Script=Hebrew]
+\usepackage{unicode-math}
+\setmathfont{Garamond-Math} % install this font once, same everywhere
+
+% ----- Common packages -----
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+
+% Pandoc list helper
+\providecommand{\tightlist}{%
+    \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Book metadata
+\title{Historyczny Jezus jako Syn Boży: Chwała Nowonarodzonemu Królowi}
+\author{MV Data sp. z o.o.}
+\date{2025}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter*{Przedmowa}
+\input{preface_po}
+
+\chapter{W poszukiwaniu historycznego Jezusa}\label{ch:the-quest-for-the-historical-jesus}
+\input{chapter1_po}
+
+\chapter{Jezus Chrystus, Syn Józefa i Marii Chrystus}\label{ch:jesus-christ-son-of-joseph-and-mary-christ}
+\input{chapter2_po}
+
+% TODO: Uncomment when translations are complete
+% \chapter{Prawdziwie był Synem Bożym}\label{ch:he-truly-was-the-son-of-god}
+% \input{chapter3_po}
+
+% \chapter{Ewangelie jako historycznie wiarygodne źródła o historycznym Jezusie}\label{ch:gospels-are-historically-reliable}
+% \input{chapter4_po}
+
+% \chapter{Listy Pawłowe do wszystkich narodów}\label{ch:pauline-epistles-to-all-nations}
+% \input{chapter5_po}
+
+% \chapter{Purpurowy Feniks powstaje}\label{ch:the-purple-phoenix-raises}
+% \input{chapter6_po}
+
+% \chapter*{Epilog}
+% \input{epilogue_po}
+
+\end{document}
