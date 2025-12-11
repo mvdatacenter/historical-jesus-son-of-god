@@ -25,6 +25,16 @@ Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" 
 
 The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
 
+## When User Says STOP (ABSOLUTE RULE)
+
+When user says "stop", "STOP", or any variation:
+1. **STOP IMMEDIATELY** - Do not finish the current action
+2. **Do not send another tool call**
+3. **Do not try to "just finish this one thing"**
+4. **Wait for instructions**
+
+This is not negotiable. User sees something you don't. STOP MEANS STOP.
+
 ## When You Break Something (CRITICAL)
 
 Claude has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
@@ -48,6 +58,16 @@ Claude has a disgusting tendency to hide bugs. When code breaks or produces part
 2. Acknowledge the specific problem
 3. Find and fix the root cause
 4. Do NOT keep iterating on broken output
+
+## Never Commit Broken Code
+
+**NEVER attempt to commit code that:**
+1. You haven't tested
+2. Doesn't work
+3. Is "work in progress"
+4. You're not sure about
+
+If you wrote code and it doesn't work, **revert it**. Don't commit garbage hoping to fix it later.
 
 ### Step-by-Step Process
 

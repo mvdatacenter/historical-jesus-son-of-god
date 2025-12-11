@@ -17,6 +17,7 @@ import sys
 import time
 import argparse
 import re
+import hashlib
 from typing import Optional, List
 
 from ApplicationServices import (
@@ -168,22 +169,24 @@ def collect_assistant_messages(element, messages: List[str], depth=0, max_depth=
 
 
 def collect_all_text_from_element(element, texts: List[str], depth=0, max_depth=20):
-    """Recursively collect ALL text from an element and its children.
-
-    IMPORTANT: Only collect from AXDescription attribute, NOT AXValue.
-    ChatGPT puts actual message content in desc, but UI elements like
-    "Thought for a couple of seconds" are in value only.
-    """
+    """Recursively collect ALL text from an element and its children."""
     if depth > max_depth:
         return
 
     role = ax_attr(element, kAXRoleAttribute)
 
     if role in ["AXStaticText", "AXTextArea", "AXTextField"]:
-        # Only use desc - value contains UI garbage like thinking indicators
+        # Try desc first, fall back to value
         desc = ax_attr(element, kAXDescriptionAttribute)
-        if desc and isinstance(desc, str) and desc.strip():
-            texts.append(desc.strip())
+        value = ax_attr(element, kAXValueAttribute)
+        text_content = desc or value
+
+        # Filter out UI garbage like "Thought for a couple of seconds"
+        if text_content and isinstance(text_content, str) and text_content.strip():
+            text = text_content.strip()
+            # Skip thinking indicators
+            if not text.startswith("Thought for"):
+                texts.append(text)
 
     children = ax_attr(element, kAXChildrenAttribute)
     if children:
@@ -244,8 +247,10 @@ def collect_messages_with_position(element, messages: List[tuple], depth=0, max_
             # Join all text from this container as one message
             joined = "\n\n".join(substantial)
 
-            # Avoid duplicates
-            key = joined[:200]
+            # Avoid duplicates - use MD5 hash of FULL content, not just prefix
+            # (Two different messages can share the same prefix, e.g., a truncated
+            # response and a complete response to a follow-up question)
+            key = hashlib.md5(joined.encode()).hexdigest()
             if key not in seen_texts:
                 seen_texts.add(key)
 
@@ -492,16 +497,12 @@ def is_at_scroll_top() -> bool:
 
 
 def collect_all_visible_messages(ax_app) -> List[tuple]:
-    """Collect all visible messages with their Y position.
+    """Collect all visible messages with their Y position and role.
 
-    Returns list of (message_text, y_pos) tuples, sorted by Y position (top to bottom).
+    Returns list of (message_text, y_pos, is_assistant) tuples, sorted by Y position (top to bottom).
 
     Messages are collected at the AXGroup container level, so fragments of the same
     response are automatically joined.
-
-    NOTE: We do NOT attempt to distinguish user/assistant here. That heuristic was
-    unreliable and caused bugs. Callers should use position-based logic if needed
-    (messages alternate user/assistant from top to bottom).
     """
     visible = []
     collect_messages_with_position(ax_app, visible)
@@ -509,14 +510,14 @@ def collect_all_visible_messages(ax_app) -> List[tuple]:
     # Filter out UI elements
     ui_keywords = {'search', 'new chat', 'chatgpt', 'gpt-4', 'upgrade', 'settings', 'today', 'yesterday'}
     filtered = []
-    for msg, y_pos, _ in visible:
+    for msg, y_pos, is_assistant in visible:
         if len(msg) <= 20:  # Minimum length to filter UI elements
             continue
         # NOTE: Removed ord(msg[0]) >= 128 filter - it was blocking Polish/non-ASCII content
         first_word = msg.split()[0].lower() if msg.split() else ""
         if first_word in ui_keywords:
             continue
-        filtered.append((msg, y_pos))
+        filtered.append((msg, y_pos, is_assistant))
 
     # Sort by Y position (oldest to newest - more negative Y = older/higher on screen)
     # So sort ascending: most negative first, highest Y (newest) last
@@ -959,18 +960,30 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     if not wait_for_reply:
         return ""
 
-    # Poll for response
+    # Poll for response using Stop button detection
     print(f"[DEBUG] Waiting for response (timeout: {wait_seconds}s)...", file=sys.stderr)
-    time.sleep(3)  # Initial wait for response to start
+    time.sleep(2)  # Initial wait for response to start
 
-    last_text = ""
-    last_length = 0
-    stable_count = 0
     max_polls = wait_seconds * 2  # Poll every 0.5s
-    poll_count = 0
     last_progress_report = 0
 
     for poll_count in range(max_polls):
+        # Check if ChatGPT is still generating (Stop button visible)
+        still_thinking = is_chatgpt_thinking(ax_app)
+        elapsed = poll_count * 0.5
+
+        if still_thinking:
+            # Progress reporting every 10 seconds
+            if elapsed - last_progress_report >= 10:
+                print(f"[DEBUG] ChatGPT still generating... ({elapsed:.0f}s elapsed)", file=sys.stderr)
+                last_progress_report = elapsed
+            time.sleep(0.5)
+            continue
+
+        # Stop button gone - ChatGPT finished. Now collect the response.
+        print(f"[DEBUG] ChatGPT finished generating ({elapsed:.0f}s)", file=sys.stderr)
+        time.sleep(0.5)  # Brief pause to let UI settle
+
         messages = []
         collect_assistant_messages(ax_app, messages)
 
@@ -980,59 +993,26 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
                 msg for msg in messages
                 if msg not in existing_texts
                 and len(msg) > 1
-                and not msg.startswith(prompt[:50])  # Don't filter by first char - breaks non-ASCII responses
+                and not msg.startswith(prompt[:50])
             ]
 
             if new_messages:
-                current_text = max(new_messages, key=len)
-            else:
-                current_text = ""
+                response = max(new_messages, key=len)
+                print(f"[DEBUG] Response complete ({len(response)} chars)", file=sys.stderr)
+                return response
 
-            current_length = len(current_text)
-
-            # Progress reporting every 10 seconds if text is growing
-            elapsed = poll_count * 0.5
-            if current_length > last_length and elapsed - last_progress_report >= 10:
-                print(f"[DEBUG] Response streaming... ({current_length} chars, {elapsed:.0f}s elapsed)", file=sys.stderr)
-                last_progress_report = elapsed
-
-            # Only consider non-empty responses as stable
-            if current_text and current_text == last_text:
-                stable_count += 1
-                if stable_count >= 4:  # Stable for 2 seconds
-                    print(f"[DEBUG] Response complete ({current_length} chars)", file=sys.stderr)
-                    return current_text
-            else:
-                last_text = current_text
-                last_length = current_length
-                stable_count = 0
-
+        # No new message found - might need to scroll or wait longer
+        print("[DEBUG] No new message found, retrying...", file=sys.stderr)
         time.sleep(0.5)
 
-    # Timeout - FAIL if response incomplete
-    # CRITICAL: Never return partial data. Either complete or nothing.
-    if last_length > 0:
-        if stable_count < 4:  # Response was still changing - incomplete
-            print(f"\n{'='*60}", file=sys.stderr)
-            print("FATAL ERROR - RESPONSE INCOMPLETE", file=sys.stderr)
-            print('='*60, file=sys.stderr)
-            print(f"Response was still streaming at timeout ({last_length} chars)", file=sys.stderr)
-            print(f"Increase --wait-seconds and try again", file=sys.stderr)
-            print(f"{'='*60}", file=sys.stderr)
-            print("NO OUTPUT - refusing to return partial response", file=sys.stderr)
-            print(f"{'='*60}\n", file=sys.stderr)
-            sys.exit(1)
-        else:
-            # Response stopped changing but we hit timeout after it stabilized
-            print(f"[DEBUG] Response complete at timeout ({last_length} chars)", file=sys.stderr)
-            return last_text
-    else:
-        print(f"\n{'='*60}", file=sys.stderr)
-        print("FATAL ERROR - NO RESPONSE", file=sys.stderr)
-        print('='*60, file=sys.stderr)
-        print("ChatGPT may be rate-limiting or query failed", file=sys.stderr)
-        print(f"{'='*60}\n", file=sys.stderr)
-        sys.exit(1)
+    # Timeout
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("FATAL ERROR - TIMEOUT", file=sys.stderr)
+    print('='*60, file=sys.stderr)
+    print(f"ChatGPT did not finish within {wait_seconds}s", file=sys.stderr)
+    print(f"Increase --wait-seconds and try again", file=sys.stderr)
+    print(f"{'='*60}\n", file=sys.stderr)
+    sys.exit(1)
 
 
 def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False, limit: int = None, output_dir: str = None) -> str:
@@ -1080,19 +1060,17 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
         return "\n\n" + "="*60 + "\n\n".join(result)
 
     # Use grouped message collection (joins fragments of same response)
-    # Returns list of (msg, y_pos) tuples sorted by Y position (top to bottom)
+    # Returns list of (msg, y_pos, is_assistant) tuples sorted by Y position (top to bottom)
     all_messages = collect_all_visible_messages(ax_app)
 
-    # Extract just the message texts
-    meaningful_messages = [msg for msg, y_pos in all_messages]
-
     if debug:
-        print(f"[DEBUG] Found {len(meaningful_messages)} messages", file=sys.stderr)
-        for i, msg in enumerate(meaningful_messages):
-            preview = msg[:80].replace('\n', ' ')
-            print(f"[DEBUG] Message {i+1}: {len(msg)} chars - {preview}...", file=sys.stderr)
+        print(f"[DEBUG] Found {len(all_messages)} messages", file=sys.stderr)
+        for i, (msg, y_pos, is_asst) in enumerate(all_messages):
+            role = "ASST" if is_asst else "USER"
+            preview = msg[:70].replace('\n', ' ')
+            print(f"[DEBUG] Message {i+1} [{role}]: {len(msg)} chars - {preview}...", file=sys.stderr)
 
-    if not meaningful_messages:
+    if not all_messages:
         if debug:
             print("[DEBUG] No messages found", file=sys.stderr)
         return ""
@@ -1100,21 +1078,31 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
     if show_all:
         # Return all messages in order (top to bottom = oldest to newest)
         result = []
-        for i, msg in enumerate(meaningful_messages, 1):
-            result.append(f"=== MESSAGE {i}/{len(meaningful_messages)} ({len(msg)} chars) ===\n\n{msg}")
+        for i, (msg, y_pos, is_asst) in enumerate(all_messages, 1):
+            role = "ASSISTANT" if is_asst else "USER"
+            result.append(f"=== MESSAGE {i}/{len(all_messages)} [{role}] ({len(msg)} chars) ===\n\n{msg}")
         return "\n\n" + "="*60 + "\n\n".join(result)
 
+    # Filter for assistant messages only
+    assistant_messages = [(msg, y_pos) for msg, y_pos, is_asst in all_messages if is_asst]
+
+    if not assistant_messages:
+        if debug:
+            print("[DEBUG] No assistant messages found", file=sys.stderr)
+        return ""
+
     if latest:
-        # Return the last (most recent / bottom-most) message
-        if debug and len(meaningful_messages) > 1:
-            print(f"[DEBUG] Multiple messages found, returning latest ({len(meaningful_messages[-1])} chars)", file=sys.stderr)
-        return meaningful_messages[-1]
+        # Return the last (most recent / bottom-most) assistant message
+        latest_msg = assistant_messages[-1][0]
+        if debug:
+            print(f"[DEBUG] Returning latest assistant message ({len(latest_msg)} chars)", file=sys.stderr)
+        return latest_msg
 
-    # Return longest message (most likely the main response)
-    longest = max(meaningful_messages, key=len)
+    # Return longest assistant message (most likely the main response)
+    longest = max(assistant_messages, key=lambda x: len(x[0]))[0]
 
-    if debug and len(meaningful_messages) > 1:
-        print(f"[DEBUG] Multiple messages found, returning longest ({len(longest)} chars)", file=sys.stderr)
+    if debug:
+        print(f"[DEBUG] Returning longest assistant message ({len(longest)} chars)", file=sys.stderr)
 
     return longest
 
