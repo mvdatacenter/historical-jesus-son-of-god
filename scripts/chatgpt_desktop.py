@@ -17,6 +17,7 @@ import sys
 import time
 import argparse
 import re
+import hashlib
 from typing import Optional, List
 
 from ApplicationServices import (
@@ -168,22 +169,24 @@ def collect_assistant_messages(element, messages: List[str], depth=0, max_depth=
 
 
 def collect_all_text_from_element(element, texts: List[str], depth=0, max_depth=20):
-    """Recursively collect ALL text from an element and its children.
-
-    IMPORTANT: Only collect from AXDescription attribute, NOT AXValue.
-    ChatGPT puts actual message content in desc, but UI elements like
-    "Thought for a couple of seconds" are in value only.
-    """
+    """Recursively collect ALL text from an element and its children."""
     if depth > max_depth:
         return
 
     role = ax_attr(element, kAXRoleAttribute)
 
     if role in ["AXStaticText", "AXTextArea", "AXTextField"]:
-        # Only use desc - value contains UI garbage like thinking indicators
+        # Try desc first, fall back to value
         desc = ax_attr(element, kAXDescriptionAttribute)
-        if desc and isinstance(desc, str) and desc.strip():
-            texts.append(desc.strip())
+        value = ax_attr(element, kAXValueAttribute)
+        text_content = desc or value
+
+        # Filter out UI garbage like "Thought for a couple of seconds"
+        if text_content and isinstance(text_content, str) and text_content.strip():
+            text = text_content.strip()
+            # Skip thinking indicators
+            if not text.startswith("Thought for"):
+                texts.append(text)
 
     children = ax_attr(element, kAXChildrenAttribute)
     if children:
@@ -244,8 +247,10 @@ def collect_messages_with_position(element, messages: List[tuple], depth=0, max_
             # Join all text from this container as one message
             joined = "\n\n".join(substantial)
 
-            # Avoid duplicates
-            key = joined[:200]
+            # Avoid duplicates - use MD5 hash of FULL content, not just prefix
+            # (Two different messages can share the same prefix, e.g., a truncated
+            # response and a complete response to a follow-up question)
+            key = hashlib.md5(joined.encode()).hexdigest()
             if key not in seen_texts:
                 seen_texts.add(key)
 
@@ -492,16 +497,12 @@ def is_at_scroll_top() -> bool:
 
 
 def collect_all_visible_messages(ax_app) -> List[tuple]:
-    """Collect all visible messages with their Y position.
+    """Collect all visible messages with their Y position and role.
 
-    Returns list of (message_text, y_pos) tuples, sorted by Y position (top to bottom).
+    Returns list of (message_text, y_pos, is_assistant) tuples, sorted by Y position (top to bottom).
 
     Messages are collected at the AXGroup container level, so fragments of the same
     response are automatically joined.
-
-    NOTE: We do NOT attempt to distinguish user/assistant here. That heuristic was
-    unreliable and caused bugs. Callers should use position-based logic if needed
-    (messages alternate user/assistant from top to bottom).
     """
     visible = []
     collect_messages_with_position(ax_app, visible)
@@ -509,14 +510,14 @@ def collect_all_visible_messages(ax_app) -> List[tuple]:
     # Filter out UI elements
     ui_keywords = {'search', 'new chat', 'chatgpt', 'gpt-4', 'upgrade', 'settings', 'today', 'yesterday'}
     filtered = []
-    for msg, y_pos, _ in visible:
+    for msg, y_pos, is_assistant in visible:
         if len(msg) <= 20:  # Minimum length to filter UI elements
             continue
         # NOTE: Removed ord(msg[0]) >= 128 filter - it was blocking Polish/non-ASCII content
         first_word = msg.split()[0].lower() if msg.split() else ""
         if first_word in ui_keywords:
             continue
-        filtered.append((msg, y_pos))
+        filtered.append((msg, y_pos, is_assistant))
 
     # Sort by Y position (oldest to newest - more negative Y = older/higher on screen)
     # So sort ascending: most negative first, highest Y (newest) last
@@ -1059,19 +1060,17 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
         return "\n\n" + "="*60 + "\n\n".join(result)
 
     # Use grouped message collection (joins fragments of same response)
-    # Returns list of (msg, y_pos) tuples sorted by Y position (top to bottom)
+    # Returns list of (msg, y_pos, is_assistant) tuples sorted by Y position (top to bottom)
     all_messages = collect_all_visible_messages(ax_app)
 
-    # Extract just the message texts
-    meaningful_messages = [msg for msg, y_pos in all_messages]
-
     if debug:
-        print(f"[DEBUG] Found {len(meaningful_messages)} messages", file=sys.stderr)
-        for i, msg in enumerate(meaningful_messages):
-            preview = msg[:80].replace('\n', ' ')
-            print(f"[DEBUG] Message {i+1}: {len(msg)} chars - {preview}...", file=sys.stderr)
+        print(f"[DEBUG] Found {len(all_messages)} messages", file=sys.stderr)
+        for i, (msg, y_pos, is_asst) in enumerate(all_messages):
+            role = "ASST" if is_asst else "USER"
+            preview = msg[:70].replace('\n', ' ')
+            print(f"[DEBUG] Message {i+1} [{role}]: {len(msg)} chars - {preview}...", file=sys.stderr)
 
-    if not meaningful_messages:
+    if not all_messages:
         if debug:
             print("[DEBUG] No messages found", file=sys.stderr)
         return ""
@@ -1079,21 +1078,31 @@ def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = 
     if show_all:
         # Return all messages in order (top to bottom = oldest to newest)
         result = []
-        for i, msg in enumerate(meaningful_messages, 1):
-            result.append(f"=== MESSAGE {i}/{len(meaningful_messages)} ({len(msg)} chars) ===\n\n{msg}")
+        for i, (msg, y_pos, is_asst) in enumerate(all_messages, 1):
+            role = "ASSISTANT" if is_asst else "USER"
+            result.append(f"=== MESSAGE {i}/{len(all_messages)} [{role}] ({len(msg)} chars) ===\n\n{msg}")
         return "\n\n" + "="*60 + "\n\n".join(result)
 
+    # Filter for assistant messages only
+    assistant_messages = [(msg, y_pos) for msg, y_pos, is_asst in all_messages if is_asst]
+
+    if not assistant_messages:
+        if debug:
+            print("[DEBUG] No assistant messages found", file=sys.stderr)
+        return ""
+
     if latest:
-        # Return the last (most recent / bottom-most) message
-        if debug and len(meaningful_messages) > 1:
-            print(f"[DEBUG] Multiple messages found, returning latest ({len(meaningful_messages[-1])} chars)", file=sys.stderr)
-        return meaningful_messages[-1]
+        # Return the last (most recent / bottom-most) assistant message
+        latest_msg = assistant_messages[-1][0]
+        if debug:
+            print(f"[DEBUG] Returning latest assistant message ({len(latest_msg)} chars)", file=sys.stderr)
+        return latest_msg
 
-    # Return longest message (most likely the main response)
-    longest = max(meaningful_messages, key=len)
+    # Return longest assistant message (most likely the main response)
+    longest = max(assistant_messages, key=lambda x: len(x[0]))[0]
 
-    if debug and len(meaningful_messages) > 1:
-        print(f"[DEBUG] Multiple messages found, returning longest ({len(longest)} chars)", file=sys.stderr)
+    if debug:
+        print(f"[DEBUG] Returning longest assistant message ({len(longest)} chars)", file=sys.stderr)
 
     return longest
 
