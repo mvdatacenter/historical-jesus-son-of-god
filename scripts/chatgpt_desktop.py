@@ -959,18 +959,30 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     if not wait_for_reply:
         return ""
 
-    # Poll for response
+    # Poll for response using Stop button detection
     print(f"[DEBUG] Waiting for response (timeout: {wait_seconds}s)...", file=sys.stderr)
-    time.sleep(3)  # Initial wait for response to start
+    time.sleep(2)  # Initial wait for response to start
 
-    last_text = ""
-    last_length = 0
-    stable_count = 0
     max_polls = wait_seconds * 2  # Poll every 0.5s
-    poll_count = 0
     last_progress_report = 0
 
     for poll_count in range(max_polls):
+        # Check if ChatGPT is still generating (Stop button visible)
+        still_thinking = is_chatgpt_thinking(ax_app)
+        elapsed = poll_count * 0.5
+
+        if still_thinking:
+            # Progress reporting every 10 seconds
+            if elapsed - last_progress_report >= 10:
+                print(f"[DEBUG] ChatGPT still generating... ({elapsed:.0f}s elapsed)", file=sys.stderr)
+                last_progress_report = elapsed
+            time.sleep(0.5)
+            continue
+
+        # Stop button gone - ChatGPT finished. Now collect the response.
+        print(f"[DEBUG] ChatGPT finished generating ({elapsed:.0f}s)", file=sys.stderr)
+        time.sleep(0.5)  # Brief pause to let UI settle
+
         messages = []
         collect_assistant_messages(ax_app, messages)
 
@@ -980,59 +992,26 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
                 msg for msg in messages
                 if msg not in existing_texts
                 and len(msg) > 1
-                and not msg.startswith(prompt[:50])  # Don't filter by first char - breaks non-ASCII responses
+                and not msg.startswith(prompt[:50])
             ]
 
             if new_messages:
-                current_text = max(new_messages, key=len)
-            else:
-                current_text = ""
+                response = max(new_messages, key=len)
+                print(f"[DEBUG] Response complete ({len(response)} chars)", file=sys.stderr)
+                return response
 
-            current_length = len(current_text)
-
-            # Progress reporting every 10 seconds if text is growing
-            elapsed = poll_count * 0.5
-            if current_length > last_length and elapsed - last_progress_report >= 10:
-                print(f"[DEBUG] Response streaming... ({current_length} chars, {elapsed:.0f}s elapsed)", file=sys.stderr)
-                last_progress_report = elapsed
-
-            # Only consider non-empty responses as stable
-            if current_text and current_text == last_text:
-                stable_count += 1
-                if stable_count >= 4:  # Stable for 2 seconds
-                    print(f"[DEBUG] Response complete ({current_length} chars)", file=sys.stderr)
-                    return current_text
-            else:
-                last_text = current_text
-                last_length = current_length
-                stable_count = 0
-
+        # No new message found - might need to scroll or wait longer
+        print("[DEBUG] No new message found, retrying...", file=sys.stderr)
         time.sleep(0.5)
 
-    # Timeout - FAIL if response incomplete
-    # CRITICAL: Never return partial data. Either complete or nothing.
-    if last_length > 0:
-        if stable_count < 4:  # Response was still changing - incomplete
-            print(f"\n{'='*60}", file=sys.stderr)
-            print("FATAL ERROR - RESPONSE INCOMPLETE", file=sys.stderr)
-            print('='*60, file=sys.stderr)
-            print(f"Response was still streaming at timeout ({last_length} chars)", file=sys.stderr)
-            print(f"Increase --wait-seconds and try again", file=sys.stderr)
-            print(f"{'='*60}", file=sys.stderr)
-            print("NO OUTPUT - refusing to return partial response", file=sys.stderr)
-            print(f"{'='*60}\n", file=sys.stderr)
-            sys.exit(1)
-        else:
-            # Response stopped changing but we hit timeout after it stabilized
-            print(f"[DEBUG] Response complete at timeout ({last_length} chars)", file=sys.stderr)
-            return last_text
-    else:
-        print(f"\n{'='*60}", file=sys.stderr)
-        print("FATAL ERROR - NO RESPONSE", file=sys.stderr)
-        print('='*60, file=sys.stderr)
-        print("ChatGPT may be rate-limiting or query failed", file=sys.stderr)
-        print(f"{'='*60}\n", file=sys.stderr)
-        sys.exit(1)
+    # Timeout
+    print(f"\n{'='*60}", file=sys.stderr)
+    print("FATAL ERROR - TIMEOUT", file=sys.stderr)
+    print('='*60, file=sys.stderr)
+    print(f"ChatGPT did not finish within {wait_seconds}s", file=sys.stderr)
+    print(f"Increase --wait-seconds and try again", file=sys.stderr)
+    print(f"{'='*60}\n", file=sys.stderr)
+    sys.exit(1)
 
 
 def read_last_reply(show_all: bool = False, latest: bool = False, debug: bool = False, limit: int = None, output_dir: str = None) -> str:
