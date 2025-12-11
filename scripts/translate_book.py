@@ -301,7 +301,10 @@ def main():
     base_dir = script_dir.parent
 
     # Determine output directory
-    output_dir = Path(base_dir) / args.output_dir / target_lang.lower()
+    # If output_dir already ends with language name, don't append it again
+    output_dir = Path(base_dir) / args.output_dir
+    if not args.output_dir.lower().endswith(target_lang.lower()):
+        output_dir = output_dir / target_lang.lower()
 
     if args.all:
         # Translate all chapters

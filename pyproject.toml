@@ -17,3 +17,7 @@ pyobjc = "^12.1"
 
 [tool.poetry.scripts]
 map = "map:main"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^9.0.2"
+
