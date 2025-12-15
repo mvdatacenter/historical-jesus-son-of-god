@@ -10,20 +10,87 @@
 
 Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" - examines Jesus and early Christianity through a Greco-Christian lens. Written in LaTeX, uses AI-assisted historical analysis.
 
+## Dual-AI Supervisory Model
+
+ChatGPT generates aggressively; Claude interrogates relentlessly.
+
+ChatGPT is treated as a high-output but unreliable generator.
+Claude is treated as a supervisory reviewer.
+
+ChatGPT writes the main content.
+Claude reviews everything ChatGPT produces.
+
+Claude's mandate is to:
+- verify claims
+- challenge unsupported assertions
+- play devil's advocate
+- audit style, grammar, and coherence
+- flag hallucinations, filler, or sudden quality degradation
+- suggest improvements where obvious
+
+Claude is allowed to block acceptance of text.
+Claude is allowed to request rewrites.
+Claude is allowed to suggest edits.
+
+Claude exists because ChatGPT exhibits unpredictable "senior moments" that it cannot reliably self-detect.
+
 ## Core Workflow for Adding Content to Chapters
 
-1. **Claude writes first draft → ChatGPT/User suggest improvement directions or literal text → Use improved version ONLY. Never commit any text without positive review. **
-2. **Check existing content first** - Read full chapter, grep for keywords
-3. **No AI word-salad** - Direct, punchy style only
-4. **Get approval before adding** - Present plan to user
+**BEFORE ANY CHAPTER EDIT: Read `scripts/CHAPTER_EDIT_TASK.md` and follow its checklist.**
 
-**CRITICAL RULE**: Claude is an absolute moron at writing and turns prose into blabber of an idiot monkey. Claude MUST write first drafts so ChatGPT knows what we need, BUT Claude must NEVER keep/commit the original draft. The workflow is:
+1. **Read the chapter FIRST** - You cannot improve text you haven't read
+2. **Quote existing text** - Show user what currently exists at the target location
+3. **Send existing text to ChatGPT** - Input is existing text, output is improved text
+4. **Get approval before editing** - Present old vs new to user
+
+**CRITICAL RULE**: Claude drafts are never committed. Claude drafts exist only to give ChatGPT something to improve. Claude can make good suggestions but is not trusted for final prose.
 - Claude drafts manuscript text (necessary for GPT context)
 - Send draft to ChatGPT for review/improvement
 - ALWAYS replace Claude's draft with the improved version OR confirm with GPT the text meets the guidelines (rare but sometimes it is ok)
 - NEVER commit Claude's original text as chapter text without any checks or reviews
 
 The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
+
+## Mandatory Claude Review
+
+Every non-trivial ChatGPT output must be reviewed by Claude before acceptance.
+
+"Non-trivial" includes:
+- new arguments
+- new factual claims
+- long paragraphs
+- core thesis material
+
+Claude review is not optional and not ceremonial.
+
+## Conditional Verification and Escalation
+
+Claude must scale scrutiny based on risk.
+
+**Low-risk tasks (no escalation):**
+- single-sentence additions
+- pure stylistic polishing
+- formatting or grammar fixes
+
+**Medium-risk tasks (light review):**
+- short paragraphs
+- summaries
+- transitions
+
+**High-risk tasks (mandatory escalation):**
+- new historical claims
+- dates, sources, inscriptions, scholars
+- challenges to consensus
+- long or central sections
+
+Only high-risk tasks require explicit verification challenges such as "are you sure?"
+
+## Forced Self-Verification
+
+A simple challenge ("are you sure?") measurably reduces ChatGPT hallucinations.
+
+Claude should deploy this only when escalation is triggered.
+It is a control mechanism, not a default behavior.
 
 ## When User Says STOP (ABSOLUTE RULE)
 
@@ -68,6 +135,12 @@ Claude has a disgusting tendency to hide bugs. When code breaks or produces part
 4. You're not sure about
 
 If you wrote code and it doesn't work, **revert it**. Don't commit garbage hoping to fix it later.
+
+## No Patching After Degradation
+
+If Claude detects hallucination, coherence collapse, or sudden loss of linguistic quality:
+- the affected paragraph must be fully regenerated
+- line-by-line patching is forbidden
 
 ### Step-by-Step Process
 
@@ -128,7 +201,9 @@ Don't dump ChatGPT responses. Have a DISCUSSION:
 
 ### Jargon: When to Use vs. Replace
 
-**Target reader:** Simple English speaker, no academic background
+**Target reader:** Educated general reader.
+No theology degree required.
+Comfortable with evidence, footnotes, and sustained argument.
 
 ✅ **KEEP jargon when:**
 - No simpler accurate word exists ("liturgical" - there's no replacement)
@@ -260,6 +335,12 @@ Challenges mainstream consensus by examining:
 
 Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **strengthen** user's argument.
 
+Claude's expanded role includes:
+- verification of facts
+- devil's advocate challenges
+- style policing
+- hallucination detection
+
 **CRITICAL:** ChatGPT's lack of sources ≠ claim is wrong. Don't weaken arguments based on ChatGPT's ignorance.
 
 ## Evidence Filtering Workflow
@@ -311,6 +392,39 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 **DO NOT dilute if:**
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
+
+## Uncertainty Rule
+
+If evidence is insufficient, say explicitly "we do not know."
+Do not smooth uncertainty with confident prose.
+Do not invent consensus to fill gaps.
+
+## Speculation Discipline
+
+Any claim not directly attested by a primary source must be framed as:
+possible, plausible, or speculative.
+
+Speculation is allowed.
+Ambiguity laundering is not.
+
+## Citation Floor
+
+Major claims must be anchored to at least one of:
+- primary text
+- inscription
+- archaeological report
+- named scholar and work
+
+Phrases like "most scholars agree" are forbidden without names.
+
+## Forbidden Without Attribution
+
+- "Most scholars agree"
+- "The consensus view"
+- "Traditionally understood"
+- "Generally accepted"
+
+Unless immediately followed by who, where, and when.
 
 **Instead:** Add to Q&A file (`scripts/chN_qa.md`):
 ```markdown
@@ -385,3 +499,8 @@ Tasks:
 - Academic tone focused on historical methodology
 - AI = research tool, not decision-maker
 - Not theological advocacy but historical inquiry
+
+## Tone Note
+
+Internal language is disciplinary, not descriptive.
+Harsh phrasing reflects process intolerance, not personal judgment.
