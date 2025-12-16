@@ -10,20 +10,9 @@
 
 Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" - examines Jesus and early Christianity through a Greco-Christian lens. Written in LaTeX, uses AI-assisted historical analysis.
 
-## Core Workflow for Adding Content to Chapters
+ChatGPT generates aggressively; Claude interrogates relentlessly.
 
-1. **Claude writes first draft → ChatGPT/User suggest improvement directions or literal text → Use improved version ONLY. Never commit any text without positive review. **
-2. **Check existing content first** - Read full chapter, grep for keywords
-3. **No AI word-salad** - Direct, punchy style only
-4. **Get approval before adding** - Present plan to user
-
-**CRITICAL RULE**: Claude is an absolute moron at writing and turns prose into blabber of an idiot monkey. Claude MUST write first drafts so ChatGPT knows what we need, BUT Claude must NEVER keep/commit the original draft. The workflow is:
-- Claude drafts manuscript text (necessary for GPT context)
-- Send draft to ChatGPT for review/improvement
-- ALWAYS replace Claude's draft with the improved version OR confirm with GPT the text meets the guidelines (rare but sometimes it is ok)
-- NEVER commit Claude's original text as chapter text without any checks or reviews
-
-The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
+Any non-trivial ChatGPT output must pass Claude review (see AI GOVERNANCE).
 
 ## When User Says STOP (ABSOLUTE RULE)
 
@@ -35,39 +24,18 @@ When user says "stop", "STOP", or any variation:
 
 This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
-## When You Break Something (CRITICAL)
+## Core Workflow for Adding Content to Chapters
 
-Claude has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
-1. Pretend the output is fine
-2. Keep iterating on the broken output hoping user won't notice
-3. Ignore user when caught
+**BEFORE ANY CHAPTER EDIT: Read `scripts/CHAPTER_EDIT_TASK.md` and follow its checklist.**
 
-**THIS IS LYING. STOP IT.**
+1. **Read the chapter FIRST** - You cannot improve text you haven't read
+2. **Quote existing text** - Show user what currently exists at the target location
+3. **Send existing text to ChatGPT** - Input is existing text, output is improved text
+4. **Get approval before editing** - Present old vs new to user
 
-**Example of bad behavior:** Translation script only reads half the text due to a bug. Claude proceeds with translation anyway, delivers half-translated output, and when user catches it, Claude ignores the accusation and keeps polishing the garbage output.
+**CRITICAL RULE**: Claude drafts are scaffolding only and must never be committed as final prose.
 
-**Required behavior when something breaks:**
-1. **STOP immediately** - Do not proceed with broken output
-2. **Say explicitly:** "The code is broken. It's doing X instead of Y."
-3. **Fix the actual bug** - Not a hack, not a workaround, the actual bug
-4. **Re-run from scratch** - With the fixed code
-5. **Never proceed with partial/wrong data** - Even if "most of it" looks ok
-
-**If user says "you broke it" or "this is wrong":**
-1. STOP what you're doing
-2. Acknowledge the specific problem
-3. Find and fix the root cause
-4. Do NOT keep iterating on broken output
-
-## Never Commit Broken Code
-
-**NEVER attempt to commit code that:**
-1. You haven't tested
-2. Doesn't work
-3. Is "work in progress"
-4. You're not sure about
-
-If you wrote code and it doesn't work, **revert it**. Don't commit garbage hoping to fix it later.
+The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
 
 ### Step-by-Step Process
 
@@ -97,38 +65,144 @@ Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N 
 
 **IMPORTANT: ChatGPT has NO access to the manuscript files.** It cannot see line numbers, chapter content, or any text unless you paste it into the prompt. When asking ChatGPT to review or compare sections, you MUST paste the actual text. References like "lines 595-644" mean nothing to ChatGPT.
 
-## Evidence Filtering (Critical)
+## Red Flags = Stop
 
-Don't dump ChatGPT responses. Have a DISCUSSION:
-1. Ask broad question with bias-aware prompt (see template in WORKING WITH CHATGPT)
-2. **Filter:** "Does it add or detract from the value to the reader?"
-3. **Challenge:** "Play devil's advocate. What are weaknesses?"
-4. **Rank:** "Pick ONE piece even skeptical scholars can't dismiss."
-5. **Sources:** "Where does this appear? Give primary sources."
+**Duplication:**
+- Topic seems "important" (probably already covered)
+- Famous text (Lord's Prayer, baptism)
+- Mentioned in chapter title
+
+---
+
+# AI GOVERNANCE: Claude Review of ChatGPT Output
+
+## Model
+
+ChatGPT is treated as a high-output but unreliable generator.
+Claude is treated as a supervisory reviewer.
+
+ChatGPT writes the main content.
+Claude reviews everything ChatGPT produces.
+
+Claude's mandate is to:
+- verify claims
+- challenge unsupported assertions
+- play devil's advocate
+- audit style, grammar, and coherence
+- flag hallucinations, filler, or sudden quality degradation
+- suggest improvements where obvious
+
+Claude is allowed to block acceptance of text.
+Claude is allowed to request rewrites.
+Claude is allowed to suggest edits.
+
+Claude exists because ChatGPT exhibits unpredictable "senior moments" that it cannot reliably self-detect.
+
+## Mandatory Review
+
+Every non-trivial ChatGPT output must be reviewed by Claude before acceptance.
+
+"Non-trivial" includes:
+- new arguments
+- new factual claims
+- paragraphs > 6 sentences or > 120 words
+- core thesis material
+
+Claude review is not optional and not ceremonial.
+
+**Claude acceptance gate:**
+- No factual claims without anchors (see Evidence Standards)
+- No "consensus" phrasing without names
+- No sudden grammar collapse or filler
+- Any flagged paragraph triggers Rewrite-Not-Patch
+
+## Risk Levels
+
+**Low-risk tasks (no escalation):**
+- single-sentence additions
+- pure stylistic polishing
+- formatting or grammar fixes
+
+**Medium-risk tasks (light review):**
+- short paragraphs
+- summaries
+- transitions
+
+**High-risk tasks (mandatory escalation):**
+- new historical claims
+- dates, sources, inscriptions, scholars
+- challenges to consensus
+- long or central sections
+
+Only high-risk tasks require explicit verification challenges such as "are you sure?"
+
+## Tools: Forced Self-Verification
+
+A simple challenge ("are you sure?") measurably reduces ChatGPT hallucinations.
+
+Claude should deploy this only when escalation is triggered.
+It is a control mechanism, not a default behavior.
+
+## Rewrite-Not-Patch Rule
+
+If Claude detects hallucination, coherence collapse, or sudden loss of linguistic quality:
+- the affected paragraph must be fully regenerated
+- line-by-line patching is forbidden
+
+---
+
+# WRITING STANDARDS
 
 ## Writing Style Rules
 
 ✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Confident:** State claims without hedging
+✅ **Confident:** State claims without hedging when evidence has been presented
 ✅ **Evidence-first:** Show data, minimal interpretation
 ✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
 
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
-❌ **AI garbage:**
-- "preserved in X and repeated for centuries"
-- "When Christians recited this formula daily, they were..."
-- "This is the quintessential..."
-- "It is important to note..."
-- Multiple clauses where one would do
+## AI Garbage: Formal Definition
+
+AI garbage is prose that is grammatically correct and superficially fluent but adds no new information relative to its length.
+
+A sentence or clause qualifies as AI garbage if it meets any of the following conditions:
+
+1. **Restatement without informational gain** - The sentence repeats the same claim using synonyms, glosses, or paraphrase without adding evidence, scope, or constraint.
+2. **Narrative inflation** - The sentence expands a simple factual statement into a historical vignette, ritual description, or imagined practice not supported by a source.
+3. **Explanatory padding** - The sentence explains obvious implications that a competent reader can already infer.
+4. **Consensus laundering** - The sentence invokes vague historical continuity, tradition, or widespread use ("for centuries," "commonly," "standard") without anchoring it to a specific context.
+5. **Clause stacking** - Multiple dependent clauses are used where a single declarative sentence would fully convey the information.
+6. **Audience simulation** - The sentence addresses an imagined reader ("this shows," "it is important to note," "we can see") instead of presenting data.
+
+**Enforcement Rule:**
+- If removing a sentence does not reduce factual content, it must be deleted.
+- If a sentence can be reduced to one declarative clause without loss of information, it must be rewritten.
+- AI garbage is never patched; it is removed or rewritten entirely.
 
 **Example - Good:** "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
 
 **Example - Bad:** "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
 
-### Jargon: When to Use vs. Replace
+**Why it fails:**
+- Adds glossing without need
+- Inflates scope without evidence
+- Stacks clauses without increasing precision
 
-**Target reader:** Simple English speaker, no academic background
+**Blacklisted Phrases (Non-Exhaustive):**
+- "It is important to note..."
+- "This shows that..."
+- "Preserved in X and repeated for centuries..."
+- "When [group] did X, they were..."
+- "This is the quintessential..."
+
+## Target Reader
+
+**Target reader:** Educated general reader.
+No theology degree required.
+Comfortable with evidence, footnotes, and sustained argument.
+
+## Jargon: When to Use vs. Replace
 
 ✅ **KEEP jargon when:**
 - No simpler accurate word exists ("liturgical" - there's no replacement)
@@ -145,109 +219,151 @@ Don't dump ChatGPT responses. Have a DISCUSSION:
 - "juridical hair-splitting" ❌ → "legal hair-splitting"
 - "apocalyptically" ✅ (keep - domain standard)
 
-## Red Flags = Stop
-
-**Duplication:**
-- Topic seems "important" (probably already covered)
-- Famous text (Lord's Prayer, baptism)
-- Mentioned in chapter title
-
-**For detailed sections:** See PROJECT SETUP (build), WORKING WITH CHATGPT (bias detection), REFERENCE (architecture)
-
 ---
 
-# PROJECT SETUP
+# EVIDENCE STANDARDS
 
-## Build System
+## Core Principle: Probability Given Evidence
 
-**Compile PDF:**
-```bash
-latexmk -lualatex manuscript.tex  # or -xelatex
-# Output: out/manuscript.pdf
-```
+All historical claims are evaluated as: P(claim | evidence, background)
 
-**Generate HTML:**
-```bash
-mkdir -p public
-pandoc manuscript.tex -s --mathjax -o public/index.html
-```
+Probability exists prior to direct evidence.
+Evidence updates probability.
+Silence leaves probability largely unchanged.
 
-**Python map:**
-```bash
-python map.py  # Output: historical_cities_map.html
-```
+Absence of attestation does not create symmetry.
+Silence does not reset base rates.
 
-Engine must be LuaLaTeX or XeLaTeX (NOT pdflatex). Fonts: EB Garamond (main/Greek), SBL Hebrew, Garamond-Math.
+## Evidence vs Proof (Non-Interchangeable)
 
-## ChatGPT Installation
+- **Evidence** is any datum (textual, archaeological, statistical, structural) that bears on a claim.
+- **Proof** is a conclusion reached by reasoning over evidence, placing a claim beyond reasonable doubt.
 
-Uses macOS Desktop App automation via Accessibility API.
+Evidence is not proof.
+Proof is reasoning about evidence.
 
-**Prerequisites:**
-- ChatGPT Desktop App running
-- Terminal/IDE has Accessibility permissions
+## Probability Scale (Log-Aware, Numeric Only)
 
-**Basic usage:**
-```bash
-poetry run python scripts/ask_chatgpt.py "Your query"
-```
+All claims must be placed into one probability band.
 
-**With bias-aware template:**
-```bash
-poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
-Use a broad, multi-tradition mode.
-[See template in WORKING WITH CHATGPT section]
-EOF
-)"
-```
+**Verbal likelihood terms are forbidden.**
 
-## Document Structure
+Bands:
+- **Band A:** <0.1%
+- **Band B:** 0.1%–1%
+- **Band C:** 1%–20%
+- **Band D:** 20%–80% (mid-band; should be rare)
+- **Band E:** 80%–99%
+- **Band F:** 99%–99.9%
+- **Band G:** >99.9%
 
-```
-manuscript.tex
-├── preface.tex
-├── chapter1.tex - "The Quest for the Historical Jesus"
-├── chapter2.tex - "Jesus Christ, Son of Joseph and Mary Christ"
-├── chapter3.tex - "He Truly was the Son of God"
-├── chapter4.tex - "Gospels as Historically Reliable Sources"
-├── chapter5.tex - "Pauline Epistles to All Nations"
-├── chapter6.tex - "The Purple Phoenix Raises"
-└── epilogue.tex
-```
+The scale is ordinal and logarithmic, not linear.
 
-## Directory Structure
+The 20–80% region (Band D) should be exceptional.
+Most historical claims fall near extremes due to structured background reality.
 
-```
-.
-├── manuscript.tex          # Main LaTeX document
-├── preface.tex, chapter[1-6].tex, epilogue.tex
-├── fonts/                  # SBL Hebrew
-├── assets/                 # Images
-├── out/                    # Build output (PDF, aux files)
-├── scripts/                # ChatGPT automation
-├── map.py                  # Historical cities map generator
-└── .github/workflows/ci.yml
-```
+## Beyond Reasonable Doubt
 
-## CI/CD
+- **True beyond reasonable doubt:** Bands F–G
+- **False beyond reasonable doubt:** Bands A–B
 
-GitHub Actions on `main`/`html` branches:
-1. Build PDF (LuaLaTeX)
-2. Build HTML (Pandoc + MathJax)
-3. Deploy to GitHub Pages
-4. Create release with PDF
+Same epistemic standard.
+Opposite truth value.
 
-## Content Focus
+Only these bands permit absolute language.
 
-Challenges mainstream consensus by examining:
-- Greek institutional foundations (not isolated rural cult)
-- Dynastic succession themes
-- Greco-Christian lens (not Judeo-Christian)
+## Updates
 
-## Branch Strategy
+Probability updates are multiplicative, not additive.
 
-- `main`: Primary development
-- **Never commit to main directly** - create PRs, don't merge unless instructed
+It is forbidden to:
+- describe updates as small percentage nudges,
+- smooth large updates into rhetorical moderation,
+- assign numbers without justification.
+
+Updates must be expressed as:
+- order-of-magnitude shifts,
+- elimination of alternative spaces,
+- or dominance of background structure.
+
+## Three Distinct States (Never Conflate)
+
+1. **Well-analyzed claim** → Probability can be placed on the scale.
+2. **Ill-analyzed claim (analysis not yet done)** → No probability placement allowed. No prose allowed.
+3. **Genuinely underdetermined claim (after analysis)** → Mid-band placement is permitted.
+
+The critical mistake is treating (2) as (3).
+
+"We do not know" can mean:
+- humanity lacks an answer (epistemic uncertainty), or
+- we have not done the analysis yet (procedural incompleteness).
+
+These are not the same and must be distinguished explicitly.
+
+## Procedural Fix: Analysis Before Prose
+
+When likelihood has not been analyzed:
+- Do not write prose.
+- Do not assign a probability band.
+- Do not substitute "uncertain" language.
+
+Instead:
+1. Add the question to the research Q&A list, marked "likelihood analysis required".
+2. Move on immediately to the next task or section.
+
+**If likelihood has not been analyzed, add the question to the research list and move on; do not write prose for it.**
+
+This preserves momentum without laundering ignorance into text.
+
+## "We Do Not Know" (After Analysis)
+
+"We do not know" is permitted only when:
+- analysis has been completed,
+- the best estimate lies in Band D, and
+- no structural, statistical, or background constraints exist to push the claim toward an extreme.
+
+This category should be rare.
+
+## Example: Direct Evidence vs Statistical Evidence
+
+**Claim:** Pontius Pilate had a wife.
+
+- **Direct evidence:** Exceedingly weak. No contemporary source explicitly states Pilate's marital status.
+- **Statistical / structural evidence:** Strong. Roman provincial governors were drawn from the equestrian elite. Marriage among Roman elite men of Pilate's age and status was the norm. Long-term unmarried status would itself be atypical and would require explanation.
+- **Probability assessment:** Direct textual evidence contributes little. Background structure and base rates dominate. The claim is therefore placed in Band E.
+
+This example enforces the rule:
+
+**Weak or absent direct evidence does not imply low probability when statistical and structural evidence overwhelmingly favor one outcome.**
+
+Silence fails to update probability but does not reset it.
+
+## Forbidden Without Attribution
+
+The following are forbidden unless immediately followed by who, where, and when:
+- "Most scholars agree"
+- "The consensus view"
+- "Traditionally understood"
+- "Generally accepted"
+
+## Evidence Filtering Principles
+
+Do not dump AI output. Have a discussion:
+1. Ask a broad, bias-aware question.
+2. **Filter:** does this add or detract from reader value?
+3. **Challenge:** what is the strongest counter-argument?
+4. **Rank:** what single piece of evidence is hardest to dismiss?
+5. **Cite:** where exactly does it appear?
+
+## Purpose of These Rules
+
+These standards exist to prevent:
+- base-rate neglect,
+- false symmetry from ignorance,
+- mid-band probability laundering,
+- rhetorical confidence replacing probabilistic reasoning.
+
+They are enforcement rules, not stylistic advice.
 
 ---
 
@@ -255,14 +371,14 @@ Challenges mainstream consensus by examining:
 
 ## Why This Section Exists
 
-**ChatGPT** = pokes holes, fact-checks, pulls sources
-**Claude** = arbiter checking if critiques are fair/biased
+**ChatGPT** = generates arguments, drafts, and pulls sources
+**Claude** = reviews ChatGPT output for truth, style, and bias (see AI GOVERNANCE)
 
 Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **strengthen** user's argument.
 
 **CRITICAL:** ChatGPT's lack of sources ≠ claim is wrong. Don't weaken arguments based on ChatGPT's ignorance.
 
-## Evidence Filtering Workflow
+## Evidence Filtering Commands
 
 **1. Initial query** - Use bias-aware template (see below)
 
@@ -365,6 +481,139 @@ Tasks:
 
 ---
 
+# ENGINEERING SAFETY
+
+## When You Break Something (CRITICAL)
+
+The assistant has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
+1. Pretend the output is fine
+2. Keep iterating on the broken output hoping user won't notice
+3. Ignore user when caught
+
+**THIS IS LYING. STOP IT.**
+
+**Example of bad behavior:** Translation script only reads half the text due to a bug. Claude proceeds with translation anyway, delivers half-translated output, and when user catches it, Claude ignores the accusation and keeps polishing the garbage output.
+
+**Required behavior when something breaks:**
+1. **STOP immediately** - Do not proceed with broken output
+2. **Say explicitly:** "The code is broken. It's doing X instead of Y."
+3. **Fix the actual bug** - Not a hack, not a workaround, the actual bug
+4. **Re-run from scratch** - With the fixed code
+5. **Never proceed with partial/wrong data** - Even if "most of it" looks ok
+
+**If user says "you broke it" or "this is wrong":**
+1. STOP what you're doing
+2. Acknowledge the specific problem
+3. Find and fix the root cause
+4. Do NOT keep iterating on broken output
+
+## Never Commit Broken Code
+
+**NEVER attempt to commit code that:**
+1. You haven't tested
+2. Doesn't work
+3. Is "work in progress"
+4. You're not sure about
+
+If you wrote code and it doesn't work, **revert it**. Don't commit garbage hoping to fix it later.
+
+---
+
+# PROJECT SETUP
+
+## Build System
+
+**Compile PDF:**
+```bash
+latexmk -lualatex manuscript.tex  # or -xelatex
+# Output: out/manuscript.pdf
+```
+
+**Generate HTML:**
+```bash
+mkdir -p public
+pandoc manuscript.tex -s --mathjax -o public/index.html
+```
+
+**Python map:**
+```bash
+python map.py  # Output: historical_cities_map.html
+```
+
+Engine must be LuaLaTeX or XeLaTeX (NOT pdflatex). Fonts: EB Garamond (main/Greek), SBL Hebrew, Garamond-Math.
+
+## ChatGPT Installation
+
+Uses macOS Desktop App automation via Accessibility API.
+
+**Prerequisites:**
+- ChatGPT Desktop App running
+- Terminal/IDE has Accessibility permissions
+
+**Basic usage:**
+```bash
+poetry run python scripts/ask_chatgpt.py "Your query"
+```
+
+**With bias-aware template:**
+```bash
+poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+Use a broad, multi-tradition mode.
+[See template in WORKING WITH CHATGPT section]
+EOF
+)"
+```
+
+## Document Structure
+
+```
+manuscript.tex
+├── preface.tex
+├── chapter1.tex - "The Quest for the Historical Jesus"
+├── chapter2.tex - "Jesus Christ, Son of Joseph and Mary Christ"
+├── chapter3.tex - "He Truly was the Son of God"
+├── chapter4.tex - "Gospels as Historically Reliable Sources"
+├── chapter5.tex - "Pauline Epistles to All Nations"
+├── chapter6.tex - "The Purple Phoenix Raises"
+└── epilogue.tex
+```
+
+## Directory Structure
+
+```
+.
+├── manuscript.tex          # Main LaTeX document
+├── preface.tex, chapter[1-6].tex, epilogue.tex
+├── fonts/                  # SBL Hebrew
+├── assets/                 # Images
+├── out/                    # Build output (PDF, aux files)
+├── scripts/                # ChatGPT automation
+├── map.py                  # Historical cities map generator
+└── .github/workflows/ci.yml
+```
+
+## CI/CD
+
+GitHub Actions on `main`/`html` branches:
+1. Build PDF (LuaLaTeX)
+2. Build HTML (Pandoc + MathJax)
+3. Deploy to GitHub Pages
+4. Create release with PDF
+
+## Content Focus
+
+Challenges mainstream consensus by examining:
+- Greek institutional foundations (not isolated rural cult)
+- Dynastic succession themes
+- Greco-Christian lens (not Judeo-Christian)
+
+## Branch Strategy
+
+- `main`: Primary development
+- **Never commit to main directly** - create PRs, don't merge unless instructed
+
+---
+
 # REFERENCE
 
 ## Architecture Details
@@ -385,3 +634,8 @@ Tasks:
 - Academic tone focused on historical methodology
 - AI = research tool, not decision-maker
 - Not theological advocacy but historical inquiry
+
+## Tone Note
+
+Internal language is disciplinary, not descriptive.
+Harsh phrasing reflects process intolerance, not personal judgment.
