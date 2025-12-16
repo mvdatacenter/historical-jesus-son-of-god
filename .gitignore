@@ -11,3 +11,11 @@ scripts/research_gaps.md
 scripts/__pycache__/
 scripts/fix_latex.py
 scripts/fix_quotes.py
+
+# Secrets / API tokens
+.env
+*.token
+openai_token.txt
+
+# Audiobook files (too large for git)
+audiobook/*.mp3
