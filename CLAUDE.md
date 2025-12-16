@@ -12,6 +12,8 @@ Scholarly book: "Historical Jesus as the Son of God: Glory to the Newborn King" 
 
 ChatGPT generates aggressively; Claude interrogates relentlessly.
 
+Any non-trivial ChatGPT output must pass Claude review (see AI GOVERNANCE).
+
 ## When User Says STOP (ABSOLUTE RULE)
 
 When user says "stop", "STOP", or any variation:
@@ -31,7 +33,7 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 3. **Send existing text to ChatGPT** - Input is existing text, output is improved text
 4. **Get approval before editing** - Present old vs new to user
 
-**CRITICAL RULE**: Claude drafts are never committed. Claude drafts exist only to give ChatGPT something to improve. Claude can make good suggestions but is not trusted for final prose.
+**CRITICAL RULE**: Claude drafts are scaffolding only and must never be committed as final prose.
 
 The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
 
@@ -72,9 +74,9 @@ Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N 
 
 ---
 
-# AI GOVERNANCE
+# AI GOVERNANCE: Claude Review of ChatGPT Output
 
-## Dual-AI Supervisory Model
+## Model
 
 ChatGPT is treated as a high-output but unreliable generator.
 Claude is treated as a supervisory reviewer.
@@ -96,19 +98,25 @@ Claude is allowed to suggest edits.
 
 Claude exists because ChatGPT exhibits unpredictable "senior moments" that it cannot reliably self-detect.
 
-## Review Protocol (Claude)
+## Mandatory Review
 
 Every non-trivial ChatGPT output must be reviewed by Claude before acceptance.
 
 "Non-trivial" includes:
 - new arguments
 - new factual claims
-- long paragraphs
+- paragraphs > 6 sentences or > 120 words
 - core thesis material
 
 Claude review is not optional and not ceremonial.
 
-### Risk Levels
+**Claude acceptance gate:**
+- No factual claims without anchors (see Evidence Standards)
+- No "consensus" phrasing without names
+- No sudden grammar collapse or filler
+- Any flagged paragraph triggers Rewrite-Not-Patch
+
+## Risk Levels
 
 **Low-risk tasks (no escalation):**
 - single-sentence additions
@@ -128,14 +136,14 @@ Claude review is not optional and not ceremonial.
 
 Only high-risk tasks require explicit verification challenges such as "are you sure?"
 
-### Forced Self-Verification
+## Tools: Forced Self-Verification
 
 A simple challenge ("are you sure?") measurably reduces ChatGPT hallucinations.
 
 Claude should deploy this only when escalation is triggered.
 It is a control mechanism, not a default behavior.
 
-### No Patching After Degradation
+## Rewrite-Not-Patch Rule
 
 If Claude detects hallucination, coherence collapse, or sudden loss of linguistic quality:
 - the affected paragraph must be fully regenerated
@@ -148,24 +156,45 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 ## Writing Style Rules
 
 ✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Confident:** State claims without hedging (when evidence has been presented)
+✅ **Confident:** State claims without hedging when evidence has been presented
 ✅ **Evidence-first:** Show data, minimal interpretation
 ✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
 
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
-## AI Garbage Blacklist
+## AI Garbage: Formal Definition
 
-❌ **Forbidden phrases:**
-- "preserved in X and repeated for centuries"
-- "When Christians recited this formula daily, they were..."
-- "This is the quintessential..."
-- "It is important to note..."
-- Multiple clauses where one would do
+AI garbage is prose that is grammatically correct and superficially fluent but adds no new information relative to its length.
+
+A sentence or clause qualifies as AI garbage if it meets any of the following conditions:
+
+1. **Restatement without informational gain** - The sentence repeats the same claim using synonyms, glosses, or paraphrase without adding evidence, scope, or constraint.
+2. **Narrative inflation** - The sentence expands a simple factual statement into a historical vignette, ritual description, or imagined practice not supported by a source.
+3. **Explanatory padding** - The sentence explains obvious implications that a competent reader can already infer.
+4. **Consensus laundering** - The sentence invokes vague historical continuity, tradition, or widespread use ("for centuries," "commonly," "standard") without anchoring it to a specific context.
+5. **Clause stacking** - Multiple dependent clauses are used where a single declarative sentence would fully convey the information.
+6. **Audience simulation** - The sentence addresses an imagined reader ("this shows," "it is important to note," "we can see") instead of presenting data.
+
+**Enforcement Rule:**
+- If removing a sentence does not reduce factual content, it must be deleted.
+- If a sentence can be reduced to one declarative clause without loss of information, it must be rewritten.
+- AI garbage is never patched; it is removed or rewritten entirely.
 
 **Example - Good:** "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
 
 **Example - Bad:** "The triplet βασιλεία/δύναμις/δόξα (kingdom/power/glory) is not Christian invention. It appears in Hellenistic royal cult inscriptions as standard acclamation language for Ptolemaic and Seleucid kings, and later for the Roman emperor in Greek provinces."
+
+**Why it fails:**
+- Adds glossing without need
+- Inflates scope without evidence
+- Stacks clauses without increasing precision
+
+**Blacklisted Phrases (Non-Exhaustive):**
+- "It is important to note..."
+- "This shows that..."
+- "Preserved in X and repeated for centuries..."
+- "When [group] did X, they were..."
+- "This is the quintessential..."
 
 ## Target Reader
 
@@ -194,29 +223,109 @@ Comfortable with evidence, footnotes, and sustained argument.
 
 # EVIDENCE STANDARDS
 
-## Uncertainty Rule
+## Truth, Knowledge, and Language (Foundational)
 
-If evidence is insufficient, say explicitly "we do not know."
-Do not smooth uncertainty with confident prose.
-Do not invent consensus to fill gaps.
+Every claim has two independent dimensions:
+1. **Truth value** — whether the claim is true or false in reality.
+2. **Epistemic certainty** — how well we know whether the claim is true or false.
+
+These must never be conflated.
+
+Language in this project describes epistemic certainty, not assumed truth.
+
+## Evidence vs Proof (Non-Interchangeable)
+
+- **Evidence** is a clue, observation, or datum that bears on a claim. Evidence may support, weaken, or be neutral.
+- **Proof** is a reasoned conclusion drawn from one or more pieces of evidence, establishing a claim as true or false beyond reasonable doubt.
+
+Evidence is never proof by itself.
+Proof is reasoning about evidence.
+
+## Degrees of Certainty (Mandatory Calibration)
+
+Claims must be placed on a graded certainty scale:
+
+1. **False beyond reasonable doubt** (often colloquially called "impossible")
+2. **Very implausible**
+3. **Unlikely but plausible**
+4. **Likely**
+5. **Very likely**
+6. **True beyond reasonable doubt** (this level constitutes proof)
+
+Levels 1 and 6 use the same epistemic standard ("beyond reasonable doubt") and differ only in truth value (false vs true).
+
+Only levels 1 and 6 permit absolute language.
+All intermediate levels require explicit qualifiers.
+
+## Language Discipline (Strict)
+
+Language must track certainty level:
+- Levels 2–3 require explicit qualifiers ("possible", "plausible", "unlikely", "weakly supported").
+- Levels 4–5 permit confident but non-absolute phrasing.
+- Level 6 permits factual statements without hedging.
+
+It is forbidden to:
+- speak confidently to compensate for weak evidence,
+- hedge when certainty is high,
+- collapse "unlikely" into "impossible",
+- treat lack of evidence as evidence of falsity.
+
+"We do not know" is reserved for cases that cannot be responsibly placed on the scale.
+
+## Priors and Alternative Spaces
+
+Evidence updates confidence relative to prior probabilities.
+
+Any evaluation must consider:
+- the space of plausible alternatives,
+- how many alternatives exist,
+- how selectively the evidence aligns with one option.
+
+Alignment against a large alternative space is evidence and must be weighted accordingly.
+
+Unstated priors invalidate certainty claims.
+
+## Probability Updates Are Logarithmic
+
+Probabilities in historical inference span orders of magnitude, not percentages.
+
+Evidence updates confidence multiplicatively, not additively.
+
+It is forbidden to:
+- describe updates as small percentage nudges ("20% → 30%"),
+- use "reasonable-sounding" numbers without justification,
+- smooth large updates into rhetorical moderation.
+
+A single highly selective alignment may justify an order-of-magnitude shift.
 
 ## Speculation Discipline
 
-Any claim not directly attested by a primary source must be framed as:
-possible, plausible, or speculative.
+Speculation is allowed but must be explicit.
 
-Speculation is allowed.
-Ambiguity laundering is not.
+Any speculative claim must state:
+- what evidence it is based on,
+- which alternatives exist,
+- and why the evidence is non-decisive.
+
+Ambiguity laundering is forbidden.
+
+## Uncertainty Rule
+
+If evidence is insufficient to justify placement on the certainty scale, state explicitly:
+
+"We do not know."
+
+This is not a synonym for "unlikely" or "implausible".
 
 ## Citation Floor
 
-Major claims must be anchored to at least one of:
-- primary text
-- inscription
-- archaeological report
-- named scholar and work
+Major claims must be anchored to at least one:
+- primary text,
+- inscription,
+- archaeological report,
+- or named scholar and work.
 
-Phrases like "most scholars agree" are forbidden without names.
+Phrases like "most scholars agree" are forbidden without attribution.
 
 ## Forbidden Without Attribution
 
@@ -227,14 +336,24 @@ Phrases like "most scholars agree" are forbidden without names.
 
 Unless immediately followed by who, where, and when.
 
-## Evidence Filtering
+## Evidence Filtering Principles
 
-Don't dump ChatGPT responses. Have a DISCUSSION:
-1. Ask broad question with bias-aware prompt (see template in WORKING WITH CHATGPT)
-2. **Filter:** "Does it add or detract from the value to the reader?"
-3. **Challenge:** "Play devil's advocate. What are weaknesses?"
-4. **Rank:** "Pick ONE piece even skeptical scholars can't dismiss."
-5. **Sources:** "Where does this appear? Give primary sources."
+Do not dump AI output. Have a discussion:
+1. Ask a broad, bias-aware question.
+2. **Filter:** does this add or detract from reader value?
+3. **Challenge:** what is the strongest counter-argument?
+4. **Rank:** what single piece of evidence is hardest to dismiss?
+5. **Cite:** where exactly does it appear?
+
+## Purpose of These Rules
+
+These standards exist to prevent:
+- rhetorical certainty,
+- consensus laundering,
+- probability smoothing,
+- and narrative coherence replacing reasoning.
+
+They are enforcement rules, not stylistic advice.
 
 ---
 
@@ -242,20 +361,14 @@ Don't dump ChatGPT responses. Have a DISCUSSION:
 
 ## Why This Section Exists
 
-**ChatGPT** = pokes holes, fact-checks, pulls sources
-**Claude** = arbiter checking if critiques are fair/biased
+**ChatGPT** = generates arguments, drafts, and pulls sources
+**Claude** = reviews ChatGPT output for truth, style, and bias (see AI GOVERNANCE)
 
 Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **strengthen** user's argument.
 
-Claude's expanded role includes:
-- verification of facts
-- devil's advocate challenges
-- style policing
-- hallucination detection
-
 **CRITICAL:** ChatGPT's lack of sources ≠ claim is wrong. Don't weaken arguments based on ChatGPT's ignorance.
 
-## Evidence Filtering Workflow
+## Evidence Filtering Commands
 
 **1. Initial query** - Use bias-aware template (see below)
 
@@ -362,7 +475,7 @@ Tasks:
 
 ## When You Break Something (CRITICAL)
 
-Claude has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
+The assistant has a disgusting tendency to hide bugs. When code breaks or produces partial/wrong output, Claude will:
 1. Pretend the output is fine
 2. Keep iterating on the broken output hoping user won't notice
 3. Ignore user when caught
