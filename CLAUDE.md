@@ -223,118 +223,128 @@ Comfortable with evidence, footnotes, and sustained argument.
 
 # EVIDENCE STANDARDS
 
-## Truth, Knowledge, and Language (Foundational)
+## Core Principle: Probability Given Evidence
 
-Every claim has two independent dimensions:
-1. **Truth value** — whether the claim is true or false in reality.
-2. **Epistemic certainty** — how well we know whether the claim is true or false.
+All historical claims are evaluated as: P(claim | evidence, background)
 
-These must never be conflated.
+Probability exists prior to direct evidence.
+Evidence updates probability.
+Silence leaves probability largely unchanged.
 
-Language in this project describes epistemic certainty, not assumed truth.
+Absence of attestation does not create symmetry.
+Silence does not reset base rates.
 
 ## Evidence vs Proof (Non-Interchangeable)
 
-- **Evidence** is a clue, observation, or datum that bears on a claim. Evidence may support, weaken, or be neutral.
-- **Proof** is a reasoned conclusion drawn from one or more pieces of evidence, establishing a claim as true or false beyond reasonable doubt.
+- **Evidence** is any datum (textual, archaeological, statistical, structural) that bears on a claim.
+- **Proof** is a conclusion reached by reasoning over evidence, placing a claim beyond reasonable doubt.
 
-Evidence is never proof by itself.
+Evidence is not proof.
 Proof is reasoning about evidence.
 
-## Degrees of Certainty (Mandatory Calibration)
+## Probability Scale (Log-Aware, Numeric Only)
 
-Claims must be placed on a graded certainty scale:
+All claims must be placed into one probability band.
 
-1. **False beyond reasonable doubt** (often colloquially called "impossible")
-2. **Very implausible**
-3. **Unlikely but plausible**
-4. **Likely**
-5. **Very likely**
-6. **True beyond reasonable doubt** (this level constitutes proof)
+**Verbal likelihood terms are forbidden.**
 
-Levels 1 and 6 use the same epistemic standard ("beyond reasonable doubt") and differ only in truth value (false vs true).
+Bands:
+- **Band A:** <0.1%
+- **Band B:** 0.1%–1%
+- **Band C:** 1%–20%
+- **Band D:** 20%–80% (mid-band; should be rare)
+- **Band E:** 80%–99%
+- **Band F:** 99%–99.9%
+- **Band G:** >99.9%
 
-Only levels 1 and 6 permit absolute language.
-All intermediate levels require explicit qualifiers.
+The scale is ordinal and logarithmic, not linear.
 
-## Language Discipline (Strict)
+The 20–80% region (Band D) should be exceptional.
+Most historical claims fall near extremes due to structured background reality.
 
-Language must track certainty level:
-- Levels 2–3 require explicit qualifiers ("possible", "plausible", "unlikely", "weakly supported").
-- Levels 4–5 permit confident but non-absolute phrasing.
-- Level 6 permits factual statements without hedging.
+## Beyond Reasonable Doubt
 
-It is forbidden to:
-- speak confidently to compensate for weak evidence,
-- hedge when certainty is high,
-- collapse "unlikely" into "impossible",
-- treat lack of evidence as evidence of falsity.
+- **True beyond reasonable doubt:** Bands F–G
+- **False beyond reasonable doubt:** Bands A–B
 
-"We do not know" is reserved for cases that cannot be responsibly placed on the scale.
+Same epistemic standard.
+Opposite truth value.
 
-## Priors and Alternative Spaces
+Only these bands permit absolute language.
 
-Evidence updates confidence relative to prior probabilities.
+## Updates
 
-Any evaluation must consider:
-- the space of plausible alternatives,
-- how many alternatives exist,
-- how selectively the evidence aligns with one option.
-
-Alignment against a large alternative space is evidence and must be weighted accordingly.
-
-Unstated priors invalidate certainty claims.
-
-## Probability Updates Are Logarithmic
-
-Probabilities in historical inference span orders of magnitude, not percentages.
-
-Evidence updates confidence multiplicatively, not additively.
+Probability updates are multiplicative, not additive.
 
 It is forbidden to:
-- describe updates as small percentage nudges ("20% → 30%"),
-- use "reasonable-sounding" numbers without justification,
-- smooth large updates into rhetorical moderation.
+- describe updates as small percentage nudges,
+- smooth large updates into rhetorical moderation,
+- assign numbers without justification.
 
-A single highly selective alignment may justify an order-of-magnitude shift.
+Updates must be expressed as:
+- order-of-magnitude shifts,
+- elimination of alternative spaces,
+- or dominance of background structure.
 
-## Speculation Discipline
+## Three Distinct States (Never Conflate)
 
-Speculation is allowed but must be explicit.
+1. **Well-analyzed claim** → Probability can be placed on the scale.
+2. **Ill-analyzed claim (analysis not yet done)** → No probability placement allowed. No prose allowed.
+3. **Genuinely underdetermined claim (after analysis)** → Mid-band placement is permitted.
 
-Any speculative claim must state:
-- what evidence it is based on,
-- which alternatives exist,
-- and why the evidence is non-decisive.
+The critical mistake is treating (2) as (3).
 
-Ambiguity laundering is forbidden.
+"We do not know" can mean:
+- humanity lacks an answer (epistemic uncertainty), or
+- we have not done the analysis yet (procedural incompleteness).
 
-## Uncertainty Rule
+These are not the same and must be distinguished explicitly.
 
-If evidence is insufficient to justify placement on the certainty scale, state explicitly:
+## Procedural Fix: Analysis Before Prose
 
-"We do not know."
+When likelihood has not been analyzed:
+- Do not write prose.
+- Do not assign a probability band.
+- Do not substitute "uncertain" language.
 
-This is not a synonym for "unlikely" or "implausible".
+Instead:
+1. Add the question to the research Q&A list, marked "likelihood analysis required".
+2. Move on immediately to the next task or section.
 
-## Citation Floor
+**If likelihood has not been analyzed, add the question to the research list and move on; do not write prose for it.**
 
-Major claims must be anchored to at least one:
-- primary text,
-- inscription,
-- archaeological report,
-- or named scholar and work.
+This preserves momentum without laundering ignorance into text.
 
-Phrases like "most scholars agree" are forbidden without attribution.
+## "We Do Not Know" (After Analysis)
+
+"We do not know" is permitted only when:
+- analysis has been completed,
+- the best estimate lies in Band D, and
+- no structural, statistical, or background constraints exist to push the claim toward an extreme.
+
+This category should be rare.
+
+## Example: Direct Evidence vs Statistical Evidence
+
+**Claim:** Pontius Pilate had a wife.
+
+- **Direct evidence:** Exceedingly weak. No contemporary source explicitly states Pilate's marital status.
+- **Statistical / structural evidence:** Strong. Roman provincial governors were drawn from the equestrian elite. Marriage among Roman elite men of Pilate's age and status was the norm. Long-term unmarried status would itself be atypical and would require explanation.
+- **Probability assessment:** Direct textual evidence contributes little. Background structure and base rates dominate. The claim is therefore placed in Band E.
+
+This example enforces the rule:
+
+**Weak or absent direct evidence does not imply low probability when statistical and structural evidence overwhelmingly favor one outcome.**
+
+Silence fails to update probability but does not reset it.
 
 ## Forbidden Without Attribution
 
+The following are forbidden unless immediately followed by who, where, and when:
 - "Most scholars agree"
 - "The consensus view"
 - "Traditionally understood"
 - "Generally accepted"
-
-Unless immediately followed by who, where, and when.
 
 ## Evidence Filtering Principles
 
@@ -348,10 +358,10 @@ Do not dump AI output. Have a discussion:
 ## Purpose of These Rules
 
 These standards exist to prevent:
-- rhetorical certainty,
-- consensus laundering,
-- probability smoothing,
-- and narrative coherence replacing reasoning.
+- base-rate neglect,
+- false symmetry from ignorance,
+- mid-band probability laundering,
+- rhetorical confidence replacing probabilistic reasoning.
 
 They are enforcement rules, not stylistic advice.
 
