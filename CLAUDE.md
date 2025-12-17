@@ -219,6 +219,31 @@ Comfortable with evidence, footnotes, and sustained argument.
 - "juridical hair-splitting" ❌ → "legal hair-splitting"
 - "apocalyptically" ✅ (keep - domain standard)
 
+## Greek, Hebrew, and Other Languages
+
+**First mention of a foreign word:** Use transliteration with original script in parentheses.
+```
+\emph{porphyrous} (πορφυροῦς)
+\emph{apokatastasis} (ἀποκατάστασις)
+\emph{tekton} (τέκτων)
+```
+
+**Subsequent mentions:** Original script only is fine.
+```
+πορφυροῦς
+```
+
+**Longer fragments:** Original script first, then English translation.
+```
+τὸ πορφυροῦν αἷμα, "the purple of blood"
+ἀνανέωσις τῆς ἀρχῆς, "renewal of the rule"
+```
+
+**Place names showing linguistic evolution:** Original script only is acceptable (they're proper nouns).
+```
+Ῥαμαθαΐμ → Ῥαμαθήμ → Ἀριμαθαία
+```
+
 ---
 
 # EVIDENCE STANDARDS
