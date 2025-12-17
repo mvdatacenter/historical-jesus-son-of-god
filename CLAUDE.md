@@ -65,6 +65,8 @@ Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N 
 
 **IMPORTANT: ChatGPT has NO access to the manuscript files.** It cannot see line numbers, chapter content, or any text unless you paste it into the prompt. When asking ChatGPT to review or compare sections, you MUST paste the actual text. References like "lines 595-644" mean nothing to ChatGPT.
 
+**MANDATORY: When asking ChatGPT to draft or rewrite manuscript text, paste the Writing Style Rules section into your prompt.** ChatGPT doesn't know our style rules unless you tell it. Without this, ChatGPT will use academic jargon ("milieu", "precondition") and the book loses its voice.
+
 ## Red Flags = Stop
 
 **Duplication:**
