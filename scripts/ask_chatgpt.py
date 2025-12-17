@@ -66,17 +66,45 @@ def ask_chatgpt(query: str, wait_seconds: int = 180) -> str:
     return result.stdout.strip()
 
 
+# Minimum query length (in sentences) to avoid lazy/brainrot queries
+MIN_SENTENCES = 3
+
+
+def is_wasteful_query(query: str) -> bool:
+    """Block lazy queries that don't provide enough context."""
+    # Count sentences (rough: split by . ! ?)
+    sentences = [s.strip() for s in query.replace("!", ".").replace("?", ".").split(".") if s.strip()]
+    return len(sentences) < MIN_SENTENCES
+
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: ask_chatgpt.py 'Your query here'", file=sys.stderr)
         print("Or pipe query via stdin", file=sys.stderr)
         sys.exit(1)
 
+    # Check for --i-read-the-disclaimer flag
+    bypass_check = "--i-read-the-disclaimer" in sys.argv
+    if bypass_check:
+        sys.argv.remove("--i-read-the-disclaimer")
+
     # Get query from arguments or stdin
     if sys.argv[1] == "-":
         query = sys.stdin.read()
     else:
         query = " ".join(sys.argv[1:])
+
+    # Block lazy queries unless explicitly bypassed
+    if is_wasteful_query(query) and not bypass_check:
+        print(f"ERROR: Query too short ({MIN_SENTENCES}+ sentences required).", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("Short queries are evidence of brainrot. Read CLAUDE.md and provide proper context.", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("NOTE: NEVER ask ChatGPT to repeat. Use read_latest ONLY if you lost something:", file=sys.stderr)
+        print("  poetry run python scripts/chatgpt_desktop.py read_latest", file=sys.stderr)
+        print("", file=sys.stderr)
+        print("To bypass: add --i-read-the-disclaimer flag.", file=sys.stderr)
+        sys.exit(1)
 
     response = ask_chatgpt(query)
     print(response)
