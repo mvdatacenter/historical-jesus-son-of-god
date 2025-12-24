@@ -167,8 +167,11 @@ def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = 
     - images: \includegraphics{} paths are never translated.
     - greek count: Greek text count.
     - hebrew count: Hebrew text count.
-    - numbers count: Number count.
     - command counts: \emph{}, \textit{}, etc.
+
+    BAD VALIDATORS (not used):
+    - numbers count: In Polish, numbers are often written as words
+      (e.g., "42" → "czterdzieści dwa"), so digit counts don't match.
 
     Returns (is_valid, errors):
     - is_valid: True if all validators pass
@@ -185,7 +188,7 @@ def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = 
                 errors.append(f"{name}: missing {list(missing)}")
 
     # Counts must match
-    for name, key in [('greek', 'greek_strings'), ('hebrew', 'hebrew_strings'), ('numbers', 'numbers')]:
+    for name, key in [('greek', 'greek_strings'), ('hebrew', 'hebrew_strings')]:
         src_count = len(source_fp[key])
         tgt_count = len(translated_fp[key])
         if src_count != tgt_count:
