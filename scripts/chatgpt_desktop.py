@@ -331,6 +331,23 @@ def click_at_position(x: float, y: float):
     CGEventPost(kCGHIDEventTap, mouse_up)
 
 
+def press_key(key_code: int):
+    """Press a key by its virtual key code.
+
+    Common key codes:
+    - 36: Return/Enter
+    - 51: Delete/Backspace
+    - 53: Escape
+    """
+    source = CGEventSourceCreate(kCGEventSourceStateHIDSystemState)
+    key_down = CGEventCreateKeyboardEvent(source, key_code, True)
+    key_up = CGEventCreateKeyboardEvent(source, key_code, False)
+
+    CGEventPost(kCGHIDEventTap, key_down)
+    time.sleep(0.05)
+    CGEventPost(kCGHIDEventTap, key_up)
+
+
 def get_chatgpt_message_area_coords(ax_app):
     """Get coordinates for the message area (right 2/3 of window, middle height).
 
@@ -667,7 +684,9 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                 break
 
             if not assistant_msg:
-                raise RuntimeError(f"Could not find ASSISTANT message for turn {turn_num + 1}")
+                # Can't find assistant message - stop collecting but return what we have
+                print(f"Could not find ASSISTANT message for turn {turn_num + 1}, stopping collection", file=sys.stderr)
+                break
 
             # Step 2: Find USER message (the prompt that triggered the response)
             for attempt in range(50):
@@ -695,7 +714,9 @@ def collect_turns_incrementally(ax_app, ns_app, num_turns: int, output_dir: str,
                 break
 
             if not user_msg:
-                raise RuntimeError(f"Could not find USER message for turn {turn_num + 1}.")
+                # Can't find user message - stop collecting but return what we have
+                print(f"Could not find USER message for turn {turn_num + 1}, stopping collection", file=sys.stderr)
+                break
 
             # Write the pair to TEMP file (not final output_dir yet)
             turn_num += 1
@@ -937,6 +958,10 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     width = float(size_match.group(1))
     height = float(size_match.group(2))
 
+    # Bring ChatGPT to foreground before clicking (avoid notification overlays)
+    ns_app.activateWithOptions_(1)
+    time.sleep(0.3)
+
     # Click in the center of the button
     x = pos_x + width / 2
     y = pos_y + height / 2
@@ -948,10 +973,20 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     time.sleep(0.5)
     current_value = ax_attr(text_input, kAXValueAttribute)
     if current_value and len(current_value.strip()) > 0:
-        print("ERROR: Message was not sent - input field still contains text", file=sys.stderr)
-        print(f"[DEBUG] Input field value: {current_value[:100]}...", file=sys.stderr)
-        sys.exit(1)
-    print("[DEBUG] Message sent successfully (input field cleared)", file=sys.stderr)
+        print("[DEBUG] Click didn't work, trying Enter key as fallback...", file=sys.stderr)
+        # Press Enter key as fallback
+        press_key(36)  # 36 = Return/Enter key
+        time.sleep(1.0)
+
+        # Check again
+        current_value = ax_attr(text_input, kAXValueAttribute)
+        if current_value and len(current_value.strip()) > 0:
+            print("ERROR: Message was not sent - input field still contains text", file=sys.stderr)
+            print(f"[DEBUG] Input field value: {current_value[:100]}...", file=sys.stderr)
+            sys.exit(1)
+        print("[DEBUG] Message sent via Enter key", file=sys.stderr)
+    else:
+        print("[DEBUG] Message sent successfully (input field cleared)", file=sys.stderr)
 
     # Move app to background
     ns_app.hide()
