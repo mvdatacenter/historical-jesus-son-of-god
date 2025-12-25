@@ -1,4 +1,19 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(poetry run python:*)",
+      "Bash(git checkout:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Glob",
+      "Grep",
+      "Read"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
