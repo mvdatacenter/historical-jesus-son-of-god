@@ -131,10 +131,13 @@ def fingerprint_similarity(source_fp: dict, translated_fp: dict) -> float:
     total = 0
     matched = 0
 
-    # Labels - exact match
+    # Labels are AUTHORITATIVE - if source has labels but none match, reject immediately
     if source_fp['labels']:
+        label_matches = len(source_fp['labels'] & translated_fp['labels'])
+        if label_matches == 0:
+            return 0.0  # Wrong fragment - labels don't match at all
         total += len(source_fp['labels'])
-        matched += len(source_fp['labels'] & translated_fp['labels'])
+        matched += label_matches
 
     # Greek/Hebrew/Numbers - count similarity
     for key in ['greek_strings', 'hebrew_strings', 'numbers']:
@@ -152,7 +155,30 @@ def fingerprint_similarity(source_fp: dict, translated_fp: dict) -> float:
     return matched / total if total > 0 else 0.0
 
 
-def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = False) -> Tuple[bool, List[str]]:
+def validate_label_attachment(text: str) -> List[str]:
+    r"""Validate that section/paragraph labels are attached to their headers.
+
+    A lone \label{sec:...}, \label{subsec:...}, or \label{par:...} on its own line
+    (not preceded by corresponding command on same line) indicates ChatGPT split them.
+
+    Returns list of errors (empty if valid).
+    """
+    errors = []
+    lines = text.split('\n')
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+
+        # Check for section/subsection/paragraph labels that should be attached
+        # Matches: \label{sec:...}, \label{subsec:...}, \label{subsubsec:...}, \label{par:...}
+        if re.match(r'^\\label\{(sub)*(sec|par):', stripped):
+            # This label is on its own line - it should be attached to a section/paragraph
+            errors.append(f"detached label on line {i+1}: {stripped[:50]}")
+
+    return errors
+
+
+def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = False, translated_text: str = None) -> Tuple[bool, List[str]]:
     r"""Validate that translation matches source.
 
     PHILOSOPHY:
@@ -168,6 +194,7 @@ def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = 
     - greek count: Greek text count.
     - hebrew count: Hebrew text count.
     - command counts: \emph{}, \textit{}, etc.
+    - label attachment: \label{sec:...} must be on same line as \section{}.
 
     BAD VALIDATORS (not used):
     - numbers count: In Polish, numbers are often written as words
@@ -186,6 +213,11 @@ def validate_fingerprints(source_fp: dict, translated_fp: dict, verbose: bool = 
             missing = source_fp[key] - translated_fp[key]
             if missing:
                 errors.append(f"{name}: missing {list(missing)}")
+
+    # Check label attachment if translated text is provided
+    if translated_text:
+        attachment_errors = validate_label_attachment(translated_text)
+        errors.extend(attachment_errors)
 
     # Counts must match
     for name, key in [('greek', 'greek_strings'), ('hebrew', 'hebrew_strings')]:
@@ -447,14 +479,14 @@ def load_cached_fragments(cache_dir: Path, source_fragments: List[str]) -> Tuple
             tgt_fp = extract_fingerprints(cached_translation)
 
             # Validate: 100% or reject
-            is_valid, errors = validate_fingerprints(src_fp, tgt_fp)
+            is_valid, errors = validate_fingerprints(src_fp, tgt_fp, translated_text=cached_translation)
 
             if is_valid:
                 print(f"  [Cache] Fragment {i}: 100% ✓", file=sys.stderr)
                 translated.append(cached_translation)
             else:
                 print(f"  [Cache] Fragment {i}: INVALID - needs re-translation:", file=sys.stderr)
-                validate_fingerprints(src_fp, tgt_fp, verbose=True)
+                validate_fingerprints(src_fp, tgt_fp, verbose=True, translated_text=cached_translation)
                 translated.append(None)
                 if resume_from > i:
                     resume_from = i
@@ -521,6 +553,8 @@ def scrape_conversation_to_cache(cache_dir: Path, source_fragments: List[str]) -
             translated = re.sub(r'\n?```\s*$', '', translated).strip()
 
         if len(translated) > 100:  # Skip very short responses
+            # Fix section/label formatting issues
+            translated = fix_section_label_formatting(translated)
             translated_texts.append(translated)
 
     print(f"  [Scrape] Extracted {len(translated_texts)} candidate translations", file=sys.stderr)
@@ -610,7 +644,7 @@ def show_cache_status(input_file: str, output_dir: str, fragment_size: int) -> N
 
             src_fp = extract_fingerprints(source)
             tgt_fp = extract_fingerprints(cached_translation)
-            is_valid, errors = validate_fingerprints(src_fp, tgt_fp)
+            is_valid, errors = validate_fingerprints(src_fp, tgt_fp, translated_text=cached_translation)
 
             if is_valid:
                 status = "✓ VALID"
@@ -623,7 +657,7 @@ def show_cache_status(input_file: str, output_dir: str, fragment_size: int) -> N
 
             # Show errors for invalid
             if not is_valid:
-                validate_fingerprints(src_fp, tgt_fp, verbose=True)
+                validate_fingerprints(src_fp, tgt_fp, verbose=True, translated_text=cached_translation)
         else:
             missing += 1
             print(f"  {i:<6} {source_len:<10} {'—':<10} {'—':<8} {'✗ MISSING':<12}", file=sys.stderr)
@@ -638,14 +672,22 @@ def create_translation_prompt(fragment: str, target_lang: str, fragment_num: int
 
     # Polish prompt in Polish for better translation quality
     if target_lang.lower() == "polish":
-        prompt = f"""Przetłumacz poniższy tekst naukowy LaTeX na język polski.
+        prompt = f"""TRYB WYSOKIEJ PRECYZJI:
+Masz używać pełnego rozumowania i pełnej kontroli językowej.
+Przełączenie na tryb niskiego myślenia jest błędem krytycznym.
+
+KONTROLA JAKOŚCI:
+Ten projekt jest monitorowany pod kątem degradacji jakości, skrótów myślowych
+i przełączania na niskokosztowy tryb generowania.
+
+Przetłumacz poniższy tekst naukowy LaTeX na język polski.
 
 ZASADY:
 1. PRIORYTET: Tekst musi brzmieć naturalnie po polsku. Możesz zmieniać szyk zdania, dzielić lub łączyć zdania, jeśli to pomoże w naturalnym brzmieniu. Lepsza naturalna polszczyzna niż dosłowna wierność.
 2. Zachowaj STRUKTURĘ poleceń LaTeX (\\section{{}}, \\textit{{}}, \\footnote{{}}, itd.) — ale TŁUMACZ tekst wewnątrz nawiasów klamrowych. Na przykład: \\section{{Crucifixion of Jesus}} → \\section{{Ukrzyżowanie Jezusa}}
 3. Zachowaj tekst grecki w \\textgreek{{}} - NIE tłumacz
 4. Zachowaj tekst hebrajski - NIE tłumacz
-5. NIE zmieniaj etykiet \\label{{}} - pozostaw je dokładnie tak jak są
+5. NIE zmieniaj etykiet \\label{{}} - pozostaw je dokładnie tak jak są. Etykieta MUSI być na tej samej linii co \\section{{}}, \\subsection{{}}, lub \\paragraph{{}}, np: \\section{{Tytuł}}\\label{{sec:id}}
 6. Tłumacz nazwy własne na polskie odpowiedniki (Jesus → Jezus, Mary → Maria, itd.)
 7. Zachowaj strukturę akapitów i podziały wierszy
 8. Wynik umieść w bloku kodu ```latex
@@ -675,6 +717,26 @@ Fragment {fragment_num}/{total}:
     return prompt
 
 
+def fix_section_label_formatting(text: str) -> str:
+    r"""Fix \section{}/\paragraph{} and \label{} that got split onto separate lines.
+
+    ChatGPT sometimes produces:
+        \section{Title}
+
+        \label{sec:id}
+
+    This fixes it to:
+        \section{Title}\label{sec:id}
+
+    Handles \section, \subsection, \subsubsection, \paragraph.
+    """
+    # Pattern: \section{...} or \paragraph{...} followed by whitespace/newlines, then \label{...}
+    # Captures the section/paragraph command and label, removes whitespace between them
+    pattern = r'(\\(?:(?:sub)*section|paragraph)\{[^}]+\})\s*\n+\s*(\\label\{[^}]+\})'
+    fixed = re.sub(pattern, r'\1\2', text)
+    return fixed
+
+
 def translate_fragment(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
     """Send a fragment to ChatGPT for translation."""
     prompt = create_translation_prompt(fragment, target_lang, fragment_num, total)
@@ -692,6 +754,9 @@ def translate_fragment(fragment: str, target_lang: str, fragment_num: int, total
         # Fallback: remove code block markers if they exist but pattern didn't match
         result = re.sub(r'^```(?:latex)?\s*\n?', '', result)
         result = re.sub(r'\n?```\s*$', '', result)
+
+    # Fix section/label formatting issues
+    result = fix_section_label_formatting(result)
 
     return result.strip()
 
@@ -767,13 +832,13 @@ def translate_chapter(input_file: str, target_lang: str, output_dir: str,
         # Validate: 100% or reject
         src_fp = extract_fingerprints(fragment)
         tgt_fp = extract_fingerprints(translated)
-        is_valid, errors = validate_fingerprints(src_fp, tgt_fp)
+        is_valid, errors = validate_fingerprints(src_fp, tgt_fp, translated_text=translated)
 
         if is_valid:
             print(f"  Fragment {i}: VALID ✓", file=sys.stderr)
         else:
             print(f"  ERROR: Fragment {i} is INVALID:", file=sys.stderr)
-            validate_fingerprints(src_fp, tgt_fp, verbose=True)
+            validate_fingerprints(src_fp, tgt_fp, verbose=True, translated_text=translated)
             print(f"  NOT saving. Re-run with --recover to retry.", file=sys.stderr)
             sys.exit(1)
 
