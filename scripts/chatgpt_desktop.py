@@ -1178,17 +1178,18 @@ def cmd_read_all(args):
     import os
     import shutil
 
-    # ENFORCE: Must specify either --limit N or --no-limit
+    # ENFORCE: Must specify either --limit N or explicit user instruction flag
     if args.limit is None and not args.no_limit:
         print("\n" + "="*60, file=sys.stderr)
-        print("ERROR: You must specify --limit N or --no-limit", file=sys.stderr)
+        print("ERROR: You must specify --limit N", file=sys.stderr)
         print("="*60, file=sys.stderr)
         print("\nExamples:", file=sys.stderr)
         print("  extensive_scrape_history --limit 2      # Scrape last 2 turns", file=sys.stderr)
         print("  extensive_scrape_history --limit 10     # Scrape last 10 turns", file=sys.stderr)
-        print("  extensive_scrape_history --no-limit     # Scrape up to 100 turns (are you SURE?)", file=sys.stderr)
-        print("\nThis safeguard exists because Claude previously ignored a user's", file=sys.stderr)
-        print("explicit instruction to only read 2 messages and scraped everything.", file=sys.stderr)
+        print("\nUnlimited scraping requires:", file=sys.stderr)
+        print("  extensive_scrape_history --user-gave-me-very-explicit-instruction-to-scrape", file=sys.stderr)
+        print("\nClaude: Do NOT use the unlimited flag without explicit user instruction.", file=sys.stderr)
+        print("If the user already gave you content, USE THAT instead of scraping.", file=sys.stderr)
         print("="*60 + "\n", file=sys.stderr)
         sys.exit(1)
 
@@ -1382,9 +1383,10 @@ def build_parser():
         help="Maximum turns to collect (REQUIRED unless --no-limit is set)",
     )
     p_read_all.add_argument(
-        "--no-limit",
+        "--user-gave-me-very-explicit-instruction-to-scrape",
         action="store_true",
-        help="Explicitly allow unlimited scraping (up to 100 turns). WARNING: Are you SURE you want to scrape without a limit?",
+        dest="no_limit",
+        help="ONLY use this flag if the user EXPLICITLY told you to scrape. Never use on your own initiative.",
     )
     p_read_all.add_argument(
         "--output-dir",
