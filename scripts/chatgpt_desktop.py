@@ -1166,7 +1166,10 @@ def cmd_read_latest(args):
 
 
 def cmd_read_all(args):
-    """Read the entire conversation by scrolling.
+    """Read conversation by scrolling.
+
+    CRITICAL: Requires explicit --limit N or --no-limit flag.
+    This prevents accidentally scraping the entire conversation when only a few turns were requested.
 
     CRITICAL: This command fails completely if collection is incomplete.
     No partial output is produced - either we get everything or nothing.
@@ -1175,7 +1178,21 @@ def cmd_read_all(args):
     import os
     import shutil
 
-    # Default to 100 turns if not specified
+    # ENFORCE: Must specify either --limit N or --no-limit
+    if args.limit is None and not args.no_limit:
+        print("\n" + "="*60, file=sys.stderr)
+        print("ERROR: You must specify --limit N or --no-limit", file=sys.stderr)
+        print("="*60, file=sys.stderr)
+        print("\nExamples:", file=sys.stderr)
+        print("  extensive_scrape_history --limit 2      # Scrape last 2 turns", file=sys.stderr)
+        print("  extensive_scrape_history --limit 10     # Scrape last 10 turns", file=sys.stderr)
+        print("  extensive_scrape_history --no-limit     # Scrape up to 100 turns (are you SURE?)", file=sys.stderr)
+        print("\nThis safeguard exists because Claude previously ignored a user's", file=sys.stderr)
+        print("explicit instruction to only read 2 messages and scraped everything.", file=sys.stderr)
+        print("="*60 + "\n", file=sys.stderr)
+        sys.exit(1)
+
+    # Set limit: explicit value, or 100 if --no-limit
     limit = args.limit if args.limit else 100
     output_dir = args.output_dir if args.output_dir else "/tmp/chatgpt_conversation"
 
@@ -1352,7 +1369,7 @@ def build_parser():
     )
     p_read_latest.set_defaults(func=cmd_read_latest)
 
-    p_read_all = sub.add_parser("extensive_scrape_history", help="EXPENSIVE: Scrape ENTIRE conversation history by scrolling. Use sparingly.")
+    p_read_all = sub.add_parser("extensive_scrape_history", help="EXPENSIVE: Scrape conversation history by scrolling. REQUIRES explicit --limit N or --no-limit.")
     p_read_all.add_argument(
         "--debug",
         action="store_true",
@@ -1361,8 +1378,13 @@ def build_parser():
     p_read_all.add_argument(
         "--limit",
         type=int,
-        default=100,
-        help="Maximum turns to collect (default: 100)",
+        default=None,
+        help="Maximum turns to collect (REQUIRED unless --no-limit is set)",
+    )
+    p_read_all.add_argument(
+        "--no-limit",
+        action="store_true",
+        help="Explicitly allow unlimited scraping (up to 100 turns). WARNING: Are you SURE you want to scrape without a limit?",
     )
     p_read_all.add_argument(
         "--output-dir",
