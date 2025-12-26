@@ -19,3 +19,5 @@ openai_token.txt
 
 # Audiobook files (too large for git)
 audiobook/*.mp3
+scripts/CHAPTER_EDIT_TASK.md
+scripts/chapter_feedback.md

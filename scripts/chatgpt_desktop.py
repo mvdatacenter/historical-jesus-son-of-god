@@ -85,11 +85,27 @@ def find_chatgpt_app():
     workspace = NSWorkspace.sharedWorkspace()
     running_apps = workspace.runningApplications()
 
+    # First pass: look for exact bundle ID match (preferred)
     for app in running_apps:
         bundle_id = app.bundleIdentifier()
-        name = app.localizedName()
+        if bundle_id == "com.openai.chat":
+            ax_app = AXUIElementCreateApplication(app.processIdentifier())
+            return ax_app, app
 
-        if (bundle_id and "chatgpt" in bundle_id.lower()) or (name and "chatgpt" in name.lower()):
+    # Second pass: look for exact name match
+    for app in running_apps:
+        name = app.localizedName()
+        if name == "ChatGPT":
+            ax_app = AXUIElementCreateApplication(app.processIdentifier())
+            return ax_app, app
+
+    # Fallback: partial match (but avoid Helper processes)
+    for app in running_apps:
+        bundle_id = app.bundleIdentifier() or ""
+        name = app.localizedName() or ""
+        if "Helper" in name:
+            continue
+        if "chatgpt" in bundle_id.lower() or "chatgpt" in name.lower():
             ax_app = AXUIElementCreateApplication(app.processIdentifier())
             return ax_app, app
 

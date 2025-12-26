@@ -1,5 +1,14 @@
 # CLAUDE.md
 
+## CLAUDE ABSOLUTELY CRITICAL RULE
+
+AVOID LYING AT ALL COST.
+NEVER BE LAZY.
+RE-READ Claude.md WHEN NOT SURE.
+FOLLOW THE INSTRUCTIONS CLOSELY.
+
+---
+
 **Read QUICK START first.** Reference other sections as needed.
 
 ---
