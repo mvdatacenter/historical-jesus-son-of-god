@@ -181,11 +181,16 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 - Inscription corpora: CIS II 86, IGLS IV 1264, SEG 28.1235
 - Ancient authors with work: Eusebius, Historia Ecclesiastica 3.39
 
-**NOT OK inline (needs proper footnote):**
-- Modern scholar names: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
-- These are lazy ChatGPT citations that look scholarly but aren't properly formatted
+**NOT OK inline:**
+- Lazy scholar name-drops: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
+- These look scholarly but convey nothing to the reader
 
-**Rule:** If citing a modern scholar, either use a proper LaTeX footnote with full bibliographic info, or remove the scholar name and state the claim directly.
+**Rule:** If a scholarly work matters, convey the idea it establishes in half a sentence. Don't name-drop.
+
+**Example - Bad:** "as summarized by Assmann (2001)"
+**Example - Good:** "Egyptian hymns describe Amun as hidden in name and essence"
+
+The reader learns nothing from "Assmann (2001)" but learns the actual content from the second version.
 
 ## AI Garbage: Formal Definition
 
