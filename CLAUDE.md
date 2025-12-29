@@ -185,7 +185,7 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 - Lazy scholar name-drops: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
 - These look scholarly but convey nothing to the reader
 
-**Rule:** If a scholarly work matters, convey the idea it establishes. Take as much space as needed. Don't name-drop without content.
+**Rule:** If a scholarly work matters, convey the idea it establishes. Try to keep it short, but don't make it too short when the idea needs more explanation or background. Don't name-drop without content.
 
 **Example - Bad:** "as summarized by Assmann (2001)"
 **Example - Good:** "Egyptian hymns describe Amun as hidden in name and essence"
