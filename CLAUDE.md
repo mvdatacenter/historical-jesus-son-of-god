@@ -173,6 +173,20 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
+## Inline Citations: What's Allowed
+
+**OK to cite inline (no footnote needed):**
+- Bible verses: John 1:18, Mark 5:1-20, Acts 2:36
+- Standardized papyrus numbers: 𝔓52, 𝔓66, P.Oxy. II 208
+- Inscription corpora: CIS II 86, IGLS IV 1264, SEG 28.1235
+- Ancient authors with work: Eusebius, Historia Ecclesiastica 3.39
+
+**NOT OK inline (needs proper footnote):**
+- Modern scholar names: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
+- These are lazy ChatGPT citations that look scholarly but aren't properly formatted
+
+**Rule:** If citing a modern scholar, either use a proper LaTeX footnote with full bibliographic info, or remove the scholar name and state the claim directly.
+
 ## AI Garbage: Formal Definition
 
 AI garbage is prose that is grammatically correct and superficially fluent but adds no new information relative to its length.
