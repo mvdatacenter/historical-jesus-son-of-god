@@ -53,10 +53,20 @@ The sin is keeping Claude's draft. The necessity is writing it so GPT has someth
 **Step 2:** If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
 
 **Step 3:** Have ChatGPT draft text:
-```bash
-poetry run python scripts/ask_chatgpt.py "Here's existing style: [PASTE 2-3 PARAGRAPHS]
-Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N lines."
+
+**For NEW content:** Give style example + points to cover
 ```
+"Here's existing style: [PASTE 2-3 PARAGRAPHS FROM CHAPTER]
+Write ~N sentences covering [POINTS A,B,C]."
+```
+
+**For ENHANCING existing content:** Give OLD text to rewrite + new points to add
+```
+"Here's OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
+Rewrite this text AND add [NEW POINTS]. Keep what's good, improve what's weak."
+```
+
+**CRITICAL:** Don't say "text to keep" - that makes GPT copy verbatim. Say "text to rewrite" so GPT actually improves it.
 
 **Step 4:** Review draft (accuracy, bias, style match) + cut any AI padding
 
