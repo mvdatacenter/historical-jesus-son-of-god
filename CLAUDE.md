@@ -60,13 +60,15 @@ The sin is keeping Claude's draft. The necessity is writing it so GPT has someth
 Write ~N sentences covering [POINTS A,B,C]."
 ```
 
-**For ENHANCING existing content:** Give OLD text to rewrite + new points to add
+**For ENHANCING existing content:** Give OLD text to rewrite + surrounding context + new points
 ```
-"Here's OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
-Rewrite this text AND add [NEW POINTS]. Keep what's good, improve what's weak."
+"BEFORE this section: [1-2 SENTENCES OF CONTEXT]
+OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
+AFTER this section: [1-2 SENTENCES OF CONTEXT]
+Rewrite the OLD text AND add [NEW POINTS]. Keep what's good, improve what's weak."
 ```
 
-**CRITICAL:** Don't say "text to keep" - that makes GPT copy verbatim. Say "text to rewrite" so GPT actually improves it.
+**Include surrounding context** so GPT knows what comes before/after and writes text that flows.
 
 **Step 4:** Review draft (accuracy, bias, style match) + cut any AI padding
 
