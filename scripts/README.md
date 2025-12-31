@@ -1,15 +1,21 @@
 # ChatGPT Integration Scripts
 
-This directory contains Python scripts for Claude to communicate with ChatGPT Desktop App via macOS Accessibility API.
+This directory contains Python scripts for Claude to communicate with ChatGPT apps.
 
 ## Files
 
+### macOS (Desktop App)
 - **`chatgpt_desktop.py`**: Core script for desktop app automation (send, read commands)
 - **`ask_chatgpt.py`**: High-level wrapper that Claude calls
 
+### Android
+- **`chatgpt_android.py`**: Read messages from ChatGPT Android app via ADB
+
 ## Setup
 
-### 1. Grant Accessibility Permissions
+### macOS Setup
+
+#### 1. Grant Accessibility Permissions
 
 Your Terminal or IDE (IntelliJ IDEA, VSCode, etc.) needs Accessibility permissions to control the ChatGPT app.
 
@@ -20,15 +26,64 @@ Add and enable:
 - IntelliJ IDEA (if running from IDE)
 - Any other app you'll run the scripts from
 
-### 2. Install ChatGPT Desktop App
+#### 2. Install ChatGPT Desktop App
 
 Download from: https://chatgpt.com/ (macOS app)
 
 Make sure it's running before using the scripts.
 
+### Android Setup
+
+#### 1. Enable USB Debugging
+
+On your Android device:
+- **Settings → About phone → Tap "Build number" 7 times** to enable Developer options
+- **Settings → Developer options → Enable "USB debugging"**
+
+#### 2. Install ADB
+
+```bash
+# Ubuntu/Debian
+apt install adb
+
+# macOS
+brew install android-platform-tools
+
+# Or download from https://developer.android.com/tools/releases/platform-tools
+```
+
+#### 3. Connect Device
+
+Connect your phone via USB. When prompted, authorize USB debugging.
+
+Verify connection:
+```bash
+adb devices
+# Should show your device
+```
+
+#### 4. Open ChatGPT App
+
+Open the ChatGPT Android app and navigate to a conversation.
+
 ## Usage
 
-### For Claude (Automated)
+### Android Usage
+
+```bash
+# Read the latest assistant message from ChatGPT Android app
+poetry run python scripts/chatgpt_android.py read_latest
+
+# With debug output
+poetry run python scripts/chatgpt_android.py read_latest --debug
+
+# Dump raw UI XML (for debugging)
+poetry run python scripts/chatgpt_android.py dump
+```
+
+### macOS Usage
+
+#### For Claude (Automated)
 
 ```bash
 # Ask a question and get response in one command
