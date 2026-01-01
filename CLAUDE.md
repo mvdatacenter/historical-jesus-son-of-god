@@ -53,10 +53,22 @@ The sin is keeping Claude's draft. The necessity is writing it so GPT has someth
 **Step 2:** If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
 
 **Step 3:** Have ChatGPT draft text:
-```bash
-poetry run python scripts/ask_chatgpt.py "Here's existing style: [PASTE 2-3 PARAGRAPHS]
-Write text covering [POINTS A,B,C]. Direct, punchy sentences. No AI padding. ~N lines."
+
+**For NEW content:** Give style example + points to cover
 ```
+"Here's existing style: [PASTE 2-3 PARAGRAPHS FROM CHAPTER]
+Write ~N sentences covering [POINTS A,B,C]."
+```
+
+**For ENHANCING existing content:** Give OLD text to rewrite + surrounding context + new points
+```
+"BEFORE this section: [1-2 SENTENCES OF CONTEXT]
+OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
+AFTER this section: [1-2 SENTENCES OF CONTEXT]
+Rewrite the OLD text AND add [NEW POINTS]. Keep what's good, improve what's weak."
+```
+
+**Include surrounding context** so GPT knows what comes before/after and writes text that flows.
 
 **Step 4:** Review draft (accuracy, bias, style match) + cut any AI padding
 
@@ -172,6 +184,25 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 ✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
 
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
+
+## Inline Citations: What's Allowed
+
+**OK to cite inline (no footnote needed):**
+- Bible verses: John 1:18, Mark 5:1-20, Acts 2:36
+- Standardized papyrus numbers: 𝔓52, 𝔓66, P.Oxy. II 208
+- Inscription corpora: CIS II 86, IGLS IV 1264, SEG 28.1235
+- Ancient authors with work: Eusebius, Historia Ecclesiastica 3.39
+
+**NOT OK inline:**
+- Lazy scholar name-drops: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
+- These look scholarly but convey nothing to the reader
+
+**Rule:** If a scholarly work matters, convey the idea it establishes. Try to keep it short, but don't make it too short when the idea needs more explanation or background. Don't name-drop without content.
+
+**Example - Bad:** "as summarized by Assmann (2001)"
+**Example - Good:** "Egyptian hymns describe Amun as hidden in name and essence"
+
+The reader learns nothing from "Assmann (2001)" but learns the actual content from the second version.
 
 ## AI Garbage: Formal Definition
 
