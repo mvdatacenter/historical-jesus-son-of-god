@@ -9,7 +9,8 @@ This directory contains Python scripts for Claude to communicate with ChatGPT ap
 - **`ask_chatgpt.py`**: High-level wrapper that Claude calls
 
 ### Android
-- **`chatgpt_android.py`**: Read messages from ChatGPT Android app via ADB
+- **`chatgpt_android.py`**: Read messages from ChatGPT Android app via Shizuku
+- **`test_chatgpt_android.py`**: Unit tests (22 tests)
 
 ## Setup
 
@@ -32,39 +33,53 @@ Download from: https://chatgpt.com/ (macOS app)
 
 Make sure it's running before using the scripts.
 
-### Android Setup
+### Android Setup (Termux + Shizuku)
 
-#### 1. Enable USB Debugging
+The Android script uses Shizuku to run uiautomator commands. Works from Termux/proot.
 
-On your Android device:
-- **Settings → About phone → Tap "Build number" 7 times** to enable Developer options
-- **Settings → Developer options → Enable "USB debugging"**
+#### 1. Install Shizuku
 
-#### 2. Install ADB
+Download from [GitHub Releases](https://github.com/RikkaApps/Shizuku/releases) (not Play Store - outdated).
 
+#### 2. Enable Wireless Debugging
+
+- **Settings → Developer options → Wireless debugging** → Enable
+
+#### 3. Start Shizuku
+
+Open Shizuku app → "Start via Wireless debugging" → Follow pairing instructions.
+
+#### 4. Export rish to Termux
+
+In Shizuku: **"Use Shizuku in terminal apps"** → Export files.
+
+Then in Termux:
 ```bash
-# Ubuntu/Debian
-apt install adb
-
-# macOS
-brew install android-platform-tools
-
-# Or download from https://developer.android.com/tools/releases/platform-tools
+termux-setup-storage
+cp ~/storage/shared/Documents/rish* $PREFIX/bin/
+chmod +x $PREFIX/bin/rish
+chmod 400 $PREFIX/bin/rish_shizuku.dex
 ```
 
-#### 3. Connect Device
+#### 5. Configure rish for Termux
 
-Connect your phone via USB. When prompted, authorize USB debugging.
-
-Verify connection:
+Edit `$PREFIX/bin/rish` and change `"PKG"` to `"com.termux"`:
 ```bash
-adb devices
-# Should show your device
+sed -i 's/"PKG"/"com.termux"/' $PREFIX/bin/rish
 ```
 
-#### 4. Open ChatGPT App
+#### 6. Fix for proot (if using proot-distro)
 
-Open the ChatGPT Android app and navigate to a conversation.
+If running from proot, remove the permission check that fails due to proot faking permissions:
+```bash
+# Edit rish and remove/comment out the lines 10-21 (the -w check block)
+```
+
+#### 7. Verify Setup
+
+```bash
+python scripts/chatgpt_android.py test
+```
 
 ## Usage
 
@@ -121,6 +136,8 @@ poetry run python scripts/chatgpt_desktop.py read
 
 ## How It Works
 
+### macOS
+
 1. **App Activation**: Activates ChatGPT Desktop App to front
 2. **Clipboard + Paste**: Copies prompt to clipboard, uses Cmd+A and Cmd+V to paste
 3. **Button Click**: Finds and clicks the Send button via mouse click
@@ -128,6 +145,14 @@ poetry run python scripts/chatgpt_desktop.py read
 5. **Polling**: Actively polls for response every 0.5 seconds
 6. **Message Filtering**: Filters out old messages that existed before the query
 7. **Stability Detection**: Waits for text to stabilize (same for 2 seconds) before returning
+
+### Android
+
+1. **App Switch**: Uses `am start` via Shizuku/rish to bring ChatGPT to foreground
+2. **UI Dump**: Runs `uiautomator dump` to capture the screen hierarchy as XML
+3. **Return to Termux**: Switches back to Termux automatically
+4. **Message Extraction**: Parses XML with regex to extract message text
+5. **Filtering**: Removes UI elements (buttons, labels) and short text
 
 ## Important Notes
 

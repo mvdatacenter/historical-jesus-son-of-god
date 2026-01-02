@@ -155,5 +155,119 @@ class TestReadLatest:
         assert result == ""
 
 
+class TestEdgeCases:
+    """Edge case tests."""
+
+    def test_unicode_messages(self):
+        from chatgpt_android import extract_messages
+        xml = '''<hierarchy>
+            <node text="This message contains émojis 🎉 and üñíçödé characters throughout" class="TextView"/>
+        </hierarchy>'''
+        messages = extract_messages(xml)
+        assert len(messages) == 1
+        assert "émojis" in messages[0]
+
+    def test_very_long_message(self):
+        from chatgpt_android import extract_messages
+        long_text = "A" * 5000
+        xml = f'<hierarchy><node text="{long_text}" class="TextView"/></hierarchy>'
+        messages = extract_messages(xml)
+        assert len(messages) == 1
+        assert len(messages[0]) == 5000
+
+    def test_multiple_messages_returns_all(self):
+        from chatgpt_android import extract_messages
+        xml = '''<hierarchy>
+            <node text="First message that is long enough to pass the filter" class="TextView"/>
+            <node text="Second message that is also long enough to pass filter" class="TextView"/>
+            <node text="Third message with sufficient length for extraction" class="TextView"/>
+        </hierarchy>'''
+        messages = extract_messages(xml)
+        assert len(messages) == 3
+
+    def test_nested_quotes_in_text(self):
+        from chatgpt_android import extract_messages
+        # Text with escaped quotes shouldn't break regex
+        xml = '''<hierarchy>
+            <node text="He said &quot;hello&quot; and then left the room quickly" class="TextView"/>
+        </hierarchy>'''
+        messages = extract_messages(xml)
+        assert len(messages) == 1
+        assert '"hello"' in messages[0]
+
+    def test_newlines_preserved(self):
+        from chatgpt_android import extract_messages
+        xml = '''<hierarchy>
+            <node text="Line one&#10;Line two&#10;Line three is here for length" class="TextView"/>
+        </hierarchy>'''
+        messages = extract_messages(xml)
+        assert len(messages) == 1
+        assert messages[0].count('\n') == 2
+
+
+class TestAppSwitching:
+    """Tests for app switching logic."""
+
+    @patch('time.sleep')
+    @patch('chatgpt_android.run_rish')
+    def test_switches_back_on_failure(self, mock_rish, mock_sleep):
+        from chatgpt_android import dump_ui
+
+        mock_rish.side_effect = [
+            (True, ""),  # am start ChatGPT
+            (False, "dump failed"),  # uiautomator fails
+            (True, ""),  # am start Termux (should still be called)
+        ]
+
+        result = dump_ui()
+
+        assert result == ""
+        # Verify Termux was brought back
+        assert mock_rish.call_count == 3
+        last_call = mock_rish.call_args_list[-1]
+        assert "termux" in str(last_call).lower()
+
+    @patch('time.sleep')
+    @patch('chatgpt_android.run_rish')
+    def test_waits_for_app_switch(self, mock_rish, mock_sleep):
+        from chatgpt_android import dump_ui
+
+        mock_rish.return_value = (True, "<hierarchy></hierarchy>")
+
+        dump_ui()
+
+        # Should sleep after switching to ChatGPT
+        mock_sleep.assert_called()
+
+
+class TestCheckRish:
+    """Tests for check_rish function."""
+
+    @patch('chatgpt_android.os.path.exists')
+    @patch('chatgpt_android.os.access')
+    def test_returns_true_when_exists_and_executable(self, mock_access, mock_exists):
+        from chatgpt_android import check_rish
+        mock_exists.return_value = True
+        mock_access.return_value = True
+
+        assert check_rish() is True
+
+    @patch('chatgpt_android.os.path.exists')
+    def test_returns_false_when_not_exists(self, mock_exists):
+        from chatgpt_android import check_rish
+        mock_exists.return_value = False
+
+        assert check_rish() is False
+
+    @patch('chatgpt_android.os.path.exists')
+    @patch('chatgpt_android.os.access')
+    def test_returns_false_when_not_executable(self, mock_access, mock_exists):
+        from chatgpt_android import check_rish
+        mock_exists.return_value = True
+        mock_access.return_value = False
+
+        assert check_rish() is False
+
+
 if __name__ == "__main__":
     pytest.main([__file__, "-v"])
