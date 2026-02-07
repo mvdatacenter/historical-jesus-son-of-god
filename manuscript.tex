@@ -29,6 +29,16 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
+
+% ----- Bibliography -----
+\usepackage[
+  backend=biber,
+  style=authortitle,
+  sorting=nyt,
+  abbreviate=false
+]{biblatex}
+\addbibresource{references.bib}
+
 \usepackage[hidelinks]{hyperref}
 
 % Pandoc list helper
@@ -69,5 +79,11 @@
 
 \chapter*{Epilogue}
 \input{epilogue}
+
+\backmatter
+\nocite{*}
+\printbibliography[keyword=ancient,title={Ancient Primary Sources}]
+\printbibliography[keyword=patristic,title={Church Fathers and Early Christian Literature}]
+\printbibliography[keyword=modern,title={Modern Scholarship}]
 
 \end{document}
