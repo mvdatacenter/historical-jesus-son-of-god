@@ -311,6 +311,21 @@ def set_clipboard(text: str):
     pb.setString_forType_(text, "public.utf8-plain-text")
 
 
+def activate_app_via_applescript(app_name: str) -> bool:
+    """Activate app using AppleScript (more forceful than NSRunningApplication)."""
+    import subprocess
+    try:
+        subprocess.run(
+            ["osascript", "-e", f'tell application "{app_name}" to activate'],
+            check=True,
+            capture_output=True,
+            timeout=5
+        )
+        return True
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        return False
+
+
 def press_cmd_a():
     """Press Cmd+A to select all."""
     event_down = CGEventCreateKeyboardEvent(None, 0x00, True)  # A key
@@ -818,9 +833,33 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
         print("ERROR: ChatGPT app not found. Is it running?", file=sys.stderr)
         sys.exit(1)
 
+    # Check that the app has windows (may be running but minimized/closed)
+    windows = ax_attr(ax_app, "AXWindows")
+    if not windows or len(windows) == 0:
+        print("ERROR: ChatGPT app is running but has no open windows. Open a ChatGPT window first.", file=sys.stderr)
+        sys.exit(1)
+
+    # Check accessibility by verifying we can read the window's role
+    window_role = ax_attr(windows[0], kAXRoleAttribute)
+    if window_role is None:
+        print("ERROR: Cannot read ChatGPT window properties. Terminal/IDE likely lacks Accessibility permissions (System Settings > Privacy & Security > Accessibility).", file=sys.stderr)
+        sys.exit(1)
+
     text_input = find_text_input(ax_app)
     if not text_input:
-        print("ERROR: Could not find text input field", file=sys.stderr)
+        # Collect what roles we DID find so we know if the UI changed
+        found_roles = set()
+        def _collect_roles(el, d=0):
+            if d > 15:
+                return
+            r = ax_attr(el, kAXRoleAttribute)
+            if r:
+                found_roles.add(r)
+            for c in (ax_attr(el, kAXChildrenAttribute) or []):
+                _collect_roles(c, d + 1)
+        _collect_roles(ax_app)
+        print(f"ERROR: Could not find text input field (AXTextArea). ChatGPT UI may have changed.", file=sys.stderr)
+        print(f"AX roles found in window: {sorted(found_roles)}", file=sys.stderr)
         sys.exit(1)
 
     # CRITICAL: Wait for ChatGPT to finish thinking before proceeding
@@ -887,11 +926,19 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
     else:
         print("[DEBUG] Input field is clear", file=sys.stderr)
 
-    # Set clipboard and activate app
+    # Set clipboard and activate app via AppleScript (more forceful)
     set_clipboard(prompt)
 
-    ns_app.activateWithOptions_(1)  # NSApplicationActivateIgnoringOtherApps
+    if not activate_app_via_applescript("ChatGPT"):
+        print("ERROR: AppleScript failed to activate ChatGPT.", file=sys.stderr)
+        sys.exit(1)
     time.sleep(0.5)
+
+    # Verify app came to foreground (re-check via frontmost app, not cached ns_app)
+    frontmost = NSWorkspace.sharedWorkspace().frontmostApplication()
+    if frontmost.bundleIdentifier() != "com.openai.chat":
+        print(f"ERROR: Failed to bring ChatGPT to foreground. Active app is: {frontmost.localizedName()} ({frontmost.bundleIdentifier()})", file=sys.stderr)
+        sys.exit(1)
 
     # Click into text area using mouse events (more reliable than kAXPressAction)
     position = ax_attr(text_input, kAXPositionAttribute)
@@ -946,8 +993,17 @@ def send_prompt(prompt: str, wait_for_reply: bool = True, wait_seconds: int = 18
             break
 
     if not send_button:
-        print("ERROR: Could not find Send button", file=sys.stderr)
-        print("[DEBUG] Check if ChatGPT response already exists with 'read' command", file=sys.stderr)
+        all_labels = [repr(d) for _, d in buttons]
+        if not buttons:
+            print("ERROR: No buttons found in ChatGPT window at all. App may not be focused or UI structure changed.", file=sys.stderr)
+        else:
+            print(f"ERROR: Send button not found. Buttons found: {', '.join(all_labels)}", file=sys.stderr)
+        # Check if input field still has text (paste may have failed)
+        current_val = ax_attr(text_input, kAXValueAttribute)
+        if not current_val or not current_val.strip():
+            print("Input field is empty — paste may have failed or text was not received.", file=sys.stderr)
+        else:
+            print(f"Input field has text ({len(current_val)} chars) — paste worked but Send button is missing.", file=sys.stderr)
         sys.exit(1)
 
     # Get button position and click it
@@ -1282,10 +1338,36 @@ def cmd_test(args):
 
     print("✓ ChatGPT app found", file=sys.stderr)
 
+    # Check windows
+    windows = ax_attr(ax_app, "AXWindows")
+    if not windows or len(windows) == 0:
+        print("✗ FAIL: ChatGPT app is running but has no open windows", file=sys.stderr)
+        sys.exit(1)
+
+    print(f"✓ {len(windows)} window(s) open", file=sys.stderr)
+
+    # Check accessibility
+    window_role = ax_attr(windows[0], kAXRoleAttribute)
+    if window_role is None:
+        print("✗ FAIL: Cannot read window properties — Accessibility permissions missing", file=sys.stderr)
+        sys.exit(1)
+
+    print("✓ Accessibility permissions OK", file=sys.stderr)
+
     # Try to find text input
     text_input = find_text_input(ax_app)
     if not text_input:
-        print("✗ FAIL: Could not find text input field", file=sys.stderr)
+        found_roles = set()
+        def _collect_roles(el, d=0):
+            if d > 15:
+                return
+            r = ax_attr(el, kAXRoleAttribute)
+            if r:
+                found_roles.add(r)
+            for c in (ax_attr(el, kAXChildrenAttribute) or []):
+                _collect_roles(c, d + 1)
+        _collect_roles(ax_app)
+        print(f"✗ FAIL: No AXTextArea found. UI may have changed. Roles found: {sorted(found_roles)}", file=sys.stderr)
         sys.exit(1)
 
     print("✓ Text input field found", file=sys.stderr)
