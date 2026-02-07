@@ -479,10 +479,12 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 
 **For MINOR topics:** Use top 2-3 strongest arguments only
 
-**For CENTRAL thesis:** Use ALL strong non-redundant arguments ChatGPT provides
+**For CENTRAL thesis:** Use ALL strong non-redundant arguments ChatGPT provides, and audit every citation
 - Read FULL response (don't stop at first 2-3)
 - Check book for redundancy
 - Incorporate all NEW strong arguments
+- Keep or reject every response section explicitly; never silently ignore citations
+- Never paste everything mindlessly; review everything
 - Example: "Was Gospel of John written by a woman?" = central → use all 9 arguments ChatGPT provides
 
 ## Do Not Dilute Arguments
