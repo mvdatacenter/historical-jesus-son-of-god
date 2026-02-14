@@ -16,6 +16,8 @@ folium = "^0.19.5"
 pyobjc = "^12.1"
 openai = "^2.11.0"
 python-dotenv = "^1.2.1"
+requests = "^2.31"
+beautifulsoup4 = "^4.12"
 
 [tool.poetry.scripts]
 map = "map:main"

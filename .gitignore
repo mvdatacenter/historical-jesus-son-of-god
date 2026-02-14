@@ -21,3 +21,8 @@ openai_token.txt
 audiobook/*.mp3
 scripts/CHAPTER_EDIT_TASK.md
 scripts/chapter_feedback.md
+
+# Downloaded source texts (public domain but large)
+sources/ancient/
+sources/patristic/
+sources/verification_report.md
