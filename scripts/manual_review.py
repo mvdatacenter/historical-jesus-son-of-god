@@ -38,13 +38,9 @@ MANUAL_OVERRIDES = {
     #
     # ===== CHAPTER 2 =====
     #
-    ("epiphanius:mensuris", "\\S14"): (
-        "SECTION_MISMATCH",
-        "AI reviewed — section 14 in downloaded text is about Hadrian's leprosy and journey "
-        "to Palestine, NOT about 24 priestly courses settling in Nazareth. The priestly courses "
-        "list is a real tradition attributed to Epiphanius but may be in a different section or "
-        "recension of the text. Claim is not fabricated but section reference does not match."
-    ),
+    # epiphanius:mensuris §14 — REMOVED from manuscript. Citation was wrong on multiple
+    # levels: §14 is about Hadrian, priestly courses are NOT in De Mensuris at all.
+    # Replaced with Caesarea Maritima inscription reference (inline, no \cite).
     ("pliny:nh", "5.81"): (
         "WRONG_TEXT",
         "AI reviewed — downloaded book5.txt covers North Africa (Mauritania, ch.1-2). "
@@ -52,13 +48,11 @@ MANUAL_OVERRIDES = {
         "which was not downloaded. The auto-script matched '81' = Cartenna (Africa). "
         "The Nazareni tetrarchy IS a real Pliny passage but our text doesn't contain it."
     ),
-    ("plutarch:lives", "23.3"): (
-        "SECTION_MISMATCH",
-        "AI reviewed — auto-matched beginning of Alexander text (section 1.2). Section 23 "
-        "of Life of Alexander is about post-Issus suppers and expenses. Plutarch DOES use "
-        "euangelion-type language across the Lives (e.g. victory reports in Pompey, Alexander) "
-        "but the specific passage 23.3 does not contain 'good news from the battlefield.' "
-        "The claim about Plutarch's usage is real; the section reference may be imprecise."
+    ("plutarch:lives", "Sertorius 11.4"): (
+        "CONFIRMED",
+        "AI reviewed — corrected from 23.3 (wrong format/section). Plutarch, Sertorius 11.4: "
+        "Sertorius uses his sacred doe 'for the receipt of glad tidings' (euangelia) when news "
+        "of victories arrives. Matches manuscript claim about euangelion as battlefield good news."
     ),
     ("josephus:war", "4.618"): (
         "CONFIRMED",
@@ -73,13 +67,12 @@ MANUAL_OVERRIDES = {
         "IS about victory celebrations for Actium's outcome. English translation doesn't use "
         "the Greek word euangelia but the content confirms victory-proclamation context."
     ),
-    ("josephus:war", "4.5.2"): (
+    ("josephus:life", "75"): (
         "CONFIRMED",
-        "AI reviewed — War 4.5.2 (book4.txt line 1274): 'the Jews used to take so much care "
-        "of the burial of men, that they took down those that were condemned and crucified, and "
-        "buried them before the going down of the sun.' Matches the claim about Jewish burial "
-        "practices for crucifixion victims. Note: the three-acquaintances-survived story at L1040 "
-        "is from Josephus' Vita/Life 75, not War 4.5.2; the War passage is about burial customs."
+        "AI reviewed — corrected from War 4.5.2 (that's burial customs, not the acquaintances "
+        "story). Life section 75: 'I saw many captives crucified, and remembered three of them "
+        "as my former acquaintance... one of them recovered.' Exact match to manuscript claim "
+        "about three acquaintances crucified, one surviving."
     ),
     ("philo:flaccum", "83--84"): (
         "CONFIRMED",
@@ -210,13 +203,11 @@ MANUAL_OVERRIDES = {
     #
     # ===== CHAPTER 5 =====
     #
-    ("cicero:philippics", "13.27"): (
-        "SECTION_MISMATCH",
-        "AI reviewed — section [27] of Philippic 13 discusses Titus Plancus and other tribunes, "
-        "NOT Catiline's conspirators. The Philippics are about Mark Antony; Catiline is only "
-        "mentioned in passing (line 302). Cicero DOES use military language for political groups "
-        "throughout the Philippics ('You have enlisted soldiers' at section 33) but the specific "
-        "claim about 'soldiers of Catiline' at 13.27 is a wrong section reference."
+    ("cicero:catilinam", "2.5"): (
+        "CONFIRMED",
+        "AI reviewed — corrected from Philippics 13.27 (that's about Titus Plancus). In Catilinam "
+        "2.5: Cicero calls Catiline's remaining supporters 'suos milites' (his soldiers) even "
+        "though they are unarmed civilians in perfume and purple. Exact match to manuscript claim."
     ),
     ("josephus:ant", "18.23"): (
         "CONFIRMED",

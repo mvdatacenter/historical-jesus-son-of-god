@@ -66,9 +66,9 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "William Whiston (1895)",
         "urls": {
-            "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0150",
+            "full": "https://lexundria.com/j_vit/1-430/wst",
         },
-        "section_pattern": r"\b(\d+)\.\s",
+        "section_pattern": r"\b(\d+)\b",
     },
 
     "tacitus:annals": {
@@ -206,6 +206,18 @@ SOURCES = {
         },
         "note": "Downloading Philippic 13 (the cited one). W.C.A. Ker translation (1926).",
         "section_pattern": r"(?:Philippic\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "cicero:catilinam": {
+        "title": "In Catilinam",
+        "author": "Marcus Tullius Cicero",
+        "category": ANCIENT,
+        "translation": "C. D. Yonge (1903)",
+        "urls": {
+            "full": "https://www.attalus.org/cicero/catilina2.html",
+        },
+        "note": "Second Catilinarian Oration (the cited one).",
+        "section_pattern": r"\[(\d+)\]",
     },
 
     "seneca:epistles": {
