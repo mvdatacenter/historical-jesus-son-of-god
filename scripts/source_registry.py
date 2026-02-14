@@ -83,6 +83,7 @@ SOURCES = {
             "book13": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/13A*.html",
             "book14": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/14A*.html",
             "book15": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15A*.html",
+            "book15b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/15B*.html",
             "book16": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Annals/16*.html",
         },
         "alt_urls": {
