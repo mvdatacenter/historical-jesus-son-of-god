@@ -637,6 +637,18 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "justinmartyr:trypho": {
+        "title": "Dialogue with Trypho",
+        "author": "Justin Martyr",
+        "category": PATRISTIC,
+        "translation": "Marcus Dods and George Reith (ANF Vol. 1, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/01287.htm",
+        },
+        "note": "Chapters 89-108 (second part). Mary-Eve typology at Chapter 100.",
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     "ignatius:letters": {
         "title": "Letters of Ignatius",
         "author": "Ignatius of Antioch",
