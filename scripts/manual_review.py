@@ -31,6 +31,76 @@ from verify_citations import (
 
 OUTPUT_PATH = SOURCES_DIR / "citation_review_table.md"
 
+# General references — citations that cite an entire work without a specific passage.
+# These are valid because the citation introduces the work itself, lists it as a source
+# category, or the entire work is about the claimed topic. No passage verification needed.
+#
+# Keyed by (bib_key, file, line_num) to distinguish duplicate keys across chapters.
+GENERAL_REFERENCES = {
+    #
+    # ===== CHAPTER 2 =====
+    #
+    ("tacitus:annals", "chapter2.tex", 817): (
+        "Introductory mention — sentence introduces the Annals and Histories as 'among the "
+        "finest works of Latin prose.' Cites the work itself, not a specific passage."
+    ),
+    ("tacitus:histories", "chapter2.tex", 817): (
+        "Introductory mention — paired with Annals in the same sentence introducing Tacitus' "
+        "credentials. Cites the work itself, not a specific passage."
+    ),
+    #
+    # ===== CHAPTER 4 =====
+    #
+    ("tertullian:marcionem", "chapter4.tex", 1262): (
+        "Witness catalogue — Tertullian listed as one of three hostile witnesses through whom "
+        "Marcion's gospel survives. The entire Adversus Marcionem is the relevant source; "
+        "no single passage is being claimed."
+    ),
+    #
+    # ===== CHAPTER 6 =====
+    #
+    ("lactantius:phoenix", "chapter6.tex", 65): (
+        "Entire-work reference — the Phoenix is a short Latin poem (64 lines). The citation "
+        "refers to the whole poem's narrative of the phoenix's death and rebirth. No specific "
+        "section exists to cite."
+    ),
+    ("irenaeus:advhaer", "chapter6.tex", 348): (
+        "Summary reference — sentence says Irenaeus 'articulates a millennialist eschatology.' "
+        "The specific passage (5.26.1) is already cited separately at line 351. This citation "
+        "introduces the broader theme."
+    ),
+    ("tertullian:apology", "chapter6.tex", 366): (
+        "Thematic reference — sentence summarizes Tertullian's overall argument that Christianity "
+        "will triumph within the Roman Empire. This is a pervasive theme across the Apology, "
+        "not localized to one passage."
+    ),
+    ("tertullian:resurrection", "chapter6.tex", 366): (
+        "Thematic reference — paired with Apology in the same sentence. Tertullian's De "
+        "Resurrectione Carnis frames bodily resurrection as part of the divine plan for "
+        "Christian triumph. Pervasive theme, not one passage."
+    ),
+    ("eusebius:he", "chapter6.tex", 371): (
+        "Whole-work reference — sentence says Eusebius 'presents the rise of Constantine and "
+        "the establishment of Christianity as the fulfillment of God's plan.' This is the "
+        "central thesis of the entire Historia Ecclesiastica."
+    ),
+    ("eusebius:vita", "chapter6.tex", 371): (
+        "Whole-work reference — paired with HE in the same sentence. The Vita Constantini is "
+        "entirely devoted to presenting Constantine's reign as divinely ordained. The whole "
+        "work IS the claim."
+    ),
+    ("victorinus:apocalypse", "chapter6.tex", 382): (
+        "Thematic reference — sentence summarizes Victorinus' belief that Rome is part of God's "
+        "eschatological plan. The specific four-creatures passage is already cited at ch5:805. "
+        "This citation covers his broader eschatological vision."
+    ),
+    ("augustine:civdei", "chapter6.tex", 389): (
+        "Whole-work reference — sentence says Augustine 'offers a vision where the fall of the "
+        "Roman Empire is viewed through a Christian lens.' This IS the thesis of De Civitate "
+        "Dei (all 22 books). No single passage captures it."
+    ),
+}
+
 # Manual overrides for citations where automated search couldn't find the passage
 # but human review confirmed the content matches.
 MANUAL_OVERRIDES = {
@@ -465,6 +535,18 @@ def review_all():
         if source_info["category"] == MODERN:
             continue
         if not c.passage:
+            # Check if this is a documented general reference
+            gen_key = (c.key, c.file, c.line_num)
+            if gen_key in GENERAL_REFERENCES:
+                tex_path = PROJECT_ROOT / c.file
+                c.claim_text = extract_claim(tex_path, c.line_num)
+                c.status = "GENERAL_REF"
+                results.append({
+                    "citation": c,
+                    "file_matched": "(entire work)",
+                    "match_quality": "general_ref",
+                    "snippet_preview": GENERAL_REFERENCES[gen_key],
+                })
             continue
 
         ref = normalize_ref(c.passage) if c.passage else None
@@ -519,6 +601,12 @@ def determine_verdict(r):
     c = r["citation"]
     snippet = r["snippet_preview"]
 
+    # Check general references (no-passage citations documented as valid)
+    if quality == "general_ref":
+        gen_key = (c.key, c.file, c.line_num)
+        note = GENERAL_REFERENCES.get(gen_key, "General reference — entire work cited")
+        return "GENERAL_REF", note
+
     # Check manual overrides first
     override_key = (c.key, c.passage)
     if override_key in MANUAL_OVERRIDES:
@@ -570,8 +658,9 @@ def generate_report(results):
     lines.append("")
     lines.append("| Verdict | Count |")
     lines.append("|---------|-------|")
-    for v in ["CONFIRMED", "CONFIRMED_NEARBY", "SECTION_MISMATCH", "WRONG_TEXT",
-              "BOOK_NOT_DOWNLOADED", "NOT_DOWNLOADED", "PASSAGE_NOT_LOCATED", "NEEDS_MANUAL"]:
+    for v in ["CONFIRMED", "CONFIRMED_NEARBY", "GENERAL_REF", "SECTION_MISMATCH",
+              "WRONG_TEXT", "BOOK_NOT_DOWNLOADED", "NOT_DOWNLOADED",
+              "PASSAGE_NOT_LOCATED", "NEEDS_MANUAL"]:
         if verdicts.get(v, 0) > 0:
             lines.append(f"| {v} | {verdicts[v]} |")
     lines.append(f"| **TOTAL** | **{len(results)}** |")
@@ -583,6 +672,7 @@ def generate_report(results):
         "",
         "- **CONFIRMED**: Passage found and AI verified the content matches the manuscript's claim.",
         "- **CONFIRMED_NEARBY**: Passage found near expected location. Content matches but section numbering is approximate.",
+        "- **GENERAL_REF**: No specific passage cited — the citation refers to an entire work. Reviewed and documented as valid (e.g., introductory mention, whole-work thesis, or thematic summary).",
         "- **SECTION_MISMATCH**: The claim itself is not fabricated, but the specific section reference doesn't match what the source text contains at that section. The concept exists in the author's works.",
         "- **WRONG_TEXT**: The downloaded source text doesn't contain the relevant section (e.g., only part of a multi-section work was downloaded).",
         "- **BOOK_NOT_DOWNLOADED**: The specific book file (e.g., book3.txt) was not downloaded. Need to download it.",
@@ -612,6 +702,7 @@ def generate_report(results):
             v_icon = {
                 "CONFIRMED": "OK",
                 "CONFIRMED_NEARBY": "~OK",
+                "GENERAL_REF": "GEN",
                 "SECTION_MISMATCH": "REF",
                 "WRONG_TEXT": "DL",
                 "BOOK_NOT_DOWNLOADED": "DL",
