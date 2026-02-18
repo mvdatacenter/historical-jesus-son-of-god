@@ -1401,16 +1401,13 @@ SOURCES = {
         "obtain": "Libraries, bookstores. ISBN 978-0-415-11037-1.",
     },
 
-    "vankooten:cosmic": {
-        "title": "Cosmic Christology in Paul and the Pauline School",
+    "vankooten:ekklesia": {
+        "title": "Ἐκκλησία τοῦ θεοῦ: The 'Church of God' and the Civic Assemblies (ἐκκλησίαι) of the Greek Cities in the Roman Empire",
         "author": "George H. van Kooten",
         "category": MODERN,
-        "year": 2003,
-        "publisher": "Mohr Siebeck",
-        "urls": {
-            "full": "https://library.oapen.org/bitstream/handle/20.500.12657/63329/external_content.pdf",
-        },
-        "note": "Open Access via OAPEN (CC BY-NC-ND 4.0).",
+        "year": 2012,
+        "publisher": "New Testament Studies 58(4), pp. 522-548",
+        "obtain": "Cambridge Core. DOI: 10.1017/S0028688512000148.",
     },
 
     "bauckham:eyewitnesses": {
@@ -1458,13 +1455,13 @@ SOURCES = {
         "obtain": "Libraries, bookstores. ISBN 978-0-8006-3439-9.",
     },
 
-    "barclay:mediterranean": {
-        "title": "Paul and the Gift",
-        "author": "John M. G. Barclay",
+    "meeks:urban": {
+        "title": "The First Urban Christians: The Social World of the Apostle Paul",
+        "author": "Wayne A. Meeks",
         "category": MODERN,
-        "year": 2015,
-        "publisher": "Eerdmans",
-        "obtain": "Libraries, bookstores. ISBN 978-0-8028-6889-3.",
+        "year": 2003,
+        "publisher": "Yale University Press",
+        "obtain": "Widely available. ISBN 978-0-300-09861-7. Libraries, bookstores.",
     },
 
     "sanders:jesus": {

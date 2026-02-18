@@ -221,40 +221,63 @@ def fetch_wikipedia_summary(title, author):
     return None
 
 
-def fetch_goodreads_via_google(title, author):
-    """Search for Goodreads/review content via Google Books description."""
-    # Google Books descriptions often contain review-quality summaries
-    # We already get this from search_google_books, so this is a fallback
-    # that searches for longer descriptions
-    author_last = author.split()[-1] if author.split() else author
+def search_claim_on_web(query):
+    """Search for a specific claim on the web and return relevant page text."""
     try:
+        # Use Google Custom Search via a simple scrape-free approach:
+        # fetch Wikipedia search, Google Books search, or other APIs
+        results = []
+
+        # Try Wikipedia search for the claim
         resp = requests.get(
-            "https://www.googleapis.com/books/v1/volumes",
-            params={"q": f"{title} {author_last}", "maxResults": 5},
+            "https://en.wikipedia.org/w/api.php",
+            params={
+                "action": "query",
+                "list": "search",
+                "srsearch": query,
+                "srlimit": 3,
+                "format": "json",
+            },
             timeout=REQUEST_TIMEOUT,
         )
-        resp.raise_for_status()
-        data = resp.json()
+        if resp.status_code == 200:
+            data = resp.json()
+            for r in data.get("query", {}).get("search", [])[:2]:
+                page_title = r.get("title", "")
+                snippet = r.get("snippet", "")
+                # Clean HTML from snippet
+                snippet = re.sub(r"<[^>]+>", "", snippet)
+                if snippet and len(snippet) > 50:
+                    # Get full extract
+                    ext_resp = requests.get(
+                        "https://en.wikipedia.org/w/api.php",
+                        params={
+                            "action": "query",
+                            "titles": page_title,
+                            "prop": "extracts",
+                            "explaintext": True,
+                            "exlimit": 1,
+                            "exchars": 3000,
+                            "format": "json",
+                        },
+                        timeout=REQUEST_TIMEOUT,
+                    )
+                    if ext_resp.status_code == 200:
+                        pages = ext_resp.json().get("query", {}).get("pages", {})
+                        for pid, page in pages.items():
+                            extract = page.get("extract", "")
+                            if extract and len(extract) > 100:
+                                results.append({
+                                    "source": f"Wikipedia: {page_title}",
+                                    "url": f"https://en.wikipedia.org/wiki/{page_title.replace(' ', '_')}",
+                                    "text": extract[:3000],
+                                    "search_snippet": snippet,
+                                })
 
-        # Find the result with the longest description
-        best_desc = ""
-        best_item = None
-        for item in data.get("items", []):
-            desc = item.get("volumeInfo", {}).get("description", "")
-            if len(desc) > len(best_desc):
-                best_desc = desc
-                best_item = item
+        return results
 
-        if best_item and len(best_desc) > 100:
-            info = best_item["volumeInfo"]
-            return {
-                "title": info.get("title", ""),
-                "description": best_desc,
-                "source": "google_books_extended",
-            }
     except requests.RequestException:
-        pass
-    return None
+        return []
 
 
 def verify_work(key, claim_info):
@@ -269,7 +292,8 @@ def verify_work(key, claim_info):
     # Show what manuscript claims
     for cit in claim_info["citations"]:
         print(f"  Cited in {cit['file']}:{cit['line']}")
-    print(f"  Claim: {claim_info['citations'][0]['claim'][:150]}...")
+    full_claim = claim_info["citations"][0]["claim"]
+    print(f"  Claim: {full_claim[:200]}...")
     print()
 
     verification = {
@@ -282,13 +306,13 @@ def verify_work(key, claim_info):
         "evidence": [],
     }
 
-    # 1. Google Books
-    print("  [1/4] Google Books...", end=" ")
+    # 1. Google Books (basic existence + description)
+    print("  [1/5] Google Books metadata...", end=" ")
     gb = search_google_books(title, author)
     if gb:
-        print(f"FOUND — {gb['title']}")
+        print(f"EXISTS — {gb['title']}")
         verification["evidence"].append({
-            "source": "Google Books",
+            "source": "Google Books (metadata)",
             "title": gb["title"],
             "authors": gb["authors"],
             "publisher": gb["publisher"],
@@ -298,34 +322,17 @@ def verify_work(key, claim_info):
             "description": gb["description"],
             "link": gb["info_link"],
         })
-        if gb["description"]:
-            print(f"    Desc: {gb['description'][:120]}...")
-        verification["verified"] = True
     else:
         print("not found")
     time.sleep(REQUEST_DELAY)
 
-    # 2. Google Books extended (find longest description)
-    print("  [2/4] Extended description...", end=" ")
-    ext = fetch_goodreads_via_google(title, author)
-    if ext and ext["description"] != (gb or {}).get("description", ""):
-        print(f"FOUND ({len(ext['description'])} chars)")
-        verification["evidence"].append({
-            "source": "Google Books (extended)",
-            "description": ext["description"],
-        })
-        verification["verified"] = True
-    else:
-        print("no additional")
-    time.sleep(REQUEST_DELAY)
-
-    # 3. Open Library
-    print("  [3/4] Open Library...", end=" ")
+    # 2. Open Library (metadata)
+    print("  [2/5] Open Library metadata...", end=" ")
     ol = search_open_library(title, author)
     if ol:
-        print(f"FOUND — {ol['title']}")
+        print(f"EXISTS — {ol['title']}")
         verification["evidence"].append({
-            "source": "Open Library",
+            "source": "Open Library (metadata)",
             "title": ol["title"],
             "authors": ol["authors"],
             "publisher": ol["publisher"],
@@ -334,35 +341,75 @@ def verify_work(key, claim_info):
             "description": ol["description"],
             "link": ol["ol_url"],
         })
-        if ol["description"]:
-            print(f"    Desc: {ol['description'][:120]}...")
+    else:
+        print("not found")
+    time.sleep(REQUEST_DELAY)
+
+    # Book exists if found in either
+    book_exists = bool(gb or ol)
+    if book_exists:
+        verification["book_exists"] = True
+
+    # 3. Claim-specific searches (Wikipedia)
+    print("  [3/5] Searching Wikipedia for specific claims...")
+    claim_evidence = []
+    # Search for author + title on Wikipedia
+    author_last = author.split()[-1] if author.split() else author
+    for q in [f"{author_last} {title}", title]:
+        results = search_claim_on_web(q)
+        if results:
+            print(f"    FOUND ({len(results)} result(s))")
+            claim_evidence.extend(results)
+            break
+    else:
+        print("    no results")
+    time.sleep(REQUEST_DELAY)
+
+    if claim_evidence:
+        seen_urls = set()
+        for ev in claim_evidence:
+            url = ev.get("url", "")
+            if url and url not in seen_urls:
+                seen_urls.add(url)
+                verification["evidence"].append({
+                    "source": ev["source"],
+                    "url": url,
+                    "description": ev.get("text", ""),
+                    "search_snippet": ev.get("search_snippet", ""),
+                })
+                verification["verified"] = True
+
+    # 4. Wikipedia about the book/author
+    print("  [4/5] Wikipedia (book/author)...", end=" ")
+    wiki = fetch_wikipedia_summary(title, author)
+    if wiki:
+        print(f"FOUND — {wiki['page_title']}")
+        verification["evidence"].append({
+            "source": f"Wikipedia: {wiki['page_title']}",
+            "url": wiki["url"],
+            "description": wiki["extract"],
+        })
         verification["verified"] = True
     else:
         print("not found")
     time.sleep(REQUEST_DELAY)
 
-    # 4. Wikipedia
-    print("  [4/4] Wikipedia...", end=" ")
-    wiki = fetch_wikipedia_summary(title, author)
-    if wiki:
-        print(f"FOUND — {wiki['page_title']}")
-        verification["evidence"].append({
-            "source": "Wikipedia",
-            "page_title": wiki["page_title"],
-            "url": wiki["url"],
-            "extract": wiki["extract"],
-        })
-        print(f"    Extract: {wiki['extract'][:120]}...")
-        verification["verified"] = True
-    else:
-        print("not found")
+    # 5. (Placeholder — LLM evaluation done separately by review_citations.py)
+    print("  [5/5] LLM evaluation: run `poetry run python scripts/review_citations.py` after")
 
     # Verdict
     if verification["verified"]:
-        n = len(verification["evidence"])
-        print(f"  VERIFIED — {n} source(s) of evidence found")
+        n_claim = len([e for e in verification["evidence"]
+                       if "metadata" not in e.get("source", "")])
+        n_meta = len([e for e in verification["evidence"]
+                      if "metadata" in e.get("source", "")])
+        print(f"  RESULT: Book exists ({n_meta} catalogs), "
+              f"claim evidence: {n_claim} source(s)")
     else:
-        print("  NOT VERIFIED — no evidence found online")
+        if book_exists:
+            print("  RESULT: Book exists but NO evidence for specific claims")
+        else:
+            print("  RESULT: Book NOT FOUND in any catalog")
 
     return verification
 

@@ -11,14 +11,13 @@ Usage:
     poetry run python scripts/verify_citations.py --chapter 4        # Chapter 4 only
     poetry run python scripts/verify_citations.py --key josephus:war # Single source
     poetry run python scripts/verify_citations.py --summary          # Summary only
-    poetry run python scripts/verify_citations.py --deep             # Hallucination risk analysis
 """
 
 import argparse
 import os
 import re
 import sys
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -27,7 +26,6 @@ from source_registry import SOURCES, MODERN
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SOURCES_DIR = PROJECT_ROOT / "sources"
 REPORT_PATH = SOURCES_DIR / "verification_report.md"
-DEEP_REPORT_PATH = SOURCES_DIR / "hallucination_report.md"
 
 SNIPPET_LENGTH = 300
 DEEP_SNIPPET_LENGTH = 2000
@@ -50,13 +48,7 @@ class Citation:
     context: str  # surrounding text from the .tex file
     status: str = "PENDING"  # FOUND / NOT_FOUND / NO_SOURCE / MODERN / NO_PASSAGE
     snippet: str = ""  # extracted text snippet if found
-    # Deep analysis fields
-    claim_text: str = ""        # cleaned claim from .tex (for --deep)
-    risk_score: int = -1        # 0-8 total risk score
-    risk_level: str = ""        # LOW / MEDIUM / HIGH
-    risk_breakdown: dict = field(default_factory=dict)  # per-factor scores
-    claim_keywords: list = field(default_factory=list)
-    matched_keywords: list = field(default_factory=list)
+    claim_text: str = ""  # cleaned claim from .tex
 
 
 def extract_citations(tex_path):
@@ -101,18 +93,32 @@ def extract_citations(tex_path):
 def extract_claim(tex_path, line_num):
     """Extract the manuscript's claim around a citation line.
 
-    Reads 3 lines before and 2 lines after the citation to capture
-    the full claim context, then strips LaTeX commands.
+    Reads 5 lines before and 10 lines after the citation to capture
+    the full claim context including any quote blocks. Then strips
+    LaTeX commands.
     """
     text = tex_path.read_text(encoding="utf-8")
     lines = text.split("\n")
     # line_num is 1-indexed
     idx = line_num - 1
-    start = max(0, idx - 3)
-    end = min(len(lines), idx + 3)
+    start = max(0, idx - 5)
+    end = min(len(lines), idx + 11)
+
+    # If there's a \begin{quote} after the cite, extend to \end{quote}
+    for i in range(idx, min(len(lines), idx + 15)):
+        if "\\begin{quote}" in lines[i]:
+            # Find the matching \end{quote}
+            for j in range(i + 1, min(len(lines), i + 20)):
+                if "\\end{quote}" in lines[j]:
+                    end = max(end, j + 2)
+                    break
+            break
+
     claim_lines = lines[start:end]
     claim_text = "\n".join(claim_lines)
     # Strip LaTeX commands but preserve text content
+    claim_text = re.sub(r"\\begin\{quote\}", "", claim_text)
+    claim_text = re.sub(r"\\end\{quote\}", "", claim_text)
     claim_text = re.sub(r"\\(?:emph|textit|textbf|textsc)\{([^}]*)\}", r"\1", claim_text)
     claim_text = re.sub(r"\\cite\[[^\]]*\]\{[^}]*\}", "", claim_text)
     claim_text = re.sub(r"\\cite\{[^}]*\}", "", claim_text)
@@ -120,9 +126,10 @@ def extract_claim(tex_path, line_num):
     claim_text = re.sub(r"\\[a-zA-Z]+\*?\{([^}]*)\}", r"\1", claim_text)
     claim_text = re.sub(r"\\[a-zA-Z]+\*?", "", claim_text)
     claim_text = re.sub(r"[{}]", "", claim_text)
-    # Collapse whitespace
-    claim_text = re.sub(r"\s+", " ", claim_text).strip()
-    return claim_text
+    # Collapse whitespace but preserve paragraph breaks
+    claim_text = re.sub(r"[ \t]+", " ", claim_text)
+    claim_text = re.sub(r"\n\s*\n", "\n", claim_text)
+    return claim_text.strip()
 
 
 def find_source_files(key, ref=None):
@@ -390,137 +397,6 @@ def _ordinal(n):
     return _ORDINALS.get(n, "")
 
 
-# ---------------------------------------------------------------------------
-# Deep analysis: keyword extraction, claim classification, risk scoring
-# ---------------------------------------------------------------------------
-
-STOP_WORDS = {
-    "the", "a", "an", "is", "was", "are", "were", "in", "of", "to", "and",
-    "that", "this", "for", "by", "with", "as", "on", "at", "from", "his",
-    "he", "she", "it", "they", "not", "but", "or", "be", "had", "has",
-    "have", "which", "who", "when", "where", "how", "than", "its", "their",
-    "also", "been", "would", "could", "should", "into", "more", "most",
-    "such", "some", "than", "then", "them", "these", "those", "only",
-    "other", "about", "over", "after", "before", "between", "through",
-    "does", "did", "will", "each", "what", "there", "here", "very",
-}
-
-
-def extract_claim_keywords(claim_text):
-    """Extract distinctive content words from a claim."""
-    words = re.findall(r"[a-zA-Z]+", claim_text.lower())
-    keywords = [w for w in words if w not in STOP_WORDS and len(w) > 3]
-    return list(set(keywords))
-
-
-def keyword_overlap_score(claim_keywords, source_snippet):
-    """Score 0-2 based on keyword overlap between claim and source.
-
-    Returns (score, list_of_matched_keywords).
-    """
-    if not claim_keywords:
-        return 1, []  # No keywords to check = medium risk
-    snippet_lower = source_snippet.lower()
-    matched = [kw for kw in claim_keywords if kw in snippet_lower]
-    ratio = len(matched) / len(claim_keywords)
-    if ratio >= 0.3:
-        score = 0  # Low risk: good overlap
-    elif ratio >= 0.1:
-        score = 1  # Medium risk: some overlap
-    else:
-        score = 2  # High risk: poor overlap
-    return score, matched
-
-
-def classify_claim_type(claim_text):
-    """Classify claim specificity: 0=existence, 1=characterization, 2=specific factual."""
-    claim_lower = claim_text.lower()
-    specific_markers = [
-        "says", "states", "writes", "notes", "records",
-        "describes", "explicitly", "quotes", "tells us",
-        "reports", "declares", "asserts", "confirms",
-    ]
-    existence_markers = [
-        "mentions", "refers to", "cites", "discusses",
-        "appears in", "found in", "attested in",
-    ]
-    if any(m in claim_lower for m in specific_markers):
-        return 2  # specific factual claim
-    elif any(m in claim_lower for m in existence_markers):
-        return 0  # existence claim
-    else:
-        return 1  # characterization (default)
-
-
-def snippet_quality_score(citation, ref):
-    """Score 0-2 based on snippet quality.
-
-    0 = snippet contains the cited section number
-    1 = snippet found but may not be exact
-    2 = snippet matched wrong file or not found at all
-    """
-    if not citation.snippet:
-        return 2
-
-    snippet = citation.snippet
-    passage = citation.passage
-
-    # Check if snippet filename matches expected book
-    if ref and ref.get("book"):
-        book_num = ref["book"]
-        # Snippet starts with [filename]
-        if f"book{book_num}" in snippet[:50]:
-            # Right file — check if section number appears
-            section = ref.get("section")
-            if section and str(section) in snippet:
-                return 0  # Exact match
-            return 1  # Right file, section unclear
-        else:
-            return 2  # Wrong file
-
-    # No book number — check if the passage numbers appear
-    if passage:
-        nums = re.findall(r"\d+", passage)
-        if nums and any(n in snippet for n in nums):
-            return 0
-    return 1
-
-
-def compute_risk_score(citation, ref):
-    """Compute total risk score (0-8) and risk level for a citation."""
-    claim_type = classify_claim_type(citation.claim_text)
-    kw_score, matched = keyword_overlap_score(
-        citation.claim_keywords, citation.snippet
-    )
-    sq_score = snippet_quality_score(citation, ref)
-
-    # Source file match: check if passage was found in expected book file
-    source_match = 0  # default low risk
-    if ref and ref.get("book"):
-        book_num = ref["book"]
-        if citation.snippet:
-            if f"book{book_num}" not in citation.snippet[:50]:
-                source_match = 2  # wrong file
-            # If found via the right file, keep 0
-
-    total = claim_type + kw_score + sq_score + source_match
-    if total <= 2:
-        level = "LOW"
-    elif total <= 5:
-        level = "MEDIUM"
-    else:
-        level = "HIGH"
-
-    breakdown = {
-        "claim_type": claim_type,
-        "keyword_overlap": kw_score,
-        "snippet_quality": sq_score,
-        "source_file_match": source_match,
-    }
-
-    return total, level, breakdown, matched
-
-
 def verify_citation(citation, deep=False):
     """Verify a single citation against downloaded sources."""
     key = citation.key
@@ -653,128 +529,6 @@ def generate_report(citations, output_path):
     return report
 
 
-def run_deep_analysis(citations):
-    """Run deep hallucination analysis on FOUND citations.
-
-    Extracts claims, computes keywords and risk scores.
-    """
-    found = [c for c in citations if c.status == "FOUND"]
-    for c in found:
-        tex_path = PROJECT_ROOT / c.file
-        c.claim_text = extract_claim(tex_path, c.line_num)
-        c.claim_keywords = extract_claim_keywords(c.claim_text)
-        ref = normalize_ref(c.passage) if c.passage else {}
-        total, level, breakdown, matched = compute_risk_score(c, ref)
-        c.risk_score = total
-        c.risk_level = level
-        c.risk_breakdown = breakdown
-        c.matched_keywords = matched
-
-
-def generate_deep_report(citations, output_path):
-    """Generate a hallucination risk report for FOUND citations."""
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    found = [c for c in citations if c.status == "FOUND"]
-    high = [c for c in found if c.risk_level == "HIGH"]
-    medium = [c for c in found if c.risk_level == "MEDIUM"]
-    low = [c for c in found if c.risk_level == "LOW"]
-
-    lines = [
-        "# Hallucination Risk Report",
-        "",
-        "Generated by `verify_citations.py --deep`",
-        "",
-        "This report compares what the manuscript *claims* about each source",
-        "against what the source *actually says*, and flags potential mismatches.",
-        "",
-        "## Summary",
-        "",
-        f"| Risk Level | Count |",
-        f"|------------|-------|",
-        f"| HIGH       | {len(high)} |",
-        f"| MEDIUM     | {len(medium)} |",
-        f"| LOW        | {len(low)} |",
-        f"| **TOTAL**  | **{len(found)}** |",
-        "",
-        "### Scoring",
-        "",
-        "Each FOUND citation is scored 0-8 across four factors:",
-        "",
-        "| Factor | 0 (Low Risk) | 1 (Medium) | 2 (High Risk) |",
-        "|--------|-------------|------------|----------------|",
-        "| Claim type | Existence | Characterization | Specific factual |",
-        "| Keyword overlap | 30%+ match | 10-30% match | <10% match |",
-        "| Snippet quality | Section number in snippet | Nearby match | Wrong location |",
-        "| Source file match | Correct book file | N/A | Wrong book file |",
-        "",
-        "Total: 0-2 = LOW, 3-5 = MEDIUM, 6-8 = HIGH",
-        "",
-    ]
-
-    def _format_citation_block(c):
-        """Format a single citation for the report."""
-        passage_str = f"[{c.passage}]" if c.passage else ""
-        block = [
-            f"### `\\cite{passage_str}{{{c.key}}}` — {c.file}:{c.line_num} (score {c.risk_score})",
-            "",
-            f"**Risk breakdown:** "
-            f"claim_type={c.risk_breakdown.get('claim_type', '?')}, "
-            f"keyword_overlap={c.risk_breakdown.get('keyword_overlap', '?')}, "
-            f"snippet_quality={c.risk_breakdown.get('snippet_quality', '?')}, "
-            f"source_file={c.risk_breakdown.get('source_file_match', '?')}",
-            "",
-            f"**Manuscript claim:**",
-            f"```",
-            c.claim_text[:500] if c.claim_text else "(no claim extracted)",
-            f"```",
-            "",
-            f"**Keywords ({len(c.claim_keywords)}):** {', '.join(c.claim_keywords[:20])}",
-            f"**Matched ({len(c.matched_keywords)}):** {', '.join(c.matched_keywords[:20]) if c.matched_keywords else 'NONE'}",
-            "",
-            f"**Source snippet:**",
-            f"```",
-            c.snippet[:2000] if c.snippet else "(no snippet)",
-            f"```",
-            "",
-        ]
-        return block
-
-    # HIGH RISK section
-    lines.append("## HIGH RISK (score 6-8) — Manual verification required")
-    lines.append("")
-    if high:
-        for c in sorted(high, key=lambda x: -x.risk_score):
-            lines.extend(_format_citation_block(c))
-    else:
-        lines.append("*No high-risk citations found.*")
-        lines.append("")
-
-    # MEDIUM RISK section
-    lines.append("## MEDIUM RISK (score 3-5) — Spot-check recommended")
-    lines.append("")
-    if medium:
-        for c in sorted(medium, key=lambda x: -x.risk_score):
-            lines.extend(_format_citation_block(c))
-    else:
-        lines.append("*No medium-risk citations found.*")
-        lines.append("")
-
-    # LOW RISK section
-    lines.append("## LOW RISK (score 0-2) — Likely accurate")
-    lines.append("")
-    if low:
-        for c in sorted(low, key=lambda x: -x.risk_score):
-            lines.extend(_format_citation_block(c))
-    else:
-        lines.append("*No low-risk citations found.*")
-        lines.append("")
-
-    report = "\n".join(lines)
-    output_path.write_text(report, encoding="utf-8")
-    return report
-
-
 def main():
     parser = argparse.ArgumentParser(
         description="Verify citations in chapter files against downloaded source texts."
@@ -793,11 +547,6 @@ def main():
         "--summary",
         action="store_true",
         help="Print summary only, skip detailed report",
-    )
-    parser.add_argument(
-        "--deep",
-        action="store_true",
-        help="Run deep hallucination analysis with extended snippets and risk scoring",
     )
     args = parser.parse_args()
 
@@ -866,23 +615,6 @@ def main():
     if not args.summary:
         report = generate_report(all_citations, REPORT_PATH)
         print(f"\nReport written to: {REPORT_PATH}")
-
-    # Deep hallucination analysis
-    if args.deep:
-        print(f"\n{'=' * 70}")
-        print("Deep Hallucination Analysis")
-        print("=" * 70)
-        run_deep_analysis(all_citations)
-        found = [c for c in all_citations if c.status == "FOUND"]
-        high = [c for c in found if c.risk_level == "HIGH"]
-        medium = [c for c in found if c.risk_level == "MEDIUM"]
-        low = [c for c in found if c.risk_level == "LOW"]
-        print(f"  Analyzed {len(found)} FOUND citations")
-        print(f"  HIGH risk:   {len(high)}")
-        print(f"  MEDIUM risk: {len(medium)}")
-        print(f"  LOW risk:    {len(low)}")
-        generate_deep_report(all_citations, DEEP_REPORT_PATH)
-        print(f"\nHallucination report written to: {DEEP_REPORT_PATH}")
 
     # Return exit code based on results
     not_found = len(by_status.get("NOT_FOUND", []))
