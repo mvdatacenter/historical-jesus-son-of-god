@@ -26,6 +26,12 @@ except ImportError:
     print("Missing dependencies. Run: poetry add requests beautifulsoup4")
     sys.exit(1)
 
+try:
+    import pymupdf  # PDF text extraction (optional)
+    HAS_PYMUPDF = True
+except ImportError:
+    HAS_PYMUPDF = False
+
 # Add scripts dir to path for imports
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from source_registry import (
@@ -158,6 +164,23 @@ def clean_html_to_text(html_content, url=""):
                 tag.decompose()
             soup = body
 
+    # For Wikisource — main content in div.mw-parser-output
+    elif "wikisource.org" in url:
+        content = soup.find("div", class_="mw-parser-output")
+        if not content:
+            body = soup.find("body")
+            if body:
+                for tag in body(["nav", "header", "footer", "script", "style"]):
+                    tag.decompose()
+                content = body
+        if content:
+            # Remove edit links, navigation boxes, etc.
+            for tag in content.find_all("span", class_="mw-editsection"):
+                tag.decompose()
+            for tag in content.find_all("div", class_=re.compile(r"nav|catlinks|mw-jump")):
+                tag.decompose()
+            soup = content
+
     # Get text and clean up
     text = soup.get_text(separator="\n")
 
@@ -199,6 +222,11 @@ def download_url(url, dest_path, dry_run=False):
 
     # Plain text URLs (e.g., archive.org DjVu text) — save directly
     is_plain_text = url.endswith(".txt")
+    is_pdf = url.lower().endswith(".pdf")
+
+    if is_pdf and not HAS_PYMUPDF:
+        print("  SKIP (PDF): pymupdf not installed. Run: poetry add pymupdf")
+        return False
 
     for attempt in range(1, MAX_RETRIES + 1):
         try:
@@ -211,7 +239,12 @@ def download_url(url, dest_path, dry_run=False):
             resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
             resp.raise_for_status()
 
-            if is_plain_text:
+            if is_pdf:
+                doc = pymupdf.open(stream=resp.content, filetype="pdf")
+                pages = [page.get_text() for page in doc]
+                doc.close()
+                text = "\n\n".join(pages).strip()
+            elif is_plain_text:
                 text = resp.text.strip()
             else:
                 text = clean_html_to_text(resp.text, url)
@@ -315,8 +348,8 @@ def main():
             sys.exit(1)
 
         info = SOURCES[args.key]
-        if info["category"] == MODERN:
-            print(f"\n'{args.key}' is a modern (copyrighted) work.")
+        if info["category"] == MODERN and not info.get("urls"):
+            print(f"\n'{args.key}' is a modern (copyrighted) work with no download URL.")
             print(f"  Obtain: {info.get('obtain', 'See sources/modern/README.md')}")
             return
 
