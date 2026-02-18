@@ -1595,6 +1595,73 @@ SOURCES = {
         },
         "note": "Free PDF from Oriental Institute. OIP 112.",
     },
+
+    "harnack:mission": {
+        "title": "The Mission and Expansion of Christianity in the First Three Centuries",
+        "author": "Adolf von Harnack",
+        "category": MODERN,
+        "year": 1908,
+        "publisher": "Williams & Norgate (2nd English ed.)",
+        "urls": {
+            "vol1": "https://archive.org/download/missionexpansion01harn/missionexpansion01harn_djvu.txt",
+            "vol2": "https://archive.org/download/missionexpansion02harn/missionexpansion02harn_djvu.txt",
+        },
+        "note": "Public domain. James Moffatt translation. Archive.org DjVu text.",
+    },
+
+    "harnack:marcion": {
+        "title": "Marcion: The Gospel of the Alien God",
+        "author": "Adolf von Harnack",
+        "category": MODERN,
+        "year": 1924,
+        "publisher": "J. C. Hinrichs (German); English trans. Labyrinth Press, 1990",
+        "obtain": "Academic libraries. English translation: John E. Steely and Lyle D. Bierma (1990). ISBN 978-0-939464-16-0.",
+    },
+
+    "stark:rise": {
+        "title": "The Rise of Christianity: A Sociologist Reconsiders History",
+        "author": "Rodney Stark",
+        "category": MODERN,
+        "year": 1996,
+        "publisher": "Princeton University Press",
+        "obtain": "Widely available. ISBN 978-0-06-067701-5. Libraries, bookstores.",
+    },
+
+    "friesen:imperial": {
+        "title": "Imperial Cults and the Apocalypse of John: Reading Revelation in the Ruins",
+        "author": "Steven J. Friesen",
+        "category": MODERN,
+        "year": 2001,
+        "publisher": "Oxford University Press",
+        "obtain": "Academic libraries. ISBN 978-0-19-513153-4.",
+    },
+
+    "harland:associations": {
+        "title": "Associations, Synagogues, and Congregations: Claiming a Place in Ancient Mediterranean Society",
+        "author": "Philip A. Harland",
+        "category": MODERN,
+        "year": 2003,
+        "publisher": "Fortress Press",
+        "obtain": "Academic libraries. ISBN 978-0-8006-3609-6.",
+    },
+
+    "pelegbarkat:herodian": {
+        "title": "The Temple Mount Excavations in Jerusalem 1968-1978 Directed by Benjamin Mazar. Final Reports, Volume V: Herodian Architectural Decoration and King Herod's Royal Portico",
+        "author": "Orit Peleg-Barkat",
+        "category": MODERN,
+        "year": 2017,
+        "publisher": "Israel Exploration Society / Hebrew University",
+        "obtain": "Academic libraries. Qedem Monograph 57. Israel Exploration Society.",
+    },
+
+    "hirschfeld:ramathanadiv": {
+        "title": "Ramat Hanadiv Excavations: Final Report of the 1984-1998 Seasons",
+        "author": "Yizhar Hirschfeld",
+        "category": MODERN,
+        "year": 2000,
+        "publisher": "Israel Exploration Society",
+        "obtain": "Academic libraries. Published by IES, Jerusalem.",
+    },
 }
 
 

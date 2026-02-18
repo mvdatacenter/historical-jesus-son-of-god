@@ -346,6 +346,61 @@ EVALUATIONS = {
             "continuing political institutions."
         ),
     },
+    "harnack_mission": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Adolf von Harnack's 'The Mission and Expansion of Christianity in the First "
+            "Three Centuries' (1902; 2nd ed. 1908) is a foundational study of how Christianity spread "
+            "through the Roman Empire. The manuscript cites Harnack under 'Missionary Diffusion Model,' "
+            "which is precisely the framework this work established."
+        ),
+    },
+    "harnack_marcion": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Harnack's 'Marcion: Das Evangelium vom fremden Gott' (1924; English trans. 1990) "
+            "is the definitive scholarly treatment of Marcion of Sinope. The manuscript cites Harnack "
+            "for his argument about Marcion's role in canon formation."
+        ),
+    },
+    "stark_rise": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Rodney Stark's 'The Rise of Christianity' (1996) applies sociological methods "
+            "to early Christian growth. The manuscript cites Stark under 'Missionary Diffusion Model' "
+            "alongside Harnack."
+        ),
+    },
+    "friesen_imperial": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Steven Friesen's 'Imperial Cults and the Apocalypse of John' (2001, OUP) "
+            "examines imperial cult practices in Asia Minor. The manuscript cites Friesen under "
+            "'Imperial Cult Competition Model.'"
+        ),
+    },
+    "harland_associations": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Philip Harland's 'Associations, Synagogues, and Congregations' (2003, Fortress) "
+            "compares early Christian groups with Greco-Roman voluntary associations. The manuscript "
+            "cites Harland under 'Imperial Cult Competition Model.'"
+        ),
+    },
+    "pelegbarkat_herodian": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Orit Peleg-Barkat's excavation report (Qedem 57, 2017) documents Herodian "
+            "architectural decoration on the Temple Mount."
+        ),
+    },
+    "hirschfeld_ramathanadiv": {
+        "status": "confirmed",
+        "evaluation": (
+            "CONFIRMED. Yizhar Hirschfeld's 'Ramat Hanadiv Excavations' (2000, IES) documents "
+            "first-century Judean settlement patterns."
+        ),
+    },
 }
 
 
