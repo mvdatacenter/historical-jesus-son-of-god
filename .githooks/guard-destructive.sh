@@ -53,4 +53,17 @@ if echo "$COMMAND" | grep -qE '(^|\s)(kill|pkill|killall)\s'; then
     exit 2
 fi
 
+if echo "$COMMAND" | grep -qi 'CloudflaredTunnel' && \
+   echo "$COMMAND" | grep -qiE '(schtasks\s.*/End|schtasks\s.*/Delete|Stop-ScheduledTask|Unregister-ScheduledTask)'; then
+    EXPECTED=$(cat "$CHALLENGE_FILE" 2>/dev/null)
+    if [ -n "$EXPECTED" ] && echo "$COMMAND" | grep -q "^BYPASS=$EXPECTED "; then
+        rm -f "$CHALLENGE_FILE"
+        exit 0
+    fi
+    CHALLENGE=$((RANDOM % 9000 + 1000))
+    echo "$CHALLENGE" > "$CHALLENGE_FILE"
+    echo "BLOCKED: Stopping the Cloudflare tunnel kills all remote access (SSH + RDP). Read CLAUDE.md." >&2
+    exit 2
+fi
+
 exit 0

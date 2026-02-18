@@ -18,6 +18,7 @@ openai = "^2.11.0"
 python-dotenv = "^1.2.1"
 requests = "^2.31"
 beautifulsoup4 = "^4.12"
+pymupdf = "^1.27.1"
 
 [tool.poetry.scripts]
 map = "map:main"

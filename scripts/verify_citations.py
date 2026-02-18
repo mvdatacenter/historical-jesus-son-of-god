@@ -256,6 +256,8 @@ def search_passage_in_text(text, passage, key, deep=False):
         ord_word = _ordinal(number)
         if ord_word:
             search_patterns.append(rf"{ord_word}\s+{keyword}")
+            # Also try "Fourth Chapter" (ordinal before Chapter, common in older translations)
+            search_patterns.append(rf"{ord_word}\s+Chapter")
         # Standalone number on its own line (e.g., Plutarch chapter "26")
         search_patterns.append(rf"^\s*{number}\s*$")
         search_patterns.append(rf"Chapter\s+{number}\b")
@@ -307,7 +309,40 @@ def search_passage_in_text(text, passage, key, deep=False):
                     snippet = snippet[:max_snippet] + "..."
                 return snippet
 
-    # Strategy 2: Broad keyword search for distinctive terms
+    # Strategy 2: Source-specific fingerprints for known difficult passages
+    # Used when standard section-number search fails (e.g., Stephanus/Bekker
+    # pagination not embedded in plain-text downloads, or unusual numbering).
+    fingerprints = {
+        ("pliny:letters", 96): [r"Cognitionibus", r"Christianis\s+interfui"],
+        # Gospel of Peter — verse numbers are inline, "24 he did" near "Garden of Joseph"
+        ("gospelpeter", 24): [r"Garden of Joseph"],
+        # Plato Statesman 275b-c — Stephanus pagination absent; shepherd passage
+        ("plato:statesman", 275): [r"God himself was their shepherd"],
+        # Plato Republic 514a-520a — Stephanus pagination absent; Cave allegory (Book VII)
+        ("plato:republic", 514): [r"underground den.*open towards the light",
+                                   r"BOOK VII.*enlightenment"],
+        # Aristotle Poetics 1453a — Bekker pagination absent; hamartia passage
+        ("aristotle:poetics", 1453): [r"error or frailty"],
+        # Euripides Bacchae 434-518 — line numbers not embedded; arrest scene
+        ("euripides:bacchae", 434): [r"bind me not.*reason addressing madness"],
+    }
+    fp_key = (key, section) if section else None
+    if fp_key and fp_key in fingerprints:
+        for fp_pattern in fingerprints[fp_key]:
+            for i, line in enumerate(lines):
+                if re.search(fp_pattern, line, re.IGNORECASE):
+                    if deep:
+                        start = max(0, i - 5)
+                        end = min(len(lines), i + 40)
+                    else:
+                        start = max(0, i - 2)
+                        end = min(len(lines), i + 5)
+                    snippet = "\n".join(lines[start:end])
+                    if len(snippet) > max_snippet:
+                        snippet = snippet[:max_snippet] + "..."
+                    return snippet
+
+    # Strategy 3: Broad keyword search for distinctive terms
     # e.g., for Josephus war 4.618, search for "Vespasian" near "618"
     if section and section > 100:
         # For large section numbers, just search for the number
@@ -497,11 +532,15 @@ def verify_citation(citation, deep=False):
 
     source_info = SOURCES[key]
 
-    # Modern works: just note it
+    # Modern works: check if downloaded text exists, otherwise mark as MODERN
     if source_info["category"] == MODERN:
-        citation.status = "MODERN"
-        citation.snippet = f"See sources/modern/README.md — {source_info.get('obtain', '')}"
-        return
+        ref = normalize_ref(citation.passage) if citation.passage else None
+        source_files = find_source_files(key, ref=ref)
+        if not source_files:
+            citation.status = "MODERN"
+            citation.snippet = f"See sources/modern/README.md — {source_info.get('obtain', '')}"
+            return
+        # Has downloaded text — fall through to normal verification
 
     # Find downloaded files (prioritize matching book file)
     ref = normalize_ref(citation.passage) if citation.passage else None

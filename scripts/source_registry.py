@@ -322,6 +322,354 @@ SOURCES = {
         "section_pattern": r"\b(\d+)\.\s",
     },
 
+    # --- Egyptian Primary Texts ---
+
+    "pyramidtexts": {
+        "title": "Pyramid Texts",
+        "author": "Ancient Egyptian",
+        "category": ANCIENT,
+        "translation": "Samuel A. B. Mercer (1952)",
+        "urls": {
+            "full": "https://archive.org/stream/pyramidtextsmercer/Pyramid%20Texts%20Mercer_djvu.txt",
+        },
+        "note": "Archive.org DjVu text of Mercer's complete translation. All utterances (1-759).",
+        "section_pattern": r"(?:Utterance\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "coffintexts": {
+        "title": "Coffin Texts",
+        "author": "Ancient Egyptian",
+        "category": ANCIENT,
+        "translation": "R. O. Faulkner (1973-1978)",
+        "urls": {
+            "vol1": "https://archive.org/stream/TheAncientEgyptianCoffin1/The%20ancient%20Egyptian%20coffin1_djvu.txt",
+            "vol3": "https://archive.org/stream/TheAncientEgyptianCoffin1/The_ancient_Egyptian%20coffin%20texts3_djvu.txt",
+        },
+        "note": "Archive.org DjVu text of Faulkner translation. Vol 1: Spells 1-354, Vol 3: Spells 788-1185. "
+                "Spells 80 and 335 in vol1, Spell 1130 in vol3.",
+        "section_pattern": r"(?:SPELL\s+\d+|Spell\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "bookofthedead": {
+        "title": "Book of the Dead",
+        "author": "Ancient Egyptian",
+        "category": ANCIENT,
+        "translation": "P. Le Page Renouf and E. Naville (1904)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/69566/69566-h/69566-h.htm",
+        },
+        "note": "Project Gutenberg. Complete Renouf-Naville translation. Chapters 1-186.",
+        "section_pattern": r"(?:Chapter\s+\d+|CHAPTER\s+\d+|Spell\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "shabaka:memphite": {
+        "title": "Memphite Theology (Shabaka Stone)",
+        "author": "Ancient Egyptian",
+        "category": ANCIENT,
+        "translation": "M. Lichtheim (Ancient Egyptian Literature, vol. 1, 1973)",
+        "urls": {
+            "full": "https://www.attalus.org/egypt/shabaka_stone.html",
+        },
+        "note": "BM EA 498. Lichtheim translation on attalus.org. Creation by divine speech (Ptah).",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "hymn:aten": {
+        "title": "Great Hymn to the Aten",
+        "author": "Ancient Egyptian (attributed to Akhenaten)",
+        "category": ANCIENT,
+        "translation": "John A. Wilson / Lichtheim",
+        "urls": {
+            "full": "https://en.wikisource.org/wiki/Great_Hymn_to_Aten",
+        },
+        "note": "Wikisource. Amarna tomb of Ay, c. 1350 BC.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    # --- Additional Ancient Sources ---
+
+    "livy:aburbe": {
+        "title": "Ab Urbe Condita (From the Founding of the City)",
+        "author": "Titus Livius (Livy)",
+        "category": ANCIENT,
+        "translation": "Rev. Canon Roberts (1905)",
+        "urls": {
+            "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0026",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "suetonius:caesars": {
+        "title": "Lives of the Caesars (De Vita Caesarum)",
+        "author": "Gaius Suetonius Tranquillus",
+        "category": ANCIENT,
+        "translation": "J. C. Rolfe (Loeb, 1914)",
+        "urls": {
+            "julius": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius*.html",
+            "augustus": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "achillestatius:leucippe": {
+        "title": "Leucippe and Clitophon",
+        "author": "Achilles Tatius",
+        "category": ANCIENT,
+        "translation": "S. Gaselee (Loeb, 1917)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/58476/58476-h/58476-h.htm",
+        },
+        "note": "Project Gutenberg. Greek novel with burial/resurrection themes.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    # --- Greek Classical Literature ---
+
+    "homer:iliad": {
+        "title": "Iliad",
+        "author": "Homer",
+        "category": ANCIENT,
+        "translation": "Samuel Butler (1898)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/6150/6150-h/6150-h.htm",
+        },
+        "note": "Project Gutenberg. Butler prose translation. All 24 books.",
+        "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\.\s)",
+    },
+
+    "homer:odyssey": {
+        "title": "Odyssey",
+        "author": "Homer",
+        "category": ANCIENT,
+        "translation": "Samuel Butler (1900)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/1727/1727-h/1727-h.htm",
+        },
+        "note": "Project Gutenberg. Butler prose translation. All 24 books.",
+        "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\.\s)",
+    },
+
+    "aeschylus:prometheus": {
+        "title": "Prometheus Bound",
+        "author": "Aeschylus",
+        "category": ANCIENT,
+        "translation": "E. D. A. Morshead (1908)",
+        "urls": {
+            "full": "http://classics.mit.edu/Aeschylus/prometheus.html",
+        },
+        "note": "MIT Internet Classics Archive.",
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "aeschylus:persians": {
+        "title": "The Persians",
+        "author": "Aeschylus",
+        "category": ANCIENT,
+        "translation": "Robert Potter (1882)",
+        "urls": {
+            "full": "http://classics.mit.edu/Aeschylus/persians.html",
+        },
+        "note": "MIT Internet Classics Archive.",
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "euripides:bacchae": {
+        "title": "The Bacchae",
+        "author": "Euripides",
+        "category": ANCIENT,
+        "translation": "E. P. Coleridge (1891)",
+        "urls": {
+            "full": "http://classics.mit.edu/Euripides/bacchan.html",
+        },
+        "note": "MIT Internet Classics Archive.",
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "plato:apology": {
+        "title": "Apology",
+        "author": "Plato",
+        "category": ANCIENT,
+        "translation": "Benjamin Jowett (1871)",
+        "urls": {
+            "full": "http://classics.mit.edu/Plato/apology.html",
+        },
+        "note": "MIT Internet Classics Archive.",
+        "section_pattern": r"\b(\d+)[a-e]?\b",
+    },
+
+    "plato:republic": {
+        "title": "Republic",
+        "author": "Plato",
+        "category": ANCIENT,
+        "translation": "Benjamin Jowett (1871)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/1497/1497-h/1497-h.htm",
+        },
+        "note": "Project Gutenberg. Jowett translation. All 10 books. Citation [514a-520a] = Book VII (Cave allegory).",
+        "section_pattern": r"\b(\d+)[a-e]?\b",
+    },
+
+    "plato:statesman": {
+        "title": "Statesman",
+        "author": "Plato",
+        "category": ANCIENT,
+        "translation": "Benjamin Jowett (1871)",
+        "urls": {
+            "full": "http://classics.mit.edu/Plato/stateman.html",
+        },
+        "note": "MIT Internet Classics Archive. Note: MIT spells it 'stateman'.",
+        "section_pattern": r"\b(\d+)[a-e]?\b",
+    },
+
+    "aristotle:poetics": {
+        "title": "Poetics",
+        "author": "Aristotle",
+        "category": ANCIENT,
+        "translation": "S. H. Butcher (1895)",
+        "urls": {
+            "part1": "http://classics.mit.edu/Aristotle/poetics.1.1.html",
+            "part2": "http://classics.mit.edu/Aristotle/poetics.2.2.html",
+            "part3": "http://classics.mit.edu/Aristotle/poetics.3.3.html",
+        },
+        "note": "MIT Internet Classics Archive.",
+        "section_pattern": r"\b(\d+)[a-b]?\b",
+    },
+
+    "aristotle:ethics": {
+        "title": "Nicomachean Ethics",
+        "author": "Aristotle",
+        "category": ANCIENT,
+        "translation": "W. D. Ross (1908)",
+        "urls": {
+            "book1": "http://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+            "book2": "http://classics.mit.edu/Aristotle/nicomachaen.2.ii.html",
+            "book3": "http://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
+            "book4": "http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html",
+            "book5": "http://classics.mit.edu/Aristotle/nicomachaen.5.v.html",
+            "book6": "http://classics.mit.edu/Aristotle/nicomachaen.6.vi.html",
+            "book7": "http://classics.mit.edu/Aristotle/nicomachaen.7.vii.html",
+            "book8": "http://classics.mit.edu/Aristotle/nicomachaen.8.viii.html",
+            "book9": "http://classics.mit.edu/Aristotle/nicomachaen.9.ix.html",
+            "book10": "http://classics.mit.edu/Aristotle/nicomachaen.10.x.html",
+        },
+        "note": "MIT Internet Classics Archive. All 10 books on single page.",
+        "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\b)",
+    },
+
+    "aratus:phaenomena": {
+        "title": "Phaenomena",
+        "author": "Aratus",
+        "category": ANCIENT,
+        "translation": "G. R. Mair (Loeb, 1921)",
+        "urls": {
+            "full": "https://www.attalus.org/old/aratus1.html",
+        },
+        "note": "Attalus.org. Verse astronomical poem. Line 5 cited in Acts 17:28.",
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "thucydides:peloponnesian": {
+        "title": "History of the Peloponnesian War",
+        "author": "Thucydides",
+        "category": ANCIENT,
+        "translation": "Richard Crawley (1874)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/7142/7142-h/7142-h.htm",
+        },
+        "note": "Project Gutenberg. Crawley translation. All 8 books.",
+        "section_pattern": r"(?:BOOK\s+[IVXLC]+|Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    # --- More Greco-Roman ---
+
+    "appian:romanhistory": {
+        "title": "Roman History (Civil Wars)",
+        "author": "Appian of Alexandria",
+        "category": ANCIENT,
+        "translation": "Horace White (Loeb, 1912-1913)",
+        "urls": {
+            "civilwars1": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/1*.html",
+            "civilwars2": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/2*.html",
+            "civilwars3": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/3*.html",
+            "civilwars4": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/4*.html",
+            "civilwars5": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Appian/Civil_Wars/5*.html",
+        },
+        "note": "LacusCurtius. White translation. Civil Wars books 1-5.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "diogenes:lives": {
+        "title": "Lives of Eminent Philosophers",
+        "author": "Diogenes Laertius",
+        "category": ANCIENT,
+        "translation": "C. D. Yonge (1853)",
+        "urls": {
+            "full": "https://www.gutenberg.org/files/57342/57342-h/57342-h.htm",
+        },
+        "note": "Project Gutenberg. All 10 books. Citation [7.134-147] = Book VII (Zeno/Stoics).",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "philostratus:apollonius": {
+        "title": "Life of Apollonius of Tyana",
+        "author": "Philostratus",
+        "category": ANCIENT,
+        "translation": "F. C. Conybeare (Loeb, 1912)",
+        "urls": {
+            "full": "https://archive.org/stream/PhilostratusLifeOfApolloniusOfTyanaConybeareLoebEnglishBooks18Combined/Philostratus,+Life+of+Apollonius+of+Tyana+(Conybeare+Loeb)+English+books+1-8+combined_djvu.txt",
+        },
+        "note": "Archive.org DjVu text. Conybeare translation. All 8 books.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    # --- Additional Philo ---
+
+    "philo:legatio": {
+        "title": "Legatio ad Gaium (Embassy to Gaius)",
+        "author": "Philo of Alexandria",
+        "category": ANCIENT,
+        "translation": "C. D. Yonge (1854-1890)",
+        "urls": {
+            "full": "https://www.earlyjewishwritings.com/text/philo/book40.html",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "philo:contempl": {
+        "title": "De Vita Contemplativa (On the Contemplative Life)",
+        "author": "Philo of Alexandria",
+        "category": ANCIENT,
+        "translation": "C. D. Yonge (1854-1890)",
+        "urls": {
+            "full": "https://www.earlyjewishwritings.com/text/philo/book34.html",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "philo:vimoysis": {
+        "title": "De Vita Moysis (Life of Moses)",
+        "author": "Philo of Alexandria",
+        "category": ANCIENT,
+        "translation": "C. D. Yonge (1854-1890)",
+        "urls": {
+            "book1": "https://www.earlyjewishwritings.com/text/philo/book25.html",
+            "book2": "https://www.earlyjewishwritings.com/text/philo/book26.html",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "gospelhebrews": {
+        "title": "Gospel of the Hebrews (Fragments)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "M. R. James, Apocryphal New Testament (1924) / Schneemelcher-Wilson",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/gospelhebrews-mrjames.html",
+        },
+        "note": "Fragments preserved in Jerome, Origen, Clement. ECW has James translation.",
+        "section_pattern": r"(?:Fragment\s+\d+|\b(\d+)\.\s)",
+    },
+
     # --- Philo of Alexandria (8 works) ---
 
     "philo:specleg": {
@@ -723,9 +1071,10 @@ SOURCES = {
         "category": PATRISTIC,
         "translation": "Frank Williams (Brill, 1987/2009)",
         "urls": {
-            "full": "https://archive.org/stream/PanarionEpiphaniusCOMPLETE_201905/Panarion%20Epiphanius%20COMPLETE_djvu.txt",
+            "full": "https://gnosis.study/library/%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/ENG/Epiphanius%20of%20Salamis%20-%20The%20Panarion,%20Book%20I%20(Sects%201-46).pdf",
         },
-        "note": "Full English translation from Archive.org DjVu text. Brill edition is copyrighted but this OCR text is available.",
+        "note": "Williams/Brill 2009 2nd edition, Book I (Sects 1-46). Section 42 = Marcion. "
+                "PDF from gnosis.study, extracted to text via pymupdf.",
         "section_pattern": r"(?:Heresy\s+\d+|\b(\d+)\.\s)",
     },
 
@@ -804,6 +1153,152 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    # --- Additional Patristic & Apocryphal Sources ---
+
+    "barnabas:epistle": {
+        "title": "Epistle of Barnabas",
+        "author": "Pseudo-Barnabas",
+        "category": PATRISTIC,
+        "translation": "J. B. Lightfoot (1891)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/barnabas-lightfoot.html",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "socrates:he": {
+        "title": "Ecclesiastical History",
+        "author": "Socrates Scholasticus",
+        "category": PATRISTIC,
+        "translation": "A. C. Zenos (NPNF Ser. 2, Vol. 2, 1890)",
+        "urls": {
+            "full": "https://archive.org/stream/selectlibraryofn02scha/selectlibraryofn02scha_djvu.txt",
+        },
+        "note": "Archive.org DjVu text of NPNF Ser. 2, Vol. 2. Contains Socrates + Sozomen.",
+        "section_pattern": r"(?:Book\s+[IVXLC]+|Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "hippolytus:daniel": {
+        "title": "Commentary on Daniel",
+        "author": "Hippolytus of Rome",
+        "category": PATRISTIC,
+        "translation": "S. D. F. Salmond (ANF Vol. 5, 1886)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0520.htm",
+        },
+        "note": "ANF has fragments/scholia on Daniel. Full commentary only in T. C. Schmidt (2017, copyrighted).",
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "gospelpeter": {
+        "title": "Gospel of Peter (Fragment)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "M. R. James, Apocryphal New Testament (1924)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/gospelpeter-mrjames.html",
+        },
+        "note": "Akhmim fragment. Passion and resurrection narrative.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "actascillitanorum": {
+        "title": "Acts of the Scillitan Martyrs",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "J. A. Robinson (1891)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/scillitan.html",
+        },
+        "note": "Earliest dated document of the Latin church (180 AD).",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "fourezdras": {
+        "title": "4 Ezra (2 Esdras)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "KJV Apocrypha / R. H. Charles (1913)",
+        "urls": {
+            "full": "https://www.pseudepigrapha.com/apocrypha_ot/2esdr.htm",
+        },
+        "note": "Jewish apocalypse, late 1st century AD. Pseudepigrapha.com.",
+        "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "sibyllineoracles": {
+        "title": "Sibylline Oracles",
+        "author": "Various (Jewish and Christian)",
+        "category": PATRISTIC,
+        "translation": "Milton S. Terry (1890)",
+        "urls": {
+            "full": "https://archive.org/stream/sibyllineoracle00terrgoog/sibyllineoracle00terrgoog_djvu.txt",
+        },
+        "note": "Archive.org DjVu text. Terry verse translation. All 14 books.",
+        "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\b)",
+    },
+
+    "ezekieldramatist:exagoge": {
+        "title": "Exagoge (Exodus drama fragments)",
+        "author": "Ezekiel the Tragedian",
+        "category": ANCIENT,
+        "translation": "E. H. Gifford (1903), via Eusebius Praeparatio Evangelica 9.28-29",
+        "urls": {
+            "full": "https://www.tertullian.org/fathers/eusebius_pe_09_book9.htm",
+        },
+        "note": "2nd century BC Jewish-Greek tragedy. Fragments preserved in Eusebius PE 9.28-29. "
+                "Gifford 1903 translation (public domain).",
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    # --- Patristic sources with no free online translation ---
+
+    "origen:homezek": {
+        "title": "Homilies on Ezekiel",
+        "author": "Origen of Alexandria",
+        "category": PATRISTIC,
+        "translation": "Mischa Hooker / Roger Pearse (2014, freely shared)",
+        "urls": {
+            "full": "https://archive.org/download/OrigenHomiliesOnEzekielEdHooker2014/Origen-Homilies_on_Ezekiel-ed_Hooker-2014_djvu.txt",
+        },
+        "note": "Hooker/Pearse 2014 edition, 'enjoy, copy, circulate'. Archive.org DjVu text.",
+    },
+
+    "origen:homluke": {
+        "title": "Homilies on Luke",
+        "author": "Origen of Alexandria",
+        "category": PATRISTIC,
+        "translation": "Joseph T. Lienhard (FC 94, 1996)",
+        "urls": {
+            "full": "https://archive.org/download/the-fathers-of-the-church-a-new-translation-147-volumes/"
+                    "The%20Fathers%20of%20the%20Church%2C%20A%20New%20Translation%2C%20Volume%20094%20"
+                    "Homilies%20on%20Luke%20-%20Fragments%20on%20Luke%20-%20Origen_djvu.txt",
+        },
+        "note": "FC vol. 94. Archive.org community collection DjVu text (freely downloadable).",
+    },
+
+    "jerome:matthew": {
+        "title": "Commentary on Matthew",
+        "author": "Jerome (Hieronymus)",
+        "category": PATRISTIC,
+        "translation": "Thomas P. Scheck (FC 117, 2008)",
+        "urls": {
+            "full": "https://archive.org/download/commentary-on-matthew-st-jerome/Commentary%20on%20Matthew%20-%20St%20Jerome_djvu.txt",
+        },
+        "note": "Archive.org community text upload (freely downloadable). Scheck/CUA Press 2008.",
+    },
+
+    "liberpontificalis": {
+        "title": "Liber Pontificalis (Book of the Popes)",
+        "author": "Various",
+        "category": PATRISTIC,
+        "translation": "Louise Ropes Loomis (Columbia UP, 1916)",
+        "urls": {
+            "full": "https://archive.org/stream/bookofpopesliber00loom/bookofpopesliber00loom_djvu.txt",
+        },
+        "note": "Public domain. Loomis 1916 translation covers through Gregory I (590-604 CE).",
+    },
+
     # =========================================================================
     #  MODERN SCHOLARSHIP — Instructions only (copyrighted)
     # =========================================================================
@@ -832,7 +1327,10 @@ SOURCES = {
         "category": MODERN,
         "year": 2006,
         "publisher": "Simon & Schuster",
-        "obtain": "Widely available. ISBN 978-0-7432-8723-4. Libraries, bookstores, Kindle.",
+        "urls": {
+            "full": "https://archive.org/download/the-jesus-dynasty-james-d.-tabor_202301/"
+                    "The%20Jesus%20Dynasty%20%28James%20D.%20Tabor%29_djvu.txt",
+        },
     },
 
     "eisenman:james": {
@@ -850,7 +1348,10 @@ SOURCES = {
         "category": MODERN,
         "year": 1973,
         "publisher": "Ocean Books",
-        "obtain": "Used bookstores. Out of print. Internet Archive borrowing.",
+        "urls": {
+            "full": "https://archive.org/download/revolution-in-judaea-jesus-hyam-maccoby/"
+                    "Revolution%20in%20Judaea%20-%20Jesus%20%28Hyam%20Maccoby%29_djvu.txt",
+        },
     },
 
     "thiering:jesusman": {
@@ -877,7 +1378,9 @@ SOURCES = {
         "category": MODERN,
         "year": 1982,
         "publisher": "Jonathan Cape",
-        "obtain": "Widely available. ISBN 978-0-09-968241-8. Libraries, bookstores, Kindle.",
+        "urls": {
+            "full": "https://archive.org/download/HolyBloodholyGrail/HolyBloodholyGrail_djvu.txt",
+        },
     },
 
     "park:ekklesia": {
@@ -904,7 +1407,10 @@ SOURCES = {
         "category": MODERN,
         "year": 2003,
         "publisher": "Mohr Siebeck",
-        "obtain": "Academic libraries. ISBN 978-3-16-148169-4. Mohr Siebeck website.",
+        "urls": {
+            "full": "https://library.oapen.org/bitstream/handle/20.500.12657/63329/external_content.pdf",
+        },
+        "note": "Open Access via OAPEN (CC BY-NC-ND 4.0).",
     },
 
     "bauckham:eyewitnesses": {
@@ -967,7 +1473,10 @@ SOURCES = {
         "category": MODERN,
         "year": 1993,
         "publisher": "Penguin",
-        "obtain": "Widely available. ISBN 978-0-14-014499-4. Libraries, bookstores, Kindle.",
+        "urls": {
+            "full": "https://archive.org/download/historical-figure-of-jesus-e.-p.-sanders/"
+                    "Historical%20Figure%20of%20Jesus%20%28E.P.%20Sanders%29_djvu.txt",
+        },
     },
 
     "vermes:jesus": {
@@ -976,7 +1485,10 @@ SOURCES = {
         "category": MODERN,
         "year": 1973,
         "publisher": "Collins",
-        "obtain": "Libraries, used bookstores. ISBN 978-0-8006-1443-8.",
+        "urls": {
+            "full": "https://archive.org/download/jesus-the-jew-geza-vermes_202209/"
+                    "Jesus%20the%20Jew%20%28Geza%20Vermes%29_djvu.txt",
+        },
     },
 
     "dodd:fourthgospel": {
@@ -1021,7 +1533,10 @@ SOURCES = {
         "category": MODERN,
         "year": 2017,
         "publisher": "Harvard Theological Review (article)",
-        "obtain": "JSTOR, Cambridge Core, or Harvard Theological Review website.",
+        "urls": {
+            "full": "https://waynenorthey.com/wp-content/uploads/2022/08/Schrader-18.May_.2016.pdf",
+        },
+        "note": "Pre-print PDF. Published version: HTR 110:3 (2017).",
     },
 
     "deboer:magdalene": {
@@ -1039,7 +1554,10 @@ SOURCES = {
         "category": MODERN,
         "year": 2012,
         "publisher": "Cambridge University Press",
-        "obtain": "Libraries. ISBN 978-1-107-01330-1. CUP website.",
+        "urls": {
+            "full": "https://www.bethanyipcmm.org/wp-content/uploads/2020/09/"
+                    "Hillar-M-2012-From-Logos-to-Trinity-The-Evolution-from-Pythagoras-to-Tertullian-Cambridge.pdf",
+        },
     },
 
     "attridge:essays": {
@@ -1059,6 +1577,27 @@ SOURCES = {
         "publisher": "Harvard Theological Review 98(1), pp. 23-48",
         "obtain": "JSTOR, Cambridge Core. DOI: 10.1017/S0017816005000842.",
     },
+
+    "assmann:searchgod": {
+        "title": "The Search for God in Ancient Egypt",
+        "author": "Jan Assmann",
+        "category": MODERN,
+        "year": 2001,
+        "publisher": "Cornell University Press",
+        "obtain": "Libraries, bookstores. ISBN 978-0-8014-3786-1.",
+    },
+
+    "epigraphicsurvey:luxor": {
+        "title": "Reliefs and Inscriptions at Luxor Temple, Volume 1: The Festival Procession of Opet in the Colonnade Hall",
+        "author": "Epigraphic Survey (Oriental Institute)",
+        "category": MODERN,
+        "year": 1994,
+        "publisher": "Oriental Institute Publications (OIP 112)",
+        "urls": {
+            "full": "https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/oip112.pdf",
+        },
+        "note": "Free PDF from Oriental Institute. OIP 112.",
+    },
 }
 
 
@@ -1068,10 +1607,10 @@ def get_sources_by_category(category):
 
 
 def get_downloadable_sources():
-    """Return all sources that have URLs (ancient + patristic with urls)."""
+    """Return all sources that have URLs (any category with urls)."""
     return {
         k: v for k, v in SOURCES.items()
-        if v["category"] in (ANCIENT, PATRISTIC) and v.get("urls")
+        if v.get("urls")
     }
 
 
