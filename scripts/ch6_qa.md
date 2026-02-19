@@ -118,3 +118,25 @@ In that grammar, the fall of Jerusalem is absorbed into larger narrative that ha
 - [ ] Cite specific Theos Hypsistos inscriptions from Asia Minor, Levant, Cyprus
 
 ---
+
+## Anti-Roman uprisings in Asia Minor (line 180) — LIKELIHOOD ANALYSIS REQUIRED
+
+**Current text (line 180):**
+> "Meanwhile, in Ephesus, Sardis, and throughout Asia Minor, there were anti-Roman uprisings over taxation and forced conscription, recorded by Tacitus [2.81] and Dio Cassius [66.4]."
+
+**Problem:** Both citations are wrong.
+- **Tacitus Histories 2.81** describes provinces *peacefully swearing allegiance* to Vespasian during the Year of the Four Emperors, not anti-Roman uprisings.
+- **Cassius Dio 66.4** is from a *lost* section of the epitome — no surviving text exists to verify.
+- No other surviving ancient source specifically describes "anti-Roman uprisings over taxation and forced conscription" in Ephesus and Sardis during the 60s-70s AD.
+
+**What the sources actually say for Asia Minor in this period:**
+- Tacitus Histories 2.8: A False Nero pretender attracted followers across Asia (political instability, not taxation uprising)
+- Tacitus Histories 2.6: Eastern armies assessed their strength and resources (military restlessness, not popular uprising)
+- Tacitus Annals 2.47: Earthquake destroyed Sardis in 17 AD, Tiberius remitted taxes (unrelated period)
+- Cassius Dio 66.19.3b: Another False Nero "persuaded many from Asia to follow him" (pretender, not uprising)
+
+**The idea is plausible:** Asia Minor was economically stressed and politically unstable during the 60s AD. But the specific claim of organized "uprisings over taxation and forced conscription" in Ephesus and Sardis lacks primary source attestation.
+
+**Action needed:** Find actual primary evidence for unrest in Asia Minor during 66-73 AD, or rewrite the sentence to reflect what the sources actually say (political instability, False Nero movements, allegiance-switching during Roman civil war).
+
+---

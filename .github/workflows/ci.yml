@@ -64,6 +64,11 @@ jobs:
             --mathjax \
             -o ../../public/pl/index.html
 
+      # --- Copy citation review dashboard to public ---
+      - name: Copy citation review to public
+        run: |
+          cp sources/citation_review.html public/citations.html || true
+
       # --- Make PDFs available to downstream jobs ---
       - name: Upload PDF artifacts
         uses: actions/upload-artifact@v4
