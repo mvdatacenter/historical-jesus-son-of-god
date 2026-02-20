@@ -64,3 +64,14 @@ All using same lexicon as political hand-over to state authorities.
 After the "Collective Sin and Kingdom Restoration in Apocalyptic Theology" subsection (around line 741), possibly as new subsection titled "Family Betrayal as Rebellion Language" or integrated into existing text.
 
 ---
+
+## Fifth-century Christian epitaph (line 103-107) — NEEDS SOURCE
+
+**The text claims:**
+"A Christian epitaph from the fifth century prays: 'May the ruler of Olympus' height / Give rest to these members with the noble sign of the cross, / proclaiming an heir of Christ.'"
+
+**Problem:** No source, inscription corpus number, or location given. Extensive search across Greek Anthology (Book 1: Christian Epigrams), Kaibel *Epigrammata Graeca*, IGUR, ICG, Peek GVI, PHI Greek Inscriptions, and Google Books found no match. The text could be from a specialized collection of late antique Christian epigraphy not indexed online, or it could be a ChatGPT fabrication.
+
+**Action needed:** User should provide the source for this inscription, or it should be removed/replaced with a verifiable example of syncretic pagan-Christian language in late antiquity.
+
+---
