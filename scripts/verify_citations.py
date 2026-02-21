@@ -548,6 +548,11 @@ def main():
         action="store_true",
         help="Print summary only, skip detailed report",
     )
+    parser.add_argument(
+        "--deep",
+        action="store_true",
+        help="Run deep hallucination analysis with extended snippets and risk scoring",
+    )
     args = parser.parse_args()
 
     # Find chapter files
