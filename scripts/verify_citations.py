@@ -11,6 +11,7 @@ Usage:
     poetry run python scripts/verify_citations.py --chapter 4        # Chapter 4 only
     poetry run python scripts/verify_citations.py --key josephus:war # Single source
     poetry run python scripts/verify_citations.py --summary          # Summary only
+    poetry run python scripts/verify_citations.py --review           # Human review report
 """
 
 import argparse
@@ -46,7 +47,7 @@ class Citation:
     key: str
     passage: str  # "" if no passage specified
     context: str  # surrounding text from the .tex file
-    status: str = "PENDING"  # FOUND / NOT_FOUND / NO_SOURCE / MODERN / NO_PASSAGE
+    status: str = "PENDING"  # LOCATED / NOT_FOUND / NO_SOURCE / MODERN / NO_PASSAGE
     snippet: str = ""  # extracted text snippet if found
     claim_text: str = ""  # cleaned claim from .tex
 
@@ -436,7 +437,7 @@ def verify_citation(citation, deep=False):
         text = fpath.read_text(encoding="utf-8", errors="replace")
         snippet = search_passage_in_text(text, citation.passage, key, deep=deep)
         if snippet:
-            citation.status = "FOUND"
+            citation.status = "LOCATED"
             citation.snippet = f"[{fpath.name}] {snippet}"
             return
 
@@ -469,7 +470,7 @@ def generate_report(citations, output_path):
         f"|--------|-------|",
     ]
 
-    status_order = ["FOUND", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]
+    status_order = ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]
     for status in status_order:
         count = len(by_status.get(status, []))
         if count > 0:
@@ -482,7 +483,7 @@ def generate_report(citations, output_path):
     lines.extend([
         "### Status Legend",
         "",
-        "- **FOUND**: Passage located in downloaded text",
+        "- **LOCATED**: Passage located in downloaded text (human review required)",
         "- **NO_PASSAGE**: Source downloaded but no specific passage cited (general reference)",
         "- **MODERN**: Copyrighted modern work (see sources/modern/README.md)",
         "- **NOT_FOUND**: Source downloaded but passage not located (may need manual check)",
@@ -499,7 +500,7 @@ def generate_report(citations, output_path):
 
         for c in sorted(chapter_cites, key=lambda x: x.line_num):
             status_icon = {
-                "FOUND": "OK",
+                "LOCATED": "OK",
                 "NO_PASSAGE": "~~",
                 "MODERN": "$$",
                 "NOT_FOUND": "??",
@@ -529,6 +530,209 @@ def generate_report(citations, output_path):
     return report
 
 
+REVIEW_REPORT_PATH = SOURCES_DIR / "citation_review.html"
+
+
+def _html_escape(text):
+    """Escape HTML special characters."""
+    return (text
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;"))
+
+
+def _source_description(citation):
+    """Build the right-column content for a citation.
+
+    LOCATED: show the source passage text.
+    NO_PASSAGE: general reference — show source title/author.
+    MODERN: copyrighted — show obtain instructions.
+    NOT_FOUND: passage not located — note for reviewer.
+    NO_SOURCE / UNKNOWN_KEY: source not downloaded or unknown.
+    """
+    source_info = SOURCES.get(citation.key, {})
+    title = source_info.get("title", citation.key)
+    author = source_info.get("author", "")
+
+    if citation.status == "LOCATED":
+        return _html_escape(citation.snippet)
+
+    if citation.status == "NO_PASSAGE":
+        desc = f"General reference to: {author}, {title}" if author else f"General reference to: {title}"
+        if citation.snippet:
+            desc += f"\n\n{citation.snippet}"
+        return _html_escape(desc)
+
+    if citation.status == "MODERN":
+        obtain = source_info.get("obtain", "See sources/modern/README.md")
+        return _html_escape(f"Modern copyrighted work: {author}, {title}\n\n{obtain}")
+
+    if citation.status == "NOT_FOUND":
+        return _html_escape(f"Source downloaded but passage not located.\n\n{citation.snippet}")
+
+    if citation.status == "NO_SOURCE":
+        return _html_escape(f"Source not yet downloaded.\nRun: poetry run python scripts/download_sources.py")
+
+    return _html_escape(f"Unknown key: {citation.key}")
+
+
+def generate_review_report(citations, output_path):
+    """Generate an HTML side-by-side review report.
+
+    Left column: what the manuscript claims (cleaned LaTeX context).
+    Right column: what the source says (passage text, or description
+    for general references / modern works).
+
+    Semantic verification — whether the right column supports the left
+    column — is NOT done by this script. That requires a skilled LLM or
+    a human scholar reviewing each pair with full context.
+    """
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Group by chapter file
+    by_chapter = {}
+    for c in citations:
+        by_chapter.setdefault(c.file, []).append(c)
+
+    # Count by status
+    status_counts = {}
+    for c in citations:
+        status_counts[c.status] = status_counts.get(c.status, 0) + 1
+
+    html_parts = [HTML_REPORT_HEAD]
+
+    # Summary table
+    html_parts.append('<div class="summary">')
+    html_parts.append("<h2>Summary</h2>")
+    html_parts.append("<table><tr><th>Status</th><th>Count</th><th>Meaning</th></tr>")
+    status_meanings = {
+        "LOCATED": "Passage found in downloaded text — needs semantic review",
+        "NO_PASSAGE": "General reference, no specific passage cited",
+        "MODERN": "Copyrighted modern work — not downloadable",
+        "NOT_FOUND": "Source downloaded but passage not located",
+        "NO_SOURCE": "Source not yet downloaded",
+        "UNKNOWN_KEY": "Bibliography key not in source_registry.py",
+    }
+    for status in ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]:
+        count = status_counts.get(status, 0)
+        if count > 0:
+            html_parts.append(
+                f"<tr><td><code>{status}</code></td>"
+                f"<td>{count}</td>"
+                f"<td>{status_meanings.get(status, '')}</td></tr>"
+            )
+    html_parts.append(f"<tr><td><strong>TOTAL</strong></td><td><strong>{len(citations)}</strong></td><td></td></tr>")
+    html_parts.append("</table></div>")
+
+    # Citations by chapter
+    entry_num = 0
+    for chapter_file in sorted(by_chapter.keys()):
+        chapter_cites = by_chapter[chapter_file]
+        html_parts.append(f'<h2 class="chapter-heading">{_html_escape(chapter_file)}</h2>')
+
+        for c in sorted(chapter_cites, key=lambda x: x.line_num):
+            entry_num += 1
+            passage_str = f"[{_html_escape(c.passage)}]" if c.passage else ""
+            cite_cmd = f"\\cite{passage_str}{{{_html_escape(c.key)}}}"
+
+            status_class = c.status.lower().replace("_", "-")
+
+            # Left: manuscript claim
+            claim = _html_escape(c.claim_text) if c.claim_text else _html_escape(c.context)
+
+            # Right: source text or description
+            source = _source_description(c)
+
+            html_parts.append(f'<div class="entry {status_class}">')
+            html_parts.append(
+                f'<div class="entry-header">'
+                f'<span class="entry-num">#{entry_num}</span> '
+                f'<code>{cite_cmd}</code> '
+                f'<span class="meta">line {c.line_num}</span> '
+                f'<span class="status-badge {status_class}">{c.status}</span>'
+                f'</div>'
+            )
+            html_parts.append('<div class="columns">')
+            html_parts.append(f'<div class="col manuscript"><h3>Manuscript</h3><pre>{claim}</pre></div>')
+            html_parts.append(f'<div class="col source"><h3>Source</h3><pre>{source}</pre></div>')
+            html_parts.append('</div></div>')
+
+    html_parts.append("</body></html>")
+
+    report = "\n".join(html_parts)
+    output_path.write_text(report, encoding="utf-8")
+    print(f"\nReview report written to: {output_path}")
+    print(f"  {entry_num} citations ready for review")
+    return report
+
+
+HTML_REPORT_HEAD = """\
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Citation Review Report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Georgia', serif; background: #f5f5f0; color: #222; padding: 24px; max-width: 1600px; margin: 0 auto; }
+  h1 { font-size: 1.6em; margin-bottom: 8px; }
+  h2 { font-size: 1.3em; margin: 32px 0 12px; border-bottom: 2px solid #333; padding-bottom: 4px; }
+  .process { background: #fff; border: 1px solid #ccc; border-radius: 6px; padding: 16px 20px; margin: 16px 0 32px; line-height: 1.6; }
+  .process h2 { border: none; margin: 0 0 8px; font-size: 1.1em; }
+  .process ol { margin-left: 20px; }
+  .process li { margin-bottom: 6px; }
+  .process .note { background: #fff3cd; border-left: 4px solid #856404; padding: 8px 12px; margin-top: 12px; font-size: 0.92em; }
+  .summary table { border-collapse: collapse; margin: 8px 0; }
+  .summary th, .summary td { border: 1px solid #aaa; padding: 4px 12px; text-align: left; }
+  .summary th { background: #e8e8e0; }
+  .chapter-heading { margin-top: 40px; }
+  .entry { background: #fff; border: 1px solid #ddd; border-radius: 6px; margin: 16px 0; padding: 0; overflow: hidden; }
+  .entry-header { background: #e8e8e0; padding: 8px 14px; font-size: 0.95em; border-bottom: 1px solid #ddd; }
+  .entry-num { font-weight: bold; }
+  .meta { color: #666; font-size: 0.9em; }
+  .status-badge { display: inline-block; padding: 1px 8px; border-radius: 3px; font-size: 0.85em; font-weight: bold; margin-left: 8px; }
+  .status-badge.located { background: #d4edda; color: #155724; }
+  .status-badge.no-passage { background: #fff3cd; color: #856404; }
+  .status-badge.modern { background: #d1ecf1; color: #0c5460; }
+  .status-badge.not-found { background: #f8d7da; color: #721c24; }
+  .status-badge.no-source { background: #f8d7da; color: #721c24; }
+  .status-badge.unknown-key { background: #e2e3e5; color: #383d41; }
+  .columns { display: flex; gap: 0; min-height: 120px; }
+  .col { flex: 1; padding: 12px 16px; overflow-x: auto; }
+  .col.manuscript { border-right: 2px solid #ccc; background: #fafaf5; }
+  .col.source { background: #f5f8fa; }
+  .col h3 { font-size: 0.9em; text-transform: uppercase; color: #555; letter-spacing: 0.5px; margin-bottom: 8px; }
+  .col pre { white-space: pre-wrap; word-wrap: break-word; font-family: 'Georgia', serif; font-size: 0.93em; line-height: 1.5; }
+</style>
+</head>
+<body>
+<h1>Citation Review Report</h1>
+
+<div class="process">
+<h2>Three-Step Verification Process</h2>
+<ol>
+<li><strong>Download</strong> (automated) &mdash; <code>poetry run python scripts/download_sources.py</code> fetches
+    all public-domain source texts to <code>sources/</code>. Anyone can reproduce this step.</li>
+<li><strong>Extract &amp; Present</strong> (automated) &mdash; <code>poetry run python scripts/verify_citations.py --review</code>
+    extracts every <code>\\cite</code> command, locates the referenced passage in the downloaded text, and
+    generates this side-by-side report. Left column = what the manuscript claims. Right column = what the
+    source says (the actual passage for specific citations, or source metadata for general references).</li>
+<li><strong>Semantic Verification</strong> (human or expert LLM) &mdash; A skilled reviewer reads each pair and
+    judges whether the manuscript&rsquo;s claim accurately represents the source. This step is <em>never</em>
+    automated by pattern matching, keyword extraction, or similarity scoring. It requires understanding
+    the full context of both the argument and the source.</li>
+</ol>
+<div class="note">
+<strong>Why not automate step 3?</strong> Keyword overlap and string similarity give false confidence.
+A passage can share every keyword with a claim and still misrepresent it, or share no keywords and
+accurately convey the meaning. Semantic accuracy requires judgment, not string matching.
+See <code>docs/PM_0001_keyword-extraction-fake-verification.md</code>.
+</div>
+</div>
+"""
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Verify citations in chapter files against downloaded source texts."
@@ -549,9 +753,9 @@ def main():
         help="Print summary only, skip detailed report",
     )
     parser.add_argument(
-        "--deep",
+        "--review",
         action="store_true",
-        help="Run deep hallucination analysis with extended snippets and risk scoring",
+        help="Generate side-by-side review report for human verification",
     )
     args = parser.parse_args()
 
@@ -589,9 +793,9 @@ def main():
 
     # Verify each citation
     for i, citation in enumerate(all_citations, 1):
-        verify_citation(citation, deep=args.deep)
+        verify_citation(citation, deep=args.review)
         status_char = {
-            "FOUND": "+",
+            "LOCATED": "+",
             "NO_PASSAGE": "~",
             "MODERN": "$",
             "NOT_FOUND": "?",
@@ -609,7 +813,7 @@ def main():
     for c in all_citations:
         by_status.setdefault(c.status, []).append(c)
 
-    for status in ["FOUND", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]:
+    for status in ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]:
         count = len(by_status.get(status, []))
         if count > 0:
             print(f"  {status:15s}: {count}")
@@ -620,6 +824,13 @@ def main():
     if not args.summary:
         report = generate_report(all_citations, REPORT_PATH)
         print(f"\nReport written to: {REPORT_PATH}")
+
+    # Generate human review report (HTML, all citation types)
+    if args.review:
+        for citation in all_citations:
+            tex_path = PROJECT_ROOT / citation.file
+            citation.claim_text = extract_claim(tex_path, citation.line_num)
+        generate_review_report(all_citations, REVIEW_REPORT_PATH)
 
     # Return exit code based on results
     not_found = len(by_status.get("NOT_FOUND", []))
