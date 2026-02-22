@@ -551,6 +551,23 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 ```
 User will review and mark "bogus" (Western bias) or "needs research" (legitimate).
 
+## Research Tracking
+
+Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These contain:
+
+- ChatGPT research findings and key texts
+- Fact-checking notes and doubts
+- User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
+- Status of whether findings have been added to the chapter
+
+Open research questions go in `scripts/research_gaps.md`. Items are deleted when resolved, not marked as done.
+
+Candidate additions with triage status (KEEP / WEAK / WITHDRAW) are tracked in `scripts/research-notes-substantial-additions.md`.
+
+Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Any findings feed into the same three-gate pipeline (ChatGPT drafting → Claude review → citation verification). See `docs/DD_0002_research-qa-strategy.md` for scope details.
+
+**Note:** This is a public repo and external contributions are welcome. Do not disclose specific Alexandria data sources or extraction targets in public-facing files — those are proprietary.
+
 ## Bias Detection Reference
 
 | Bias Type | Watch For | What to Do |
@@ -595,6 +612,54 @@ Tasks:
 5. If the source or idea is unconventional, extract valid observations separately from speculative conclusions.
 6. Provide links to multiple scholarly or serious sources.
 ```
+
+---
+
+# CITATION VERIFICATION
+
+For full technical specification, see `docs/DD_0001_citation-review-report.md`.
+For why keyword extraction is forbidden, see `docs/PM_0001_keyword-extraction-fake-verification.md`.
+
+## Three-Step Pipeline
+
+**Step 1: Download (automated, reproducible)**
+
+```bash
+poetry run python scripts/download_sources.py
+```
+
+Fetches all public-domain source texts to `sources/`. URLs are defined in `scripts/source_registry.py`, which maps each bibliography key to one or more public-domain URLs. Modern copyrighted works cannot be downloaded — the report shows title, author, and acquisition instructions instead.
+
+**Step 2: Extract and Present (automated)**
+
+```bash
+poetry run python scripts/verify_citations.py --review
+```
+
+Extracts every `\cite` command from chapter files, locates the referenced passage in downloaded text, and generates `sources/citation_review.html` — a side-by-side HTML report showing manuscript context alongside source text.
+
+**Step 3: Semantic Verification (human or expert LLM)**
+
+A reviewer reads each side-by-side pair and judges whether the manuscript's claim accurately represents what the source says. This step is never automated by pattern matching, keyword extraction, or similarity scoring.
+
+## Citation Statuses
+
+| Status | Meaning |
+|--------|---------|
+| **LOCATED** | Passage found in downloaded text; needs semantic review |
+| **NO_PASSAGE** | General reference with no specific passage cited |
+| **MODERN** | Copyrighted modern work; shows title and how to obtain |
+| **NOT_FOUND** | Source downloaded but passage not located |
+| **NO_SOURCE** | Source not yet downloaded |
+
+## What the Pipeline Does NOT Do
+
+- No keyword extraction or similarity scoring
+- No automated pass/fail judgment or risk levels
+- No AI verdicts baked into reports
+- No substitution of mechanical matching for semantic judgment
+
+The script LOCATES passages and PRESENTS them side by side. Judgment is separate.
 
 ---
 
@@ -704,10 +769,42 @@ manuscript.tex
 ├── fonts/                  # SBL Hebrew
 ├── assets/                 # Images
 ├── out/                    # Build output (PDF, aux files)
-├── scripts/                # ChatGPT automation
+├── scripts/                # Research, verification, and automation tools
+├── sources/                # Downloaded source texts and generated reports
+├── docs/                   # Design documents and post-mortems
 ├── map.py                  # Historical cities map generator
 └── .github/workflows/ci.yml
 ```
+
+## Toolchain Reference
+
+| Script | Purpose |
+|--------|---------|
+| `scripts/ask_chatgpt.py` | Send queries to ChatGPT Desktop App via macOS Accessibility API; read previous conversation turns |
+| `scripts/chatgpt_desktop.py` | Low-level ChatGPT Desktop App automation (used by `ask_chatgpt.py`) |
+| `scripts/source_registry.py` | Central registry mapping bibliography keys to public-domain download URLs |
+| `scripts/download_sources.py` | Fetch public-domain source texts to `sources/` directory |
+| `scripts/verify_citations.py` | Extract `\cite` commands from chapters, locate passages, generate verification reports |
+| `scripts/review_citations.py` | Generate HTML review table (`sources/citation_review.html`) for manual citation checking |
+| `scripts/manual_review.py` | Interactive manual review of LOCATED citations with verdict assignment |
+| `scripts/verify_modern_works.py` | Verify claims about modern copyrighted works via Google Books API and web search |
+| `scripts/add_llm_evaluations.py` | Populate LLM evaluation fields in modern work verification JSON files |
+| `scripts/translate_book.py` | Translation pipeline (Polish translation at `translations/polish/`) |
+| `scripts/fix_quotes.py` | Fix quote formatting in LaTeX source |
+| `scripts/fix_latex.py` | Fix LaTeX formatting issues |
+
+## File Conventions
+
+| Path | Purpose |
+|------|---------|
+| `scripts/chN_qa.md` | Per-chapter research notes and ChatGPT findings (ch2 through ch6) |
+| `scripts/research_gaps.md` | Open research questions; items deleted when resolved |
+| `scripts/research-notes-substantial-additions.md` | Candidate additions with triage status (KEEP / WEAK / WITHDRAW) |
+| `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
+| `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
+| `docs/PM_NNNN_*.md` | Post-mortems (sequential numbering, descriptive title) |
+| `sources/citation_review.html` | Generated HTML review report (gitignored) |
+| `sources/verification_report.md` | Compact verification report (300-char snippets) |
 
 ## CI/CD
 
