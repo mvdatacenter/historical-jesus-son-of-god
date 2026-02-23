@@ -1,26 +1,13 @@
 #!/bin/bash
-# PreToolUse guard for kill commands.
-#
-# kill is a shell builtin so PATH wrappers can't intercept it.
-# This hook inspects the Bash tool input before execution.
-# Force push is caught by the git wrapper.
+# Thin wrapper. Runs guard-destructive.sh from .claude-shared/ cache.
 
-INPUT=$(cat)
-COMMAND=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
-SESSION_ID=$(echo "$INPUT" | jq -r '.session_id // "default"')
-CHALLENGE_FILE=".claude/.guard-challenge-$SESSION_ID"
+SCRIPT=".claude-shared/guard-destructive.sh"
+RAW="https://raw.githubusercontent.com/mvdatacenter/claude-instructions/main/hooks/guard-destructive.sh"
 
-if echo "$COMMAND" | grep -qE '^kill\s'; then
-    EXPECTED=$(cat "$CHALLENGE_FILE" 2>/dev/null)
-    if [ -n "$EXPECTED" ] && echo "$COMMAND" | grep -q "^BYPASS=$EXPECTED "; then
-        rm -f "$CHALLENGE_FILE"
-        exit 0
-    fi
-    CHALLENGE=$((RANDOM % 9000 + 1000))
-    echo "$CHALLENGE" > "$CHALLENGE_FILE"
-    echo "BLOCKED: kill is almost always wrong. Read CLAUDE.md." >&2
-    echo "If genuinely needed, read passphrase from $CHALLENGE_FILE and prefix with BYPASS=<passphrase>" >&2
-    exit 2
+if [ ! -f "$SCRIPT" ]; then
+    mkdir -p .claude-shared
+    TOKEN=$(gh auth token 2>/dev/null)
+    curl -sf -H "Authorization: token $TOKEN" "$RAW" -o "$SCRIPT"
 fi
 
-exit 0
+[ -f "$SCRIPT" ] && bash "$SCRIPT"

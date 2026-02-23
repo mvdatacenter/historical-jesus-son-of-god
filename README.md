@@ -252,6 +252,22 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 
 The reader learns nothing from "Assmann (2001)" but learns the actual content from the second version.
 
+## Modern Scholars: No Name-Dropping
+
+Modern scholar names NEVER appear in manuscript text.
+Ideas stand on their own. Cite works via `\cite{}` only.
+
+Ancient authors (Josephus, Eusebius, Philo, Jerome, Justin Martyr, etc.) are primary sources and ARE named in text.
+
+**Bad:** "MacDonald argues that the evangelists composed their narratives through deliberate mimesis."
+**Also bad:** "The evangelists composed their narratives through deliberate mimesis of Greek models `\cite{macdonald:mimesis}`." — This is still a bare claim. Removing the name but keeping only a conclusion with a cite is not enough.
+**Good:** "The number of proper names in Luke that map to Odyssey characters, combined with shared narrative structures, indicates deliberate literary mimesis rather than coincidence." — The evidence carries the argument; the reader sees *why*.
+
+**Bad:** "Walsh situates Paul within this educated Greco-Roman intellectual world."
+**Good:** "Paul operated within an educated Greco-Roman intellectual world where pneuma functioned as substance rather than later metaphysical personification."
+
+**Rule:** If a claim is not widely accepted, the text must present the evidence. A `\cite{}` alone is not an argument. Extract the data points, not just the conclusion.
+
 ## AI Garbage: Formal Definition
 
 AI garbage is prose that is grammatically correct and superficially fluent but adds no new information relative to its length.
