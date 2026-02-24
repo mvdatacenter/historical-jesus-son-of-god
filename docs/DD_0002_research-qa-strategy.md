@@ -15,7 +15,7 @@ Three steps.
 
 **Q&A files** (`scripts/chN_qa.md`) record what was already researched — decisions, rejections, and feedback that is not in the book. All steps must consult them before making decisions; without them the LLM will repeatedly resurface the same arguments.
 
-**Research gaps** (`scripts/research_gaps.md`) is the pipeline's todo list. Claims that need investigation go here. Items are deleted when resolved, not marked done.
+**Research gaps** (`scripts/research_gaps.md`) is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
 ### Step 1: Coverage and Relevance Filter
 
