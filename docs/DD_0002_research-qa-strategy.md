@@ -9,20 +9,15 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 1. Findings are categorized with respect to the content of the book — should they be added or are they already covered?
 2. The categorization is visible in a format that makes it easy to check what was decided and why.
 
-## Non-goals
-
-- Source verification. Findings from scholarly discourse lack citations by design; factual accuracy is checked downstream.
-- Automating manuscript edits. Embedding findings is a human + ChatGPT workflow.
-
 ## Pipeline
 
 Three steps. Each reduces the set; only survivors advance. Ordered by cost — cheap filtering first, expensive verification last.
 
-| Step | Cost | Reduces set by |
-|------|------|----------------|
-| 1. Coverage + Relevance | Low (automated LLM pass against inventories) | ~50-70% |
-| 2. Embedding | Medium (reading chapter, drafting text) | Variable |
-| 3. Research | High (fact-checking, source verification) | Variable |
+| Step | Cost |
+|------|------|
+| 1. Coverage + Relevance | Low (automated LLM pass against inventories) |
+| 2. Embedding | Medium (reading chapter, drafting text) |
+| 3. Research | High (fact-checking, source verification) |
 
 ### Step 1: Coverage and Relevance Filter
 
@@ -56,7 +51,7 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
 - Build inventory for Ch3 (biggest chapter, most findings)
 - Evaluate 30 findings with mixed expected outcomes
-- Success criteria: generic restated findings → `covered`, specific new evidence → `new_evidence`, at least 40% filtered out
+- Check that verdicts have specific justifications — not generic restatements of the verdict category
 - If validation fails, the inventory granularity is wrong — fix the inventory before scaling
 
 **Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/coverage_verdicts.json` (verdicts)
