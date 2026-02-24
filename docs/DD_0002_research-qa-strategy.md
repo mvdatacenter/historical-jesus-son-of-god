@@ -6,7 +6,7 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Goals
 
-1. Match findings against the book at the evidence level, not the topic level. The question is "does the book already cite this specific inscription / text / argument?" — not "does the book discuss this topic?"
+1. Identify which Alexandria findings should be added to the book — as new ideas, as evidence strengthening existing arguments, or as corrections to existing text.
 
 ## Non-goals
 
