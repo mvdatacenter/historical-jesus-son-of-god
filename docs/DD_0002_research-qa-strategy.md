@@ -52,7 +52,7 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 - Check that verdicts have specific justifications — not generic restatements of the verdict category
 - If validation fails, the inventory granularity is wrong — fix the inventory before scaling
 
-**Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/coverage_verdicts.json` (verdicts)
+**Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/extraction_review.html` (verdicts displayed in the review UI with justifications visible per finding)
 
 ### Step 2: Embedding Attempt
 
@@ -94,7 +94,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | What | Where |
 |------|-------|
 | Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
-| Coverage + relevance verdicts | `sources/coverage_verdicts.json` |
+| Coverage + relevance verdicts (review UI) | `sources/extraction_review.html` |
 | Coverage inventory generator | `scripts/build_coverage.py` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
