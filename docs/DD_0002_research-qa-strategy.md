@@ -11,7 +11,7 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Pipeline
 
-Three steps. Step 1 is the hardest — it requires frontier-level reasoning to distinguish specific evidence from topic overlap. Steps 2 and 3 are human + ChatGPT workflows.
+Three steps. All steps must consult the Q&A files (`scripts/chN_qa.md`) and `scripts/research_gaps.md` before making decisions. These files record what has already been researched, verified, or rejected — without them the LLM will repeatedly resurface the same arguments.
 
 ### Step 1: Coverage and Relevance Filter
 
@@ -54,6 +54,8 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 **Question:** Does this finding genuinely add value when placed in the book?
 
+**Q&A check.** Before attempting to embed a finding, read the relevant `scripts/chN_qa.md`. A finding may have already been rejected for a specific reason, or the claim may already have been verified through a different path. The book does not need to address every counterargument to every criticism — if Q&A records show a deliberate decision to exclude something, respect it.
+
 For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
 
 This step follows the standard chapter edit workflow (README > Core Workflow for Adding Content to Chapters). ChatGPT drafts; Claude reviews.
@@ -61,6 +63,8 @@ This step follows the standard chapter edit workflow (README > Core Workflow for
 ### Step 3: Research and Verification
 
 **Question:** Is the claim factually accurate?
+
+**Q&A check.** Before researching a claim, read the relevant `scripts/chN_qa.md`. The claim may already be verified, marked bogus, or flagged as needing specific follow-up. A finding marked "uncertain" in Step 2 may already have a resolution in Q&A. Claims that were researched and rejected stay rejected — record the rejection reason in `scripts/research_gaps.md` so it is not revisited.
 
 Only after confirming the finding is relevant and adds value do we invest in verification. Use ChatGPT to research:
 
@@ -90,5 +94,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | Coverage inventory generator | `scripts/build_coverage.py` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
+| Per-chapter research Q&A | `scripts/chN_qa.md` |
+| Open research questions | `scripts/research_gaps.md` |
 | Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
 | Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |
