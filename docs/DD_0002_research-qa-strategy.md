@@ -11,7 +11,11 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Pipeline
 
-Three steps. All steps must consult the Q&A files (`scripts/chN_qa.md`) and `scripts/research_gaps.md` before making decisions. These files record what has already been researched, verified, or rejected — without them the LLM will repeatedly resurface the same arguments.
+Three steps.
+
+**Q&A files** (`scripts/chN_qa.md`) record what was already researched — decisions, rejections, and feedback that is not in the book. All steps must consult them before making decisions; without them the LLM will repeatedly resurface the same arguments.
+
+**Research gaps** (`scripts/research_gaps.md`) is the pipeline's todo list. Claims that need investigation go here. Items are deleted when resolved, not marked done.
 
 ### Step 1: Coverage and Relevance Filter
 
