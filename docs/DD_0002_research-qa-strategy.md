@@ -6,8 +6,8 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Goals
 
-1. Alexandria findings that bring new evidence or arguments are distinguishable from those the book already covers.
-2. Findings that bear on the book's arguments are distinguishable from tangentially related ones.
+1. Findings are categorized with respect to the content of the book — should they be added or are they already covered?
+2. The categorization is presented in an easy-to-audit format so a human can review and override decisions quickly.
 
 ## Non-goals
 
