@@ -7,7 +7,7 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 ## Goals
 
 1. Findings are categorized with respect to the content of the book — should they be added or are they already covered?
-2. The categorization is presented in an easy-to-audit format so a human can review and override decisions quickly.
+2. The categorization is visible in a format that makes it easy to spot-check results and iterate on the process.
 
 ## Non-goals
 
