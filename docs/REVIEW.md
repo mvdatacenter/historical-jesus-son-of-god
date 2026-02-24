@@ -71,7 +71,9 @@ Before accepting any new or rewritten text, check for:
 
 ## No Presupposed Outcomes
 
-Numbers, percentages, and metrics must come from a measurement, a calculation, or a cited source. Invented figures — in design docs, manuscript text, scripts, or anywhere else — give false confidence and anchor future evaluation to made-up baselines.
+This is a research project that follows scientific and historical method. You do not get to invent results before running the experiment. A historian does not write "~50-70% of sources confirm the hypothesis" before reading the sources. A scientist does not fill in the results column before collecting data. The same standard applies to everything we produce — manuscript claims, pipeline designs, validation criteria, cost estimates.
+
+Numbers, percentages, and metrics must come from a measurement, a calculation, or a cited source. Invented figures give false confidence and anchor future evaluation to made-up baselines.
 
 **Bad:** "Step 1 reduces the set by ~50-70%." — Nobody knows this. The number was invented to make the table look complete.
 
