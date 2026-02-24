@@ -69,6 +69,16 @@ Before accepting any new or rewritten text, check for:
 5. **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
 6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
 
+## No Presupposed Outcomes in Design Docs
+
+Design docs describe *what* a system does and *why*. They must not presuppose *what the results will be* before the system has run. Invented numbers ("~50-70% filtered out"), predicted success rates, and speculative metrics give false confidence and anchor future evaluation to made-up baselines.
+
+**Bad:** "Step 1 reduces the set by ~50-70%." — Nobody knows this. The number was invented to make the table look complete.
+
+**Good:** Describe the step's mechanism and cost. Let the validation protocol discover the actual numbers.
+
+**Rule:** If a number in a design doc did not come from a measurement, a calculation, or a cited source, it must be removed. "I don't know yet" is always better than a fabricated estimate.
+
 ## Ch1 Spirit Rule
 
 Chapter 1 is an overview of scholarly models. It surveys frameworks; it does not deep-dive into specific scholars' arguments.
