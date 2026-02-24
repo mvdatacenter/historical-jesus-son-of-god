@@ -580,7 +580,7 @@ Open research questions go in `scripts/research_gaps.md`. Items are deleted when
 
 Candidate additions with triage status (KEEP / WEAK / WITHDRAW) are tracked in `scripts/research-notes-substantial-additions.md`.
 
-Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Any findings feed into the same three-gate pipeline (ChatGPT drafting → Claude review → citation verification). See `docs/DD_0002_research-qa-strategy.md` for scope details.
+Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Findings are filtered through the Alexandria pipeline (see `docs/DD_0002_research-qa-strategy.md`) before entering the standard workflow (ChatGPT drafting → Claude review → citation verification).
 
 **Note:** This is a public repo and external contributions are welcome. Do not disclose specific Alexandria data sources or extraction targets in public-facing files — those are proprietary.
 
