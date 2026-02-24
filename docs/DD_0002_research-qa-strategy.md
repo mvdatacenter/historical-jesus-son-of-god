@@ -7,7 +7,6 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 ## Goals
 
 1. Match findings against the book at the evidence level, not the topic level. The question is "does the book already cite this specific inscription / text / argument?" — not "does the book discuss this topic?"
-2. Use only Opus with full chapter text in context. Sub-frontier models have pathetic reasoning skills and silently fall back to topic-matching.
 
 ## Non-goals
 
