@@ -2,19 +2,17 @@
 
 ## Problem
 
-Alexandria extracts scholarly findings from unstructured sources. These findings need to be filtered before they can enter the manuscript — most are duplicates of what the book already covers, tangential to the book's arguments, or too generic to add value. Previous filtering attempts failed because they compared findings to the book at the topic level, which produces no filtering when both share the same domain.
+Alexandria findings and the book cover the same domain. Topic-level filtering ("is this finding about Greek influence?") always says yes for a book about Greek influence. The first implementation produced 886 "add" findings out of ~1200 — no real filtering happened.
 
 ## Goals
 
-1. Filter Alexandria findings to only those that introduce specific new evidence or arguments not already in the manuscript.
-2. Do not filter on source quality — findings from informal scholarly discourse lack citations by design; source verification happens later.
-3. Catch duplicates at the evidence level, not the topic level. "The book discusses Hellenistic titles" is not a duplicate check. "The book already cites the Rosetta Stone's θεὸς ἐπιφανής for Ptolemy V" is.
+1. Match findings against the book at the evidence level, not the topic level. The question is "does the book already cite this specific inscription / text / argument?" — not "does the book discuss this topic?"
+2. Use only Opus with full chapter text in context. Sub-frontier models have pathetic reasoning skills and silently fall back to topic-matching.
 
 ## Non-goals
 
-- Automating the embedding of findings into the manuscript (that's a human + ChatGPT workflow).
-- Verifying whether findings are factually accurate (that happens downstream).
-- Replacing the existing citation verification pipeline (`docs/DD_0001_citation-review-report.md`).
+- Source verification. Findings from scholarly discourse lack citations by design; factual accuracy is checked downstream.
+- Automating manuscript edits. Embedding findings is a human + ChatGPT workflow.
 
 ## Pipeline
 
