@@ -11,13 +11,7 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Pipeline
 
-Three steps, ordered by cost — cheap filtering first, expensive verification last.
-
-| Step | Cost |
-|------|------|
-| 1. Coverage + Relevance | Low (automated LLM pass against inventories) |
-| 2. Embedding | Medium (reading chapter, drafting text) |
-| 3. Research | High (fact-checking, source verification) |
+Three steps. Ordered so that automated filtering happens before human effort.
 
 ### Step 1: Coverage and Relevance Filter
 
