@@ -43,5 +43,9 @@ sources/ancient/
 sources/patristic/
 sources/verification_report.md
 sources/citation_review.html
+sources/extraction_review.html
+sources/extraction_verdicts.json
+sources/semantic_verdicts.json
+sources/triage_verdicts.json
 sources/modern_verification_report.md
 sources/modern/
