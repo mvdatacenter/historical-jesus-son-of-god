@@ -11,7 +11,7 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 ## Pipeline
 
-Three steps. Ordered so that automated filtering happens before human effort.
+Three steps. Step 1 is the hardest — it requires frontier-level reasoning to distinguish specific evidence from topic overlap. Steps 2 and 3 are human + ChatGPT workflows.
 
 ### Step 1: Coverage and Relevance Filter
 
