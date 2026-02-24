@@ -9,11 +9,6 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 1. Findings are categorized with respect to the content of the book — should they be added or are they already covered?
 2. The categorization is visible in a format that makes it easy to check what was decided and why.
 
-## Non-goals
-
-- **Source verification.** Findings from scholarly discourse lack citations by design; factual accuracy is checked downstream.
-- **Automating manuscript edits.** Embedding findings is a human + ChatGPT workflow.
-
 ## Pipeline
 
 Three steps, ordered by cost — cheap filtering first, expensive verification last.
