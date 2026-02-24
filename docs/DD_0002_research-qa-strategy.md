@@ -46,11 +46,12 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 **Matching.** The evaluator compares each finding's specific claim and evidence against the chapter inventory. The question: "Is the specific evidence or argument in this finding already present in the chapter's inventory?"
 
-**Verdicts:**
-- `covered` — the specific argument AND evidence are already in the chapter inventory. Discard.
+**Verdicts.** Every verdict must include a justification — e.g., "already in ch3 section on royal titles," "not relevant to any argument in the book," "too little evidence to act on."
+
+- `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
 - `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
-- `tangential` — related to the book's themes but doesn't bear on any inventoried argument. Discard.
+- `tangential` — related to the book's themes but doesn't bear on any inventoried argument. Justification must say why it doesn't connect.
 
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
 - Build inventory for Ch3 (biggest chapter, most findings)
