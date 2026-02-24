@@ -1,44 +1,38 @@
 # DD-0002: Alexandria Findings Pipeline
 
-## Purpose
+## Problem
 
-The Alexandria pipeline filters ~1200 extracted scholarly findings down to the ones that actually add value to the manuscript. This document specifies how that filtering works and records the failure modes that broke previous attempts.
+Alexandria extracts scholarly findings from unstructured sources. These findings need to be filtered before they can enter the manuscript — most are duplicates of what the book already covers, tangential to the book's arguments, or too generic to add value. Previous filtering attempts failed because they compared findings to the book at the topic level, which produces no filtering when both share the same domain.
 
-## Known Failure Modes
+## Goals
 
-### Keyword Extraction (Forbidden)
+1. Filter Alexandria findings to only those that introduce specific new evidence or arguments not already in the manuscript.
+2. Do not filter on source quality — findings from informal scholarly discourse lack citations by design; source verification happens later.
+3. Catch duplicates at the evidence level, not the topic level. "The book discusses Hellenistic titles" is not a duplicate check. "The book already cites the Rosetta Stone's θεὸς ἐπιφανής for Ptolemy V" is.
 
-See `docs/PM_0001_keyword-extraction-fake-verification.md`. Keyword overlap between a claim and a source passage says nothing about whether the claim accurately represents the source. Words can match without meaning matching. Any mechanism that scores, ranks, or classifies citation accuracy without semantic understanding is forbidden. This prohibition applies to the concept, not just specific implementations.
+## Non-goals
 
-### Topic-Matching for Coverage Evaluation (Forbidden)
-
-When the book and the findings cover the same domain — which they always do — topic-level comparison produces no filtering. "Is this finding about Greek influence relevant to a book about Greek influence?" is always yes. 886 "add" findings out of ~1200 is not filtering; it is rubber-stamping.
-
-The right question is not "Is this finding about the same topic?" but "Does the book already present this specific evidence or make this specific argument?"
-
-**Topic-level (wrong):** "This finding is about Hellenistic royal titles. Chapter 3 discusses Hellenistic royal titles. → `new`."
-
-**Evidence-level (right):** "This finding cites the Rosetta Stone's use of θεὸς ἐπιφανής for Ptolemy V. Chapter 3 already cites Ptolemaic 'manifest god' epithets including the Rosetta Stone at line 187. → `covered`."
-
-The solution is coverage inventories — see Step 1 below.
+- Automating the embedding of findings into the manuscript (that's a human + ChatGPT workflow).
+- Verifying whether findings are factually accurate (that happens downstream).
+- Replacing the existing citation verification pipeline (`docs/DD_0001_citation-review-report.md`).
 
 ## Pipeline
 
-The `alexandria-pipelines` repo extracts findings from scholarly discourse (interviews, lectures, discussions). These findings are claims, arguments, or observations — they almost never come with formal citations. The value is in surfacing ideas and evidence the book hasn't considered.
+Three steps. Each reduces the set; only survivors advance. Ordered by cost — cheap filtering first, expensive verification last.
 
-**Critical principle:** At the filtering stage (step 1), the question is "if this claim is true, does it impact the book?" — not "is this claim well-sourced?" Source quality is irrelevant until step 3. The source material doesn't contain citations; judging findings on citation specificity is backwards.
-
-**Note:** This is a public repo. Do not disclose specific Alexandria data sources or extraction targets in public-facing files.
-
-Three steps. Each reduces the set; only survivors advance.
+| Step | Cost | Reduces set by |
+|------|------|----------------|
+| 1. Coverage + Relevance | Low (automated LLM pass against inventories) | ~50-70% |
+| 2. Embedding | Medium (reading chapter, drafting text) | Variable |
+| 3. Research | High (fact-checking, source verification) | Variable |
 
 ### Step 1: Coverage and Relevance Filter
 
 **Question:** Does the book already present this specific evidence or argument? If not, does it bear on any argument the book makes?
 
-**Model requirement.** Both inventory generation and finding evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent. The cost savings from using a cheaper model are illusory: you save tokens and get 886 "add" results again.
+**Model requirement.** Both inventory generation and finding evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent.
 
-**Context requirement.** The full chapter text MUST be read into context for both inventory generation and finding evaluation. No summaries, no truncation, no "representative excerpts." The entire point is evidence-level granularity — you cannot match against evidence you haven't read. Chapters are long but they fit in Opus context windows. There is no shortcut here.
+**Context requirement.** The full chapter text MUST be read into context for both inventory generation and finding evaluation. No summaries, no truncation, no "representative excerpts." You cannot match against evidence you haven't read.
 
 **Coverage inventories.** Before evaluating findings, generate a structured inventory for each chapter listing every distinct argument and every piece of specific evidence used. Not a summary — an inventory at the level of individual evidence items.
 
@@ -59,8 +53,6 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
 - `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
 - `tangential` — related to the book's themes but doesn't bear on any inventoried argument. Discard.
-
-The `tangential` verdict handles relevance filtering. A finding that cannot be matched to any argument in any chapter inventory is tangential by definition.
 
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
 - Build inventory for Ch3 (biggest chapter, most findings)
@@ -94,26 +86,21 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 2. **Uncertain but valuable** — Can't fully confirm but argument is strong enough to keep with scholarly caveat. Human decision.
 3. **False or unsupported** — Remove from manuscript.
 
-### Why This Order
+## Forbidden Approaches
 
-The pipeline is ordered by cost:
-
-| Step | Cost | Reduces set by |
-|------|------|----------------|
-| 1. Coverage + Relevance | Low (automated LLM pass against inventories) | ~50-70% |
-| 2. Embedding | Medium (reading chapter, drafting text) | Variable |
-| 3. Research | High (fact-checking, source verification) | Variable |
-
-Filtering on source quality at step 1 would discard findings that are poorly cited but contain genuinely impactful claims. A scholar mentioning an inscription in passing, without the corpus number, may be pointing to real evidence we can track down at step 3. Discarding it at step 1 because "no specific citation" wastes the lead.
+- **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
+- **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
+- **Sub-frontier models** for step 1. They silently degrade to topic-matching.
+- **Summaries or truncated context** instead of full chapter text.
 
 ## Where Everything Lives
 
 | What | Where |
 |------|-------|
-| Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
-| Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |
 | Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
 | Coverage + relevance verdicts | `sources/coverage_verdicts.json` |
 | Coverage inventory generator | `scripts/build_coverage.py` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
+| Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
+| Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |
