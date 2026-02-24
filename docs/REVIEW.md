@@ -9,7 +9,9 @@ Ideas stand on their own; cite works via `\cite{}` only.
 
 Ancient authors (Josephus, Eusebius, Philo, Jerome, Justin Martyr, Clement of Alexandria, etc.) are primary sources and ARE named in text.
 
-**Check:** `grep -n` for modern scholar surnames in `chapter*.tex`. Any match outside a `\cite{}` command is a violation.
+**Exception — eponymous academic standards:** When a modern scholar's name IS the standard name of a test, scale, law, or method (e.g., "Rank--Raglan scale," "Bechdel test," "Richter scale"), the name is allowed. These function like "Newton's law" — the name identifies the tool, not the scholar's authority. The test is: could you remove the name without the reader losing the ability to look up the concept? If not, it's an eponymous standard, not a name-drop.
+
+**Check:** `grep -n` for modern scholar surnames in `chapter*.tex`. Any match outside a `\cite{}` command is a violation unless it names an eponymous academic standard.
 
 **Anglophone bias warning:** AI models systematically catch English-language scholar names (MacDonald, Walsh, Whitmarsh) while missing non-English names (Schrader Polczer, de Boer, van Kooten, Tal Ilan, Young-Ho Park). Do NOT rely on "feels like a name-drop" — grep mechanically for all names appearing before `\cite{}` or with attribution verbs (argues, notes, shows, demonstrates, identifies, proposes, concludes).
 
