@@ -1,6 +1,6 @@
 # Research Gaps - Still Needed
 
-**NOTE: Delete items when resolved. Do not mark as done - just remove them.**
+**NOTE: Every item exits one of two ways: into the book, or rejected with a note in the relevant `chN_qa.md` explaining why. Delete items when resolved — nothing stays here permanently.**
 
 ---
 

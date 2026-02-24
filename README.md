@@ -569,14 +569,16 @@ User will review and mark "bogus" (Western bias) or "needs research" (legitimate
 
 ## Research Tracking
 
-Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These contain:
+Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
 
 - ChatGPT research findings and key texts
 - Fact-checking notes and doubts
 - User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
 - Status of whether findings have been added to the chapter
 
-Open research questions go in `scripts/research_gaps.md`. Items are deleted when resolved, not marked as done.
+All pipeline steps must consult Q&A files before making decisions; without them the LLM will repeatedly resurface the same arguments.
+
+`scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
 Candidate additions with triage status (KEEP / WEAK / WITHDRAW) are tracked in `scripts/research-notes-substantial-additions.md`.
 
@@ -813,8 +815,8 @@ manuscript.tex
 
 | Path | Purpose |
 |------|---------|
-| `scripts/chN_qa.md` | Per-chapter research notes and ChatGPT findings (ch2 through ch6) |
-| `scripts/research_gaps.md` | Open research questions; items deleted when resolved |
+| `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
+| `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
 | `scripts/research-notes-substantial-additions.md` | Candidate additions with triage status (KEEP / WEAK / WITHDRAW) |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
