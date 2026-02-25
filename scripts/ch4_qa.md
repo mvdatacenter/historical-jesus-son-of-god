@@ -847,3 +847,58 @@ Many Johannine scholars argue BD is either:
 5. **DROP Talpiot tomb argument** - too weak, disputed epigraphy
 
 ---
+
+## DD-0002 Step 2: Alexandria Findings Embedding Decisions (2026-02-26)
+
+### KEEP — Embedded
+
+**`Du-Ucq5QrAc_0`** — Gospel anonymity + Irenaeus as sole four-name source (c. 185 AD)
+- Embedded after attestation chronology in John dating section
+- Added: manuscripts anonymous, four-name scheme from Irenaeus alone, Papias deemed unreliable by Eusebius
+- **Status: EMBEDDED, needs Step 3 verification** (Eusebius quote on Papias)
+
+**`2osEbUFXSI8_0`** — Mark's three alternative endings
+- Embedded at line 19, expanding "Mark without resurrection" mention
+- Added: oldest MSS end at 16:8, three scribal endings (shorter, longer 16:9-20, combined)
+- **Status: EMBEDDED, needs Step 3 verification** (three endings are well-established textual criticism)
+
+**`_b3Y3cJ0Ic8_1`** — Tertullian confirms Mary gave John 11:27 confession
+- Embedded in Mary/Martha erasure section
+- Added: Tertullian Adversus Praxean attributes confession to Mary in every surviving copy
+- **Status: EMBEDDED, needs Step 3 verification** (Tertullian citation needs confirmation)
+
+**`_b3Y3cJ0Ic8_3`** — 250+ manuscript survey statistics
+- Merged with above embedding
+- Added: 250+ MSS surveyed, 1-in-5 Greek MSS, 1-in-3 Old Latin MSS show Martha alterations
+- **Status: EMBEDDED, needs Step 3 verification** (stats from Schrader's published work)
+
+**`97IvyIpNoKg_0`** — Matthew composed in Greek (Isaiah 7:14 almah/parthenos)
+- Embedded in Matthew section, before "Greek empire loyalist" characterization
+- Added: Matthew 1:23 quotes LXX parthenos for Hebrew almah, proof-text only works in Greek
+- **Status: EMBEDDED, needs Step 3 verification** (well-established scholarly point)
+
+**`_b3Y3cJ0Ic8_2`** — Seven textual parallels John 11 / John 20 (MARGINAL → KEEP)
+- ChatGPT confirmed specific verse-level parallels with references
+- Embedded in Lazarus-Bethany section with full verse citations
+- **Status: EMBEDDED, needs Step 3 verification** (verse parallels are textual facts, verifiable)
+
+**`_dAMdPulFFs_2`** — Perpetua's diary as female authorship parallel (MARGINAL → KEEP)
+- ChatGPT confirmed it adds value: only case of extended first-person prose by a woman with visible editorial redaction
+- Embedded after Women's Memory Books section
+- **Status: EMBEDDED, needs Step 3 verification** (Perpetua text is well-established)
+
+### SKIP — Not embedded
+
+**`65Ii0MVe7hA_0`** — MacDonald's Homeric mimesis in Mark's resurrection (Iliad 24 parallel)
+- Reason: Literary-critical framework that shifts Ch4 toward literary theory, away from core thesis (historical reliability and dating). MacDonald's methodology is contested. Ch4 already has the Dionysian layer for John; adding a second literary-mimesis theory for Mark dilutes focus.
+
+**`xddZbf6EE7k_0`** — Q document imitates Homer's Odyssey
+- Reason: Q hypothesis itself is contested. Ch4 never mentions Q. Introduces two debated theories simultaneously (Q existence + Q-Homer mimesis), neither bearing on dating/reliability arguments.
+
+**`5zZchadJDM0_1`** — Eusebius citing John 3:24 + Johannine epistles quoted ~40 times in gospel
+- Reason: Eusebius point is marginal (ch4 already uses Eusebius for Papias). The "~40 times" claim is from a YouTube scholar, unverified — embedding risks credibility.
+
+**`__k29FidXyk_0`** — Egyptian Book of the Dead: Osiris "drink my blood and eat my flesh" (MARGINAL → SKIP)
+- ChatGPT could not verify the claim. No specific spell/chapter in standard published translations. The closest is generic offering language, not a Eucharist-style self-identification. Risk to credibility if claim is fabricated.
+
+---
