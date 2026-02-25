@@ -69,6 +69,8 @@ For each surviving finding, attempt to integrate it into the manuscript where it
 
 This step follows the standard chapter edit workflow (README > Core Workflow for Adding Content to Chapters). ChatGPT drafts; Claude reviews.
 
+**Step 2 produces draft text, not committed text.** Embeddings are written to the chapter file but NOT committed until Step 3 verification is complete. Step 2 ends with uncommitted edits in the working tree and a list of claims that need verification. The commit happens after Step 3, and the commit message must reference which claims were verified and how (e.g., "verified Vaticanus ends at 16:8 via facsimile," "Tertullian attribution confirmed in Adv. Prax. 27").
+
 ### Step 3: Research and Verification
 
 **Question:** Is the claim factually accurate?
