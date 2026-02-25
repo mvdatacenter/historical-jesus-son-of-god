@@ -69,6 +69,7 @@ Before accepting any new or rewritten text, check for:
 5. **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
 6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
 7. **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
+8. **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
 
 ## No Presupposed Outcomes
 
