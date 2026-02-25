@@ -68,6 +68,7 @@ Before accepting any new or rewritten text, check for:
 4. **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
 5. **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
 6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
+7. **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
 
 ## No Presupposed Outcomes
 
