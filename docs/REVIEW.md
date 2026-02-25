@@ -68,6 +68,21 @@ Before accepting any new or rewritten text, check for:
 4. **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
 5. **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
 6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
+7. **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
+8. **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
+
+## No Presupposed Outcomes
+
+This is a research project that follows scientific and historical method. You do not get to invent results before running the experiment. A historian does not write "~50-70% of sources confirm the hypothesis" before reading the sources. A scientist does not fill in the results column before collecting data. The same standard applies to everything we produce — manuscript claims, pipeline designs, validation criteria, cost estimates.
+
+Arbitrary numbers, percentages, thresholds, and success criteria are all forms of the same mistake. They give false confidence, anchor evaluation to made-up baselines, and create goals that have no relationship to reality.
+
+**Bad:** "Step 1 reduces the set by ~50-70%." — Invented to make the table look complete.
+**Bad:** "Success criteria: at least 40% filtered out." — Arbitrary threshold with no basis.
+
+**Good:** Describe the mechanism. Define success in terms of quality ("verdicts have specific justifications"), not quantity. Let actual results supply the numbers.
+
+**Rule:** If a number or threshold did not come from a measurement, a calculation, or a cited source, it must be removed. "I don't know yet" is always better than a fabricated target.
 
 ## Ch1 Spirit Rule
 

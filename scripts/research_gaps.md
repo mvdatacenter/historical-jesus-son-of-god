@@ -1,6 +1,6 @@
 # Research Gaps - Still Needed
 
-**NOTE: Delete items when resolved. Do not mark as done - just remove them.**
+**NOTE: Every item exits one of two ways: into the book, or rejected with a note in the relevant `chN_qa.md` explaining why. Delete items when resolved — nothing stays here permanently.**
 
 ---
 
@@ -526,4 +526,20 @@ Source: `sources/youtube/` — 159 extracted files across 10 channels (tabor:50,
 - Ch5: Syrian colonial coins with Jupiter/Aries/crescent — needs specific mint or catalog reference
 - Ch6: Flavian catacomb symbols (anchors, fish, dolphins, tridents) — needs specific catacomb names and Flavian coin series references
 
-*Last updated: 2026-02-24*
+### Book of the Dead — Osiris "drink my blood and eat my flesh" (DD-0002 finding `__k29FidXyk_0`)
+
+**Claim:** The Egyptian Book of the Dead contains a passage where Osiris says "drink my blood and eat my flesh" referring to cakes and wine — potential Eucharist parallel.
+
+**Source needed:** Critical translation of the Book of the Dead. Check Faulkner (*The Ancient Egyptian Book of the Dead*, British Museum Press) or Allen (*The Book of the Dead or Going Forth by Day*, SAOC 37). Search for any spell where Osiris or the deceased identifies bread/cakes with flesh and beer/wine with blood. Also check Pyramid Texts and Coffin Texts for earlier forms of this motif.
+
+**Status:** ChatGPT could not locate a specific spell/chapter. That is not evidence of absence — the source may be outside its training data. Cannot embed or reject until a primary source is consulted through the citation pipeline.
+
+### Johannine epistles quoted ~40 times in Gospel of John (DD-0002 finding `5zZchadJDM0_1`)
+
+**Claim:** The Johannine epistles (1-3 John) are quoted approximately 40 times within the Gospel of John, indicating compositional interdependence.
+
+**Source needed:** Count verbal parallels between the Johannine epistles and Gospel of John using a concordance or critical commentary. Check Brown's Anchor Bible commentaries on the Johannine epistles and Gospel of John for a systematic catalogue of shared phrases and allusions.
+
+**Status:** Unverified YouTube-sourced claim. Cannot embed or reject until the count is confirmed or refuted against primary texts.
+
+*Last updated: 2026-02-26*

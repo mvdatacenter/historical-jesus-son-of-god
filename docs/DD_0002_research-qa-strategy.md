@@ -1,62 +1,124 @@
-# DD-0002: Research and Quality Assurance Strategy
+# DD-0002: Alexandria Findings Pipeline
 
-## Purpose
+## Problem
 
-This document records the design rationale for the project's research and QA process. Operational details (scripts, file paths, commands, rules) live in the README, which is auto-appended to CLAUDE.md and available in every session.
+Alexandria findings and the book cover the same domain. Topic-level filtering ("is this finding about Greek influence?") always says yes for a book about Greek influence. The first implementation produced 886 "add" findings out of ~1200 — no real filtering happened.
 
-## Design: Three Quality Gates
+## Goals
 
-The project uses a two-AI model where ChatGPT generates and Claude interrogates. All work passes through three quality gates before reaching the manuscript:
+1. Findings are categorized with respect to the content of the book — should they be added or are they already covered?
+2. The categorization is visible in a format that makes it easy to check what was decided and why.
 
-1. **Generation** — ChatGPT produces research, arguments, and prose
-2. **Review** — Claude reviews every non-trivial output for accuracy and style
-3. **Verification** — Citation claims are checked against downloaded source texts
+## Pipeline
 
-No single gate is sufficient alone. Generation without review produces hallucinations. Review without verification leaves citation accuracy unchecked. Verification without review catches wrong sources but not wrong arguments.
+Three steps.
 
-## Why Three Gates
+**Q&A files** (`scripts/chN_qa.md`) record what was already researched — decisions, rejections, and feedback that is not in the book. All steps must consult them before making decisions; without them the LLM will repeatedly resurface the same arguments.
 
-The three-gate model exists because each gate catches a different failure mode:
+**Research gaps** (`scripts/research_gaps.md`) is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
-- **Gate 1 (generation)** controls input quality via bias-aware prompting. Without it, ChatGPT defaults to American-Evangelical, Anglophone, and old-scholarship biases. The seven known biases are documented in README > WORKING WITH CHATGPT > Bias Detection Reference.
+### Step 1: Coverage and Relevance Filter
 
-- **Gate 2 (review)** catches hallucinations, filler, and coherence collapse. ChatGPT exhibits unpredictable quality degradation that it cannot self-detect. The risk-level escalation system ensures review effort scales with claim importance. See README > AI GOVERNANCE.
+**Question:** Does the book already present this specific evidence or argument? If not, does it bear on any argument the book makes?
 
-- **Gate 3 (verification)** catches citation inaccuracy — claims that are well-written and plausible but misrepresent what the source actually says. This is the hardest failure mode to catch because it requires reading both the manuscript claim and the source passage. See README > CITATION VERIFICATION and `docs/DD_0001_citation-review-report.md`.
+**Model requirement.** Both inventory generation and finding evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent.
 
-## Why Keyword Extraction is Permanently Forbidden
+**Context requirement.** The full chapter text MUST be read into context for both inventory generation and finding evaluation. No summaries, no truncation, no "representative excerpts." You cannot match against evidence you haven't read.
 
-See `docs/PM_0001_keyword-extraction-fake-verification.md` for the full post-mortem. The core lesson: keyword overlap between a claim and a source passage says nothing about whether the claim accurately represents the source. Words can match without meaning matching. Low overlap does not mean the claim is wrong. Any automated scoring system substitutes string matching for semantic judgment and produces false confidence.
+**Coverage inventories.** Before evaluating findings, generate a structured inventory for each chapter listing every distinct argument and every piece of specific evidence used. Not a summary — an inventory at the level of individual evidence items.
 
-This prohibition applies to the concept, not just specific function names. Any mechanism that scores, ranks, or classifies citation accuracy without semantic understanding is forbidden.
+A summary is too coarse: "Chapter 3 discusses Hellenistic royal titles."
+An inventory is the right granularity: "Chapter 3 argues 'Son of God' was a pre-Christian political title, citing: Alexander/Zeus-Ammon, Ptolemaic 'manifest god' epithets (Rosetta Stone), Augustus 'divi filius' coins, 4Q246, Justin Martyr Apology 1.21."
 
-## Alexandria: Extended Research Materials
+Each inventory entry has:
+- **argument**: one-sentence statement of the argument
+- **evidence**: list of specific evidence items (inscriptions, texts, names, dates, archaeological finds)
+- **section**: where in the chapter this appears (section title or line range)
 
-The `alexandria-pipelines` repo is the project's extended research corpus. It uses knowledge extraction pipelines to surface scholarly insights from unstructured sources that are not well-indexed by search engines or well-represented in LLM training data.
+Inventories are generated once per chapter by Opus reading the full chapter text. Stored as `sources/coverage/ch{N}_inventory.json` and reused across all finding evaluations.
 
-**Note:** This is a public repo. The specific data sources and extraction targets used by Alexandria are proprietary. Do not disclose them in public-facing documentation.
+**Matching.** The evaluator compares each finding's specific claim and evidence against the chapter inventory. The question: "Is the specific evidence or argument in this finding already present in the chapter's inventory?"
 
-### Research Scope Expansion
+**Verdicts.** Every verdict must include a justification — e.g., "already in ch3 section on royal titles," "not relevant to any argument in the book," "too little evidence to act on."
 
-The existing research process (ChatGPT + Claude + citation verification) covers published scholarship and primary sources. Alexandria extends this to a broader body of scholarly discourse that may not appear in print or standard databases.
+- `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
+- `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
+- `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
+- `wrong_chapter` — finding is relevant to the book but doesn't bear on any argument in this chapter. Justification must name the correct chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
+- `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., contradicts the book's thesis, concerns a topic the book does not address anywhere).
 
-The next phase of research should scan Alexandria's extracted materials for:
+**Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
+- Build inventory for Ch3 (biggest chapter, most findings)
+- Evaluate 30 findings with mixed expected outcomes
+- Check that verdicts have specific justifications — not generic restatements of the verdict category
+- If validation fails, the inventory granularity is wrong — fix the inventory before scaling
 
-- Arguments or evidence relevant to the book's thesis that we haven't encountered yet
-- Counter-arguments to claims already in the manuscript
-- Scholarly debates or positions that challenge or support our framing
-- Primary source references that we haven't tracked down
+**Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/extraction_review.html` (verdicts displayed in the review UI with justifications visible per finding)
 
-Any finding from Alexandria feeds into the same three-gate pipeline: ChatGPT drafting, Claude review, and citation verification before it reaches the manuscript.
+### Step 2: Embedding Attempt
+
+**Question:** Does this finding genuinely add value when placed in the book?
+
+**Q&A check.** Before attempting to embed a finding, read the relevant `scripts/chN_qa.md`. A finding may have already been rejected for a specific reason, or the claim may already have been verified through a different path. The book does not need to address every counterargument to every criticism — if Q&A records show a deliberate decision to exclude something, respect it.
+
+**Cross-chapter check.** Before writing any text into a chapter, grep all chapter files for the topic. If the book already addresses this topic elsewhere, read that section. If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override by writing a competing version.
+
+If another chapter already contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated in a second location. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+
+**Section-fit check.** Before inserting text into a specific section, verify two things: (1) the new text does not contradict the chapter's own thesis, and (2) the new text serves the argument of the section it is placed in. A finding about authorship attribution does not belong in a section arguing about dating, even if both are in the same chapter. If the text doesn't serve the section's argument, find the section it does serve — or create one.
+
+**Manuscript prose.** All text written into a chapter must go through the standard chapter edit workflow: ChatGPT drafts the text, Claude reviews. Claude does not write manuscript prose.
+
+For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
+
+**ChatGPT is helpful for discussing editorial value** ("does this make the argument stronger or just longer?") and for research leads ("where might this claim come from?"). But ChatGPT lies often due to bias — it hallucinates sources, fabricates references, and presents its gaps as fact. Listen to ChatGPT, but never trust it.
+
+**No KEEP or SKIP decision may rest on ChatGPT's factual assertions alone.** If ChatGPT says a claim checks out, that is a useful lead — now verify through the citation verification pipeline: download the source, search the text, present side-by-side. If ChatGPT can't find something, that means nothing — the source may exist outside its training data. When a source isn't in the registry yet, add it to `scripts/source_registry.py` and record in Q&A what source is needed and where to look, so it can be downloaded and verified through the pipeline.
+
+This step follows the standard chapter edit workflow (README > Core Workflow for Adding Content to Chapters). ChatGPT drafts; Claude reviews.
+
+**Step 2 produces draft text, not committed text.** Embeddings are written to the chapter file but NOT committed until Step 3 verification is complete. Step 2 ends with uncommitted edits in the working tree and a list of claims that need verification. The commit happens after Step 3, and the commit message must reference which claims were verified and how (e.g., "verified Vaticanus ends at 16:8 via facsimile," "Tertullian attribution confirmed in Adv. Prax. 27").
+
+### Step 3: Research and Verification
+
+**Question:** Is the claim factually accurate?
+
+**Q&A check.** Before researching a claim, read the relevant `scripts/chN_qa.md`. The claim may already be verified, marked bogus, or flagged as needing specific follow-up. A finding marked "uncertain" in Step 2 may already have a resolution in Q&A. Claims that were researched and rejected stay rejected — record the rejection reason in `scripts/research_gaps.md` so it is not revisited.
+
+Only after confirming the finding is relevant and adds value do we invest in verification.
+
+**Verification uses the established citation verification pipeline** (`docs/DD_0001_citation-review-report.md`). ChatGPT is a helpful research assistant for finding sources and pointing to scholarly debates, but it lies often and must never be trusted as the final word. Listen to ChatGPT, then verify independently.
+
+**Verification hierarchy (in order of authority):**
+
+1. **Primary source text** — Read the actual ancient text. This is the only real verification.
+2. **Citation verification pipeline** — For texts in the source registry, use the download + side-by-side review pipeline.
+3. **ChatGPT as research lead** — ChatGPT helps locate sources and identify debates. Its answers are starting points, never endpoints. "ChatGPT confirmed it" is not verification. "ChatGPT couldn't find it" is not refutation.
+
+**Three outcomes:**
+
+1. **Verified against primary source** — Evidence checks out in the actual text. Pass to standard review process (Claude review → citation verification pipeline).
+2. **Uncertain but valuable** — Source not yet downloaded or not publicly available. Record in Q&A what source is needed and where to look, add to source registry if possible. Stays in pipeline until source is acquired and checked.
+3. **False or unsupported** — Primary source contradicts the claim, or claim is demonstrably fabricated. Remove from manuscript. Record rejection in Q&A with the specific counter-evidence.
+
+## Forbidden Approaches
+
+- **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
+- **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
+- **Sub-frontier models** for step 1. They silently degrade to topic-matching.
+- **Summaries or truncated context** instead of full chapter text.
+- **Trusting ChatGPT's factual assertions.** ChatGPT is a helpful research resource — use it freely to find sources and research leads. But it lies often due to bias. Listen to it, never trust it. "ChatGPT confirmed X" is a lead, not verification — download the source and run it through the pipeline. "ChatGPT couldn't find X" means nothing — the source may exist outside its training data. No KEEP/SKIP decision may rest on ChatGPT's word alone. When a source isn't available yet, record in Q&A what's needed and where to look so it can be acquired and verified.
 
 ## Where Everything Lives
 
 | What | Where |
 |------|-------|
-| Process rules (AI governance, evidence standards, writing standards) | README > respective sections |
-| Research tracking files and conventions | README > WORKING WITH CHATGPT > Research Tracking |
-| Citation verification pipeline | README > CITATION VERIFICATION |
-| Script reference | README > PROJECT SETUP > Toolchain Reference |
-| File conventions | README > PROJECT SETUP > File Conventions |
-| Citation pipeline technical spec | `docs/DD_0001_citation-review-report.md` |
+| Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
+| Coverage + relevance verdicts (review UI) | `sources/extraction_review.html` |
+| Coverage inventory generator | `scripts/build_coverage.py` |
+| Findings review UI | `sources/extraction_review.html` |
+| Review UI generator | `scripts/review_extractions.py` |
+| Per-chapter research Q&A | `scripts/chN_qa.md` |
+| Open research questions | `scripts/research_gaps.md` |
+| Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
 | Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |

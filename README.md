@@ -567,20 +567,37 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 ```
 User will review and mark "bogus" (Western bias) or "needs research" (legitimate).
 
+## ChatGPT: Listen But Never Trust (CRITICAL)
+
+ChatGPT is a very helpful research resource. It finds sources, points to scholarly debates, identifies parallels, and suggests directions that would take hours to discover manually. Use it freely for research.
+
+ChatGPT also lies often, especially due to bias. It halluccinates sources, fabricates verse references, invents scholarly consensus, and presents its gaps as fact. It is helpful but unreliable.
+
+**The rule: listen to ChatGPT, but never trust it.**
+
+- ChatGPT says a verse contains X → useful lead, now read the actual verse
+- ChatGPT says an ancient text has a passage → useful lead, now find the text
+- ChatGPT can't find something → that means nothing, the source may exist outside its training data
+- ChatGPT confirms something → that also means nothing, it may be hallucinating
+
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record in Q&A what source is needed and where to look — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
+
 ## Research Tracking
 
-Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These contain:
+Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
 
 - ChatGPT research findings and key texts
 - Fact-checking notes and doubts
 - User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
 - Status of whether findings have been added to the chapter
 
-Open research questions go in `scripts/research_gaps.md`. Items are deleted when resolved, not marked as done.
+All pipeline steps must consult Q&A files before making decisions; without them the LLM will repeatedly resurface the same arguments.
+
+`scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
 Candidate additions with triage status (KEEP / WEAK / WITHDRAW) are tracked in `scripts/research-notes-substantial-additions.md`.
 
-Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Any findings feed into the same three-gate pipeline (ChatGPT drafting → Claude review → citation verification). See `docs/DD_0002_research-qa-strategy.md` for scope details.
+Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Findings are filtered through the Alexandria pipeline (see `docs/DD_0002_research-qa-strategy.md`) before entering the standard workflow (ChatGPT drafting → Claude review → citation verification).
 
 **Note:** This is a public repo and external contributions are welcome. Do not disclose specific Alexandria data sources or extraction targets in public-facing files — those are proprietary.
 
@@ -813,8 +830,8 @@ manuscript.tex
 
 | Path | Purpose |
 |------|---------|
-| `scripts/chN_qa.md` | Per-chapter research notes and ChatGPT findings (ch2 through ch6) |
-| `scripts/research_gaps.md` | Open research questions; items deleted when resolved |
+| `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
+| `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
 | `scripts/research-notes-substantial-additions.md` | Candidate additions with triage status (KEEP / WEAK / WITHDRAW) |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |

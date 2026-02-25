@@ -1,0 +1,234 @@
+[
+  {
+    "finding_id": "-6tPKxLkuRk_0",
+    "channel": "tabor",
+    "summary": "Tabor prioritizes John 20:1-10 as the most authentic resurrection account.",
+    "verdict": "covered",
+    "justification": "Ch4 already cites John 20:1-10 explicitly as evidence of narrative restraint and eyewitness observation (lines 872-873: 'John 20:1-10, which reports only what the witnesses saw: the empty tomb, the linen wrappings lying there, and the face cloth folded separately'). The argument that John preserves the most authentic resurrection account is the chapter's core thesis. Inventory entries 5, 6, 16."
+  },
+  {
+    "finding_id": "-6tPKxLkuRk_1",
+    "channel": "tabor",
+    "summary": "Tabor establishes Mary Magdalene as the first apostle and unique eyewitness to the risen Jesus.",
+    "verdict": "covered",
+    "justification": "Ch4 extensively argues Mary Magdalene was the primary eyewitness and first witness of Easter (lines 98, 199-212, 348-358, 481-497). The chapter already calls her 'apostle to the apostles' and 'the fourth great pillar of Christian origins.' Inventory entries 6, 13."
+  },
+  {
+    "finding_id": "5UgmTy7Uv0Q_0",
+    "channel": "tabor",
+    "summary": "Tabor shifted from dismissing John to recognizing it contains early composite layers with authentic traditions.",
+    "verdict": "covered",
+    "justification": "Ch4's entire first section (lines 34-92) argues for John's early dating and compositional layers, citing manuscript evidence, Egyptian papyri, and the distinction between John 1-20 and the chapter 21 appendix. The shift from 'late John' to 'early John with composite layers' IS the chapter's argument. Inventory entries 2, 3, 4, 5."
+  },
+  {
+    "finding_id": "-BfNLtLG2Vc_0",
+    "channel": "tabor",
+    "summary": "Archaeological evidence confirms John's accuracy on two high priests and Pilate's judgment seat.",
+    "verdict": "covered",
+    "justification": "Ch4 already cites the Annas/Caiaphas dual high priesthood as evidence of John's institutional knowledge (lines 109-111), with specific Josephus references (Ant. 18.26, 18.34-35). Also cites Pool of Bethesda, Pool of Siloam, Caiaphas tomb, Gabbatha. Inventory entry 7."
+  },
+  {
+    "finding_id": "2osEbUFXSI8_0",
+    "channel": "tabor",
+    "summary": "Mark's three alternative endings added by scribes show gospel textual modification patterns.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 discusses Mark 13 redactional expansion (lines 961-1006) and mentions Mark's edition without the resurrection (line 19), but does NOT specifically discuss the three alternative endings that scribes added, nor does it use this as evidence of textual modification patterns. The chapter's Mark redaction discussion focuses on the Olivet Discourse, not the ending. This is specific textual transmission evidence the chapter lacks.",
+    "step2": "embedded",
+    "step2_note": "Expanded line 19 mention with three scribal endings detail. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "O1cxMlDgTa8_0",
+    "channel": "mythvision",
+    "summary": "John as 'most Dionysian gospel' with Jesus as gift-giving deity paralleling Dionysus (Ploutos Phora).",
+    "verdict": "covered",
+    "justification": "Ch4 already describes John as a 'Dionysian Gospel' (line 691), cites the Cana miracle as reproducing Dionysus's signature act (line 692), mentions 'I am the true vine' mapping onto Dionysus's symbol (line 693), and notes Clement of Alexandria's comparison (lines 688-690). The specific epithet 'Ploutos Phora' (wealthbringer) is not mentioned but the argument and framework are fully present. Inventory entry 35."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_0",
+    "channel": "mythvision",
+    "summary": "MacDonald: Homeric mimesis in Mark's resurrection — Iliad 24 parallel (guards, open doors).",
+    "verdict": "new_argument",
+    "justification": "Ch4 does not discuss Homeric mimesis in Mark's resurrection narrative. The chapter's treatment of Mark focuses on redaction in Mark 13 (Olivet Discourse) and the baptism/coronation narrative, not on literary parallels with Homer's Iliad. This is a genuinely new literary-critical argument about Gospel composition that bears on the chapter's thesis about the Gospels' Greek literary origins. No inventory entry matches.",
+    "step2": "skip",
+    "step2_note": "Shifts Ch4 toward literary criticism, away from core thesis. MacDonald's methodology contested. Ch4 already has Dionysian layer for John."
+  },
+  {
+    "finding_id": "5zZchadJDM0_0",
+    "channel": "mythvision",
+    "summary": "MacDonald: earliest recoverable layer of John is 'Dionysian Gospel' with Jesus as divine donor deity.",
+    "verdict": "covered",
+    "justification": "Ch4 already presents this three-layer theory at lines 691-694: 'a Dionysian foundation, a later anti-Jewish polemical expansion, and finally the Beloved Disciple editorial frame.' The chapter also mentions Clement of Alexandria recognizing the Dionysian parallels (lines 688-690). Inventory entry 35."
+  },
+  {
+    "finding_id": "5zZchadJDM0_1",
+    "channel": "mythvision",
+    "summary": "MacDonald: John has three compositional stages. Eusebius recognized John 3:24 fills synoptic gap. Johannine epistles quoted ~40 times within gospel.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 already describes the three compositional stages (Inventory entry 35), but it does NOT cite: (a) Eusebius using John 3:24 as evidence of synoptic awareness, or (b) the claim that Johannine epistles are quoted approximately 40 times within the gospel. Both are specific evidence items the chapter could use to strengthen its compositional argument.",
+    "step2": "pipeline",
+    "step2_note": "Eusebius/John 3:24 point editorially marginal. The ~40 epistles quotations claim needs verification via concordance or critical commentary before embedding or rejection."
+  },
+  {
+    "finding_id": "xddZbf6EE7k_0",
+    "channel": "mythvision",
+    "summary": "MacDonald: Q document imitates Homer's Odyssey.",
+    "verdict": "new_argument",
+    "justification": "Ch4 does not discuss the Q document at all, nor Homer's Odyssey as a literary model for Gospel source material. The chapter's literary arguments focus on John's Dionysian parallels and Greco-Roman bios genre, not on Q/Homeric mimesis. This is a distinct literary-critical argument about the earliest Gospel source having Greek epic influence.",
+    "step2": "skip",
+    "step2_note": "Q hypothesis contested, Ch4 never mentions Q. Introduces two debated theories simultaneously, neither bearing on dating/reliability."
+  },
+  {
+    "finding_id": "_b3Y3cJ0Ic8_0",
+    "channel": "_curated",
+    "summary": "Schrader: P66 shows 'Mary' changed to 'Martha' by changing one letter; one woman split in two in John 11:3.",
+    "verdict": "covered",
+    "justification": "Ch4 already cites Schrader's manuscript analysis (line 470, cite{schrader:martha}): 'early manuscripts including P66 and P75 show the names Mary and Martha shifting positions, with Mary appearing where later manuscripts read Martha.' The specific P66 one-letter change and the splitting of one woman into two are already presented. Inventory entry 11."
+  },
+  {
+    "finding_id": "_b3Y3cJ0Ic8_1",
+    "channel": "_curated",
+    "summary": "Schrader: Tertullian confirms Mary (not Martha) gave the christological confession in John 11:27.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 discusses the Mary/Martha confession issue (lines 470-474) and notes 'the climactic confession in John 11:27 may originally have been placed in the mouth of Mary, not Martha.' However, it does NOT cite Tertullian's commentary as specific patristic evidence confirming this. Tertullian's attestation would be a concrete patristic witness for this textual variant, strengthening the existing argument.",
+    "step2": "embedded",
+    "step2_note": "Added Tertullian Adversus Praxean as patristic witness in Mary/Martha section. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "_b3Y3cJ0Ic8_2",
+    "channel": "_curated",
+    "summary": "Schrader: seven identical textual parallels between Lazarus narrative (John 11) and Mary Magdalene resurrection narrative (John 20).",
+    "verdict": "new_evidence",
+    "justification": "Ch4 discusses the Lazarus-Bethany connection to the Beloved Disciple (lines 326-337) and the Mary Magdalene resurrection scene (lines 199-212, 316-324), but does NOT identify or enumerate specific textual parallels between the two narratives. Seven structural parallels would strengthen the argument that the same eyewitness voice shapes both.",
+    "step2": "embedded",
+    "step2_note": "Added seven verse-level parallels in Lazarus-Bethany section with full citations. ChatGPT confirmed specific references. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "_b3Y3cJ0Ic8_3",
+    "channel": "_curated",
+    "summary": "Schrader: 250+ manuscripts survey shows 1-in-5 Greek MSS and 1-in-3 Old Latin MSS have Martha alterations.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 cites Schrader's analysis generally (line 470) but does NOT include the quantitative scope of the study (250+ manuscripts) or the striking statistics (1-in-5 Greek, 1-in-3 Old Latin). These concrete numbers would significantly strengthen the argument that scribal modification of female figures was widespread and systematic, not isolated.",
+    "step2": "embedded",
+    "step2_note": "Merged with _b3Y3cJ0Ic8_1 embedding. Added 250+ MSS scope and 1-in-5 / 1-in-3 statistics. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "_dAMdPulFFs_0",
+    "channel": "_curated",
+    "summary": "Schrader: Mary Magdalene's role in John was contested; gospels and even copies of same gospel disagree on her presence.",
+    "verdict": "covered",
+    "justification": "Ch4 already makes this argument at lines 459-479, citing manuscript instability in Mary/Martha passages, variant readings, and name substitutions. The chapter explicitly states 'the textual evidence is consistent with the hypothesis that an original single strong female confessor named Mary in John 11 was later split into two figures.' Inventory entry 11."
+  },
+  {
+    "finding_id": "_dAMdPulFFs_1",
+    "channel": "_curated",
+    "summary": "Schrader: Martha may have been editorially added to John to diminish Mary Magdalene's authority.",
+    "verdict": "covered",
+    "justification": "This is the core argument of lines 469-479: 'Some readings suggest that only one sister was originally present, named Mary, not Martha... the textual evidence is consistent with the hypothesis that an original single strong female confessor named Mary in John 11 was later split into two figures and partially toned down, probably to reduce the prominence of that Mary.' Inventory entry 11."
+  },
+  {
+    "finding_id": "_dAMdPulFFs_2",
+    "channel": "_curated",
+    "summary": "Perpetua's diary (200-203 CE) as comparative evidence of female authorship in antiquity.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 discusses female authorship parallels from antiquity (Sappho, Corinna, Theocritus's Idyll 15, women's papyrus letters from Oxyrhynchus — lines 263-267), and women's memory books (lines 297-302), but does NOT cite Perpetua's diary as a named example of a wealthy educated woman whose rhetorical writing survived. Perpetua would be the closest chronological parallel to a female Gospel author.",
+    "step2": "embedded",
+    "step2_note": "Added after Women's Memory Books section. ChatGPT confirmed unique value: only extended first-person prose by woman with visible editorial redaction. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "_dAMdPulFFs_3",
+    "channel": "_curated",
+    "summary": "Gospel of Mary and Gospel of Philip identify Mary Magdalene as most beloved disciple; both show familiarity with John.",
+    "verdict": "covered",
+    "justification": "Ch4 already cites Gospel of Mary (Coptic 17-18), Gospel of Philip (63:32-36), and Pistis Sophia extensively at lines 136-151, including exact quotations. The chapter explicitly notes all three texts 'preserve the same formula: Jesus loved Mary more than the others' and that the 'beloved more than the others motif is repeatedly attached to Mary Magdalene in non-canonical material.' Inventory entry 6."
+  },
+  {
+    "finding_id": "__k29FidXyk_0",
+    "channel": "gnosticinformant",
+    "summary": "John changes crucifixion date to Passover eve and replaces Last Supper with foot-washing for lamb theology; Egyptian Book of the Dead Osiris parallels.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 discusses John's Eucharist omission (lines 678-705) and mentions the foot-washing replacement (line 681) and Dionysian parallels. However, the chapter does NOT cite the Egyptian Book of the Dead / Osiris parallel ('drink my blood and eat my flesh' being cakes and wine in the Book of the Dead). This specific Egyptian parallel is new evidence for the Hellenistic background of the Eucharist.",
+    "step2": "pipeline",
+    "step2_note": "ChatGPT could not locate specific spell/chapter. However, inability to find ≠ absence. Needs primary source consultation: Faulkner or Allen edition of Book of the Dead. Cannot embed or reject until source is checked."
+  },
+  {
+    "finding_id": "_4tdnV31Vg4_0",
+    "channel": "gnosticinformant",
+    "summary": "John written for Greco-Roman audience incorporating Dionysian cultic practices.",
+    "verdict": "covered",
+    "justification": "Ch4 already presents John as a 'Dionysian Gospel' with explicit Clement of Alexandria comparison (lines 688-694), Cana miracle as Dionysus's signature act, and 'I am the true vine' as Dionysus's core symbol. Inventory entry 35."
+  },
+  {
+    "finding_id": "-Im3LOngUCM_0",
+    "channel": "gnosticinformant",
+    "summary": "John employs Hellenistic logos theology (eternal pre-existent logos), contrasting with Synoptics.",
+    "verdict": "covered",
+    "justification": "Ch4 has an extensive section on John's Logos theology and its Philonic background (lines 755-790), including specific Philo citations for Logos as creation instrument, first-born son, archangel, cosmic high priest, image of God. The contrast with Synoptics is implicit in the chapter's overall structure. Inventory entry 18."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_0",
+    "channel": "gnosticinformant",
+    "summary": "6th-century Syrian Christian authors adapted Ishtar's lamentations for Tamuz into Virgin Mary mourning Jesus.",
+    "verdict": "wrong_chapter",
+    "justification": "This finding concerns how Mesopotamian goddess-mourning traditions were adapted into Christian Marian theology in the 6th century. Ch4 focuses on Gospel dating, authorship, and reliability — not on later theological transmission or Mesopotamian religious parallels. This material bears on Ch3's discussion of pre-Christian divine traditions and their absorption into Christianity, or Ch5's discussion of how Pauline/early Christian theology developed. Re-assign to Ch3 or Ch5."
+  },
+  {
+    "finding_id": "97IvyIpNoKg_0",
+    "channel": "maklelan",
+    "summary": "Matthew originally composed in Greek (not Hebrew) — a pivotal OT passage only works in Greek mistranslation.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 briefly mentions Matthew's references to Jewish scriptures (lines 1266-1270) but does NOT present the argument that Matthew was originally composed in Greek, nor the specific evidence that a pivotal passage depends on the Greek LXX mistranslation. This evidence directly strengthens the chapter's thesis that the Gospels are fundamentally Greek-framework documents.",
+    "step2": "embedded",
+    "step2_note": "Added Isaiah 7:14 almah/parthenos argument in Matthew section. Needs Step 3 verification (well-established scholarly point)."
+  },
+  {
+    "finding_id": "289TE0FcAbs_0",
+    "channel": "maklelan",
+    "summary": "Luke nativity narratives (Luke 1-2) were likely secondary additions by a different author.",
+    "verdict": "covered",
+    "justification": "Ch4 already discusses Luke's birth narrative as potentially added later (lines 1272-1309). The Marcion section argues that Marcion's gospel (opening at Luke 3:1, no infancy narratives) reflects an earlier edition. Line 1309 explicitly states: 'his original version may have lacked a birth narrative simply because he had no source for it at the time.' Inventory entry 29."
+  },
+  {
+    "finding_id": "3ro9EEmJBdo_0",
+    "channel": "ehrman",
+    "summary": "Ehrman: early Christian texts show Peter-Mary conflict over who was 'first' to witness resurrection.",
+    "verdict": "covered",
+    "justification": "Ch4 already presents the Peter-Mary rivalry extensively (lines 132-151), citing Gospel of Mary (Coptic 17-18), Gospel of Philip, Pistis Sophia, and concluding 'No early text preserves John son of Zebedee versus Peter rivalry over authority. All early rivalry traditions are Peter versus Mary.' Inventory entry 6."
+  },
+  {
+    "finding_id": "BOV4urfzU94_0",
+    "channel": "ehrman",
+    "summary": "Ehrman: women held leadership/apostolic/diaconal roles in Paul's churches; works elevating women excluded from NT canon.",
+    "verdict": "covered",
+    "justification": "Ch4 discusses women's leadership roles extensively: Priscilla, Phoebe, Thecla (line 524), Junia as apostle (lines 462-467), and the general thesis that female prominence was obscured (lines 455-479). The canon-formation exclusion argument is implicit in the erasure section. Inventory entries 11, 12, 13."
+  },
+  {
+    "finding_id": "1mWSBuMTUOM_0",
+    "channel": "paulogia",
+    "summary": "Dale Allison affirms Mary Magdalene was likely 'the first person to put this all together' regarding resurrection.",
+    "verdict": "covered",
+    "justification": "Ch4 already argues Mary Magdalene was the first resurrection witness and first apostolic commission holder (lines 199-212, 348-358, 481-497). The chapter's argument is stronger than Allison's cautious affirmation — it presents Mary as the eyewitness behind the entire Gospel. Inventory entries 6, 10, 13."
+  },
+  {
+    "finding_id": "Du-Ucq5QrAc_0",
+    "channel": "paulogia",
+    "summary": "Early gospel manuscripts were anonymous; names Matthew/Mark/Luke/John appear only in Irenaeus c. 185 AD.",
+    "verdict": "new_evidence",
+    "justification": "Ch4 mentions Irenaeus attesting to Johannine authorship (line 745, Adv. Haer. 3.1.1) but does NOT make the broader point that ALL four gospel manuscripts were originally anonymous and that the four-name attribution first appears only in Irenaeus c. 185 AD. The chapter also does not mention Eusebius deeming Papias unreliable. This evidence strengthens the argument that traditional authorship attributions are late constructions.",
+    "step2": "embedded",
+    "step2_note": "Added after attestation chronology in John dating section. Includes Eusebius quote deeming Papias unreliable. Needs Step 3 verification."
+  },
+  {
+    "finding_id": "-C-jDLJ9ey0_0",
+    "channel": "esoterica",
+    "summary": "Explicit Stoic and Platonic philosophical influence throughout Gospel of John.",
+    "verdict": "covered",
+    "justification": "Ch4 discusses Philo's Platonic language of 'intelligible light opposed to material ignorance' (line 771), the Logos as bridging Greek philosophy and Jewish Wisdom (line 293), and the overall Alexandrian philosophical framework (lines 755-790). Stoicism is not named explicitly but the Hellenistic philosophical framework is thoroughly covered. Inventory entry 18."
+  },
+  {
+    "finding_id": "I4GHrs5xAIk_0",
+    "channel": "esoterica",
+    "summary": "Gospel of Mary presents Mary Magdalene as exclusive recipient of apostolic teaching and 'true heir of apostolic Christianity'; possibly female-authored.",
+    "verdict": "covered",
+    "justification": "Ch4 already cites the Gospel of Mary (lines 136-137, 148, 825), noting Peter's complaint about Mary receiving special revelation and Levi's rebuke. The chapter uses this as evidence for the Peter-Mary rivalry and Mary's apostolic authority. Inventory entry 6."
+  }
+]
