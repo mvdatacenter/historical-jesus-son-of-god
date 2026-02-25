@@ -61,6 +61,10 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 **Q&A check.** Before attempting to embed a finding, read the relevant `scripts/chN_qa.md`. A finding may have already been rejected for a specific reason, or the claim may already have been verified through a different path. The book does not need to address every counterargument to every criticism — if Q&A records show a deliberate decision to exclude something, respect it.
 
+**Cross-chapter check.** Before writing any text into a chapter, grep all chapter files for the topic. If the book already addresses this topic elsewhere, read that section. If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override by writing a competing version.
+
+**Manuscript prose.** All text written into a chapter must go through the standard chapter edit workflow: ChatGPT drafts the text, Claude reviews. Claude does not write manuscript prose.
+
 For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
 
 **ChatGPT is helpful for discussing editorial value** ("does this make the argument stronger or just longer?") and for research leads ("where might this claim come from?"). But ChatGPT lies often due to bias — it hallucinates sources, fabricates references, and presents its gaps as fact. Listen to ChatGPT, but never trust it.
