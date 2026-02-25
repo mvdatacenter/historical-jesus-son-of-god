@@ -65,6 +65,8 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 If another chapter already contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated in a second location. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
 
+**Section-fit check.** Before inserting text into a specific section, verify two things: (1) the new text does not contradict the chapter's own thesis, and (2) the new text serves the argument of the section it is placed in. A finding about authorship attribution does not belong in a section arguing about dating, even if both are in the same chapter. If the text doesn't serve the section's argument, find the section it does serve — or create one.
+
 **Manuscript prose.** All text written into a chapter must go through the standard chapter edit workflow: ChatGPT drafts the text, Claude reviews. Claude does not write manuscript prose.
 
 For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
