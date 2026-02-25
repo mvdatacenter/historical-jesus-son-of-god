@@ -567,6 +567,21 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 ```
 User will review and mark "bogus" (Western bias) or "needs research" (legitimate).
 
+## ChatGPT: Listen But Never Trust (CRITICAL)
+
+ChatGPT is a very helpful research resource. It finds sources, points to scholarly debates, identifies parallels, and suggests directions that would take hours to discover manually. Use it freely for research.
+
+ChatGPT also lies often, especially due to bias. It halluccinates sources, fabricates verse references, invents scholarly consensus, and presents its gaps as fact. It is helpful but unreliable.
+
+**The rule: listen to ChatGPT, but never trust it.**
+
+- ChatGPT says a verse contains X → useful lead, now read the actual verse
+- ChatGPT says an ancient text has a passage → useful lead, now find the text
+- ChatGPT can't find something → that means nothing, the source may exist outside its training data
+- ChatGPT confirms something → that also means nothing, it may be hallucinating
+
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record in Q&A what source is needed and where to look — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
+
 ## Research Tracking
 
 Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:

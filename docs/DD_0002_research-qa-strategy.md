@@ -44,7 +44,8 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 - `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
 - `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
-- `tangential` — related to the book's themes but doesn't bear on any inventoried argument. Justification must say why it doesn't connect.
+- `wrong_chapter` — finding is relevant to the book but doesn't bear on any argument in this chapter. Justification must name the correct chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
+- `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., contradicts the book's thesis, concerns a topic the book does not address anywhere).
 
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
 - Build inventory for Ch3 (biggest chapter, most findings)
@@ -62,6 +63,10 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
 
+**ChatGPT is helpful for discussing editorial value** ("does this make the argument stronger or just longer?") and for research leads ("where might this claim come from?"). But ChatGPT lies often due to bias — it hallucinates sources, fabricates references, and presents its gaps as fact. Listen to ChatGPT, but never trust it.
+
+**No KEEP or SKIP decision may rest on ChatGPT's factual assertions alone.** If ChatGPT says a claim checks out, that is a useful lead — now verify through the citation verification pipeline: download the source, search the text, present side-by-side. If ChatGPT can't find something, that means nothing — the source may exist outside its training data. When a source isn't in the registry yet, add it to `scripts/source_registry.py` and record in Q&A what source is needed and where to look, so it can be downloaded and verified through the pipeline.
+
 This step follows the standard chapter edit workflow (README > Core Workflow for Adding Content to Chapters). ChatGPT drafts; Claude reviews.
 
 ### Step 3: Research and Verification
@@ -70,17 +75,21 @@ This step follows the standard chapter edit workflow (README > Core Workflow for
 
 **Q&A check.** Before researching a claim, read the relevant `scripts/chN_qa.md`. The claim may already be verified, marked bogus, or flagged as needing specific follow-up. A finding marked "uncertain" in Step 2 may already have a resolution in Q&A. Claims that were researched and rejected stay rejected — record the rejection reason in `scripts/research_gaps.md` so it is not revisited.
 
-Only after confirming the finding is relevant and adds value do we invest in verification. Use ChatGPT to research:
+Only after confirming the finding is relevant and adds value do we invest in verification.
 
-- Is the claimed text/inscription/event real?
-- Does the primary source actually say what the finding claims?
-- Are there known counter-arguments or refutations?
+**Verification uses the established citation verification pipeline** (`docs/DD_0001_citation-review-report.md`). ChatGPT is a helpful research assistant for finding sources and pointing to scholarly debates, but it lies often and must never be trusted as the final word. Listen to ChatGPT, then verify independently.
+
+**Verification hierarchy (in order of authority):**
+
+1. **Primary source text** — Read the actual ancient text. This is the only real verification.
+2. **Citation verification pipeline** — For texts in the source registry, use the download + side-by-side review pipeline.
+3. **ChatGPT as research lead** — ChatGPT helps locate sources and identify debates. Its answers are starting points, never endpoints. "ChatGPT confirmed it" is not verification. "ChatGPT couldn't find it" is not refutation.
 
 **Three outcomes:**
 
-1. **Verified** — Evidence checks out. Pass to standard review process (Claude review → citation verification pipeline).
-2. **Uncertain but valuable** — Can't fully confirm but argument is strong enough to keep with scholarly caveat. Human decision.
-3. **False or unsupported** — Remove from manuscript.
+1. **Verified against primary source** — Evidence checks out in the actual text. Pass to standard review process (Claude review → citation verification pipeline).
+2. **Uncertain but valuable** — Source not yet downloaded or not publicly available. Record in Q&A what source is needed and where to look, add to source registry if possible. Stays in pipeline until source is acquired and checked.
+3. **False or unsupported** — Primary source contradicts the claim, or claim is demonstrably fabricated. Remove from manuscript. Record rejection in Q&A with the specific counter-evidence.
 
 ## Forbidden Approaches
 
@@ -88,6 +97,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 - **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
 - **Sub-frontier models** for step 1. They silently degrade to topic-matching.
 - **Summaries or truncated context** instead of full chapter text.
+- **Trusting ChatGPT's factual assertions.** ChatGPT is a helpful research resource — use it freely to find sources and research leads. But it lies often due to bias. Listen to it, never trust it. "ChatGPT confirmed X" is a lead, not verification — download the source and run it through the pipeline. "ChatGPT couldn't find X" means nothing — the source may exist outside its training data. No KEEP/SKIP decision may rest on ChatGPT's word alone. When a source isn't available yet, record in Q&A what's needed and where to look so it can be acquired and verified.
 
 ## Where Everything Lives
 
