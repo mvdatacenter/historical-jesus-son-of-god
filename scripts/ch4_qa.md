@@ -859,8 +859,10 @@ Many Johannine scholars argue BD is either:
 
 **`2osEbUFXSI8_0`** — Mark's three alternative endings
 - Embedded at line 19, expanding "Mark without resurrection" mention
-- Added: oldest MSS end at 16:8, three scribal endings (shorter, longer 16:9-20, combined)
-- **Status: EMBEDDED, needs Step 3 verification** (three endings are well-established textual criticism)
+- Added: Codex Vaticanus and Codex Sinaiticus (4th c.) both end at 16:8; Vaticanus blank column; three scribal endings
+- **Status: EMBEDDED, needs Step 3 verification**
+- Verify: (1) Vaticanus and Sinaiticus end at 16:8 — source: facsimile/critical apparatus (2) Vaticanus blank column — source: manuscript description (3) three alternative endings — source: critical apparatus of NA28 or UBS5
+- (chatgpt says Vaticanus has conspicuous blank column, only such gap in NT portion; Sinaiticus proceeds directly to Luke — needs primary source confirmation)
 
 **`_b3Y3cJ0Ic8_1`** — Tertullian confirms Mary gave John 11:27 confession
 - Embedded in Mary/Martha erasure section
