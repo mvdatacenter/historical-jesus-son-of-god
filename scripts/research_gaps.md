@@ -534,4 +534,12 @@ Source: `sources/youtube/` — 159 extracted files across 10 channels (tabor:50,
 
 **Status:** ChatGPT could not locate a specific spell/chapter. That is not evidence of absence — the source may be outside its training data. Cannot embed or reject until a primary source is consulted through the citation pipeline.
 
+### Johannine epistles quoted ~40 times in Gospel of John (DD-0002 finding `5zZchadJDM0_1`)
+
+**Claim:** The Johannine epistles (1-3 John) are quoted approximately 40 times within the Gospel of John, indicating compositional interdependence.
+
+**Source needed:** Count verbal parallels between the Johannine epistles and Gospel of John using a concordance or critical commentary. Check Brown's Anchor Bible commentaries on the Johannine epistles and Gospel of John for a systematic catalogue of shared phrases and allusions.
+
+**Status:** Unverified YouTube-sourced claim. Cannot embed or reject until the count is confirmed or refuted against primary texts.
+
 *Last updated: 2026-02-26*

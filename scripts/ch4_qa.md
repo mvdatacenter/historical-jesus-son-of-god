@@ -898,7 +898,10 @@ Many Johannine scholars argue BD is either:
 - Reason: Q hypothesis itself is contested. Ch4 never mentions Q. Introduces two debated theories simultaneously (Q existence + Q-Homer mimesis), neither bearing on dating/reliability arguments.
 
 **`5zZchadJDM0_1`** — Eusebius citing John 3:24 + Johannine epistles quoted ~40 times in gospel
-- Reason: Eusebius point is marginal (ch4 already uses Eusebius for Papias). The "~40 times" claim is from a YouTube scholar, unverified — embedding risks credibility.
+- Eusebius point is marginal (ch4 already uses Eusebius for Papias at line 60).
+- The "~40 times" claim is unverified but cannot be rejected on that basis alone. If true, it would be concrete compositional evidence for the chapter's layered-composition thesis.
+- **Source needed:** Count the actual verbal parallels between the Johannine epistles (1 John, 2 John, 3 John) and the Gospel of John. A concordance or critical commentary (e.g., Brown's Anchor Bible commentaries on the Johannine epistles and Gospel) would confirm or refute the "~40" figure.
+- **Status: PIPELINE** — the Eusebius/John 3:24 point is editorially marginal, but the ~40 quotations claim needs verification before it can be embedded or rejected.
 
 **`__k29FidXyk_0`** — Egyptian Book of the Dead: Osiris "drink my blood and eat my flesh" (MARGINAL → NEEDS SOURCE)
 - ChatGPT could not locate a specific spell/chapter number in standard published translations. The closest it found was generic offering language, not Eucharist-style self-identification. However, ChatGPT's inability to find it is not evidence of absence — the source may exist outside its training data.

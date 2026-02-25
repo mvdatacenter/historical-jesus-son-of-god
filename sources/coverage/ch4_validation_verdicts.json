@@ -65,8 +65,8 @@
     "summary": "MacDonald: John has three compositional stages. Eusebius recognized John 3:24 fills synoptic gap. Johannine epistles quoted ~40 times within gospel.",
     "verdict": "new_evidence",
     "justification": "Ch4 already describes the three compositional stages (Inventory entry 35), but it does NOT cite: (a) Eusebius using John 3:24 as evidence of synoptic awareness, or (b) the claim that Johannine epistles are quoted approximately 40 times within the gospel. Both are specific evidence items the chapter could use to strengthen its compositional argument.",
-    "step2": "skip",
-    "step2_note": "Eusebius point marginal (ch4 already uses Eusebius for Papias). The ~40 times claim is from YouTube, unverified—risks credibility."
+    "step2": "pipeline",
+    "step2_note": "Eusebius/John 3:24 point editorially marginal. The ~40 epistles quotations claim needs verification via concordance or critical commentary before embedding or rejection."
   },
   {
     "finding_id": "xddZbf6EE7k_0",
