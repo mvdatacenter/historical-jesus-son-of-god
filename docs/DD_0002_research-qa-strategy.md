@@ -63,6 +63,8 @@ Inventories are generated once per chapter by Opus reading the full chapter text
 
 **Cross-chapter check.** Before writing any text into a chapter, grep all chapter files for the topic. If the book already addresses this topic elsewhere, read that section. If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override by writing a competing version.
 
+If another chapter already contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated in a second location. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+
 **Manuscript prose.** All text written into a chapter must go through the standard chapter edit workflow: ChatGPT drafts the text, Claude reviews. Claude does not write manuscript prose.
 
 For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
