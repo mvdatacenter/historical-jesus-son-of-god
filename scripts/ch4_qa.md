@@ -900,7 +900,10 @@ Many Johannine scholars argue BD is either:
 **`5zZchadJDM0_1`** — Eusebius citing John 3:24 + Johannine epistles quoted ~40 times in gospel
 - Reason: Eusebius point is marginal (ch4 already uses Eusebius for Papias). The "~40 times" claim is from a YouTube scholar, unverified — embedding risks credibility.
 
-**`__k29FidXyk_0`** — Egyptian Book of the Dead: Osiris "drink my blood and eat my flesh" (MARGINAL → SKIP)
-- ChatGPT could not verify the claim. No specific spell/chapter in standard published translations. The closest is generic offering language, not a Eucharist-style self-identification. Risk to credibility if claim is fabricated.
+**`__k29FidXyk_0`** — Egyptian Book of the Dead: Osiris "drink my blood and eat my flesh" (MARGINAL → NEEDS SOURCE)
+- ChatGPT could not locate a specific spell/chapter number in standard published translations. The closest it found was generic offering language, not Eucharist-style self-identification. However, ChatGPT's inability to find it is not evidence of absence — the source may exist outside its training data.
+- **Source needed:** A critical translation of the Book of the Dead (e.g., Faulkner's or Allen's edition). Search for any spell where Osiris or the deceased identifies bread/cakes with flesh and beer/wine with blood.
+- **Where to look:** Faulkner, *The Ancient Egyptian Book of the Dead* (British Museum Press); Allen, *The Book of the Dead or Going Forth by Day* (SAOC 37). Also check Pyramid Texts and Coffin Texts for earlier forms of the motif.
+- **Status: PIPELINE** — cannot embed or reject until primary source is consulted.
 
 ---

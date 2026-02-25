@@ -147,8 +147,8 @@
     "summary": "John changes crucifixion date to Passover eve and replaces Last Supper with foot-washing for lamb theology; Egyptian Book of the Dead Osiris parallels.",
     "verdict": "new_evidence",
     "justification": "Ch4 discusses John's Eucharist omission (lines 678-705) and mentions the foot-washing replacement (line 681) and Dionysian parallels. However, the chapter does NOT cite the Egyptian Book of the Dead / Osiris parallel ('drink my blood and eat my flesh' being cakes and wine in the Book of the Dead). This specific Egyptian parallel is new evidence for the Hellenistic background of the Eucharist.",
-    "step2": "skip",
-    "step2_note": "ChatGPT could not verify the claim. No specific spell/chapter in standard translations. Closest is generic offering language, not Eucharist-style self-identification. Risk to credibility."
+    "step2": "pipeline",
+    "step2_note": "ChatGPT could not locate specific spell/chapter. However, inability to find ≠ absence. Needs primary source consultation: Faulkner or Allen edition of Book of the Dead. Cannot embed or reject until source is checked."
   },
   {
     "finding_id": "_4tdnV31Vg4_0",
