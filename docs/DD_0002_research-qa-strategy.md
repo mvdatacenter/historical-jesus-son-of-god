@@ -21,39 +21,58 @@ Three steps.
 
 **Question:** Does the book already present this specific evidence or argument? If not, does it bear on any argument the book makes?
 
-**Model requirement.** Both inventory generation and finding evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent.
+**Model requirement.** Evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent. This was validated empirically: Haiku wrote a keyword-matching script (98% covered, 0% new_evidence), Sonnet hallucinated 99/100 finding IDs. Only Opus performed real evidence-level matching.
 
-**Context requirement.** The full chapter text MUST be read into context for both inventory generation and finding evaluation. No summaries, no truncation, no "representative excerpts." You cannot match against evidence you haven't read.
+**One call per chapter — no batching.** Each chapter's full text plus all its findings fit within Opus's context window (largest case: Ch2 at ~123K tokens out of 200K available). The evaluator reads the full chapter text and all findings in a single call. No batching, no inventory intermediary, no re-reading shared context across multiple calls.
 
-**Coverage inventories.** Before evaluating findings, generate a structured inventory for each chapter listing every distinct argument and every piece of specific evidence used. Not a summary — an inventory at the level of individual evidence items.
+**Match against full chapter text, not summaries.** The model reads the actual LaTeX source of the chapter and matches each finding's specific evidence against what the chapter actually says. No coverage inventories, no pre-digested summaries, no intermediate representations. You cannot match against evidence you haven't read, and any summary risks losing the specific details that make evidence-level matching possible.
 
-A summary is too coarse: "Chapter 3 discusses Hellenistic royal titles."
-An inventory is the right granularity: "Chapter 3 argues 'Son of God' was a pre-Christian political title, citing: Alexander/Zeus-Ammon, Ptolemaic 'manifest god' epithets (Rosetta Stone), Augustus 'divi filius' coins, 4Q246, Justin Martyr Apology 1.21."
+**Other-chapter summaries for routing.** The evaluator also reads `sources/coverage/chapter_summaries.md`, which lists the core arguments of every chapter. This is NOT used for matching (matching is always against the full chapter text). It is used solely to distinguish `wrong_chapter` from `not_relevant`: when a finding doesn't match the current chapter, the evaluator checks whether it matches any other chapter's arguments before marking it irrelevant. Without these summaries, the evaluator tends to mark findings as `not_relevant` when they are actually relevant to another chapter — silently discarding material that should be re-routed.
 
-Each inventory entry has:
-- **argument**: one-sentence statement of the argument
-- **evidence**: list of specific evidence items (inscriptions, texts, names, dates, archaeological finds)
-- **section**: where in the chapter this appears (section title or line range)
-
-Inventories are generated once per chapter by Opus reading the full chapter text. Stored as `sources/coverage/ch{N}_inventory.json` and reused across all finding evaluations.
-
-**Matching.** The evaluator compares each finding's specific claim and evidence against the chapter inventory. The question: "Is the specific evidence or argument in this finding already present in the chapter's inventory?"
+**Matching.** The evaluator compares each finding's specific claim and evidence against the chapter text. The question: "Is the specific evidence or argument in this finding already present in the chapter?"
 
 **Verdicts.** Every verdict must include a justification — e.g., "already in ch3 section on royal titles," "not relevant to any argument in the book," "too little evidence to act on."
 
-- `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
+- `covered` — the specific argument AND evidence are already in the chapter text. Justification must name the section.
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
-- `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
-- `wrong_chapter` — finding is relevant to the book but doesn't bear on any argument in this chapter. Justification must name the correct chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
-- `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., contradicts the book's thesis, concerns a topic the book does not address anywhere).
+- `new_argument` — neither the argument nor the evidence appears anywhere in the chapter. Survives.
+- `wrong_chapter` — finding is relevant to the book but doesn't bear on any argument in this chapter. Justification must name the correct chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter.
+- `not_relevant` — finding doesn't bear on any argument the book makes, **in any chapter**. Before assigning this verdict, the evaluator MUST check the chapter summaries to confirm no chapter covers this topic. Justification must say why it doesn't connect to any chapter (e.g., concerns a topic the book does not address anywhere). This verdict should be extremely rare — the book covers a wide scope.
 
-**Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
-- Build inventory for Ch3 (biggest chapter, most findings)
-- Evaluate 30 findings with mixed expected outcomes
-- Check that verdicts have specific justifications — not generic restatements of the verdict category
-- If validation fails, the inventory granularity is wrong — fix the inventory before scaling
+**Output:** `sources/extraction_review.html` (verdicts displayed in the review UI with justifications visible per finding)
 
-**Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/extraction_review.html` (verdicts displayed in the review UI with justifications visible per finding)
+#### Wrong-Chapter Redistribution Loop
+
+Findings that receive a `wrong_chapter` verdict are relevant to the book but were evaluated against the wrong chapter. These are redistributed to the correct chapter and re-evaluated in an iterative loop until convergence.
+
+**Redistribution command:**
+
+```bash
+python scripts/build_coverage.py --redistribute              # Round 1
+python scripts/build_coverage.py --redistribute --round 2    # Round 2+
+```
+
+**Round 1** scans all `ch{N}_verdicts_opus_*.json` files (main evaluation) for `wrong_chapter` entries. **Round 2+** scans only the previous round's redistribution verdict files (`ch{N}_verdicts_opus_redistrib_r{N-1}.json`).
+
+**Target chapter parsing** extracts the correct chapter from three verdict formats:
+1. Explicit `suggested_chapter` field (int or string like `"ch5"`)
+2. Regex `Chapter N` in `justification` text
+3. Regex `Chapter N` in `rationale` text
+
+**Output files:** `sources/coverage/ch{N}_findings_redistrib_r{R}.json` — batch files for evaluation agents, containing `{finding_id, text, quote, source_chapter}`.
+
+**Evaluation agents** process these batch files and write verdicts to `ch{N}_verdicts_opus_redistrib_r{R}.json`.
+
+**Convergence loop:**
+1. Run `--redistribute --round 1` → produces batch files
+2. Launch evaluation agents on the batch files
+3. Agents write verdict files
+4. Run `--redistribute --round 2` — if zero new `wrong_chapter`, converged
+5. Repeat until convergence or max 3 rounds
+
+**Safety mechanisms:**
+- Maximum 3 redistribution rounds (hard cap)
+- Ping-pong detection: if a finding receives `wrong_chapter` in 2 consecutive rounds, it is flagged for manual review instead of being redistributed again
 
 ### Step 2: Embedding Attempt
 
@@ -105,20 +124,24 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 
 - **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
 - **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
-- **Sub-frontier models** for step 1. They silently degrade to topic-matching.
-- **Summaries or truncated context** instead of full chapter text.
+- **Sub-frontier models** for step 1. They silently degrade to topic-matching. Validated: Haiku keyword-matched, Sonnet hallucinated IDs, only Opus worked.
+- **Summaries, inventories, or truncated context** instead of full chapter text. Every chapter + all its findings fit in a single Opus call. There is no reason to use an intermediate representation.
+- **Batching** findings into multiple calls per chapter. Re-reading shared context across batches wastes tokens and introduces consistency risk.
 - **Trusting ChatGPT's factual assertions.** ChatGPT is a helpful research resource — use it freely to find sources and research leads. But it lies often due to bias. Listen to it, never trust it. "ChatGPT confirmed X" is a lead, not verification — download the source and run it through the pipeline. "ChatGPT couldn't find X" means nothing — the source may exist outside its training data. No KEEP/SKIP decision may rest on ChatGPT's word alone. When a source isn't available yet, record in Q&A what's needed and where to look so it can be acquired and verified.
 
 ## Where Everything Lives
 
 | What | Where |
 |------|-------|
-| Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
 | Coverage + relevance verdicts (review UI) | `sources/extraction_review.html` |
-| Coverage inventory generator | `scripts/build_coverage.py` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
+| Chapter argument summaries (for routing) | `sources/coverage/chapter_summaries.md` |
+| Coverage evaluation runner | `scripts/build_coverage.py` |
+| Redistribution batch files | `sources/coverage/ch{N}_findings_redistrib_r{R}.json` |
+| Redistribution verdict files | `sources/coverage/ch{N}_verdicts_opus_redistrib_r{R}.json` |
 | Per-chapter research Q&A | `scripts/chN_qa.md` |
 | Open research questions | `scripts/research_gaps.md` |
 | Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
 | Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |
+| Model comparison test data | `sources/coverage/model_comparison_*.json` |
