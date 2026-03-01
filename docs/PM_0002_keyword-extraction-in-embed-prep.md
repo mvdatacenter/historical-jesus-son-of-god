@@ -21,4 +21,3 @@ No code reached the repository — caught before commit.
 ## Action Items
 
 - [x] [mitigate-this-incident] Code reverted, JSON report deleted.
-- [x] [prevent] Require prevent-level action items in all PMs. *(classification standard added to org.md and REVIEW_org.md)*
