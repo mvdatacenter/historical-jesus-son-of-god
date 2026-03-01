@@ -518,6 +518,50 @@ def cmd_redistribute(args):
     return 0
 
 
+STEP2_RULES = [
+    (
+        "Step 2 verdicts — every verdict must include a justification: "
+        "EMBED: finding is core to an argument, substantive (a concrete text, "
+        "inscription, historical fact — not just a scholar restating the thesis), "
+        "and grounded enough to write now. "
+        "RESEARCH: finding is potentially high value but needs sourcing before "
+        "it can be written. Goes to research_gaps.md with what source is needed "
+        "and where to look. Nothing is rejected for being 'unverified' or "
+        "'speculative.' ChatGPT's inability to find a source means nothing. "
+        "SKIP: tangential — true but the book doesn't need it. "
+        "SKIP: restates — scholar says what the book already argues in different "
+        "words. Adding it makes the argument longer, not stronger. "
+        "SKIP: weak — too thin to strengthen anything."
+    ),
+    (
+        "CRITICAL: No finding may be rejected because ChatGPT cannot verify it. "
+        "'ChatGPT says it's unsubstantiated' is not a SKIP reason — it is a "
+        "RESEARCH reason. ChatGPT lies often due to bias. It halluccinates "
+        "sources, fabricates references, and presents its gaps as fact. Listen "
+        "to ChatGPT, never trust it. 'ChatGPT confirmed X' is a lead, not "
+        "verification. 'ChatGPT couldn't find X' means nothing."
+    ),
+    (
+        "Cross-chapter check: if another chapter contains a deeper or more "
+        "developed treatment of the same argument, the new material belongs "
+        "there — merged into the existing section, not duplicated. The goal "
+        "is one authoritative treatment per argument, not parallel versions."
+    ),
+    (
+        "Section-fit check: before inserting text into a specific section, "
+        "verify (1) the new text does not contradict the chapter's own thesis, "
+        "and (2) the new text serves the argument of the section it is placed "
+        "in. If the text doesn't serve the section's argument, find the section "
+        "it does serve — or create one."
+    ),
+    (
+        "Q&A check: if the Q&A file records a deliberate decision to exclude "
+        "something, respect it. Do not resurface findings that were already "
+        "researched and rejected."
+    ),
+]
+
+
 ANTI_PATTERN_RULES = [
     (
         "Keyword extraction is forbidden in any form: extracting words from "
@@ -647,12 +691,20 @@ def _load_findings_from_batch(batch_path: Path) -> dict[int, list[dict]]:
 
 
 def _build_chapter_context(ch: int, findings: list[dict]) -> dict:
-    """Build a context package for one chapter."""
+    """Build a Step 2 context package for one chapter.
+
+    Includes everything the evaluator needs: findings, chapter text,
+    chapter inventory, Q&A, cross-chapter inventories, anti-pattern
+    rules, and Step 2 verdict rules. The evaluator does not need to
+    load anything separately.
+    """
     qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
     qa_text = qa_path.read_text() if qa_path.exists() else ""
 
     chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
     chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
+
+    chapter_inventory = load_inventory(ch)
 
     cross_chapter = {}
     for other_ch in range(1, 7):
@@ -664,10 +716,12 @@ def _build_chapter_context(ch: int, findings: list[dict]) -> dict:
 
     return {
         "chapter": ch,
+        "step2_rules": STEP2_RULES,
         "anti_pattern_rules": ANTI_PATTERN_RULES,
         "findings": findings,
         "qa_history": qa_text,
         "chapter_text": chapter_text,
+        "chapter_inventory": chapter_inventory,
         "cross_chapter_inventories": cross_chapter,
     }
 
