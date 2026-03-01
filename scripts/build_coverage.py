@@ -524,14 +524,18 @@ STEP2_RULES = [
         "EMBED: finding is core to an argument, substantive (a concrete text, "
         "inscription, historical fact — not just a scholar restating the thesis), "
         "and grounded enough to write now. "
-        "RESEARCH: finding is potentially high value but needs sourcing before "
-        "it can be written. Goes to research_gaps.md with what source is needed "
-        "and where to look. Nothing is rejected for being 'unverified' or "
-        "'speculative.' ChatGPT's inability to find a source means nothing. "
-        "SKIP: tangential — true but the book doesn't need it. "
+        "RESEARCH: finding needs sourcing before it can be written. Goes to "
+        "research_gaps.md with what source is needed and where to look. Nothing "
+        "is rejected for being 'unverified' or 'speculative.' This is the "
+        "DEFAULT verdict for any finding that is not clearly a restate, not "
+        "clearly tangential, and not already rejected in Q&A. "
         "SKIP: restates — scholar says what the book already argues in different "
         "words. Adding it makes the argument longer, not stronger. "
-        "SKIP: weak — too thin to strengthen anything."
+        "SKIP: tangential — true but the book doesn't need it. "
+        "SKIP: Q&A rejected — Q&A file records a prior deliberate decision to "
+        "exclude this finding. Must cite the specific Q&A entry. "
+        "There is NO 'weak' verdict. The evaluator does not reject findings "
+        "based on subjective quality judgments."
     ),
     (
         "CRITICAL: No finding may be rejected because ChatGPT cannot verify it. "
@@ -558,6 +562,29 @@ STEP2_RULES = [
         "Q&A check: if the Q&A file records a deliberate decision to exclude "
         "something, respect it. Do not resurface findings that were already "
         "researched and rejected."
+    ),
+    (
+        "Source framing vs underlying observation: evaluate the OBSERVATION, "
+        "not the source's FRAMING. A finding from an unconventional source "
+        "with sensationalist language may contain a valid structural observation. "
+        "Extract the observation, discard the framing. Example: a speaker says "
+        "'John was recruiting cutthroats for an army' — the sensationalist "
+        "language is the framing; the observation is 'baptism functioned as an "
+        "organizational recruitment/initiation rite for a political movement.' "
+        "The observation fits an institutional-framework thesis perfectly. "
+        "NEVER use the source's tone, reputation, or platform as a reason to "
+        "SKIP. Judge the observation on its structural merit. If the observation "
+        "is valid but unsourced, the verdict is RESEARCH, not SKIP."
+    ),
+    (
+        "Rejections require documented decisions. A SKIP verdict is only valid "
+        "when grounded in something verifiable: the finding restates existing "
+        "content (checkable against inventory), the finding is tangential "
+        "(no argument in any chapter it could serve), or Q&A records a prior "
+        "decision to exclude it. Subjective judgments — 'too extreme,' 'would "
+        "weaken credibility,' 'too thin,' 'contradicts consensus' — are not "
+        "valid SKIP reasons. If a finding serves any argument the book makes "
+        "and has not been rejected in Q&A, the verdict is EMBED or RESEARCH."
     ),
 ]
 

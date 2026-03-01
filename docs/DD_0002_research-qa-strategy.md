@@ -117,10 +117,12 @@ This is the prevent for PM-0002: the anti-pattern rules arrive in the AI's worki
 **Verdicts.** Every verdict must include a justification.
 
 - `EMBED` — finding is core to an argument, substantive (a concrete text, inscription, historical fact — not just a scholar restating the thesis), and grounded enough to write now. Proceeds to Step 3 verification.
-- `RESEARCH` — finding is potentially high value but needs sourcing before it can be written. Goes to `scripts/research_gaps.md` with what source is needed and where to look. **Nothing is rejected for being "unverified" or "speculative."** ChatGPT's inability to find a source means nothing — the source may exist outside its training data. Findings that seem speculative are often the highest value because they haven't been absorbed into mainstream consensus.
-- `SKIP: tangential` — doesn't directly serve any section's argument. True but the book doesn't need it.
+- `RESEARCH` — finding needs sourcing before it can be written. Goes to `scripts/research_gaps.md` with what source is needed and where to look. **Nothing is rejected for being "unverified" or "speculative."** ChatGPT's inability to find a source means nothing — the source may exist outside its training data. Findings that seem speculative are often the highest value because they haven't been absorbed into mainstream consensus. **This is the default verdict for any finding that is not clearly a restate, not clearly tangential, and not already rejected in Q&A.**
 - `SKIP: restates` — scholar says what the book already argues in different words. The specific quote may be "new evidence" per Step 1, but adding it makes the argument longer, not stronger.
-- `SKIP: weak` — too thin to strengthen anything. A vague gesture at a topic rather than a specific piece of evidence.
+- `SKIP: tangential` — doesn't directly serve any section's argument. True but the book doesn't need it.
+- `SKIP: Q&A rejected` — the Q&A file records a prior deliberate decision to exclude this finding or this class of argument. Justification must cite the specific Q&A entry.
+
+**There is no "weak" verdict.** The evaluator does not get to reject findings based on subjective quality judgments ("too thin," "too extreme," "would weaken credibility," "contradicts consensus"). Those are editorial decisions that belong to the author. If a finding serves any argument the book makes and has not been rejected in Q&A, it is either EMBED (ready to write) or RESEARCH (needs sourcing). The evaluator's job is to assess whether the finding strengthens an argument, not whether it is "good enough."
 
 All SKIP and RESEARCH decisions are recorded in `scripts/chN_qa.md` with the reason, so they are not resurfaced by future pipeline runs.
 
