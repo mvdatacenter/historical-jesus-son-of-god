@@ -585,12 +585,15 @@ STEP2_RULES = [
         "weaken credibility,' 'too thin,' 'contradicts consensus' — are not "
         "valid SKIP reasons. If a finding serves any argument the book makes "
         "and has not been rejected in Q&A, the verdict is EMBED or RESEARCH. "
-        "CRITICAL: a finding's DATA matters even if the author's CONCLUSION "
-        "is wrong. A speaker who says 'Christianity was a mystery cult void "
-        "of Judaism' may be wrong about 'void of Judaism' but the mystery "
-        "cult parallels they cite are still valuable data. Extract the data, "
-        "ignore the conclusion. Never SKIP a finding because the source draws "
-        "a wrong conclusion from good evidence."
+        "CRITICAL: the evaluator does not decide which conclusions are 'too "
+        "extreme.' The book challenges consensus by design. A finding that "
+        "supports the book's thesis is never 'too extreme' — even if it goes "
+        "further than the book currently does. Example: 'Christianity started "
+        "as a mystery cult void of any connection to Judaism' directly supports "
+        "the book's central argument that Christianity's origins are "
+        "Greco-Christian, not Judeo-Christian. An evaluator who rejects this "
+        "as 'too extreme' or 'would weaken credibility' is gatekeeping the "
+        "book's own argument."
     ),
 ]
 
