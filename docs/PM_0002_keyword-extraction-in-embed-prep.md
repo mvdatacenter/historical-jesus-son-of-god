@@ -72,10 +72,17 @@ But it is fundamentally dishonest because it substitutes mechanical string match
 
 ## Action Items
 
-1. **Code reverted** — all `--embed` changes removed from `build_coverage.py` via `git restore` *(done)*
-2. **JSON report deleted** — `sources/coverage/ch3_embed_prep.json` removed *(done)*
-3. **MEMORY.md must be updated** — the prohibition on keyword extraction must be explicitly stated as universal, not limited to citation verification
-4. **Plan review gate needed** — before implementing any approved plan, Claude must check whether the plan contains keyword extraction under any name. If it does, flag the plan as flawed before writing code.
+Each action item is classified by type:
+- **[mitigate]** — reduces damage after the problem occurs
+- **[detect]** — catches the problem before it ships
+- **[prevent]** — makes the problem impossible or structurally unlikely to occur
+
+1. **[mitigate]** Code reverted — all `--embed` changes removed from `build_coverage.py` via `git restore` *(done)*
+2. **[mitigate]** JSON report deleted — `sources/coverage/ch3_embed_prep.json` removed *(done)*
+3. **[detect]** MEMORY.md updated — the prohibition on keyword extraction explicitly stated as universal, not limited to citation verification *(done)*
+4. **[detect]** Plan review gate — before implementing any approved plan, Claude must check whether the plan contains keyword extraction under any name. If it does, flag the plan as flawed before writing code. This is a behavioral rule, not a structural gate — it relies on Claude remembering to check.
+5. **[prevent]** Add a keyword-extraction check to the pre-commit hook or review script that scans Python diffs for patterns like `stop_words`, `extract.*terms`, `overlap.*score`, `keyword`, and blocks the commit with a message pointing to PM_0001 and PM_0002. This is the only action item that makes the problem structurally harder to reintroduce.
+6. **[prevent]** Post-mortem action item classification — all future PM action items must be tagged `[mitigate]`, `[detect]`, or `[prevent]`. A PM with only mitigate/detect items and no prevent items is incomplete. This forces the author to think about structural prevention, not just behavioral rules that rely on AI discipline.
 
 ## Lessons
 
