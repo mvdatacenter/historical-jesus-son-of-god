@@ -1,22 +1,19 @@
 #!/usr/bin/env python3
 """
-build_coverage.py — DD-0002 Step 1 batch preparation and verdict management.
+build_coverage.py — DD-0002 pipeline: Step 1 verdicts + Step 2 embed context.
 
-Manages the full-scale coverage evaluation pipeline:
-1. Parses all Alexandria extraction findings
-2. Groups findings by chapter
-3. Excludes already-evaluated findings
-4. Generates evaluation batches for agent processing
-5. Merges agent verdicts into per-chapter verdict files
-
-Usage:
+Step 1 (verdict management):
     python scripts/build_coverage.py --status               # Pipeline status
     python scripts/build_coverage.py --batches               # Generate all batches
     python scripts/build_coverage.py --batches --chapter 3    # Ch3 batches only
     python scripts/build_coverage.py --merge FILE --chapter 3 # Merge verdicts
     python scripts/build_coverage.py --normalize              # Normalize formats
-    python scripts/build_coverage.py --redistribute           # Redistribute wrong_chapter (round 1)
-    python scripts/build_coverage.py --redistribute --round 2 # Round 2+ redistribution
+    python scripts/build_coverage.py --redistribute           # Redistribute wrong_chapter
+    python scripts/build_coverage.py --redistribute --round 2 # Round 2+
+    python scripts/build_coverage.py --resolve                # Force-assign bouncing findings
+
+Step 2 (embed context assembly):
+    python scripts/build_coverage.py --embed-prep --chapter 4 # Step 2 context packages
 """
 
 import argparse
@@ -32,7 +29,7 @@ SOURCES_DIR = PROJECT_ROOT / "sources"
 YOUTUBE_DIR = SOURCES_DIR / "youtube"
 COVERAGE_DIR = SOURCES_DIR / "coverage"
 
-BATCH_SIZE = 15  # findings per evaluation batch
+BATCH_SIZE = 250  # findings per batch
 
 # Import the existing extraction parser
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -141,7 +138,12 @@ def cmd_status(args):
 
 
 def cmd_batches(args):
-    """Generate evaluation batches."""
+    """Generate self-contained evaluation batches.
+
+    Each batch includes: findings, chapter inventory, full chapter text,
+    cross-chapter inventories, and anti-pattern rules. The evaluating
+    agent does not need to load anything separately.
+    """
     by_chapter = get_all_findings_by_chapter()
     chapters = [args.chapter] if args.chapter else sorted(ch for ch in by_chapter if ch > 0)
 
@@ -157,19 +159,44 @@ def cmd_batches(args):
             print(f"Ch{ch}: No findings")
             continue
 
-        # Load existing verdicts to exclude
-        existing = load_verdicts(ch)
-        unevaluated = [f for f in findings if f.finding_id not in existing]
+        if args.force:
+            unevaluated = findings
+        else:
+            existing = load_verdicts(ch)
+            unevaluated = [f for f in findings if f.finding_id not in existing]
 
         if not unevaluated:
             print(f"Ch{ch}: All {len(findings)} findings already evaluated")
             continue
 
-        # Load inventory
         inventory = load_inventory(ch)
         if not inventory:
             print(f"Ch{ch}: WARNING — no inventory found, skipping")
             continue
+
+        # Context: chapter text + Q&A (global + chapter) + cross-chapter inventories
+        chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
+        chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
+
+        global_qa_path = PROJECT_ROOT / "scripts" / "global_qa.md"
+        global_qa = global_qa_path.read_text() if global_qa_path.exists() else ""
+        qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
+        chapter_qa = qa_path.read_text() if qa_path.exists() else ""
+        qa_text = ""
+        if global_qa:
+            qa_text += "=== GLOBAL Q&A (applies to all chapters) ===\n\n" + global_qa
+        if chapter_qa:
+            if qa_text:
+                qa_text += "\n\n"
+            qa_text += f"=== CHAPTER {ch} Q&A ===\n\n" + chapter_qa
+
+        cross_chapter = {}
+        for other_ch in range(1, 7):
+            if other_ch == ch:
+                continue
+            inv = load_inventory(other_ch)
+            if inv:
+                cross_chapter[f"chapter_{other_ch}"] = inv
 
         # Generate batches
         ch_batches = []
@@ -179,6 +206,7 @@ def cmd_batches(args):
                 "chapter": ch,
                 "batch_index": len(ch_batches),
                 "total_batches_for_chapter": -1,  # filled below
+                "anti_pattern_rules": ANTI_PATTERN_RULES,
                 "findings": [
                     {
                         "finding_id": f.finding_id,
@@ -190,14 +218,16 @@ def cmd_batches(args):
                     }
                     for f in batch_findings
                 ],
+                "chapter_inventory": inventory,
+                "chapter_text": chapter_text,
+                "qa_history": qa_text,
+                "cross_chapter_inventories": cross_chapter,
             }
             ch_batches.append(batch)
 
-        # Fill total count
         for b in ch_batches:
             b["total_batches_for_chapter"] = len(ch_batches)
 
-        # Write batch files
         for b in ch_batches:
             batch_path = batches_dir / f"ch{ch}_batch_{b['batch_index']:03d}.json"
             batch_path.write_text(json.dumps(b, indent=2, ensure_ascii=False))
@@ -304,49 +334,89 @@ def parse_target_chapter(entry: dict, source_ch: int) -> int | None:
 def load_verdict_files(chapter: int, round_num: int) -> list[dict]:
     """Load verdict entries from appropriate files for a given round.
 
-    Round 1: scans ch{N}_verdicts_opus_*.json (main evaluation)
+    Round 1: scans ch{N}_step1_batch_*.json and ch{N}_verdicts_opus_*.json
     Round 2+: scans ch{N}_verdicts_opus_redistrib_r{round-1}.json only
     """
     entries = []
 
     if round_num == 1:
-        # Main evaluation: all opus verdict files (excluding redistrib files)
+        seen = set()
+
+        # Current format: step1 batch verdict files
+        pattern = f"ch{chapter}_step1_batch_*.json"
+        for path in sorted(COVERAGE_DIR.glob(pattern)):
+            data = json.loads(path.read_text())
+            if isinstance(data, list):
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
+
+        # Legacy format: opus verdict files (excluding redistrib files)
         pattern = f"ch{chapter}_verdicts_opus_*.json"
         for path in sorted(COVERAGE_DIR.glob(pattern)):
             if "redistrib" in path.name:
                 continue
             data = json.loads(path.read_text())
             if isinstance(data, list):
-                entries.extend(data)
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
-                    entries.append({"finding_id": fid, **v})
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append({"finding_id": fid, **v})
 
         # Also check consolidated validation_verdicts
         val_path = COVERAGE_DIR / f"ch{chapter}_validation_verdicts.json"
         if val_path.exists():
             data = json.loads(val_path.read_text())
-            seen = {e.get("finding_id") for e in entries}
             if isinstance(data, list):
                 for e in data:
-                    if e.get("finding_id") not in seen:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
                         entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
                     if fid not in seen:
+                        seen.add(fid)
                         entries.append({"finding_id": fid, **v})
     else:
         # Round 2+: only previous round's redistribution verdicts
         prev = round_num - 1
-        pattern = f"ch{chapter}_verdicts_opus_redistrib_r{prev}.json"
-        path = COVERAGE_DIR / pattern
-        if path.exists():
-            data = json.loads(path.read_text())
+        seen = set()
+
+        # Current format: step1 redistrib verdict files
+        step1_path = COVERAGE_DIR / f"ch{chapter}_step1_redistrib_r{prev}.json"
+        if step1_path.exists():
+            data = json.loads(step1_path.read_text())
             if isinstance(data, list):
-                entries.extend(data)
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
+
+        # Legacy format: opus redistrib verdict files
+        legacy_path = COVERAGE_DIR / f"ch{chapter}_verdicts_opus_redistrib_r{prev}.json"
+        if legacy_path.exists():
+            data = json.loads(legacy_path.read_text())
+            if isinstance(data, list):
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
-                    entries.append({"finding_id": fid, **v})
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append({"finding_id": fid, **v})
 
     return entries
 
@@ -498,9 +568,487 @@ def cmd_redistribute(args):
     return 0
 
 
+def cmd_resolve(args):
+    """Generate forced-resolution batch files for unplaceable findings.
+
+    After redistribution rounds, some findings keep bouncing between chapters.
+    This command collects all unresolved findings (ping-pong + still wrong_chapter),
+    groups them by their two candidate chapters, and writes batch files for agents
+    that read BOTH chapters and make a final assignment.
+
+    Usage:
+        python scripts/build_coverage.py --resolve
+    """
+    # Build finding content lookup
+    all_findings = parse_all_extractions()
+    content_by_id = {}
+    for f in all_findings:
+        content_by_id[f.finding_id] = {
+            "text": f.description,
+            "quote": f.quote,
+        }
+
+    # Fallback: alexandria_reextraction.json
+    reextract_path = COVERAGE_DIR / "alexandria_reextraction.json"
+    if reextract_path.exists():
+        reextract = json.loads(reextract_path.read_text())
+        for entry in reextract:
+            fid = entry.get("finding_id", "")
+            if fid and fid not in content_by_id:
+                content_by_id[fid] = {
+                    "text": entry.get("text", ""),
+                    "quote": entry.get("quote", ""),
+                }
+
+    # Collect all redistribution verdict files to find wrong_chapter findings
+    # and trace their routing history
+    r1_input = {}  # finding_id -> {redistrib_to, source_chapter}
+    for path in sorted(COVERAGE_DIR.glob("ch*_findings_redistrib_r1.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            fid = item.get("finding_id", "")
+            r1_input[fid] = {
+                "redistrib_to": ch_num,
+                "source_chapter": item.get("source_chapter", 0),
+            }
+
+    r1_wrong = {}  # finding_id -> {evaluated_in, suggested_target}
+    for path in sorted(COVERAGE_DIR.glob("ch*_step1_redistrib_r1.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            if item.get("verdict") != "wrong_chapter":
+                continue
+            fid = item["finding_id"]
+            just = item.get("justification", "")
+            targets = re.findall(r"[Cc]hapter\s*(\d)", just)
+            targets += re.findall(r"[Cc]h\s*(\d)", just)
+            target_chs = [int(t) for t in targets if int(t) != ch_num and 1 <= int(t) <= 6]
+            r1_wrong[fid] = {
+                "evaluated_in": ch_num,
+                "suggested_target": target_chs[0] if target_chs else None,
+            }
+
+    r2_wrong = {}
+    for path in sorted(COVERAGE_DIR.glob("ch*_step1_redistrib_r2.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            if item.get("verdict") != "wrong_chapter":
+                continue
+            fid = item["finding_id"]
+            just = item.get("justification", "")
+            targets = re.findall(r"[Cc]hapter\s*(\d)", just)
+            targets += re.findall(r"[Cc]h\s*(\d)", just)
+            target_chs = [int(t) for t in targets if int(t) != ch_num and 1 <= int(t) <= 6]
+            r2_wrong[fid] = {
+                "evaluated_in": ch_num,
+                "suggested_target": target_chs[0] if target_chs else None,
+            }
+
+    r2_input_fids = set()
+    for path in sorted(COVERAGE_DIR.glob("ch*_findings_redistrib_r2.json")):
+        data = json.loads(path.read_text())
+        for item in data:
+            r2_input_fids.add(item.get("finding_id", ""))
+
+    # Build unresolved set: r2 wrong_chapter + ping-pong (r1 wrong_chapter not in r2)
+    all_unresolved = {}
+
+    for fid, info in r2_wrong.items():
+        all_unresolved[fid] = (info["evaluated_in"], info["suggested_target"])
+
+    for fid, info in r1_wrong.items():
+        if fid not in r2_input_fids and fid not in r2_wrong:
+            orig = r1_input.get(fid, {})
+            all_unresolved[fid] = (
+                info["evaluated_in"],
+                info["suggested_target"] or orig.get("source_chapter"),
+            )
+
+    if not all_unresolved:
+        print("No unresolved findings. All redistributions converged.")
+        return 0
+
+    # Group by chapter pair
+    by_pair = defaultdict(list)
+    no_pair = []
+    for fid, (a, b) in all_unresolved.items():
+        if a and b and a != b:
+            pair = tuple(sorted([a, b]))
+            c = content_by_id.get(fid, {"text": "", "quote": ""})
+            by_pair[pair].append({
+                "finding_id": fid,
+                "text": c["text"],
+                "quote": c["quote"],
+                "candidate_chapters": list(pair),
+            })
+        else:
+            no_pair.append(fid)
+
+    # Write per-pair batch files
+    files_written = []
+    total = 0
+    for pair in sorted(by_pair.keys()):
+        findings = by_pair[pair]
+        out_path = COVERAGE_DIR / f"pingpong_ch{pair[0]}_ch{pair[1]}.json"
+        out_path.write_text(json.dumps(findings, indent=2, ensure_ascii=False))
+        files_written.append((pair, len(findings), out_path))
+        total += len(findings)
+
+    print(f"Forced Resolution: {total} unresolved findings across {len(files_written)} chapter pairs")
+    print("=" * 55)
+    for pair, count, path in files_written:
+        print(f"  ch{pair[0]} vs ch{pair[1]}: {count} findings → {path.name}")
+
+    if no_pair:
+        print(f"\n{len(no_pair)} findings with no clear pair (need manual assignment):")
+        for fid in no_pair:
+            print(f"  {fid}")
+
+    print(f"\nEach batch must be evaluated by an agent that reads BOTH chapter texts.")
+    print(f"The agent MUST assign every finding — wrong_chapter is forbidden.")
+    print(f"Output: sources/coverage/ch{{A}}_ch{{B}}_resolved.json")
+
+    return 0
+
+
+STEP2_RULES = [
+    (
+        "Step 2 verdicts — every verdict must include a justification: "
+        "EMBED: finding is core to an argument, substantive (a concrete text, "
+        "inscription, historical fact — not just a scholar restating the thesis), "
+        "and grounded enough to write now. "
+        "RESEARCH: finding needs sourcing before it can be written. Goes to "
+        "research_gaps.md with what source is needed and where to look. Nothing "
+        "is rejected for being 'unverified' or 'speculative.' This is the "
+        "DEFAULT verdict for any finding that is not clearly a restate, not "
+        "clearly tangential, and not already rejected in Q&A. "
+        "SKIP: restates — scholar says what the book already argues in different "
+        "words. Adding it makes the argument longer, not stronger. "
+        "SKIP: tangential — true but the book doesn't need it. "
+        "SKIP: Q&A rejected — Q&A file records a prior deliberate decision to "
+        "exclude this finding. Must cite the specific Q&A entry. "
+        "There is NO 'weak' verdict. The evaluator does not reject findings "
+        "based on subjective quality judgments."
+    ),
+    (
+        "CRITICAL: No finding may be rejected because ChatGPT cannot verify it. "
+        "'ChatGPT says it's unsubstantiated' is not a SKIP reason — it is a "
+        "RESEARCH reason. ChatGPT lies often due to bias. It halluccinates "
+        "sources, fabricates references, and presents its gaps as fact. Listen "
+        "to ChatGPT, never trust it. 'ChatGPT confirmed X' is a lead, not "
+        "verification. 'ChatGPT couldn't find X' means nothing."
+    ),
+    (
+        "Cross-chapter check: if another chapter contains a deeper or more "
+        "developed treatment of the same argument, the new material belongs "
+        "there — merged into the existing section, not duplicated. The goal "
+        "is one authoritative treatment per argument, not parallel versions."
+    ),
+    (
+        "Section-fit check: before inserting text into a specific section, "
+        "verify (1) the new text does not contradict the chapter's own thesis, "
+        "and (2) the new text serves the argument of the section it is placed "
+        "in. If the text doesn't serve the section's argument, find the section "
+        "it does serve — or create one."
+    ),
+    (
+        "Q&A check: if the Q&A file records a deliberate decision to exclude "
+        "something, respect it. Do not resurface findings that were already "
+        "researched and rejected."
+    ),
+    (
+        "Source framing vs underlying observation: evaluate the OBSERVATION, "
+        "not the source's FRAMING. A finding from an unconventional source "
+        "with sensationalist language may contain a valid structural observation. "
+        "Extract the observation, discard the framing. Example: a speaker says "
+        "'John was recruiting cutthroats for an army' — the sensationalist "
+        "language is the framing; the observation is 'baptism functioned as an "
+        "organizational recruitment/initiation rite for a political movement.' "
+        "The observation fits an institutional-framework thesis perfectly. "
+        "NEVER use the source's tone, reputation, or platform as a reason to "
+        "SKIP. Judge the observation on its structural merit. If the observation "
+        "is valid but unsourced, the verdict is RESEARCH, not SKIP."
+    ),
+    (
+        "Rejections require documented decisions. A SKIP verdict is only valid "
+        "when grounded in something verifiable: the finding restates existing "
+        "content (checkable against inventory), the finding is tangential "
+        "(no argument in any chapter it could serve), or Q&A records a prior "
+        "decision to exclude it. Subjective judgments — 'too extreme,' 'would "
+        "weaken credibility,' 'too thin,' 'contradicts consensus' — are not "
+        "valid SKIP reasons. If a finding serves any argument the book makes "
+        "and has not been rejected in Q&A, the verdict is EMBED or RESEARCH. "
+        "CRITICAL: a source may provide excellent data but draw a wrong "
+        "conclusion. We reject the conclusion and embed the data. Example: "
+        "a mythicist presents detailed Eleusinian mystery parallels to "
+        "Christian initiation rites, then concludes 'Jesus never existed.' "
+        "The conclusion is wrong per the book, but the mystery cult data "
+        "strengthens the book's argument about Greek institutional origins. "
+        "Never SKIP a finding because the source's conclusion is wrong — "
+        "extract the data, discard the bad conclusion."
+    ),
+]
+
+
+ANTI_PATTERN_RULES = [
+    (
+        "Keyword extraction is forbidden in any form: extracting words from "
+        "text A, searching for them in text B, and drawing any conclusion "
+        "from matches. See PM-0001, PM-0002."
+    ),
+    (
+        "Scripts present information for human review. Scripts never assign "
+        "verdicts based on mechanical text matching."
+    ),
+    (
+        "No automated status assignment (CLEAR, FLAGGED, NEEDS_REVIEW, KEEP, "
+        "SKIP) based on text matching."
+    ),
+    (
+        "COVERED verdict anti-patterns — three forbidden shortcuts: "
+        "(1) Topic-level match: 'book argues X, finding argues X, therefore "
+        "covered' is WRONG. Must name the specific evidence the finding brings "
+        "AND where the book already presents that same specific evidence. "
+        "(2) 'Same argument' without evidence comparison: 'ch1 makes this exact "
+        "argument' is not enough. Does the book already present this specific "
+        "scholar's framing, this specific quote, this specific example? If any "
+        "of these are new, verdict is new_evidence_existing_argument, not "
+        "covered. "
+        "(3) Implicit coverage: 'the concept is implicit in the framework' or "
+        "'this is a variant of what is covered' means the book does NOT state it "
+        "— therefore NOT covered. Any of these prevent a covered verdict: a named "
+        "concept the book doesn't use, a specific mechanism the book doesn't "
+        "describe, a new scope claim, or a new specific source text (e.g., book "
+        "has Mark-Homer mimesis but finding has Mark-Aeneid — different source, "
+        "not a variant). Test: does the inventory list this exact item? If you "
+        "must argue it is 'implied by' or 'a variant of' an existing item, it "
+        "is NOT covered."
+    ),
+    (
+        "The verdict matrix has two axes — is the ARGUMENT new, and is the "
+        "EVIDENCE new? "
+        "covered: argument in book AND evidence in book (or Q&A addresses it). "
+        "new_evidence_existing_argument: argument in book, evidence NOT in "
+        "book — new evidence to bolster an existing argument. "
+        "new_argument_existing_evidence: argument NOT in book, evidence IS in "
+        "book — someone looked at the same source we cite and drew a different "
+        "conclusion. Often the most valuable: data already verified, only the "
+        "argument is new. Do NOT downgrade to new_evidence_existing_argument "
+        "or covered just because the evidence appears in the book. "
+        "new_evidence_and_argument: argument NOT in book, evidence NOT in "
+        "book — both need evaluation."
+    ),
+]
+
+
+def _load_v2_verdicts(ch: int) -> dict:
+    """Load v2 verdicts (list format from Step 1 re-run). Returns {finding_id: entry}."""
+    path = COVERAGE_DIR / f"ch{ch}_verdicts_v2.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text())
+    result = {}
+    if isinstance(data, list):
+        for entry in data:
+            fid = entry.get("finding_id", "")
+            if fid:
+                result[fid] = entry
+    return result
+
+
+STEP1_SURVIVORS = (
+    "new_evidence_existing_argument",
+    "new_argument_existing_evidence",
+    "new_evidence_and_argument",
+    "contradicts",
+)
+
+
+def _load_findings_from_verdicts(ch: int) -> list[dict]:
+    """Load surviving findings from Step 1 verdicts.
+
+    Checks v2 verdicts first (current pipeline), falls back to
+    validation_verdicts. Survivors: new_evidence_existing_argument,
+    new_argument_existing_evidence, new_evidence_and_argument, contradicts.
+    """
+    verdicts = _load_v2_verdicts(ch)
+    if not verdicts:
+        verdicts = load_verdicts(ch)
+        verdicts = {fid: v for fid, v in verdicts.items()}
+
+    survivors = [
+        v for v in verdicts.values()
+        if v.get("verdict") in STEP1_SURVIVORS
+    ]
+
+    # Enrich with content from extraction files
+    all_findings = parse_all_extractions()
+    content_by_id = {f.finding_id: f for f in all_findings}
+
+    for fallback_name in ("all_new_arguments.json", "alexandria_reextraction.json"):
+        fallback_path = COVERAGE_DIR / fallback_name
+        if not fallback_path.exists():
+            continue
+        for entry in json.loads(fallback_path.read_text()):
+            fid = entry.get("finding_id", "")
+            if not fid or fid in content_by_id:
+                continue
+            content_by_id[fid] = type("Finding", (), {
+                "finding_id": fid,
+                "description": entry.get("text", ""),
+                "quote": entry.get("quote", ""),
+                "video_title": entry.get("video_title", ""),
+                "channel": entry.get("channel", ""),
+            })()
+
+    packages = []
+    for v in sorted(survivors, key=lambda x: x.get("finding_id", "")):
+        fid = v.get("finding_id", "")
+        content = content_by_id.get(fid)
+        packages.append({
+            "finding_id": fid,
+            "step1_verdict": v.get("verdict", ""),
+            "step1_justification": v.get("justification", ""),
+            "text": content.description if content else "",
+            "quote": getattr(content, "quote", ""),
+            "source": (
+                getattr(content, "video_title", "")
+                or getattr(content, "channel", "")
+            ),
+        })
+    return packages
+
+
+def _load_findings_from_batch(batch_path: Path) -> dict[int, list[dict]]:
+    """Load findings from a batch file, grouped by chapter."""
+    data = json.loads(batch_path.read_text())
+    by_chapter = defaultdict(list)
+    for entry in data:
+        ch = entry.get("chapter")
+        if not ch:
+            continue
+        by_chapter[ch].append({
+            "finding_id": entry.get("finding_id", ""),
+            "step1_verdict": "batch",
+            "step1_justification": entry.get("justification", ""),
+            "text": entry.get("text", ""),
+            "quote": entry.get("quote", ""),
+            "source": entry.get("source", ""),
+        })
+    return dict(by_chapter)
+
+
+def _build_chapter_context(ch: int, findings: list[dict]) -> dict:
+    """Build a Step 2 context package for one chapter.
+
+    Includes everything the evaluator needs: findings, chapter text,
+    chapter inventory, Q&A (global + chapter), cross-chapter inventories,
+    anti-pattern rules, and Step 2 verdict rules. The evaluator does not
+    need to load anything separately.
+    """
+    global_qa_path = PROJECT_ROOT / "scripts" / "global_qa.md"
+    global_qa = global_qa_path.read_text() if global_qa_path.exists() else ""
+
+    qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
+    chapter_qa = qa_path.read_text() if qa_path.exists() else ""
+
+    qa_text = ""
+    if global_qa:
+        qa_text += "=== GLOBAL Q&A (applies to all chapters) ===\n\n" + global_qa
+    if chapter_qa:
+        if qa_text:
+            qa_text += "\n\n"
+        qa_text += f"=== CHAPTER {ch} Q&A ===\n\n" + chapter_qa
+
+    chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
+    chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
+
+    chapter_inventory = load_inventory(ch)
+
+    cross_chapter = {}
+    for other_ch in range(1, 7):
+        if other_ch == ch:
+            continue
+        inv = load_inventory(other_ch)
+        if inv:
+            cross_chapter[f"chapter_{other_ch}"] = inv
+
+    return {
+        "chapter": ch,
+        "step2_rules": STEP2_RULES,
+        "anti_pattern_rules": ANTI_PATTERN_RULES,
+        "findings": findings,
+        "qa_history": qa_text,
+        "chapter_text": chapter_text,
+        "chapter_inventory": chapter_inventory,
+        "cross_chapter_inventories": cross_chapter,
+    }
+
+
+def cmd_embed_prep(args):
+    """Assemble Step 2 embed context packages.
+
+    Two modes:
+      --embed-prep --chapter N           Survivors from Step 1 verdicts
+      --embed-prep --batch FILE          Findings from a batch file
+
+    Each context package contains: findings, anti-pattern rules, Q&A
+    history, full chapter text, and cross-chapter inventories.
+
+    The tool assembles and presents. It does not score, classify, or
+    pre-filter. See DD-0002 Step 2 spec.
+    """
+    out_dir = COVERAGE_DIR / "embed_prep"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.batch:
+        batch_path = Path(args.batch)
+        if not batch_path.exists():
+            print(f"ERROR: {batch_path} not found", file=sys.stderr)
+            return 1
+        by_chapter = _load_findings_from_batch(batch_path)
+        chapters = sorted(by_chapter.keys())
+    elif args.chapter:
+        findings = _load_findings_from_verdicts(args.chapter)
+        if not findings:
+            print(f"Ch{args.chapter}: No surviving findings for embedding")
+            return 0
+        by_chapter = {args.chapter: findings}
+        chapters = [args.chapter]
+    else:
+        # All chapters
+        by_chapter = {}
+        for ch in range(1, 7):
+            findings = _load_findings_from_verdicts(ch)
+            if findings:
+                by_chapter[ch] = findings
+        chapters = sorted(by_chapter.keys())
+        if not chapters:
+            print("No surviving findings in any chapter")
+            return 0
+
+    for ch in chapters:
+        findings = by_chapter[ch]
+        output = _build_chapter_context(ch, findings)
+        out_path = out_dir / f"ch{ch}_embed_context.json"
+        out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+
+        print(f"Ch{ch}: {len(findings)} findings → {out_path}")
+        for p in findings:
+            print(f"  {p['finding_id']:30s}  {p['step1_verdict']:15s}  "
+                  f"{p['text'][:60]}...")
+
+    total = sum(len(by_chapter[ch]) for ch in chapters)
+    print(f"\nTotal: {total} findings across {len(chapters)} chapters")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="DD-0002 Step 1 coverage pipeline management"
+        description="DD-0002 coverage pipeline (Step 1 verdicts + Step 2 embed context)"
     )
     parser.add_argument("--status", action="store_true", help="Show pipeline status")
     parser.add_argument("--batches", action="store_true", help="Generate eval batches")
@@ -508,9 +1056,17 @@ def main():
     parser.add_argument("--normalize", action="store_true", help="Normalize formats")
     parser.add_argument("--redistribute", action="store_true",
                         help="Redistribute wrong_chapter findings")
+    parser.add_argument("--resolve", action="store_true",
+                        help="Generate forced-resolution batches for bouncing findings")
+    parser.add_argument("--embed-prep", action="store_true",
+                        help="Assemble Step 2 embed context packages")
+    parser.add_argument("--batch", type=str,
+                        help="Batch file for --embed-prep (findings JSON)")
     parser.add_argument("--round", type=int, default=1,
                         help="Redistribution round number (default: 1)")
     parser.add_argument("--chapter", type=int, help="Limit to specific chapter")
+    parser.add_argument("--force", action="store_true",
+                        help="Regenerate batches for ALL findings (ignore existing verdicts)")
     args = parser.parse_args()
 
     if args.status:
@@ -523,6 +1079,10 @@ def main():
         return cmd_normalize(args)
     elif args.redistribute:
         return cmd_redistribute(args)
+    elif args.resolve:
+        return cmd_resolve(args)
+    elif args.embed_prep:
+        return cmd_embed_prep(args)
     else:
         parser.print_help()
         return 1

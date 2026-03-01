@@ -1,0 +1,27 @@
+[
+  {
+    "finding_id": "Jor0oevcEK8_8",
+    "verdict": "wrong_chapter",
+    "justification": "Chapter 2 already documents Galilee's Hellenization with Dionysus mosaics at Sepphoris and Greek inscriptions (inventory #20, #21), but this finding is specifically about zodiac mosaics and astrological ascent symbolism in Jewish synagogues as evidence of Hellenistic theological penetration. That specific argument — astral ascent symbolism embedded in Jewish worship — belongs to chapter 3's Son of God / ascent theology. Chapter 2's mosaic evidence serves the 'Galilee was Hellenized' argument about Jesus's education and background; the ascent/zodiac angle serves the divine sonship and glorification argument in chapter 3. Target: ch3."
+  },
+  {
+    "finding_id": "VfJT9fXmP9k_2",
+    "verdict": "wrong_chapter",
+    "justification": "Chapter 2 discusses 'Hellenistic royal grammar and court protocols' in the context of the Magi scene (inventory #44), bowing/prostration as court protocol (inventory #45), and the euangelion as royal accession proclamation (inventory #31). However, the specific argument here — that Augustus temple architecture used mandatory ascent and visual hierarchy to physically communicate dynastic authority — is an architectural illustration of the same royal grammar principle. Chapter 2 does not treat temple architecture as evidence; this finding is visual/spatial evidence for the dynastic display argument. Given this has already been redistributed once, it is close to the chapter 2 ecclesia / royal display territory, but the ascent-architecture evidence is more directly a ch3 argument about how divinity and royal authority were physically staged. Target: ch3."
+  },
+  {
+    "finding_id": "7eyz_P8LqqI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Seleucid period and references Onias I and Eleazar son of Onias I in the genealogy tables (inventory #35, lines 553-582). The argument that Jewish history is underrepresented in Hellenistic/Seleucid context is explicit in ch2's inventory #1 and #6. This finding adds specific new evidence: Daniel 9:26 is 'widely agreed' to refer to Onias III, the High Priest assassinated in 171-172 BCE during the Seleucid crisis — demonstrating that even canonical prophetic texts were anchored in Seleucid-era events rather than apocalyptic future. This is new textual evidence (Daniel 9:26 as Onias III reference) for the existing argument that the Seleucid/Hellenistic context is historically central to Second Temple Judaism and therefore to Jesus's background. Chapter 2 names Onias I's descendants but does not use Daniel 9:26 or the Seleucid assassination of Onias III as evidence."
+  },
+  {
+    "finding_id": "w-kWyeMMOWo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 has an extensive section on euangelion as a Greek political term for royal victories and accessions (inventory #31, lines 497-514), citing the Priene decree, Plutarch, papyri, Josephus, and Cassius Dio. The argument that euangelion has Greek rather than Jewish roots is already well-developed. This finding adds a new layer of evidence: the word's root (adjective of angelos) was specifically applied to Hermes as 'the faithful messenger of Zeus' in Greek religious language, demonstrating that the theological term for Jesus's proclamation derives from Greek divine-messenger vocabulary — not merely from Greek political culture. This is new evidence (the Hermes/angelos etymology connecting euangelion to Greek divine messenger language) for the existing argument that euangelion is Greek, not Jewish."
+  },
+  {
+    "finding_id": "KJqcC6ze_9k_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 2 covers the Roman conquest of Judea and its political consequences (fall of the Greek world, Hasmonean client kingdom, Herod's history), but does not mention Julius Caesar's assumption of the Pontifex Maximus priesthood in 63 BC — the same year Rome conquered Jerusalem and stripped Hyrcanus II of independent authority. This is both a new argument and new evidence: the structural parallel between Rome taking Jerusalem and Caesar simultaneously becoming Rome's chief priest is an argument about Roman institutional religious control over Jewish authority that does not appear anywhere in ch2's inventory. It is relevant to chapter 2's thesis about the political-religious context into which Jesus was born, and specifically to the argument that Hasmonean priestly-royal authority was being systematically dismantled by Rome. However, this is also a plausible ch6 argument (Roman institutional structures). Given it has been redistributed once and the ch2 context of Hasmonean displacement and Roman religious-political control is directly relevant, this finding fits chapter 2."
+  }
+]

@@ -1,0 +1,927 @@
+[
+  {
+    "finding_id": "p4wu0T9L4xc_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion/synthesis (lines 353-359) argues that modern scholarship inherited the assumption of a rural Jewish core and that Greek institutional context is the necessary framework. The Mythical figure section (lines 97-114) specifically names Justin Martyr-era parallels and Greek literary conventions. Wallis's argument (Greek mythology essential for Gospels, Justin Martyr recognized Greek thought as preparation for Jesus) restates the same argument with the same evidence anchor (Justin Martyr's position on Greek thought as preparation for Christianity)."
+  },
+  {
+    "finding_id": "5-yNa34Sfx0_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure section (lines 130-135) explicitly discusses Plutarch and Greco-Roman biographical conventions as the proper framework for understanding the Gospels. The inventory item states: 'Plutarch states in Life of Alexander that biography reveals character, not every event with precision' and 'Gospels follow Greco-Roman biographical practice.' Litwa's argument that Gospels should be compared with Plutarch and Greek historians rather than modern standards is the same argument with the same evidence (Plutarch as paradigm)."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues that the Judeo-Christian scholarly lens is inadequate and Greco-Christian framework is needed. However, Fredriksen's specific evidence — that 2nd-3rd century Christians themselves considered Jesus and apostles to represent 'different types of Gentile christianities' and would have been surprised to hear Jesus was Jewish — is a specific historical datum not present in the inventory. The book does not cite this early Christian self-understanding as evidence."
+  },
+  {
+    "finding_id": "G6QR0e66erA_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion (lines 353-359) makes the argument that the rural Jewish core assumption from 19th-century German Romanticism distorts scholarship. Walsh's specific critique of 'community authorship' as a 19th-century Romanticist scholarly bias (not historical evidence) is a new specific mechanism. The inventory mentions 'Herder and the Tubingen school as origin' but does not specifically name the Romanticist community-authorship model as the target."
+  },
+  {
+    "finding_id": "PmE7ZMpWjRw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues existing scholarly models fail to account for Greek context. But the specific structural evidence — that Greek Studies departments end at the Classical period, creating a gap of centuries that excludes the Hellenistic era and NT — is a specific institutional/academic observation not present in the inventory. The book argues the gap exists but does not cite this specific academic-structural cause."
+  },
+  {
+    "finding_id": "TAKozKKTLbk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) explicitly states 'All surveyed models begin with Jewish peasant figure, explain Greek language and civic structure as secondary' and argues the way forward is to recover the Greek institutional world. MacDonald's statement that scholarship has been 'attentive to the Jewish side' but 'not been sufficiently attentive to the Greek side' is the same argument."
+  },
+  {
+    "finding_id": "TAKozKKTLbk_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) contains the specific evidence: '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments from same period.' MacDonald's 604 manuscripts figure is the same papyri data the book already cites (the book rounds to 800+, MacDonald gives 604 from a specific catalog)."
+  },
+  {
+    "finding_id": "WtTJE4l62iw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues that Judeo-Christian models are inadequate. Burton Mack's specific argument — that Jesus 'did not come from the Jewish tradition' and that 'the fundamental nature of Christ is both man and God ultimately derived from the Greek tradition of the divinity of Alexander' — introduces a specific scholarly claim (Alexander as direct source of Christ's divine-human nature) not present in the inventory. The chapter mentions Alexander only in the context of the Hellenistic period, not as a direct theological model for Christ."
+  },
+  {
+    "finding_id": "XYqghYtia6k_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'deliberate literary mimesis' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' The Conclusion (lines 353-359) notes 'surviving evidence already speaks fluent Greek administrative and philosophical vocabulary.' Walsh's argument that gospels display elite Greco-Roman literary sophistication comparable to other ancient Mediterranean literature restates this covered position."
+  },
+  {
+    "finding_id": "XYqghYtia6k_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues gospel authors were sophisticated and Greek-literate (Mythical figure lines 97-114, Conclusion lines 353-359). But Walsh's specific evidence about practical constraints — access to papyri, ink, scribal education excluding poor Galilean peasants — is a specific material-economic argument not present in the inventory. The book argues they were educated but doesn't cite the specific material constraints as evidence."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues against the Judeo-Christian scholarly lens. Litwa's specific mechanism — that early Christian scholars used Judaism as a 'buffer' to separate Christianity from 'pagan' Greco-Roman influence, an apologetic construction — is a specific scholarly argument about WHY the false dichotomy persists. The inventory notes the dichotomy exists but does not name the 'buffer' mechanism."
+  },
+  {
+    "finding_id": "bKbUxfZD-2U_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues the Judeo-Christian model is inadequate. Burton Mack's specific evidence — that Kings of Israel 'were never understood to be divine' so 'the notion of divinity... does not come from the Israelite tradition' — is a specific theological datum (absence of divine kingship in Israelite tradition) not present in the chapter 1 inventory. The book argues models are inadequate but doesn't cite this specific absence as evidence."
+  },
+  {
+    "finding_id": "mYhxYeOPt-o_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) explicitly argues that scholarship's 'primary intertext' focus is on Jewish Bible rather than Greco-Roman world. MacDonald's critique — 'the primary intertext that people are looking for are inter-biblical so they compare stories in the new testament with stories in the jewish bible but not those that are actually in the culture that produce the new testament' — is the same argument with the same framing the chapter already presents."
+  },
+  {
+    "finding_id": "mYhxYeOPt-o_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues scholarship is biased toward Jewish frameworks. MacDonald's specific evidence — the Nestle-Aland critical edition (Nestle 28) containing thousands of cross-references to Jewish texts but only five to Greek poetry — is a concrete, quantifiable institutional datum not present in the inventory. The book discusses the scholarly blind spot but does not cite this specific reference tool as evidence."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dense parallels to pagan myths. However, Miller's specific evidence — Justin Martyr's explicit rhetorical admission that Christianity 'does nothing new' and employs the identical demigod narrative pattern, with Justin slotting Jesus directly into the tradition and attributing parallels to demonic anticipation — is a specific ancient source argument not itemized in the inventory. The inventory does not name Justin Martyr's demonic-anticipation defense."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure section discusses pagan parallels. But Celsus as an early critic who explicitly recognized Jesus's parallels to other deified figures — showing the Greco-Roman framework debate was contemporaneous with early Christian apologetics — is a specific ancient-source datum not in the inventory. The chapter does not name Celsus."
+  },
+  {
+    "finding_id": "fSbFqpOeHpQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues Greek institutional world shaped Christianity. Chapter 2 cross-inventory has extensive coverage of Greek and Egyptian monotheistic philosophical thought predating Jesus. Biglino's argument that Christianity is a child of Greek philosophy (Plato, Neoplatonism) rather than the Old Testament restates the core thesis already present in the chapter's conclusion. No new specific evidence is introduced beyond the general claim."
+  },
+  {
+    "finding_id": "BsGoPhumoow_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 130-135) explicitly discusses Plutarch as paradigm: 'Plutarch states in Life of Alexander that biography reveals character, not every event with precision' and 'Gospels follow Greco-Roman biographical practice.' Ehrman's use of Plutarch as a paradigm for interpreting gospels through Greco-Roman biographical conventions is the same argument with the same evidence."
+  },
+  {
+    "finding_id": "ESZyKXIPVoY_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists: 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius of Tyana,' 'Passion and death recall dying-and-rising gods,' 'Language of rebirth and new creation parallels rites of Mithras, Isis, Eleusis.' Ehrman's evidence of Greco-Roman 'Divine men' with miraculous birth, healings, exorcisms, and ascension is the same evidence category already present."
+  },
+  {
+    "finding_id": "PMsvMKsDt4s_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) explicitly names 'Herder and the Tubingen school as origin of rural Jewish core assumption' and states 'All surveyed models begin with Jewish peasant figure, explain Greek language and civic structure as secondary.' Walsh's critique tracing the error to German Romanticism's focus on recovering 'folk' voices is the same argument with the same historical attribution."
+  },
+  {
+    "finding_id": "VAhw2cVRVsA_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states: 'Passion and death recall dying-and-rising gods' and discusses dense parallels to pagan myths. The Conclusion argues for understanding Jesus through Greco-Roman concepts. Ehrman's argument that early Christians understood Jesus through Greco-Roman concepts 'borrowed from the environment' restates the thesis without introducing new specific evidence."
+  },
+  {
+    "finding_id": "XOPd3oUWT0k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues for Greco-Christian frameworks. Walsh's specific proposal — interpreting Mark's Messianic Secret through the Greek/Roman 'misrecognized hero trope' from Homer and Virgil rather than psychological frameworks — introduces a specific literary-critical mechanism (misrecognized hero trope applied to the Messianic Secret) not present in the inventory. The inventory lists mimesis generally but does not name the misrecognized hero trope or its application to the Messianic Secret."
+  },
+  {
+    "finding_id": "eEIyK8dLQUI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Apocalyptic prophet (lines 34-46) explicitly argues: 'Crucifixion was Rome's penalty for crimes against the state (sedition, insurrection, royal pretension), not for prophesying' and 'Charge was King of the Jews — not apocalyptic preacher.' This is exactly Ehrman's point about the inadequacy of the Jewish Messianic model to explain a crucified criminal as Messiah."
+  },
+  {
+    "finding_id": "mDX_EXb5pT8_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) contains 'Literary imitation of Homer as standard curriculum of the age' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' Ehrman's note that Gospel authors received Greek literary education and read Homer and Euripides is the same evidence already present."
+  },
+  {
+    "finding_id": "y-u37b2GE6c_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Sage and teacher (lines 203-221) mentions Cynic parallels and the Conclusion argues for Greco-Christian frameworks. But Walsh's specific argument — that Matthew's Jesus embodies Stoic philosophical qualities and cannot be reduced to a Jewish wisdom teacher — introduces a specific claim (Matthew's Jesus as Stoic philosopher) not present in the inventory. The inventory names Cynic parallels but not Stoic qualities for Matthew specifically."
+  },
+  {
+    "finding_id": "CtB_YuPDiVE_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for Greek institutional context as the framework for understanding early Christianity, and the Mythical figure section (lines 97-114) discusses parallels with mystery cults and Greek religion. The characterization of early Christianity as 'fundamentally a Roman religion arising from the Greco-Roman context' restates the thesis without new specific evidence."
+  },
+  {
+    "finding_id": "HtKW1h5z-l4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues the Judeo-Christian lens is inadequate. Litwa's specific evidence — rejecting the Jewish apocalyptic prophet model for the Gospel of Thomas and John and proposing an Alexandrian Greco-Christian framework where Jesus appears as a Pythagorean-style mystical sage — introduces a specific Alexandrian connection and the Gospel of Thomas, which the chapter does not discuss. The inventory does not mention Thomas or the Alexandrian mystical sage model."
+  },
+  {
+    "finding_id": "0dPq3uCRZzs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and Greek literary conventions. Walsh's specific evidence — the paradoxographical narrative conventions and the thaumata (wonder/amazement) motif from Greek literature (particularly Virgil) applied to Mark's 'Messianic secret' — introduces a specific literary genre (paradoxography) and specific Greek literary motif (thaumata/falma) not present in the inventory."
+  },
+  {
+    "finding_id": "0k_Sfn-j6KY_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists: 'Demoniac of Gerasenes and the Legion resembles Odysseus and Polyphemus (Homer, Odyssey 9)' and 'Deliberate literary mimesis: Mark mapped to Homeric epics.' Crane's discussion of Mark-Homer parallel sequences (including the Polyphemus/Gadarene demoniac parallel) is the same evidence already present."
+  },
+  {
+    "finding_id": "0nuyoe50ddc_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius of Tyana' and discusses Greek literary conventions, divine men, and Greek tragedy. Tabor's description of Mark engaging with Greek tragedy and divine men traditions (specifically mentioning Apollonius of Tyana) covers the same evidence already in the inventory."
+  },
+  {
+    "finding_id": "EaNNLRKAcYc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis. MacDonald's evidence about apocryphal Acts (Acts of Andrew, Acts of Paul, Acts of John, Acts of Thomas) consciously rewriting Greek stories to show Christian heroes as superior to Greek heroes is specific evidence about non-canonical early Christian texts not mentioned in the inventory. The inventory discusses canonical gospels' mimesis but not the apocryphal Acts' mimesis."
+  },
+  {
+    "finding_id": "HyF7Ntvl9hs_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae' and 'Literary imitation of Homer as standard curriculum of the age.' MacDonald's analysis that Mark and other Gospels systematically imitated Homeric epics and Euripidean tragedies, taught in Greek rhetorical education, is the same evidence."
+  },
+  {
+    "finding_id": "LSpAmwwlSaI_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Hypsistarians — a syncretic Greco-Jewish-pagan monotheistic community rooted in Zeus Sabatios, Orphic, and Platonic traditions — represent a specific historical phenomenon not mentioned anywhere in the chapter or cross-chapter inventories. Neither the argument (existence of pre-Christian syncretic monotheistic communities bridging Greek and Jewish traditions) nor the evidence (Hypsistarians, Zeus Sabatios cult, Cybeline-Orphic monotheism) appears in the book."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly discusses 'Language of rebirth and new creation parallels rites of Mithras, Isis, Eleusis' and 'Passion and death recall dying-and-rising gods.' Q&A history rejects the 'mystery cult' framing but the institutional data about competition with other cults is acknowledged. Litwa's point that Christianity emerged as one cult movement in competition with other mystery religions is the same argument with the same evidence category. Per Q&A, the mystery cult label is rejected but the institutional context data is accepted."
+  },
+  {
+    "finding_id": "Uv6Ls3ec_sA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dying-and-rising gods (Osiris, Attis, Dionysus). But the Naassene preacher's explicit text — a 2nd century Christian identifying Jesus with Osiris, Adonis, Attis, Bacchus, and stating 'he becomes a God when he rises from the dead' — is a specific primary source not cited in the inventory. The book lists the parallel category but does not cite the Naassene preacher as evidence."
+  },
+  {
+    "finding_id": "dc6mYzh9MWg_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Sage and teacher (lines 203-221) explicitly discusses 'Comparative work: itinerancy, counter-status meals, pointed critique have Mediterranean analogues (Cynic parallels).' The finding that Jesus was 'an excellent stoic' and knew Greek philosophy repeats the same argument about Greek philosophical models for Jesus. While 'Stoic' is not identical to 'Cynic,' both are Greek philosophical parallels already covered under the Mediterranean analogues umbrella in this section."
+  },
+  {
+    "finding_id": "dc6mYzh9MWg_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dense parallels to pagan myths and Greek literature, and the Sage section discusses Mediterranean analogues. The general observation that understanding Jesus requires engagement with Greek philosophical and Roman cultural contexts restates the thesis without introducing specific new evidence beyond Trimalchio/Socrates name-drops, which are just examples of the same covered argument."
+  },
+  {
+    "finding_id": "dhjjbix2KPU_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses pagan parallels and Greco-Roman narrative patterns. The Conclusion argues for understanding Christianity through Greco-Roman context. The finding's general emphasis that Jesus and early Christianity must be understood through Greco-Roman institutional and religious context rather than purely Jewish models restates the thesis without new specific evidence."
+  },
+  {
+    "finding_id": "jyMI1tvB5BI_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "First-century Hellenistic-Jewish syncretism through Orphism (Orphic texts used by Jews in Alexandria, Jews claiming Orpheus as a prophet) is a specific historical phenomenon not mentioned in the chapter inventory or cross-chapter inventories. Neither the argument (Orphic-Judaic merger in Alexandria demonstrating inadequacy of pure models) nor the evidence (Orphic texts adopted by Alexandrian Jews, Orpheus claimed as Jewish prophet) appears in the book."
+  },
+  {
+    "finding_id": "lA-70CJlmkA_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Judaism/Hellenism binary is artificial. Price's argument that 'it's no longer possible to draw any kind of a solid line between judaism and hellenism because after alexander the great everything became hellenized' restates this thesis. The added claim that Mark and Luke 'were simply Greeks' is a stronger version of the same argument already present in the mythical figure section (educated Greek writers)."
+  },
+  {
+    "finding_id": "mNv5JEoBcqI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states 'Literary imitation of Homer as standard curriculum of the age' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' Burke's evidence that early Christian writers were educated in Greek and studied Homer is the same evidence already present."
+  },
+  {
+    "finding_id": "n7UWPkWAbXs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for a fluid Greco-Christian context. But the transformation of pre-Christian Sibylline Oracles into Christian prophecy is a specific historical phenomenon not mentioned in the inventory. The Sibylline Oracles are not cited as evidence anywhere in the chapter. This is new evidence (Sibylline Oracle appropriation) for the existing argument (fluid Greco-Christian religious continuum)."
+  },
+  {
+    "finding_id": "ngOxRGUO1Dg_0",
+    "verdict": "wrong_chapter",
+    "justification": "This finding concerns the Book of Revelation (John of Patmos) and Hellenistic-Mesopotamian astrological traditions. Chapter 1 surveys scholarly models of the historical Jesus; it does not discuss Revelation or astrological interpretation. This content would belong in Chapter 3 (divine sonship and cosmological context) or Chapter 5 (broader early Christian theology)."
+  },
+  {
+    "finding_id": "o8co7YYxnf8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Greek literary influence on the Gospels. But Hillman's specific argument — that a first-century Alexandrian initiate would immediately recognize Mark 14 as mystery religion terminology — introduces a specific claim about Mark 14's intelligibility to Greek initiates not present in the inventory. The inventory lists mimesis and parallels but not this specific passage or the initiate-recognition argument."
+  },
+  {
+    "finding_id": "rM_TG98nslU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and Greek literary conventions. MacDonald's specific methodological point — that Jewish communities themselves used mimesis of Homer and Euripides to establish identity within the Greek world — is a specific mechanism (Jewish communities as practitioners of Greek mimesis for identity construction) not stated in the inventory. The inventory mentions mimesis by gospel authors but not the broader phenomenon of Jewish mimesis for social identity."
+  },
+  {
+    "finding_id": "sky6u0ntu24_10",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greek philosophical influence on Christianity. But the specific evidence — Valentinus charged with plagiarism of Pythagoras, Basilides and Simon Magus explicitly teaching Pythagorean numerology and Platonic cosmology — introduces specific named figures and specific charges of plagiarism not present in the inventory. The inventory does not name Valentinus, Basilides, or Simon Magus."
+  },
+  {
+    "finding_id": "u4QBfZd-iPI_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Sage and teacher (lines 203-221) explicitly discusses 'Comparative work: itinerancy, counter-status meals, pointed critique have Mediterranean analogues (Cynic parallels).' The explicit comparison of Jesus to Diogenes the Cynic is the same Cynic philosopher model already present in the inventory."
+  },
+  {
+    "finding_id": "uwcr20u0gik_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) contains the evidence of dense mythic parallels and the argument that the Gospels are layered literary traditions. However, euhemerization — the specific methodological argument that spiritual/mythological narratives become historicized (the reverse direction, from myth to history) — is a distinct argument the chapter does not make. The chapter argues myth was added to history; euhemerization argues history was manufactured from myth. This is a different conclusion drawn from evidence the book already engages with."
+  },
+  {
+    "finding_id": "1JIaKg3lirA_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for understanding texts in their Greco-Roman Jewish Christian context. The finding merely notes that apocalyptic literature requires contextualization within its 'Greco-Roman Jewish Christian framework,' which is a generic restatement of the thesis without new specific evidence."
+  },
+  {
+    "finding_id": "CvI3J5bD0mY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues the Judeo-Christian lens is inadequate. But the speaker's specific argument — that Jesus 'is not native to the text' of the Hebrew Bible and can only be found by 'negotiating Jesus into the text' — is a specific textual argument about the Hebrew Bible's non-native relationship to Jesus not stated in the chapter inventory. The chapter argues the Jewish framework is inadequate but doesn't make this specific exegetical point."
+  },
+  {
+    "finding_id": "QOpbfbRfnpQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues Greek and Jewish frameworks cannot be separated. The finding that Greek and Roman influences were deeply integrated with Judaism in first-century Judea, that 'there was a lot of mixing going on,' and Jesus was raised near a Greco-Roman city restates this thesis without new specific evidence beyond what is already in the conclusion."
+  },
+  {
+    "finding_id": "dJNcRJGNzPo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greek linguistic and institutional context. But the specific evidence — Acts 15:16-17 using Greek Septuagint terminology and testimonia (composite Greek scriptural compilations) as a compositional technique — is a specific textual-critical datum about Acts 15 not present in the inventory."
+  },
+  {
+    "finding_id": "kI799nkK5m0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Lord's Prayer bears resemblance to solar hymns to Aten' but does not address the Lord's Prayer's original composition language. The finding that the Lord's Prayer was originally composed in Greek rather than Aramaic, and all Aramaic versions are translations from Greek, is a specific linguistic datum not present in the inventory."
+  },
+  {
+    "finding_id": "miPGNGAFtMw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greco-Roman influence on early Christianity. But the specific evidence — that first-century readers abandoned earlier exilic understandings of Psalm 82 and adopted new frameworks influenced by Greco-Roman thought — is a specific example of theological reinterpretation under Hellenistic influence not present in the inventory."
+  },
+  {
+    "finding_id": "w7KScjwdwoQ_1",
+    "verdict": "wrong_chapter",
+    "justification": "This finding critiques the conventional view that Jesus's power to forgive sins proves divinity, calling it a 'postbiblical rationalization of the Trinity that ignores Greco-Roman period Jewish ideas about the communicability of God's power.' This is about divine Christology and the Trinity, which belongs in Chapter 3 (He Truly was the Son of God) where divine sonship and its Greco-Roman context are discussed."
+  },
+  {
+    "finding_id": "wk656UvZoH0_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Greek institutional world shaped Christianity. McClellan's acknowledgment that Greco-Roman culture substantially influenced early Christian ethical concepts and Jewish texts during the Greco-Roman period restates this thesis without new specific evidence."
+  },
+  {
+    "finding_id": "yM8bVT4xuHk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Greek literary parallels. McClellan's specific evidence — the Road to Emmaus narrative drawing on the Greek literary convention of gods appearing unrecognized among humans — is a specific example not listed in the inventory. The inventory discusses mimesis generally and some specific parallels (Polyphemus, Socrates) but not the Road to Emmaus/divine-disguise convention."
+  },
+  {
+    "finding_id": "--MKyxX907k_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics' and 'Literary imitation of Homer as standard curriculum of the age.' MacDonald's argument about systematic mimesis (creative imitation) to portray Jesus as superior to classical heroes is the same argument with the same evidence."
+  },
+  {
+    "finding_id": "-yLHxWIezdA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis of Mark-Homer and John-Bacchae. MacDonald's specific mapping — Q imitating Deuteronomy, Mark and Luke imitating Homer's epics, and John imitating Euripides' Bacchae — adds Q-Deuteronomy mimesis as a new specific claim. The inventory covers Mark-Homer and John-Bacchae but not Q-Deuteronomy."
+  },
+  {
+    "finding_id": "0OoK322JeZQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Greek epic as dominant textual culture for educated eastern Mediterranean writers' and 'Deliberate literary mimesis.' MacDonald's argument that gospel authors were 'bicultural intellectuals' engaging Greek literary sources restates the covered thesis."
+  },
+  {
+    "finding_id": "1HjimJTgS_Q_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae' and notes 'Demoniac of Gerasenes and the Legion resembles Odysseus and Polyphemus.' McDonald's evidence of Mark systematically imitating Homeric narrative structures (Odyssey and Iliad) and Greek tragic plays is the same evidence."
+  },
+  {
+    "finding_id": "1TGmi4JZapk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age' and lists mimesis. Fredriksen's discussion that Homer was the foundation of Greek education and Gospel authors wrote like 'their own little epics' with Mark ending 'like a tragedy' restates the same argument and evidence."
+  },
+  {
+    "finding_id": "1aYH2YNev3c_4",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis of Homer, Euripides, and Greek literary forms, and (lines 130-135) discusses Greco-Roman biographical conventions including Plutarch. Multiple references to Homer, Euripides, Plato, and Plutarch/Suetonius biography conventions restate evidence already catalogued."
+  },
+  {
+    "finding_id": "2xrtEKOcyDI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Passion and death recall dying-and-rising gods: Osiris, Attis, Dionysus' and 'Wine miracle at Cana and Eucharist recall Dionysian cult.' Derek's discussion of comparative mythology including Dionysus, Osiris, and Mithras restates the same evidence."
+  },
+  {
+    "finding_id": "3EnLgob-FFM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dying-and-rising gods and parallels. But the specific archaeological evidence — a Jewish sarcophagus decorated with both menorah and Attis imagery, plus documentation of simultaneous membership in multiple mystery cults — is specific physical evidence of religious syncretism not present in the inventory."
+  },
+  {
+    "finding_id": "3rH8HdbQEjs_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that Greek genealogical models (panhellenism — unified Greek identity through descent from Helen) directly influenced the Jewish construction of 'pan-israelitism' through the 12-tribe genealogy is neither an argument nor evidence present in any chapter inventory. This is a specific structural argument about how Greek political identity models shaped Jewish political identity, distinct from the general Hellenistic influence thesis."
+  },
+  {
+    "finding_id": "5_D5BzcP24I_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues that existing models fail to account for Greek institutional context and that the assumption of a rural Jewish core is inherited from 19th-century scholarship. The speaker's critique that scholars 'claim that the New Testament is not interested in the Greco-Roman world' and 'that is just patently false' restates this covered argument."
+  },
+  {
+    "finding_id": "5wy1hrfAPG4_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for the inadequacy of Jewish-only frameworks. Price's critique of scholarly bias toward privileging Jewish parallels and 'hermetically sealing' early Christianity from Hellenistic influence restates this argument. The inventory already contains 'All surveyed models begin with Jewish peasant figure, explain Greek language and civic structure as secondary.'"
+  },
+  {
+    "finding_id": "8Ulo6LyugEc_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues existing scholarly models fail to account for Greek context. Miller's argument that NT scholars are inadequately trained in classical Greek literature (especially Homer) and thus unable to recognize Greco-Roman frameworks restates the same covered argument without new specific evidence."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Jewish/Hellenistic distinction is artificial. Tabor's reference to Jonathan Z. Smith's framework that 'all the religions of the hellenistic period are hellenized already' and Judaism 'becomes a kind of a dualistic Jewish version of helenistic piety' restates this thesis. The book already argues the frameworks cannot be separated."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Hellenistic influence on Judaism. Tabor's specific evidence about 'Enochian Judaism' as a 'dualistic kind' of Judaism in the late Second Temple period, plus Gnosticism's Eastern/Silk Road origins already embedded in Platonic philosophy, introduces specific traditions (Enochian Judaism, Silk Road Gnosticism) not named in the inventory."
+  },
+  {
+    "finding_id": "9iI0sCYe5zQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' The finding that Luke had a Greek education and knew Homer restates this covered evidence."
+  },
+  {
+    "finding_id": "A6R5spy1uPk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Deliberate literary mimesis' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' Walsh's argument that gospel authors were elite, highly educated individuals trained in Greco-Roman literature restates the same position."
+  },
+  {
+    "finding_id": "B3dz9PY1Y10_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) explicitly argues that scholarship treats gospels as emerging from a Jewish-only context while ignoring Greek literary models. McDonald's critique that NT scholarship treats gospels as emerging from a 'cultural literary textual vacuum' and ignores Homer restates this argument."
+  },
+  {
+    "finding_id": "Bj9pn0Lwdxk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Jewish/Hellenistic dichotomy is artificial. Kochenash's challenge to the 'false dichotomy between the Jewish world and the larger Mediterranean World' restates this same argument without introducing new specific evidence."
+  },
+  {
+    "finding_id": "Bzm1lZwbjxA_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae.' The finding that Acts is modeled on the Odyssey and Mark employs tragic dramatic conventions restates evidence already in the inventory (Mark-Homer mimesis, and Acts-Odyssey is a natural extension of the same covered mimesis framework)."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) contains the evidence about literary mimesis and the Gospels as layered literary traditions. However, the specific argument that the dominant 'memory theory' approach is fundamentally unreliable and that gospels are 'extremely well literally crafted pieces of work' rather than 'random collections of memories' is a distinct argument against a specific scholarly methodology (memory theory) that the chapter does not name or critique. The evidence (literary sophistication of gospels) exists in the book; the argument (memory theory is wrong, different tools needed) is new."
+  },
+  {
+    "finding_id": "CnDyAoksGO8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greek philosophical influence. MacDonald's specific evidence about Platonic metaphysical dualism (true reality vs. material appearances) being integrated into Christian and Gnostic theology from the earliest period introduces Plato's specific philosophical framework as evidence. The inventory does not name Platonic dualism or metaphysical frameworks specifically. Chapter 2 cross-inventory discusses Platonism more, but this is about Chapter 1's coverage."
+  },
+  {
+    "finding_id": "DCX8yZmQqr4_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and Greek literary conventions. Lambert's discussion of McDonald's work on Gospel authors drawing on Greek literary traditions restates the same covered argument without introducing new specific evidence."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) explicitly critiques the 'Jewish only framework.' Walsh's direct critique of the dominant scholarly obsession with this framework and advocacy for Greek and Roman literary traditions restates the same argument."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Mark-Homer mimesis generally. Walsh's identification of Homer and Virgil as primary literary models for Mark's construction of Jesus as a hero with specific narrative strategies (divine disguise, country-to-city journey, misrecognition of identity) introduces specific narrative mechanisms (divine disguise trope, journey structure from Homer/Virgil) not itemized in the inventory."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure discusses mimesis. Walsh's characterization of Mark as written in the genre of paradoxography — collections of extraordinary events and wonders (thalma) designed for entertainment — introduces a specific Greek literary genre (paradoxography) not named in the inventory."
+  },
+  {
+    "finding_id": "E48DhofWV9U_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The evidence that gospels are literary works by individual authors is in the chapter (Mythical figure lines 88-96). However, Walsh's specific argument — that the dominant scholarly model treating gospels as 'community-controlled preservation of oral tradition' should be replaced by individual authorial agency and deliberate literary borrowing — is a different conclusion about the same evidence. The chapter does not specifically critique the community-preservation model by name or advocate for individual authorial agency as the alternative."
+  },
+  {
+    "finding_id": "E7zsKsgEQmw_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics' and 'Demoniac of Gerasenes and the Legion resembles Odysseus and Polyphemus.' MacDonald's analysis presenting Jesus as a new Odysseus figure who masters nature through divine authority restates the same Mark-Homer mimesis evidence."
+  },
+  {
+    "finding_id": "EAH71gf4P3M_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae.' But Price's specific evidence about Acts being directly shaped by Euripides' Bacchae and 2 Maccabees, with parallels 'so close it demands influence borrowing,' introduces Acts-Bacchae/2 Maccabees as a new specific textual connection not present in the inventory (which only lists John-Bacchae, not Acts-Bacchae)."
+  },
+  {
+    "finding_id": "F0tBHqdI_3s_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis. McDonald's specific argument — that the Judas betrayal story was a literary creation by Mark through deliberate imitation of Melanthius from Homer's Odyssey — introduces a specific Judas-Melanthius parallel not present in the inventory. The inventory lists the Polyphemus/demoniac parallel but not Judas/Melanthius."
+  },
+  {
+    "finding_id": "F91V3D--rFM_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues Judaism and Hellenism were intertwined. Litwa's argument that ancient Judaism was embedded within Hellenistic culture and Jews and Christians shared cosmological and theological assumptions with other Mediterranean peoples restates this thesis."
+  },
+  {
+    "finding_id": "GH_N4DubZ58_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics.' McDonald's evidence of gospel writers adopting mimesis of the Odyssey and Aeneid to construct Jesus narratives is the same evidence category. The Aeneid is not separately listed but is a natural extension of the covered Homeric mimesis framework."
+  },
+  {
+    "finding_id": "GdYTaTzvypI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists Apollonius of Tyana parallels. But the specific extended biographical parallels claimed here — same birth date as Jesus, condemnation to crucifixion, escape, and Eastern legends of Jesus escaping to India — go beyond what the inventory covers. The inventory mentions 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius' but does not mention matching birth dates, crucifixion attempt, or the India escape tradition."
+  },
+  {
+    "finding_id": "GnI10G1zgAc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greco-Christian framework. Q&A rejects the 'mystery cult' label but accepts institutional data. Reilly's specific evidence — Mark's Gospel exhibiting mystery religion features (secret teachings for inner initiates, progressive revelation) — introduces specific textual features of Mark interpreted through mystery religion institutional patterns. The Q&A instructs to extract institutional data and reframe through imperial cult under foreign rule. This is new evidence for the existing argument, pending reframing."
+  },
+  {
+    "finding_id": "GvXDKhP4uck_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Greek literary conventions and educated writers. MacDonald's argument that gospels were 'intellectual engagements with the classical tradition' by 'male Elite intellectuals' targeting 'the larger cultural capital of that world the literary' restates the covered position."
+  },
+  {
+    "finding_id": "H7c25rSROBY_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Greek epic as dominant textual culture for educated eastern Mediterranean writers' and 'Literary imitation of Homer as standard curriculum.' MacDonald's argument that Homer was 'more ubiquitous in the culture than just in what people learned in school' and was in theaters and artwork extends but does not fundamentally add to the covered evidence of Greek cultural saturation."
+  },
+  {
+    "finding_id": "HTxCDqbc0Zw_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues Christianity developed in a mixed Mediterranean Hellenistic context. The finding's general statement that Christianity was 'not in isolation from the broader world' restates this thesis without new specific evidence."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Deliberate literary mimesis: Mark mapped to Homeric epics' and the Conclusion (lines 353-359) argues for a paradigm shift. MacDonald's statement that recognizing 'literary creativity and indebtedness not just to Judaism but also to the greco-roman world' is a 'major paradigm shift' restates the same argument."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments from same period.' MacDonald's accessibility criterion with 800+ fragments vs 5 is the same evidence."
+  },
+  {
+    "finding_id": "ICKWpqzo59E_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greco-Christian framework. Miller's 'translation fable model' — arguing the Gospels employ Greco-Roman narrative patterns of apotheosis — introduces a specific scholarly framework (translation fable) not named in the inventory. The concept of apotheosis patterns is mentioned in the mythical figure section (dying-and-rising gods) but the specific 'translation fable' model as a scholarly tool is new."
+  },
+  {
+    "finding_id": "JOsGRR-vqUw_4",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age.' The finding that Greek-speaking authors would have been trained in Homer, Odyssey, and Euripides as foundational to literacy restates this covered evidence."
+  },
+  {
+    "finding_id": "JViiL5kxpdI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion argues for understanding Christianity within its pagan cultural background. The transcript's advocacy for the same position restates the thesis without new specific evidence."
+  },
+  {
+    "finding_id": "JaRwmkCsXek_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius of Tyana' and discusses deification patterns. Litwa's argument that gospel writers adapted common Greco-Roman 'literary techniques of deification' seen in biographies of Apollonius, Alexander, and Caesar Augustus restates evidence already present."
+  },
+  {
+    "finding_id": "JaRwmkCsXek_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 130-135) explicitly discusses Greco-Roman biographical genre. Litwa's statement that the gospels' framework is 'Greco Roman biography and history' with 'a sea full of gods and divine men' restates this covered position."
+  },
+  {
+    "finding_id": "Jkr56WZUTkk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues existing scholarly models fail to account for Greek context. MacDonald's identification of a 'blindspot' in biblical scholarship — the systematic absence of Homeric epics from NT methodology — restates this argument. The specific Polyphemus/Gadarene, Hector/Jesus death parallels are already in the inventory (lines 97-114)."
+  },
+  {
+    "finding_id": "KJqcC6ze_9k_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mythic parallels and divine hero patterns. The Greek Alexander Romance — with its narrative of divine begetting in the desert, miraculous deeds, and death at age 32 — is a specific text not named in the inventory. While the general category of Hellenistic divine hero parallels is covered, the Alexander Romance as a specific source is new evidence."
+  },
+  {
+    "finding_id": "KjBx7KgsJxg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 88-96) discusses Rank-Raglan heroic pattern for Moses (20/22). But the documentary's specific evidence — Moses's biography following Greek heroic patterns at a statistical rate matching legendary Greek figures rather than historical figures — introduces the statistical argument as a comparison point for Greek heroic conventions. The inventory mentions the Rank-Raglan score but emphasizes Moses-as-'modern Moses', while this finding emphasizes Moses following Greek heroic patterns specifically, showing the influence goes deeper than just Jesus."
+  },
+  {
+    "finding_id": "LKgQirgjTqg_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and Greek intertextuality. MacDonald's documentation of explicit intertextuality between early Christian literature and Greek sources (Luke imitating Homer, Christian Apocrypha) restates the covered framework."
+  },
+  {
+    "finding_id": "LL6dSns4pqU_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 88-96) explicitly discusses the Rank-Raglan heroic pattern: 'Moses scores 20/22 on Rank-Raglan heroic pattern scale (Oedipus 22, Theseus 20).' Carrier's argument that Jesus fits the Rank-Raglan hero archetype across Greco-Roman myths (Osiris, Heracles, Dionysus, Jason, Oedipus) is the same evidence framework."
+  },
+  {
+    "finding_id": "LL6dSns4pqU_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly contains '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments.' MacDonald's papyri evidence (5 Septuagint vs 600 Homeric) is the same data point."
+  },
+  {
+    "finding_id": "LL6dSns4pqU_4",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Deliberate literary mimesis: Mark mapped to Homeric epics' and 'Literary imitation of Homer as standard curriculum of the age.' MacDonald's statement that gospels are 'narratives of mimesis and cultural transformation' rather than 'narratives of memory' restates the covered framework."
+  },
+  {
+    "finding_id": "LL6dSns4pqU_5",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age.' Carrier's point that mimesis was formally taught in Greco-Roman schools restates this covered evidence."
+  },
+  {
+    "finding_id": "LLvIgkRs5IM_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues scholarship is oriented exclusively toward Jewish frameworks. McDonald's critique that NT scholarship is focused on Jewish Bible parallels rather than Greek-Roman comparative methodology, with 'education that people have when they're going into say ministry' being 'ill-equipped to talk about nemesis or greek poetry,' restates this argument."
+  },
+  {
+    "finding_id": "LQXrSdq7nRM_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics.' MacDonald's argument that Mark intentionally modeled Jesus narratives on Homeric epics (Odysseus as positive model) restates this covered evidence."
+  },
+  {
+    "finding_id": "LQXrSdq7nRM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure discusses mimesis. MacDonald's concept of 'competitive mythologizing' — gospel authors imitating but also challenging Greek mythologies to establish new social identities — introduces a specific scholarly framework (competitive mythologizing as social identity construction) not present in the inventory. The inventory lists mimesis as a literary technique but does not describe it as competitive community identity formation."
+  },
+  {
+    "finding_id": "MHYoMEHw7Lg_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Greek literary influence including Homer. Walsh's argument that understanding the gospels requires recognizing sustained Greek and Roman literary influences from Homer and Virgil restates the covered position."
+  },
+  {
+    "finding_id": "MXvTVbQHhBI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses educated Greek writers and literary mimesis. Walsh's research that synoptic gospels were written by 'educated Greco-Roman elites' who were 'elite cultural producers working within a dynamic cadre of literate specialists' restates this covered position."
+  },
+  {
+    "finding_id": "MXvTVbQHhBI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Homer and Greek literary influence. McDonald's evidence that gospel writers were familiar with Ovid and Livy (not just Homer) adds specific additional Greco-Roman literary sources not named in the inventory."
+  },
+  {
+    "finding_id": "PL5ycfD6Izc_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses educated Greek writers composing mimesis. MacDonald's emphasis that gospel authors were 'educated elites deliberately engaging greco-roman culture to compete with it' and 'engaging their culture with the counter mythology' restates the covered position."
+  },
+  {
+    "finding_id": "PL5ycfD6Izc_4",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for recovering the Greek institutional framework that shaped early Christianity. The methodological point that gospels engage both Jewish and Greek traditions simultaneously is already embedded in the chapter's conclusion that the framework must be Greek institutional, not exclusively Jewish."
+  },
+  {
+    "finding_id": "Pgk8xfvwrg0_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius of Tyana (Philostratus, Life of Apollonius)' with specifics including miraculous birth, healing, and ascension. The comparison to Apollonius restates this covered evidence."
+  },
+  {
+    "finding_id": "Pryre00e-w8_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Passion and death recall dying-and-rising gods: Osiris, Attis, Dionysus' and widespread parallels. The finding that resurrection and divine elevation narratives were widespread throughout Hellenistic-Roman religious thought restates this covered position."
+  },
+  {
+    "finding_id": "QJ4qY_0YXPw_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics.' The finding's analysis that Mark is deliberately structured to parallel Homeric epics (Odyssey, Iliad) restates this covered evidence."
+  },
+  {
+    "finding_id": "SZn-ns58cfA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis. McDonald's specific evidence about Luke-Acts imitating Virgil's Aeneid — with the same departure port (Troas/Trowaz) — is a specific textual parallel (Luke-Virgil-Troas) not present in the inventory. The inventory mentions Mark-Homer and John-Bacchae mimesis but not Luke-Virgil-Troas."
+  },
+  {
+    "finding_id": "SZn-ns58cfA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Luke-Acts using the Greek philosophical term theomachoi ('god-fighters') drawn from classical Greek literary tradition is a specific Greek terminology datum not present in the inventory."
+  },
+  {
+    "finding_id": "Td4FnBTx9Bg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure discusses Mark-Homer mimesis. Byzantine Homeric Centos (5th-9th century poems retelling Mark's gospel using Homeric lines) are specific historical artifacts validating that Greek literary parallels in the gospels were recognized and recoverable in antiquity. This specific evidence (Byzantine Homeric Centos) is not present in the inventory."
+  },
+  {
+    "finding_id": "Td4FnBTx9Bg_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age' and discusses mimesis as part of Greek literary convention. The finding that Mark's imitation of Homer is consistent with broader Greek literary convention in tragedy, novels, and Jewish novels restates this covered framework."
+  },
+  {
+    "finding_id": "UjFKmRV7crE_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues NT studies doesn't look at Greek connections. Derek's emphasis that 'New Testament studies isn't looking at the Greek connections' restates this exact argument."
+  },
+  {
+    "finding_id": "VNLR_d2PAlY_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for understanding gospels within Greco-Roman literary context. Walsh's argument for the same restates this covered position."
+  },
+  {
+    "finding_id": "YA43Ssteqi8_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Jewish/Hellenistic distinction is artificial. Fredrickson's critique of the 'bell jar' isolation of Jews and her point that 'Greek has become the English of antiquity' after Alexander restates this thesis. The argument and evidence (Jews were deeply hellenized after Alexander) are already present."
+  },
+  {
+    "finding_id": "ZLJfk3_JR8Y_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion argues for contextualizing biblical texts within broader cultural traditions. The speaker's argument for the same approach restates this covered position without new specific evidence."
+  },
+  {
+    "finding_id": "ZRSlptJbAqM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues existing scholarship fails to account for Greek context. Crane's identification of the specific institutional cause — 'complete separation of the New Testament World from the classical Greek and Latin world' as separate academic departments — is a specific institutional-structural explanation for WHY the blind spot exists, not present in the inventory. The book describes the result (blind spot) but not this academic-institutional cause."
+  },
+  {
+    "finding_id": "ZRSlptJbAqM_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age.' Crane's point that educated Greek speakers would have memorized large chunks of Homeric poetry restates this covered evidence."
+  },
+  {
+    "finding_id": "ZRSlptJbAqM_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses deliberate literary mimesis. McDonald's argument that Gospel writers were 'crafting alternative narratives' using Greek literary forms to construct social identity rather than writing history restates the covered mimesis framework."
+  },
+  {
+    "finding_id": "ZXfjL0xrEiY_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Apocalyptic prophet (lines 34-46) notes the apocalyptic model cannot explain why Jesus' message failed among Jews but succeeded among Greeks. However, Valliant's specific argument — that Christianity represents a 'sweeping sudden comprehensive change' from Judaism (not slow evolution), with Paul and Jesus radically questioning Mosaic law observance — is a specific mechanism not present in the inventory. The inventory notes the failure among Jews but doesn't describe Christianity as a radical theological break from Judaism in these terms."
+  },
+  {
+    "finding_id": "_Ea2ePt9H-0_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis of Homer in Mark. Derek's discussion of McDonald's argument about Homeric literary imitation in the gospels (more accepted for Acts, more contested for gospels) restates this covered framework."
+  },
+  {
+    "finding_id": "_Ea2ePt9H-0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greek influence on Jewish thought. Derek's specific evidence — Josephus and Philo reinterpreting Jewish figures (Moses, Elijah) in Greco-Roman literary frameworks — introduces specific examples (Josephus and Philo rewriting Moses and Elijah's endings) not present in the chapter 1 inventory. Philo is mentioned in cross-chapter inventories but not in chapter 1's evidence list."
+  },
+  {
+    "finding_id": "a_MF3pvcvYI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Apocalyptic prophet (lines 34-46) notes that the apocalyptic model cannot explain why Jesus' message failed among Jews but succeeded among Greeks. Valliant's specific evidence — the New Testament inverting Jewish rebel theology (nationalist, Torah-observant, military messiah) by presenting pro-Roman, anti-nationalist ideology with Jesus saying 'one can be both a loyal Jew and do everything that Caesar requires' — is a specific textual argument not present in the inventory."
+  },
+  {
+    "finding_id": "bvX2SR3oD78_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 discusses apocalyptic themes. The specific evidence — John Jay Collins (apocalyptic expert) explaining that armies coming in clouds was a common motif in the Greco-Roman world, not unique to Jewish apocalyptic — is a specific scholarly datum challenging the exclusively Jewish character of apocalyptic motifs, not present in the inventory."
+  },
+  {
+    "finding_id": "cMKNw1zNvFo_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae' and discusses trained Greek writers. The finding's extensive scholarly evidence about Greek rhetoric training and Homer/Virgil/Euripides influence restates this covered evidence."
+  },
+  {
+    "finding_id": "cQtVmOhXCAc_0",
+    "verdict": "covered",
+    "justification": "Q&A history (Global Q&A) explicitly addresses this: 'We reject the mystery cult framing. Christianity was not a mystery cult — it was a continuation of the old imperial cult operating under foreign rule.' The mystery cult origin claim is directly addressed and decided in the Q&A. The institutional data is accepted; the mystery cult conclusion is rejected."
+  },
+  {
+    "finding_id": "czT9WU6fw5k_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Apocalyptic prophet (lines 34-46) explicitly states: 'Within a generation, majority of Jews rejected Jesus' message; movement held only marginal foothold in Judea' and 'Message proved astonishingly persuasive among Greeks, spreading across cities and cultures.' The interviewer's emphasis that Christianity flourished among Gentiles rather than in Palestinian Judaism restates this covered evidence."
+  },
+  {
+    "finding_id": "dO0AC1QyLVE_4",
+    "verdict": "wrong_chapter",
+    "justification": "Philo's Platonic framework transforming Judaism into 'Platonized Judaism' with logos and three-part divinity is core material for Chapter 2 (which has extensive coverage of Philo and Greek philosophical influence on Judaism in its cross-chapter inventory) or Chapter 3 (divine sonship theology). Chapter 1 surveys scholarly models of Jesus, not the theological architecture of Philo's synthesis."
+  },
+  {
+    "finding_id": "dzK8v8zM4Ns_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments.' MacDonald's papyri evidence (800 Homer fragments vs. 5 Septuagint from the same period) is the same data."
+  },
+  {
+    "finding_id": "dzK8v8zM4Ns_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 discusses mimesis. MacDonald's articulation of a formal methodological framework for mimesis criticism — with specific criteria of accessibility, analogy, density, order, distinctive traits, and interpretability — introduces a systematic scholarly methodology not described in the inventory. The inventory mentions mimesis as a phenomenon but does not describe the methodological criteria for identifying it."
+  },
+  {
+    "finding_id": "e4nM4PJkGZo_10",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) critiques the Jewish apocalyptic prophet and wisdom teacher models as inadequate. The documentary's critique of these same models as missing the 'pervasive Greco-Roman institutional context' restates this covered argument."
+  },
+  {
+    "finding_id": "eJSLbT7o3vI_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Gmirkin's argument that constitutions and institutional frameworks were a uniquely Greek invention (because Greeks 'ruled themselves' unlike ancient Near Eastern 'dictatorships') is a specific political-institutional argument not present in any chapter inventory. The argument (Greek-origin of constitutional governance as framework for understanding Christianity's institutional vocabulary) and the evidence (contrast between Greek self-governance and ANE kingship models) are both new to the book."
+  },
+  {
+    "finding_id": "eoGU1hA7sXM_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses educated Greek writers and mimesis. Walsh's argument that gospels were products of Greco-Roman elite literary culture with competing authors, confirmed by Ehrman as 'christian literary elite,' restates this covered position."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_8",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues Judaism and Hellenism cannot be separated. The finding that Judaism in the Second Temple period was fully embedded within Greco-Roman culture and the 'buffer' apologetic misrepresents syncretic reality restates this thesis."
+  },
+  {
+    "finding_id": "gDipkJYn2T8_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses educated Greek writers. Dr. Henry's emphasis that the Gospels were products of 'the point zero one percent of greco-roman elite' restates the covered position that gospel authors were highly educated elites within Hellenistic culture."
+  },
+  {
+    "finding_id": "gwXPrOlLqrI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) names 'Herder and the Tubingen school as origin of rural Jewish core assumption.' McDonald's identification of the Judeo-Christian interpretive framework inherited from Christendom as a scholarly 'blindness' preventing recognition of Greek influences restates this argument."
+  },
+  {
+    "finding_id": "hhPbj0VUjLU_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion argues for a classicist/Greek institutional framework. Miller's argument that Biblical scholarship fails because it doesn't employ this framework restates the covered position."
+  },
+  {
+    "finding_id": "i-9CFW7NsVw_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Deliberate literary mimesis: Mark mapped to Homeric epics.' McDonald's demonstration that Mark imitates Homer and Greek tragedy as primary models restates this covered evidence."
+  },
+  {
+    "finding_id": "i-9CFW7NsVw_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments.' MacDonald's citation of 600+ Homer fragments vs. 5 Septuagint is the same data point."
+  },
+  {
+    "finding_id": "iBviA2arTdw_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Greek literary parallels and mimesis alongside Old Testament scriptural borrowing. The affirmation that gospels are 'intertextual playgrounds' with both Jewish and Greco-Roman texts restates the covered position."
+  },
+  {
+    "finding_id": "jjW9BhlDAPk_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) states 'Literary imitation of Homer as standard curriculum of the age' and 'Greek epic as dominant textual culture for educated eastern Mediterranean writers.' MacDonald's emphasis that gospel authors were 'cultural elites' with formal Homer exposure through Greek education restates this covered evidence."
+  },
+  {
+    "finding_id": "k2FrLIlQCDo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues the Judeo-Christian lens is inadequate. Carl Ap Rock's explicit claim that 'Christianity is not a jewish religion it's a hellenistic religion' that has 'merely incorporated the exotic ethnicity' introduces a specific strong formulation from a Harvard philologist not present in the inventory. The argument is the same but the evidence (a philologist's categorical reframing) adds a named scholarly position."
+  },
+  {
+    "finding_id": "l1UNoXlRrQk_0",
+    "verdict": "wrong_chapter",
+    "justification": "Price's demonstration of Neo-Platonism, middle Platonism, Logos concept from Heraclitus, and Philo's proto-Trinitarian theology belongs in Chapter 2 (which extensively covers Philo and Greek philosophical frameworks in its cross-chapter inventory) or Chapter 3 (divine sonship and theological frameworks). Chapter 1 surveys scholarly models of Jesus, not the development of Trinitarian theology through Greek philosophy."
+  },
+  {
+    "finding_id": "m2fTHvhHrm0_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and Greek literary conventions. MacDonald's methodology of analyzing Gospel narratives as deliberate imitations of Greek literary classics, with Luke 'rewriting classical greek poetry to establish the identity of the christian movement,' restates this covered framework."
+  },
+  {
+    "finding_id": "o0n2YOad_R4_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: Mark mapped to Homeric epics.' MacDonald's discussion of Mark being structured according to Homer's Iliad (Jesus as unjustly killed hero before the fall of Jerusalem, like Hector before the fall of Troy) restates this covered evidence."
+  },
+  {
+    "finding_id": "oom72LtMC5s_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for understanding Christianity through Greco-Roman context. Galen's specific characterization of early Christians as accepting narratives 'without any evidence' is a specific ancient-source datum (Galen the physician's critique) not present in the inventory. This is new evidence (Galen's testimony) for the existing argument (Christianity operated within Greco-Roman frameworks)."
+  },
+  {
+    "finding_id": "opGVsetLejY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses Mark-Homer mimesis and mentions the Polyphemus parallel. McDonald's specific evidence — that the disciples were created as boat crew members to match Homeric narrative (Odyssey Book 2, Athena getting Telemachus a ship and crew), and that 'the gospel of Mark is the first person ever to have called the body of water in Galilee the Sea of Galilee' because he needed a sea for his Homeric narrative — introduces a specific compositional argument (Mark invented 'Sea of Galilee' for narrative purposes) not present in the inventory."
+  },
+  {
+    "finding_id": "ouHTk8YjQ5k_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics, John to Euripides' Bacchae.' MacDonald's detailed analysis of John engaging Euripides' Bacchae and Dionysian religious frameworks restates the covered John-Bacchae connection."
+  },
+  {
+    "finding_id": "pMf40mX9w_k_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments.' McDonald's papyrus evidence (600 Homer fragments vs. 5 Septuagint from 200 BCE-200 CE) is the same data."
+  },
+  {
+    "finding_id": "sdWDdUxVI_c_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly states '800+ manuscript fragments of Homeric epics survive from 2000 BCE to 200 AD vs. only 5 Septuagint fragments.' MacDonald's statistical evidence (600+ Homer papyri vs. 5 Septuagint fragments) is the same data point."
+  },
+  {
+    "finding_id": "sdWDdUxVI_c_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure discusses mimesis generally. MacDonald's specific demonstration that Luke's resurrection account employs direct literary imitation of Homer's Odyssey — with parallel motifs of return, initial non-recognition, and recognition through symbolic meals — introduces a specific Luke-Emmaus-Odyssey parallel not itemized in the inventory. The inventory mentions Mark-Homer and John-Bacchae but not Luke's resurrection-Odyssey parallel."
+  },
+  {
+    "finding_id": "tf7BFokUx1M_3",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 130-135) discusses Greco-Roman biographical genre. Hanson's argument that Gospels are Greco-Roman biographies (bioe) with characteristic conventions similar to lives of Caesars and Hellenistic figures restates this covered position."
+  },
+  {
+    "finding_id": "tozott4Q5ok_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues scholars start from a 'Jewish-only paradigm.' MacDonald and Carrier's argument that mainstream scholars reject mimesis evidence because they operate within a 'Jewish-only paradigm' with a 'horrible conception of the hellenism' restates this exact argument."
+  },
+  {
+    "finding_id": "uPJZSm9UlCU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Apocalyptic prophet section discusses apocalyptic frameworks. MacDonald's specific evidence — that apocalypticism had Greco-Roman forms (judgment after death, virtues-based assessment, reincarnation) not unique to Jewish thought — introduces the specific datum of Greco-Roman apocalypticism not present in the inventory. The inventory discusses Jewish apocalyptic but does not mention Greco-Roman apocalyptic parallels."
+  },
+  {
+    "finding_id": "uxhf4VPMnIk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dying-and-rising gods and Greek literary parallels. Price's reference to Harnack's early scholarly view that early Christian Christology was made from 'mystery religions gnosticism and the hero cults' and that passion narratives resemble Hellenistic novels and hero stories introduces a specific named scholarly source (Harnack) and the 'hero cults' category not present in the inventory."
+  },
+  {
+    "finding_id": "v3Ato7_jp_4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Conclusion argues for Greek intellectual context. Plutarch's specific articulation (early 2nd century, contemporary with gospel composition) of Greek philosophical monotheism — one supreme God with demonic powers mediating below — as the prevailing worldview into which Christianity emerged is a specific primary source datum not cited in the chapter 1 inventory. The chapter discusses Plutarch for biographical conventions but not for his theological framework."
+  },
+  {
+    "finding_id": "vtKnJ6ti7HA_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses dying-and-rising gods and Greek parallels. But the specific evidence — that Gospel passion narratives (empty tomb, crucifixion with miraculous survival) appear in Greek novels (Chariton and Xenophon) circulating decades before Gospel composition — introduces specific named Greek novels as pre-existing literary sources for passion motifs, not present in the inventory."
+  },
+  {
+    "finding_id": "vyrdWeLayVQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Trial and death of nobly suffering teacher echoes trial of Socrates (Plato, Apology).' But McDonald's specific demonstration — Luke's passion narrative deliberately modeled on Socrates with Pilate declaring innocence, friends surrounding at death, and promising 'today you will be with me in paradise' (matching Socrates' words to friends) — introduces specific textual parallels in Luke's passion not itemized in the inventory. The inventory mentions the Socrates parallel in general but not Luke's specific literary modeling."
+  },
+  {
+    "finding_id": "wlHBm_CqvYo_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 356-359) argues the Hellenistic urban context is essential. Miller's emphasis that early Christian texts were written in Hellenistic urban centers and marketed to the Greek/Roman world rather than Judaism restates this covered argument with similar evidence."
+  },
+  {
+    "finding_id": "wwCGbGdMPCc_0",
+    "verdict": "wrong_chapter",
+    "justification": "The argument that John's Gospel was written for Greek audiences using Greek cosmological concepts (the Logos), with John 1:12-13 rejecting genealogical claims that would resonate with Jewish readers, belongs in Chapter 4 (Gospels as Historically Reliable Sources) which discusses Gospel authorship and audience, or Chapter 3 (divine sonship and Logos theology). The chapter 4 cross-inventory already discusses Johannine material extensively."
+  },
+  {
+    "finding_id": "xO-TZvSQ538_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: Mark mapped to Homeric epics' and mentions Polyphemus/demoniac parallel. McDonald's analysis of Mark's systematic imitation of Homer's Odyssey including Odysseus's entry to Ithaca and Athena's acquisition of crew for Telemachus restates covered evidence."
+  },
+  {
+    "finding_id": "xyHUK6MhDRk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) explicitly lists 'Deliberate literary mimesis: ... John to Euripides' Bacchae.' MacDonald's analysis of John's engagement with Hellenistic Dionysian religion restates this covered connection."
+  },
+  {
+    "finding_id": "ygptaGhw9aI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Sage and teacher (lines 203-221) explicitly discusses 'Comparative work: itinerancy, counter-status meals, pointed critique have Mediterranean analogues (Cynic parallels).' Price's detailed argument that Gospel sayings have close Cynic parallels and 'no parallel in any kind of known Judaism to the radicalism of the sayings' elaborates on the covered Cynic model."
+  },
+  {
+    "finding_id": "zBHdHRTfO6Q_1",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Deliberate literary mimesis: ... John to Euripides' Bacchae' and 'Wine miracle at Cana and Eucharist recall Dionysian cult.' McDonald's work on 'Dionysus and the Fourth Gospel' addresses this already-covered connection."
+  },
+  {
+    "finding_id": "zPSa--erCWI_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses educated Greek writers and literary conventions. The framing of gospel authors as 'normal greco-roman authors' who are 'highly educated' and working within established literary conventions restates the covered position."
+  },
+  {
+    "finding_id": "zPSa--erCWI_3",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 1 Mythical figure (lines 116-119) contains the evidence that Paul's letters describe a cosmic Christ, not a biographical Jesus. However, the specific argument — that gospel narratives were 'substantially constructed from Paul's letters' rather than independent oral traditions, with Paul's written accounts serving as the primary textual source for later gospel writers — is a distinct argument about the direction of literary dependence (gospels built on Paul) that the chapter does not make. The evidence (Paul's letters are earliest, describe cosmic Christ) exists; the argument (gospels reverse-engineered from Paul) is new."
+  },
+  {
+    "finding_id": "zrhvBWMayhk_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses 'Deliberate literary mimesis: Mark mapped to Homeric epics.' McDonald's argument that Mark deliberately incorporates Homeric literary tropes including the naked young man passage traced to the Elpenor story from the Odyssey adds a specific parallel, but the framework of Mark-Homer mimesis with multiple parallels is already covered."
+  },
+  {
+    "finding_id": "43WMeEL78ck_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis and literary imitation. Paulogia's description of Jews using syncreasis (comparative narrative reframing with Homer) to assert superiority of their tradition and extending this to Christianity restates the covered mimesis framework."
+  },
+  {
+    "finding_id": "S5fwT8FtmTE_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) lists 'Passion and death recall dying-and-rising gods' and 'Hundreds of parallels between Jesus' healings/exorcisms/life story and Apollonius of Tyana.' Tabor's documentation that persecution, death, and heavenly exaltation/resurrection was a widespread Hellenistic pattern restates this covered evidence."
+  },
+  {
+    "finding_id": "aJ88sXZf9ao_0",
+    "verdict": "covered",
+    "justification": "Chapter 1 Mythical figure (lines 97-114) discusses mimesis. McDonald's evidence about gospel writers engaging in strategic syncreasis with Greek literary tradition (imitating Homer to establish Jesus as superior to Greek heroes) restates the covered mimesis framework."
+  },
+  {
+    "finding_id": "jHu8meAM_-g_1",
+    "verdict": "wrong_chapter",
+    "justification": "Early Christian eucharistic meals following Greco-Roman association and banquet organizational structures belongs in Chapter 5 (Pauline Epistles) which discusses early Christian institutional structures, or Chapter 6 (institutional continuity). The chapter 5 cross-inventory has 'ecclesia = existing civic assemblies' as a core argument. Chapter 1 surveys scholarly models of Jesus, not institutional practices."
+  },
+  {
+    "finding_id": "AUL0lXA_G8A_0",
+    "verdict": "not_relevant",
+    "justification": "Tabor's point about early Christian theology's shift toward Hellenistic frameworks ('this will move into this — resurrection of the dead') is too vague and generic to bear on any specific argument in any chapter. The quote and description do not introduce a specific datum — they restate a general theological observation without evidence that could be evaluated or incorporated."
+  },
+  {
+    "finding_id": "CilDiHv4gzk_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues for understanding Christianity as shaped by Greek institutional context. Walsh's argument for understanding early Christianity as an 'ancient Mediterranean religion' requiring historical-cultural analysis restates this covered position."
+  },
+  {
+    "finding_id": "DVbPmXQupDA_2",
+    "verdict": "covered",
+    "justification": "Chapter 1 Conclusion (lines 353-359) argues the Jewish/Hellenistic distinction is artificial. Tabor's explicit rejection of the 'Athens or Jerusalem' dichotomy as a 'false dichotomy' with the two having 'largely merged together' restates this thesis. The additional quote that 'it is no longer relevant to ask how henized this or that form of Judaism might have been' is a scholarly restatement of the same covered argument."
+  }
+]

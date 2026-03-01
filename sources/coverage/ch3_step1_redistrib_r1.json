@@ -1,0 +1,107 @@
+[
+  {
+    "finding_id": "ngOxRGUO1Dg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 already makes the argument that Christianity requires a Greco-Christian framework rather than purely Jewish-apocalyptic model (opening section, lines 1-16; the entire chapter builds this thesis). However, the specific evidence about John of Patmos being trained in Hellenistic-Mesopotamian astrological traditions, and Daniel as supervisor of Babylonian astrologers passing wisdom to Jewish scholars, is not present in chapter 3. The argument is existing; the Mesopotamian-astrological training evidence is new."
+  },
+  {
+    "finding_id": "w7KScjwdwoQ_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not address the claim that Jesus's power to forgive sins proves divinity, nor the counter-argument that Greco-Roman Jewish ideas about the communicability of God's power and authority undermine this traditional proof. The chapter discusses collective sin and repentance (metanoia) in the kingdom restoration context but never addresses the 'only God can forgive sins' apologetic or its Greco-Roman Jewish rebuttal. Both argument and evidence are absent."
+  },
+  {
+    "finding_id": "dO0AC1QyLVE_0",
+    "verdict": "covered",
+    "justification": "Chapter 3 extensively covers titles used for Jesus being standard Hellenistic imperial titles. The inventory entry 'The titles given to Jesus (Son of God, King of Kings, Lord of Lords, Savior, etc.) were pre-existing political terms of Greek and Roman kingship' (lines 22-57) lists precisely these titles with evidence from coins: 'Augustus as divi filius on coins and civic festivals', 'Cities hailed emperors as soter', 'Ptolemies styled as saviors and manifest gods.' The argument that these titles appeared on Roman coins for emperors is directly addressed."
+  },
+  {
+    "finding_id": "sky6u0ntu24_0",
+    "verdict": "wrong_chapter",
+    "justification": "The Theos Hypsistos cult as pre-Christian infrastructure for Christian conversion belongs in chapter 6, which already covers Theos Hypsistos dedications across Asia Minor, the Levant, and Cyprus (ch6_inventory: 'Epigraphic evidence of Theos Hypsistos dedications...demonstrates convergence between philosophical monotheism and Jewish biblical language'). Chapter 3 does not discuss the Theos Hypsistos cult or god-fearers as conversion pathway. Target chapter: 6."
+  },
+  {
+    "finding_id": "C80zV5KbY2M_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 mentions the Transfiguration only once (line 137) as evidence for the immortal soul: 'The Transfiguration shows Moses and Elijah alive, conscious, and recognizable in a non-bodily state centuries after their deaths.' The finding makes a completely different argument: that the Transfiguration scene mirrors Odysseus's transfiguration by Athena in the Odyssey as Hellenistic royal protocol. This Homeric-parallel argument is absent from chapter 3, and the specific Odyssean evidence (disguised royal figure revealed in glory, disciples witnessing, secrecy commands) is also absent. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_6",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 contains no discussion of Orpheus, descent-to-Hades narratives, or Christian 'one-upmanship' over Greek mythological figures. No chapter in the book makes this specific argument about Orpheus failing versus Jesus succeeding in rescuing souls from Hades. The Orpheus-Jesus comparison and the 'one-upmanship' polemic framework are both entirely absent."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_7",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about empty tomb narratives paralleling Greco-Roman deities (Alcmena, Romulus) is better suited to chapter 2, which extensively discusses empty tomb traditions (ch2 lines 995, 1231, 1260-1322). Chapter 2 already mentions Romulus's apotheosis (line 1286: 'Romulus rises into the heavens as a god') and discusses empty tomb parallels. Chapter 3 has no empty tomb discussion. The Alcmena evidence specifically would be new evidence for chapter 2's existing empty tomb argument. Target chapter: 2."
+  },
+  {
+    "finding_id": "5b9KDuPZiP0_1",
+    "verdict": "covered",
+    "justification": "Chapter 3 already makes this argument in the John the Baptist section (lines 345-421). The inventory entry 'John the Baptist was a priestly co-heir whose authority was genealogically anchored, and his denunciation of Herod Antipas's marriage was dynastic politics, not moral rebuke' uses the same evidence: 'Josephus (Ant. 18.116-119): Antipas executed John to prevent rebellion, not for moral reasons.' Line 387 of the chapter text reads: 'Josephus describes John as a man of immense influence whose ability to persuade the crowds made Herod Antipas fear that John could lead them to do anything he wished, and the phrase is clearly meant to signal rebellion.' Both the argument (John as political threat) and the evidence (Josephus Ant. 18.116-119) are already present."
+  },
+  {
+    "finding_id": "mVtJHClo9xg_0",
+    "verdict": "covered",
+    "justification": "Chapter 3 already makes this argument in the section 'Anthropology: Jesus's doctrine of the soul' (lines 127-144). The inventory entry states: 'Jesus consistently teaches the Greek (Platonic) model of the immortal soul, not the Hebrew nefesh that perishes with the body.' The evidence includes: 'Hebrew nefesh: breath perishing with body, descending to Sheol' and 'Greek psyche: immortal essence surviving body.' The chapter text (lines 130-131) explicitly states: 'Hebrew Scripture treats the nefesh as the living breath that perishes with the body... Greek thought treats the psyche as an immortal essence that survives the body.' The finding's argument about Greek body-soul dualism being incorporated into Jewish theology during the Hellenistic period matches chapter 3's existing argument and evidence."
+  },
+  {
+    "finding_id": "7cB4iUIDqH8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 already makes the argument that 'Son of God' and divine titles derive from Hellenistic frameworks (extensively in the titles section, lines 465-474 and 486-504). Chapter 3 also already cites Philo's Logos as 'firstborn son of God' (line 500, De Confusione Linguarum 146). However, the specific evidence that Paul's theological understanding of Jesus mirrors Philo's pre-Christian theology of the archangel as a whole system (not just the Logos title, but the paraclete, image of God, and other terms) — and that this demonstrates direct continuity rather than innovation — is a new evidential framing. The argument exists; the Paul-mirrors-Philo-on-archangel evidence is new."
+  },
+  {
+    "finding_id": "qSgVRjZ_KbU_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not discuss apotheosis protocols, Proteus Peregrinus, or the standardized Greco-Roman pattern of empty tomb + eyewitness ascension + installation into divinity as a political legitimation protocol. Chapter 2 discusses apotheosis (lines 1260-1287) in the context of empty tomb arguments, but the specific Miller argument about resurrection as political-theological legitimacy claim within a standardized Hellenistic protocol, and the Proteus Peregrinus example, are absent from both chapters. For chapter 3, which focuses on 'Son of God' titles and political theology, both the argument (resurrection as political legitimation protocol) and the evidence (Proteus Peregrinus, Miller's protocol analysis) are new."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_4",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about 6th-century Syrian Christian authors (Jacob of Serugh, Romanos the Melodus) adapting Ishtar's lamentations over Tammuz into Virgin Mary narratives does not belong in chapter 3, which focuses on Jesus's divine sonship, titles, and kingdom theology. Chapter 2 already mentions Tammuz/Adonis at the Bethlehem cave (line 142: Jerome's Epistle 58). The Ishtar-Mary mourning connection would be new evidence for chapter 2's discussion of Jesus's death and burial, or potentially chapter 4 which discusses Mary Magdalene and women at the cross. Target chapter: 2."
+  },
+  {
+    "finding_id": "4zdsjUOZs_I_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 already argues that Mary's perpetual virginity operates in the Greek royal register (lines 667-673): 'Arsinoe II and other queens could be styled as chaste, consecrated, or uniquely pure... Mary's perpetual virginity in early Christian tradition works in the same register.' The argument that Greek goddess theology influenced Christian Mary theology exists. However, the specific evidence about Artemis's perpetual virginity influencing Mary theology — and the significance of John's association with Ephesus as a major Artemis cult center — is absent from chapter 3. The argument is existing; the Artemis-specific evidence is new."
+  },
+  {
+    "finding_id": "E-OV9c_f-GA_0",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about Luke deliberately reshaping Mark's passion narrative to make Jesus's death Socratic and appealing to Greek audiences is about Gospel composition technique and literary adaptation. Chapter 1 already discusses the trial of Socrates parallel (line 106: 'Trial and death of nobly suffering teacher echoes trial of Socrates'). Chapter 4 discusses Gospel composition and reliability. Chapter 3 has no discussion of Luke editing Mark's passion narrative or Socratic death parallels. This belongs in chapter 4 (Gospel reliability and literary technique) or chapter 1 (mythical parallels). Target chapter: 4."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_7",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not discuss Osiris-Jesus parallels in the context of women caretakers surrounding the vulnerable body. The chapter does discuss Mary's role (lines 640-690) but entirely in terms of dynastic queenship and royal titles, not in terms of Isis-like caretaking activities (mourning, washing, wrapping, entombing). The argument that women's roles at Jesus's death parallel Isis's care of Osiris's body is absent, and the specific evidence (mourning, washing, wrapping, entombing parallels) is also absent."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_8",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about the Gospel of Thomas saying requiring women to become male, anchored in Egyptian funerary gender transformation practices, does not fit chapter 3's focus on Jesus's divine sonship, titles, and kingdom theology. Chapter 4 discusses the Gospel of Thomas and gendered literary patterns extensively, including the Beloved Disciple as a woman and gendered structures in John. The Egyptian funerary gender transformation context for the Thomas saying would be relevant to chapter 4's discussion of women's roles in early Christian texts. Target chapter: 4."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not mention Eshmon, Phoenician healing gods, or the geographic proximity of dying-and-rising deity cults to Nazareth. While chapter 3 extensively covers Hellenistic religious parallels in titles and theology, the specific argument about geographic proximity of Greco-Mediterranean dying-and-rising deity cults to Jesus's ministry area, and the specific evidence of Eshmon worship in cities near Nazareth from 7th century BCE to 5th century CE, are both absent from the chapter and the inventory."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not discuss the Hilaria festival, Attis/Adonis resurrection celebrations, or the March 25 date as predating Christian resurrection theology. While chapter 1 briefly mentions 'dying-and-rising gods such as Osiris, Attis, and Dionysus' (line 102), chapter 3 contains no discussion of these comparative resurrection festivals. Both the argument (resurrection theology as pre-existing Greco-Roman political-religious celebration) and the specific evidence (Hilaria festival, March 22-27, March 25 resurrection) are absent."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_5",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 3 already quotes 'Blessed are the peacemakers, for they shall be called sons of God' (Matt 5:9) at line 842 as an example of Jesus's sayings with political resonance (used as UN motto). The chapter also discusses Jesus's love ethic as shrewd political strategy (lines 871-904) and the Prince of Peace title as a royal epithet with Augustan parallels (lines 563-569). However, the specific argument that the Beatitude would be ANTITHETICAL to Jewish revolutionary values but consonant with ROMAN imperial ideology is not made. The evidence is present (the Beatitude, its political context); the argument framing it as anti-Jewish-revolutionary and pro-Roman-imperial ideology is new."
+  },
+  {
+    "finding_id": "HlLpAw-W1-0_3",
+    "verdict": "covered",
+    "justification": "Chapter 3 already covers the 'begotten today' baptism reading. The inventory entry 'Psalm 2:7 functions as a royal investiture formula applied to Jesus at three events (annunciation, baptism, resurrection), not as a statement about eternal essence' includes the evidence: 'Western text of Luke 3:22 (baptism): You are my Son. Today I have begotten you.' Chapter 4 expands this further with the Gospel of the Hebrews variant and multiple Church Fathers. The specific finding adds Church Father names (Justin, Clement, Origen, Augustine, etc.) who knew the alternative reading, but this list of names falls under the 'modern scholars' rule — the argument and the core evidence (alternative manuscript reading at baptism) are already present in chapter 3 line 51 and chapter 4 lines 1044-1099."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 does not discuss the Zakru festival, Nineveh tablets, the sacrifice of 70 unblemished lambs on the 14th of Nissan, or any connection between Mesopotamian spring equinox observances and the dating of Passover/crucifixion. While chapter 3 discusses the Lamb of God title (lines 513-534) in connection with Amun and Egyptian parallels, the specific Mesopotamian institutional precedent for the date (14th of Nissan) and ritual structure (unblemished lambs) is entirely absent. Both the argument (institutional precedent for dating/ritual of spring observances) and the evidence (Nineveh tablets, Zakru festival, 70 lambs on 14th of Nissan) are new."
+  }
+]

@@ -20,6 +20,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## 15 Female Authorship Tests (ChatGPT 2025-11-29, Turn 2)
 
+See `scripts/global_qa.md` — "Johannine female authorship" for the book-wide decision.
+
 **Query:** Deep-structure, intertextual, philological, and classical-literary arguments for female authorship
 
 ### I. FEMALE AUTHORSHIP FROM ANCIENT LITERARY COMPARISON
@@ -908,5 +910,35 @@ Many Johannine scholars argue BD is either:
 - **Source needed:** A critical translation of the Book of the Dead (e.g., Faulkner's or Allen's edition). Search for any spell where Osiris or the deceased identifies bread/cakes with flesh and beer/wine with blood.
 - **Where to look:** Faulkner, *The Ancient Egyptian Book of the Dead* (British Museum Press); Allen, *The Book of the Dead or Going Forth by Day* (SAOC 37). Also check Pyramid Texts and Coffin Texts for earlier forms of the motif.
 - **Status: PIPELINE** — cannot embed or reject until primary source is consulted.
+
+---
+
+## Addressed Contradictions from Coverage Pipeline (2026-03-02)
+
+Three classes of argument oppose the Johannine thesis. All addressed below.
+
+### Shared literary patterns prove John depends on the Synoptics (ZWHe7_VWhHI_0)
+
+**Claim:** The same Homeric imitations appear in John and the Synoptics, therefore John is dependent on them.
+
+**Rebuttal:** Shared mimesis patterns establish that multiple gospel authors engaged in Homeric imitation. They do not establish direction of dependence. The same evidence is equally consistent with Synoptic authors imitating John, or all drawing independently on Homer. Under the book's Johannine primacy thesis, shared mimesis patterns support John as the source others imitated. The argument is a non sequitur on direction.
+
+**Status:** The data (shared mimesis) is valid and compatible with the book's framework. The conclusion (John depends on Synoptics) does not follow from the evidence.
+
+### The Beloved Disciple is a fictional literary device (eVzECSMT3Js_3)
+
+**Claim:** The BD is a character inserted to confer false eyewitness authority the gospel doesn't deserve.
+
+**Rebuttal:** If the BD were a fictional device to fake eyewitness status, the fiction should show seams — the author would need to fabricate incidental, non-theological detail consistently across the entire narrative. John's BD has exactly those details: domestic interiors, specific times of day, geographic precision, emotional texture. The 15 female authorship tests all converge on genuine eyewitness. The fictional-device argument requires the author to be brilliant enough to fake all of that while failing at none of it — which is indistinguishable from the author actually being an eyewitness.
+
+**Status:** The eyewitness evidence is too granular and consistent to be explained by literary invention.
+
+### Alternative identifications of the Beloved Disciple (561NmUuqJ4g_2)
+
+**Claim:** The BD is someone other than Mary Magdalene — e.g., James (Jesus's brother), based on Jewish family succession customs and James's primacy in early church leadership.
+
+**Rebuttal:** The BD is consistently present at events other candidates are not recorded at (Last Supper, the cross, the empty tomb). The female authorship evidence (gendered focalization, domestic-interior voice, relational structure) eliminates male candidates. Family succession customs are real but do not override who the BD actually is in the narrative — the textual evidence about the BD's presence, perspective, and voice must match the candidate.
+
+**Status:** The female authorship evidence is specific to the BD's narrative presence. Alternative identifications must account for all 15 convergent tests, not just one line of reasoning.
 
 ---

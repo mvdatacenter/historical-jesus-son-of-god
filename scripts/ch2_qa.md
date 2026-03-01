@@ -46,6 +46,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## Jesus in Egypt / Philo of Alexandria Connection (ADDED to chapter)
 
+See `scripts/global_qa.md` — "Royal-exile framework" for the book-wide decision.
+
 ### Summary from ChatGPT discussion
 
 **Core thesis:** If Jesus was a Hasmonean-Herodian heir taken to Egypt (as Matthew preserves), the natural destination would be Alexandria's aristocratic networks, where Philo's family was the most powerful and best documented.
@@ -109,6 +111,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 ---
 
 ## Independent Egypt Accusations as Historical Signals (ADDED to chapter)
+
+See `scripts/global_qa.md` — "Hostile traditions as convergent evidence" for the book-wide decision.
 
 ### Summary from ChatGPT discussion
 

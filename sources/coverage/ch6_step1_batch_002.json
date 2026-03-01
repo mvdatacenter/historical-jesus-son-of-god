@@ -1,0 +1,172 @@
+[
+  {
+    "finding_id": "wixC10KQ8K4_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 6 mentions Philo of Alexandria presenting Moses as 'archetypal philosopher in Greek conceptual grammar' (Eastern Mediterranean Synthesis section) and references Stoic logos and Platonic One converging with God of Israel. However, the specific argument about Philo's reinterpretation of MELCHIZEDEK using the logos concept is absent from every chapter. Melchizedek does not appear anywhere in the chapter 6 text or the chapter inventories. The evidence base (Philo, logos, Hellenistic reinterpretation) overlaps with existing material, but the Melchizedek-specific argument is new."
+  },
+  {
+    "finding_id": "wixC10KQ8K4_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Epistle to the Hebrews' application of Melchizedek theology to Christ as eternal heavenly priest does not appear in any chapter inventory. Melchizedek is not mentioned in any chapter text. The Hebrews-specific argument (Christ as eternal priest in the Heavenly temple with a well-developed pre-existing Melchizedek tradition) is a distinct theological argument not made in the book, and the Hebrews evidence is not present either."
+  },
+  {
+    "finding_id": "wlHBm_CqvYo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 already lists Justin Martyr as a Church Father who wrote in Greek (lines 13-19 inventory item). Chapter 3 inventory [5] states 'Early Christian apologists explicitly argued that Jesus's divine sonship used the same categories as Greek divine sonship.' However, the specific evidence here — Miller's analysis of Justin Martyr's serious engagement comparing Jesus to other deified figures in explicitly Hellenistic terms, showing Church Fathers understood resurrection and divine sonship as part of Greco-Roman political theology — provides specific Justin Martyr passages not currently cited in the book. The book names Justin Martyr but does not present his specific engagement with pagan parallels."
+  },
+  {
+    "finding_id": "xI5I16JfI1c_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The global Q&A explicitly addresses 'mystery cult' framing: 'We reject the mystery cult framing. Christianity was not a mystery cult — it was a continuation of the old imperial cult operating under foreign rule.' Chapter 6 mentions Clement organizing instruction 'in a pattern drawn from Hellenistic mystery cults' (Clement section, lines 478-485). However, the specific Litwa argument about early Christian movements practicing esoteric initiations comparable to contemporaneous mystery cults, with specific reference to 'gnostic christianities' practicing secret initiations, provides additional specific evidence (Litwa's comparative framework) for an argument the book already makes (Hellenistic institutional structures in early Christianity). Per the global Q&A decision, this data should be reframed through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "yhhsObl8fsQ_8",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 inventory [5] argues 'Early Christian apologists explicitly argued that Jesus's divine sonship used the same categories as Greek divine sonship.' Chapter 6 mentions Justin Martyr only as a Church Father who wrote in Greek (lines 13-19). The finding provides specific evidence from Justin Martyr's Apology — his explicit engagement with and acknowledgment of pagan parallels, his rhetorical position of having 'no choice' but to deal with Temple of Hercules etc. — which is new evidence for the existing argument about early Christian engagement with Hellenistic frameworks. The book does not present Justin's Apology content."
+  },
+  {
+    "finding_id": "ymMGWCgaotY_1",
+    "verdict": "wrong_chapter",
+    "justification": "The pastoral epistles' institutional ecclesiastical development (boards of deacons, bishops, stipended widows) and their vocabulary matching Luke-Acts and apostolic fathers belongs in Chapter 5, which covers Pauline epistles and early Christian institutional organization. Chapter 5 inventory [11] already discusses 'Diakonoi and episkopoi: civic offices already functioning' and [14] covers 'Institutional complexity appears instantly.' The pastoral epistles' later institutional development would complement or potentially challenge the Chapter 5 argument about institutional continuity. Not relevant to Chapter 6's political restoration theology focus."
+  },
+  {
+    "finding_id": "z9gvRY3yQL4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section already presents Philo of Alexandria as a key figure in the Greek-Jewish philosophical synthesis, mentioning him presenting 'Moses as the archetypal philosopher in Greek conceptual grammar' and discussing Stoic logos/Platonic convergence. The Q&A section extensively discusses Philo's synthesis role. However, Mason's specific point that 'Christians preserved his writings because they were so congenial to Christianity' is new evidence — it demonstrates Christian institutional recognition of Philo's compatibility, which the book does not currently state. The argument (Philo bridges Greek philosophy and Christianity) is already made; this specific evidence of Christian preservation is new."
+  },
+  {
+    "finding_id": "z9gvRY3yQL4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 mentions Caesarea only in the context of 'Eusebius of Caesarea' and 'Basil of Caesarea' — not as a Greco-Roman institutional city. Chapter 2 inventory discusses Sepphoris as a cosmopolitan Greek city (lines 272-278). Chapter 5 inventory [18] maps cities in Acts/Epistles. However, Mason's specific description of Caesarea as a model Greco-Roman city with 'Temple to Augustus and Rome right in the center of the harbor... filled with entertainment facilities... big theater Amphitheater' is new specific archaeological/descriptive evidence for the existing argument about Greek institutional infrastructure in early Christian territories."
+  },
+  {
+    "finding_id": "2w3dzy4nQK0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine's Chi-Rho symbol and Eastern imperial restoration (lines 292-305), Eusebius's presentation of Constantine's reign as fulfillment of divine plan (lines 379-386), and the political nature of Christianization. However, the specific argument about 'monumental churches as propaganda tools to unite his politically fractured empire' and 'controlling sacred geography translated directly into institutional power and doctrinal authority' is new evidence. The chapter discusses Constantine's political use of Christianity but does not mention monumental church building as a propaganda strategy or sacred geography control as a power mechanism."
+  },
+  {
+    "finding_id": "Yvv7uw5uZjI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The global Q&A explicitly addresses mystery cult parallels: 'We reject the mystery cult framing. Christianity was not a mystery cult — it was a continuation of the old imperial cult operating under foreign rule.' Chapter 6's Clement section already mentions 'a pattern drawn from Hellenistic mystery cults.' The specific evidence here — the distinction between mature/immature believers matching mystery cult structure, ritualized initiation, individual salvation — adds specific structural details. Per global Q&A, the institutional data is good but must be reframed as imperial cult under foreign rule. The argument (Hellenistic institutional frameworks shaped Christianity) already exists; the specific mystery cult structural evidence is new."
+  },
+  {
+    "finding_id": "18oaxC8M_Ck_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The book does not discuss Christians calculating Jesus's birth and death dates to align with Roman astronomical calendar markers (winter solstice for December 25, spring equinox for March 25). 'December 25,' 'solstice,' and 'Christmas' do not appear in chapter 6 text. Chapter 3 inventory [16] discusses Sunday reflecting the planetary week but does not cover birth/death date calculations. This is both a new argument (Christians deliberately assigned cosmic significance by aligning with Roman calendar astronomy) and new evidence (the specific March 25/December 25 calculation chain)."
+  },
+  {
+    "finding_id": "AO1nGsQ2MXE_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The virga (Roman civic symbol of authority/wand held by magistrates, judges, consuls, emperors) depicted in early Christian art of Jesus does not appear anywhere in the book. 'Virga' and 'wand' are absent from the chapter 6 text. No chapter inventory mentions early Christian artistic representation of Jesus with Roman civic symbols. This is new evidence (specific art historical data about the virga in Christian iconography) and a new argument (early Christians deliberately represented Jesus within Roman visual language of political power through art)."
+  },
+  {
+    "finding_id": "BeKiF_7eZ4A_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific institutional role of the Roman emperor as pontifex maximus presiding over empire-wide religious ceremony, and the bureaucratic compliance infrastructure of sacrifice certificates (libelli) under Decius, do not appear in any chapter. 'Decius,' 'pontifex,' and 'sacrifice certificates' are absent from chapter 6. The chapter discusses Christian persecution as political (martyrdom section, lines 274-290: 'martyrs executed for maiestas'), but the specific Decian persecution with its bureaucratic compliance system — showing how thoroughly Christian identity was entangled with Greco-Roman state institutions — is new evidence and a distinct argument about institutional entanglement."
+  },
+  {
+    "finding_id": "ZjV0tq8kZAs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 already has a substantial Revelation section (lines 307-332) arguing that Revelation contains explicit political content identifying Rome as the beast and envisioning replacement of Roman imperium with divine imperium. However, the specific evidence about client kingdoms ('10 kings' evoking the network of client kingdoms around Rome, semi-independent dynastic kingdoms like Judea) and the 'Christological parody' framework (Nero's return recast as anti-Christ through the same narrative structures applied to Christ) are not in the chapter. 'Client kingdom' and 'Nero as Antichrist' do not appear. This is new evidence (client kingdoms, Nero return myth) for the existing argument about Revelation as political restoration theology."
+  },
+  {
+    "finding_id": "9c6d04AaA5c_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 6 does not discuss neoplatonic dualism's effect on Christian theology regarding the body and sexuality. 'Neoplatonic,' 'dualism,' 'celibacy,' 'sexuality' do not appear in the chapter text. While the Athanasius section discusses theosis and the homoousios debate involving Greek philosophical vocabulary, the specific argument about neoplatonic dualism causing a shift from earthly embodied focus to heaven-focused spirituality that 'desacralized the body and sexuality' is absent. This is both a new argument (Greek philosophy reshaped Christianity by devaluing the body/material world) and new evidence (Tabor's tracing of the neoplatonic dualism adoption process)."
+  },
+  {
+    "finding_id": "JV0Qpf4QPXc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 already discusses Origen in its dedicated section (lines 334-352) and mentions his use of Greek philosophy (Logos, apokatastasis). The Athanasius section (lines 388-394) discusses Greek philosophical vocabulary (ousia from Aristotle). However, the specific framing by Tabor — that Origen and Augustine were 'heavily influenced by Neoplatonic and Hellenistic philosophy' with the explicit mechanism described as 'tries to christianize platonic views' — adds the specific label 'neoplatonic' and the explicit claim about Clement of Alexandria teaching Origen in neoplatonic thought. The argument (Church Fathers shaped by Greek philosophy) is covered; the specific Neoplatonic lineage from Clement to Origen is new evidence."
+  },
+  {
+    "finding_id": "Jor0oevcEK8_7",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Cult of Hermes, Gnostic theology, hermetic literature, the Hermetica, and the Emerald Tablets do not appear anywhere in the chapter 6 text or any chapter inventory. 'Hermes' and 'hermetic' are absent from the text. This is both a new argument (Hellenistic theological lineage from Cult of Hermes through Gnostic cults to early Christianity) and new evidence (specific hermetic texts influencing Christian mysticism)."
+  },
+  {
+    "finding_id": "Jor0oevcEK8_8",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Jewish synagogue zodiac mosaics with Hellenistic astrological ascent symbolism do not appear in any chapter text or inventory. 'Zodiac,' 'astrological,' and 'mosaic' are absent from chapter 6. While the Eastern Mediterranean Synthesis section discusses Jewish adoption of Greek structures (synagogues with Greek-style officials), the specific evidence of zodiac mosaics in synagogues and astrological ascent symbolism is new, and the argument (Greek astrological-institutional language had penetrated Jewish worship spaces by the early Christian period) is distinct from the broader synthesis argument."
+  },
+  {
+    "finding_id": "M9Fa8Ci6rGs_2",
+    "verdict": "wrong_chapter",
+    "justification": "Evidence for identifying textual interpolations (like trinitarian additions to Matthew 28) belongs in Chapter 4, which covers gospel reliability, textual evidence, and early vs. late textual strata. Chapter 4 inventory [20] discusses 'Mark 13 redaction' and signs of later expansion. Chapter 4 inventory [11] discusses 'Textual Evidence of Women's Erasure' showing scribes modifying texts. The methodology of identifying interpolations and the specific Matthew 28 trinitarian formula are gospel reliability topics, not Chapter 6's political restoration theology."
+  },
+  {
+    "finding_id": "MYyXf4V8e9U_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Athanasius section (lines 388-394) discusses theosis ('God became man so that we might become god') and frames it as restoration theology. The Eastern Mediterranean Synthesis discusses Greek-Jewish theological convergence. However, Tabor's specific quote that 'later Christian theologians forged a fusion between the two views essentially equating them' — referring to the historical process of merging Platonic afterlife with Christian resurrection — adds a specific mechanism of fusion that the chapter does not describe. The argument (Greco-Christian theological continuity) is covered; the specific evidence about deliberate theological fusion of Platonic and Christian afterlife views is new."
+  },
+  {
+    "finding_id": "QX6VwZHbgvs_4",
+    "verdict": "wrong_chapter",
+    "justification": "The Pantera charge and Church Fathers' responses to it (Origen, Epiphanius accepting 'Pantera' as Joseph's father's name) belongs in Chapter 2, which extensively covers Jesus's parentage and hostile traditions. Chapter 2 inventory includes 'Jesus's father was killed by Herod' (lines 714-721) which discusses 'The name Panthera in hostile traditions may preserve memory of Herod's firstborn son Antipater.' The global Q&A has a decision on 'Hostile traditions as convergent evidence.' This is a Chapter 2 topic about Jesus's genealogy and hostile tradition responses, not Chapter 6 political restoration theology."
+  },
+  {
+    "finding_id": "Qb3MZZpHj5Y_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Clement of Alexandria section (lines 478-485) already states Clement 'organized Christian instruction into catechumens and the teleioi, reserving deeper teaching for the initiated in a pattern drawn from Hellenistic mystery cults.' The finding adds a different but related piece of evidence: Origen (not Clement) defending Christian mystery initiation practices against Celsus's specific attack that Christians were 'stealing secrets from sophisticated Pagan mystery Traditions' with 'initiations based on an image that modeled astrological Ascent.' The chapter already has Origen's Contra Celsum but only for political restoration theology (lines 334-352), not for mystery initiation defense. This is new evidence (Celsus's specific attack on Christian initiation practices, Origen's defense) for the existing argument about Greco-Christian institutional continuity."
+  },
+  {
+    "finding_id": "S2e6u2gQUTM_4",
+    "verdict": "wrong_chapter",
+    "justification": "James's leadership of the Nazarene community, sitting on a throne (throneos) to pronounce binding decisions, is about early church institutional succession. Chapter 2 inventory covers 'Dynastic succession' (lines 884-912) and specifically James's role. Chapter 5 inventory [27] discusses 'James the Just' functioning as 'the dynastic successor.' The specific evidence about James on a throneos pronouncing binding decisions parallels rabbinic/Hellenistic political leadership models and belongs in Chapter 2 (dynastic succession) or Chapter 5 (institutional organization), not Chapter 6 (political restoration theology)."
+  },
+  {
+    "finding_id": "VzWdFgWH3Xs_0",
+    "verdict": "covered",
+    "justification": "Chapter 6's Athanasius section (lines 388-394) explicitly quotes the Irenaeus-origin deification formula attributed here to Irenaeus: 'De Incarnatione 54.3 declares that God became man so that we might become god (theopoiethomen).' The chapter inventory item for Athanasius lists this exact evidence. While the finding attributes the formula to Irenaeus ('God became man so that we who are men can become God') and the book attributes it to Athanasius's De Incarnatione, this is the SAME theosis formula. The argument (early Church adopted Hellenistic apotheosis theology) and the evidence (the deification formula) are both present in Chapter 6."
+  },
+  {
+    "finding_id": "VzWdFgWH3Xs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Athanasius section covers theosis ('God became man so that we might become god') as restoration theology. However, the specific evidence that the Eastern Orthodox Church preserved apotheosis theology without the trinitarian framework — maintaining that humans are 'destined to become part of the Divine family of God glorified with Grace' — is not in the chapter. The book does not mention the Eastern Orthodox Church's preservation of this tradition as distinct from the Western trinitarian framework. The argument (Greco-Christian deification theology) is covered; the Orthodox preservation as distinct evidence is new."
+  },
+  {
+    "finding_id": "iMlvjkeJI8o_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section discusses the convergence of Greek and Jewish thought, including 'Egyptian doctrines of post-mortem judgment, resurrection' entering Greek discourse. The argument that Greek philosophical frameworks gradually came to dominate Christian theological frameworks is present throughout Chapter 6. However, the specific historical process described by Tabor — Greek Platonic theology (immortality of the soul, compartmented Hades) MERGING with Hebrew resurrection theology to create early Christian theology — is a specific mechanism not described in the chapter. The chapter mentions Egyptian judgment theology entering Greek discourse but does not trace the specific Platonic-immortality + Hebrew-resurrection merger into Christianity."
+  },
+  {
+    "finding_id": "iMlvjkeJI8o_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Orphic/Platonic golden foil plates (4th century BCE) with pre-Christian confession formulas ('I am a child of Earth and Starry heaven but Heaven alone is my home') do not appear in any chapter text or inventory. 'Orphic' appears once in chapter 6 but only as a passing word near 'Platonic metaphysics and Philo's theology' — not referring to golden foil plates or confession formulas. This is both a new argument (Greek institutional-theological precedents for Christian confession/salvation formulas predate Christianity by centuries) and new evidence (specific Orphic golden foil plates with salvation confession text)."
+  },
+  {
+    "finding_id": "iMlvjkeJI8o_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis mentions 'Egyptian doctrines of post-mortem judgment, resurrection' entering Greek discourse, and the Athanasius section covers theosis. The chapter's overall thesis is that Greek categories shaped Christian theology. However, the specific mechanism described here — the shift from Hebrew horizontal eschatology (resurrection at end of time) to Greek vertical theology (immediate afterlife with judgment), where 'all of that activity raising the Dead the new bodies and everything it all gets put up to heaven' — is a specific historical process not described in the chapter. The argument (Greek categories displaced Hebrew ones in Christianity) is covered generally; this specific horizontal-to-vertical shift mechanism is new evidence."
+  },
+  {
+    "finding_id": "isidZ6Z9-YQ_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Clement of Alexandria section (lines 478-485) already states: 'He states that after the resurrection the Lord transmitted gnosis to James, John, and Peter, who passed it to the apostles and then to the Seventy.' This covers the Clement quote in the finding. However, the Hegesippus quote about formal succession — 'the succession of the church passed to James the brother of the Lord... all unanimously decided that Simon the son of kofus was worthy of the throne' — is not in the chapter. Hegesippus does not appear in the chapter text. The argument (hierarchical succession of authority and knowledge transmission) is partially covered via Clement; the Hegesippus evidence with its specific 'throne' language and formal succession vote is new evidence."
+  },
+  {
+    "finding_id": "kkBgaPXOsfI_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Perpetual virginity doctrine, neoplatonic/henistic dualism in 2nd-3rd century Church Fathers, and the connection between Greek philosophical ideas and Christian theology about Mary and holiness do not appear in chapter 6. 'Virginity,' 'celibacy,' 'neoplatonic' are all absent from the chapter text. Chapter 3 inventory [50] discusses 'Holy Mary, Mother of God' with Greek royal imagery but does not cover perpetual virginity doctrine. This is both a new argument (Greek philosophical ideas directly shaped Christian theology about Mary by redefining holiness in aesthetic/celibate terms) and new evidence (tracing the development from neoplatonic dualism to perpetual virginity doctrine)."
+  },
+  {
+    "finding_id": "lKItbUWnymA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section discusses the convergence of Greek and Jewish thought and the chapter's overall thesis is that Greek frameworks transformed Christianity. However, the specific framing of a 'wholesale replacement of Hebrew world-affirming theology with Hellenistic dualistic cosmology' — the shift from 'locative' (Hebrew, things properly in place) to 'utopian/dualistic' (Hellenistic, escape from evil world) religious worldviews — is a specific mechanism not articulated in the chapter. The chapter does not use the locative/utopian distinction or describe the replacement of world-affirming with world-denying theology. The argument (Hellenistic frameworks transformed Christianity) exists; this specific scholarly framework (locative vs utopian) is new evidence."
+  },
+  {
+    "finding_id": "pDEx7_OtUHg_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 6 does not discuss Platonic/Neoplatonic influence on specific Church Fathers' doctrines about sexuality, celibacy, or Mary's perpetual virginity. 'Neoplatonic,' 'celibacy,' 'virginity,' 'sexuality' are absent from the chapter text. The finding provides specific evidence: Origen castrating himself, Jerome developing perpetual virginity doctrine based on Greek philosophical notions that 'if you're really holy you would not get married... sexuality is a lower thing.' While the Athanasius section uses Greek philosophical vocabulary (ousia), it does not address the body/sexuality implications of Greek philosophy on Church Father theology. This is a new argument (Greek philosophical contempt for the body/sexuality directly shaped specific doctrines) with new evidence (Origen's self-castration, Jerome's perpetual virginity arguments)."
+  },
+  {
+    "finding_id": "q9aRPgVb1XY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 inventory [5] states 'Early Christian apologists explicitly argued that Jesus's divine sonship used the same categories as Greek divine sonship.' Chapter 6 mentions Justin Martyr only in the list of Church Fathers who wrote in Greek. The specific evidence here — Justin Martyr's and Origen's 2nd-3rd century responses to divine man parallels (Asclepius, Apollonius of Tyana), with Justin's specific theological defense that 'demons imitated Christianity' — provides concrete Church Father passages engaging with Hellenistic parallels. The argument (Church Fathers consciously engaged with Hellenistic political theology) exists across chapters; the specific Justin-Origen defense strategy ('demons imitated Christianity') is new evidence."
+  },
+  {
+    "finding_id": "r6hrIn5gxco_2",
+    "verdict": "wrong_chapter",
+    "justification": "The early movement's headquarters on Mount Zion as a house church with wealthy patronage, James as institutional successor of Jesus, and Mary as matriarch — this is about the organizational structure and dynastic succession of the early Christian movement. Chapter 2 inventory covers 'Dynastic succession' (lines 884-912) including James as successor. Chapter 5 inventory [27] discusses 'James the Just' as dynastic successor. The wealthy patronage and house church organizational model is institutional-organizational content belonging in Chapter 2 (family/succession) or Chapter 5 (institutional organization), not Chapter 6 (political restoration theology and Church Fathers)."
+  }
+]

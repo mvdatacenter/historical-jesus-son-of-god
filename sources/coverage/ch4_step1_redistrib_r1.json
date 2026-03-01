@@ -1,0 +1,497 @@
+[
+  {
+    "finding_id": "wwCGbGdMPCc_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 already argues John was written for Greek audiences using Greek cosmological concepts. The Logos/Prologue section (lines 774-809) extensively discusses Philo's Logos theology as the framework for John's Prologue. John 1:12-13 rejecting genealogical claims is implicit in the Christos vs Messiah analysis (lines 586-601). Both the argument (John for Greek audiences) and evidence (Logos as Greek cosmology) are present."
+  },
+  {
+    "finding_id": "yM8bVT4xuHk_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses Mark 1:1's euangelion language as imperial proclamation matching the Priene inscription for Augustus (lines 1104-1106): 'invoking the precise euangelion language of coronation, the same word used in imperial decrees such as the Priene inscription to proclaim the reign of Augustus.' Both the argument (Mark appropriates imperial language) and the evidence (Priene inscription parallel) are present."
+  },
+  {
+    "finding_id": "iqEHysSPxuE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues John's resurrection narrative follows Hellenistic romance conventions (lines 215-217) and Song of Songs intertext (lines 325-334). However, the specific parallels to Greco-Roman ghost stories (as distinct from romance conventions) are not discussed. The argument that Gospel resurrection narratives show Greco-Roman cultural influence exists, but the specific ghost story parallels are new evidence."
+  },
+  {
+    "finding_id": "rr_0QWA-8Yk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues Gospel authors were educated in Greek literary conventions (Luke's historiographical conventions lines 1349-1392, Mark's coronation narrative structure lines 1104-1117, John's Logos theology). The argument that gospel authors were educated practitioners of Greek rhetoric exists. However, the specific technique of 'oppositio in imitando' (imitation through opposition) as a named rhetorical method is new evidence not discussed in the chapter."
+  },
+  {
+    "finding_id": "FEKkQgR5t14_2",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about Caesarea Philippi as a symbolic location where Peter confesses Jesus as Messiah, creating a Greco-Roman political counterclaim at the site of Augustus temples, is about the political geography of the gospels and the titles of Jesus. This belongs in Chapter 3 (He Truly was the Son of God) which covers titles and political theology, or possibly Chapter 2 which covers Jesus's geographical and political context. Chapter 4 does not discuss Caesarea Philippi."
+  },
+  {
+    "finding_id": "gxXlVV8oW8U_1",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about Josephus using 'Christ' as a personal name rather than a messianic title for Greek/pagan audiences is about the meaning and usage of the title Christos. Chapter 3 covers Jesus's titles extensively. Chapter 4 does discuss Christos vs Messiah in John (lines 586-601) but not Josephus's usage of the term. Better fit for Chapter 3 which handles title analysis systematically."
+  },
+  {
+    "finding_id": "5-yNa34Sfx0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues that miracles in John can be understood as exaggerated accounts of real leadership deeds (lines 860-893) and discusses John's restraint in not adding miracles at the death. The argument that ancient plausibility frameworks differed from modern ones is implicit. However, the specific scholarly point that ancient Greeks and Romans had a different framework for assessing plausibility (treating miracles as evidence of divine favor in biographical writing) is new evidence supporting the existing argument about John's miracles as royal legitimation."
+  },
+  {
+    "finding_id": "G6QR0e66erA_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Mark's structure and literary conventions. The 'messianic secret' is mentioned only obliquely. Walsh's identification of the messianic secret as borrowed from Homer and Virgil's 'unrecognized hero' motif is new evidence. The argument that gospels use Greek literary devices exists in the chapter (mimesis discussion at lines 710-713, coronation narrative structure), but this specific Homeric/Virgilian parallel for the messianic secret is not present."
+  },
+  {
+    "finding_id": "XYqghYtia6k_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Matthew's character as a Greek text with Hebraisms (lines 1287-1299) and acknowledges Matthew's fulfillment formulas. The argument that Matthew augmented Mark with additional content exists. However, the specific claim that Matthew added Stoic philosophical content (not just Hebrew/Scriptural content) is new evidence. Chapter 4 focuses on Matthew's Jewish-priestly character, not its Stoic philosophical dimension."
+  },
+  {
+    "finding_id": "8GVCZ3AvAvA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses mimesis and synchresis in the context of John's Dionysian Gospel (lines 710-713) and the broader argument about Greek literary techniques in gospels. The general argument that gospel authors used Greek literary comparison techniques exists. However, McDonald's specific discussion of synchresis (comparative literary technique showing Jesus's superiority to Greek figures) as a systematic method is new evidence not detailed in the chapter."
+  },
+  {
+    "finding_id": "OVExX2kh3pM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Philo's Logos theology and its Greek philosophical roots (lines 774-809). However, the specific argument that Middle Platonic philosophical ideas (flesh/spirit dualisms, self-mastery, divine essence) appear in the gospels as directly as Jewish scriptural ones is new evidence. The chapter focuses on Philo's Logos, not Middle Platonic philosophy per se as a framework for gospel theology."
+  },
+  {
+    "finding_id": "PMsvMKsDt4s_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues gospels were structured like Greek literary works (bios genre, lines 811-816) and Luke uses Greek historiographical conventions (lines 1349-1392). The argument that gospels establish institutional structures echoing Greek city-states exists implicitly. However, Walsh's specific claim about Luke and John establishing foundational narratives echoing Greek city-founding myths is new evidence not present in chapter 4."
+  },
+  {
+    "finding_id": "mDX_EXb5pT8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses scribal modifications to texts (Junia masculinization, Mary/Martha name swaps, Mark 13 redaction, Mark 16 ending additions). The argument that scribes deliberately modified texts exists. However, the specific evidence that scribes deliberately added 'Son of God' to Mark 1:1 (present in some manuscripts but absent from others like Sinaiticus) is new textual evidence not discussed in the chapter."
+  },
+  {
+    "finding_id": "I4GHrs5xAIk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the Gospel of Mary in the context of Peter vs Mary Magdalene rivalry (lines 139-155). However, the specific finding about Stoic and Platonic philosophical influences in the Gospel of Mary's soteriology is new evidence. The chapter uses Gospel of Mary only for the Peter-Mary rivalry, not for its philosophical content."
+  },
+  {
+    "finding_id": "Q89qkiEhi6E_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John's Dionysian layers (lines 710-713) and mentions identifiable layers in John. The argument that Greek mythologizing layers can be distinguished from Jewish source material exists. However, MacDonald's specific 'social identity criticism' methodology for distinguishing these layers is new evidence/methodology not present in the chapter."
+  },
+  {
+    "finding_id": "hcaLWLMdhZg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 extensively argues that Jesus's titles should be understood as Hellenistic royal terminology (Christos analysis lines 586-601, coronation at baptism lines 1033-1102). The argument exists. Michael Bird's specific book 'Jesus Among the Gods: Early Christology in the Greco-Roman World' is a new scholarly reference supporting the existing argument, but not new evidence or a new argument per se. Still, as a specific scholarly resource not cited, it qualifies as new evidence for an existing argument."
+  },
+  {
+    "finding_id": "qDsILWl8z3k_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses Matthew 1:23 citing Isaiah 7:14 using the Septuagint wording, where Hebrew almah becomes Greek parthenos, and notes the argument for virgin birth depends entirely on the Greek rendering (lines 1291-1294). Both the argument (Matthew adapted Hebrew prophecy through Greek translation) and the evidence (Isaiah 7:14 almah/parthenos) are present."
+  },
+  {
+    "finding_id": "0fcYiBDfdzs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis in the context of John's Dionysian Gospel (lines 710-713) and briefly references gospel literary conventions. The argument that gospel authors used Greek literary imitation exists. However, McDonald's specific detailed analysis of Mark imitating Homer's Odyssey and Virgil's Aeneid to frame Jesus's narrative is not elaborated in Chapter 4. The chapter mentions the concept but does not detail Mark-Homer or Mark-Virgil parallels specifically."
+  },
+  {
+    "finding_id": "1HjimJTgS_Q_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly identifies John's water-to-wine miracle as a Dionysian characterization: 'The Cana miracle, where water becomes wine, reproduces the signature act of Dionysus and functions as an explicit literary marker' (lines 711-712). The 'I am the true vine' discourse mapping onto Dionysus's core symbol is also covered (line 712). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "3KudM3uWquU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues that gospel authors were educated (Luke's Greek historiographical training lines 1349-1411, John's Philonic philosophical depth lines 774-809). The argument that gospel authors must have received advanced Greek education exists. However, Lambert's specific emphasis on this as a structural requirement for gospel composition (not just incidental) is a reinforcing scholarly voice, qualifying as new evidence for an existing argument."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Philo's Logos theology extensively (lines 774-809) and John's Prologue as crystallizing Alexandrian theology. However, the specific discussion of John's ego eimi ('I am') statements as a Philo-like appropriation of Hellenistic philosophical divine-name conventions is new evidence. The chapter discusses Logos but not the ego eimi statements in relation to Philo."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_2",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses John's engagement with Dionysiac wine imagery at Cana (lines 710-712): 'The Cana miracle, where water becomes wine, reproduces the signature act of Dionysus.' The positioning of Jesus in competition with Dionysus through wine symbolism is covered by the Dionysian Gospel discussion (lines 710-714). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_3",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 contains evidence about John's theological framework (Logos theology, Philo's influence, absence of 70 AD prophecy). However, the specific argument that John's 'realized eschatology' (spiritual judgment and divine encounter in the present rather than future apocalyptic expectation) represents a characteristically Greek philosophical approach is a new argument. The chapter discusses John's theology but does not frame the realized eschatology as evidence of Greek philosophical influence specifically."
+  },
+  {
+    "finding_id": "5Z_cSmy3CbI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 extensively discusses Philo's Logos theology (lines 774-809) and its relationship to John's Prologue. The argument about Greek theological frameworks shaping John exists. However, Middle Platonism as a specific philosophical movement (distinct from Philo specifically) influencing John's Gospel is new evidence. The chapter discusses Philo but does not name Middle Platonism as a framework."
+  },
+  {
+    "finding_id": "5wy1hrfAPG4_3",
+    "verdict": "covered",
+    "justification": "Chapter 4 extensively discusses Mark 13's political context and how it may encode the destruction of the temple through the 'abomination of desolation' (lines 984-1025). The chapter argues these are later redactional additions reflecting post-70 CE concerns. Both the argument (Mark 13 encodes temple destruction) and the evidence ('abomination of desolation' as formal/technical language, editorial aside 'let the reader understand') are present."
+  },
+  {
+    "finding_id": "77QtptGdBo0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues gospel narratives use Greek literary conventions (Hellenistic romance in John 20, lines 215-217; Dionysian parallels lines 710-714). The argument that Greek literary parallels structure gospel narratives exists. However, the specific Homeric literary parallels structuring resurrection narratives (beyond John's romance conventions) are new evidence. Chapter 4 does not discuss Homeric parallels to the resurrection specifically."
+  },
+  {
+    "finding_id": "77QtptGdBo0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John 20's recognition scene as matching Hellenistic romance and Song of Songs intertext (lines 282-334). The argument about recognition scenes in the resurrection exists. However, the specific parallel to Odyssey's wound-recognition motif (Odysseus recognized by his scar by Eurycleia) as a source for the touching/recognition motif in Luke and John is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "77QtptGdBo0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions Joseph of Arimathea bringing myrrh and aloes (referenced from ch1 inventory). The argument about Greek literary parallels in gospel narratives exists. However, the specific parallel between Joseph of Arimathea's burial role and Priam retrieving Hector's body from Achilles in Iliad Book 24 is new evidence not discussed in chapter 4."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel literary construction and mentions Homeric influence briefly (Dionysian Gospel lines 710-714). The argument that gospels model narratives on Greek epic exists. However, the specific modeling of Mark's passion on Hector's death in the Iliad—including three women mourning, abandonment of the body, and ritual recovery—is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_3",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses Dionysian motifs in John including the Cana miracle (water-to-wine), 'I am the true vine,' and the 'eat my flesh/drink my blood' eucharistic theology (lines 697-724). The imprisoned disciples freed by earthquake paralleling Bacchae is covered (line 712). The Dionysian Gospel argument is explicitly made (lines 710-714). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "8Ulo6LyugEc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses recognition scenes in John 20 (lines 282-288) and mentions Hellenistic romance conventions. The argument that Greek literary motifs inform gospel narratives exists. However, the 'Incognito King' motif from Homer's Odyssey as a specific framework for understanding Jesus in the gospels (the disguised ruler whose identity is gradually revealed) is new evidence not discussed in chapter 4."
+  },
+  {
+    "finding_id": "8Ulo6LyugEc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the temple cleansing only briefly in context of Jesus's authority. The argument that gospel narratives mirror Greek literary patterns exists. However, the specific parallel between the temple cleansing and Odysseus's climactic return to cleanse his father's house of suitors is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "9iI0sCYe5zQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Luke's Greek historiographical conventions (lines 1349-1392) and the trial of Jesus. The argument that Luke uses Greek literary models exists. However, the specific suggestion that Luke modeled aspects of Jesus on Socrates (a specific literary/philosophical parallel not mentioned in the chapter) is new evidence."
+  },
+  {
+    "finding_id": "A6R5spy1uPk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Philo's philosophical influence on John and Luke's historiographical conventions. The argument that gospel writers deployed Greco-Roman philosophical frameworks exists. However, the specific evidence that Matthew deploys Stoicism and Mark deploys Cynicism as philosophical frameworks (beyond just literary conventions) is new evidence. Chapter 4 discusses Matthew's Jewish-priestly concerns (lines 1285-1299) but not Stoic philosophical deployment specifically."
+  },
+  {
+    "finding_id": "A732FZm2STo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 does not discuss Mark's messianic secret in detail. The argument that gospel narratives use Greek literary conventions exists broadly. Walsh's specific argument that the messianic secret is a Greek literary convention (the hidden divine identity topos) rather than a purely theological concept is new evidence applied to an existing argument about Greek influence on gospel composition."
+  },
+  {
+    "finding_id": "A732FZm2STo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John's signs as royal legitimation (lines 856-893). The argument that miracles function as legitimation signs exists. However, the specific Greek literary concept of thaumata (wonders causing specific emotional response) as a marker of the hero's divine identity is new evidence. The chapter treats miracles as royal prerogatives, not as thaumata in the Greek literary-critical sense."
+  },
+  {
+    "finding_id": "A732FZm2STo_3",
+    "verdict": "covered",
+    "justification": "Chapter 4 argues gospel authors were educated elites with Greek literacy: Luke uses Greek historiographical conventions (lines 1349-1392), Matthew writes in Greek saturated with Hebraisms (lines 1287-1295), John shows deep Philonic philosophical training (lines 774-809). The argument that gospel authors must have been educated in Greek literary conventions is present, and multiple evidence points about their education are given."
+  },
+  {
+    "finding_id": "B3dz9PY1Y10_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis in the context of John's Dionysian Gospel (lines 710-714). The argument about Greek literary imitation in gospels exists. However, the specific analysis of the Parable of the Wicked Tenants as mimesis of Homer (Odysseus's return and slaughter of suitors) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "B8GCW2AVAF8_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 extensively discusses John's gospel in Greco-Roman context including Philo's Logos theology (lines 774-809), Dionysian parallels (lines 710-714), and the argument that John should be understood within Hellenistic philosophical and religious context. Tripp's emphasis on understanding John within Asia Minor's Greco-Roman religious context aligns with the chapter's existing argument and evidence."
+  },
+  {
+    "finding_id": "B8GCW2AVAF8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John's literary character and its early dating. The argument that John is an early text using sophisticated literary techniques exists. However, the specific evidence that first-century Hellenistic quotation conventions valued theological reinterpretation and paraphrase over verbatim accuracy (explaining why John's Jesus speeches differ from the Synoptics) is new evidence supporting the chapter's argument that long speeches in John indicate written sources, not late fabrication."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 briefly mentions mimesis and Dionysian parallels in John (lines 710-714). The argument about Greek literary engagement in gospels exists. However, McDonald's detailed comparative literary analysis showing Mark and Matthew consciously engaged with Homeric epic structures (as distinct from John's Dionysian parallels) is new evidence. The chapter focuses on John's Dionysian parallels but does not detail Mark/Matthew Homeric engagement."
+  },
+  {
+    "finding_id": "C6mNE4iscUg_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 discusses John's eucharistic theology in the Bread of Life discourse (John 6) and explicitly connects it to Dionysian tradition: 'Jesus talking about flesh and blood in the context of logos, so a modernized version of the Greco-Roman feast' (lines 719-720). The Cana miracle as Dionysian is covered (lines 711-712). The Dionysian origin of 'eat my flesh, drink my blood' language is addressed. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the temptation narrative as a royal ordeal with Israelite background including Moses/Deuteronomy parallels (lines 1230-1234). The argument that Jesus imitates Deuteronomy exists. However, the specific framing of this as 'transvaluation' (imitating Deuteronomy while climbing a mountain to give law to 12 followers) as a systematic literary technique is new evidence providing a named scholarly methodology."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions Dionysian parallels and implicitly treats gospels as drawing on multiple literary traditions. The concept of gospels as 'intertextual playgrounds' drawing on both Greco-Roman and Jewish sources is a scholarly framing that adds methodological clarity. The argument exists (gospels use Greek and Jewish sources), but this specific characterization and the emphasis on systematic intertextuality as a named methodology is new evidence."
+  },
+  {
+    "finding_id": "DO01hCo6GmE_1",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses the Eucharist as rooted in Dionysian/pagan Greco-Roman practice: 'Dionysian feasts would have been centered around the wine and bread rituals. While drinking metaphorical blood and body of Dionysus would have been a widespread practice' (lines 705-706). Clement of Alexandria comparing Jesus with Dionysus is cited (lines 707-709). Justin Martyr accusing Mithras followers of copying Christian rites is cited (lines 722-723). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "Dc330wSTShw_1",
+    "verdict": "covered",
+    "justification": "Chapter 4 discusses John's Cana miracle (water-to-wine) as reproducing the signature act of Dionysus (lines 711-712) and the seven signs as royal legitimation (lines 856-893). The discussion of miraculous water transformation as a sign of divine presence in epiphany traditions is covered by the Dionysian Gospel section. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses miracles as royal legitimation signs in John (lines 856-893). The argument that miracles signal special status exists. However, the specific Greek literary concept of 'thalma' (wonder/bewilderment) as a technical literary device used to signal the hero's divine status in Greek epic tradition is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 does not discuss Wrede's messianic secret interpretation. The argument that gospel features have Greek literary explanations exists broadly. Walsh's specific argument that Wrede fundamentally misread the messianic secret because he lacked knowledge of Greek literary conventions (it is a Greek literary device, not a theological invention) is new evidence providing a corrective to mainstream scholarship."
+  },
+  {
+    "finding_id": "E48DhofWV9U_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel genre as Greco-Roman bios (lines 811-816) and the baptism as coronation narrative (lines 1104-1117). The argument that gospels establish Jesus as a hallowed figure using literary conventions exists. However, Walsh's specific identification of the 'epic tradition' as a self-conscious technique for establishing hallowed figures (parallel to how Virgil established Aeneas) is new evidence adding a named literary-critical framework."
+  },
+  {
+    "finding_id": "EnKuOcrWHuw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the relationship between Thomas and John (lines 551-566) including the argument that Thomas held a competing Christological position. However, the specific evidence from Gospel of Thomas showing the disciples' understanding progressing beyond Jewish categories to Greek philosophical ones (Thomas saying 49: 'You are from the undivided') is new evidence. The chapter discusses Thomas-John tension but not this specific progression from Jewish to Greek categories in Thomas itself."
+  },
+  {
+    "finding_id": "F0tBHqdI_3s_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel literary composition and mentions mimesis in John (lines 710-714). The argument that gospels used Greek literary models exists. However, McDonald's specific demonstration that Mark systematically imitated Homer's Odyssey, Iliad, and Sophoclean plays (a comprehensive systematic imitation across multiple sources) is new evidence. The chapter mentions mimesis only briefly in the John context."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John's eucharistic theology and Dionysian parallels (lines 697-724). The argument connecting wine/bread rituals to pre-Christian traditions exists. However, the specific identification of bread/wine with Osiris as a harvest deity (both must die and be reborn to nourish the living) is new evidence. The chapter discusses Dionysian parallels but not Osiris harvest-deity parallels specifically."
+  },
+  {
+    "finding_id": "GvXDKhP4uck_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 contains evidence about Greek literary techniques in the gospels (mimesis references, Dionysian parallels, genre analysis). MacDonald's critique that mimesis as 'the most important literary part of ancient education' is absent from New Testament scholarship is a new argument (a critique of the scholarly field's blind spot) even though the evidence about mimesis itself is partially present in the chapter."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 argues Jesus is positioned in relation to Dionysus through the Dionysian Gospel (lines 710-714). The argument about Jesus vs Greek deities comparison exists. However, the specific narrative construction showing Jesus as morally superior to Greek deities (a deliberate theological positioning) is a new evidence point. The chapter mentions Jesus superseding Dionysus ('I am the true vine') but does not elaborate the systematic moral superiority comparison."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John 20's recognition scene as following Hellenistic romance conventions (lines 215-217) and Song of Songs intertext (lines 325-334). The argument about Greek literary patterns in resurrection narratives exists. However, the specific identification of Odysseus's recognition scenes as the template for all gospel resurrection appearances is new evidence extending beyond John's garden encounter."
+  },
+  {
+    "finding_id": "PLKMcIz8Vd0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Matthew's character as Jewish-priestly and Greek (lines 1285-1299). The argument about Matthew's literary sophistication exists. However, Walsh's specific argument that Matthew employs Stoic philosophical frameworks (not just Jewish fulfillment formulas) is new evidence. The chapter characterizes Matthew as a Jewish priest who was also a Greek loyalist but does not identify Stoic philosophy as a framework."
+  },
+  {
+    "finding_id": "Qd8EMFHzckM_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses the earliest stratum of John as a 'Dionysian Gospel' with Jesus as a donor deity: 'The earliest stratum of John reads as a Dionysian Gospel built on deliberate imitation of Euripides' Bacchae' (line 710). The Cana miracle reproducing Dionysus's signature act (line 711), 'I am the true vine' (line 712), and imprisoned disciples paralleling Bacchae (line 712) are all present. Both argument and evidence are covered."
+  },
+  {
+    "finding_id": "Qd8EMFHzckM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions the Dionysian Gospel and Bacchae parallels (lines 710-714). The argument about John-Bacchae connections exists. However, the detailed parallels between Jesus's trial before Pilate and Pentheus's interrogation of Dionysus in the Bacchae (the disguised god on trial before the political ruler) are new evidence. The chapter mentions the Bacchae connection but does not detail the trial scene parallel."
+  },
+  {
+    "finding_id": "Qd8EMFHzckM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Dionysian parallels in John (lines 710-714). The argument about Hellenistic royal theology connecting to Jesus exists. However, the specific purple cloak imagery connecting Jesus to Dionysian royal iconography (the purple robe placed on Jesus at the trial echoing Dionysus's purple dress) is new evidence not discussed in the chapter."
+  },
+  {
+    "finding_id": "WlTAU_E88i4_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses the Dionysian Gospel: 'The earliest stratum of John reads as a Dionysian Gospel built on deliberate imitation of Euripides' Bacchae' (line 710) with Jesus positioned as superior to Dionysus through the 'I am the true vine' discourse. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "_6HXZ8dJpHE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Dionysian parallels in John (lines 710-714). The argument connecting John to Dionysus exists. However, the specific identification of purple hemation (purple garment) and crown imagery in John's Gospel as mimicking Dionysus imagery from Greek art is new evidence. The chapter mentions the Dionysian Gospel broadly but does not detail the purple garment and crown as specific Dionysian art motifs."
+  },
+  {
+    "finding_id": "_rtPgyMcpNo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Matthew's character (lines 1285-1299) including fulfillment formulas. The argument that Matthew constructs Jesus through literary techniques exists. However, Lambert's specific emphasis on Matthew's literary construction of Jesus as a new Moses figure as intentional authorial strategy (rather than merely collecting traditions) is new evidence. The chapter mentions fulfillment formulas but does not develop the 'new Moses' literary construction as a deliberate authorial technique."
+  },
+  {
+    "finding_id": "dzK8v8zM4Ns_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel literary composition and Mark's redactional layers (lines 984-1025). The argument about Greek literary influence on gospels exists. However, the specific parallel between Mark's passion narrative and Homer's Iliad death of Hector—including the distinctive detail of the abandoned body—is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "dzK8v8zM4Ns_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the temple curtain ripping only indirectly. The argument about Greek literary influence on gospel narratives exists. However, the specific parallel between the ripping of the temple curtain (Mark 15:38) and the fall of Troy after Hector's death (suggesting the temple curtain ripping signals the fall of Jerusalem just as Hector's death signals Troy's fall) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "eVzECSMT3Js_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses recognition scenes in John 20 (lines 282-288) and Hellenistic romance patterns. The argument about Greek literary patterns in post-resurrection narratives exists. However, the specific analysis of Luke 24:13-53 (Emmaus Road) as consciously structured using theophany and delayed recognition patterns from Homer is new evidence. The chapter discusses John's recognition scene but not Luke's Emmaus narrative."
+  },
+  {
+    "finding_id": "gwXPrOlLqrI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis briefly in the John context (lines 710-714). The argument about Greek literary imitation exists. However, McDonald's extensive argument for systematic mimesis of Homer and classical texts across all gospel composition (not just John's Dionysian parallels) is new evidence expanding beyond what the chapter covers."
+  },
+  {
+    "finding_id": "h2ra1QU3U8s_2",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses the Eucharist/ritual meal as rooted in Greco-Roman practice: Dionysian feasts centered around wine and bread (lines 705-706), drinking metaphorical blood and body of Dionysus as widespread practice (line 706), Clement of Alexandria comparing Jesus with Dionysus (lines 707-709), Justin Martyr accusing Mithras followers of copying Christian rites (lines 722-723). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "i-9CFW7NsVw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospels positioning Jesus in relation to Greek figures (Dionysian Gospel lines 710-714). The argument about syncrisis/comparison with Greek heroes exists implicitly. However, McDonald's specific demonstration that mimesis allows Mark to establish Jesus as an alternative social identity surpassing Greek heroes (a systematic replacement theology through literary technique) is new evidence providing a methodological framework."
+  },
+  {
+    "finding_id": "iVbjpXOOR2g_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis and syncrisis briefly (Dionysian Gospel context). The argument about Greek literary comparison technique exists. MacDonald's identification of mimesis as a Greek literary technique of syncrisis (comparison) where 'Jesus is superior to Odysseus' as a systematic literary strategy is new evidence. The chapter does not detail the Odysseus comparison specifically."
+  },
+  {
+    "finding_id": "jX29c-TNS2Y_1",
+    "verdict": "covered",
+    "justification": "Chapter 4 discusses the Eucharist's roots in Dionysian mystery practices: 'Dionysian feasts would have been centered around the wine and bread rituals. While drinking metaphorical blood and body of Dionysus would have been a widespread practice' (lines 705-706). Clement of Alexandria comparing Jesus with Dionysus is discussed (lines 707-709). The argument that transubstantiation/eucharistic theology traces to Dionysian practices predating Christianity is covered. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "jjW9BhlDAPk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Luke's literary conventions and trial narratives. The argument about Greek literary models in Luke exists. However, the specific identification that Luke's version of Jesus's trial before Pilate incorporates Socratic trial elements (accusations of corrupting the people, claims of being a teacher, calm philosophical composure) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "nuLs65uWE5U_2",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses John employing Dionysian mystery religion imagery: 'The earliest stratum of John reads as a Dionysian Gospel' (line 710), Jesus as 'the heavenly stranger who gives wine and eternal life' through water-to-wine at Cana (lines 711-712), 'I am the true vine' (line 712), and the Bacchae parallels (line 712). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "o0n2YOad_R4_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses Jesus as a Dionysian character in the earliest Gospel of John (lines 710-714) and mentions Acts parallels to the Bacchae ('imprisoned disciples freed by earthquake in Acts parallel the Bacchae's imprisoned Dionysus,' line 712). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "og1_hubMIEc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel positioning of Jesus using Greek categories (Christos vs Messiah, Logos theology, Dionysian parallels). The argument that Jesus's status was constructed through comparison with Greek figures exists. However, McDonald's specific discussion of syncrisis (comparative rhetoric constructing Jesus's titles and theological status through explicit comparison with Greek figures) as a systematic rhetorical method is new evidence adding methodological precision."
+  },
+  {
+    "finding_id": "og1_hubMIEc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis briefly in the Dionysian Gospel context (lines 710-714). The argument that gospel authors used Greek literary imitation exists. The specific emphasis on mimesis of Homer and Greco-Roman literature as a deliberate compositional strategy for constructing Jesus's identity is new evidence. The chapter treats mimesis as one technique among many rather than as the central literary strategy."
+  },
+  {
+    "finding_id": "og1_hubMIEc_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 contains evidence about Greek literary techniques used in gospels (mimesis, Dionysian parallels, genre conventions). However, the specific argument that mimesis functioned as a sociological mechanism for cultural identity construction and differentiation (not just a literary technique but a tool for defining community boundaries) is a new argument. The chapter treats mimesis as literary technique, not as sociological mechanism."
+  },
+  {
+    "finding_id": "p74uPe5CvjM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Mark's literary features (rugged Greek, coronation narrative structure). The argument that gospel authors engaged with Greek philosophical traditions exists. However, Walsh's specific demonstration that Mark engaged with Cynic philosophy (particularly in terms of Jesus's itinerant teaching, anti-establishment rhetoric) is new evidence. The chapter does not mention Cynic philosophical influence on Mark."
+  },
+  {
+    "finding_id": "p74uPe5CvjM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel genre as Greco-Roman bios (lines 811-816). The argument that gospel authorship should be understood within Greco-Roman literary traditions exists. However, Walsh's specific reference to Greco-Roman biographical traditions including Porphyry's Life of Pythagoras as a direct parallel for gospel compositional technique is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "pKtRbiGMzOk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions Acts parallels to the Bacchae briefly (line 712). The argument that Acts uses Greek literary conventions exists. However, McDonald's specific demonstration that Acts systematically employs synchresis (comparative rhetoric showing Christian characters as superior to Greek philosophical and literary models) is new evidence. The chapter only briefly mentions the Acts-Bacchae parallel."
+  },
+  {
+    "finding_id": "pMf40mX9w_k_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 discusses Mark's opening (lines 1104-1106) as a coronation narrative using euangelion language. The evidence about Mark's opening is present. However, the specific argument that Mark's opening word 'archē' (beginning/origin) explicitly declares the Gospel as a founding myth in the Hellenistic tradition (parallel to how cities had their founding myths starting with archē) is a new argument applied to existing evidence."
+  },
+  {
+    "finding_id": "pMf40mX9w_k_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 does not discuss the Gerasene demoniac narrative. The argument about Greek literary parallels in gospel narratives exists broadly. The specific analysis of the Gerasene demoniac narrative as deploying Homeric parallels to position Jesus as cosmically superior to Odysseus is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "pMf40mX9w_k_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 does not discuss the Gerasene demoniac narrative or differences between Mark and Matthew's versions. The argument about redactional activity between gospels exists. However, Matthew's deliberate removal of distinctive Homeric parallels from the Gerasene demoniac story is new evidence showing redactional preferences regarding Greek literary material."
+  },
+  {
+    "finding_id": "pfifhBXnht8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel literary construction and Hellenistic patterns. The argument about Greek literary influence on gospel narratives exists. However, the specific parallel between Luke's Emmaus narrative and the Romulus resurrection story (transvaluation: copying but inverting the message) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "pmww0L64GIo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses gospel literary construction and mentions mimesis in John. The argument about Greek literary models exists. However, the detailed analysis of the Gethsemane narrative as mimesis of Homer's Odyssey (specifically the Odysseus-Circe scene) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "pmww0L64GIo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 does not discuss the tomb guards narrative or its parallels. The argument about Greek literary influence on gospel narratives exists. However, the identification of the resurrection/tomb narrative as directly mimicking Iliad Book 24 (Hermes putting guards to sleep and opening doors for Priam) is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "rjwTR9R90w4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Luke's Greek historiographical conventions (lines 1349-1392). The argument that Luke uses Greek literary models exists. However, McDonald's specific argument that Luke extensively imitates Homer and classical Greek poetry (not just historiographical conventions but poetic imitation) is new evidence. The chapter focuses on Luke's historical writing style, not poetic imitation of Homer."
+  },
+  {
+    "finding_id": "ysKUelnSpls_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis briefly in the Dionysian Gospel context. The argument about gospel authors using Greek literary parallels exists. However, the specific identification of Mark merging Homer's Odysseus cleansing his father's house with the Jewish temple cleansing tradition is new evidence not present in the chapter."
+  },
+  {
+    "finding_id": "5zZchadJDM0_0",
+    "verdict": "covered",
+    "justification": "Chapter 4 explicitly discusses the earliest stratum of John as a 'Dionysian Gospel' portraying Jesus as a divine donor deity comparable to Dionysus (lines 710-714), notes Clement of Alexandria recognized the Dionysian parallels (lines 707-709), and discusses the Cana miracle, vine discourse, and Bacchae parallels. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "xddZbf6EE7k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 mentions mimesis in the context of John's Dionysian parallels. The argument about Greek literary influence on early Christian sources exists. However, the specific revelation that the Q document (the hypothetical shared source of Matthew and Luke) itself imitates Homer's Odyssey is new evidence. The chapter does not discuss Q at all, let alone its Homeric parallels."
+  },
+  {
+    "finding_id": "F82JssUTYzg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses John's authorship, dating, and community but does not detail the institutional divisions within the Johannine community. The argument that early Christianity had institutional/political dimensions exists. However, the specific tracing of four stages of Johannine community divisions along Christological lines is new evidence about the institutional history of the Johannine school."
+  },
+  {
+    "finding_id": "F0tBHqdI_3s_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the relationship between Paul and the gospels (Paul's high Christology lines 768-772, Philippians hymn lines 1143-1166). The argument about the relationship between Pauline material and gospel narratives exists. However, the specific suggestion that Mark creatively interpreted Paul's language in 1 Corinthians 11 ('the night he was betrayed/handed over') to create the Judas narrative is new evidence about gospel composition methods."
+  },
+  {
+    "finding_id": "GvXDKhP4uck_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 contains evidence about gospels as literary works engaging with Greek traditions. However, MacDonald's specific argument that 'the gospels need to be seen as competitors not collaborators' engaging with Homeric epics and arguing with each other about them is a new argument. The chapter does not frame the gospels as competing with each other specifically over Homeric epic interpretation."
+  },
+  {
+    "finding_id": "B3dz9PY1Y10_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 4 contains evidence about gospels as literary works with genre conventions (bios, lines 811-816). However, the specific argument that gospels should be understood as myths of cultural and political identity (like Virgil's Aeneid) shaped through engagement with Greek literary traditions—rather than as historical accounts—is a new argument. The chapter argues gospels ARE historically reliable, so this finding's framing as myth of origins partly contradicts the chapter's thesis, but the literary engagement evidence exists."
+  },
+  {
+    "finding_id": "OoVnEqNRXGY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Mark's literary features and the coronation narrative structure (lines 1104-1117). The argument that gospel theology was shaped by political considerations exists (baptism as coronation, temptation as royal ordeal). However, the specific evidence that Mark's Passion account was substantially reformulated to present Jesus as politically accommodating to Roman rule and to exonerate Pilate is new evidence about the political shaping of the narrative."
+  },
+  {
+    "finding_id": "PrPoP3e-SAo_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses differences between gospels (Matthew's Jewish focus, Luke's Greek conventions, John's Logos theology). The argument about varying gospel perspectives exists. However, the specific tracking of how social identity markers shifted systematically across compositions—from Q's Jewish focus to Mark's Greco-Roman focus to Matthew's synthesis—is new evidence about the trajectory of gospel development."
+  },
+  {
+    "finding_id": "Rspshd_c7P0_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Mark's literary features and redactional layers (Mark 13, Mark 16). The argument about editorial reshaping of gospel narratives exists. However, Lawson's specific argument that Mark systematically rewrote the Jesus narrative to obscure its political-royal dimensions—denigrating Jesus's family members who led the movement and transforming 'Judah' into 'Judas' as a literary attack—is new evidence about Mark's editorial motives not present in the chapter."
+  },
+  {
+    "finding_id": "Wu2anuMfOJg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses the baptism as a coronation ceremony with Psalm 2:7 (lines 1044-1102) and the Gospel of Hebrews variant 'Today I have begotten you' (lines 1098-1102). The argument about adoption theology at baptism exists. However, Tabor's specific demonstration that this early adoption theology was classified as heresy by fourth-century church fathers is new evidence about the reception history. The chapter notes later manuscripts suppressed the reading (line 1102) but does not specifically discuss the fourth-century heresy classification."
+  },
+  {
+    "finding_id": "nuLs65uWE5U_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses Mark's literary features and the relationship between Jesus's death and the temple destruction. The argument about gospels as political-theological narratives exists. However, MacDonald's specific argument that Luke structures Jesus's death to anticipate the fall of Jerusalem using Homer's Iliad model (where Hector's death anticipates Troy's fall) is new evidence not present in the chapter. The chapter discusses the temple-destruction dating question but not this specific Homeric structural parallel."
+  },
+  {
+    "finding_id": "M9Fa8Ci6rGs_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 discusses scribal modifications (Junia masculinization, Mary/Martha name swaps lines 475-498, Mark 16 ending additions lines 19-22, Mark 13 redaction lines 984-1025). The argument about textual interpolations exists. However, Tabor's specific evidence for identifying the trinitarian formula in Matthew 28 as a later scribal addition is new evidence. The chapter discusses the Great Commission (lines 1203-1213) but does not flag the trinitarian baptismal formula as a potential interpolation."
+  }
+]

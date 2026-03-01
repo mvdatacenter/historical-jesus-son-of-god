@@ -1,0 +1,57 @@
+[
+  {
+    "finding_id": "LrxET9ss0Cg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 covers the celestial birth trope and divine sonship as Hellenistic tradition (lines 620-633), citing Alexander, Augustus, Ptolemies, and Seleucids. The chapter inventory also covers 'Son of God' as Egyptian pharaonic title deriving from 'Son of Ra'. However, the specific parallel of Harpocrates/Horus born on the winter solstice to Isis — 160 years before Sol Invictus — provides new Egyptian divine-birth evidence distinct from what is already in the chapter. The chapter uses Isis in the context of Cleopatra and Ptolemaic queens (lines 680-681) but does not discuss the Harpocrates nativity scene as a parallel to the Gospel birth narrative. This finding adds new Egyptian divine-birth evidence to the existing argument that Jesus's nativity fits Hellenistic celestial-royal tradition."
+  },
+  {
+    "finding_id": "z9gvRY3yQL4_3",
+    "verdict": "wrong_chapter",
+    "justification": "This finding discusses how monogamy became established 'under Greek and Roman influence' among Jews. Chapter 3 is about the titles of Jesus as Greco-Roman royal vocabulary, the Lord's Prayer, the Kingdom of God, and related political theology. Monogamy norms and Greco-Roman domestic customs have no bearing on any argument in chapter 3. The finding was originally marked source_chapter 2 and redirected twice; it remains chapter 2 territory (Hellenistic cultural influence on Jewish family structure)."
+  },
+  {
+    "finding_id": "rXUmjzDH8lw_3",
+    "verdict": "wrong_chapter",
+    "justification": "This finding discusses Herod's Temple Mount as a Greco-Roman architectural statement. Chapter 3 makes no argument about Herodian architecture and has no place for it: the chapter addresses royal titles, the Lord's Prayer, the Kingdom of God, and dynastic succession. The Herodian Temple as evidence of Greco-Roman cultural integration belongs in chapter 2 (royal standing of Jesus, Herodian court context) or chapter 4 (reliability of Gospel sources describing Temple events). After two redirections, it still has no fit in chapter 3."
+  },
+  {
+    "finding_id": "sytOWPtlDAs_3",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Chapter 3 covers the title 'Son of Man' implicitly but does not discuss it as a named title in the inventory — the chapter's Titles section addresses Son of God, Son of Father, Logos, Good Shepherd, Savior, Kyrios, Lamb of God, etc. The 'Son of Man sitting on the throne of his glory' concept drawn from the Similitudes of Enoch and reproduced in Matthew 19:28 is a new argument: it shows that the throne/judgment-seat imagery for Jesus was borrowed from a pre-existing Greco-Jewish apocalyptic concept rather than being a Christian invention. This argument (early Christians drew on pre-existing royal throne theology) fits chapter 3's thesis about titles as pre-existing political vocabulary. The evidence (Matthew 19:28) is already in the New Testament corpus the chapter draws on; the argument linking it to the Similitudes and demonstrating non-Christian origin is new."
+  },
+  {
+    "finding_id": "SxpF2juPQd8_0",
+    "verdict": "not_relevant",
+    "justification": "Global Q&A explicitly rejects the mystery cult framing: 'We reject the mystery cult framing. Christianity was not a mystery cult — it was a continuation of the old imperial cult operating under foreign rule.' This finding frames Dionysian dismemberment/resurrection parallels and Eleusinian Mysteries' ritual consumption as direct antecedents to Christian resurrection theology and the Eucharist — that is precisely the mystery cult interpretation the book rejects. Chapter 3 does not cover the Eucharist or resurrection theology. Even setting aside the framing problem, the data (Greek mystery religion parallels to resurrection/Eucharist) does not bear on chapter 3's arguments about royal titles and political theology."
+  },
+  {
+    "finding_id": "_XPbTqpdqAw_2",
+    "verdict": "not_relevant",
+    "justification": "The Naassene sect's repurposing of an Attis hymn for Jesus is fringe Christian sectarian data. Global Q&A rejects mystery cult framing and instructs to extract institutional data while discarding mystery cult conclusions. The Naassenes are not an institutional parallel — they are a gnostic fringe group grafting dying-and-rising god language onto Jesus. Chapter 3 does not cover Naassene or Gnostic Christology, and this finding cannot be reframed into the chapter's arguments about royal political titles without major distortion. After two redirections, it has no productive fit in chapter 3."
+  },
+  {
+    "finding_id": "gZRZShUeclw_0",
+    "verdict": "covered",
+    "justification": "Chapter 3 already covers: Augustus as divi filius (lines 33-34), Julius Caesar's death/deification as celestial sign (lines 624-625), star-soul ascent tradition in the context of the nativity star (lines 620-633), and 'Son of God' as Hellenistic political title tied to divine elevation and power transfer (inventory sections: 'Jesus is the Son of God', lines 465-474; 'Jesus' birth represented as a new star', lines 620-633). The finding's core argument — that 'Son of God' was conferred through divine elevation and political succession, exemplified by Augustus becoming son of god after Caesar's deification — is fully covered. The Antinous detail in the quote is a minor addition but the argument it supports is already made."
+  },
+  {
+    "finding_id": "vBFikbS3_Wg_0",
+    "verdict": "covered",
+    "justification": "Chapter 3 explicitly covers Philo of Alexandria's Logos theology and its influence on Christian Christology in the section 'Jesus is the Logos' (lines 486-504, inventory). The chapter states: 'Philo of Alexandria had already developed a theology of the Logos before the New Testament was written' (line 108), 'Philo described the Logos as the firstborn son of God' (line 500), and 'The Logos in John's Gospel mirrors Philo's development of the concept so closely that the author clearly moved in the same intellectual world' (lines 502-503). The finding's argument that Philo's pre-Christian 'Son of God,' Logos, and trinitarian concepts in Hellenized Judaism shaped Christian theology is already the chapter's argument."
+  },
+  {
+    "finding_id": "wsXgyn36mO8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 covers Philo's Logos as 'firstborn son of God' and the Greek philosophical background (lines 486-504). However, the specific trinitarian dimension — 'a god being of nature of three, the logos being the divine air of all things' — is not explicitly stated in chapter 3's Logos section. The chapter says 'Logos as principle of order and knowledge' (Heraclitus), 'rational cosmic principle' (Stoics), and 'firstborn son of God' (Philo), but does not discuss Philo's proto-trinitarian theology as a distinct element. This finding adds new evidence (the trinitarian structure in Philo's pre-Christian thought) to the existing argument that Greek philosophical frameworks shaped Christian Christology."
+  },
+  {
+    "finding_id": "zADpsFCyhY0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 covers Philo's Logos and Greek philosophical antecedents to Christology (lines 486-504), citing Heraclitus and Stoic Logos, and Philo's 'firstborn son of God.' The argument that Greek philosophical frameworks produced the intellectual vocabulary for Christian theology is the chapter's own argument. However, the specific evidence from Plato's Timaeus — 'there has to be some bond to mediate between the two of them' as proto-trinitarian structure — does not appear in the chapter. Plato's Timaeus as a source of the mediating-bond concept (the third principle between a God of dual nature) is new textual evidence for the existing argument about Greek philosophical antecedents to Christian Logos/trinitarian Christology."
+  },
+  {
+    "finding_id": "yhhsObl8fsQ_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 covers the general pattern of Hellenistic divine kingship and human deification: Alexander, Ptolemies, Seleucids, Augustus. It argues that 'Son of God' was a political title for actual historical rulers who received divine status. However, Antinous (2nd century CE) — a real, non-royal private person deified after death, clothed as Osiris, with a mystery cult where initiates could become immortalized — provides a concrete post-NT historical case of individual human deification in the Greco-Roman world that is not in the chapter. This new evidence reinforces the existing argument that divine elevation of actual historical persons was a normal Greco-Roman practice, not a unique Christian theological claim."
+  }
+]
