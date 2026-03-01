@@ -584,7 +584,13 @@ STEP2_RULES = [
         "decision to exclude it. Subjective judgments — 'too extreme,' 'would "
         "weaken credibility,' 'too thin,' 'contradicts consensus' — are not "
         "valid SKIP reasons. If a finding serves any argument the book makes "
-        "and has not been rejected in Q&A, the verdict is EMBED or RESEARCH."
+        "and has not been rejected in Q&A, the verdict is EMBED or RESEARCH. "
+        "CRITICAL: a finding's DATA matters even if the author's CONCLUSION "
+        "is wrong. A speaker who says 'Christianity was a mystery cult void "
+        "of Judaism' may be wrong about 'void of Judaism' but the mystery "
+        "cult parallels they cite are still valuable data. Extract the data, "
+        "ignore the conclusion. Never SKIP a finding because the source draws "
+        "a wrong conclusion from good evidence."
     ),
 ]
 
