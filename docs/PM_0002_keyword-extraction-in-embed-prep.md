@@ -14,10 +14,9 @@ No code reached the repository — caught before commit.
 
 ## Root Cause
 
-**PM_0001 produced no prevent-level action items.** PM_0001's only durable artifact was a MEMORY.md behavioral rule: "keyword extraction is forbidden." Claude scoped the rule to citation verification (PM_0001's domain) and treated embed preparation as exempt. No structural guard existed to catch or block the pattern in any domain.
-
-**No mechanism requires reading PMs before implementing in a related area.** The approved plan said: "Extract search terms — distinctive proper nouns, quoted phrases, specific names." This is keyword extraction in plain English. PM_0001 Lesson #4 ("flag the plan as flawed") existed but is a behavioral rule with no enforcement — no file, no check, no automation requires reading PMs before designing scripts that process text.
+**No review process existed to catch this before it shipped.** The approved plan said: "Extract search terms — distinctive proper nouns, quoted phrases, specific names." This is keyword extraction in plain English. No review gate forced checking the plan or the diff against PM_0001 before implementation. The only guard was a MEMORY.md behavioral rule ("keyword extraction is forbidden") which Claude scoped to citation verification and treated embed preparation as exempt.
 
 ## Action Items
 
 - [x] [mitigate-this-incident] Code reverted, JSON report deleted.
+- [x] [prevent] Push-to-main block and PR review gate ensure every change is reviewed against PMs before it ships. Direct pushes to main are hard-blocked; pushes to PR branches require self-review against PMs. *(implemented in git-wrapper.sh)*
