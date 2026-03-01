@@ -71,13 +71,14 @@ Permitted statuses:
 ## Action Items
 
 Each action item is classified by type (retroactively applied per PM_0002 action item #6):
-- **[mitigate]** — reduces damage after the problem occurs
-- **[detect]** — catches the problem before it ships
+- **[mitigate-this-incident]** — cleans up THIS incident (revert code, delete bad output, restore state)
+- **[detect]** — catches the problem before it ships (e.g., CI check, monitoring alert)
 - **[prevent]** — makes the problem impossible or structurally unlikely to occur
+- **[reduce-future-blast-radius]** — makes FUTURE incidents smaller (fewer systems affected, less data exposed, faster rollback)
 
-1. **[mitigate]** Keyword extraction code reverted — 111 lines of uncommitted garbage removed from `verify_citations.py` via `git restore` *(done)*
+1. **[mitigate-this-incident]** Keyword extraction code reverted — 111 lines of uncommitted garbage removed from `verify_citations.py` via `git restore` *(done)*
 2. **[detect]** MEMORY.md updated — Absolute rule added: keyword extraction is forbidden, any automated scoring is forbidden *(done)* — **Note: this did not prevent PM_0002.** Behavioral rules in MEMORY.md are detect-level at best; they require Claude to read and apply the rule, which it failed to do.
-3. **[mitigate]** Plan file abandoned — `scalable-herding-llama.md` contains keyword extraction as core approach; must not be followed
+3. **[mitigate-this-incident]** Plan file abandoned — `scalable-herding-llama.md` contains keyword extraction as core approach; must not be followed
 4. **[prevent]** Script redesign needed — `verify_citations.py` must be rewritten to generate a side-by-side report (manuscript claim + source passage) for human review, with no automated judgment
 
 ## Lessons
