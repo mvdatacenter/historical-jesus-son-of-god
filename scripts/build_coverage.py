@@ -639,6 +639,18 @@ ANTI_PATTERN_RULES = [
         "must argue it is 'implied by' or 'a variant of' an existing item, it "
         "is NOT covered."
     ),
+    (
+        "NEW_ARGUMENT verdict: a finding is new_argument when the ARGUMENT "
+        "(the conclusion drawn from the evidence) does not appear in any "
+        "chapter inventory. Evidence overlap does not matter. A finding that "
+        "uses the same inscription, the same verse, or the same source the "
+        "book already cites but draws a DIFFERENT conclusion is new_argument, "
+        "not covered and not new_evidence. new_evidence means 'the chapter "
+        "makes this argument but uses different evidence.' new_argument means "
+        "'the chapter does not make this argument, regardless of evidence "
+        "overlap.' Do not downgrade a novel argument to new_evidence or "
+        "covered just because the underlying evidence appears in the book."
+    ),
 ]
 
 
