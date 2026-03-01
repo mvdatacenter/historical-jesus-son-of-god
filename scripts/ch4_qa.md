@@ -20,6 +20,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## 15 Female Authorship Tests (ChatGPT 2025-11-29, Turn 2)
 
+See `scripts/global_qa.md` — "Johannine female authorship" for the book-wide decision.
+
 **Query:** Deep-structure, intertextual, philological, and classical-literary arguments for female authorship
 
 ### I. FEMALE AUTHORSHIP FROM ANCIENT LITERARY COMPARISON

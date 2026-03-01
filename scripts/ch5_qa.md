@@ -10,6 +10,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## Ecclesia Sections Review (2025-11-23)
 
+See `scripts/global_qa.md` — "Ecclesia = existing civic assemblies" for the book-wide decision.
+
 **Query:** Review of expanded ecclesia sections arguing Paul's epistles address Greek civic assemblies
 
 ### ChatGPT Review - Key Findings (filtered for hard evidence):
@@ -325,6 +327,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## The Carthage Gap - Devastating Timeline Evidence (ChatGPT Response - 2025-11-24)
 
+See `scripts/global_qa.md` — "Carthage gap and Western silence" for the book-wide decision.
+
 **Query:** Request to harden the "implausible" timeline statement with geographic evidence
 
 ### THE CARTHAGE GAP (DEFINITIVE EVIDENCE):
@@ -371,6 +375,8 @@ If Christianity spread through missionary preaching, we should see:
 ---
 
 ## Early 2nd Century Christian Writings - Complete Western Silence (ChatGPT Response - 2025-11-24)
+
+See `scripts/global_qa.md` — "Carthage gap and Western silence" for the book-wide decision.
 
 **Query:** Evidence that early Christian writings show no awareness of Western churches
 
@@ -514,6 +520,8 @@ If Christianity spread through missionary preaching, we should see:
 
 ## Ecclesia Existed BEFORE Jesus - Apostles Converted Existing Assemblies (ADDED to chapter)
 
+See `scripts/global_qa.md` — "Ecclesia = existing civic assemblies" for the book-wide decision.
+
 ### Core thesis (refined framing):
 
 **PART 1: The ecclesia structure (today's Mass) existed during/before Jesus's lifetime**
@@ -593,6 +601,8 @@ Papyri showing churches as corporate actors:
 ---
 
 ## Gospel Localization - Puzzles Solved by Regional Placement (2025-12-04)
+
+See `scripts/global_qa.md` — "Gospel localization (regional products)" for the book-wide decision.
 
 **Query:** What long-standing mysteries in the gospels resolve themselves when each gospel is treated as a regional product?
 

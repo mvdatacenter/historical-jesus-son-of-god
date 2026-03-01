@@ -10,6 +10,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## "Brother vs Brother" as Rebellion Language (ADDED to chapter)
 
+See `scripts/global_qa.md` — "Apocalyptic language = rebellion language" for the book-wide decision.
+
 ### Summary from ChatGPT discussion
 
 **Core argument:** The "brother will betray brother to death, father against son" sayings read as political rebellion/civil conflict language under Rome, not apocalyptic cosmic prophecy.

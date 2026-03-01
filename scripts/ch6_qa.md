@@ -10,6 +10,8 @@ This file tracks questions and doubts raised during fact-checking, for user revi
 
 ## The Eastern Mediterranean Synthesis - 300 Years of Shared Identity (ADDED to chapter)
 
+See `scripts/global_qa.md` — "Eastern Mediterranean synthesis" for the book-wide decision.
+
 ### Core argument:
 
 By 70 CE the assemblies that followed Jesus were not fragile prayer groups clinging to a single shrine in Jerusalem. They were the civic assemblies of the Eastern Mediterranean oikoumene, anchored in Corinth, Ephesus, Antioch, Alexandria, Philippi, Thessalonica, drawing on a shared memory that ran from Abraham and Moses to Homer and Plato.
