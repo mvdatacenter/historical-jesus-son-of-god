@@ -677,9 +677,6 @@ STEP1_SURVIVORS = (
     "new_argument_existing_evidence",
     "new_evidence_and_argument",
     "contradicts",
-    # Legacy verdict names
-    "new_argument",
-    "new_evidence",
 )
 
 
@@ -687,9 +684,8 @@ def _load_findings_from_verdicts(ch: int) -> list[dict]:
     """Load surviving findings from Step 1 verdicts.
 
     Checks v2 verdicts first (current pipeline), falls back to
-    validation_verdicts (legacy). Survivors: new_evidence_existing_argument,
-    new_argument_existing_evidence, new_evidence_and_argument, contradicts
-    (plus legacy "new_argument" and "new_evidence").
+    validation_verdicts. Survivors: new_evidence_existing_argument,
+    new_argument_existing_evidence, new_evidence_and_argument, contradicts.
     """
     verdicts = _load_v2_verdicts(ch)
     if not verdicts:
