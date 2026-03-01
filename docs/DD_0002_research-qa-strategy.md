@@ -63,11 +63,28 @@ Not: "Does this chapter mention the same keywords as the finding?" A finding abo
 
 **Question:** Does this finding genuinely add value when placed in the book?
 
-**Q&A check.** Before attempting to embed a finding, read the relevant `scripts/chN_qa.md`. A finding may have already been rejected for a specific reason, or the claim may already have been verified through a different path. The book does not need to address every counterargument to every criticism — if Q&A records show a deliberate decision to exclude something, respect it.
+**Context injection.** The embed tool (`build_coverage.py --embed-prep`) assembles a structured context package for each surviving finding. The AI does not need to remember to load context or read rules — the tool delivers everything at the point of decision.
 
-**Cross-chapter check.** Before writing any text into a chapter, grep all chapter files for the topic. If the book already addresses this topic elsewhere, read that section. If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override by writing a competing version.
+Each context package contains:
 
-If another chapter already contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated in a second location. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+1. **The finding** — full text and verdict from Step 1.
+2. **Anti-pattern rules** — injected verbatim into the package:
+   - Keyword extraction is forbidden in any form: extracting words from text A, searching for them in text B, and drawing any conclusion from matches. See PM-0001, PM-0002.
+   - Scripts present information for human review. Scripts never assign verdicts based on mechanical text matching.
+   - No automated status assignment (CLEAR, FLAGGED, NEEDS_REVIEW, KEEP, SKIP) based on text matching.
+3. **Q&A history** — the full `scripts/chN_qa.md` for the target chapter, so the AI sees what was already researched, rejected, or flagged without needing to remember to load it.
+4. **Target chapter text** — the full chapter, so the AI reads the actual text rather than relying on memory or summaries.
+5. **Cross-chapter hits** — sections from other chapters that address the same topic, identified by the tool scanning all chapter files. Included so the AI can see whether a deeper treatment already exists elsewhere.
+
+The tool assembles and presents. The AI reads all five inputs and reasons about the embedding decision. The tool does not score, classify, or pre-filter — it delivers context.
+
+This is the prevent for PM-0002: the anti-pattern rules arrive in the AI's working context as part of the tool's output, not from the AI's memory. The AI cannot skip reading them because they are part of the input it processes.
+
+**Q&A check.** The Q&A file is already in the context package. If it records a deliberate decision to exclude something, respect it. The book does not need to address every counterargument to every criticism.
+
+**Cross-chapter check.** The cross-chapter hits are already in the context package. If another chapter contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+
+If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override.
 
 **Section-fit check.** Before inserting text into a specific section, verify two things: (1) the new text does not contradict the chapter's own thesis, and (2) the new text serves the argument of the section it is placed in. A finding about authorship attribution does not belong in a section arguing about dating, even if both are in the same chapter. If the text doesn't serve the section's argument, find the section it does serve — or create one.
 
@@ -107,7 +124,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 
 ## Forbidden Approaches
 
-- **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
+- **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md` and `docs/PM_0002_keyword-extraction-in-embed-prep.md`. Step 2's context injection design is the structural prevent for this failure class.
 - **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
 - **Keyword chasing** for `wrong_chapter` verdicts. The evaluator must ask "does this finding strengthen any argument this chapter makes?" — not "does this chapter mention the same keywords as the finding?" A finding about Dionysian body-and-blood rituals belongs in the chapter arguing Christian liturgy inherited Greek religious practices, even if that chapter never mentions "Dionysus." A finding about Seleucid institutions belongs in the chapter arguing Greek institutional infrastructure predated Christianity, even if the finding's own framing says "precedent for Paul." Route by argument, not by keyword.
 - **Sub-frontier models** for step 1. They silently degrade to topic-matching.
@@ -121,9 +138,10 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
 | Coverage + relevance verdicts (review UI) | `sources/extraction_review.html` |
 | Coverage inventory generator | `scripts/build_coverage.py` |
+| Embed context package generator | `scripts/build_coverage.py --embed-prep` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
 | Per-chapter research Q&A | `scripts/chN_qa.md` |
 | Open research questions | `scripts/research_gaps.md` |
 | Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
-| Keyword extraction post-mortem | `docs/PM_0001_keyword-extraction-fake-verification.md` |
+| Keyword extraction post-mortems | `docs/PM_0001_keyword-extraction-fake-verification.md`, `docs/PM_0002_keyword-extraction-in-embed-prep.md` |
