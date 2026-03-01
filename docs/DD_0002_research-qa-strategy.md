@@ -13,7 +13,9 @@ Alexandria findings and the book cover the same domain. Topic-level filtering ("
 
 Three steps.
 
-**Q&A files** (`scripts/chN_qa.md`) record what was already researched — decisions, rejections, and feedback that is not in the book. All steps must consult them before making decisions; without them the LLM will repeatedly resurface the same arguments.
+**Global Q&A** (`scripts/global_qa.md`) records book-wide interpretive decisions that apply across all chapters (e.g., "mystery cult findings are reframed as imperial cult under foreign rule"). All pipeline steps consult global Q&A before per-chapter Q&A.
+
+**Per-chapter Q&A** (`scripts/chN_qa.md`) records chapter-specific decisions, rejections, and feedback. All steps must consult both global and chapter Q&A before making decisions; without them the LLM will repeatedly resurface the same arguments.
 
 **Research gaps** (`scripts/research_gaps.md`) is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
@@ -182,6 +184,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | Step 2 embed context generator | `scripts/build_coverage.py --embed-prep` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
+| Global Q&A (book-wide decisions) | `scripts/global_qa.md` |
 | Per-chapter research Q&A | `scripts/chN_qa.md` |
 | Open research questions | `scripts/research_gaps.md` |
 | Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |

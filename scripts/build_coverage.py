@@ -173,12 +173,21 @@ def cmd_batches(args):
             print(f"Ch{ch}: WARNING — no inventory found, skipping")
             continue
 
-        # Context: chapter text + Q&A + cross-chapter inventories (shared across batches)
+        # Context: chapter text + Q&A (global + chapter) + cross-chapter inventories
         chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
         chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
 
+        global_qa_path = PROJECT_ROOT / "scripts" / "global_qa.md"
+        global_qa = global_qa_path.read_text() if global_qa_path.exists() else ""
         qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
-        qa_text = qa_path.read_text() if qa_path.exists() else ""
+        chapter_qa = qa_path.read_text() if qa_path.exists() else ""
+        qa_text = ""
+        if global_qa:
+            qa_text += "=== GLOBAL Q&A (applies to all chapters) ===\n\n" + global_qa
+        if chapter_qa:
+            if qa_text:
+                qa_text += "\n\n"
+            qa_text += f"=== CHAPTER {ch} Q&A ===\n\n" + chapter_qa
 
         cross_chapter = {}
         for other_ch in range(1, 7):
@@ -729,12 +738,23 @@ def _build_chapter_context(ch: int, findings: list[dict]) -> dict:
     """Build a Step 2 context package for one chapter.
 
     Includes everything the evaluator needs: findings, chapter text,
-    chapter inventory, Q&A, cross-chapter inventories, anti-pattern
-    rules, and Step 2 verdict rules. The evaluator does not need to
-    load anything separately.
+    chapter inventory, Q&A (global + chapter), cross-chapter inventories,
+    anti-pattern rules, and Step 2 verdict rules. The evaluator does not
+    need to load anything separately.
     """
+    global_qa_path = PROJECT_ROOT / "scripts" / "global_qa.md"
+    global_qa = global_qa_path.read_text() if global_qa_path.exists() else ""
+
     qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
-    qa_text = qa_path.read_text() if qa_path.exists() else ""
+    chapter_qa = qa_path.read_text() if qa_path.exists() else ""
+
+    qa_text = ""
+    if global_qa:
+        qa_text += "=== GLOBAL Q&A (applies to all chapters) ===\n\n" + global_qa
+    if chapter_qa:
+        if qa_text:
+            qa_text += "\n\n"
+        qa_text += f"=== CHAPTER {ch} Q&A ===\n\n" + chapter_qa
 
     chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
     chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
