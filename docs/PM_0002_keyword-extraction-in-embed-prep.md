@@ -22,4 +22,3 @@ No code reached the repository — caught before commit.
 
 - [x] [mitigate-this-incident] Code reverted, JSON report deleted.
 - [x] [prevent] Require prevent-level action items in all PMs. *(classification standard added to org.md and REVIEW_org.md)*
-- [ ] [prevent] Add keyword-extraction pattern guard to `git-wrapper.sh` — scan staged `.py` files for indicators of mechanical-text-matching-as-judgment and block with a pointer to PM_0001/PM_0002. Filed as [#86](https://github.com/mvdatacenter/historical-jesus-son-of-god/issues/86).
