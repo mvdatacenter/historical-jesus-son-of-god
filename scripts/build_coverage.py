@@ -1,22 +1,18 @@
 #!/usr/bin/env python3
 """
-build_coverage.py — DD-0002 Step 1 batch preparation and verdict management.
+build_coverage.py — DD-0002 pipeline: Step 1 verdicts + Step 2 embed context.
 
-Manages the full-scale coverage evaluation pipeline:
-1. Parses all Alexandria extraction findings
-2. Groups findings by chapter
-3. Excludes already-evaluated findings
-4. Generates evaluation batches for agent processing
-5. Merges agent verdicts into per-chapter verdict files
-
-Usage:
+Step 1 (verdict management):
     python scripts/build_coverage.py --status               # Pipeline status
     python scripts/build_coverage.py --batches               # Generate all batches
     python scripts/build_coverage.py --batches --chapter 3    # Ch3 batches only
     python scripts/build_coverage.py --merge FILE --chapter 3 # Merge verdicts
     python scripts/build_coverage.py --normalize              # Normalize formats
-    python scripts/build_coverage.py --redistribute           # Redistribute wrong_chapter (round 1)
-    python scripts/build_coverage.py --redistribute --round 2 # Round 2+ redistribution
+    python scripts/build_coverage.py --redistribute           # Redistribute wrong_chapter
+    python scripts/build_coverage.py --redistribute --round 2 # Round 2+
+
+Step 2 (embed context assembly):
+    python scripts/build_coverage.py --embed-prep --chapter 4 # Step 2 context packages
 """
 
 import argparse
@@ -32,7 +28,7 @@ SOURCES_DIR = PROJECT_ROOT / "sources"
 YOUTUBE_DIR = SOURCES_DIR / "youtube"
 COVERAGE_DIR = SOURCES_DIR / "coverage"
 
-BATCH_SIZE = 15  # findings per evaluation batch
+BATCH_SIZE = 250  # findings per batch — see DD-0002 for calculation
 
 # Import the existing extraction parser
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -141,7 +137,12 @@ def cmd_status(args):
 
 
 def cmd_batches(args):
-    """Generate evaluation batches."""
+    """Generate self-contained evaluation batches.
+
+    Each batch includes: findings, chapter inventory, full chapter text,
+    cross-chapter inventories, and anti-pattern rules. The evaluating
+    agent does not need to load anything separately.
+    """
     by_chapter = get_all_findings_by_chapter()
     chapters = [args.chapter] if args.chapter else sorted(ch for ch in by_chapter if ch > 0)
 
@@ -157,19 +158,35 @@ def cmd_batches(args):
             print(f"Ch{ch}: No findings")
             continue
 
-        # Load existing verdicts to exclude
-        existing = load_verdicts(ch)
-        unevaluated = [f for f in findings if f.finding_id not in existing]
+        if args.force:
+            unevaluated = findings
+        else:
+            existing = load_verdicts(ch)
+            unevaluated = [f for f in findings if f.finding_id not in existing]
 
         if not unevaluated:
             print(f"Ch{ch}: All {len(findings)} findings already evaluated")
             continue
 
-        # Load inventory
         inventory = load_inventory(ch)
         if not inventory:
             print(f"Ch{ch}: WARNING — no inventory found, skipping")
             continue
+
+        # Context: chapter text + Q&A + cross-chapter inventories (shared across batches)
+        chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
+        chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
+
+        qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
+        qa_text = qa_path.read_text() if qa_path.exists() else ""
+
+        cross_chapter = {}
+        for other_ch in range(1, 7):
+            if other_ch == ch:
+                continue
+            inv = load_inventory(other_ch)
+            if inv:
+                cross_chapter[f"chapter_{other_ch}"] = inv
 
         # Generate batches
         ch_batches = []
@@ -179,6 +196,7 @@ def cmd_batches(args):
                 "chapter": ch,
                 "batch_index": len(ch_batches),
                 "total_batches_for_chapter": -1,  # filled below
+                "anti_pattern_rules": ANTI_PATTERN_RULES,
                 "findings": [
                     {
                         "finding_id": f.finding_id,
@@ -190,14 +208,16 @@ def cmd_batches(args):
                     }
                     for f in batch_findings
                 ],
+                "chapter_inventory": inventory,
+                "chapter_text": chapter_text,
+                "qa_history": qa_text,
+                "cross_chapter_inventories": cross_chapter,
             }
             ch_batches.append(batch)
 
-        # Fill total count
         for b in ch_batches:
             b["total_batches_for_chapter"] = len(ch_batches)
 
-        # Write batch files
         for b in ch_batches:
             batch_path = batches_dir / f"ch{ch}_batch_{b['batch_index']:03d}.json"
             batch_path.write_text(json.dumps(b, indent=2, ensure_ascii=False))
@@ -498,9 +518,221 @@ def cmd_redistribute(args):
     return 0
 
 
+ANTI_PATTERN_RULES = [
+    (
+        "Keyword extraction is forbidden in any form: extracting words from "
+        "text A, searching for them in text B, and drawing any conclusion "
+        "from matches. See PM-0001, PM-0002."
+    ),
+    (
+        "Scripts present information for human review. Scripts never assign "
+        "verdicts based on mechanical text matching."
+    ),
+    (
+        "No automated status assignment (CLEAR, FLAGGED, NEEDS_REVIEW, KEEP, "
+        "SKIP) based on text matching."
+    ),
+    (
+        "COVERED verdict anti-patterns — three forbidden shortcuts: "
+        "(1) Topic-level match: 'book argues X, finding argues X, therefore "
+        "covered' is WRONG. Must name the specific evidence the finding brings "
+        "AND where the book already presents that same specific evidence. "
+        "(2) 'Same argument' without evidence comparison: 'ch1 makes this exact "
+        "argument' is not enough. Does the book already present this specific "
+        "scholar's framing, this specific quote, this specific example? If any "
+        "of these are new, verdict is new_evidence, not covered. "
+        "(3) Implicit coverage: 'the concept is implicit in the framework' or "
+        "'this is a variant of what is covered' means the book does NOT state it "
+        "— therefore NOT covered. Any of these make it new_evidence: a named "
+        "concept the book doesn't use, a specific mechanism the book doesn't "
+        "describe, a new scope claim, or a new specific source text (e.g., book "
+        "has Mark-Homer mimesis but finding has Mark-Aeneid — different source, "
+        "not a variant). Test: does the inventory list this exact item? If you "
+        "must argue it is 'implied by' or 'a variant of' an existing item, it "
+        "is NOT covered."
+    ),
+]
+
+
+def _load_v2_verdicts(ch: int) -> dict:
+    """Load v2 verdicts (list format from Step 1 re-run). Returns {finding_id: entry}."""
+    path = COVERAGE_DIR / f"ch{ch}_verdicts_v2.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text())
+    result = {}
+    if isinstance(data, list):
+        for entry in data:
+            fid = entry.get("finding_id", "")
+            if fid:
+                result[fid] = entry
+    return result
+
+
+STEP1_SURVIVORS = ("new_argument", "new_evidence", "contradicts")
+
+
+def _load_findings_from_verdicts(ch: int) -> list[dict]:
+    """Load surviving findings from Step 1 verdicts.
+
+    Checks v2 verdicts first (current pipeline), falls back to
+    validation_verdicts (legacy). Survivors: new_argument, new_evidence,
+    contradicts.
+    """
+    verdicts = _load_v2_verdicts(ch)
+    if not verdicts:
+        verdicts = load_verdicts(ch)
+        verdicts = {fid: v for fid, v in verdicts.items()}
+
+    survivors = [
+        v for v in verdicts.values()
+        if v.get("verdict") in STEP1_SURVIVORS
+    ]
+
+    # Enrich with content from extraction files
+    all_findings = parse_all_extractions()
+    content_by_id = {f.finding_id: f for f in all_findings}
+
+    for fallback_name in ("all_new_arguments.json", "alexandria_reextraction.json"):
+        fallback_path = COVERAGE_DIR / fallback_name
+        if not fallback_path.exists():
+            continue
+        for entry in json.loads(fallback_path.read_text()):
+            fid = entry.get("finding_id", "")
+            if not fid or fid in content_by_id:
+                continue
+            content_by_id[fid] = type("Finding", (), {
+                "finding_id": fid,
+                "description": entry.get("text", ""),
+                "quote": entry.get("quote", ""),
+                "video_title": entry.get("video_title", ""),
+                "channel": entry.get("channel", ""),
+            })()
+
+    packages = []
+    for v in sorted(survivors, key=lambda x: x.get("finding_id", "")):
+        fid = v.get("finding_id", "")
+        content = content_by_id.get(fid)
+        packages.append({
+            "finding_id": fid,
+            "step1_verdict": v.get("verdict", ""),
+            "step1_justification": v.get("justification", ""),
+            "text": content.description if content else "",
+            "quote": getattr(content, "quote", ""),
+            "source": (
+                getattr(content, "video_title", "")
+                or getattr(content, "channel", "")
+            ),
+        })
+    return packages
+
+
+def _load_findings_from_batch(batch_path: Path) -> dict[int, list[dict]]:
+    """Load findings from a batch file, grouped by chapter."""
+    data = json.loads(batch_path.read_text())
+    by_chapter = defaultdict(list)
+    for entry in data:
+        ch = entry.get("chapter")
+        if not ch:
+            continue
+        by_chapter[ch].append({
+            "finding_id": entry.get("finding_id", ""),
+            "step1_verdict": "batch",
+            "step1_justification": entry.get("justification", ""),
+            "text": entry.get("text", ""),
+            "quote": entry.get("quote", ""),
+            "source": entry.get("source", ""),
+        })
+    return dict(by_chapter)
+
+
+def _build_chapter_context(ch: int, findings: list[dict]) -> dict:
+    """Build a context package for one chapter."""
+    qa_path = PROJECT_ROOT / "scripts" / f"ch{ch}_qa.md"
+    qa_text = qa_path.read_text() if qa_path.exists() else ""
+
+    chapter_path = PROJECT_ROOT / f"chapter{ch}.tex"
+    chapter_text = chapter_path.read_text() if chapter_path.exists() else ""
+
+    cross_chapter = {}
+    for other_ch in range(1, 7):
+        if other_ch == ch:
+            continue
+        inv = load_inventory(other_ch)
+        if inv:
+            cross_chapter[f"chapter_{other_ch}"] = inv
+
+    return {
+        "chapter": ch,
+        "anti_pattern_rules": ANTI_PATTERN_RULES,
+        "findings": findings,
+        "qa_history": qa_text,
+        "chapter_text": chapter_text,
+        "cross_chapter_inventories": cross_chapter,
+    }
+
+
+def cmd_embed_prep(args):
+    """Assemble Step 2 embed context packages.
+
+    Two modes:
+      --embed-prep --chapter N           Survivors from Step 1 verdicts
+      --embed-prep --batch FILE          Findings from a batch file
+
+    Each context package contains: findings, anti-pattern rules, Q&A
+    history, full chapter text, and cross-chapter inventories.
+
+    The tool assembles and presents. It does not score, classify, or
+    pre-filter. See DD-0002 Step 2 spec.
+    """
+    out_dir = COVERAGE_DIR / "embed_prep"
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    if args.batch:
+        batch_path = Path(args.batch)
+        if not batch_path.exists():
+            print(f"ERROR: {batch_path} not found", file=sys.stderr)
+            return 1
+        by_chapter = _load_findings_from_batch(batch_path)
+        chapters = sorted(by_chapter.keys())
+    elif args.chapter:
+        findings = _load_findings_from_verdicts(args.chapter)
+        if not findings:
+            print(f"Ch{args.chapter}: No surviving findings for embedding")
+            return 0
+        by_chapter = {args.chapter: findings}
+        chapters = [args.chapter]
+    else:
+        # All chapters
+        by_chapter = {}
+        for ch in range(1, 7):
+            findings = _load_findings_from_verdicts(ch)
+            if findings:
+                by_chapter[ch] = findings
+        chapters = sorted(by_chapter.keys())
+        if not chapters:
+            print("No surviving findings in any chapter")
+            return 0
+
+    for ch in chapters:
+        findings = by_chapter[ch]
+        output = _build_chapter_context(ch, findings)
+        out_path = out_dir / f"ch{ch}_embed_context.json"
+        out_path.write_text(json.dumps(output, indent=2, ensure_ascii=False))
+
+        print(f"Ch{ch}: {len(findings)} findings → {out_path}")
+        for p in findings:
+            print(f"  {p['finding_id']:30s}  {p['step1_verdict']:15s}  "
+                  f"{p['text'][:60]}...")
+
+    total = sum(len(by_chapter[ch]) for ch in chapters)
+    print(f"\nTotal: {total} findings across {len(chapters)} chapters")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
-        description="DD-0002 Step 1 coverage pipeline management"
+        description="DD-0002 coverage pipeline (Step 1 verdicts + Step 2 embed context)"
     )
     parser.add_argument("--status", action="store_true", help="Show pipeline status")
     parser.add_argument("--batches", action="store_true", help="Generate eval batches")
@@ -508,9 +740,15 @@ def main():
     parser.add_argument("--normalize", action="store_true", help="Normalize formats")
     parser.add_argument("--redistribute", action="store_true",
                         help="Redistribute wrong_chapter findings")
+    parser.add_argument("--embed-prep", action="store_true",
+                        help="Assemble Step 2 embed context packages")
+    parser.add_argument("--batch", type=str,
+                        help="Batch file for --embed-prep (findings JSON)")
     parser.add_argument("--round", type=int, default=1,
                         help="Redistribution round number (default: 1)")
     parser.add_argument("--chapter", type=int, help="Limit to specific chapter")
+    parser.add_argument("--force", action="store_true",
+                        help="Regenerate batches for ALL findings (ignore existing verdicts)")
     args = parser.parse_args()
 
     if args.status:
@@ -523,6 +761,8 @@ def main():
         return cmd_normalize(args)
     elif args.redistribute:
         return cmd_redistribute(args)
+    elif args.embed_prep:
+        return cmd_embed_prep(args)
     else:
         parser.print_help()
         return 1

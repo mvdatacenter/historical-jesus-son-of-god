@@ -23,7 +23,26 @@ Three steps.
 
 **Model requirement.** Both inventory generation and finding evaluation MUST use the best available model (Claude Opus only). No Sonnet, no Haiku, no sub-frontier model anywhere in this step. Anything below Opus has pathetic reasoning skills — it cannot distinguish "the book cites the Rosetta Stone's θεὸς ἐπιφανής" from "the book mentions Ptolemaic epithets generally." A weaker model will silently fall back to topic-matching, which is exactly the failure mode this design exists to prevent.
 
-**Context requirement.** The full chapter text MUST be read into context for both inventory generation and finding evaluation. No summaries, no truncation, no "representative excerpts." You cannot match against evidence you haven't read.
+**Context requirement.** The evaluation tool (`build_coverage.py --batches`) assembles self-contained batch files. The AI does not need to remember to load inventories or chapter text — each batch includes everything.
+
+**Batch size.** 250 findings per batch. Calculated from context window constraints:
+
+- Opus context window: 200K tokens (~800K chars).
+- Fixed context per batch: chapter text + chapter inventory + 5 cross-chapter inventories + Q&A history + anti-pattern rules. Ranges from 70K tokens (Ch1, no Q&A, short chapter) to 112K tokens (Ch4, large Q&A + large chapter text).
+- Overhead for system prompt, verdict output, and safety margin: ~15K tokens.
+- Average finding size: ~850 chars (~212 tokens).
+- Bottleneck chapter (Ch4): 112K tokens fixed → 73K tokens remaining → max 344 findings per batch.
+- 250 is conservative against the 344 ceiling, leaving ~27% headroom for larger-than-average findings and Q&A growth.
+- At 250/batch: ~14 batches for the full 3,306-finding corpus.
+
+Each evaluation context package contains:
+
+1. **Findings to evaluate** — the findings assigned to this chapter.
+2. **Target chapter inventory** — the structured inventory for the chapter being evaluated.
+3. **Target chapter text** — the full chapter. No summaries, no truncation, no "representative excerpts." You cannot match against evidence you haven't read.
+4. **Cross-chapter inventories** — inventories from ALL other chapters, so the evaluator can detect: (a) the finding is already covered in a different chapter, (b) the finding contradicts an argument another chapter makes, (c) the finding belongs in a different chapter.
+5. **Q&A history** — the full `scripts/chN_qa.md` for the target chapter. Without this the evaluator will resurface findings that were already researched and rejected. If Q&A records a deliberate decision to exclude something, the evaluator must respect it.
+6. **Anti-pattern rules** — injected verbatim (same rules as Step 2).
 
 **Coverage inventories.** Before evaluating findings, generate a structured inventory for each chapter listing every distinct argument and every piece of specific evidence used. Not a summary — an inventory at the level of individual evidence items.
 
@@ -45,11 +64,20 @@ Not: "Does this chapter mention the same keywords as the finding?" A finding abo
 
 **Verdicts.** Every verdict must include a justification — e.g., "already in ch3 section on royal titles," "not relevant to any argument in the book," "too little evidence to act on."
 
-- `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
+- `covered` — the specific argument AND evidence are already in a chapter inventory, OR the finding was already addressed in the Q&A history (researched, incorporated, or deliberately rejected). Justification must name the chapter and section, or cite the Q&A entry. The evaluator checks ALL chapter inventories and the Q&A file (both provided in the context package), not just the assigned chapter — a finding covered in chapter 3 should not survive as "new" when assigned to chapter 5, and a finding already researched and decided in Q&A should not be resurfaced.
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
 - `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
+- `contradicts` — the finding opposes an argument the book makes. Justification must name the chapter, section, and the specific argument it contradicts. Survives — the finding may be correct and the book may need revision. Flagged for user review with the contradiction made explicit.
 - `wrong_chapter` — finding is relevant to the book but doesn't strengthen any argument in this chapter. Justification must (1) explain why the finding's evidence does not serve any of this chapter's arguments — not just that the chapter doesn't mention the same keywords, and (2) name the correct chapter and the specific argument there that the finding would strengthen. A finding should not be marked `wrong_chapter` simply because its topic keywords appear more frequently in another chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
-- `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., contradicts the book's thesis, concerns a topic the book does not address anywhere).
+- `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., concerns a topic the book does not address anywhere).
+
+**Anti-patterns for `covered` verdicts.** Three failure modes observed in validation:
+
+1. **Topic-level match.** "The book argues for Greco-Christian influence; this finding argues for Greco-Christian influence; therefore covered." Same topic is not coverage. A `covered` verdict must identify (a) the specific claim or evidence the finding brings, and (b) where the book already presents that same specific claim or evidence. If the justification cannot name both sides of the match at evidence level, the finding is not covered — it is `new_evidence` or `new_argument`.
+
+2. **"Same argument" without evidence comparison.** "Ch1 makes this exact argument" without showing what specific evidence the finding contains versus what the book already has. A finding may bring a new scholar's framing, a new quotable authority, a new specific example, or a new angle on a known argument. If any of these are new, the finding is `new_evidence` even if the book makes a similar argument. The question is not "does the book make this argument?" but "does the book already present this specific evidence or formulation?"
+
+3. **Implicit coverage.** "The concept is implicit in the existing framework" or "this is a variant of what's already covered" means the book does NOT state it — therefore NOT covered. Any of the following make a finding `new_evidence`, not `covered`, even if the book discusses the same topic: a named concept the book doesn't use (e.g., "competitive mythologizing," "syncreasis"), a specific mechanism the book doesn't describe (e.g., "mimesis as social identity construction"), a new scope claim (e.g., "systematic multi-source imitation across Odyssey, Iliad, and tragedies"), or a new specific source text (e.g., the book cites Mark-Homer mimesis but the finding cites Mark-Aeneid mimesis — that is a different source text, not "a variant"). The test: does the inventory already list this exact item? If the evaluator has to argue it's "implied by" or "a variant of" an existing item, it is not covered.
 
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
 - Build inventory for Ch3 (biggest chapter, most findings)
@@ -61,42 +89,50 @@ Not: "Does this chapter mention the same keywords as the finding?" A finding abo
 
 ### Step 2: Embedding Attempt
 
-**Question:** Does this finding genuinely add value when placed in the book?
+**Question:** Does the book actually need this? Not every true and new statement belongs in the book.
+
+Step 1 answers "is this new?" Step 2 answers "does adding this make the argument materially stronger?" Without this gate, every `new_evidence` finding gets written in, chapters bloat, and the book never converges.
+
+**Process.** For each surviving finding from Step 1:
+
+1. **Find the target section** — which section's argument does this finding serve?
+2. **Read the section in context** — what evidence does it already have?
+3. **Draft the text** — following the standard chapter edit workflow (ChatGPT drafts, Claude reviews). Claude does not write manuscript prose.
+4. **Read the result** — is the section actually better with this addition, or just longer?
+5. **Review against CLAUDE.md guidelines** — AI garbage check, evidence standards, style rules.
+6. **Verdict.**
 
 **Context injection.** The embed tool (`build_coverage.py --embed-prep`) assembles a structured context package for each surviving finding. The AI does not need to remember to load context or read rules — the tool delivers everything at the point of decision.
 
 Each context package contains:
 
 1. **The finding** — full text and verdict from Step 1.
-2. **Anti-pattern rules** — injected verbatim into the package:
-   - Keyword extraction is forbidden in any form: extracting words from text A, searching for them in text B, and drawing any conclusion from matches. See PM-0001, PM-0002.
-   - Scripts present information for human review. Scripts never assign verdicts based on mechanical text matching.
-   - No automated status assignment (CLEAR, FLAGGED, NEEDS_REVIEW, KEEP, SKIP) based on text matching.
-3. **Q&A history** — the full `scripts/chN_qa.md` for the target chapter, so the AI sees what was already researched, rejected, or flagged without needing to remember to load it.
+2. **Anti-pattern rules** — injected verbatim (same rules as Step 1, plus the covered-verdict anti-patterns).
+3. **Q&A history** — the full `scripts/chN_qa.md` for the target chapter, so the AI sees what was already researched, rejected, or flagged.
 4. **Target chapter text** — the full chapter, so the AI reads the actual text rather than relying on memory or summaries.
-5. **Cross-chapter hits** — sections from other chapters that address the same topic, identified by the tool scanning all chapter files. Included so the AI can see whether a deeper treatment already exists elsewhere.
+5. **Cross-chapter inventories** — inventories from all other chapters, so the AI can see whether a deeper treatment already exists elsewhere.
 
-The tool assembles and presents. The AI reads all five inputs and reasons about the embedding decision. The tool does not score, classify, or pre-filter — it delivers context.
+This is the prevent for PM-0002: the anti-pattern rules arrive in the AI's working context as part of the tool's output, not from the AI's memory.
 
-This is the prevent for PM-0002: the anti-pattern rules arrive in the AI's working context as part of the tool's output, not from the AI's memory. The AI cannot skip reading them because they are part of the input it processes.
+**Verdicts.** Every verdict must include a justification.
 
-**Q&A check.** The Q&A file is already in the context package. If it records a deliberate decision to exclude something, respect it. The book does not need to address every counterargument to every criticism.
+- `EMBED` — finding is core to an argument, substantive (a concrete text, inscription, historical fact — not just a scholar restating the thesis), and grounded enough to write now. Proceeds to Step 3 verification.
+- `RESEARCH` — finding is potentially high value but needs sourcing before it can be written. Goes to `scripts/research_gaps.md` with what source is needed and where to look. **Nothing is rejected for being "unverified" or "speculative."** ChatGPT's inability to find a source means nothing — the source may exist outside its training data. Findings that seem speculative are often the highest value because they haven't been absorbed into mainstream consensus.
+- `SKIP: tangential` — doesn't directly serve any section's argument. True but the book doesn't need it.
+- `SKIP: restates` — scholar says what the book already argues in different words. The specific quote may be "new evidence" per Step 1, but adding it makes the argument longer, not stronger.
+- `SKIP: weak` — too thin to strengthen anything. A vague gesture at a topic rather than a specific piece of evidence.
 
-**Cross-chapter check.** The cross-chapter hits are already in the context package. If another chapter contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated. A finding assigned to Chapter N in Step 1 may turn out to strengthen an argument that Chapter M already develops in depth. In that case, embed it in Chapter M, not Chapter N. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+All SKIP and RESEARCH decisions are recorded in `scripts/chN_qa.md` with the reason, so they are not resurfaced by future pipeline runs.
+
+**CRITICAL: No finding may be rejected because ChatGPT cannot verify it.** "ChatGPT says it's unsubstantiated" is not a SKIP reason — it is a RESEARCH reason. ChatGPT lies often due to bias. It halluccinates sources, fabricates references, and presents its gaps as fact. Listen to ChatGPT, never trust it. "ChatGPT confirmed X" is a lead, not verification. "ChatGPT couldn't find X" means nothing. When a source isn't available yet, record in Q&A what's needed and where to look — the citation verification pipeline verifies, not ChatGPT.
+
+**Q&A check.** The Q&A file is already in the context package. If it records a deliberate decision to exclude something, respect it.
+
+**Cross-chapter check.** If another chapter contains a deeper or more developed treatment of the same argument, the new material belongs there — merged into the existing section, not duplicated. The goal is one authoritative treatment per argument, not parallel versions across chapters.
+
+**Section-fit check.** Before inserting text into a specific section, verify: (1) the new text does not contradict the chapter's own thesis, and (2) the new text serves the argument of the section it is placed in. If the text doesn't serve the section's argument, find the section it does serve — or create one.
 
 If the embedding would contradict existing text, surface the contradiction to the user before proceeding — one of them may be wrong, but that is a decision, not something to silently override.
-
-**Section-fit check.** Before inserting text into a specific section, verify two things: (1) the new text does not contradict the chapter's own thesis, and (2) the new text serves the argument of the section it is placed in. A finding about authorship attribution does not belong in a section arguing about dating, even if both are in the same chapter. If the text doesn't serve the section's argument, find the section it does serve — or create one.
-
-**Manuscript prose.** All text written into a chapter must go through the standard chapter edit workflow: ChatGPT drafts the text, Claude reviews. Claude does not write manuscript prose.
-
-For each surviving finding, attempt to integrate it into the manuscript where it would strengthen the argument. If the finding clearly adds value — new evidence, a stronger formulation, a counter-argument that needs addressing — proceed to step 3. If uncertain, discuss with ChatGPT: paste the surrounding manuscript text + the finding, ask whether the argument is genuinely strengthened or just made longer.
-
-**ChatGPT is helpful for discussing editorial value** ("does this make the argument stronger or just longer?") and for research leads ("where might this claim come from?"). But ChatGPT lies often due to bias — it hallucinates sources, fabricates references, and presents its gaps as fact. Listen to ChatGPT, but never trust it.
-
-**No KEEP or SKIP decision may rest on ChatGPT's factual assertions alone.** If ChatGPT says a claim checks out, that is a useful lead — now verify through the citation verification pipeline: download the source, search the text, present side-by-side. If ChatGPT can't find something, that means nothing — the source may exist outside its training data. When a source isn't in the registry yet, add it to `scripts/source_registry.py` and record in Q&A what source is needed and where to look, so it can be downloaded and verified through the pipeline.
-
-This step follows the standard chapter edit workflow (README > Core Workflow for Adding Content to Chapters). ChatGPT drafts; Claude reviews.
 
 **Step 2 produces draft text, not committed text.** Embeddings are written to the chapter file but NOT committed until Step 3 verification is complete. Step 2 ends with uncommitted edits in the working tree and a list of claims that need verification. The commit happens after Step 3, and the commit message must reference which claims were verified and how (e.g., "verified Vaticanus ends at 16:8 via facsimile," "Tertullian attribution confirmed in Adv. Prax. 27").
 
@@ -138,7 +174,8 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | Chapter coverage inventories | `sources/coverage/ch{N}_inventory.json` |
 | Coverage + relevance verdicts (review UI) | `sources/extraction_review.html` |
 | Coverage inventory generator | `scripts/build_coverage.py` |
-| Embed context package generator | `scripts/build_coverage.py --embed-prep` |
+| Step 1 evaluation batches (with context) | `scripts/build_coverage.py --batches` |
+| Step 2 embed context generator | `scripts/build_coverage.py --embed-prep` |
 | Findings review UI | `sources/extraction_review.html` |
 | Review UI generator | `scripts/review_extractions.py` |
 | Per-chapter research Q&A | `scripts/chN_qa.md` |
