@@ -37,14 +37,18 @@ Each inventory entry has:
 
 Inventories are generated once per chapter by Opus reading the full chapter text. Stored as `sources/coverage/ch{N}_inventory.json` and reused across all finding evaluations.
 
-**Matching.** The evaluator compares each finding's specific claim and evidence against the chapter inventory. The question: "Is the specific evidence or argument in this finding already present in the chapter's inventory?"
+**Matching.** The evaluator compares each finding's specific claim and evidence against the chapter inventory. The question is: "Does this finding strengthen any argument the chapter makes?"
+
+Not: "Does this chapter mention the same keywords as the finding?" A finding about Dionysian body-and-blood rituals belongs in the chapter that argues "Christian liturgy inherited pre-existing Greek religious practices" — even if that chapter never mentions Dionysus by name. The evaluator must understand each chapter's *arguments* and ask whether the finding provides evidence for any of them, not scan for keyword overlap.
+
+**Anti-pattern: keyword chasing.** The most common evaluator failure is routing findings based on where their surface keywords appear rather than where their argument applies. Example: a finding about Seleucid institutional infrastructure (gymnasiums, theaters, magistracies) gets routed to whichever chapter mentions "Seleucid," when it actually belongs in the chapter that argues Greek institutional infrastructure was already present before Christianity. The finding's *framing* ("precedent for Paul's assemblies") may point to one chapter, but its *evidence* (Seleucid institutions in the Near East) may strengthen an argument in a different chapter. Evaluate the evidence, not the framing.
 
 **Verdicts.** Every verdict must include a justification — e.g., "already in ch3 section on royal titles," "not relevant to any argument in the book," "too little evidence to act on."
 
 - `covered` — the specific argument AND evidence are already in the chapter inventory. Justification must name the chapter and section.
 - `new_evidence` — the chapter makes this argument but doesn't use this specific evidence. Survives.
 - `new_argument` — neither the argument nor the evidence appears in any chapter inventory. Survives.
-- `wrong_chapter` — finding is relevant to the book but doesn't bear on any argument in this chapter. Justification must name the correct chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
+- `wrong_chapter` — finding is relevant to the book but doesn't strengthen any argument in this chapter. Justification must (1) explain why the finding's evidence does not serve any of this chapter's arguments — not just that the chapter doesn't mention the same keywords, and (2) name the correct chapter and the specific argument there that the finding would strengthen. A finding should not be marked `wrong_chapter` simply because its topic keywords appear more frequently in another chapter. **Action:** re-chapter the finding by changing the `## Chapter N:` header in the extraction file to the correct chapter. The finding then waits for evaluation against that chapter's inventory.
 - `not_relevant` — finding doesn't bear on any argument the book makes, in any chapter. Justification must say why it doesn't connect (e.g., contradicts the book's thesis, concerns a topic the book does not address anywhere).
 
 **Validation protocol.** Before running at scale, validate on 30 findings against one chapter:
@@ -105,6 +109,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 
 - **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
 - **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
+- **Keyword chasing** for `wrong_chapter` verdicts. The evaluator must ask "does this finding strengthen any argument this chapter makes?" — not "does this chapter mention the same keywords as the finding?" A finding about Dionysian body-and-blood rituals belongs in the chapter arguing Christian liturgy inherited Greek religious practices, even if that chapter never mentions "Dionysus." A finding about Seleucid institutions belongs in the chapter arguing Greek institutional infrastructure predated Christianity, even if the finding's own framing says "precedent for Paul." Route by argument, not by keyword.
 - **Sub-frontier models** for step 1. They silently degrade to topic-matching.
 - **Summaries or truncated context** instead of full chapter text.
 - **Trusting ChatGPT's factual assertions.** ChatGPT is a helpful research resource — use it freely to find sources and research leads. But it lies often due to bias. Listen to it, never trust it. "ChatGPT confirmed X" is a lead, not verification — download the source and run it through the pipeline. "ChatGPT couldn't find X" means nothing — the source may exist outside its training data. No KEEP/SKIP decision may rest on ChatGPT's word alone. When a source isn't available yet, record in Q&A what's needed and where to look so it can be acquired and verified.
