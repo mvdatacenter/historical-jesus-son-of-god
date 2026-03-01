@@ -628,10 +628,11 @@ ANTI_PATTERN_RULES = [
         "(2) 'Same argument' without evidence comparison: 'ch1 makes this exact "
         "argument' is not enough. Does the book already present this specific "
         "scholar's framing, this specific quote, this specific example? If any "
-        "of these are new, verdict is new_evidence, not covered. "
+        "of these are new, verdict is new_evidence_existing_argument, not "
+        "covered. "
         "(3) Implicit coverage: 'the concept is implicit in the framework' or "
         "'this is a variant of what is covered' means the book does NOT state it "
-        "— therefore NOT covered. Any of these make it new_evidence: a named "
+        "— therefore NOT covered. Any of these prevent a covered verdict: a named "
         "concept the book doesn't use, a specific mechanism the book doesn't "
         "describe, a new scope claim, or a new specific source text (e.g., book "
         "has Mark-Homer mimesis but finding has Mark-Aeneid — different source, "
@@ -640,16 +641,18 @@ ANTI_PATTERN_RULES = [
         "is NOT covered."
     ),
     (
-        "NEW_ARGUMENT verdict: a finding is new_argument when the ARGUMENT "
-        "(the conclusion drawn from the evidence) does not appear in any "
-        "chapter inventory. Evidence overlap does not matter. A finding that "
-        "uses the same inscription, the same verse, or the same source the "
-        "book already cites but draws a DIFFERENT conclusion is new_argument, "
-        "not covered and not new_evidence. new_evidence means 'the chapter "
-        "makes this argument but uses different evidence.' new_argument means "
-        "'the chapter does not make this argument, regardless of evidence "
-        "overlap.' Do not downgrade a novel argument to new_evidence or "
-        "covered just because the underlying evidence appears in the book."
+        "The verdict matrix has two axes — is the ARGUMENT new, and is the "
+        "EVIDENCE new? "
+        "covered: argument in book AND evidence in book (or Q&A addresses it). "
+        "new_evidence_existing_argument: argument in book, evidence NOT in "
+        "book — new evidence to bolster an existing argument. "
+        "new_argument_existing_evidence: argument NOT in book, evidence IS in "
+        "book — someone looked at the same source we cite and drew a different "
+        "conclusion. Often the most valuable: data already verified, only the "
+        "argument is new. Do NOT downgrade to new_evidence_existing_argument "
+        "or covered just because the evidence appears in the book. "
+        "new_evidence_and_argument: argument NOT in book, evidence NOT in "
+        "book — both need evaluation."
     ),
 ]
 
@@ -669,15 +672,24 @@ def _load_v2_verdicts(ch: int) -> dict:
     return result
 
 
-STEP1_SURVIVORS = ("new_argument", "new_evidence", "contradicts")
+STEP1_SURVIVORS = (
+    "new_evidence_existing_argument",
+    "new_argument_existing_evidence",
+    "new_evidence_and_argument",
+    "contradicts",
+    # Legacy verdict names
+    "new_argument",
+    "new_evidence",
+)
 
 
 def _load_findings_from_verdicts(ch: int) -> list[dict]:
     """Load surviving findings from Step 1 verdicts.
 
     Checks v2 verdicts first (current pipeline), falls back to
-    validation_verdicts (legacy). Survivors: new_argument, new_evidence,
-    contradicts.
+    validation_verdicts (legacy). Survivors: new_evidence_existing_argument,
+    new_argument_existing_evidence, new_evidence_and_argument, contradicts
+    (plus legacy "new_argument" and "new_evidence").
     """
     verdicts = _load_v2_verdicts(ch)
     if not verdicts:
