@@ -1,0 +1,50 @@
+[
+  {
+    "finding_id": "TOtKGiV7RYI_0",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 opens by arguing that Second Temple Judaism 'emerged during the Second Temple period' and had its 'institutions, legal emphases, and communal identity shaped decisively within Hellenistic political and administrative frameworks.' Gmirkin's demonstration that the nocturnal council in Plato's Laws served as the explicit model for Jewish high-priestly governance in the 270s BC is direct textual evidence for this argument — it names the Platonic source, the date, and the institutional form. Chapter 5 discusses ekklesia as a Greek civic institution continuing under Paul, but that argument concerns the post-resurrection period. This finding belongs in Chapter 2 as evidence for the Hellenistic institutional substrate that shaped the world Jesus was born into."
+  },
+  {
+    "finding_id": "s1P6w4hbNt8_0",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues that Judaism in the Second Temple period was 'shaped decisively within Hellenistic political and administrative frameworks, not in isolation.' The 85% overlap between Old Testament law codes and Athenian, Platonic, and Roman laws directly substantiates this claim with a quantified structural parallel. Chapter 5 references Greek civic vocabulary in Paul's letters but does not argue that the Hebrew Bible itself was composed inside Hellenistic legal frameworks. This finding strengthens Chapter 2's foundational claim about the Hellenistic shaping of the Jewish institutional world that preceded and surrounded Jesus."
+  },
+  {
+    "finding_id": "aoRA4W-9QBI_1",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 makes the detailed case that ekklesia was a Greek civic assembly that continued functioning after conquest, with Greek titles and procedures preserved under new sovereign allegiance. The Greco-Bactrian administrative structure — Greek language and personnel at the apex, local populations in subordinate roles — provides a concrete parallel for how Hellenistic administrative hierarchies operated across conquered territories, strengthening Chapter 5's argument that the early Christian ekklesia was a continuation of an existing Greek administrative model rather than a new religious invention. Chapter 2 discusses the Greek institutional background generally but does not develop the administrative hierarchy argument that Chapter 5 centers on."
+  },
+  {
+    "finding_id": "LSpAmwwlSaI_0",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 argues at length that the churches Paul addressed were not newly converted congregations but pre-existing Greek civic assemblies that simply realigned their sovereign allegiance to Christ: 'The assemblies did not need to learn how to have factions, manage money, read decrees aloud, display status, or appoint officials. They already knew, because they had been doing it for centuries.' The hypothesis that Paul's Asia Minor churches were already organized communities of God-fearers worshipping the Most High God under Hellenistic frameworks is new evidence directly supporting this argument — these assemblies were pre-formed, not missionary plantings. Chapter 2 is about Jesus's background, not Paul's addressees."
+  },
+  {
+    "finding_id": "5ac8F8rzD9E_1",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 has an explicit section arguing that Paul 'barely mentions the life of Jesus' and that his concern was restoring the office of the Christos as rightful king, not the biographical Jesus: 'It is a religion focusing on restoring the kingdom of God by resurrecting the office of the Christos, the rightful king.' Paul's silence on the virgin birth — despite its later theological centrality — is evidence that the Greco-Christian institutional framework (focused on royal succession and Christ as sovereign) preceded and shaped Paul's letters, with later biographical-theological elaboration coming afterward. This belongs in Chapter 5's treatment of Paul's institutional and political register, not Chapter 2's coverage of Jesus's historical background."
+  },
+  {
+    "finding_id": "G6QR0e66erA_7",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 establishes Paul's political profile: he appeals to Caesar as a Roman citizen, travels the Greek polis network, addresses the Athenian elite philosophically, and sends greetings from 'those of Caesar's household' (Phil 4:22). The observation that Paul's flight from Aretas — coinciding with Aretas's military campaign against Herod Antipas over a marriage violation — implies Herodian political association directly extends Chapter 5's argument that Paul operated within imperial dynastic networks, not as an itinerant preacher. The Romans 16 'Herodians' reference is already noted in Chapter 5's discussion of Paul's named associates and institutional connections. Chapter 2 covers Herodian connections to Jesus and Mary, not to Paul."
+  },
+  {
+    "finding_id": "IRcxi11x8wI_1",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "This finding amplifies the previous one with a named scholarly argument (Jacob Berman) reconstructing Paul's Herodian family tie from the Romans 16 kinsmen and the 2 Corinthians Aretas passage. Chapter 5 argues Paul was an imperial envoy inside Roman institutional structures, citing his greetings from Caesar's household and his associate Epaphroditus sharing the name of Nero's secretary. Paul's Herodian kinship, if established, adds a dynastic dimension to his political profile that Chapter 5 develops. Chapter 2 is about Jesus's Hasmonean-Herodian lineage; Chapter 5 is about Paul's institutional and dynastic context after Jesus's death."
+  },
+  {
+    "finding_id": "eWFTGKBd6J8_1",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 explicitly discusses Paul sending greetings 'from those of Caesar's household' (Phil 4:22) as evidence that he 'operated within Roman institutional structures.' Paul's greetings to 'kinsmen' in Romans 16 interpreted as documentation of Herodian family ties is direct evidence for this same argument — Paul's social network included the dynastic ruling class, not merely a circle of devotional companions. Chapter 2 covers Herodian-Hasmonean connections in the context of Jesus's parentage and royal legitimacy. Paul's kinship connections belong in Chapter 5's treatment of his political and institutional profile in the post-resurrection period."
+  }
+]

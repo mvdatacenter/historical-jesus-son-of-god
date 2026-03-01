@@ -1,0 +1,37 @@
+[
+  {
+    "finding_id": "TOtKGiV7RYI_0",
+    "verdict": "wrong_chapter",
+    "justification": "This finding is specifically about how Jewish governance in the 270s BC imitated Plato's Laws' 'nocturnal council' structure. This is a chapter 2 argument about the pre-Christian Hellenistic institutional origins of Jewish governance—it belongs in the section establishing that Jewish institutions were already built on Greek philosophical templates before the NT period. Chapter 5 argues from NT-era evidence (inscriptions, papyri, Pauline letters) that the ekklesia was a Greek civic assembly; it does not trace the Jewish antecedents back to the 3rd century BC. Redirecting this finding to chapter 5 would require chapter 5 to argue from a genealogy of Jewish institutional imitation of Platonic models, which is chapter 2's thesis, not chapter 5's. The finding has already been redirected twice; the correct placement remains chapter 2."
+  },
+  {
+    "finding_id": "s1P6w4hbNt8_0",
+    "verdict": "wrong_chapter",
+    "justification": "The 85% overlap between OT law codes and Athenian, Platonic, and Roman laws is an argument about biblical redaction through Hellenistic legal influence—directly supporting chapter 2's thesis that the Hebrew Bible was shaped by Greek institutional and legal frameworks. Chapter 5 does not argue from OT law codes; it argues from NT-era inscriptions, Pauline letters, and civic epigraphy about the ekklesia as a pre-existing Greek civic institution. The finding's claim that this 'provides natural templates for understanding early Christian institutional structures like the ekklesia' is a bridge too far: the chapter 5 argument is already grounded in direct NT-era evidence and does not need or use OT-to-Greek law overlap as a foundation. This remains a chapter 2 finding."
+  },
+  {
+    "finding_id": "5cqruE4LYyY_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 makes the core argument that Paul's ekklesia addressed pre-existing Greek civic assemblies in Hellenistic cities—not new religious institutions invented by Paul. The chapter establishes this via inscriptions (Erythrai decree, Termessos, Mylasa), papyri (P.Oxy.), and Pauline letters. The Seleucid creation of gymnasiums, theaters, divided city quarters, and magistracies throughout the Near East is new archaeological and historical evidence that the Greek administrative institutional infrastructure was physically and organizationally established across Paul's exact mission field before Paul arrived. This concretely supports the 'institutional continuity' argument: the assemblies did not need to be invented because they were created by the Seleucids. The specific Antioch city-quarter detail is directly relevant since Antioch is central to chapter 5's geographic argument. This is new evidence for an existing chapter 5 argument."
+  },
+  {
+    "finding_id": "aoRA4W-9QBI_1",
+    "verdict": "wrong_chapter",
+    "justification": "The Greco-Bactrian administrative hierarchy—Greek language at the apex, local Bactrian populations in subordinated roles—is background context for the Hellenistic imperial model. Chapter 5 does not discuss Bactria; its geographic argument centers on Paul's actual cities (Corinth, Ephesus, Thessalonica, Philippi, Antioch, Asia Minor). The connection to chapter 5's ekklesia argument is indirect: chapter 5 already establishes Greek institutional primacy from inscriptions and papyri within Paul's actual mission territory. Greco-Bactria is peripheral to that argument and adds no specific evidence for any claim chapter 5 makes. The finding's own text acknowledges it 'contextualizes' the ekklesia argument, but chapter 5 already has direct contextualizing evidence from within the relevant geographic zone. This remains a chapter 2 finding about the general Hellenistic imperial administrative model."
+  },
+  {
+    "finding_id": "BqILLv1Dvl0_1",
+    "verdict": "not_relevant",
+    "justification": "The finding describes Christianity emerging within Hellenistic cosmopolitanism with Plutarch identifying parallel gods across cultures (Osiris = Isis parallel deity equivalences). Global Q&A explicitly rejects the mystery cult and parallel-deity framing: 'We reject the mystery cult framing. Christianity was not a mystery cult—it was a continuation of the old imperial cult operating under foreign rule.' The Plutarch/Osiris/Isis equivalence is precisely the kind of Hellenistic religious syncretism the book does not endorse as its explanatory framework for Christianity. Chapter 5 establishes Paul's Greek institutional context from civic epigraphy and administrative vocabulary—not from cosmopolitan religious syncretism. This finding would pull the chapter toward a rejected interpretive frame."
+  },
+  {
+    "finding_id": "FEKkQgR5t14_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 opens with an extended argument about 'panta ta ethne' (all the nations) referring to the Greek oikoumene rather than humanity universally, and the Great Commission as addressed to imperial subjects rather than all peoples. The finding adds that Mark explicitly frames the gospel as universal in Mark 13:10 and 14:9 with 'das Evangelium soll alle Nationen beziehungsweise in aller Welt gepredigt werden'—the gospel to be preached to all nations or in all the world. This is a new textual reference supporting chapter 5's existing argument: the universalism in Mark independently corroborates the universalist framing already analyzed in Matthew 28:19. Chapter 5's 'Who were the gentiles?' section discusses Matthew; adding Mark's explicit universalism strengthens the argument that this framing was embedded across multiple gospels, not just Matthew. New evidence for an existing argument."
+  },
+  {
+    "finding_id": "4H0Y8Ztzrao_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 makes the argument that Paul operated within an educated Greek institutional world—his vocabulary, letter format, and administrative register all reflect Hellenistic urban culture. The chapter discusses Paul's rhetorical-administrative profile extensively (lines 82–148). The finding that the author of Hebrews came from a major Hellenistic urban center with Greek rhetorical training, with Alexandria, Antioch, and Asia Minor identified as the probable centers, provides supporting evidence from a different NT document: that the Hellenistic urban center hypothesis holds not just for Paul but for other NT authors. Chapter 5 line 676 mentions Hebrews' authorship only in passing. Attridge's identification of the specific cities (Alexandria, Antioch, Asia Minor) directly matches chapter 5's geographic argument. This is new evidence that reinforces the existing chapter 5 argument about Greek institutional centrality, drawn from an additional NT author."
+  }
+]

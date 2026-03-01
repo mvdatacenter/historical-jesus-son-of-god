@@ -1,0 +1,687 @@
+[
+  {
+    "finding_id": "561NmUuqJ4g_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291 and 272-278) explicitly describes Sepphoris as rebuilt by Herod the Great as 'a royal city and regional capital rivaling Jerusalem in rank and splendor' with 'a Greek theater, a Roman-style forum, a Herodian palace, colonnaded streets, and elite villas adorned with mosaics.' The same argument (Sepphoris as Hellenistic urban center near Jesus) and same evidence (archaeological finds at Sepphoris) are already present."
+  },
+  {
+    "finding_id": "561NmUuqJ4g_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions a Greek theater at Sepphoris (lines 272-278) and makes the argument about Greek institutional context. However, the specific evidence that Jesus's use of the word 'hypocrites' (hypokrites) derives from Greek theater terminology for stage actors -- connecting his vocabulary directly to the Sepphoris theater -- does not appear in the chapter. This is new linguistic evidence for the existing argument about Greek cultural immersion."
+  },
+  {
+    "finding_id": "5b9KDuPZiP0_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) covers Sepphoris as Hellenistic city near Nazareth, and the inventory item about tekton (lines 296-315) discusses Jesus's family as builders who likely worked in the Herodian building trade. The argument and evidence (Sepphoris proximity, construction work there) are already present."
+  },
+  {
+    "finding_id": "5b9KDuPZiP0_1",
+    "verdict": "wrong_chapter",
+    "justification": "Josephus's account of John the Baptist as a political threat to Herod Antipas is covered in Chapter 3 inventory item [22]: 'John the Baptist was a priestly co-heir whose authority was genealogically anchored, and his denunciation of Herod Antipas's marriage was dynastic politics, not moral rebuke' (section: John the Baptist as Priestly Co-Heir, lines 345-421). Chapter 2 does not discuss John the Baptist's political significance in detail."
+  },
+  {
+    "finding_id": "5b9KDuPZiP0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 makes the argument about baptism as succession/investiture at the genealogy section (lines 624-631) and mentions 'Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' However, the specific evidence of inherited crowds and Jesus as John's 'successor the next teacher in line' is not in the chapter text. This is new evidence (crowd transfer mechanism) for the existing succession argument."
+  },
+  {
+    "finding_id": "5gujfFNvvBc_2",
+    "verdict": "not_relevant",
+    "justification": "Archaeological and geographical details about specific baptizing locations (Aenon near Salim, Wadi Kharrar) and Jesus's hideout are logistical details about ministry geography. Chapter 2 does not discuss these locations and they do not bear on any argument the book makes about Jesus's identity, lineage, or institutional context."
+  },
+  {
+    "finding_id": "99SDJddM6wY_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) explicitly discusses James succeeding Jesus as leader, with inventory item [52]: 'The succession of Jesus's brothers (James, Simon, Jude) into leadership positions is a defining feature of dynasties, not transient religious sects.' The specific evidence (James as successor, dynasty survived) matches what Tabor states."
+  },
+  {
+    "finding_id": "9NlteRvg2_k_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions Dead Sea Scrolls once and Qumran twice, and the chapter does not connect John the Baptist to the Qumran community in political-dynastic terms. However, the argument about John as a political-dynastic figure is present in the chapter. Eisenman's specific connection of John to the scrolls community and their shared geographic location as political context is new evidence for the existing dynastic argument."
+  },
+  {
+    "finding_id": "9OWarxFePQE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 section 'Jesus's father was killed by Herod' (lines 684-694) discusses the Pantera tombstone from Bingerbruck and names the soldier from Sidon. However, the specific argument that this soldier's 'military service chronology matches Jesus's birth period' as supporting Hellenistic institutional context embedded in genealogy is a new framing. The Pantera tombstone is already cited but the chronological-match argument adds new interpretive evidence."
+  },
+  {
+    "finding_id": "9OWarxFePQE_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Mark 6:3 and the 'son of Mary' naming convention. The chapter text states: 'Mixing up the terms Christos and Messiah is deeply rooted in the historiography of Jesus' and discusses genealogical naming. The inventory for section 'Jesus of Nazareth' (lines 85-101) covers patronymic vs toponymic naming conventions, and the finding about Mark 6:3 calling Jesus 'son of Mary' rather than 'son of Joseph' is present in the chapter text."
+  },
+  {
+    "finding_id": "9OWarxFePQE_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions 'Tosefta Hullin 2:22' in the Pantera context (lines 684-694), but the specific evidence from the Tosefta that rabbis in Sepphoris (four miles from Nazareth) referenced Jesus as 'Son of Pantera' in healing contexts is not elaborated in this way. The geographic proximity detail (Sepphoris rabbis) and non-polemical healing usage are new evidence for the existing Pantera/genealogy argument."
+  },
+  {
+    "finding_id": "9ToGeVEo8pY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 makes the argument about baptism as succession (inventory item [36], lines 624-631) and discusses John and Jesus conducting parallel baptizing missions. However, the specific evidence of John as 'first Messiah' whom Jesus 'looked at as his teacher' and the framing of a two-messiah system where Jesus joins John's movement is not in chapter 2. Chapter 3 inventory [22] covers John as priestly co-heir, but this specific teacher-student framing is new evidence."
+  },
+  {
+    "finding_id": "9c6d04AaA5c_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) already describes Sepphoris as a Hellenistic urban center near Nazareth with trade routes. The inventory item lists 'Josephus describes demos gathering at boule in both Sepphoris and Tiberias' (lines 360-401). The argument about Sepphoris as Greek institutional context is thoroughly covered."
+  },
+  {
+    "finding_id": "C-MZV03wsFM_2",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's authority claims based on mystical experience belong in Chapter 5 (Pauline Epistles), where inventory items [4-6] discuss 'Paul's political profile,' 'Paul's vocabulary drawn from court hierarchy,' and 'Paul's military language.' Chapter 2 does not discuss Paul's authority or mystical experiences."
+  },
+  {
+    "finding_id": "C3WL1T0pHi8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues against the 'illiterate carpenter' model (inventory item at lines 61-64 and 269-291). However, the specific archaeological evidence from Mount Zion excavations showing palatial buildings in the upper city where Jesus may have spent the Last Supper with connections to wealthy families (Joseph of Arimathea as middle class friend) is not in Chapter 2. The argument exists; this archaeological detail is new evidence."
+  },
+  {
+    "finding_id": "C3WL1T0pHi8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses baptism in the context of succession (lines 624-631) but does not present the Suba cave archaeological evidence (hundreds of small ceremonial vessels broken in ritual patterns). This is new archaeological evidence potentially supporting the historicity of John's baptismal practices, which relates to the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "DEEHRO8DFBY_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Jesus's father was killed by Herod' (lines 696-713) explicitly covers this: 'Eusebius records that Vespasian ordered a search for all descendants of David (HE 3.12). Domitian later summoned and interrogated the grandsons of Jude... Under Trajan, Simeon son of Clopas was executed.' The inventory item lists Herod the Great, Vespasian, Domitian, and Trajan. The finding adds Herod Antipas and Hadrian, but the core argument and most evidence is already present."
+  },
+  {
+    "finding_id": "DbrufyTudxo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses baptism as succession (lines 624-631) but does not present the specific evidence that John the Baptist practiced immersion baptism specifically as initiation into a movement rather than ritual cleansing. The Qumran/Dead Sea Scrolls community context of baptism as initiatory rite is not elaborated in Chapter 2. This is new evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "DodE9YU7oFY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's response to Davidic claimants (lines 696-713) but does not include Herod Antipas becoming 'quite alarmed' at Jesus's activities and putting out a word for Jesus's arrest. This specific Josephus-sourced political alert is new evidence for the existing argument about dynastic threat."
+  },
+  {
+    "finding_id": "DodE9YU7oFY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions the Decapolis twice as part of the Greek-city geographic framework (Introduction, lines 23-48) but does not discuss Jesus's strategic withdrawal to the Decapolis as a political move to escape Herod Antipas's jurisdiction. This tactical use of Greco-Roman political boundaries is new evidence for the existing argument about Jesus operating within Greek institutional contexts."
+  },
+  {
+    "finding_id": "ECSfEYqFvVc_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) discusses tekton as 'builder' not 'carpenter,' and the section on Sepphoris (lines 272-278) describes it as being rebuilt under Herod Antipas with 'Roman-style forum' and 'colonnaded streets.' The argument and evidence match."
+  },
+  {
+    "finding_id": "ECSfEYqFvVc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The Suba cave artwork depicting John the Baptist with ritual vestments, staff, and a potential priestly miter/crown is archaeological evidence not present in Chapter 2. Chapter 3 discusses John as priestly co-heir (inventory [22]) but the specific Suba cave artwork is new physical evidence for the priestly-institutional interpretation of John."
+  },
+  {
+    "finding_id": "FNscrXwJkTI_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) explicitly discusses that when Jesus died, his brother James was appointed leader. Inventory item [52]: 'The succession of Jesus's brothers (James, Simon, Jude) into leadership positions is a defining feature of dynasties.' Both the argument and evidence are present."
+  },
+  {
+    "finding_id": "F_kNK3MsvX8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses genealogies and the Magi scene with its political-dynastic context but does not present the Dead Sea Scrolls evidence for two expected Messiahs (kingly from David + priestly counselor). Chapter 3 inventory [22] discusses John as priestly co-heir and chapter 1 inventory [28] mentions the dual-messiah model. The specific Dead Sea Scrolls evidence ('universally say there are actually two Messiahs') is new evidence for the existing argument about political-dynastic messianic expectations."
+  },
+  {
+    "finding_id": "FgsW3SNyfsk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 makes the argument about baptism as succession (lines 624-631). The specific framework of John as priestly Messiah and Jesus as Davidic figure, where John 'inaugurates the entire movement' and 'for the first time in that period all the pieces in place for this incredible Messianic Dynamic to work,' provides new evidence about the two-messiah mechanism. Chapter 1 inventory [28] mentions the dual-messiah model but ch2 does not elaborate on this Dead Sea Scrolls framework."
+  },
+  {
+    "finding_id": "H06BIdDtykw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Mary's Hasmonean connection (lines 654-674) and mentions the Maccabean dynasty. However, the specific argument that Mary deliberately chose Maccabean names (James, Simon, Judas) for her sons to honor the Zealot cause and show solidarity with Judas the Galilean is not in the chapter. Chapter 2 mentions Judas the Galilean once but not in connection to Mary's naming choices. This is new evidence for the existing genealogical/dynastic argument."
+  },
+  {
+    "finding_id": "H06BIdDtykw_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) describes Sepphoris and Tiberias being built by Herod Antipas during Jesus's lifetime, establishing the Hellenistic institutional context. The argument about Jesus growing up immersed in this context is thoroughly covered."
+  },
+  {
+    "finding_id": "HLQ97erL1gc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the baptism with 'You are my son; today I have begotten you' from Codex Bezae and Old Latin manuscripts (lines 624-631). However, the specific Ebionite source preserving this formula with additional language ('My son, I was waiting for you and all the prophets... You are my first begotten son who rules forever') is not cited. This is new textual evidence from a distinct source tradition for the existing baptism-as-royal-succession argument."
+  },
+  {
+    "finding_id": "HfFC4qVkKeI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Mary's connection to Sepphoris through the Hasmonean dynasty (inventory item [38]: 'Birthplace Sepphoris: conquered 104 BC by Alexander Jannaeus who made it his capital'). However, the chapter text does not explicitly state that Mary grew up in Sepphoris as an urban figure. The argument that Mary was from Sepphoris/Hasmonean dynasty is present, but Tabor's specific framing of 'urban Mary' who grew up at Herod Antipas's headquarters is new supporting evidence."
+  },
+  {
+    "finding_id": "HfFC4qVkKeI_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Jesus's mother was Mary Christ' (lines 654-674) explicitly discusses Mary's Davidic and priestly lineage: inventory item [38] includes 'Luke 1:5,36: Mary a relative (syngenis) of Elizabeth, of the daughters of Aaron -- priestly aristocracy.' The dual Davidic-Levitical lineage argument and evidence are present."
+  },
+  {
+    "finding_id": "Ho8QGMs3SeY_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) discusses Jesus's brothers as part of the movement and James succeeding Jesus. Inventory item [52] explicitly lists: 'James: head of Jerusalem assembly after Jesus's death.' The finding about Jesus's brothers being among the Twelve and dynastic succession is covered."
+  },
+  {
+    "finding_id": "Ho8QGMs3SeY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not discuss John the Baptist being imprisoned at Machaerus fortress and kept informed of Jesus's movement while expecting messianic liberation. Chapter 3 inventory [22] covers John as priestly co-heir, but the specific details of imprisonment at a fortress, being kept apprised of Jesus's campaign, and expecting messianic release are new evidence for the political-dynastic argument."
+  },
+  {
+    "finding_id": "I24yM_9gWoM_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) discusses Joseph as tekton (builder) and the Herodian building tradition. The inventory explicitly states: 'In Herodian setting, priestly elites trained for sacred Temple construction.' The argument about Jesus's family working in construction at Sepphoris during its rebuilding is present."
+  },
+  {
+    "finding_id": "IG2ClEE5qqw_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 Introduction (lines 23-48) discusses the Seleucid dynasty ruling from Antioch and Damascus, and mentions Antiochus. The chapter also notes the 2 Maccabees 6:7 mandate for participation in Dionysiac festivals (lines 272-278). The Seleucid Hellenistic influence on Judea is addressed."
+  },
+  {
+    "finding_id": "JELjpEmYYa0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not discuss Josephus's specific account of Herod Antipas arresting John the Baptist 'for fear of his popularity leading to a rebellion' or John's execution at fortress Macarus. Chapter 3 inventory [22] covers John as priestly co-heir, but the specific Josephus citation about fear of rebellion and the Macarus detail are new evidence for the political-dynastic interpretation of John."
+  },
+  {
+    "finding_id": "Jor0oevcEK8_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'What is a gospel?' (lines 515-534) discusses Hasmonean coinage and genealogies. Inventory item [33] explicitly states: 'Hasmonean coinage: John Hyrcanus I coins display five-pointed star linking Balaam's prophecy (Numbers 24:17) with Hipparchus nova.' This is the same evidence (Hasmonean coins adopting Hellenistic star symbolism)."
+  },
+  {
+    "finding_id": "Jor0oevcEK8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Magi scene and Hellenistic royal protocol (lines 723-768) and has some mention of divine birth contexts. However, the specific Seleucid mythology of Apollo conceiving Seleucus I and marking the mother with an anchor as a sign of divine conception is not in Chapter 2. Chapter 3 inventory [51] covers 'Seleucid annunciation parallel: Apollo conceived Seleucus I with physical sign (anchor).' This is therefore covered in Chapter 3 already. The evidence is in the book but in a different chapter."
+  },
+  {
+    "finding_id": "Jor0oevcEK8_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that Governor Quirinius understood his political authority in Hellenistic astrological terms (Jupiter in Aries) is not present in any chapter inventory. 'Quirinius' does not appear in the chapter 2 text. This is a new argument (Roman administrators ruling Judea operated within a Greek astrological-political framework) with new evidence (specific Jupiter-Aries astrological interpretation by Quirinius)."
+  },
+  {
+    "finding_id": "LBpRbqf4tQo_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'What is a gospel?' (lines 624-631) inventory item [36] includes: 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The joint baptizing campaign and succession interpretation are already present."
+  },
+  {
+    "finding_id": "Nl6r_UMFAKw_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) inventory item [52] explicitly covers: 'James: head of Jerusalem assembly... Simon identified as brother/cousin who led Jerusalem community after James... Later lists of bishops preserve sequence of Jesus's relatives in office.' The dynastic succession through James then Simon is present."
+  },
+  {
+    "finding_id": "Pmj1R7E6DNA_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) discusses baptism as the moment of royal investiture and succession of authority from John to Jesus. The finding about baptism as 'pivotal moment when Jesus transitions from observer to full partner' restates what the chapter already covers."
+  },
+  {
+    "finding_id": "Pp8rpLMoS1Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses baptism as succession and the Dead Sea Scrolls community (mentions Qumran, Essenes). However, the specific connection of Jesus to the Essene movement through his Davidic lineage and 'self-conscious belief that he had been called' based on reading scriptures is not in chapter 2. The chapter makes the Davidic lineage argument (inventory items [37-38]) but the specific evidence of self-conscious messianic identity emerging from scripture study is new evidence."
+  },
+  {
+    "finding_id": "QX6VwZHbgvs_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 text discusses 'divine man' parallels to Greek and Roman sources. The chapter text mentions 'divine birth' and Hellenistic parallels. The Magi scene section (lines 723-768) discusses Hellenistic royal context. The argument about Hellenistic divine paternity parallels (Heracles, Romulus) for understanding Gospel birth narratives is present in the chapter's framework."
+  },
+  {
+    "finding_id": "QX6VwZHbgvs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions 'Tosefta Hullin 2:22' in connection to Pantera (lines 684-694) and the tombstone at Bingerbruck. However, the specific evidence of an ossuary inscription for 'Joseph Pontera' discovered in Jerusalem is not in the chapter. The Sepphoris rabbis using the name in non-polemical healing contexts is partially covered (Tosefta reference exists) but the ossuary inscription is new physical evidence for the existing Pantera/genealogy argument."
+  },
+  {
+    "finding_id": "Qb3MZZpHj5Y_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Orpheus Mosaic in Jerusalem suggesting that Ophiyan Gnosticism began early among Jesus's followers is not in any chapter inventory. The chapter text does not mention Orpheus, Gnosticism, or mystery religion frameworks in Jerusalem. This is a new argument (early Hellenistic mystery/Gnostic elements among earliest Jerusalem followers) with new evidence (Orpheus Mosaic). Chapter 3 inventory discusses Greek institutional elements but not Gnostic/Orphic presence in Jerusalem."
+  },
+  {
+    "finding_id": "Qd43_opoNCU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) makes the argument about hereditary succession of leadership. However, the specific concept of 'Messianic Caliphate' from Hebrew kalaf ('to pass on') becoming a Greek then English word for hereditary leadership is not in the chapter. This linguistic etymology is new evidence for the existing dynastic succession argument."
+  },
+  {
+    "finding_id": "S2e6u2gQUTM_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) includes: 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The baptism as transfer of prophetic authority is the core of this argument."
+  },
+  {
+    "finding_id": "S2e6u2gQUTM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The Suba cave archaeological evidence (40 vessels per square meter, broken in sacramental context, bedrock foot-washing installation) at Ein Karem is not in Chapter 2. This is new archaeological evidence for the historicity of baptismal purification rites, which supports the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "SaHiQGZxvk8_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Jesus's mother was Mary Christ' (lines 654-674) discusses Mary's dual Davidic and priestly lineage. Inventory item [38] includes 'Luke 1:5,36: Mary a relative (syngenis) of Elizabeth, of the daughters of Aaron -- priestly aristocracy.' The dual Davidic-Levitical lineage is already presented."
+  },
+  {
+    "finding_id": "T5aPkL5lMdo_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) covers the pattern: John inaugurates, Jesus takes over, after Jesus's death James assumes leadership until his assassination in 62 AD. Inventory item [52] lists: 'James: head of Jerusalem assembly after Jesus's death... Josephus: James executed by high priest Ananus in 62 AD.'"
+  },
+  {
+    "finding_id": "T5aPkL5lMdo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses John's priestly lineage in connection to Mary (lines 654-674) but does not frame John as 'a priest of the line of Aaron' who was 'the teacher of Jesus.' Chapter 3 inventory [22] covers John as priestly co-heir. The specific framing of John as Jesus's teacher with hereditary priestly status is new evidence for the existing argument about John's political-dynastic role."
+  },
+  {
+    "finding_id": "TLNvzuKhOjU_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) includes: 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The textual evidence about Jesus baptizing in the south while John baptized in the north, with Jesus eventually surpassing John's numbers, is covered."
+  },
+  {
+    "finding_id": "TWoqS2EsWQk_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris/Tiberias with trade routes, Herodian construction, and the argument against the peasant model. The Galilee section (lines 166-182) further establishes the cosmopolitan context. The argument and evidence about Galilee's urban infrastructure are present."
+  },
+  {
+    "finding_id": "TWoqS2EsWQk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the political upheaval around Herod's death generally (lines 696-713) and mentions multiple emperors treating Davidic lineage as threats. However, the specific concept of the 'year of the three messiahs' -- three competing revolts breaking out immediately after Herod's death -- is not in the chapter text. This is new evidence for the existing dynastic-political context argument."
+  },
+  {
+    "finding_id": "VzWdFgWH3Xs_3",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's mystical theology and Enochian Judaism in the Dead Sea Scrolls are topics relevant to Chapter 5 (Pauline Epistles) or Chapter 3 (theological context). Chapter 5 inventory items [43-44] discuss 'Greek cosmology (Platonic-Stoic metaphysics, layered heavens)' in Paul. This finding about Enochian mysticism and cosmic exaltation does not bear on Chapter 2's arguments."
+  },
+  {
+    "finding_id": "WRGIchLYC_U_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Ossuary of James' (lines 913-988) extensively discusses the James ossuary and its evidence for blood lineage succession. Inventory item [54] lists the inscription 'James son of Joseph, brother of Jesus' and the argument about physical evidence linking to the historical Jesus family. The finding restates what is already covered."
+  },
+  {
+    "finding_id": "WlUCYM3TH9I_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) discusses the baptism as royal investiture credential with 'You are my son; today I have begotten you.' Chapter 4 inventory [21] covers 'The baptism of Jesus is a coronation ceremony, not a repentance ritual.' The prophetic anointing/commissioning interpretation of baptism is covered across the book."
+  },
+  {
+    "finding_id": "XLybEyhp3Rg_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris rebuilt by Herod Antipas as 'a royal city and regional capital,' with Roman architectural elements, near Nazareth. The argument and evidence are the same."
+  },
+  {
+    "finding_id": "XLybEyhp3Rg_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) explicitly discusses tekton as Greek term meaning 'builder' not just 'carpenter,' and that 'in Galilean construction [it] often implied stonework.' The linguistic argument about tekton is present."
+  },
+  {
+    "finding_id": "Xxt7Gu7jGk8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Hellenistic context and mentions 2 Maccabees 6:7 about Antiochus Epiphanes mandating Dionysiac festivals (lines 272-278). However, the specific evidence from 2 Maccabees about Jewish martyrs under Antiochus adopting belief in bodily resurrection as a reaction -- showing Hellenistic cosmological ideas penetrating Jewish communities -- is not in Chapter 2. Chapter 3 discusses Greek philosophical influence on the soul but not this specific Maccabean resurrection evidence. This is new evidence for the existing argument about Hellenistic-Jewish cultural fusion."
+  },
+  {
+    "finding_id": "Z9vKV3v_IU0_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [38] states 'Birthplace Sepphoris: conquered 104 BC by Alexander Jannaeus who made it his capital' in the section about Mary's Hasmonean connection. The argument about Mary growing up near the largest Hellenistic urban center is present, though not as explicitly as 'Mary grew up in Sepphoris.'"
+  },
+  {
+    "finding_id": "Z9vKV3v_IU0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Mary's royal and priestly lineage (inventory items [37-38]) but does not include the specific evidence about Mary's aristocratic familiarity with elite court protocols ('she probably knew what fork to use'). This is a colorful but new piece of evidence for the existing argument about Mary's non-peasant status."
+  },
+  {
+    "finding_id": "_P4Twtz1Pxw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Hellenistic institutional context generally (Introduction) and mentions Herod's building projects. However, the specific archaeological details of Herod's palace (gardens, fountains, peacocks, mosaics) and Pontius Pilate residing within it with a formal praetorium and judgment platform are not in Chapter 2. This is new evidence for the existing argument about the profound Hellenistic-Roman institutional setting."
+  },
+  {
+    "finding_id": "a62zwKvh5iM_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that the Dead Sea Scrolls' Teacher of Righteousness was an institutional position passed through succession, and that John the Baptist may have been the last holder of this office who then passed it to Jesus, is not in any chapter inventory. Neither 'Teacher of Righteousness' nor this specific succession mechanism appears in the book. This is a new argument with new evidence."
+  },
+  {
+    "finding_id": "aFbIwmkYJ7A_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Jerome's tradition that Paul's family were Galilean Jews captured during revolts after Herod the Great's death in 4 BC and exiled to Tarsus in Cilicia is not in any chapter inventory. The chapter text does not mention Jerome's tradition about Paul's Galilean origins. This is a new argument (Paul's family shaped by Herodian dynastic conflict) with new evidence (Jerome's report of capture and exile)."
+  },
+  {
+    "finding_id": "b42_GgmROPg_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) discusses James succeeding Jesus as leader of the movement. Inventory item [52] covers the succession of brothers. The 'dynasty survived' framing is the same argument."
+  },
+  {
+    "finding_id": "b7BPGLoe8t8_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 272-278) describes Sepphoris with its theater, public buildings, and proximity to Nazareth. The argument and evidence about Sepphoris as a Hellenistic city near Jesus's home are thoroughly covered."
+  },
+  {
+    "finding_id": "b7BPGLoe8t8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's political context (lines 696-713) and mentions messianic revolts. However, the specific evidence of '2,000 crucifixions in the Galilee' when Judas son of Hezekiah led the revolt, and 'three messiahs that summer' after Herod's death, is not in the chapter text. This is new evidence (specific number of crucifixions, three simultaneous messiahs) for the existing argument about the politically volatile dynastic context."
+  },
+  {
+    "finding_id": "b7BPGLoe8t8_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 316-334) argues Jesus was deeply educated. Inventory item states: 'Jesus was deeply educated in both Hellenistic philosophy and Jewish scripture; his teachings rival the greatest philosophers and cannot be reconciled with illiteracy.' The argument against the illiterate peasant model is present."
+  },
+  {
+    "finding_id": "bpkFRaQVb4M_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) includes 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The baptism as transfer of prophetic authority from John to Jesus and the joint baptizing campaign are covered."
+  },
+  {
+    "finding_id": "bpkFRaQVb4M_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not include the specific Josephus citation about Herod Antipas fearing John's 'great influence' over the people and the 'inclination to raise a rebellion.' The chapter discusses Herod killing Hasmonean relatives (lines 696-713) but not John's mass political influence specifically. Chapter 3 inventory [22] covers John as priestly co-heir with dynastic politics, but the specific Josephus fear-of-rebellion citation is new evidence."
+  },
+  {
+    "finding_id": "bpkFRaQVb4M_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Nabataean dynastic context -- Herod Antipas divorcing Aretas's daughter to marry Herodias, triggering a military conflict between Herod and King Aretas -- is not in any chapter inventory. Neither 'Nabataean' nor 'Aretas' nor 'Herodias' appears in the chapter 2 text. This is a new argument (Nabataean dynastic politics as context for John the Baptist's arrest) with new evidence (the Aretas-Antipas conflict)."
+  },
+  {
+    "finding_id": "c-a4NHGlG_g_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not discuss the systematic muting of John the Baptist in Luke-Acts. Chapter 3 inventory [22] covers John as priestly co-heir, and Chapter 4 discusses Gospel dating, but the specific evidence about Luke-Acts systematically presenting John as 'minor and superseded' is a new observation about editorial treatment that supports the existing argument about John's historical importance being greater than the canonical narrative suggests."
+  },
+  {
+    "finding_id": "cwD_vbEafAQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's illegitimacy and the political significance of Davidic lineage (lines 696-713). However, the specific framing of Jesus and John as 'legitimate people from the royal family and from the priestly family' whose mere appearance was 'very threatening' to Herod's contested regime is not stated this way in the chapter. The political contrast between legitimate claimants and illegitimate Herod is new evidence for the existing dynastic argument."
+  },
+  {
+    "finding_id": "cwD_vbEafAQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's political context but does not frame John's arrest specifically as a political suppression because Herod 'was an illegitimate ruler basically the Romans put him in.' The contrast between Herod's illegitimacy and John/Jesus's legitimacy as the motive for political suppression is new evidence for the existing dynastic-political argument."
+  },
+  {
+    "finding_id": "dBeGH2rzGVw_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris as 'a hellenized city' and 'Jewish City but hellenized.' The Sepphoris-as-Hellenistic-urban-capital argument is thoroughly covered."
+  },
+  {
+    "finding_id": "dBeGH2rzGVw_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Mark 6:3 ('son of Mary') in the naming conventions section (lines 85-101) and the Pantera tradition in section 'Jesus's father was killed by Herod' (lines 684-694). Both the Mark 6:3 naming anomaly and the Pantera name appearing in family genealogies are present."
+  },
+  {
+    "finding_id": "dBeGH2rzGVw_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses the brutal Roman political context: 'Herod fled to Rome; Senate declared him King of the Jews (40 BC), Reconquered Jerusalem with Roman legions (37 BC)' and mentions the burning of Sepphoris and mass crucifixions in the dynastic violence section (lines 696-713). The political turbulence at Jesus's birth is present."
+  },
+  {
+    "finding_id": "emIPUzf_NPI_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) discusses baptism as succession of authority from John to Jesus. The Elijah-Elisha transfer parallel is not explicitly mentioned in ch2 but the core argument (baptism as succession rite) is covered."
+  },
+  {
+    "finding_id": "ewJ_wCE-N54_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] discusses the baptism as succession and joint mission. The argument that John and Jesus were 'supposed to work together and bring the kingdom' restates the partnership/succession argument already present."
+  },
+  {
+    "finding_id": "ewJ_wCE-N54_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The specific argument that John is the 'shepherd' figure in Zechariah whose striking (beheading) was prophetically encoded -- and that Jesus found this text and identified John's beheading in it -- is not in Chapter 2. This is new textual evidence (Zechariah's 'strike the shepherd' applied to John rather than Jesus) for the existing argument about John's political-dynastic significance."
+  },
+  {
+    "finding_id": "fNiOflxWa5A_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Jesus's Davidic lineage extensively (genealogy sections, lines 515-631) and the political implications of royal descent (lines 696-713). The argument that Jesus was aware from childhood of his Davidic lineage and its messianic implications restates what the chapter covers about dynastic succession and genealogy."
+  },
+  {
+    "finding_id": "fNiOflxWa5A_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not contain the specific Josephus citation about John being arrested because he 'publicly denounced Herod for marrying the beautiful Herodias' and that Herod 'feared he would raise a rebellion.' The marriage-politics connection (denouncing Herod's marriage as trigger for arrest) is not in Chapter 2. Chapter 3 inventory [22] covers John's denunciation of Herod's marriage as 'dynastic politics, not moral rebuke,' but this specific evidence about the political fear of rebellion is new for Chapter 2."
+  },
+  {
+    "finding_id": "f_ps5e8PECc_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Hebrew Matthew tradition (Shem Tov) preserving an exalted view of John the Baptist where 'all the law and the prophets spoke concerning John' is not in any chapter inventory. Neither 'Hebrew Matthew' nor 'Shem Tov' appears in the chapter text. This is a new argument (John portrayed with theological significance exceeding canonical Gospels in Hebrew Matthew) with new evidence (Shem Tov text)."
+  },
+  {
+    "finding_id": "f_ps5e8PECc_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Hebrew Matthew lacking the Gentile mission language ('go into all the nations') and the trinitarian baptismal formula in Matthew 28:19-20 is not in any chapter inventory. This is a new argument (the original Matthew may not have contained universalizing mission or trinitarian formula) with new textual evidence (Shem Tov Hebrew Matthew variant reading)."
+  },
+  {
+    "finding_id": "f_ps5e8PECc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The Pseudo-Clementine writings showing knowledge of the same exalted view of John found in Hebrew Matthew, with John's followers debating 'our guy is bigger than your guy,' is not in Chapter 2. This provides additional textual evidence from a distinct source tradition for the existing argument about John's political-dynastic significance."
+  },
+  {
+    "finding_id": "g9Rbtin5xvU_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] (lines 624-631) covers 'Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The argument that Jesus was a disciple of John who joined through baptism and subsequently surpassed him is present."
+  },
+  {
+    "finding_id": "h8ZNOupLfuk_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris being rebuilt under Herod Antipas during Jesus's lifetime. The argument about proximity to a Hellenistic urban center and the challenge to the 'peasant Jesus' model is thoroughly covered."
+  },
+  {
+    "finding_id": "h8ZNOupLfuk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Jesus's familiarity with Greek culture through proximity to Sepphoris. However, the specific evidence from Luke 7:25 where Jesus references 'kings living in palaces with luxury and gorgeous apparel' as showing familiarity with Hellenistic-Roman royal culture is not cited in Chapter 2. This is a new textual evidence point for the existing argument about Jesus's Greek cultural awareness."
+  },
+  {
+    "finding_id": "h8ZNOupLfuk_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) discusses tekton as stone mason/builder and the likelihood that Jesus worked in the Herodian building trade at Sepphoris. The argument and evidence are present."
+  },
+  {
+    "finding_id": "h8ZNOupLfuk_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions Herod Antipas's political role but does not include the specific detail about Herod Antipas directly having John the Baptist killed at Machaerus 'across the Dead Sea.' This geographical-political detail is new evidence for the existing argument about the political context."
+  },
+  {
+    "finding_id": "iF8uDWv0jnA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 does not discuss John the Baptist's preaching as threatening Herod Antipas's 'whole life's project' by undermining his legitimacy. Chapter 3 inventory [22] covers John as priestly co-heir, but the specific framing of John's moral criticism as threatening Herod's political project (not just moral rebuke) is new evidence for the existing dynastic-political argument."
+  },
+  {
+    "finding_id": "iF8uDWv0jnA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The specific evidence about Herod's hesitation to execute John because of concern about Roman imperial reaction ('what would the emperor think') is not in Chapter 2. This detail about the Roman political constraint on Herod's actions situates the conflict within the Greco-Roman political framework, providing new evidence for the existing argument."
+  },
+  {
+    "finding_id": "iINnSfnT2nA_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Royal lineage through his mother Mary' (lines 632-643) and 'Jesus's mother was Mary Christ' (lines 654-674) discuss Jesus's Davidic lineage through both Joseph (legal/adoptive) and Mary (biological). The genealogical analysis establishing legitimate claims through both parents is present."
+  },
+  {
+    "finding_id": "iINnSfnT2nA_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Ossuary of James' (lines 913-988) discusses the Talpiot tomb with inscriptions for Jesus, Joseph, Mary, Mariamne, James, Judah son of Jesus, and Matthew. The genealogical verification through the tomb is covered extensively. The specific mixed Davidic-Levitic family claim is implicit in the Talpiot discussion and the Mary lineage sections."
+  },
+  {
+    "finding_id": "iOP61qBEjB4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The specific evidence about three messianic claimants (Judas, Simon, Athronges) emerging in 4 BCE immediately after Herod's death, demonstrating intensely political-dynastic competition, is not in Chapter 2. The chapter discusses Herod's political context and dynastic threats (lines 696-713) but not the 'three messiahs in one year' pattern. This is new evidence for the existing argument about the political nature of messianic expectations."
+  },
+  {
+    "finding_id": "jPNnjlw_474_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) covers Jesus's succession based on Mary's royal and priestly lineage, with James assuming leadership and later Simon. Inventory item [52] lists the succession chain. The finding restates this covered argument."
+  },
+  {
+    "finding_id": "jpotFevAV2Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses baptism as succession (inventory item [36]) but does not include the Dead Sea Scroll community's practice of baptism as formal institutional initiation (not ritual cleansing). The distinction between 'initiation into the movement' vs 'Jewish rites of ritual cleansing' is new evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "kLOFohkSUfg_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] covers Jesus and John conducting parallel baptizing missions with succession of authority, including Jesus deferring to John. The finding about Jesus explicitly deferring ('none greater than John') restates what is present."
+  },
+  {
+    "finding_id": "kkBgaPXOsfI_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 sections on Mary's lineage (lines 632-674) discuss her 'doubly royal' status with both Davidic and priestly lineage. Inventory item [38] includes: 'Luke 1:5,36: Mary a relative of Elizabeth, of the daughters of Aaron -- priestly aristocracy.' The Eastern church references to doubly royal lineage strengthen but substantially overlap the existing coverage."
+  },
+  {
+    "finding_id": "kqQ6t22DJr8_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [38] states 'Birthplace Sepphoris' in Mary's Hasmonean connection section (lines 654-674). The argument about Mary growing up near the largest Hellenistic urban center rather than in rural isolation is present."
+  },
+  {
+    "finding_id": "kqQ6t22DJr8_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) covers James succeeding Jesus and later Simon succeeding James. Inventory item [52]: 'Simon identified as brother/cousin who led Jerusalem community after James.' The succession pattern is present."
+  },
+  {
+    "finding_id": "lVqLt4doip0_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] covers the joint baptizing campaign and succession. Inventory item [52] covers the John-Jesus-James movement chain. The finding about 'Jesus's core disciples that later become part of the twelve apostles are disciples of John the Baptizer' restates what is present in the succession framework."
+  },
+  {
+    "finding_id": "ljF0PdDrGG4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The Dead Sea Scrolls evidence for two expected Messiahs (kingly and priestly) providing context for baptism-as-succession is not elaborated in Chapter 2. Chapter 1 inventory [28] mentions the dual-messiah model. The specific DSS quote ('universally say there are actually two Messiahs') is new evidence for the existing baptism-as-succession argument in Chapter 2."
+  },
+  {
+    "finding_id": "m7CYucnU47A_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris under Herod Antipas and Jesus's exposure to Greek language and cultural concepts. The finding restates the same argument and evidence about Herod Antipas's rebuilding programs providing Jesus with opportunities for learning Greek."
+  },
+  {
+    "finding_id": "mVtJHClo9xg_0",
+    "verdict": "wrong_chapter",
+    "justification": "Greek philosophical concepts (immortal soul, body-soul dualism) being incorporated into Jewish theological vocabulary during the Hellenistic period belongs in Chapter 3, which has inventory item [11]: 'Jesus consistently teaches the Greek (Platonic) model of the immortal soul, not the Hebrew nefesh that perishes with the body' (section: Anthropology, lines 127-144). Chapter 2 does not discuss the soul or body-soul dualism."
+  },
+  {
+    "finding_id": "n0Lxh6agzKQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Jesus's father was killed by Herod' (lines 696-713) explicitly covers: 'Eusebius records that Vespasian ordered a search for all descendants of David (HE 3.12).' The Davidic clan as political-dynastic threat subject to Roman surveillance is covered. The finding restates this with the Tabor quote about Vespasian 'asking around is anybody of the line of David.'"
+  },
+  {
+    "finding_id": "q9aRPgVb1XY_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'What is a gospel?' (lines 497-514) discusses the Augustus-era use of euangelion as political terminology including the Priene inscription (OGIS 458, 9 BC): 'Augustus's birthday as beginning of the euangelia for the world.' The political-imperial language of 'god visible,' 'savior,' and 'gospel' is covered. Chapter 3 inventory [2] also covers titles given to Jesus as pre-existing political terms."
+  },
+  {
+    "finding_id": "q9aRPgVb1XY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Priene inscription for Augustus but does not include the Caligula deification proclamation from the council of Ephesians (ca. 38 AD) describing Caligula as 'god visible... born of Aries and Aphrodite... the shared savior of human life.' This is a new specific example occurring during Paul's active period in Ephesus, providing new evidence for the existing argument about deification language in Hellenistic political context."
+  },
+  {
+    "finding_id": "q9aRPgVb1XY_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that Josephus deliberately reframes Jewish biblical figures (Moses, Elijah, Enoch) according to the Hellenistic divine man genre -- showing that Jewish tradition itself was accommodating Greek categories -- is not in any chapter inventory. The chapter mentions 'divine man' once but not Josephus's self-conscious Hellenization of biblical figures. This is a new argument (Jewish sources actively Hellenizing their own heroes) with new evidence (Josephus portraying Moses/Elijah/Enoch as divine men)."
+  },
+  {
+    "finding_id": "r6hrIn5gxco_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Sepphoris as the Roman capital and Hellenistic urban center near Nazareth (lines 269-291). The Josephus quote about it being the 'jewel of all the Galilee' matches the chapter's own Josephus references. The argument and evidence are present."
+  },
+  {
+    "finding_id": "r6hrIn5gxco_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) explicitly discusses tekton as 'builder' not 'carpenter' and Joseph's involvement in building during Sepphoris's reconstruction. The argument and evidence match."
+  },
+  {
+    "finding_id": "rXUmjzDH8lw_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Herod's alignment with Rome extensively. Inventory item 'Herod the Great' (lines 115-117) states: 'Herod fled to Rome; Senate declared him King of the Jews.' The finding about Herod's sons being raised in the palace of Augustus and Tiberius adds a detail, but the argument about Herod's Greco-Roman institutional alignment is covered."
+  },
+  {
+    "finding_id": "rXUmjzDH8lw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding combines Sepphoris evidence (covered) with the specific evidence that Jesus's use of 'hypocrite' (Greek hypokrites = stage actor) suggests familiarity with theatrical performance at Sepphoris. The theater at Sepphoris is mentioned in Chapter 2, but the hypocrite/stage actor linguistic connection is not. This is new evidence (same as 561NmUuqJ4g_1)."
+  },
+  {
+    "finding_id": "rXUmjzDH8lw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The excavated Priestly mansion on Mount Zion with Greco-Roman material culture (imported sigillata pottery, frescoes, luxury goods) demonstrating Hellenistic consumption among Jerusalem elite is not in Chapter 2. This is new archaeological evidence for the existing argument about the pervasive Hellenistic institutional context."
+  },
+  {
+    "finding_id": "shT3DYNrbD8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's Roman backing (lines 115-117) but does not include the specific detail of Herod's coronation involving 'sacrifice to Jupiter on the Capitoline Hill flanked by Octavian and Anthony' or Augustus placing a crown on his head at Rhodes. These specific ceremonial details of Hellenistic royal protocol are new evidence for the existing argument about Greek institutional context."
+  },
+  {
+    "finding_id": "shT3DYNrbD8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Sepphoris's Hellenistic features including 'Greek theater, Roman-style forum' (lines 272-278). However, the specific evidence that Herod built theaters, amphitheaters, and temples to Augustus in Jerusalem -- demonstrating Hellenistic institutional frameworks in Jerusalem itself, not just Galilee -- is not in Chapter 2. This is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "shT3DYNrbD8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses Herod's dynasty briefly (lines 115-117) but does not include the specific evidence of 'a dynasty of his descendants who ruled in Roman Palestine down to 100 AD.' This provides institutional continuity context for the existing dynastic succession argument."
+  },
+  {
+    "finding_id": "shT3DYNrbD8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions Herod's Roman connections but the specific evidence that 'Herod's sons Antipas and Archelaus grew up and were educated in Rome under the direction of the emperor himself' is not in the chapter text. This is new evidence for the existing argument about deep integration of Palestinian rulers into Hellenistic-Roman institutional frameworks."
+  },
+  {
+    "finding_id": "ucse0qsOjy4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The evidence about early Jewish followers combining the anchor (Jewish royalty symbol) with crescent and star (sign of Jonah) and the cross to declare 'Jesus was the rightful hereditary King of the Jews' is not in Chapter 2. The chapter discusses Hasmonean coins with stars (lines 515-534) and anchors, but this specific combination of symbols by early followers is new evidence for the existing dynastic argument."
+  },
+  {
+    "finding_id": "v8XOurqbs0g_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The specific parallel between Essene baptismal practice ('sprinkle pure water and you become clean') and John's baptism is not in Chapter 2. The chapter mentions Essenes and Qumran once each but does not draw the specific baptismal practice parallel. This is new evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "v8XOurqbs0g_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 inventory item [36] includes 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The finding about Jesus breaking off from John and baptizing independently in Judea restates this covered evidence."
+  },
+  {
+    "finding_id": "vOWDxP5lXA4_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that John the Baptist and his followers created an apocalyptic text (a pre-Christian version of Revelation) that was later Christianized is not in any chapter inventory. Chapter 5 inventory [53-55] discusses Revelation as imperial restoration document but not John the Baptist's authorship of an earlier text. This is a new argument with new evidence."
+  },
+  {
+    "finding_id": "yEYzMFzr2Ts_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 discusses Sepphoris as the major Hellenistic urban capital near Nazareth multiple times (lines 269-291). The argument and evidence about proximity to a Hellenistic city with Herod Antipas's palace are thoroughly covered."
+  },
+  {
+    "finding_id": "yoD9JePzlFQ_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) covers Jesus as descendant of David heading an apocalyptic movement, with James appointed as head of the Jerusalem church. Inventory items [52-53] cover this. The finding restates what is present."
+  },
+  {
+    "finding_id": "yomIpReivsI_3",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's ascent to heaven as a 'quintessential Hellenistic thing' with parallels to Enoch, Ascension of Isaiah, Plato, and Cicero belongs in Chapter 5 (Pauline Epistles), which has inventory item [43]: 'Paul and Luke employ Greek cosmology (Platonic-Stoic metaphysics, layered heavens, Greek underworld, ascent logic).' Chapter 2 does not discuss Paul's cosmology."
+  },
+  {
+    "finding_id": "zBdJa2K8e4Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The specific framing of Jesus and John as parallel 'Messiahs' (plural) whose deaths left the movement leaderless -- 'it had lost both its leaders first John and then Jesus the two Messiahs' -- is not explicitly stated in Chapter 2. The chapter discusses succession (inventory [36], [52]) but not the parallel loss of two messiahs. This 'two messiahs' language is new evidence for the existing succession argument."
+  },
+  {
+    "finding_id": "zBdJa2K8e4Y_1",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Dynastic succession' (lines 884-912) discusses James's position based on royal Davidic lineage. The finding about 'James the brother of Jesus sharing the Royal lineage of King David occupies the central position' restates what the chapter covers."
+  },
+  {
+    "finding_id": "zk31LcDymCA_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Joanna (wife of Kuza, Herod Antipas's chief administrator/steward) as a key patron of Jesus's movement is not in any chapter inventory. Neither 'Joanna' nor 'Kuza' appears in the chapter text. This is a new argument (Jesus was embedded in Herodian administrative networks through elite patrons like Joanna) with new evidence (Luke's identification of Joanna as wife of Herod's chief of staff)."
+  },
+  {
+    "finding_id": "7pDFUIU0Ojk_0",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 269-291) discusses Sepphoris and Tiberias with their Hellenistic features including theaters, stadiums, and colonnaded streets. The argument about Galilean cities as Hellenistic centers is covered."
+  },
+  {
+    "finding_id": "7pDFUIU0Ojk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Hellenistic context of Galilee but does not provide specific demographic data. The evidence that Galilee was 'never purely Jewish' with perhaps '55-60% Jewish' population and 'strong minorities' of Greeks, Phoenicians, and Arameans is new demographic evidence for the existing argument about Greek cultural influence. The inventory mentions Greek inscriptions dominating at Sepphoris (lines 269-291) but not population percentages."
+  },
+  {
+    "finding_id": "7pDFUIU0Ojk_2",
+    "verdict": "covered",
+    "justification": "Chapter 2 section 'Was Jesus an illiterate carpenter?' (lines 296-315) discusses Jesus's family as builders (tekton) in Nazareth near Sepphoris with ongoing construction. The argument about the building trade providing direct exposure to Hellenistic institutions is present."
+  },
+  {
+    "finding_id": "AP9pVwGaadg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions the Decapolis twice as part of the Greek-city framework (Introduction, lines 23-48). However, the specific evidence about Roman administrative reorganization creating the Decapolis as an 'independent Greek political federation' of ten city-states is not elaborated in Chapter 2. This is new institutional evidence for the existing argument about Greek political structures surrounding Jesus."
+  },
+  {
+    "finding_id": "FEKkQgR5t14_2",
+    "verdict": "wrong_chapter",
+    "justification": "Caesarea Philippi as the symbolic location where Peter confesses Jesus as Messiah -- creating a counterclaim to Augustus temples -- belongs in Chapter 4 (Gospels as historically reliable). Chapter 4 inventory [38] discusses 'Mark's introduction is a coronation narrative' and the Gospel of Mark's structure. This political-symbolic reading of the Petrine confession at Caesarea Philippi does not bear on Chapter 2's arguments."
+  },
+  {
+    "finding_id": "GSt1p_g7mQk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 discusses the Hellenistic context of Jesus's world but does not describe Caesarea Philippi specifically. The evidence about temples to Emperor Augustus built by Herod Philip, temples to Pan, Roman soldiers, and mixed populations at this specific location is new evidence for the existing argument about Jesus operating in a 'radically diverse' Hellenistic-Roman world rather than a purely Jewish environment."
+  },
+  {
+    "finding_id": "QM0jHvAku_M_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 mentions the Seleucid dynasty and the Hasmonean Maccabean revolt (Introduction, lines 23-48). However, the specific discussion of how the Hellenistic-Persian imperial conflict created the political-dynastic context that produced the Hasmonean kingdom through the Maccabean revolt against the Seleucids is not elaborated as new contextual evidence. The inventory item [3] (lines 23-48) notes 'Sulla permitted Hasmonean and Herodian client kingdoms' but does not detail the Seleucid period that produced them. This is new evidence for the existing argument about pre-Hasmonean Hellenistic influence."
+  },
+  {
+    "finding_id": "ayuwPvqo_0I_2",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's connection to Tarsus as a center of Stoic philosophy and his engagement with Stoic and Epicurean philosophers in Athens belongs in Chapter 5 (Pauline Epistles). Chapter 5 inventory [0] covers 'continuation of the Greek imperial tradition' and items [4-9] discuss Paul's political profile and vocabulary. Chapter 2 mentions Tarsus once but not in connection to Paul's philosophical background."
+  }
+]

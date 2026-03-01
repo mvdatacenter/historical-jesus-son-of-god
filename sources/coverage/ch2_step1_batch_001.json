@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "5zZchadJDM0_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly documents '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals; segments of Jewish population complied' and 'Dionysus mosaics at Sepphoris reflect Dionysian imagery retaining religious meaning.' The finding's evidence about Jews participating in Dionysus worship from 1-2 Maccabees is already presented in the chapter with the same primary source."
+  },
+  {
+    "finding_id": "6YA5_e9JhW4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as dynastic succession (inventory item 36, lines 624-631) and John the Baptist in political terms, but does NOT present McGrath's specific framing of John's water-baptism as a direct institutional alternative to his father Zechariah's temple sacrifice system. The father-son priestly rivalry angle is new evidence for the existing argument about baptism as political-institutional challenge."
+  },
+  {
+    "finding_id": "6YA5_e9JhW4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses the Hasmonean dynasty's fusion of priestly and royal authority (inventory items 31, 34, 38), but the specific concept of John seeing himself as the 'priestly messiah' who would anoint the 'royal messiah' in a dual-messiah framework is not in the chapter. This is new evidence (dual-messiah Hasmonean model) for the existing argument about baptism as dynastic succession."
+  },
+  {
+    "finding_id": "6YA5_e9JhW4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as transfer of authority from John to Jesus (inventory item 36, Codex Bezae 'today I have begotten you'). The specific argument that John was MORE famous than Jesus in his own time and that gospels progressively worked to downplay John is not presented as evidence in ch2. This is new evidence (John's greater fame, gospel redaction to subordinate John) for the existing dynastic succession argument."
+  },
+  {
+    "finding_id": "6YA5_e9JhW4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as institutional and political (item 36), but does not present the specific evidence that John's baptism was institutionally distinct from standard Jewish purity immersions -- that he was uniquely 'the immerser' doing something different. New evidence for the existing argument about John's institutional significance."
+  },
+  {
+    "finding_id": "6bqScTN2wRs_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 discusses Jesus's Hasmonean-Davidic lineage (items 31-38) but does NOT argue that Jesus descended from Judas the Galilean or that succession required specifically royal parentage through Judas. This is a different genealogical claim (Judas the Galilean lineage) not present in any chapter inventory, and the evidence (Lawson's argument about succession requiring Judas's son) is also absent."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Philo of Alexandria extensively (item 22, lines 316-334) including Logos categories and the Alexandrian intellectual environment. However, the specific framing of Philo as a 'systematic bridge' between Jewish monotheism and Platonic-Stoic philosophy is not in ch2. The global Q&A's 'Eastern Mediterranean synthesis' and 'Royal-exile framework' address Philo's role, and ch2 mentions the Logos connection. The specific evidence of Philo's systematic integration project is new evidence bolstering the existing Greco-Christian thesis argument."
+  },
+  {
+    "finding_id": "7CwBIkOS6Ew_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession rite (item 36) and John in political terms. Tabor's specific framing of John as fulfilling a 'priestly messiah' role within a dual-redeemer eschatological framework is not presented in ch2. New evidence for existing argument about John's political-dynastic role."
+  },
+  {
+    "finding_id": "7CwBIkOS6Ew_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as dynastic succession (item 36), but does not present the specific evidence of John's baptism as initiating followers into an organized 'covenant people' by accepting a political leader's authority. The concept of baptism as political loyalty oath creating a structured political body is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues modern scholarship ignores Hellenistic civilization, and item 20 cites 2 Maccabees. However, the specific texts MacDonald cites as evidence of Jewish literary imitation of Greek models -- 3 Maccabees (imitations of Bacchae), 4 Maccabees (imitations of Greek poetry), Tobit (imitations of Odyssey), Testament of Abraham, Josephus imitating Homer -- are NOT individually cited in ch2. Only 2 Maccabees 6:7 and Philo appear. These additional Jewish-Hellenistic literary imitation examples are new evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "80tkg8Tk66o_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) explicitly covers Luke placing genealogy at baptism as royal investiture credential and states 'Codex Bezae and Old Latin manuscripts: You are my son; today I have begotten you (Psalm 2:7) at baptism.' The finding's evidence about baptism as transfer of prophetic authority from John to Jesus is the same argument and evidence already in the chapter."
+  },
+  {
+    "finding_id": "80tkg8Tk66o_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that modern scholarship ignores Hellenistic civilization that shaped the Eastern Mediterranean, and item 22 (lines 316-334) places Jesus within Hellenistic philosophical education. Tabor's argument to situate Jesus within Hellenistic culture rather than solely Jewish apocalyptic framework is the same argument the chapter makes. The evidence (Tabor's general claim) does not add specific new data points beyond what the chapter already presents."
+  },
+  {
+    "finding_id": "9vnITYJ4ZQ8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession rite (item 36) and uses Codex Bezae's 'today I have begotten you.' Carrier's specific framing of Christian baptism as Greco-Roman divine ADOPTION -- where baptized believers become co-heirs with Jesus as 'brothers' inheriting the kingdom -- is a distinct piece of evidence (the adoption/inheritance legal mechanism) not presented in ch2. This bolsters the existing dynastic succession argument with new Greco-Roman adoption framework evidence."
+  },
+  {
+    "finding_id": "Anhuh6nNtfg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) provides evidence that 'Codified Judaism emerged within Hellenistic political and administrative frameworks' and item 19 (lines 269-291) documents Galilee's deep Hellenization. The general claim that Greek ideas filtered in 'by osmosis' during the Maccabean period is the same argument with no new specific evidence beyond what the chapter already presents."
+  },
+  {
+    "finding_id": "BVaVCa8rZLA_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) makes the same core argument: modern scholarship is biased toward Jewish context while ignoring Hellenistic civilization. The specific critique that 'Judaism' is anachronistic as a monolithic category aligns with item 0's evidence that 'Codified Judaism emerged within Hellenistic political and administrative frameworks.' No new specific evidence added."
+  },
+  {
+    "finding_id": "BVaVCa8rZLA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Sepphoris Hellenization with Dionysiac mosaics (items 19-20), but Carrier's firsthand description of elite Jewish residences at Sephorus displaying syncretistic religious practice -- specifically elite homes showing they 'can't be monotheists' -- is a different, first-person archaeological observation not presented in the chapter. New evidence for existing Hellenization argument."
+  },
+  {
+    "finding_id": "BYOuSQgO9vA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses the fall of the Greek world and Ptolemaic/Seleucid rule, and item 0 discusses Hellenistic civilization. Kaslovski's evidence about Greek cultural penetration from the 6th century BCE onward through the Persian Empire and into the Levantine interior extends the timeline of Greek presence further back than ch2's focus on post-Alexander. New evidence (6th century BCE Greek presence via Persian Empire) for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "Bj9pn0Lwdxk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues for Hellenistic context with 'All early Christian texts written in Greek.' Item 20 cites 2 Maccabees. However, the specific texts Judith and Joseph and Aseneth as examples of Jewish literature written in Greek and imitating Greek literary antecedents are NOT cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) makes exactly this argument: Jesus and early Christianity must be understood through Hellenistic lens, with evidence that 'Codified Judaism emerged within Hellenistic political and administrative frameworks.' The general claim about 'Hellenized Judaism' as a synthesis adds no new specific evidence."
+  },
+  {
+    "finding_id": "C7BVVUimK4M_3",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Seleucid rule and item 0 discusses the Hellenistic context. Collins's discussion of Antiochus IV Epiphanes and Seleucid political structure establishing the Hellenistic-institutional context is covered by ch2's treatment of the Seleucid period (item 2: '323 BCE: Alexander died in Babylon; empire divided, largest share to Seleucus Nicator'). No new specific evidence beyond general Seleucid political context."
+  },
+  {
+    "finding_id": "C80zV5KbY2M_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as dynastic succession (item 36) using Codex Bezae's 'today I have begotten you.' MacDonald's specific parallel between Jesus's baptism and Telemachus being empowered by Athena in the Odyssey -- divine figure descending as a bird, heavenly voice confirming sonship, beloved son empowered to restore the kingdom -- is not in ch2. This Homeric parallel is new evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "C80zV5KbY2M_1",
+    "verdict": "wrong_chapter",
+    "justification": "The Transfiguration scene (Mark 9) paralleling Odysseus's transfiguration by Athena is about Gospel literary composition and Homeric mimesis. Ch3 covers 'Son of God' titles and Hellenistic royal theology (ch3 inventory discusses royal titles, divine sonship, glory language). Ch4 covers Gospel reliability and literary techniques. This finding about a specific Gospel narrative's literary construction belongs in ch4 (Gospel literary analysis) or ch3 (glory/divine revelation themes)."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic intellectual context (items 0, 22) but does not mention the Book of Enoch specifically as representing an 'entire mindset and understanding of the cosmos' that formed the backdrop for NT writers. Item 22 mentions 'Followers familiar with Book of Enoch and Wisdom of Sirach' but only as evidence of Jesus's education, not as evidence of a cosmological worldview. The finding frames Enoch as foundational cosmological context rather than educational indicator -- new evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_8",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 does NOT argue that the Gospel Jesus is an inversion of Judas the Galilean (pacifist vs militant, pro-tax vs anti-tax). The chapter discusses Jesus's genealogy and lineage but not this specific argument about ideological inversion of a historical figure. The evidence (Judas the Galilean as philosophical opposite) is also not in the chapter. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "DSeLK5dPRzg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and deification patterns (item 0). Josephus giving Moses an apotheosis to make him 'competitive with Hellenistic figures' is a specific example not cited in ch2. The argument (Jewish-Hellenistic adaptation of divine honor) is implicit in ch2's Hellenistic framework, but this specific evidence about Josephus rewriting Moses is new."
+  },
+  {
+    "finding_id": "EEro_BI3m1s_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession rite (item 36). Robinson's framing of baptism as spiritual rebirth where initiates are 'effectively born of a virgin' through water ritual introduces a new interpretive lens (virgin birth as baptismal metaphor) not present in ch2. New evidence for existing baptism argument."
+  },
+  {
+    "finding_id": "EEro_BI3m1s_1",
+    "verdict": "not_relevant",
+    "justification": "Robinson's connection of John the Baptist to Hindu yoni symbolism and the Levi/water tradition is speculative comparative mythology without bearing on any argument in the book. The book does not argue for Hindu influence on baptism, and this finding provides no primary source evidence usable within the book's Greco-Christian framework."
+  },
+  {
+    "finding_id": "FTHtqlfSlcg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Persian/Zoroastrian influence on Judaism peripherally and the broader Hellenistic-Persian context. White's specific evidence of Persian religious imagery appearing in Jewish temple walls is a concrete archaeological datum not cited in ch2. New evidence for the existing argument about foreign cultural influence on Jewish religious institutions."
+  },
+  {
+    "finding_id": "FTIum8FFQMo_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession and uses Codex Bezae (item 36). Derek's interpretation of baptism through mythological water symbolism (chaos, death, Leviathan, the dragon) from shared Greco-Roman and Near Eastern traditions is a distinct interpretive frame not present in ch2. New evidence for the existing argument about baptism within broader Hellenistic context."
+  },
+  {
+    "finding_id": "FTbibf6tSeU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context extensively (items 0, 19, 20). The specific evidence of widespread Hellenized Yahwism across the Mediterranean in the pre-Christian period ('Yao as top God' across the Mediterranean from England to Egypt) is not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "GBlGY_dphZw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses John in political-dynastic terms (item 36) but does not cite Josephus's specific account that Herod Antipas executed John for pragmatic political reasons (fearing rebellion). This Josephus reference is not presented as evidence in ch2. New evidence for the existing argument about John as political threat."
+  },
+  {
+    "finding_id": "GBlGY_dphZw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 does not discuss the Nabataean political context (Herod divorcing Aretas IV's daughter, resulting in military defeat). This specific evidence about Herod Antipas, Herodias, and Aretas IV provides political context relevant to John the Baptist's execution. New evidence for the existing dynastic/political framework."
+  },
+  {
+    "finding_id": "GH_N4DubZ58_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20) and Herod's building projects (item 20: Sepphoris as royal city). The specific description of Caesarea Philippi with its temple to Augustus, Temple of Pan, and competing divine figures as the backdrop for Jesus's ministry claims is not presented as evidence in ch2. New evidence for the existing Hellenistic institutional context argument."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). Cooney's parallel between Paul's baptism/Lord's Supper as 'magical acts' analogous to Isis's acts for Osiris introduces Egyptian mystery religion evidence not present in ch2. However, the global Q&A rejects 'mystery cult' framing -- the institutional data should be extracted and reframed. New evidence (Egyptian ritual parallel) for existing baptism argument, requiring reframing through imperial cult lens per Q&A."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses dynastic succession extensively (items 31-38, 52-53). The Horus-Jesus parallel (child king requiring protection, father-to-son succession, Herod/Seth as usurper) is not cited in ch2. New Egyptian evidence for the existing dynastic succession framework."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Greek monotheistic thought (item 1, lines 16-21) but does not present monotheism as a political tool (a 'litmus test of who's with you or who's against you'). Cooney's framing of monotheism as political control mechanism (possibly invented by Akhenaten) is new evidence for the existing argument about how religious ideology served political succession."
+  },
+  {
+    "finding_id": "GdYTaTzvypI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and mentions Ptolemaic/Seleucid rule (items 0, 2). The specific argument that Judaism was 'radically transformed' by Zoroastrianism after the Babylonian exile, introducing heaven/hell, savior figures, apocalyptic history, and individual conscience, is not presented in ch2. New evidence for the existing argument about foreign influence on the Jewish context preceding Jesus."
+  },
+  {
+    "finding_id": "HTxCDqbc0Zw_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that early Christianity must be understood through Greco-Christian rather than purely Jewish sources, with evidence that 'All early Christian texts written in Greek.' The finding's general claim that Christianity came from Mediterranean/pagan ideas and we should 'broaden our sources' restates this argument without adding new specific evidence."
+  },
+  {
+    "finding_id": "H_qQVXRfEz8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses the term 'Nazarene' (item 18, lines 245-261) with evidence about Arabic al-Nasara and early Christian usage. However, the specific argument that 'Nazarene' derives from Isaiah 11:1's netzer (branch/royal descendant) rather than geographic location, supported by Dead Sea Scroll evidence of 'natsurim habrit' as a sectarian name, is NOT in ch2. This etymological evidence is new for the existing Nazarene/Nazareth discussion."
+  },
+  {
+    "finding_id": "I4JPa4vV7Is_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) states 'Torah in canonical written form, Moses as lawgiver, and Decalogue first securely attested in post-Alexander Hellenistic era' and discusses Hasmonean dynasty emergence. Adler's archaeological evidence that Judaism emerged in the Hasmonean period is the same evidence and argument already in ch2."
+  },
+  {
+    "finding_id": "J-gXIlSUUVg_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that early Christianity must be understood through Hellenistic lens, and item 19 (lines 269-291) documents Galilean Hellenization. The claim that early Christian communities were 'Hellenistic Jews' in 'Greek speaking Greek cultured world' restates the chapter's core thesis without adding new specific evidence."
+  },
+  {
+    "finding_id": "JDndBrWXNXw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20) and Herod's building projects. Crossan's specific evidence that Antipas relocated his capital to Tiberias on the Sea of Galilee (c. 19 CE), renamed the lake after Emperor Tiberius, and commercialized fishing as part of 'Mediterranean globalization' is not cited in ch2. New evidence (Tiberias founding, economic restructuring) for the existing Hellenistic institutional context argument."
+  },
+  {
+    "finding_id": "JOsGRR-vqUw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36) with Codex Bezae. The specific Homeric parallel of Athena empowering Telemachus (Odyssey) as parallel to Jesus's baptism -- divine figure flying down, confirming paternity, empowerment -- is not in ch2. New evidence (Athena-Telemachus parallel) for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "JOsGRR-vqUw_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 22 (lines 316-334) discusses Jesus's education in Hellenistic philosophy and item 28 (lines 459-476) discusses parables as Greek rhetorical forms. The specific evidence that Greek-speaking authors were trained in Homer (Iliad, Odyssey, Euripides) as foundational to literacy is mentioned implicitly but not stated with this clarity. However, ch3 cross-chapter inventory may cover this. Checking: ch3 and ch1 inventories do not specifically state this training point. New evidence for the existing argument about Greek institutional/literary context."
+  },
+  {
+    "finding_id": "KGMXVRjfPW8_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) states 'Torah in canonical written form, Moses as lawgiver, and Decalogue first securely attested in post-Alexander Hellenistic era.' Adler's evidence that Torah observance is first attested in the Hasmonean period (second century BCE) and that Judaism itself is a Hellenistic-era development is the same argument and evidence already in the chapter."
+  },
+  {
+    "finding_id": "KJqcC6ze_9k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty (items 34, 38) and Roman political context. Julius Caesar's assumption of Pontifex Maximus in 63 BC coinciding with Rome's conquest of Jerusalem is not cited in ch2. This specific chronological coincidence provides new evidence for the existing argument about Roman institutional control over Jewish religious authority."
+  },
+  {
+    "finding_id": "KVHxXveCtyk_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) explicitly discusses baptism as royal investiture with 'Codex Bezae and Old Latin manuscripts: You are my son; today I have begotten you' and 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' Tabor's description of Jesus's baptism as joining John's movement and splitting the work is the same dynastic succession argument with the same evidence."
+  },
+  {
+    "finding_id": "KjBx7KgsJxg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 2). The specific evidence about Jewish narratives evolving during the Hellenistic period under influence of Greek literary models (Herodotus, Homer), and the identification of Moses's foster mother with an Egyptian goddess as 'Hellenistic Jewry apologetics,' is not cited in ch2. New evidence for the existing Hellenistic influence argument."
+  },
+  {
+    "finding_id": "LL6dSns4pqU_6",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) provides evidence 'All early Christian texts written in Greek' and argues for Greco-Christian framework. MacDonald's point that Gospel authors were diaspora Jews and gentiles writing in Greek, not the Jerusalem Torah-observant community, restates this argument without new specific evidence beyond what ch2 already presents."
+  },
+  {
+    "finding_id": "LLvIgkRs5IM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context extensively. The specific archaeological evidence that a book of Virgil's Aeneid was found among soldiers' remains at Masada, along with bilingual Greek-Latin texts, proves Greek/Latin literature was physically present in first-century Palestine. This specific Masada archaeological find is not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "LrxET9ss0Cg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and Sepphoris Hellenization (items 19-20). Greeks minting coins with Athena and Zeus in the Levantine region in the 5th-4th centuries BCE is specific numismatic evidence not cited in ch2. New evidence for the existing Hellenistic institutional presence argument."
+  },
+  {
+    "finding_id": "NAxMs5G3pMA_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) discusses 'Sepphoris rebuilt as royal city and regional capital under Herod the Great' with Greek theater, forum, palace, colonnaded streets, and elite villas. The general statement that Herod built Hellenistic Jewish cities for diaspora Jews and gentiles restates this without new specific evidence."
+  },
+  {
+    "finding_id": "NJA9XeZWc3I_0",
+    "verdict": "not_relevant",
+    "justification": "Williams's gematric and zodiacal pairing of John the Baptist and Herod Antipas (969/1119, Aquarius/Leo) is numerological speculation that does not bear on any argument in the book. The book does not use gematria or zodiacal analysis for John's role. The succession point ('John opened the door for Jesus') is already covered in ch2 item 36."
+  },
+  {
+    "finding_id": "NJA9XeZWc3I_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 discusses Jesus's Hasmonean-Davidic lineage and Herodian context, but does NOT argue that Jesus was 'introduced by pro-Roman Jewish factions as the new Herod' to replace the Herodian dynasty. The specific evidence that Gospel accounts consistently position Jesus's emergence with the death/deposing of Herodian rulers (Herod the Great/Matthew, Herod Archelaus/Luke, Herod Agrippa/Acts) is not in ch2. Both the argument (Jesus as Herodian replacement) and the evidence (chronological correlation pattern) are new."
+  },
+  {
+    "finding_id": "NJA9XeZWc3I_2",
+    "verdict": "not_relevant",
+    "justification": "Williams's claim about 'mescaline The Wise Ones' (maskilim) writing Daniel with embedded numerical codes from Orphic schools is speculative numerology without verifiable primary source evidence. The book does not argue for Orphic numerical codes in Daniel, and this finding provides no usable evidence for any chapter argument."
+  },
+  {
+    "finding_id": "NV5ffzA_Jhc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession rite (item 36). Lundwall's tracing of baptism to ancient Hellenistic water-crossing rituals where water-immersion symbolizes overcoming death and rebirth is a distinct cultural-historical origin not cited in ch2. New evidence (ancient Hellenistic water-crossing ritual background) for existing baptism argument."
+  },
+  {
+    "finding_id": "Npkjy0o-N_I_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses the Herodian political context and Nabataean connections peripherally (item 9: Herod's kingship). Mason's specific evidence about the political relationship between Herod Antipas and Aretas IV through marriage, and Makaerus's location on the border between their territories as the site of John's execution per Josephus, is not cited in ch2. New evidence for the existing dynastic/political framework."
+  },
+  {
+    "finding_id": "O1cxMlDgTa8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as dynastic succession (item 36) with Codex Bezae's 'today I have begotten you.' The finding that early Christian Epiphany traditions (January 6) centered on baptism as divine revelation -- with Basilidean Christians celebrating 'the Epiphany of Christ' on January 5-6 commemorating the baptism as manifestation of divinity -- is specific historical-liturgical evidence not in ch2. New evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "OY6O6Zsf_Ro_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly states '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals; segments of Jewish population complied.' Price's discussion of Hasmonean troops fighting the Seleucid empire with evidence of Hellenistic influence uses the same primary source (2 Maccabees) already cited in ch2."
+  },
+  {
+    "finding_id": "OqifvPvsK7I_3",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that 'All early Christian texts written in Greek' and item 19 (lines 269-291) documents deep Hellenization. The general claim that Gospels are 'Greco Hellenistic literature written overseas in a foreign language' restates the chapter's argument without new specific evidence."
+  },
+  {
+    "finding_id": "OxV6XVY6REY_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues Hellenistic context is essential, and item 1 (lines 16-21) discusses Greek philosophical monotheism. The general claim that 'Greek philosophers reshaped fundamental religious understandings' creating 'an entirely new version of God' restates these arguments without new specific evidence."
+  },
+  {
+    "finding_id": "P2QDPJBWqV0_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) discusses Hellenized Jews in Greco-Roman institutions. Singer's description of Hellenized Jews and Paul as emerging from Hellenized rather than Orthodox Jewish contexts restates this without new specific evidence beyond what ch2 and ch5 already cover."
+  },
+  {
+    "finding_id": "PrPoP3e-SAo_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that early Christianity shifted to Greco-Roman focus after the Jewish War. MacDonald's description of Mark's shift from Jewish to Greek intertexts after the Jewish War restates this transition argument. The evidence is the same general framework already in ch2."
+  },
+  {
+    "finding_id": "QJ4qY_0YXPw_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) explicitly discusses baptism as royal investiture with 'Codex Bezae and Old Latin manuscripts: You are my son; today I have begotten you.' The finding's analysis of baptism echoing Roman adoption rituals with 'You are my beloved son' as heir designation language is the same argument and evidence already in ch2."
+  },
+  {
+    "finding_id": "RaQembQapF8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and Sepphoris (items 19, 20). Friesen's inscriptional evidence of Jewish attendance at Greek theaters throughout the Roman world and Christian sections in later theaters (Aphrodisias) is specific archaeological evidence not cited in ch2. New evidence for the existing Hellenistic institutional context argument."
+  },
+  {
+    "finding_id": "RmUebLMGVcU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Jesus's lineage and mentions Hellenistic birth narratives peripherally. The specific cataloging of miraculous birth narratives across multiple Greco-Roman figures (Augustus, Alexander, Hercules, Asclepius) as a pervasive pattern is not in ch2. Ch3 cross-chapter inventory discusses divine birth claims more centrally. However, the finding is tagged for ch2, and the specific evidence (catalogue of parallel birth narratives) is new for ch2's arguments about Hellenistic context."
+  },
+  {
+    "finding_id": "Rspshd_c7P0_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) explicitly discusses baptism as succession with 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' Lawson's quote 'transfer of prophetic authority from one figure to the next' restates this argument with the same evidence."
+  },
+  {
+    "finding_id": "SMh7fwG5mVI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20). Litwa's specific analogy of Jews maintaining a distinct religious subcultural identity within the broader Hellenistic matrix -- comparable to Orthodox Jews in modern America -- is a new framing not in ch2. The evidence about Judea being Hellenized with Greek as lingua franca partly overlaps, but Litwa's sociological model of subcultural integration is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "UBu9JnehK9E_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Seleucid context (item 2). Collins's reference to Paul Cosman's work on Seleucid ideology and the Seleucid chronology system shaping apocalyptic thought is specific scholarly evidence not cited in ch2. New evidence for the existing argument about Seleucid influence."
+  },
+  {
+    "finding_id": "UBu9JnehK9E_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses the fall of the Greek world (item 2, lines 23-48) and lists Alexander's death. Collins's specific argument that Alexander introduced a cosmopolitan worldview fundamentally changing how people conceptualized 'the totality of time, the totality of space' as the driving force behind apocalyptic literature is a specific mechanism not described in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "UG7QSv8fhBg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Alexander's empire division and Seleucid rule. The general description of Alexander's generals Hellenizing Judea by introducing gymnasium and Athenian cultural practices, provoking the Hasmonean reaction, restates background already in ch2 (items 2, 20)."
+  },
+  {
+    "finding_id": "UG7QSv8fhBg_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 38 (lines 654-674) discusses Mary's Hasmonean connection, and items 9, 41 discuss Herod's political marriages. The general statement that Herods married into the Hasmonean family 'so they could represent their sons as legitimate messiahs' restates the dynastic marriage strategy already in ch2 (items 9, 38, 41)."
+  },
+  {
+    "finding_id": "UG7QSv8fhBg_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Seleucid rule and the Hasmonean period. The general description of the Seleucid rulers controlling Judea before the Hasmoneans 'reconquered the area' is background already covered in ch2."
+  },
+  {
+    "finding_id": "UNaRKEl4TIQ_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) provides evidence 'All early Christian texts written in Greek' and items 19-22 discuss deep Hellenization. The claim that early Christians were embedded in Greek culture and 'the entire New Testament is written in Greek' restates this argument without new specific evidence."
+  },
+  {
+    "finding_id": "UNaRKEl4TIQ_2",
+    "verdict": "covered",
+    "justification": "Ch2 discusses Josephus extensively as a Hasmonean relative writing in Greek (item 46). The claim that Josephus augmented biblical history by imitating Homeric epics is implicit in ch2's framing of Josephus as a Hellenistic author, though the specific imitation of Homer is not cited. However, this finding adds no new specific textual evidence beyond the general claim. Covered as the argument is the same."
+  },
+  {
+    "finding_id": "WEVrheGzIaQ_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). The specific evidence that baptism functioned as an initiation rite across Hellenistic religions (Mithras, Hercules, Osiris) -- with initiates 'baptized in the blood of a bull' for Mithras and 'done a lion mane' for Hercules -- provides comparative ritual evidence not in ch2. However, per global Q&A, mystery cult framing should be rejected in favor of imperial cult under foreign rule. New evidence for existing argument, requiring reframing."
+  },
+  {
+    "finding_id": "WYvqP4Ohpu4_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) states 'Torah in canonical written form, Moses as lawgiver, and Decalogue first securely attested in post-Alexander Hellenistic era' and 'Codified Judaism emerged within Hellenistic political and administrative frameworks.' Adler's evidence about Judaism emerging in the Hellenistic period and being 'a blend of Hebrew and Greek' restates the same argument and evidence already in ch2."
+  },
+  {
+    "finding_id": "Wu2anuMfOJg_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as royal investiture with Codex Bezae's 'today I have begotten you.' Tabor's description of 'You are my beloved son' at the baptism, with some manuscripts reading 'I have begotten you,' is the same evidence already in ch2."
+  },
+  {
+    "finding_id": "XEtoV7_NA3s_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses the desposynoi and dynastic succession (items 52-53). Price's analysis of Julius Africanus's account of Domitian interrogating farmers claiming Jesus's bloodline is already in ch2 (item 53: 'Hegesippus via Eusebius, HE 3.19-20: family members brought before Domitian'). The same evidence is cited. However, Price's specific emphasis on 'dynasty of a fallen king' framing adds color but not new evidence. Covered."
+  },
+  {
+    "finding_id": "XOlhF0U3itw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Seleucid context (item 2). Pierce's specific identification of the Seleucid period as pivotal for Hellenized Jews adopting Greek theological concepts like Tartarus and the soul is a specific mechanism (theological concept adoption) not described in ch2. New evidence for the existing Hellenistic influence argument."
+  },
+  {
+    "finding_id": "XOlhF0U3itw_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that early Christianity must be understood through Hellenistic lens. The general claim that Gospel writers were Hellenistic authors trained in Greek epics whose knowledge 'seeped into what they're writing' restates this argument without new specific evidence."
+  },
+  {
+    "finding_id": "XlaqrYhw9oQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). Price's argument that baptism functioned as a mystery religion initiation rite paralleling Mithraic practices, with Easter baptism as ritual reenactment of death/resurrection, provides comparative ritual evidence not in ch2. Per global Q&A, mystery cult framing should be reframed through imperial cult lens. New evidence for existing argument."
+  },
+  {
+    "finding_id": "YwUfy26-alA_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly states '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals; segments of Jewish population complied.' The finding about Seleucid/Ptolemaic coercion to worship Dionysus and Zeus uses the same primary evidence already in ch2."
+  },
+  {
+    "finding_id": "YwUfy26-alA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context but does not mention Jason the High Priest (Hebrew name Yeshua) who changed his name to sound more Greek, built a gymnasium, and tried to adopt Greek customs. This is a specific historical example of a Jewish leader embracing Hellenization not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "ZDJvuu4Ni9U_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20). Tal Ilan's database of ~50,000 ancient Jews bearing Greek or pagan theophoric names (Apollodoros, Dionysus, Isidoros, Demetrios, Heracles) is specific quantitative onomastic evidence not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "ZDJvuu4Ni9U_4",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 22 (lines 316-334) discusses Philo and Logos categories, and the Q&A discusses Philo's Logos as 'firstborn son, mediator between heaven and earth.' The finding that Philo believed in a 'Divine being that is the firstborn son of God who existed before the creation of the universe and was an agent of creation' called the Logos is the same evidence already in ch2 and Q&A."
+  },
+  {
+    "finding_id": "ZLndFCIxttE_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that codified Judaism emerged within Hellenistic frameworks. Davis's statement that Hellenistic thought transformed Jewish religious concepts during the Second Temple period restates this argument without new specific evidence."
+  },
+  {
+    "finding_id": "Zd6A6sNjcTw_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that codified Judaism and Torah are first attested in the Hellenistic era, and discusses the Library of Alexandria context. The general claim that the Bible was composed in the Hellenistic period (post-300 BCE) and Jews had access to Greek literature in Alexandria restates ch2's arguments."
+  },
+  {
+    "finding_id": "Zd6A6sNjcTw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic philosophical context (item 1, lines 16-21). The specific argument that Plato's philosophical works (ideal states, divine hierarchies) influenced biblical composition during the Hellenistic period is a specific mechanism not described in ch2 with this specificity. New evidence for the existing argument about Greek philosophical influence."
+  },
+  {
+    "finding_id": "_HklIkOpexY_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory items 9, 38, 41 discuss Herod's political marriages, Hasmonean dynasty, and Rome's manipulation of dynastic succession. Atwill's claim that Rome inserted the Herods who then took Hasmonean brides to 'breed a Christ' restates the dynastic marriage strategy already covered in ch2."
+  },
+  {
+    "finding_id": "_nOUYMZndxo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Jesus's political context but does not present Carrier's catalogue of multiple messianic figures from Josephus who all mimicked Joshua/Jesus to make military/nationalist claims. This pattern of serial messianic pretenders provides new evidence for the existing argument about the political-dynastic context of Jesus's claims."
+  },
+  {
+    "finding_id": "_rtPgyMcpNo_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues that scholarly consensus confines analysis to Jewish context while ignoring Hellenistic civilization. Lambert's critique of scholars looking within a 'Jewish bubble insulated from the broader Greco-Roman world' and citing Philo and Josephus as contemporaneous Hellenistic rewriters restates this argument. The evidence (Philo, Josephus as Hellenistic authors) is already in ch2."
+  },
+  {
+    "finding_id": "_xbXR2OtyME_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Dionysus mosaics at Sepphoris (item 20). The specific evidence that Scythopolis (site of Dionysus myths) is only 19 miles from Nazareth, and Dionysus mosaics appear on synagogue floors at Sepphoris, provides a specific geographic proximity datum not stated with this precision in ch2. Partially overlaps with item 20, but the Scythopolis proximity and synagogue floor detail add specificity. New evidence for existing argument."
+  },
+  {
+    "finding_id": "aA6Aw2mC3S0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses John in political-dynastic terms (item 36) but does not cite the specific characterization by Fredriksen that Herod executed John because 'millenarian movements are very socially destabilizing.' New evidence (Fredriksen's specific framing of political destabilization) for existing argument about John as political threat."
+  },
+  {
+    "finding_id": "bhmVk-5IRJk_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as succession with 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John -- succession of authority.' The finding about John's disciples understanding baptism as preparation for 'the one to come' is the same succession evidence."
+  },
+  {
+    "finding_id": "czT9WU6fw5k_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 22 (lines 316-334) discusses 'Matthew preserves tradition of flight to Egypt; Alexandria only realistic destination' and mentions Philo. The finding about Philo claiming Moses had Greek education and Josephus filling thin episodes by imitating Homer overlaps with Q&A's royal-exile framework and ch2's existing Philo material. The statement 'early Christianity came out of a purely rabbinic Judaism is really nonsense' restates ch2's core thesis."
+  },
+  {
+    "finding_id": "czT9WU6fw5k_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic literary context. MacDonald's specific quantitative evidence that 'we have five fragments of the Septuagint we have over 600 of Homer' -- proving Homer's overwhelming prevalence compared to Jewish scripture in the ancient Mediterranean -- is a specific statistical datum not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "dO0AC1QyLVE_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19). The evidence that the Septuagint uses native Greek concepts rather than Hebrew translation, with classicists confirming 'there's no way this is a translation,' and that the Greek word naos derives from Mycenaean Greek predating proto-Hebrew by 800 years, is specific linguistic evidence not in ch2. New evidence for the existing Hellenistic framework argument."
+  },
+  {
+    "finding_id": "e4nM4PJkGZo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20). The 'interpretatio Graeca' pattern -- Greeks identifying Jewish God with Zeus, with temples dedicated to both on Mount Gerizim (Zeus Zenios) and Mount Moriah (Zeus Olympios) -- provides specific institutional syncretism evidence not cited in ch2. New evidence for the existing Hellenistic institutional context argument."
+  },
+  {
+    "finding_id": "e7Dx31v8r6U_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) discusses 'Dionysus mosaics at Sepphoris reflect Dionysian imagery retaining religious meaning among local elites into 1st century CE' and item 19 discusses Hellenization at Sepphoris. Tabor's archaeological evidence of Greco-Roman imagery (Dionysus, centaurs) in Jewish homes at Sepphoris near Nazareth is the same evidence already in ch2."
+  },
+  {
+    "finding_id": "eWFTGKBd6J8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). Eisenman's description of Qumran community's daily ritual immersion in preparation for apocalyptic war -- requiring perfect purity so holy angels could join their camps -- is a specific practice not cited in ch2. New evidence for existing argument about the institutional context of baptism."
+  },
+  {
+    "finding_id": "eWFTGKBd6J8_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's family connections to the Herodian dynasty through greetings to 'kinsmen' in Romans is evidence about Paul's identity and social network, which belongs in ch5 (Pauline Epistles). Ch5 inventory covers Paul as imperial envoy and administrator (ch5 items about Paul's role). Ch2 does not discuss Paul's personal connections to the Herodian dynasty."
+  },
+  {
+    "finding_id": "etNjAtbhVA4_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) states 'Torah in canonical written form, Moses as lawgiver, and Decalogue first securely attested in post-Alexander Hellenistic era.' The finding about Adler's evidence that Torah law was first enforced under the Hasmonean/Maccabian dynasty in the mid-2nd century BC is the same evidence and argument."
+  },
+  {
+    "finding_id": "etNjAtbhVA4_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses how Judea was under Hellenistic political traditions, with Ptolemaic and Seleucid rule. The general statement that 'Judea and Israel were made part of the Greek Empire after Alexander the Great's campaign with an immense increase in Greek influence' restates this background already in ch2."
+  },
+  {
+    "finding_id": "f6TDkzMLoDQ_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as succession with Jesus surpassing John. The finding that John was 'the significant figure, a messiah type figure' and 'Jesus carries the torch of John the Baptist' restates the succession argument already in ch2."
+  },
+  {
+    "finding_id": "f6TDkzMLoDQ_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 52 (Dynastic succession, lines 884-912) discusses 'James: head of Jerusalem assembly after Jesus's death' and the succession of Jesus's brothers. The finding that James 'carries the torch' as 'leader of the Jerusalem church' after Jesus's death is the same evidence already in ch2."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_6",
+    "verdict": "wrong_chapter",
+    "justification": "The Orpheus-Jesus Hades descent parallel (Orpheus fails to retrieve his wife; Jesus succeeds in rescuing all righteous souls) is a Greco-Roman literary parallel about Christian 'one-upmanship' over Greek mythology. This belongs in ch3 (which covers Hellenistic royal theology, 'Son of God' titles, and how Christianity positioned itself relative to Greek divine figures) or ch4 (Gospel literary analysis). Ch2 does not discuss descent-to-Hades narratives."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_7",
+    "verdict": "wrong_chapter",
+    "justification": "Empty tomb narratives paralleling Greco-Roman deities (Alcmena, Romulus) with empty tombs indicating bodily ascension are Greco-Roman literary parallels about resurrection traditions. Ch3 covers the 'Son of God' framework and Hellenistic deification patterns. Ch4 covers Gospel literary analysis. Ch2's treatment of the empty tomb (items 64-66) focuses on the survival hypothesis and physical evidence, not literary parallels to Greek mythology."
+  },
+  {
+    "finding_id": "fyC60YjR1oE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36) and mentions Codex Bezae, Athena-Telemachus parallels are discussed in other findings but NOT in the chapter itself. MacDonald's specific argument that Jesus's baptism parallels the Telemachus narrative (Odyssey 1) -- Athena appearing as a bird to signal paternity and divine succession -- is a Homeric parallel not cited in ch2. New evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "g01GRPgbR70_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Roman political context (items 2, 55-56) but does not present Crossan's argument about the territorial empire model where Roman power operated without visible legions. This specific structural argument about invisible imperial control ('you put the soldiers the legions on the periphery, then inside everything is pax romana') is new evidence for the existing argument about the Roman institutional framework."
+  },
+  {
+    "finding_id": "g7F5MNIbUoc_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 does NOT argue that John the Baptist and Judas the Galilean were contemporaries around 6 AD, or that John performed a 'baptism of righteousness' as a political co-teacher with Judas. The Slavonic Josephus evidence placing Jesus's birth at 25 BC (making him 30 at the 6 AD tax revolt) is not in any chapter. Both argument (John-Judas contemporaneity) and evidence (Slavonic Josephus birth dating) are new."
+  },
+  {
+    "finding_id": "gFxuSPkQfcc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19). The specific evidence about Hellenistic Jewish authors like Josephus and Mark using the Greek word 'lestes' (robber/bandit) with political insurrection connotations is linguistic evidence not cited in ch2. New evidence for the existing argument about Greek institutional/linguistic context."
+  },
+  {
+    "finding_id": "gZ4KXqDyzHg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). MacDonald's specific parallel between Jesus's baptism and Telemachus's empowerment by Athena in the Odyssey (divine affirmation of paternity, divine figure as dove, empowerment to claim father's kingdom) is a Homeric literary parallel not cited in ch2. New evidence for the existing baptism-as-succession argument."
+  },
+  {
+    "finding_id": "gZ4KXqDyzHg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses John the Baptist in political terms (item 36). The structural argument that the John beheading narrative follows the pattern of Agamemnon's death in the Odyssey (banquet, woman's sexual transgression, military officials, decapitation) -- while Josephus records the execution without these narrative details -- is Homeric literary analysis not in ch2. New evidence for the existing argument about John's political significance."
+  },
+  {
+    "finding_id": "gxXlVV8oW8U_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses John in political terms (item 36). Zinner's evidence from Josephus that John was executed for seditious/political reasons (fear of rebellion), while Mark deliberately changed the reason to Herod's revenge to obscure political context, is specific textual evidence not cited in ch2. New evidence for the existing argument about John as political threat."
+  },
+  {
+    "finding_id": "gxXlVV8oW8U_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses John in political terms (item 36). Zinner's argument that Mark's account of John's beheading is literarily dependent on Josephus's Antiquities (mid-90s CE), with Mark shifting the Herod-Aretas conflict story onto John, is a specific literary-dependency argument not in ch2. New evidence for the existing argument about John's political context and Gospel literary construction."
+  },
+  {
+    "finding_id": "hBS3dadVWrc_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) provides evidence 'All early Christian texts written in Greek.' Price's emphasis that Gospel narratives were created by 'Hellenistic Jews or Gentiles' working from the Greek Septuagint restates this argument without new specific evidence."
+  },
+  {
+    "finding_id": "hDq7uBlIHCg_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues against separating Jewish and Greek elements. Allison's argument that 'everything by the first century is hellenized' and there's 'no reason to make artificial divisions' between Jewish and Hellenistic sources restates the chapter's core thesis without new evidence."
+  },
+  {
+    "finding_id": "hDq7uBlIHCg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and birth narratives peripherally. Allison's acknowledgment that Luke's birth narrative shows parallels to Plutarch's account of Plato's birth and Matthew's draws on Suetonius-like conventions is specific literary evidence not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "hEojHRVT4f4_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as royal investiture with Codex Bezae and parallel baptizing missions. Ehrman's note about the oldest Luke manuscript containing 'today I have begotten you' is the same evidence already in ch2 item 36 ('Codex Bezae and Old Latin manuscripts: You are my son; today I have begotten you')."
+  },
+  {
+    "finding_id": "hhPbj0VUjLU_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues for understanding Jesus within Hellenistic context. Miller's advocacy for transdisciplinary Classics-Christianity work restates this methodological approach without new specific evidence."
+  },
+  {
+    "finding_id": "hiBJ_SDi4bg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) discusses Sepphoris as cosmopolitan city near Nazareth and item 21 discusses tekton (builder). The finding about Sepphoris as 'huge' city near Nazareth where Jesus may have worked as stone mason (tekton) restates evidence already in ch2 items 20-21."
+  },
+  {
+    "finding_id": "hiBJ_SDi4bg_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 19 (lines 269-291) discusses 'Excavations around Sepphoris: almost exclusively Greek inscriptions and artistic motifs.' Synagogues with zodiac signs and mixed Greek-Hebrew inscriptions is evidence that overlaps with ch2's documentation of Galilean Hellenization."
+  },
+  {
+    "finding_id": "hiBJ_SDi4bg_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) discusses Sepphoris under Herod and item 9 discusses Herod's building projects. The finding about Herod's devotion to Caesar Augustus and massive Hellenistic building projects at Caesarea Maritima restates evidence already in ch2."
+  },
+  {
+    "finding_id": "i8GjJv-j8zk_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly states '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals; segments of Jewish population complied' and notes Dionysiac imagery continuing into the 1st century. The finding about Antiochus Epiphanes mandating Dionysus worship and Plutarch attesting continued voluntary practice uses the same primary sources already in ch2."
+  },
+  {
+    "finding_id": "i8OkkH9tKZg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 2). Jonathan Smith's thesis that the Hellenistic cultural shift was an 'international' phenomenon affecting all Mediterranean religions equally, not merely Greeks imposing ideas on Jews, is a specific scholarly framework not cited in ch2. New evidence (Smith's international-shift thesis) for the existing argument about understanding Judaism within Hellenistic context."
+  },
+  {
+    "finding_id": "ilF5NIZnoq4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty (items 34, 38) and mentions Seleucid context (item 2). Valliant's specific evidence about the Seleucid adoption of anchor-dolphin imagery as a political symbol invoking Apollo, and the Hasmoneans adopting the anchor while removing the dolphin to avoid Jewish religious prohibition, is a specific numismatic/symbolic datum not in ch2. New evidence for the existing argument about Hellenistic institutional influence on Jewish political structures."
+  },
+  {
+    "finding_id": "iqEHysSPxuE_0",
+    "verdict": "wrong_chapter",
+    "justification": "Connor's parallels between Greco-Roman ghost stories and Gospel resurrection narratives in Luke and John are about Gospel literary composition and narrative analysis. This belongs in ch4 (Gospel reliability and literary analysis) rather than ch2 (Jesus's biography and lineage)."
+  },
+  {
+    "finding_id": "jDYnBUprDkc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and mentions the Septuagint. Demetrius of Phaleron's role in commissioning the Septuagint as direct Greek institutional influence on Jewish textual formation is a specific historical detail not cited in ch2. New evidence for the existing argument about Greek institutional influence on Judaism."
+  },
+  {
+    "finding_id": "jDYnBUprDkc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Greek monotheistic thought (item 1, lines 16-21). The Elephantine papyri evidence that Jews before the Hellenistic period practiced polytheism (worshiping multiple deities alongside Yahweh in the 5th-4th century BCE) is specific archaeological evidence not cited in ch2. This supports the argument that monotheism developed after Greek influence, not before. New evidence for existing argument."
+  },
+  {
+    "finding_id": "nuLs65uWE5U_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 0 (lines 1-15) and item 20 discuss Hellenistic influence. MacDonald's specific list of Jewish texts imitating Greek literature -- 3 Maccabees (imitations of Bacchae), 4 Maccabees (imitations of Greek poetry), Testament of Abraham -- are not individually cited as evidence in ch2. Only 2 Maccabees 6:7 appears. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "opGVsetLejY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36) with Codex Bezae. McDonald's Homeric hero-cycle framework for baptism -- where divine voices confirm a young figure's royal identity, kingdoms are offered and refused, then the kingdom is claimed -- is a specific literary-structural analysis not in ch2. New evidence for the existing baptism argument."
+  },
+  {
+    "finding_id": "pZ2JnnS9Scw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context. Josephus modifying Moses's death to include ascension/translation rather than a normal death -- to make Moses competitive with other Hellenistic 'hall of fame' figures -- is specific textual evidence not cited in ch2. New evidence for the existing Hellenistic adaptation argument."
+  },
+  {
+    "finding_id": "peNQQnJ_pJc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). Tertullian's reference to a 5-year initiation process before accessing secret teachings, cited by Pagels, is specific patristic evidence not in ch2. Per global Q&A, mystery religion framing should be reframed through imperial cult lens. New evidence for existing argument about baptism's institutional structure."
+  },
+  {
+    "finding_id": "peNQQnJ_pJc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and Dionysus at Sepphoris (item 20). The specific parallel between the Dionysus Epiphany on January 5-6 (featuring water-to-wine transformation) and John's wedding at Cana is not in ch2. New evidence for the existing Hellenistic influence argument."
+  },
+  {
+    "finding_id": "pfXhUJ2fdwE_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory items 9, 38, 41 discuss Herodian-Roman dynastic connections. The general discussion of Herodian-Roman common ancestry and the Herodian scribal tradition restates evidence already in ch2 about Herod's relationship with Rome."
+  },
+  {
+    "finding_id": "qDZx5_mUV1w_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly documents Dionysiac syncretism in Jewish contexts with '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals.' Price's note about 'Jews who believed Jehovah was Dionysus' and widespread syncretism restates evidence already in ch2."
+  },
+  {
+    "finding_id": "qSgVRjZ_KbU_4",
+    "verdict": "wrong_chapter",
+    "justification": "The argument that Genesis genealogies parallel Deucalion's genealogy and Hebrew Bible narratives structurally mirror Homer extends the Greco-Christian framework to the Hebrew Bible itself, beyond the New Testament. This is about OT composition and literary sources, not about Jesus's biography or lineage. This belongs in ch1 (which covers the scholarly quest and its assumptions about sources) or ch3 (which discusses Hellenistic literary patterns). Ch2 focuses on Jesus's life, lineage, and political context."
+  },
+  {
+    "finding_id": "qbB7c4BG0mU_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and apocalyptic themes peripherally. The Teacher of Righteousness from Qumran -- expected to return 40 years after death -- provides a precedent within the Jewish context for expectation of a teacher's return and vindication. This specific Qumran evidence is not cited in ch2. New evidence for the existing argument about the institutional context of messianic expectations."
+  },
+  {
+    "finding_id": "qnaZcOFKlh0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 inventory item 0 (lines 1-15) states 'All early Christian texts written in Greek.' The specific evidence that Matthew was 'much more facile with Greek than he is with Hebrew' and 'reliant on the Septuagint for his understanding of the Old Testament' is a more precise datum about a specific Gospel author's linguistic competence. New evidence for the existing argument about Greek primacy in early Christianity."
+  },
+  {
+    "finding_id": "qpX0r--Evew_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 does NOT discuss Ashman (Eshman), the Phoenician healing deity from immediately north of Galilee, associated with oil/anointing, with an apotheosis narrative involving death/resurrection, and connection to Melchizedek through his father Siddik. The argument (a local Phoenician healing deity near Galilee with anointing, death/resurrection, and Melchizedek connection) and the evidence (Eshman cult details) are both new and not in any chapter inventory."
+  },
+  {
+    "finding_id": "qzSkTlltSCE_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Alexander's conquest and Macedonian generals ruling the Near East. The general statement about Alexander's conquest and resulting Greek cultural dominance restates background already in ch2."
+  },
+  {
+    "finding_id": "qzyd03uwsSM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty (items 34, 38) and dynastic succession (items 52-53). Price's evidence that the Hasmoneans claimed kinship with Spartans to legitimize political alliances (1 Maccabees) -- and that the same mechanism was used to establish Jesus as cousin of John and James as brother of Jesus -- is a specific example of artificial genealogical construction not cited in ch2. New evidence for the existing dynastic succession argument."
+  },
+  {
+    "finding_id": "qzyd03uwsSM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses dynastic succession (items 52-53) including James succeeding Jesus. Price's specific argument that succession operated laterally through artificial genealogical claims when biological succession was impossible (John\u2192James) -- paralleling Greco-Roman lateral succession mechanisms -- is a new analytical frame not in ch2. New evidence for the existing dynastic succession argument."
+  },
+  {
+    "finding_id": "rUfhxQrZRCo_1",
+    "verdict": "covered",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19). The general evidence about Greco-Jewish cultural contact through diaspora pilgrimages, international trade, and God-fearers restates the chapter's established Hellenistic context without new specific evidence."
+  },
+  {
+    "finding_id": "rVNzmxnIU5w_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context peripherally. White's discussion of Zoroastrian artistic and theological elements in early Jewish temples (Europa/Dura-Europos) is specific archaeological evidence not cited in ch2. New evidence for the existing argument about foreign cultural influence on Jewish religious institutions."
+  },
+  {
+    "finding_id": "rr_0QWA-8Yk_1",
+    "verdict": "wrong_chapter",
+    "justification": "Barker's discussion of Gospel authors as practitioners of Greek rhetorical tradition (oppositio in imitando) is about Gospel literary composition techniques. This belongs in ch4 (Gospel reliability and literary analysis) which covers how Gospels were composed and their literary methods."
+  },
+  {
+    "finding_id": "s4SKLqmyseY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 2, 20). Ledo's argument that biblical texts including Joshua were deliberately written during the Greek period with Greek elements (Pegasus etc.) to serve Hasmonean political expansion is a specific claim about biblical composition not cited in ch2. New evidence for the existing Hellenistic context argument."
+  },
+  {
+    "finding_id": "s4SKLqmyseY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty (items 34, 38). Ledo's argument that Hasmoneans mapped territorial expansion to astrological/zodiacal patterns to legitimize rule is a specific claim about Hasmonean political legitimation not cited in ch2. New evidence for the existing dynastic legitimacy argument."
+  },
+  {
+    "finding_id": "sBnRe-cs_TY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Herodian patronage context peripherally. Daniella Oder's theory that Mark's Gospel was commissioned by Flavia Domitilla, a Herodian noble woman, is a specific scholarly theory not cited in ch2. New evidence (Herodian patronage of Mark) for the existing argument about understanding Christianity within Herodian-Hellenistic court culture."
+  },
+  {
+    "finding_id": "saTi4J4VfBQ_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory items 19-20 (lines 269-291) discuss archaeological evidence of Hellenization at Sepphoris including Greek inscriptions, theater, mosaics. The finding about archaeological evidence from Sephorus documenting Hellenistic influence (Greek theaters, mosaics of Dionysus and Orpheus, Hellenistic architecture) during Jesus's youth restates evidence already in ch2."
+  },
+  {
+    "finding_id": "saTi4J4VfBQ_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 9 (lines 115-117) discusses Herod's building projects including Caesarea. The finding about Herod building a temple to Augustus demonstrates Hellenistic royal-theological framework already discussed in ch2."
+  },
+  {
+    "finding_id": "saTi4J4VfBQ_2",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 19 (lines 269-291) discusses 'Excavations around Sepphoris: almost exclusively Greek inscriptions and artistic motifs' and item 20 discusses 'Dionysus mosaics.' The finding about synagogue floors with Helios, zodiac, Orpheus, Dionysus, and Heracles mosaics restates evidence already in ch2 items 19-20."
+  },
+  {
+    "finding_id": "t0HnZFaFKdM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 2). Collins's statement that Jerusalem in the 2nd century BC was 'much more cosmopolitan than people give it credit for' with exposure to Greek and Persian ideas is a specific scholarly assessment not cited in ch2. New evidence for the existing argument about Hellenistic influence."
+  },
+  {
+    "finding_id": "t0HnZFaFKdM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Seleucid context (item 2). Collins's tracing of the four kingdoms schema to Greek historian Herodotus, showing its adoption by Jewish apocalyptic texts (Daniel, Qumran, Sibylline Oracles), is specific evidence of Greek historiographic influence on Jewish eschatology not cited in ch2. New evidence for the existing Hellenistic influence argument."
+  },
+  {
+    "finding_id": "t0HnZFaFKdM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 2). Collins's evidence that the two-spirits dualistic theology in Qumran texts parallels Persian/Zoroastrian thought with 'no precedent in Judaism' is specific textual evidence not cited in ch2. New evidence for the existing argument about foreign religious influence on Jewish theology."
+  },
+  {
+    "finding_id": "tf7BFokUx1M_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). Hanson's discussion of baptism in terms of dynastic succession and symbolic anointing, connecting to Elijah's anointing role, provides a new OT typological frame (Elijah anointing) not cited in ch2. New evidence for the existing baptism argument."
+  },
+  {
+    "finding_id": "u2M3IeQLEjs_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 46 (lines 813-848) discusses Josephus extensively, including 'Josephus born 37 AD in Jerusalem' and 'Mother of Hasmonean descent: kin to Alexander Jannaeus and Queen Mariamne.' Mason's emphasis that Josephus wrote in Greek for Roman audiences while knowing both worlds restates ch2's existing framing of Josephus."
+  },
+  {
+    "finding_id": "u2M3IeQLEjs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Herodian political context but does not present Mason's specific evidence about Herod Antipas's political marriage to Aretas IV's daughter as a 'political union blessed by Rome.' This Hellenistic diplomatic protocol detail is new evidence for the existing argument about Hellenistic royal court protocols."
+  },
+  {
+    "finding_id": "u2M3IeQLEjs_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Masada briefly (item 9: 'constructed Masada'). Mason's archaeological detail about Masada's domestic installations (ovens, workshops, family quarters, makeup kits) illustrating actual Hellenistic institutional life is new evidence for the existing argument about Hellenistic royal infrastructure."
+  },
+  {
+    "finding_id": "u2M3IeQLEjs_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 does not discuss the discrepancy between Josephus placing John's execution at Makairus (Nabataean frontier) vs. gospels implying execution in Galilee. This specific geographic discrepancy and its placement within Nabataean geopolitics is new evidence for the existing argument about John's political context."
+  },
+  {
+    "finding_id": "uk3Ata4c1vs_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and deification patterns peripherally. Miller's identification of 'divine birth narratives and translation at end of career' as the standardized Hellenistic 'protocol for elevating the individual' is a specific conceptual framework not stated with this precision in ch2. New evidence for existing argument about Hellenistic institutional protocols."
+  },
+  {
+    "finding_id": "uod9ZDfOFLA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19, 20) and Herodian building. The specific evidence about Tiberias as a Hellenistic city built to honor Emperor Tiberius and facilitate economic extraction, establishing the Hellenized administrative context of Galilee, provides concrete detail not cited in ch2. New evidence for the existing Hellenistic institutional context argument."
+  },
+  {
+    "finding_id": "vrGo3SD5QlQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses lineage and birth context. Adair's evidence that Matthew uses Roman adoption law to maintain Jesus's Davidic lineage despite the virgin birth -- where Roman adoption made adoptees 'equal to a flesh and blood relative' -- is specific legal-institutional evidence not cited in ch2. New evidence for the existing dynastic lineage argument."
+  },
+  {
+    "finding_id": "vtKnJ6ti7HA_0",
+    "verdict": "not_relevant",
+    "justification": "The solar-lunar calendar correlation of John the Baptist (summer solstice) and Jesus (winter solstice) with Luke's six-month chronology is astrotheological interpretation. The book does not use astrological framework for John-Jesus succession, and the evidence does not bear on ch2's dynastic succession argument through any usable mechanism."
+  },
+  {
+    "finding_id": "vtKnJ6ti7HA_1",
+    "verdict": "not_relevant",
+    "justification": "The Babylonian astronomical system as source of Palestinian cultural influence and its modern zodiacal legacy is general Near Eastern cultural history that does not bear specifically on any argument in any chapter."
+  },
+  {
+    "finding_id": "wcSHfYUUVWY_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context. Lambert's evidence that Josephus gives Moses a 'translation and ascension to heaven' rather than death -- demonstrating Jewish historiography operating within Greco-Roman apotheosis frameworks -- is specific textual evidence not cited in ch2 (same topic as pZ2JnnS9Scw_3). New evidence for the existing Hellenistic adaptation argument."
+  },
+  {
+    "finding_id": "x8pY6zUsaRY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context peripherally. Amselog's research tracing Yahweh's origins to the Seir region and identifying parallels with the Nabataean god Dushara is specific scholarly evidence about Nabataean religious connections not cited in ch2. New evidence for the existing Hellenistic/Near Eastern context argument."
+  },
+  {
+    "finding_id": "x8pY6zUsaRY_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 does NOT discuss Porphyry of Tyre's account of the Nabataean virgin birth and sacrifice narrative of Dousaris (preserved in the Preparation for the Gospel). The argument (a Nabataean parallel to Gospel virgin birth/sacrifice narratives) and the evidence (Porphyry's specific account) are both new and not in any chapter inventory."
+  },
+  {
+    "finding_id": "xCOdGCRXEEE_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) discusses Greek replacing Aramaic as lingua franca and Hellenistic cultural spread. The general statement about Hellenism spreading Greek culture throughout the Mediterranean world restates background already in ch2."
+  },
+  {
+    "finding_id": "xI5I16JfI1c_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 19). Litwa's specific evidence that the demon self-identifying as 'Legion' in Mark (a Roman military formation of six thousand soldiers) proves Mark was written for a Greco-Roman audience is a specific textual datum not cited in ch2. New evidence for the existing argument about Gospel composition for Greek audiences."
+  },
+  {
+    "finding_id": "xWXnp9rKFKg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Seleucid rule, and item 20 explicitly states '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals.' The finding about Seleucid forced Hellenization (165 BCE) and temple desecration restates evidence already in ch2."
+  },
+  {
+    "finding_id": "xqb0iyCagtY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Herod's building projects (items 9, 20). The connection between Augustus's initiation into the Eleusinian mysteries and Herod building a temple to Augustus as a Hellenizing act is a specific interpretive connection not made in ch2. New evidence for the existing argument about Hellenistic royal-religious protocols."
+  },
+  {
+    "finding_id": "yEGH1DGMICQ_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 22 (lines 316-334) discusses Philo's Logos theology and the Q&A extensively covers Philo's Logos as divine intermediary. Carrier's point that Logos and supernatural attributes were 'already Jewish by the time Christians are writing' restates evidence already in ch2 and Q&A."
+  },
+  {
+    "finding_id": "yhhsObl8fsQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context (items 0, 3). Miller's argument that deliberate imitation of archetypal deities was a required cultural practice for political authority in the Hellenistic world -- 'to rule in the ancient world you had to register your imitation in relation to archetypal figures' -- is a specific institutional mechanism not described with this precision in ch2. New evidence for the existing argument about Hellenistic royal protocols."
+  },
+  {
+    "finding_id": "yhhsObl8fsQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context and dynastic legitimacy (items 0, 3). Miller's specific examples of imitatio Alexandri -- Marcus Antony imitating Dionysus and Heracles to rule in Egypt -- as required political behavior in the Greek East is specific evidence not cited in ch2. New evidence for the existing Hellenistic institutional framework argument."
+  },
+  {
+    "finding_id": "yhhsObl8fsQ_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic royal protocols (items 0, 3). Augustus explicitly imitating Romulus -- living in his house, dressing like him, claiming to be 'the new Romulus' -- is specific evidence of mimetic legitimation not cited in ch2. New evidence for the existing Hellenistic institutional framework argument."
+  },
+  {
+    "finding_id": "ysKUelnSpls_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 2 (lines 23-48) discusses Seleucid rule as fragment of Alexander's empire and item 20 discusses Antiochus IV. The general statement about Seleucid Empire ruling Israel and the Maccabean revolt restates background already in ch2."
+  },
+  {
+    "finding_id": "ysKUelnSpls_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty (items 34, 38). John Hyrcanus's military conquest unifying Israel and Judah under centralized Jerusalem rule is a specific historical datum about Hasmonean political consolidation not cited with this specificity in ch2. New evidence for the existing Hasmonean dynasty argument."
+  },
+  {
+    "finding_id": "yzREcqq31QA_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory items 0, 22 discuss Gospel authors' Greek education. The general claim that Gospel authors were educated in Greek literary traditions and would have internalized Greek cultural patterns restates the chapter's existing argument about Hellenistic educational context."
+  },
+  {
+    "finding_id": "z9gvRY3yQL4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic influence on Jewish practices. Mason's evidence that monogamy became standard 'under Greek and Roman influence' rather than from Judean tradition is a specific social-institutional datum not cited in ch2. New evidence for the existing argument about Greco-Roman institutional norms shaping Jewish practices."
+  },
+  {
+    "finding_id": "zFKJT478JZI_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 20 (lines 272-278) explicitly states '2 Maccabees 6:7: Antiochus IV mandated participation in Dionysiac festivals' and discusses Hellenistic struggle during the Hasmonean period. The finding about Jews struggling with Hellenistic cultural accommodation and Dionysus worship restates evidence already in ch2."
+  },
+  {
+    "finding_id": "zc_vb841k-w_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues for Greco-Christian framework, and items 19-20 document Hellenistic Jews. The general emphasis on Hellenistic Jews vs Orthodox Judaism restates the chapter's core thesis without new evidence."
+  },
+  {
+    "finding_id": "zgsDKGtxYp0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hellenistic context. MacDonald's specific evidence that the author of Testament of Abraham (a Jewish text) deliberately imitated Homer's Odyssey 19 (Eurycleia's recognition of Odysseus through foot-washing) is a specific textual parallel not cited in ch2. New evidence for the existing argument about Jewish authors using Greek literary models."
+  },
+  {
+    "finding_id": "zgsDKGtxYp0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Greek education (item 22). MacDonald's evidence that Homer was embedded in primary Greek education at ALL levels (not just elite), citing classicist Jacques's statement about boys being 'engaged in mimesis with Homer as soon as they entered school,' is specific evidence about educational pervasiveness not cited with this specificity in ch2. New evidence for the existing argument about Greek cultural pervasiveness."
+  },
+  {
+    "finding_id": "RbqHYwyFsJg_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) argues for understanding Jesus within broader Hellenistic context. Tabor's argument that scholars must study Hellenistic mystery religions and parallel sources restates this methodological approach. Per global Q&A, mystery religion framing should be reframed through imperial cult lens, but the general argument is covered."
+  },
+  {
+    "finding_id": "lFjmU_yCiUg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Herod's building projects (item 9: 'Rebuilt Jerusalem Temple, constructed Masada and Caesarea'). Magness's specific archaeological evidence that Herod modeled his tomb at Herodium after the Mausoleum of Halicarnassus, Augustus's Mausoleum, and the Philippeion at Olympia -- deliberately placing himself in the tradition of Alexander and deified rulers -- is specific architectural evidence not cited in ch2. New evidence for the existing Hellenistic royal institutional context argument."
+  },
+  {
+    "finding_id": "lFjmU_yCiUg_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch2 does NOT discuss the Herodians as a Jewish sect that explicitly believed Herod was the Messiah (attested in sources from ~200 CE onward). This is a distinct argument (messianic claims as political-dynastic legitimacy claims, with a concrete historical example of Herod being called Messiah) not present in any chapter inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "lFjmU_yCiUg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Herod's legitimacy (item 9) and Davidic lineage (items 31-38). Magness's evidence that Herod -- 'half Nabataean, appointed by the Romans' -- deliberately positioned his tomb to overlook Bethlehem (David's birthplace) to claim Davidic legitimacy while using Greek-Roman architectural forms is specific archaeological evidence not cited in ch2. New evidence for the existing Herodian dynastic legitimacy argument."
+  },
+  {
+    "finding_id": "SCy7NuujCLc_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 0 (lines 1-15) provides evidence 'All early Christian texts written in Greek' and the Q&A discusses ecclesia as existing civic assemblies. The adoption of the Septuagint as authoritative Christian scripture from the beginning restates ch2's argument about Greek linguistic primacy."
+  },
+  {
+    "finding_id": "-QIIO4W7RWI_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 9 (lines 115-117) discusses Herod's lack of legitimacy and items 38, 41 discuss his marriage to Mariamne for Hasmonean credentials. Tabor's account of Herod's legitimacy crisis and strategic marriage to Mariamne uses the same evidence already in ch2."
+  },
+  {
+    "finding_id": "-QIIO4W7RWI_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 38 (lines 654-674) discusses Mary as relative of Elizabeth 'of the daughters of Aaron' (Luke 1:5,36). The establishment of Jesus and John as blood relatives through their mothers is the same evidence already in ch2."
+  },
+  {
+    "finding_id": "0YIu66MFKoQ_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 52 (lines 884-912) discusses dynastic succession and item 31 (lines 515-534) discusses formal genealogies as dynastic instruments. Tabor's identification of Jesus's Davidic Messianic lineage as central, with wine symbolizing royal lineage, restates the dynastic framework already in ch2."
+  },
+  {
+    "finding_id": "0zu7NpW7X5o_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as royal investiture and succession from John to Jesus, with evidence 'John 3:22-26; 4:1-3: Jesus and John conduct parallel baptizing missions, Jesus surpasses John.' Tabor's description of Jesus as 'a disciple of John' who picked up the baton after John's arrest is the same succession argument."
+  },
+  {
+    "finding_id": "0zu7NpW7X5o_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses baptism as succession (item 36). The specific geographic division of labor between John (north, Brook Kerith in Jordan) and Jesus (south, Judea) is spatial evidence not cited in ch2. New evidence for the existing argument about John-Jesus partnership as dynastic cooperation."
+  },
+  {
+    "finding_id": "1iExveFIcpE_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 52 (Dynastic succession, lines 884-912) explicitly states 'James: head of Jerusalem assembly after Jesus's death' and discusses the re-establishing of the Davidic Messianic line. Tabor's description of James assuming leadership and continuing the Davidic line is the same evidence already in ch2."
+  },
+  {
+    "finding_id": "2S9Dfrbrwm8_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 36 (lines 624-631) discusses baptism as succession with Codex Bezae. Tabor's description of baptism as 'transfer of prophetic authority from one figure to the next' is the same argument and framework already in ch2."
+  },
+  {
+    "finding_id": "3efzEwgsJRM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch2 discusses Hasmonean dynasty and Seleucid context (items 2, 34, 38). Wray's evidence that Hasmoneans adopted the anchor as a royal and solar symbol directly from the Seleucids -- with the anchor originating from Apollo impregnating the mother of Seleucus I -- is specific numismatic/symbolic evidence not cited in ch2. This overlaps with ilF5NIZnoq4_0. New evidence for the existing Hasmonean dynasty argument."
+  },
+  {
+    "finding_id": "44Y1ByELNpc_0",
+    "verdict": "covered",
+    "justification": "Ch2 inventory items 9, 38, 41 discuss Herod's marriage to Mariamne for Hasmonean legitimacy and his execution of Hasmonean family members. Tabor's discussion of Herod marrying 'Miriam' (Mariamne) to get 'a pedigree' and later killing his sons restates evidence already in ch2."
+  },
+  {
+    "finding_id": "44Y1ByELNpc_1",
+    "verdict": "covered",
+    "justification": "Ch2 inventory item 19 (lines 269-291) already includes 'Caiaphas family tomb: Greek obol placed in mouth of deceased (Charon's ferry payment).' The finding about a Greek coin in the Caiaphas priestly tomb demonstrating Hellenistic burial practices among Jewish elites is the same evidence already in ch2."
+  }
+]

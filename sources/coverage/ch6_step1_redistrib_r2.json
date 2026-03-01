@@ -1,0 +1,37 @@
+[
+  {
+    "finding_id": "z9gvRY3yQL4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 makes the argument that Christianity emerged from and operated within Greco-Roman institutional cities — Alexandria, Antioch, Ephesus, Sardis (lines 216-226, 452). The Mason description of Caesarea as a model Greco-Roman city with a Temple to Augustus at the center of the harbor is new concrete archaeological/descriptive evidence of that institutional character in a city not already named in ch6's list. The argument (Christianity = Greek institutional cities) is established; the Caesarea detail adds a specific named city with specific features (temple to Augustus, theater, amphitheater) not currently in the chapter."
+  },
+  {
+    "finding_id": "BVU5_rau6wI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean synthesis section (lines 115-129) establishes the bidirectional Greek-Jewish intellectual exchange, citing Philo and the Septuagint, and notes that synagogues adopted Greek-style officials and assemblies. The specific argument that Platonic dialogue structure appears in rabbinic Judaism (Mishnah/Gemara back-and-forth dialectic = Platonic dialogue) is not in the chapter. This is new specific evidence — post-Temple rabbinic adoption of Greek dialectical form — supporting the already-established argument about Greek philosophical methods penetrating Jewish institutions in the Eastern Mediterranean synthesis."
+  },
+  {
+    "finding_id": "qL0qP5HoBl8_2",
+    "verdict": "wrong_chapter",
+    "justification": "The Artemis-Mary parallel (Artemis as the prototype of Mary, Mary as second Eve, priestly nuns mirroring Artemis priestesses) is a theological and religious-continuity argument about how pagan Hellenistic goddess religion was absorbed into Christian Mariology. Chapter 6 does not treat Marian theology, goddess parallels, or religious syncretism of this kind — its focus is on phoenix symbolism, the Eastern Mediterranean political synthesis, martyrdom literature as resistance, the Church Fathers' restoration theology, and Constantine. This finding has been redirected twice and still does not fit ch6's content or arguments. It belongs in chapters dealing with religious parallels (ch3 covers 'Son of God' imagery and divine emissaries; ch1 covers Jesus's identity). No argument in ch6 this evidence could serve."
+  },
+  {
+    "finding_id": "wsXgyn36mO8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Substantively near-identical to BVU5_rau6wI_3 but with more explicit detail: post-Temple rabbinic Judaism structured the Talmud on Platonic dialectic (fictional back-and-forth conversations between rabbis = Platonic dialogues). Chapter 6's synthesis section (lines 115-129) argues for Greek-Jewish intellectual fusion but does not contain this specific point about Talmudic structure. This is new specific evidence — the Talmud's dialogic form as direct adoption of Greek philosophical method — supporting the existing Eastern Mediterranean synthesis argument in ch6."
+  },
+  {
+    "finding_id": "0Qe68mIeCHY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 establishes that early Christianity was moving toward imperial restoration culminating in Constantine (lines 292-305, 402-407) and that Christianity aligned with Roman imperial governance structures. The specific argument that Luke-Acts represents the 'first step toward Constantine' — presenting Christians as harmoniously unified (no conflict between Peter and Paul) as a political posture appealing to imperial governance — is not in ch6. This is new evidence: the internal narrative of Luke-Acts as a deliberate literary strategy of political compatibility, supporting ch6's broader argument about Christianity's trajectory toward imperial endorsement."
+  },
+  {
+    "finding_id": "5WrZnOVYy7U_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues extensively for Hellenistic and Roman institutional patterns structuring early Christianity — ekklesiai as civic assemblies (lines 213-248), church fathers framing Christian doctrine in Roman-compatible categories (lines 372-394). The specific point that 1 Timothy structures Christian community 'exactly like the patriarchal Roman household' (men over women, women over children, children over enslaved persons) is not in ch6. This is new specific textual evidence — the household-of-God model in 1 Timothy explicitly mirroring Roman patriarchal household hierarchy — supporting the existing ch6 argument about Christianity mirroring Greco-Roman institutional structures."
+  },
+  {
+    "finding_id": "CsovC_zw2sw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses the political nature of early Christianity and the executions of Paul, Peter, and James as political acts (lines 200-211), arguing they operated inside the same imperial-restoration movement. However, the specific vice-regent language — Jesus passing 'honor and authority on to his vice regent on earth before he ascends' — is not in ch6. This is new specific evidence: the explicit political-administrative vocabulary of vice-regency applied to Peter, demonstrating that early Christianity used Hellenistic succession protocol language (viceroys, delegated royal authority) to describe the transfer of leadership. This directly supports ch6's argument that early Christianity mirrored Hellenistic political institutions and succession protocols."
+  }
+]

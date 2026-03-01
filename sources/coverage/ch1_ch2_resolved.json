@@ -1,0 +1,26 @@
+[
+  {
+    "finding_id": "qSgVRjZ_KbU_4",
+    "assigned_chapter": 1,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1's mythical figure section (lines 88-115) already argues that biblical narratives were shaped by Greek literary models: Moses scores 20/22 on the Rank-Raglan heroic pattern, 'Mark mapped to the Homeric epics,' and Greek epic was the dominant textual culture available to early writers. This finding extends that same argument by showing that the Hellenistic literary imitation runs deeper — into Genesis genealogies (paralleling Deucalion) and into the structural mirroring of the Iliad/Odyssey in the Hebrew Bible itself. It is new evidence strengthening the existing argument about unattributed Greco-literary influence on biblical composition. Chapter 2 is about the Hellenistic institutional and dynastic background of Jesus' world (ecclesia, Galilean geography, dynastic succession), not about Hebrew Bible literary parallels."
+  },
+  {
+    "finding_id": "4AflezmCMqY_2",
+    "assigned_chapter": 1,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1's mythical figure section (lines 88-115) already argues that Gospel narratives follow deliberate literary mimesis of Greek models and that 'Greek epic was the dominant textual culture available to educated writers in the eastern Mediterranean.' This finding — Judges narratives (Jephthah/Iphigenia, Samson/Jason-Medea patterns) composed using Greek literary frameworks — is new textual evidence for the same existing argument: the Greek literary template extends even into the Hebrew Bible narrative corpus, not only into the Gospels. Chapter 2 does not advance arguments about biblical literary composition via Greek models; its Greek-world material concerns civic institutions (ecclesia, diakonos), dynastic succession, and the Galilean setting."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_1",
+    "assigned_chapter": 1,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 (line 111) already states 'Mark mapped to the Homeric epics, John to Euripides' Bacchae' as evidence for deliberate literary mimesis rather than coincidence. This finding identifies the Judith narrative as imitating both Iliad 14 (Hera's seduction of Zeus) and the Bacchae — adding a concrete Hebrew Bible case to the same argument. It is new specific textual evidence (a named Hebrew text imitating two named Greek works) that reinforces the existing claim in Chapter 1 about deliberate Greek literary mimesis. It does not directly serve any argument in Chapter 2, which does not treat Hebrew Bible literary composition."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_2",
+    "assigned_chapter": 1,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 (lines 93-95, 99-102) already argues that Moses' biography maps onto Hellenistic heroic conventions (Rank-Raglan scale) and that Jesus' wine miracle and Eucharist recall Dionysian cult. This finding — Moses as a 'donor deity' parallel to Dionysus and Demeter, including Moses striking the rock paralleling the Bacchae — adds new specific evidence to the existing argument about Jewish narratives consciously adapting Hellenistic theological concepts. It belongs in Chapter 1 where the book already connects Greek mythological parallels (Dionysus, mystery cults) to the Jesus and Moses traditions. Chapter 2 covers Greek civic and dynastic institutions, not Greek mythological theology."
+  }
+]

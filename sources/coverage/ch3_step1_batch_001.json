@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "07PKqAfCwOY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Jesus's titles derive from Hellenistic frameworks and ch4 discusses the Dionysian Gospel (ch4 inv[35]). However, the specific Revelation wine-press/Dionysus parallel (treading grapes, purple imagery, intoxication) is not in ch3's inventory. The Greco-Christian titulature argument exists (ch3 inv[2]), but this specific Dionysian-Revelation imagery is new evidence."
+  },
+  {
+    "finding_id": "0k_Sfn-j6KY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos as Greek philosophical concept (Heraclitus, Stoics, Philo) and ch3 inv[9] covers John's Logos. However, the specific argument about translation choices masking Greek theological distinctions (Logos, Agape, Zoe as systematically flattened in English) is not presented in ch3. The argument that Greek concepts are obscured by translation is new evidence for the existing Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "1IATdGxMjcw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Messiah as authentic Judean royal title and inv[2] covers titles as pre-existing political terms. The specific point about 'anointed' carrying variable political meanings (royal, priestly, prophetic) depending on context is a nuance not explicitly in the inventory, though the general argument about Christos as political title is present."
+  },
+  {
+    "finding_id": "1IATdGxMjcw_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Parable of the Pounds (Luke 19) as embedded in the Archelaus succession crisis is not in ch3's inventory. Ch3 covers collective sin and kingdom restoration (inv[45-46]) and political language, but the specific argument that Jesus directly engaged Herodian political-dynastic theology through the Parable of the Pounds is neither the argument nor the evidence in ch3."
+  },
+  {
+    "finding_id": "1nFge-jKLWU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] argues titles were pre-existing political terms and inv[32] covers Kyrios. The book does not specifically discuss Melchizedek as a royal title meaning 'righteous king' in the context of Hellenistic titulature. Psalm 110 is referenced (inv[19]) but as part of the Father/Kyrios distinction, not as evidence for Hellenistic royal titulature via Melchizedek. New evidence for the existing titulature argument."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Messiah/Christos as Greek royal title and inv[2] covers pre-existing titles. Eshmon as an anointing deity syncretized with Adonis and Asclepius, suggesting Christ's 'Anointed One' title draws from Hellenistic anointing protocols, is new specific evidence not in the inventory. The argument that 'Christ' derives from broader Mediterranean anointing tradition is already present."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 does not have a dedicated dying-and-rising gods section, but the chapter text discusses resurrection as political-theological legitimacy. The specific catalog of multiple dying-and-rising gods (Tamuz, Osiris, Attis, Dionysus, Adonis, Orpheus) with 3-day motifs at spring equinox is not in ch3 inventory. The broader Greco-Christian framework argument exists. Ch4 inv[35] discusses the Dionysian Gospel. This is new evidence for the existing framework."
+  },
+  {
+    "finding_id": "2vhE_nDcEPQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers Justin Martyr's argument about sons of Zeus including Heracles and Dionysus. Simon Magus described as 'son of Jupiter' and compared to Heracles is a new specific example not in the inventory, bolstering the existing comparative titulature argument."
+  },
+  {
+    "finding_id": "4H0Y8Ztzrao_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology (Heraclitus, Stoics, Philo) and inv[9] covers Logos in John. Hebrews' high christology describing Jesus as 'the one through whom god has created the universe' and its logos/wisdom theology connection is new specific textual evidence not in the ch3 inventory, supporting the existing Greco-philosophical framework argument."
+  },
+  {
+    "finding_id": "4oaOijLskl0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[40] covers Jesus's birth as a new star with Augustus's star/comet and Alexander's star trope. Adair's specific examples of Mithridates VI with comets at birth/coronation and Augustus's explicit propaganda about Caesar's comet on coinage add new comparative detail to the existing celestial-legitimacy argument already in the inventory."
+  },
+  {
+    "finding_id": "5ac8F8rzD9E_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[50] covers Mary carrying Greek royal imagery and titles. The specific theotokos debate at Council of Ephesus (431 CE) between Cyril and Nestorius, showing Greek divine categories required elevating Mary to goddess status, is new evidence not in the inventory. The argument about Mary in Greek royal framework already exists."
+  },
+  {
+    "finding_id": "5kIjGzdlKfI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology and inv[9] covers the Father described in Greek categories. Philo's specific Eucharistic mysticism and 'cup bearer of the Eucharist' language is not in ch3 inventory. The broader argument about Greco-Jewish theological frameworks predating Christianity is present."
+  },
+  {
+    "finding_id": "5kIjGzdlKfI_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Attis festival's death-and-resurrection motif (fastened to tree, buried three days, celebrated) or John the Lydian's dating evidence for the 40-140 AD period. Neither this specific evidence nor the argument about Greek mystery religion precedent for resurrection theology appears in ch3 inventory. Ch4 inv[35] mentions the Dionysian Gospel but not Attis specifically."
+  },
+  {
+    "finding_id": "5kIjGzdlKfI_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Augustus as divi filius on coins and civic festivals' and inv[25] covers 'Son of God' as standard Hellenistic title. The chapter text states: 'Augustus presented himself as divi filius, son of the divine Julius.' Augustus as a divinely-chosen messianic figure establishing 'Son of God' as Hellenistic royal title is directly covered."
+  },
+  {
+    "finding_id": "6OJU4eP7U0k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[6] covers Psalm 2:7 as royal investiture at annunciation, baptism, and resurrection. The specific evidence that Epiphany (January 6) originally celebrated adoptionist belief that Jesus was 'adopted as God's son at the Jordan baptism' is not in ch3 inventory. The argument about baptism as investiture/acquired status exists; the Epiphany liturgical evidence is new."
+  },
+  {
+    "finding_id": "7cB4iUIDqH8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology and inv[9] covers the Father described in Greek philosophical categories. The specific parallel between Paul's theology of Jesus and Philo's theology of the archangel as 'firstborn son of god' with identical terms (image of god, paraclete, logos) is new evidence not explicitly in the inventory, bolstering the existing Logos/Philo argument."
+  },
+  {
+    "finding_id": "7cB4iUIDqH8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and inv[5] covers Justin Martyr on sons of Zeus. The specific tracing of how Matthew increasingly adopted Hellenistic pagan birth narratives while Mark retained Jewish adoption model (showing progressive Greco-Christian synthesis across gospels) is new evidence for the existing Hellenistic titulature argument."
+  },
+  {
+    "finding_id": "89b3Y6R_eHo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek word meaning 'anointed' and ch2 inv[29] covers Christos as Greek royal title. The specific claim that 'christos' derives from Greek mystery religion meaning 'the one stung by the gadfly' connected to ecstatic mania is a new etymological/cultic evidence not in either inventory. The argument about Christos as Greek term exists."
+  },
+  {
+    "finding_id": "89b3Y6R_eHo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] argues titles were pre-existing political terms of Greek kingship. The specific claim that 'Son of God' was essential for religious credibility and competitive viability in the Hellenistic marketplace ('if you weren't called the son of god your game in town was useless') is a new framing/evidence point not in inventory, supporting the existing argument."
+  },
+  {
+    "finding_id": "8eWG4YoQexU_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] covers Alexander claiming divine sonship through Zeus-Ammon at Siwa. The chapter text explicitly states: 'Alexander the Great claimed descent from Zeus-Ammon, and his image appeared with the horns of Ammon on coins.' This finding repeats that Alexander was 'Son of God' as a Hellenistic royal title, which is directly covered."
+  },
+  {
+    "finding_id": "8eWG4YoQexU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology (Philo as Jewish aristocrat, Logos as rational cosmic principle). The specific detail of Philo's emanationist stages of the logos (mind of God within God, blueprint of creation, heavenly Adam as living blueprint, 'almost gnostic emanationism') adds new specific detail not in the inventory, supporting the existing argument."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch4 inv[35] discusses John as a 'Dionysian Gospel' built on imitation of Euripides' Bacchae. Ch3 does not specifically discuss Jesus appropriating Dionysian imagery ('I am the True Vine') or the water-to-wine miracle as Dionysian. Ch3 inv[2] lists titles as pre-existing terms. The specific Dionysian vine/wine parallels are new evidence for the existing Greco-Christian framework argument in ch3."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not argue that the Trinity derives from Platonic traditions connected to Dionysian/Zoroastrian theology. Ch3 inv[9] covers God the Father described in Greek categories and inv[10] covers Gnostics/Marcionites, but no inventory item makes the specific argument about Trinitarian doctrine's Platonic-Dionysian origin. Both the argument and the Saturn-Zeus-Dionysus triad evidence are new to ch3."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers Justin Martyr's argument equating Jesus's divine sonship with sons of Zeus. The specific evidence of a second-century Christian (Naassene preacher) singing a hymn identifying Jesus with Kronos, Zeus, Dionysus, Rhea, and Adonis is new evidence not in ch3 inventory. The argument about early Christians using Greek theological categories exists."
+  },
+  {
+    "finding_id": "95_tIT8t0cI_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Zalmoxis narrative (disappeared underground for three years, reappeared in the fourth, validated his teaching about immortality, 500 years before Christianity) is not in ch3 inventory. Ch3 does not make an argument about resurrection as political-theological legitimacy claim using Zalmoxis as comparative evidence. Both the specific Herodotean Zalmoxis evidence and the resurrection-as-validation argument are new to ch3."
+  },
+  {
+    "finding_id": "98j5Fgn8IO4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[3] covers Hasmonean dynasty adopting Hellenistic royal theology and mentions John Hyrcanus. The specific point that John Hyrcanus was the first to combine Prophet, Priest, and King (from Tabor via Josephus) is not in the inventory. The Hasmonean Hellenistic royal theology argument exists; this specific triple-title precedent is new evidence."
+  },
+  {
+    "finding_id": "9dJTS3s20Zw_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers 'Alexander the Great claimed divine sonship through Zeus-Ammon at Siwa.' The chapter text states: 'Alexander the Great claimed descent from Zeus-Ammon, and his image appeared with the horns of Ammon on coins.' The Alexander Romance presenting Alexander as Son of God born of Amon through divine impregnation is the same evidence."
+  },
+  {
+    "finding_id": "9dJTS3s20Zw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[35] covers Alexander's divine sonship claim. The specific detail of kingship legitimated through oracles and divine approval from multiple god-names (Amon, Serapis, Zeus simultaneously) and Alexander dedicating a sanctuary to 'his father the god Amon' adds new specific textual evidence to the existing Alexander argument."
+  },
+  {
+    "finding_id": "9kKvh3m90js_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[40] covers Jesus's birth as new star and lists 'Augustus: birth represented as new star; death/deification of Julius Caesar.' The detailed Augustus birth narrative parallels (divine kingship through miraculous birth, threatened infanticide, Son of God status as standard literary trope) add new specific narrative detail to the existing argument about celestial/birth legitimacy claims."
+  },
+  {
+    "finding_id": "BF1gSHDaJNY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[31] covers Soter as the most common title for Hellenistic rulers. Evidence of 'savior god' concepts 700 years before Jesus (Apollo as salvific God, Ashmanaser = 'Ashman saves') provides new specific pre-Christian examples not in the inventory, supporting the existing Soter/savior argument."
+  },
+  {
+    "finding_id": "BVU5_rau6wI_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Son of God' as pre-existing political term and lists 'Augustus as divi filius on coins and civic festivals' and 'Cities hailed emperors as soter.' The chapter text discusses the Caesar cult context. This finding's argument that 'Son of God' carried specific political meaning tied to Caesar worship is directly covered in the opening section."
+  },
+  {
+    "finding_id": "BqILLv1Dvl0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and the chapter text discusses how Greeks heard 'vocabulary of sovereignty reassigned.' The specific observation that NT Greek uses 'kingdom of arenos' for heaven, references Poseidon and Hades, and sounds like Homer/Virgil to Greek pagans is new evidence not in the inventory, supporting the existing argument about Greek political-religious idiom."
+  },
+  {
+    "finding_id": "C-qXmlzm28Y_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Augustus as divi filius on coins and civic festivals' and inv[35] covers Alexander's divine sonship. The chapter text describes Julius Caesar's deification and Augustus as 'son of the divine Julius.' This finding repeats the same examples (Roman emperors' deification, heavenly ascension, Son of God title) already covered."
+  },
+  {
+    "finding_id": "C-qXmlzm28Y_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing term. The specific Odyssey parallel (Jesus's anointing in Gospels mirrors Odysseus's anointing, Eurocleia = 'fame far and wide' as pun in Mark) is not in ch3 inventory. This is new literary evidence for the existing Greek anointing argument. Note: appears repeatedly in multiple findings in this batch (FEU04YG1aGQ_1, V6shchstY9k_1, lA-70CJlmkA_0)."
+  },
+  {
+    "finding_id": "C-qXmlzm28Y_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers Justin Martyr naming Dionysus among sons of Zeus. The specific evidence that Dionysus was called 'the son of god' in the Bacchae (c. 400 BCE) with the opening line 'the son of god has entered the world' is a new specific textual reference not in the inventory, supporting the existing comparative titulature argument."
+  },
+  {
+    "finding_id": "C2IokcQUcrQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and the chapter text discusses Augustus as divi filius. The specific discussion of Christ's resurrection as apotheosis/exaltation/divinization paralleled to Romulus myths and Romans 1:4 ('became Son of God in power at resurrection') is new evidence connecting resurrection to political apotheosis, supporting the existing Hellenistic framework argument."
+  },
+  {
+    "finding_id": "CihtoNjttrU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek divine categories (Justin Martyr, Theophilus). Clement of Alexandria portraying Jesus as 'the true Orpheus' in the Protrepticus is a new specific patristic source not in the inventory, supporting the existing argument about early Christians using Greek theological categories."
+  },
+  {
+    "finding_id": "CihtoNjttrU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology (Heraclitus, Stoics, Philo). Hermes Trismegistus as a Logos figure with creator attributes paralleling Johannine Logos theology is a new specific Hellenistic Logos parallel not in the inventory. The argument about Greek Logos frameworks predating Christianity exists."
+  },
+  {
+    "finding_id": "EaNNLRKAcYc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[11] covers Jesus teaching the Greek/Platonic model of the immortal soul. The Acts of Andrew presenting an apostle as 'christianized Socrates' using Plato's Phaedo language about the soul's release from the body is new evidence of early Christian Platonic theology not in the inventory, supporting the existing argument about Greek philosophical frameworks."
+  },
+  {
+    "finding_id": "FEU04YG1aGQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos/anointing as a political title. The specific Isis-Osiris anointing parallel (Mary Magdalene as priestess enabling sacred transformation through anointing, like Isis anointing Osiris) is new evidence not in ch3 inventory. The argument about anointing in Greek/Mediterranean royal tradition exists."
+  },
+  {
+    "finding_id": "FEU04YG1aGQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as anointing title. The specific Homer's Odyssey / Gospel anointing parallel (Eurocleia = 'fame far and wide', Jesus tells woman 'her fame will be remembered far and wide' as deliberate pun) is new literary evidence not in the inventory. Same evidence as C-qXmlzm28Y_1."
+  },
+  {
+    "finding_id": "FZ6uoYJw7KU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology and its connection to Jesus as Son of God. The specific mechanism described (Philo mapping Logos onto 'Son of God' through hypothesizing distinct divine moments) adds new detail about how the one-to-one mapping worked, supporting the existing Philo/Logos argument."
+  },
+  {
+    "finding_id": "FZ6uoYJw7KU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Stoics (Zeno, Chrysippus) developing Logos as rational cosmic principle. The specific tracing of Stoic logos through Hermeticists to Christianity by the third century ('stoicizing version of the logos had taken root... is what the Christians inherit') adds historical transmission detail not in the inventory."
+  },
+  {
+    "finding_id": "G29jCvsNO6w_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek divine sonship categories. The specific second-century Naassene hymn to Attis applied to Jesus (identifying Jesus with Osiris, Adonis, son of Zeus) is new evidence of early Christians explicitly equating Jesus with Greco-Roman dying-rising gods. The argument about comparative titulature exists."
+  },
+  {
+    "finding_id": "G29jCvsNO6w_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Matthew 19:12 (castration saying) as reflecting Attis cult castration symbolism. Neither the specific evidence (Matthew 19:12 interpreted through Attis cult) nor the argument (Jesus's words understood through mystery religion frameworks) appears in ch3 inventory. This is a new and potentially controversial argument with new evidence."
+  },
+  {
+    "finding_id": "G29jCvsNO6w_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[31] explicitly covers 'Soter (Savior) was the most common title for Hellenistic rulers, used across Ptolemaic, Seleucid, and other dynasties' with evidence including Ptolemy I Soter, Antiochus I Soter. The chapter text states: 'Cities hailed emperors as soter (savior) for providing grain, protection, and peace.' This finding about prevalence of Soter epithet is directly covered."
+  },
+  {
+    "finding_id": "GDinKDicuLQ_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[5] explicitly covers Justin Martyr naming Heracles, Asclepius, Dionysus, and Perseus as sons of Zeus alongside Jesus. Ch3 inv[2] lists Alexander's Zeus-Ammon claim. Zeus fathering Heracles and Dionysus as divine birth patterns paralleling Jesus is directly covered by the existing Justin Martyr and title evidence."
+  },
+  {
+    "finding_id": "GDinKDicuLQ_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Dionysus's specific death-and-resurrection narrative in Orphic mysteries. While ch3 argues about Hellenistic titles and Greek categories, it does not make the specific argument about dying-and-rising as central to mystery religion theology as a path to divine status. The Orphic Dionysus death-rebirth narrative evidence is new to ch3."
+  },
+  {
+    "finding_id": "GDinKDicuLQ_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not argue that the Trinity derives from Egyptian/Greek Father-Mother-Son family models rather than Jewish theology. Ch3 inv[9] covers Father described in Greek categories but not Trinitarian origin. The Sethian Father-Mother-Son pattern as Trinity origin is both a new argument and new evidence for ch3."
+  },
+  {
+    "finding_id": "GoqosHDB2FY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek divine categories. The Simonians (worshipping Simon as Zeus, Helena as Aphrodite/Athena) and Carpocratians (comparing Jesus to Pythagoras and Plato with statues of all three) are new specific examples of early Christian sects using Greek theological categories, supporting the existing argument."
+  },
+  {
+    "finding_id": "HTyAZ_BG2NU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[32] covers Kyrios as standard imperial honorific and inv[19] covers the Father/Kyrios distinction. The specific Alexandrian Jewish interpretation where kurios functions as both divine title (for YHWH in LXX) and imperial title (for Roman emperors) is a new nuance from Dr. Lillie not explicitly in the inventory, supporting the existing Kyrios argument."
+  },
+  {
+    "finding_id": "HTyAZ_BG2NU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[10] covers Gnostics viewing God of Moses as lower/ignorant power. The specific Yaldabaoth example (claiming 'I'm god and no one else exists beside me' as parallel to Roman emperors' self-divinization) is a new framing from Dr. Lillie connecting Gnostic theology to imperial critique. The argument exists; the specific imperial-critique framing is new evidence."
+  },
+  {
+    "finding_id": "I2b2tVLp80I_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Augustus as divi filius on coins and civic festivals' and the chapter text states: 'Augustus presented himself as divi filius.' The finding about Augustus's deification as Son of God and the Roman imperial cult is directly covered in ch3's opening section."
+  },
+  {
+    "finding_id": "I2b2tVLp80I_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[6] covers Psalm 2:7 as royal investiture at baptism and resurrection. Romans 1:4 (Jesus 'declared to be the son of god in power by his resurrection') as adoptionist Christology is not explicitly cited in ch3 inventory, though Acts 13:33 is. This specific Pauline text is new evidence for the existing investiture/acquired-status argument."
+  },
+  {
+    "finding_id": "I6pLMYlgNDM_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists Alexander's Zeus-Ammon claim with coins and inv[35] covers Alexander at Siwa. The chapter text names 'Alexander the Great claimed descent from Zeus-Ammon, and his image appeared with the horns of Ammon on coins.' Augustus as divi filius on coins is also explicitly listed. The 'ubiquitous Hellenistic royal title' argument with these exact examples is directly covered."
+  },
+  {
+    "finding_id": "I6pLMYlgNDM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology. The specific framing of Philo's project as 'syncretizing Judaism with pagan concepts' including Pythagoreanism and Platonism, where 'the logos is going to inherit the kingdom of heaven,' adds new detail about Philo's syncretic method not explicitly in the inventory."
+  },
+  {
+    "finding_id": "IFQKSFU6Bi4_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Egyptian bodily resurrection as proof of divine legitimacy. The specific argument about Osiris's physical resurrection functioning as 'miraculous proof of divinity' paralleling Jesus's resurrection (including Thomas's doubt) is not in ch3 inventory. While ch3 discusses titles and political theology, it does not make this specific resurrection-as-divine-proof argument using Egyptian evidence."
+  },
+  {
+    "finding_id": "IFQKSFU6Bi4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[25] covers 'Son of God' as standard Hellenistic title derived from Egyptian 'Son of Ra.' Cooney's tracing of the title across Osiris, Horus, and Jesus as cross-cultural divine/royal designation involving virgin birth and divine conception adds Egyptian religious tradition detail not in the inventory, supporting the existing argument."
+  },
+  {
+    "finding_id": "IMcx_2LDh44_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing term. The specific Eshmun material connecting Mediterranean anointing ceremonies to kingship ritual (Phoenician kings anointed with oil) is new evidence from a specific Mediterranean tradition not in the inventory, supporting the existing argument about Christ/anointing in Hellenistic royal tradition."
+  },
+  {
+    "finding_id": "IMcx_2LDh44_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[25] covers 'Son of God' as Hellenistic title and inv[2] lists various pre-existing titles. Eshmun as a pre-Christian 'Son of God' who is a dying-rising deity, healer, and anointed figure ('offspring of the mother queen of heaven and the lord father baal') is new specific Mediterranean evidence not in the inventory."
+  },
+  {
+    "finding_id": "IMcx_2LDh44_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss pre-Christian baptismal parallels in Mediterranean temple contexts. Eshmun temples featuring ritual ablutions in sacred basins fed by running water as parallel to Christian baptismal practice is both a new argument (pre-Christian Mediterranean baptismal parallels) and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "IRcxi11x8wI_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Augustus as divi filius on coins and civic festivals' and the chapter text discusses Augustus as 'son of the divine Julius.' The chapter also mentions 'Cities hailed emperors as soter.' Berman's examples (Augustus designated Son of God, deified, ascending, spitting to heal blind like Vespasian) repeat evidence already in the chapter. The Vespasian miracle parallel is new detail but the core Son of God/Augustus argument is directly covered."
+  },
+  {
+    "finding_id": "Ixe0l246JqE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories (Justin Martyr). The Naassene hymn repurposing Attis hymn for Jesus (identifying him as Kronos, Zeus, Rhea, Adonis, Osiris) is new specific patristic evidence not in the inventory. The argument about Christians using Hellenistic divine categories exists; this is another instance."
+  },
+  {
+    "finding_id": "L25SS6zORSs_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] covers Alexander claiming divine sonship through Zeus-Ammon and the chapter text explicitly parallels Alexander's claim to Jesus's. The specific parallel of 'my Father' language (Alexander to Zeus, Jesus in Gospels) is implicit in the existing coverage of Alexander's divine sonship. The core evidence (Alexander as Son of God, same as Jesus) is covered."
+  },
+  {
+    "finding_id": "Lb1tMKRTRjk_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists Augustus as divi filius on coins and ch3 inv[35] covers Alexander at Siwa. The chapter text discusses both. Augustus styling himself as 'son of god' after Caesar's deification with numismatic evidence is directly covered in the opening section."
+  },
+  {
+    "finding_id": "Lb1tMKRTRjk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and inv[33] covers Prince of Peace. The specific framing of Augustus implementing pax romana as political-theological salvation doctrine decades before Jesus, establishing Greek framework of 'political messianism,' adds the comparative salvific-political framework detail. The Philo writing about Augustus 'calming storms' is new evidence not in inventory."
+  },
+  {
+    "finding_id": "LctsnVJY-5Q_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers Son of God as pre-existing political title with Augustus as divi filius. Titus as son of the deified Vespasian being recognized as 'son of god' in the same region and era as Christianity, plus the Josephus 'the son comes' passage, is new specific evidence not in the inventory, supporting the existing comparative titulature argument."
+  },
+  {
+    "finding_id": "LriV6lvzHnQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek divine categories. The Naassene preacher substituting Jesus's name for Attis/Osiris/Dionysus/Adonis in hymns is repeated across multiple findings in this batch. While the Naassene evidence appears in multiple findings, it is not in ch3 inventory. New evidence for existing argument about early Christians using Greek categories."
+  },
+  {
+    "finding_id": "M16MHb6WqIg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[14] covers Egyptian solar-royal culture alive in the 1st century and discusses solar imagery. The specific connection between Hellenistic solar monotheism (Helios/Elagabalus) and early Christianity's institutional formation is new evidence. The argument about solar-royal continuity exists; the specific Helios/Elagabalus-to-Christianity institutional link is new."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[28] covers Jesus as 'God manifested in the flesh' (Epiphanes). Glover's analysis of epiphany scenes (transfiguration, empty tomb) as Greco-Roman literary-theological motifs for justifying cultic worship and new priesthood is new evidence framing these Gospel episodes through Greek epiphany conventions not in the inventory."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[5] explicitly covers Justin Martyr, First Apology 21-22, stating Christians 'propound nothing different from what you believe regarding those whom you esteem sons of Zeus.' The finding quotes virtually the same passage from Justin Martyr about the logos, firstborn of God, crucifixion, death, resurrection, and 'sons of Zeus.' This is the same evidence already in the inventory."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology from Heraclitus, Stoics, and Philo. The specific evidence that Greek philosophers identified various divine figures (Heracles, Dionysus, Zeus) as the Logos/'firstborn of God'/'second god' is new specific textual evidence showing Logos was applied to multiple deities, supporting the existing Logos argument."
+  },
+  {
+    "finding_id": "Nf4GV3z-z6o_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers Philo's Logos theology including 'Philo of Alexandria: Jewish aristocrat' developing Logos. The chapter text discusses Philo's doctrine of the Logos. Philo identifying the logos as 'firstborn of God' and 'son of God' is directly covered by the existing Philo material in the inventory."
+  },
+  {
+    "finding_id": "Nf4GV3z-z6o_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and mentions Augustus on coins. Ch2 inv[30] covers euangelion as political term. The specific Priene Calendar inscription (9 BC) using the Greek term evangelion for Augustus as 'savior' is not in ch3 inventory. The argument about Greek political-theological vocabulary exists; this specific inscription is new evidence."
+  },
+  {
+    "finding_id": "Nf4GV3z-z6o_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[41] covers Basileia tou Theou as technical term for Hellenistic divine monarchies. The observation about competing messianic movements in both Judaism and Roman imperialism indicating 'kingdom' and 'salvation' language was fundamentally political-theological supports the existing argument but without new specific evidence beyond what is already covered."
+  },
+  {
+    "finding_id": "Nf4GV3z-z6o_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers John's Gospel presenting Jesus as Logos from Greek philosophy. The specific Platonic triadic structure (monad, diad, triad) mapped onto John 1:1-3, with Zoe connected to Eve/creation as a third figure forming a Trinity, is new philosophical-structural evidence not in the inventory, supporting the existing Logos/Greek framework argument."
+  },
+  {
+    "finding_id": "NxgctKd27Bg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[31] covers Soter as Hellenistic title and inv[5] mentions Dionysus among sons of Zeus. The specific parallel of Dionysus and Jesus both uniquely demanding 'recognition' (belief and worship) as a Thracian concept is new evidence about a specific theological parallel not in the inventory."
+  },
+  {
+    "finding_id": "PYpfLJD1uIg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. The specific parallel between Helios/Apollo/Mithras as mediating figures and Christian Logos theology, with Julian's depiction of the sun as mediator competing with the Jesus-Yahweh dyad, is new evidence not in the inventory, supporting the existing Hellenistic framework argument."
+  },
+  {
+    "finding_id": "Q1iF3MrY5yI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. Plutarch's comparison of Mithra as mediator in Zoroastrianism paralleling Christ as mediator in the NT is a new specific cross-tradition comparison not in the inventory. The argument about pre-existing titles exists; the Mithra/mediator parallel is new evidence."
+  },
+  {
+    "finding_id": "Q1iF3MrY5yI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology from Heraclitus, Stoics, and Philo. Plutarch describing Osiris as the 'logos' of heaven and the lower world is a new specific source showing Logos applied to non-Christian deities, supporting the existing argument that Logos was established Hellenistic vocabulary."
+  },
+  {
+    "finding_id": "Q89qkiEhi6E_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology and inv[9] covers John's Logos. MacDonald's specific parallel between John's Logos prologue and the opening monologue of Euripides' Bacchae (Dionysus claiming divine sonship through his mother) is new literary evidence. Ch4 inv[35] mentions John as 'Dionysian Gospel' built on Bacchae, but in ch3 this specific Bacchae-John parallel is new evidence."
+  },
+  {
+    "finding_id": "Q89qkiEhi6E_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Q source or Homeric mimesis in parables. The specific example of Q imitating Homer's Odyssey (parable of servants paralleling Odysseus's servants, Melanthius eating with suitors, Odysseus chopping them up) is both a new argument (Q source literary dependence on Homer) and new evidence not in ch3 inventory. More relevant to ch4 (gospel composition)."
+  },
+  {
+    "finding_id": "Q89qkiEhi6E_3",
+    "verdict": "wrong_chapter",
+    "justification": "MacDonald's 'social identity criticism' methodology distinguishing Greek mythologizing layers from Jewish institutional material in the gospels is primarily about gospel composition methodology, which belongs in ch4 (Gospels as Historically Reliable Sources). Ch4 already discusses gospel composition and literary techniques."
+  },
+  {
+    "finding_id": "QL8mAVnVXsk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing title. David's anointing described as 'cup-bearer' (kalim) to Saul paralleling Ganymede in Greek tradition is a new specific cross-cultural anointing parallel not in the inventory, supporting the existing Greek anointing argument."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and inv[28] covers 'God manifested in the flesh.' The precise Greco-Roman definition of deification (immortal life, answering prayer, power on earth, superhuman body) as matching exactly the attributes ascribed to Jesus is new specific definitional evidence not in the inventory, supporting the existing argument."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. Clement of Alexandria conforming Christ to Orpheus ('new Orpheus singing the new song of salvation') in the Protrepticus is new specific patristic evidence not in the inventory. Note: The chapter text mentions Clement of Alexandria in a different context (Stromata 5.12 about universal Father)."
+  },
+  {
+    "finding_id": "Qv_D09wLEkQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles framed in Greek political-religious idiom. Walsh's observation that Matthew portrays Jesus as a Stoic philosopher while simultaneously drawing on Jewish scripture (dual framing for different audiences) is new evidence about compositional strategy not in the inventory, supporting the existing Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "Qv_D09wLEkQ_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers 'Philo of Alexandria: Jewish aristocrat; brother Alexander the Alabarch' and describes Philo as a Middle Platonist who synthesized Jewish scripture with Greek philosophy. The chapter text describes 'Alexandrian Judaism, represented above all by Philo.' Walsh's characterization of Philo as Middle Platonist integrating Greek philosophy while maintaining Jewish identity is directly covered."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology. The specific trinity of God, Sophia, and the Lord within a Platonic framework, with logos described as the sun, is new specific detail about Philo's trinitarian structure not in the inventory, supporting the existing Philo/Logos argument."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the intelligible triad (being, life, intellect) from Porphyry into Church Father theology or the feminine nature of the Holy Spirit's middle position. This Neoplatonic-to-Trinitarian transmission with the feminine principle is both a new argument and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Eudorus of Alexandria or his Platonic monad/diad proto-Trinitarian structure. This pre-Christian Alexandrian philosophical theology directly prefiguring Trinity doctrine is both a new argument and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers Gospel of John presenting Jesus as Logos from Greek philosophy. The specific Platonic triadic structure in John 1 (logos, Zoe/life as female principle connected to Eve via LXX) adds new philosophical-structural evidence not in the inventory, supporting the existing argument about John's Greek framework."
+  },
+  {
+    "finding_id": "SFxwTQaXaHY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[25] covers 'Son of God' as standard Hellenistic title derived from Egyptian pharaonic tradition. The specific point that OT kings of Israel were called 'Son of God' (making it a royal designation, not a claim of divine equality) is a new specific piece of evidence supporting the existing argument about Son of God as political-royal category."
+  },
+  {
+    "finding_id": "ScA56Q_9-Ug_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[41] covers Basileia tou Theou as Hellenistic divine monarchy term. The parallel between Christian sacramental initiation (baptism, Eucharist, faith-based salvation) and Greek mystery initiation is new evidence. The Q&A global decision rejects 'mystery cult' framing but says to extract institutional data and reframe through imperial cult. This evidence should be reframed accordingly."
+  },
+  {
+    "finding_id": "ScA56Q_9-Ug_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers John's Logos from Greek philosophy. Ch4 inv[35] discusses John as 'Dionysian Gospel.' The specific portrayal of Jesus in John as a 'philosophical cynic stoic type of thinker' resembling the Platonic philosopher-Bacchus (not the ecstatic Dionysus) is new evidence about John's specific philosophical characterization not in ch3 inventory."
+  },
+  {
+    "finding_id": "SxpF2juPQd8_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Eleusinian Mysteries' ritual consumption of 'body and blood' paralleling the Eucharist, or the Dionysian dismemberment-and-reconstitution mirroring resurrection theology. The Q&A global decision rejects 'mystery cult' framing but says to extract data. The specific Eleusinian body-and-blood evidence is new. However, this may be better placed in ch4 which discusses John omitting the Eucharist because it was already an established Dionysian rite (ch4 inv[15])."
+  },
+  {
+    "finding_id": "TKvrD7l8Qd4_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers 'Philo of Alexandria: Jewish aristocrat' who 'synthesized Jewish scripture with Greek philosophy and developed the concept of the Logos.' The chapter text states the same. Philo as the crucial figure synthesizing Greek philosophy with Jewish thought to create the Logos concept that Christians inherited is directly covered."
+  },
+  {
+    "finding_id": "TKvrD7l8Qd4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology with Heraclitus and Stoics. Aristobulus of Alexandria as a pre-Philo Jewish philosopher from the Aristotelian school who similarly synthesized Greek Logos concepts with Judaism is new historical evidence of an earlier figure in the same tradition, supporting the existing argument about Hellenistic philosophical inheritance."
+  },
+  {
+    "finding_id": "TKvrD7l8Qd4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Logos theology from various Greek traditions. Hermes holding identical titles to Christ (logos, word of god, messenger, mediator) is new specific evidence of a Greek deity bearing the same theological titles, supporting the existing Logos argument."
+  },
+  {
+    "finding_id": "TOtKGiV7RYI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and the chapter discusses how Greek rule was 'by nature divine.' Plato's specific prescription that rulers must convince citizens 'their laws were given by a god' as the operative framework for Hellenistic kingdoms is a new specific philosophical source not in the inventory, supporting the existing political theology argument."
+  },
+  {
+    "finding_id": "TRlFI1mClzw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing term. The specific connection of Christos to Greek mystery religion practice (healing cults, oil for immortality, 'oystermania' initiatory state) and to Greco-religious healer deities (Iasos, Addis, Ashman) is new evidence about the cultic dimension of the anointing concept not in the inventory."
+  },
+  {
+    "finding_id": "TRlFI1mClzw_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss gematria or Pythagorean-Orphic numerical theology applied to Jesus. The specific argument about 888 as gematria of Jesus derived from Greek mathematical mysticism (ogdoad generating numeric sequences) is both a new argument and new evidence not in any chapter inventory."
+  },
+  {
+    "finding_id": "TRlFI1mClzw_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Iasos/Yasios from Samothracian mysteries as a dying-and-rising healer deity with linguistic roots shared with Jesus is not in ch3 inventory. Neither the specific evidence (Iasos struck down by Zeus, brought to Hades, resurrected) nor the argument (direct mythological precedent for Jesus narrative in Greek tradition) appears in ch3."
+  },
+  {
+    "finding_id": "TRlFI1mClzw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[10] covers Gnostics viewing God of Moses as lower power. The specific claim that early Gnostic Christians understood Jesus as son of Sophia rather than Yahweh, documented by Hippolytus, adds new specific evidence about early Gnostic Christology. The argument that earliest proclamation was received in Greek categories (not tied to YHWH) exists in ch3."
+  },
+  {
+    "finding_id": "TW1OvbGoQJw_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the transformation of dying-and-rising god myths from agricultural symbolism to soteriological theology in urban Hellenistic contexts. The specific argument about urbanization changing mystery religion meaning from agricultural cycle to 'liberation or deification guaranteeing eternal life' is both a new argument and new evidence for ch3."
+  },
+  {
+    "finding_id": "TW1OvbGoQJw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers sons of Zeus including Dionysus. Ch4 inv[35] discusses Dionysian Gospel. The specific parallel between Dionysus and Jesus both demanding 'recognition' (belief and worship) as their sole concern is new evidence about a specific theological parallel. The argument about Jesus framed in Greek divine categories exists."
+  },
+  {
+    "finding_id": "TW1OvbGoQJw_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the 12 disciples as parallel to 12 zodiac signs or as 'new tribal patriarchs.' This Greco-astrological interpretation of the 12 apostles is both a new argument and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "TXreQXUSU9g_0",
+    "verdict": "not_relevant",
+    "justification": "The Infancy Gospel of Thomas portraying Jesus with divine creative powers is about apocryphal gospel traditions and Jesus's childhood miracles. This does not bear on any argument in ch3 (which covers titles, political theology, kingdom language). The apocryphal traditions are more relevant to ch4 (gospel reliability) if at all."
+  },
+  {
+    "finding_id": "Tz5dPq4NZJU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[50] covers Mary carrying Greek royal imagery. The specific evidence of an early Christian tombstone from Asia Minor invoking only 'mother Mary' without mention of Jesus or the Father, plus Artemis/Isis synchronized goddess imagery inherited by Mary, is new evidence supporting the argument about Greek divine feminine veneration absorbed into Christianity."
+  },
+  {
+    "finding_id": "UG7qpuCXZZk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[10] covers Gnostics and their theological positions. Litwa's identification of Helen as Simon's 'Divine thought' compared to Athena from Zeus's head, showing Simonian theology used Greco-Roman divine frameworks, is new specific evidence supporting the existing argument about Greek categories in early Christian theology."
+  },
+  {
+    "finding_id": "UG7qpuCXZZk_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Simon designated with 'God above all rule Authority and power' (paralleling Ephesians) and the statue base connecting Simon to Simo Sancus (Greco-Italic deity), with some claiming he was 'son of Jupiter,' is new evidence. The specific argument about early Christian figures understood through Greco-Roman divine kingship rather than Jewish prophetic models at this level of detail is new to ch3."
+  },
+  {
+    "finding_id": "UGIdC6o0W_Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek word meaning 'anointed.' Demeter calling Demiphon 'christos' in the Homeric Hymn to Demeter is a new specific pre-Christian Greek source using the exact term 'christos' for anointing, not in the inventory. This is strong new evidence for the existing argument."
+  },
+  {
+    "finding_id": "UGIdC6o0W_Y_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Eleusinian mystery theology as precedent for Christian resurrection soteriology. Initiates experiencing death-rebirth through Persephone's cycle is both a new argument about pre-Christian resurrection theology and new evidence not in ch3 inventory. The Q&A rejects 'mystery cult' framing but says to extract data and reframe through imperial cult."
+  },
+  {
+    "finding_id": "UeOqggxeN_U_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[32] covers Kyrios as standard imperial honorific and inv[31] covers Soter. The inscription to Azizos with titles 'Lord, Savior, Power, Most High' in Greco-Roman context is new specific epigraphic evidence not in the inventory, supporting the existing argument about divine titulature in Hellenistic contexts."
+  },
+  {
+    "finding_id": "UeOqggxeN_U_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. The Naassenes' reinterpretation of Jesus through Attis dying-god theology (applying an Orphic hymn to Jesus) is new specific evidence. This Naassene material appears in multiple findings in this batch; it consistently represents new evidence for the existing comparative-categories argument."
+  },
+  {
+    "finding_id": "Uht_iz6Ll8A_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers Alexander declared son of God at the oracle of Ammon, and the chapter text states: 'Alexander the Great claimed descent from Zeus-Ammon.' The finding's parallel between Alexander at Siwa ('Child Alexander, you are born of my seed') and Jesus at baptism ('You are my beloved son. Today I have begotten you') is the same evidence the chapter presents at inv[6] (Psalm 2:7 at baptism) and inv[35] (Alexander at Siwa). Both elements are covered."
+  },
+  {
+    "finding_id": "Uht_iz6Ll8A_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Augustus as divi filius on coins and civic festivals' and the chapter text discusses Caesar's deification and Augustus as 'son of the divine Julius.' The finding about Caesar's deification and Augustus as 'son of God on earth' with the Pax Romana is directly covered."
+  },
+  {
+    "finding_id": "Uv6Ls3ec_sA_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[5] explicitly covers Justin Martyr's First Apology 21-22 acknowledging Jesus must compete with sons of Zeus and addressing the charge. The finding describes Justin Martyr recognizing Jesus competing with Greco-Roman divine titles and deified emperors including Caesar's coin inscription, which is the same evidence as inv[5]."
+  },
+  {
+    "finding_id": "Uv6Ls3ec_sA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[40] covers Jesus's birth as new star and lists Augustus's birth star. The specific parallel birth narrative elements (star in the east, state decree to kill infants, miraculous conception) attributed to Augustus are partially covered by inv[40] but the infanticide decree parallel is new specific narrative evidence not in the inventory."
+  },
+  {
+    "finding_id": "Uw9yzg7dUvw_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Augustus as divi filius on coins and civic festivals.' The chapter text states: 'Augustus presented himself as divi filius, son of the divine Julius, and this title appeared on coins and in civic festivals.' The finding about Augustus 'Son of God' on coins with comet imagery until 14 AD is directly covered."
+  },
+  {
+    "finding_id": "V6shchstY9k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing term. McDonald's three Homeric anointing traditions (hospitality/foot-washing, athletic anointing, corpse preparation) are new specific Greek literary contexts for understanding anointing not in the inventory, supporting the existing argument about Christ as Hellenistic anointing title."
+  },
+  {
+    "finding_id": "V6shchstY9k_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as C-qXmlzm28Y_1 and FEU04YG1aGQ_1. The Jesus/Odysseus anointing parallel with Eurocleia pun is new literary evidence not in ch3 inventory, supporting the existing anointing argument. This evidence appears repeatedly across multiple findings in this batch."
+  },
+  {
+    "finding_id": "V8OlIl--V6Q_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek anointing term. The Homeric Hymn to Demeter where Demeter anoints Demophon with ambrosia 'as if he were the son of a god' to make him immortal is new specific evidence combining anointing with 'son of god' language in pre-Christian Greek text, supporting the existing argument."
+  },
+  {
+    "finding_id": "W70wK8uifgI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers sons of Zeus including Heracles and Dionysus. The catalog of father-son deity patterns (Zeus-Heracles, Zeus-Dionysus, Osiris-Isis-Horus triads) with Dionysus's death and resurrection provides new organized comparative evidence not in the inventory. The argument about Hellenistic divine sonship as pre-existing framework exists."
+  },
+  {
+    "finding_id": "W70wK8uifgI_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Father-Mother-Son Trinity pattern from Egyptian/Hellenistic tradition or the Apocryphon of John where Jesus says 'I'm the father, I'm the mother, I am the son.' The Sethian/Nag Hammadi trinitarian father-mother-son pattern is both a new argument about Trinity origins and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "W899HmALWMA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[11] covers Jesus teaching Greek/Platonic model of the soul. The specific examples (Platonic influence on morality/divine nature, Orphic body-spirit dualism in Christian anthropology, Prometheus as sacrificial-blood parallel to Jesus) add new evidence for the existing argument about Greek philosophical frameworks shaping Christian thought."
+  },
+  {
+    "finding_id": "XaaPNMWW-Zg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and the chapter mentions Celsus's testimony in ch6 inv[13]. Celsus's observation that multiple Palestinian prophets claimed to be God, a son of God, or a Divine spirit contextualizes Jesus's title within a broader landscape. This Celsus evidence is not in ch3 inventory specifically, supporting the existing titulature argument."
+  },
+  {
+    "finding_id": "XkYRvyGYPiA_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss John's identification of people in Pergamum 'calling themselves Jews but aren't' in the context of Hellenized identity-formation. This specific argument about non-Jewish peoples adopting Jewish identity in Greek institutional cities is new to ch3 and could relate to the Greco-Christian framework argument but is tangential."
+  },
+  {
+    "finding_id": "Xt2m0Jir8BA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. Jesus identified with the morning star (Inanna/Ishtar/Venus/Lucifer) with dying-and-rising motif is new specific evidence connecting Jesus to Mesopotamian/Mediterranean astral-deity tradition not in the inventory, supporting the existing comparative titulature argument."
+  },
+  {
+    "finding_id": "Xt2m0Jir8BA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers Paul quoting Greek poets (Acts 17:28, Aratus). The specific evidence that Aratus's Phaenomena was part of the standard Greek educational curriculum and is quoted in Acts 17 supports the existing argument. The inventory already mentions Aratus, but the curriculum context (educated Christians necessarily knew Greek astronomical texts) adds new framing."
+  },
+  {
+    "finding_id": "Y17Gotuqzj4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. Ch4 inv[35] covers John as Dionysian Gospel. Jesus adopting 'the True Vine' imagery resonating with Dionysian/Sabazios symbolism (Saturn holding the scythe) is new specific evidence about deliberate Bacchic appropriation not in ch3 inventory, supporting the Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "ZQwrhLL68Mg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. The Naassenes identifying Jesus with Attis and interpreting resurrection as transformation into divinity (apotheosis) using the language 'a corpse and a god' applied to Christ is new specific Gnostic evidence not in the inventory, supporting the existing comparative categories argument."
+  },
+  {
+    "finding_id": "ZQwrhLL68Mg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. The Naassenes' systematic methodology of treating Greek mysteries as 'equivalent to Jewish prophecies' for Christian interpretation is new evidence about a specific hermeneutical approach not in the inventory, supporting the existing argument about Greco-Christian theological frameworks."
+  },
+  {
+    "finding_id": "_4tdnV31Vg4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[14] covers Egyptian solar-royal culture alive in the 1st century and inv[18] covers the Christian halo as solar disk. Christ understood through solar symbolism tied to winter solstice and early depictions of Jesus with solar attributes ('son of righteousness') is new evidence supporting the existing solar-royal argument."
+  },
+  {
+    "finding_id": "_XPbTqpdqAw_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[5] explicitly covers Justin Martyr's First Apology 21-22 stating Christians 'propound nothing different from what you believe regarding those whom you esteem sons of Zeus' naming Mercury/Hermes and Asclepius. This finding quotes the same passage about logos/firstborn of God and sons of Jupiter. Directly covered."
+  },
+  {
+    "finding_id": "_XPbTqpdqAw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. The Naassenes incorporating the Attis mystery hymn into Jesus theology is the same Naassene evidence appearing across multiple findings in this batch. Not in ch3 inventory; new evidence for the existing argument."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek word meaning 'anointed.' Ruck identifying 'christos' as Hellenistic divine title predating Jesus in the Demeter mystery (Demeter describing the foundling child as 'the anointed of the gods translated as the christos') is the same evidence as UGIdC6o0W_Y_0. New specific pre-Christian Greek source for the existing anointing argument."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the etymological equivalence of Jason/Joshua with christos through Greek anointing (esthai = to anoint). The specific argument that diaspora Jews changed Joshua to Jason because it carried the same 'anointed' meaning, and that Jason is anointed by Medea in myth, is both a new argument about naming conventions and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers Alexander's mother claiming divine sonship and Alexander receiving confirmation at the oracle. The chapter text states: 'Alexander the Great claimed descent from Zeus-Ammon, and his image appeared with the horns of Ammon on coins that circulated across the empire (Plutarch, Lives 27).' This finding repeats the same evidence."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[35] covers Alexander at Siwa and inv[6] covers Psalm 2:7 at baptism. The Alexander Romance oracle scene described as a 'baptism' with voice declaring 'This is my son who I have begotten' \u2014 identical to the gospel baptism formula \u2014 is a specific literary parallel connecting Alexander's divine-sonship confirmation to Jesus's baptism. The structural parallel is new evidence strengthening the existing argument."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and the chapter argues Jesus framed in Greek idiom. The argument that gospels deliberately synthesized Pauline theology, OT prophecy, and Hellenistic ruler mythology (Alexander, Augustus, Caesar) into an 'ultimate religion' is a synthesis claim. The book already argues this; the specific framing of intentional synthesis is new articulation."
+  },
+  {
+    "finding_id": "aKzURrl_6GY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers sons of Zeus including Dionysus. The specific parallel between Dionysus and Jesus as the only two figures who are 'chosen heirs to the kingdom of heaven itself' (not just sons of God but designated successors) is a new specific theological parallel not in the inventory, supporting the existing comparative titulature argument."
+  },
+  {
+    "finding_id": "avcA-TUJjUg_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers Philo developing Logos theology before the NT and the chapter text describes 'Philo of Alexandria had already developed a theology of the Logos before the New Testament was written... his influence is visible in both Johannine and Pauline language.' This finding about Philo developing Logos and divine sonship concepts that influenced Mark is directly covered."
+  },
+  {
+    "finding_id": "avcA-TUJjUg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. The specific evidence of Mithraism having established eucharist rituals and resurrection theology with demigods prior to Christianity is new evidence. The Q&A global decision rejects 'mystery cult' framing but instructs to extract institutional data. The eucharist/resurrection parallel data supports the existing Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "b1H71cSju34_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers Alexander's divine sonship at Siwa. The chapter text describes Alexander claiming descent from Zeus-Ammon with coins. The Alexander Romance providing comparative evidence for Son of God as Hellenistic royal title conferring legitimacy is the same evidence as inv[35]. Alexander seeking oracular confirmation from Ammon is directly covered."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers sons of Zeus including Dionysus. The specific primary sources (Diodorus Siculus, Cicero, Euphorion from 3rd century BCE) documenting Dionysus's death, resurrection, rebirth from Zeus's leg, and divine attributes centuries before the gospels are new textual evidence not in the inventory, supporting the existing comparative divine sonship argument."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[28] covers Jesus as Epiphanes/Emmanuel. The specific evidence that January 6 celebrates both Dionysus's epiphany (water-into-wine miracle per Pliny the Elder) and Jesus's miracles at Cana on the same date is new specific evidence not in the inventory, supporting the Greco-Christian parallel argument."
+  },
+  {
+    "finding_id": "cDw1C0n1Fbc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[11] covers Jesus teaching the Greek/Platonic soul model. Early Christians interpreting Genesis through Plato's Symposium (Adam's pre-gendered state) and Eve through Pandora is new specific evidence about Greek philosophical frameworks applied to biblical interpretation, supporting the existing Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "cUBbU4FxrtM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[28] covers Jesus as God manifested (Epiphanes). The three interlocking Greek concepts \u2014 theophany, theoixenia, theodosia \u2014 as structural vocabulary for understanding divine manifestation, hospitality, and gift-giving in both pagan and Christian practice is new systematic evidence not in the inventory, supporting the existing argument."
+  },
+  {
+    "finding_id": "dXrDN_9JuU8_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly lists 'Alexander claimed descent from Zeus-Ammon' and 'Augustus as divi filius on coins.' The chapter text names Heracles, Asclepius, Dionysus, and Perseus. This finding documenting 'Son of God' across Heracles, Julius Caesar, Augustus, and Romulus as 'comparative titulature across empires' is directly covered by the existing evidence."
+  },
+  {
+    "finding_id": "dXrDN_9JuU8_1",
+    "verdict": "covered",
+    "justification": "Ch3's chapter text explicitly describes Caesar's deification: 'Augustus presented himself as divi filius, son of the divine Julius.' The finding about Julius Caesar and Augustus demonstrating political-theological 'apotheosis to divine status' as established precedent is directly covered."
+  },
+  {
+    "finding_id": "dhjjbix2KPU_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Asclepius's healing miracles as comparative evidence to Jesus. The 70 inscribed miracles at Epidaurus temple and primary sources recording Asclepius healing blind men is new evidence, and the specific argument that miraculous healing claims were standard Greco-Roman divine attributes (not unique to Jesus) is new to ch3."
+  },
+  {
+    "finding_id": "dhjjbix2KPU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[40] covers Jesus's birth as new star and mentions Augustus's star/deification. The Roman imperial cult apotheosis with eyewitness claims (Caesar as comet, Augustus performing miracles) as parallels to Gospel resurrection narratives is new evidence connecting imperial apotheosis to resurrection accounts, supporting the existing political-theological legitimacy argument."
+  },
+  {
+    "finding_id": "dhjjbix2KPU_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss 'road encounters' as a standard Greco-Roman religious trope. The argument that the Road to Emmaus narrative follows established Roman road-encounter literary patterns (people seeing Caesars on roads) is both a new argument and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "dmwQdE2obMY_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers 'Alexander the Great claimed divine sonship through Zeus-Ammon at Siwa' with 'Oracle at Siwa in Egypt (Plutarch, Lives 27).' This finding about Alexander proclaimed 'son of Ammon' is directly covered."
+  },
+  {
+    "finding_id": "eDya-DNHJaA_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] covers Augustus as divi filius and the chapter text discusses how 'Augustus presented himself as divi filius, son of the divine Julius.' The Ovid Metamorphoses detail about Julius Caesar needing to be made a god so Augustus could be divine son is a literary source for the same evidence already covered."
+  },
+  {
+    "finding_id": "eDya-DNHJaA_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[31] covers Soter as common Hellenistic ruler title and inv[2] covers Augustus. The chapter text discusses rulers as saviors. Julius Caesar and Augustus as deified 'saviors' and 'messiah figures' is directly covered by the existing titulature evidence."
+  },
+  {
+    "finding_id": "eNX0aCF1HJQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers sons of Zeus including Dionysus. The specific identification of Jesus's titles with Greek mystery cult figures (dying-and-rising god, wine-blood symbolism, Christ connected to Phoenician Ashman whose name puns on oil and the number eight) adds new specific cross-tradition identification not in the inventory."
+  },
+  {
+    "finding_id": "ec8Tpp2rjc0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[25] covers 'Son of God' as standard Hellenistic title derived from Egyptian pharaonic tradition. Ehrman's point that OT kings of Israel were called 'Son of God' (therefore not making someone God) is new evidence from a mainstream scholar supporting the existing political-royal reading of the title."
+  },
+  {
+    "finding_id": "ec8Tpp2rjc0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[21] covers Jesus's conflicts with Pharisees/Sadducees as authority confrontations. Ehrman's emphasis that Jesus possessed 'enormous invested institutional authority' (cast out demons, teach, heal, forgive sins) is new framing from a mainstream scholar supporting the existing argument about Jesus as politically authorized figure."
+  },
+  {
+    "finding_id": "ec8Tpp2rjc0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[6] covers Psalm 2:7 applied to resurrection (Acts 13:33). Ehrman's description of how resurrection became the foundational basis for messianic/political legitimacy (they came up with 'the whole Theology of Christianity' to explain the crucifixion) is new framing supporting the existing argument about resurrection as political-theological legitimacy claim."
+  },
+  {
+    "finding_id": "f6lMoiqZ74I_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[35] explicitly covers Alexander's divine sonship with 'Ram's horns of Ammon on coinage.' The chapter text states: 'his image appeared with the horns of Ammon on coins that circulated across the empire.' Alexander represented as 'Son of Ammon (Zeus)' on coins is directly covered."
+  },
+  {
+    "finding_id": "f7julPohlws_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers 'Philo of Alexandria: Jewish aristocrat' who developed Logos theology before NT. The chapter text describes Philo's Logos doctrine. Philo believing in the Logos as divine 'Son of God' prior to Christianity is directly covered."
+  },
+  {
+    "finding_id": "fQGZPoTlhsM_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Augustus as divi filius on coins and civic festivals.' The chapter text says the same. Rabbi Singer's discussion of Julius Caesar as son of Venus and Augustus styling himself as son of god on coins is the same evidence already covered."
+  },
+  {
+    "finding_id": "gZRZShUeclw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers Augustus as divi filius and inv[6] covers investiture at resurrection. The specific comparison of Jesus becoming 'Son of God' at resurrection (Romans 1:14) to Augustus declared 'son of god' after Caesar's deification, with additional example of Antinous's star, is new evidence connecting investiture/elevation mechanics across figures, supporting the existing argument."
+  },
+  {
+    "finding_id": "gZRZShUeclw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[6] covers Psalm 2:7 as royal investiture. The specific identification of Psalms 2 and 110 as coronation psalms used in Jewish royal ceremonies with language of political rule ('rule your enemies,' sitting at God's 'right hand') applied to Jesus's resurrection and ascension adds new liturgical-political detail to the existing investiture argument."
+  },
+  {
+    "finding_id": "gqh6ccRfhio_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as Greek word meaning 'anointed.' Mason's point that Josephus uses 'christos' for practical applications like plastering ('the word means smeared') is new evidence from a Josephus scholar showing the mundane Greek usage of the term, supporting the existing argument about Christos as Greek term."
+  },
+  {
+    "finding_id": "hSZzMg3_Ros_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[9] explicitly covers 'Gospel of John presents Jesus as Logos, term from Greek philosophy' and inv[27] covers Logos from Heraclitus, Stoics, Philo. The chapter text states: 'The Gospel of John likewise presents Jesus as the Logos, the divine Word, the very term used by Greek thinkers for the creative principle.' The emphasis that John's Logos derives from Greek thought is directly covered."
+  },
+  {
+    "finding_id": "hSZzMg3_Ros_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers Father described in Greek philosophical categories. The specific framing that trinitarian theology has its 'ingredients' in Platonic and Neoplatonic thought adds new evidence from a debate context. The argument about Greek philosophical underpinnings exists; the specific trinitarian-Platonic connection in this debate is a new articulation."
+  },
+  {
+    "finding_id": "hZ6OkT2saT4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing terms and inv[24] covers anointing. The lineage of pre-Christian Mediterranean 'sons of God' with anointing traditions (Yasamuni/Ashman as archetype for Attis, Adonis, Bacchus, Osiris \u2014 'young beautiful sons of God who anoint, who use oil, funerary gods') is new organized comparative evidence not in the inventory."
+  },
+  {
+    "finding_id": "hrfnmmxUqY8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Philo's Logos theology. The extensive detail on Philo's multiple titles for the logos ('Son of God, firstborn, eldest of his angels, second god, image of God, mediator') with the specific term 'dutteros theos' (second god) is new detailed evidence not in the inventory, supporting the existing Philo/Logos argument."
+  },
+  {
+    "finding_id": "hrfnmmxUqY8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[9] covers John's Logos from Greek philosophy. The specific argument that John 1 mirrors Platonic ontological structure with Zoe as a third divine principle (Pythagorean triad: one, diad, trinity) is new philosophical-structural evidence not in the inventory, supporting the existing John/Greek framework argument."
+  },
+  {
+    "finding_id": "hrfnmmxUqY8_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss ancient Greek intellectuals identifying Yahweh with Dionysus/Bacchus. Plutarch's Symposiacs directly equating Yahweh and Bacchus is both a new argument (Greco-Judean religious syncretism at the deity level) and new textual evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "hrfnmmxUqY8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers anointing tradition. The Hilaria festival of Attis with structural parallels to the Christian Passion (9-day penance, death/mourning, resurrection on third day at spring equinox, priest anointing worshippers saying 'God is saved and for us salvation will emerge from his suffering') is new detailed evidence of a specific Greek ceremony, supporting the existing argument about comparative religious frameworks."
+  },
+  {
+    "finding_id": "iAlk-bLreT4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos as anointing term. Formal Roman imperial anointing practices where rulers were 'anointed as Augustus or Caesar' with the formula 'be as lucky as Augustus and as good as Trajan' is new evidence of Roman institutional anointing practice supporting the existing argument about anointing in Greco-Roman royal context."
+  },
+  {
+    "finding_id": "iM5pRWvvz50_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and inv[35] covers Alexander at Siwa. The Augustus/Apollo birth narrative (serpent visiting mother, divine conception) is a standard Hellenistic divine sonship claim. Ch3's inventory already covers multiple divine birth claims (Alexander, Augustus, Ptolemies, Seleucids). The Augustus-Apollo serpent narrative is a variant of already-covered divine-conception patterns."
+  },
+  {
+    "finding_id": "iZrives5jjQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms including 'King of Kings' and 'Lord of Lords.' El's epithets as 'king' and 'father of the Gods' in Canaanite mythology, widely attested across the Semitic world, provides new comparative Semitic evidence for royal divine titulature not in the inventory, supporting the cross-cultural titulature argument."
+  },
+  {
+    "finding_id": "iZrives5jjQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[6] covers Psalm 2:7 as investiture at baptism (related to succession). Divine succession patterns across cultures (Ouranos-Saturn-Jupiter; El-Baal; patriarchal succession) are new comparative evidence for the baptism-as-succession argument. The argument about baptism/investiture exists; the cross-cultural succession framework is new evidence."
+  },
+  {
+    "finding_id": "jBpARh3wuXo_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Augustus as divi filius on coins and civic festivals.' The chapter text discusses Augustus as 'son of the divine Julius.' The finding about Augustus as Son of God with divine bloodline and Jupiter statues is directly covered."
+  },
+  {
+    "finding_id": "jBpARh3wuXo_1",
+    "verdict": "covered",
+    "justification": "Ch3 inv[27] explicitly covers Philo developing Logos theology as Jewish aristocrat synthesizing Greek philosophy. The chapter text describes Philo's Logos doctrine. Philo as a 'hellenized jew talking about a messiah being a divine heir to a kingdom of heaven' is directly covered."
+  },
+  {
+    "finding_id": "jBpARh3wuXo_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] covers 'Cities hailed emperors as soter' and the chapter text discusses how 'divinity was the grammar of rule' and 'emperors as divine.' The Roman imperial cult requiring worship is directly covered by the chapter's discussion of Hellenistic divine kingship."
+  },
+  {
+    "finding_id": "jOt8fUFRHOw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[25] covers 'Son of God' as Hellenistic title. The linguistic analysis distinguishing Hebrew 'Benny Elohim' (sons of God) from Greek 'Angelos' (messenger) with specific etymological connections (Angelos used for Hermes, Artemis, Nike) is new evidence about how the two language traditions conceptualized divine beings differently, supporting the existing argument about understanding titles through Hellenistic framework."
+  },
+  {
+    "finding_id": "jkpNozPJagE_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Augustus as divi filius on coins and civic festivals.' The finding about Augustus as 'Divi Filius' (Son of God) with all his titles is directly covered."
+  },
+  {
+    "finding_id": "jkpNozPJagE_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[27] covers Greek philosophical traditions feeding into Christianity and inv[9] covers Greek categories. The specific detail of neo-Pythagoreanism and Neoplatonism explicitly incorporated into early Christian theology by Greek-speaking Jews in Egypt adds new evidence about the specific philosophical schools involved, supporting the existing argument."
+  },
+  {
+    "finding_id": "jmmNY7wdcFI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[11] covers Jesus teaching the Greek/Platonic soul model. The proposal that Jesus was influenced by Stoic philosophy adds new evidence from a different Greek philosophical school. The argument about Jesus's Greek philosophical framework exists; the Stoic dimension is new evidence."
+  },
+  {
+    "finding_id": "kaEUoNiH3Do_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[5] covers early Christian apologists using Greek categories. The Naassenes integrating Greco-Roman mystery religions into Christology (portraying Christ using Adonis, Osiris imagery) with the repurposed hymn to Attis is new evidence. The Naassene material appears across many findings in this batch; it consistently is new evidence for the existing comparative-categories argument."
+  },
+  {
+    "finding_id": "l-_hR1kawJg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms and ch4 inv[21] covers baptism as coronation. Apotheosis connected to Jesus's transfiguration, with comparison to Josephus's description of Moses's apotheosis, is new evidence linking transfiguration to Greco-Roman divine kingship patterns not in ch3 inventory."
+  },
+  {
+    "finding_id": "l-_hR1kawJg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[21] covers Jesus's conflicts with Pharisees/Sadducees as authority confrontations and inv[46] covers 'repent and believe' as national realignment. The temple cleansing as political insurrection act triggering crucifixion, compared to other first-century messianic figures, adds new evidence for the existing political-theological argument about Jesus's kingdom claims."
+  },
+  {
+    "finding_id": "lA-70CJlmkA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as C-qXmlzm28Y_1, FEU04YG1aGQ_1, V6shchstY9k_1. The Jesus/Odysseus anointing parallel with Eurocleia pun is new literary evidence not in ch3 inventory. This finding from Price adds the same evidence as several others in this batch."
+  },
+  {
+    "finding_id": "lX-TvMDoDP4_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Revelation reinterpreting Greek mythological narratives (Leto chased by dragon, Apollo imagery) for messianic purposes. This is both a new argument (Revelation's specific Greek mythological rewriting) and new evidence not in ch3 inventory. Ch6 inv[21] covers Revelation's political content but not the specific Leto/Apollo mythological reinterpretation."
+  },
+  {
+    "finding_id": "lX-TvMDoDP4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[41] covers Basileia tou Theou as Hellenistic divine monarchy term. Revelation explicitly using Roman Imperial cult language to counter imperial claims with the Kingdom framed as political opposition to Rome's divine kingship is new evidence from Revelation not in ch3 inventory, supporting the existing kingdom-as-political-theology argument. Ch6 inv[21] covers this for ch6."
+  },
+  {
+    "finding_id": "lX-TvMDoDP4_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Greek terminology for cities using feminine representation (metropolis from 'mater') or this grammar in Revelation's imagery. This is a new argument about Greek political grammar in Revelation and new evidence not in ch3 inventory. More relevant to ch6 which covers Revelation."
+  },
+  {
+    "finding_id": "limDa2wNmKg_0",
+    "verdict": "covered",
+    "justification": "Ch3 inv[2] explicitly covers 'Augustus as divi filius on coins and civic festivals.' The chapter text states the same. This finding about Augustus called 'Son of God' on coins minted throughout the Roman Empire after adoption by Caesar is directly covered."
+  },
+  {
+    "finding_id": "limDa2wNmKg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[24] covers Christos/Messiah as royal title. The specific argument that 'Augustus' functioned as a sacred religious title comparable to 'messiah' (signifying 'more than human,' derived from anointing language, claim to being 'God's anointed one' in Eastern Empire) is new evidence not in the inventory, connecting imperial and messianic anointing titles."
+  },
+  {
+    "finding_id": "limDa2wNmKg_2",
+    "verdict": "covered",
+    "justification": "Ch3 inv[33] explicitly covers 'Prince of Peace' with evidence including 'Augustus: Res Gestae 13, Janus gates closed three times; PAX coinage after Actium.' Augustus holding the title 'Prince of Peace' with 40 years of peace is directly covered."
+  },
+  {
+    "finding_id": "limDa2wNmKg_3",
+    "verdict": "wrong_chapter",
+    "justification": "Indian delegations presenting Augustus with gifts, specifically 'three wise men' bringing oils, presents, and tigers, is relevant to the Magi scene. Ch2 inv[43] covers 'The Magi scene preserves real Eastern court protocol' with detailed evidence. This finding about Augustus's three wise men as precedent for the Gospel nativity accounts belongs in ch2, which is where the Magi material is discussed."
+  },
+  {
+    "finding_id": "lkmNO0-0SNM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[2] covers titles as pre-existing political terms. Mithra as mediator and morning star (Lucifer) paralleling Jesus's later designations is new evidence connecting specific Mithraic titles to Christian titles. The argument about pre-existing titles exists; the Mithra-mediator and morning star parallels are new evidence."
+  },
+  {
+    "finding_id": "lkmNO0-0SNM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inv[34] covers 'Light of the World' relating to solar metaphors. 'Sol Invictus' (unconquerable sun) as a title of Mithra predating Christian adaptation, used in Plato, is new evidence about a specific solar title's transmission from pagan to Christian usage, supporting the existing solar metaphor argument."
+  },
+  {
+    "finding_id": "lpRk2Z_gskE_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Zeus-Jehovah connections or Sabazios/Sabaoth etymological links (Macrobius thinking Sabazeus is a cognate with Jehovah Sabaoth). This is a new specific argument about deity identification/syncretism and new evidence not in ch3 inventory."
+  },
+  {
+    "finding_id": "lpRk2Z_gskE_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Adam as a four-lettered Greek cosmological concept connected to Samothracian mysteries. The Sibyl saying Adam is a 'tetragrammaton' meaning north/south/east/west as a Greek magical practice with Samothracian origins is both a new argument and new evidence not in ch3 inventory."
+  }
+]

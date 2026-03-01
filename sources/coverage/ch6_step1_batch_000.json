@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "0nmNr0km-p4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 mentions Origen and Clement of Alexandria in passing (introduction, line listing Church Fathers who wrote in Greek) but does NOT discuss their use of Greek philosophical categories (demiurge) to interpret Hebrew scriptures. The argument that Church Fathers used Greek philosophical frameworks exists in the chapter (Clement of Alexandria section, Origen section), but the specific evidence of demiurge terminology and reinterpretation of Yahweh/Elohim stories through Greek concepts is not present in the chapter text."
+  },
+  {
+    "finding_id": "zTmiqc2On1A_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of 0nmNr0km-p4_2 (same speaker, same argument about Origen/Clement using demiurge concept). Chapter makes the argument that Church Fathers integrated Greek philosophy but does not cite this specific evidence about demiurge reinterpretation of OT texts."
+  },
+  {
+    "finding_id": "0tXAZntn1vA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was a Greek intellectual product and mentions Clement and Origen of Alexandria. But the specific evidence about the Alexandria School as a formal institutional synthesis of Greek intellectual culture with Palestinian religious thought is not presented in the chapter. The chapter covers Clement's Exhortation to the Greeks and Origen's Contra Celsum but not the Alexandria School as an institution."
+  },
+  {
+    "finding_id": "0tXAZntn1vA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as 0tXAZntn1vA_0. The argument about Church Fathers using Greek philosophical terminology exists (Athanasius/homoousios section, Tertullian/trinitas section), but the specific evidence about the Alexandria School's systematic methodology of incorporating Greek terminology is not in the chapter."
+  },
+  {
+    "finding_id": "1BTUFjlg4KI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 mentions Ignatius of Antioch as writing in Greek (introduction) but does not discuss his explicit imitation of Roman institutional structures in church hierarchy (bishop-priest-deacon mirroring Father-Christ-apostolic council). This is new specific evidence for the existing argument about Christianity mirroring Hellenistic political institutions."
+  },
+  {
+    "finding_id": "1BTUFjlg4KI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity mirrored Hellenistic political institutions but does not cite Ignatius's specific elevation of bishops to theological status paralleling Hellenistic royal protocol. New evidence for an existing argument."
+  },
+  {
+    "finding_id": "1BTUFjlg4KI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was a political restoration of the Greek empire culminating in the Byzantine Empire. The specific evidence about medieval Christianity consciously mirroring imperial political structures (emperor/pope parallel, court systems) is not in the chapter text, though the argument about institutional continuity is present."
+  },
+  {
+    "finding_id": "5GH3ZiYIs3c_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses imperial symbols in early Christian art (catacomb art with anchors, fish, dolphins, tridents matching Flavian coinage) but does NOT discuss Sarapis iconography and its continuity with Christ Pantocrator imagery. This is new specific visual/iconographic evidence for the existing argument about Hellenistic political theology persisting in Christianity."
+  },
+  {
+    "finding_id": "6hC7ewU8FDE_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Egyptian theological contributions to the synthesis (divine kingship, structured eschatology) in the Eastern Mediterranean Synthesis section but does NOT cite Philo's theology of divine incarnation drawing from Egyptian ruler cult traditions and the Hermetica. This is new specific evidence about the mechanism of Greco-Egyptian influence."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for continuity between Hellenistic political theology and Christian theology but does not cite the specific Ravenna Mosaic showing Christ in Roman military garb as naturalization of a foreign deity through imperial representation. New iconographic evidence for an existing argument."
+  },
+  {
+    "finding_id": "POBWvaKn2AA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was shaped by Roman political power (Titus ordering Temple destruction, Constantine's establishment). Eisenman's specific argument that Rome dictated a 'non-threatening non-militant non-aggressive Messianic movement' is new evidence. However, the chapter's own thesis is stronger: Christianity was a Greek restoration movement, not merely what Rome tolerated."
+  },
+  {
+    "finding_id": "PmE7ZMpWjRw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues all early Christian literature was Greek and Christianity was a Greek intellectual product. The specific claim that the Nicene Creed is 'the greatest document in ancient Greek' with more influence than any other is new evidence for the existing argument about Christianity's Greek intellectual foundation. The chapter mentions the Nicene Creed in the Athanasius section but not this characterization."
+  },
+  {
+    "finding_id": "RQQxRShO3tg_3",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly argues this in the Geographic Correlation section (lines 213-248): early Christians were in 'competitive' institutional opposition to Roman imperial power, ekklesia network as political infrastructure, and the martyrdom section frames early Christians as political resisters executed for maiestas (treason). The specific evidence of 'competitive assimilation' directly challenging Caesar cults is the same argument with the same evidence framework."
+  },
+  {
+    "finding_id": "SqLRzsw4EaU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 names Clement of Alexandria and Origen as Church Fathers who wrote in Greek and discusses their theology. But the specific evidence about Origen studying under Ammonius Saccas at the Platonic Academy of Alexandria and Clement's systematic synthesis of Greek philosophy with Christianity is not in the chapter. The chapter discusses Origen's apokatastasis and Clement's mystery-cult instruction patterns, not their formal philosophical education."
+  },
+  {
+    "finding_id": "VLk6sdjAoAo_3",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers Tertullian coining 'trinitas' and framing Christian doctrine in categories familiar to Roman pagans (Tertullian section, lines 372-377). The inventory states: 'Tertullian coined term trinitas in Latin Carthage — first formal designation of God's threefold identity. Framed Christian doctrine in categories familiar to Roman pagans accustomed to ranked divine hierarchies.' The finding about Tertullian using philosophical language despite claiming to reject Greek philosophy is the same point."
+  },
+  {
+    "finding_id": "VLk6sdjAoAo_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Origen's apokatastasis and political restoration theology but does NOT discuss Origen's identification of logos with the Platonic 'One' or his theology paralleling Neoplatonic ideas of unity/invisibility/incorporeality. The argument about Origen integrating Greek philosophy exists; this specific philosophical content is new evidence."
+  },
+  {
+    "finding_id": "W-11rLwSUHM_4",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers this in the martyrdom section: 'The martyrs died not for abstract doctrine but for refusing to acknowledge Roman imperial authority as ultimate. They were executed for maiestas—treason against the emperor.' The finding that Christians' refusal to participate in imperial cult was framed as political treason and atheism is the same argument with the same evidence."
+  },
+  {
+    "finding_id": "WtTJE4l62iw_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses early Christian catacomb art using imperial symbols (anchors, fish, dolphins, tridents matching Flavian coinage) but does not mention the specific evidence of Jesus depicted with a radiate crown and solar flares identical to Roman emperor iconography in early mosaics beneath the Vatican. New specific visual evidence for the existing argument."
+  },
+  {
+    "finding_id": "Ylix2IoiqbY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers integrated Greek philosophical frameworks but does not cite Justin Martyr's logos spermatikos doctrine specifically. The chapter mentions Justin Martyr only as writing in Greek (introduction). This specific logos doctrine passage is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers operated within Greek theological frameworks but does not cite the specific 'one-upmanship' apologetic strategy where Origen and others deliberately compared Christ to Heracles, Asklepius, and Romulus, claiming superiority. This specific engagement pattern is new evidence."
+  },
+  {
+    "finding_id": "bKbUxfZD-2U_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of WtTJE4l62iw_4. Jesus depicted with solar flares used by Roman emperors in early mosaic beneath the Vatican. Same new iconographic evidence for the existing argument about imperial imagery in early Christianity. Chapter does not cite this specific mosaic."
+  },
+  {
+    "finding_id": "bwWTGEdIf78_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Philo of Alexandria (Eastern Mediterranean Synthesis section) and the Logos concept. However, the specific evidence that major apologists (Justin Martyr, Tertullian, Origen, Athenagoras) directly inherited Philo's logos theology is not stated in the chapter. The chapter presents Philo as part of the synthesis but does not trace the specific transmission chain to these named Church Fathers' logos theology."
+  },
+  {
+    "finding_id": "bwWTGEdIf78_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific argument that the Book of Hebrews constitutes a Christian rebuttal to Philo's angelology—showing explicit theological engagement with Philo's framework regarding the logos's divine status—is not made in Chapter 6. The chapter discusses Philo but not Hebrews as a response to him. Cross-chapter check: Chapter 5 discusses Hebrews' Greek sophistication but not this specific Philo-rebuttal argument. This is a new argument with new evidence."
+  },
+  {
+    "finding_id": "dJVkvaCPuIM_1",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers Clement of Alexandria combining Platonism with scripture in the Clement of Alexandria section (lines 478-485): 'Clement combines Christian eschatology with Greek philosophy... Clement organized Christian instruction into catechumens and teleioi (τέλειοι)—pattern drawn from Hellenistic mystery cults.' The finding about Clement setting the precedent for combining Platonism with the Bible through allegory, including hierarchical structure (high God, logos/son, angels, humans), is the same argument and overlapping evidence."
+  },
+  {
+    "finding_id": "dQDaJJbRgY8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity adopted Hellenistic institutional forms but does not cite the specific evidence about early church leaders deliberately scheduling celebrations to coincide with existing pagan religious observances or Pope Gregory's explicit instruction to adapt pagan temples and festivals. This is new specific evidence for the existing argument."
+  },
+  {
+    "finding_id": "hS4jGA1wZpk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for continuity of Greek political theology in early Christianity (the chapter's core thesis). Crossan's specific argument about Roman Imperial theology as a comprehensive system where the emperor was divine, providing the 'conceptual and institutional matrix' for early Christian theology, is new specific evidence. The chapter discusses imperial cult generally but not Crossan's specific framework."
+  },
+  {
+    "finding_id": "j4IWbh1rXO0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Philo's allegorical method in the Eastern Mediterranean Synthesis section and mentions Clement and Origen. But the specific evidence about Philo's allegorical method following Greek precedent (Theagenes, Heraclius) and being directly inherited by Paul, Clement, and Origen is not in the chapter. This traces a specific transmission chain not present in the text."
+  },
+  {
+    "finding_id": "jAynFuA-yYk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues politics and religion were integrated in the ancient world (implicit throughout). The specific argument that the imperial cult functioned as an integrated political-religious system not separable into purely political or purely religious categories is a methodological point supporting the book's framework. The chapter does not cite this specific evidence about the imperial cult's non-separability."
+  },
+  {
+    "finding_id": "jAynFuA-yYk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for continuity from imperial cult theology to Christian theology. The specific evidence about the Sebasteion temple at Aphrodisias and the transfer of 'son of god' terminology from emperors to Christ is not cited in the chapter text. New archaeological/epigraphic evidence for the existing argument."
+  },
+  {
+    "finding_id": "nfle8Prhn0g_0",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers Eusebius's political theology in the Eusebius section (lines 379-386): 'Eusebius explicitly presents the rise of Constantine and the establishment of Christianity as the fulfillment of God's plan for the Roman Empire. He sees Constantine's reign as a restoration of the empire, aligning it with divine will.' The finding about Eusebius positioning the Roman Empire as 'instrument of divine providence' and the emperor as 'God's representative on earth' and the Byzantine isapostolos title is a more detailed version of what the chapter already states."
+  },
+  {
+    "finding_id": "nvKt8ohKyvw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's entire thesis is that early Christianity should be understood through the Greek political-theological framework. Crossan's specific methodological insight that understanding Paul through 'roman imperial theology' makes things 'snap into place' is new supporting evidence for this existing argument, but the argument itself is the chapter's core thesis."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Roman imperial apotheosis practices (road encounters, eyewitnesses on payroll, great commissions). The argument about institutional continuity between imperial deification practices and Christian resurrection theology exists implicitly in the chapter's framework but this specific evidence about payroll eyewitnesses and post-mortem emperor encounters is new."
+  },
+  {
+    "finding_id": "zkY0KnO7n-c_1",
+    "verdict": "covered",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section explicitly covers how Philo's synthesis provided theological tools for Christian theology, and the chapter discusses John's Gospel Logos theology as reflecting Platonic metaphysics and Philo's theology (lines 141-149). The finding about Hellenistic philosophical theology mediated through Philo providing 'theological tools needed to develop Christian theology' is covered by the existing text."
+  },
+  {
+    "finding_id": "060X74pRzqM_2",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers this in the Eastern Mediterranean Synthesis section: 'Celsus reports that Christians claimed Jesus was one among many divine figures who visited earth, with others arriving in groups of sixty or seventy at a time... preserved in Origen's Contra Celsum.' The finding cites the exact same evidence (Celsus reporting divine figures arriving in groups of 60-70)."
+  },
+  {
+    "finding_id": "060X74pRzqM_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers understood Jesus through Hellenistic categories. Justin Martyr's specific defense to Emperor Antoninus Pius that Christian claims about Jesus are indistinguishable from Greek religious claims about divine sons ('our Jesus is equal to yours') is not cited in the chapter text. The chapter lists Justin Martyr as writing in Greek but does not cite this specific apologetic passage. Cross-chapter check: Chapter 3 inventory mentions 'Early Christian apologists explicitly argued that Jesus's divine sonship used the same categories as Greek divine sonship' (lines 47-50) — so this argument exists in Chapter 3. The evidence may partially overlap."
+  },
+  {
+    "finding_id": "8TDiuJSbu-Q_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity's intellectual foundation was Greek and discusses the Septuagint in the Eastern Mediterranean Synthesis section. But Biglino's specific argument about Christian theology being foundationally built on the Septuagint as an 'interpretive/theological translation' rather than a faithful rendering, and the Church's later 'shot in the foot' by abandoning the Alexandrian Canon for the Masoretic Bible, is not in the chapter. The Septuagint is mentioned but not with this theological-foundational framing."
+  },
+  {
+    "finding_id": "HlLpAw-W1-0_3",
+    "verdict": "wrong_chapter",
+    "justification": "The finding about Church Fathers knowing an alternative Gospel manuscript reading where Jesus is 'begotten' as Son of God at baptism (Psalm 2:7 variant) belongs in Chapter 3, which covers Jesus's titles including 'Son of God' (lines 465-474) and Psalm 2:7 as royal investiture formula (lines 51-53), or Chapter 4, which covers gospel reliability and textual variants. Chapter 6 focuses on political restoration theology, not baptismal Christology."
+  },
+  {
+    "finding_id": "MRJ41u7OwPY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers reworked theology in Greek philosophical categories. The specific evidence that Church Fathers 'reworked the figure of Jesus in light of the Pauline words' elaborating 'a theology that is not there in the gospels' is a new specific formulation supporting the existing argument about Hellenized theological frameworks transforming original teachings."
+  },
+  {
+    "finding_id": "PJHGILubjns_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was shaped by Hellenistic political institutions. The specific evidence about Constantine's use of Christianity for political legitimacy and the Edict of Thessalonica (380) enforcing religious orthodoxy through state authority is not cited in the chapter. The chapter discusses Constantine's Chi-Rho and Eusebius's political theology but not the specific Edict of Thessalonica."
+  },
+  {
+    "finding_id": "ThrbRQ0VyMM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for the political dimension of early Christianity. Biglino's argument about Christian tradition deliberately suppressing Jesus's political dimension to create a purely spiritual figure, creating textual contradictions, is new supporting evidence. The chapter argues the opposite direction (revealing the political dimension) but does not cite this specific tradition-of-suppression evidence."
+  },
+  {
+    "finding_id": "XMGRj9-V_yY_0",
+    "verdict": "covered",
+    "justification": "Chapter 6's Clement of Alexandria section (lines 478-485) explicitly covers this: 'Clement organized Christian instruction into catechumens and teleioi (τέλειοι)—pattern drawn from Hellenistic mystery cults. He states that after the resurrection the Lord transmitted gnosis to James, John, and Peter, who passed it to the apostles and then to the Seventy. Origen, Basil of Caesarea, and Cyril of Jerusalem maintained the same hierarchical transmission of advanced doctrine.' The finding about early Church Fathers structuring Christianity according to mystery cult protocols with hierarchical initiation levels is the same argument and evidence."
+  },
+  {
+    "finding_id": "kN4v7Wn61fU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of 060X74pRzqM_3. Justin Martyr positioning Jesus within Greek theological framework ('our Jesus is the same as yours'). Chapter 6 lists Justin Martyr as Greek-writing Church Father but does not cite this specific apologetic argument. Cross-chapter: Chapter 3 (lines 47-50) covers the argument. New evidence for ch6's existing argument about Greek foundations."
+  },
+  {
+    "finding_id": "s-49-SFyaT0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Expanded version of Justin Martyr's apologetic comparison with specific names (Hermes as 'interpretative Logos,' Asclepius as healer, Heracles, Dionysus). Chapter 6 does not cite these specific divine parallels Justin uses. New evidence for the existing argument about Church Fathers understanding Jesus through Hellenistic categories."
+  },
+  {
+    "finding_id": "yF31a9Z-kLk_0",
+    "verdict": "covered",
+    "justification": "Chapter 6's Clement section covers Origen's initiatory-mysteric doctrines. The inventory states: 'Origen, Basil of Caesarea, and Cyril of Jerusalem maintained same hierarchical transmission of advanced doctrine.' The finding about Origen's Contra Celsum describing transmission of secret doctrines from Christ to apostles is the same evidence already cited in the chapter (Clement section referencing Origen's hierarchical gnosis transmission)."
+  },
+  {
+    "finding_id": "IaESGg8uTow_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius and homoousios depending on Greek philosophical vocabulary (Aristotelian metaphysics). Tabor's identification of Neoplatonism as the framework that introduced Platonic dualism (devaluing earthly/bodily) into Church Fathers' theology is new specific evidence about the mechanism of philosophical influence, extending beyond the Nicene debate to celibacy and desexualization."
+  },
+  {
+    "finding_id": "IaESGg8uTow_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific argument about Mary's complete asexualization (denial of bodily functions, 3rd-5th century development) as an example of Church Fathers reshaping theology under Platonic dualism is not made in Chapter 6 or cross-chapter inventories. Chapter 3 covers 'Holy Mary, Mother of God' (lines 640-690) with Greek royal imagery, but not this specific Platonic-ascetic argument about Mary's asexualization. This is a new argument with new evidence."
+  },
+  {
+    "finding_id": "0CIhmccb02c_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses how Church Fathers shaped Christian theology and institutions. The specific observation that Paul's letters were used 'in the second third fourth and later centuries as a basis for considering how to actually structure the institutionalization of Christianity' is new evidence about the mechanism of institutional development. Chapter 5 covers Paul's letters as executive correspondence but not their later use for institutional structuring."
+  },
+  {
+    "finding_id": "2T-MYc3QWAs_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for continuity between Hellenistic political theology and Christian art/theology. Walsh's specific observation about Hadrian and Augustus mausolea imagery (cosmic power, divine authority) inspiring 'what we find later in Christian art and Christian imagination particularly about Jesus' is new specific evidence not cited in the chapter."
+  },
+  {
+    "finding_id": "BFNU5NeWsMk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius and Greek philosophy's role in theology. The specific evidence about Jerome and 4th-5th century development of perpetual virginity based on Greco-Roman ascetic philosophy is not in the chapter. Similar to IaESGg8uTow_0 but with different Church Father (Jerome vs. unnamed). New evidence for the existing argument about Hellenistic philosophical values shaping patristic theology."
+  },
+  {
+    "finding_id": "CU5J34NWEuw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses catacomb art briefly (anchors, fish, dolphins). Walsh's specific tracing of continuity between Greco-Roman ancestor veneration practices (wax mask cults) and early Christian relic veneration at the catacomb of Priscilla is new specific evidence for institutional and ritual lineage from Hellenistic practice to Christian tradition."
+  },
+  {
+    "finding_id": "D8EV2ZGclfk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 implicitly assumes integration of religious and political authority in the ancient world but does not explicitly argue it with this specific evidence about the Romans understanding gods as the source of state power in a 'two-way street' relationship. This is foundational context for the chapter's thesis. New evidence for the existing framework."
+  },
+  {
+    "finding_id": "D8EV2ZGclfk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not explicitly discuss the lack of conceptual/linguistic distinction between religion and politics in Greek or Latin. This is a methodological point supporting the chapter's thesis. The chapter operates within this framework but does not articulate this specific evidence about the absence of distinct words differentiating religion and politics."
+  },
+  {
+    "finding_id": "D8EV2ZGclfk_2",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers Constantine's conversion and its political implications in the Chi-Rho section (lines 292-305) and the 'revolt is not militaristic' section (lines 402-407). The finding about Christians advocating separation of church/state before Constantine, then abandoning it after, is a variant of the chapter's argument about political restoration being achieved through Constantine. The chapter states: 'Rome chose to spiritually convert to Christianity, and the Eastern Roman Empire was restored peacefully while the Christian writers started to praise Rome.'"
+  },
+  {
+    "finding_id": "HmOeYWnXnkM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses early Christian catacomb art using imperial symbols but does not cite the specific evidence of Jesus depicted with short hair and clean-shaven features resembling a Roman Emperor. New iconographic evidence for the existing argument about imperial imagery in early Christian art."
+  },
+  {
+    "finding_id": "L_eZf33UMs8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses the Eastern Mediterranean Synthesis including Platonic philosophy and its influence. Ehrman's specific argument about Gentile converts importing Platonic concepts (immortal souls, heaven/hell) into Christianity, creating an 'amalgam between teachings of Jesus and teachings of Plato,' is new specific evidence about the mechanism of Greek thought penetrating Christian theology. The chapter discusses Stoic logos and Platonic One as shared intellectual furniture but not this specific convert-import mechanism."
+  },
+  {
+    "finding_id": "OLfATpg1rBw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of L_eZf33UMs8_0. Ehrman's argument about Gentile converts bringing Platonic dualism (body/soul separation, immortal soul) into Christianity. Same new evidence for the existing argument about Greco-philosophical frameworks reshaping Christian theology."
+  },
+  {
+    "finding_id": "Yte-ad6Y31s_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity developed in competition with Roman imperial power. Ehrman's specific observation about temporal alignment—Christians calling Jesus God at exactly the same time Romans started calling their Emperors God, creating deliberate political competition—is new specific evidence. The chapter discusses ekklesia as political infrastructure but not this specific chronological alignment of deification claims."
+  },
+  {
+    "finding_id": "dRpbhyRaA-s_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity mirrored Hellenistic political institutions. Walsh's comparison of papal authority ('first among equals') to Augustus's self-presentation as Roman emperor is new specific evidence. The chapter discusses Constantine and the Chi-Rho but not the specific papal/Augustan parallel."
+  },
+  {
+    "finding_id": "dRpbhyRaA-s_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for early Christian institutional development but does not cite Irenaeus specifically establishing Peter as designated leader among apostles in the 2nd century. The chapter mentions Irenaeus in the millennialist eschatology section but not regarding hierarchical authority. New evidence."
+  },
+  {
+    "finding_id": "fcm-X7g-8p4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same argument as D8EV2ZGclfk_0/D8EV2ZGclfk_1 from Ehrman: politics and religion integrated in ancient thought, no separation of church and state until modern period. The chapter implicitly operates within this framework but does not explicitly cite this evidence. Near-duplicate finding."
+  },
+  {
+    "finding_id": "jgiK_Jl9swQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Greek philosophical influence on early Christianity but does not cite the specific parallel between Greek philosophical anxieties about true teachings of Pythagoras/Plato and Irenaeus's anxieties about true teachings of Jesus. This is new evidence about the mechanism of Greek philosophical frameworks operating in early Christian theological development."
+  },
+  {
+    "finding_id": "m08ZESg0S78_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of L_eZf33UMs8_0 and OLfATpg1rBw_0. Ehrman's argument about Greek-speaking converts importing Platonic soul-immortality into Christianity, replacing resurrection emphasis. Same new evidence for existing argument."
+  },
+  {
+    "finding_id": "y17p-TeRStQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of L_eZf33UMs8_0. Ehrman's 'Christian amalgam' combining Plato's immortality of the soul with Jesus's eschatology. The chapter discusses Stoic logos and Platonic One as shared intellectual furniture but not this specific amalgam mechanism. New evidence."
+  },
+  {
+    "finding_id": "4GMDw6KjdO8_0",
+    "verdict": "covered",
+    "justification": "Chapter 6's Eusebius section (lines 379-386) explicitly covers this: 'Eusebius in HE 2.17 identifies Philo's Therapeutae as early Christians and equates their communal ascetic life with Christian monasticism. Philo uses term monasterion (μοναστήριον) for individual dwellings — direct linguistic source of monastery.' The finding about Therapeutae and the term 'monasterion' appearing in Philo's essay and being adopted by early Christian patristic writers is the same evidence."
+  },
+  {
+    "finding_id": "-Im3LOngUCM_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity mirrored Hellenistic political institutions and discusses Constantine. The specific evidence that Constantine was the last Roman emperor to hold Pontifex Maximus (transferred to papacy) and that church vestments were based on Roman civic officialdom dress uniforms is not in the chapter. New institutional-continuity evidence."
+  },
+  {
+    "finding_id": "-qcWZrl18qI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Philo's influence and Church Fathers. The specific argument that Church Fathers strategically preserved and elevated Philo's works to use him as a 'Church Father' posthumously to legitimize Greek philosophical concepts is new evidence. The chapter mentions Philo and notes Eusebius identified Therapeutae as Christians but does not discuss the strategic preservation of Philo's works."
+  },
+  {
+    "finding_id": "-qcWZrl18qI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Related to -qcWZrl18qI_2. The specific evidence that Philo's works survived only through Christian preservation starting in the 2nd century (no longer preserved in Jewish texts) suggests deliberate curation. Chapter 6 does not cite this preservation pattern. New evidence for the existing argument about Greek-Christian intellectual continuity."
+  },
+  {
+    "finding_id": "-qcWZrl18qI_4",
+    "verdict": "covered",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section covers Hellenized Judaism of Alexandria as the intellectual soil for Christianity. The chapter discusses Philo's synthesis, Septuagint translation, Jews adopting Greek rhetoric and civic structures. The finding about Hellenized Alexandrian Judaism as a 'different type of Judaism' being 'the soil for christianity to grow out of' is the same argument already made in the chapter."
+  },
+  {
+    "finding_id": "1IATdGxMjcw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses the Herod-era political context briefly. The specific evidence about Herod and Augustus establishing daily Temple offerings FOR (not TO) the emperor as 'a highly visual symbol of both Roman hegemony and judaic worship' is new evidence about the political-religious synthesis that preceded Christianity."
+  },
+  {
+    "finding_id": "1nFge-jKLWU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was a Greek intellectual product. The finding about a rabbi identifying Hebrews as written in exquisite Greek by a Hellenized author influenced by Plato and the empire is new supporting evidence. Cross-chapter: Chapter 5 discusses Hebrews' Greek cosmology but not this specific rabbi's characterization."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not cite Justin Martyr's Apology acknowledging Mithraic bread-and-cup sacraments paralleling Christian Eucharist (attributed to 'demonic foreknowledge'). The chapter argues for Hellenistic institutional continuity but does not cite this specific Eucharistic parallel. New evidence."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_6",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Jerome's letter (395 CE) documenting that the Church of the Nativity in Bethlehem was deliberately built on the site of a Tamuz/Adonis grove shrine is not cited in Chapter 6 or any cross-chapter inventory. This is a specific argument about architectural appropriation of sacred space that goes beyond the chapter's general argument about institutional continuity. New argument and new evidence."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Eusebius's political theology (Eusebius section). The specific evidence about Eusebius's Preparatio Evangelica arguing that pagan sources (Phoenician mythology, Zoroastrian texts, Egyptian texts, Plato) were as prophetically valid as OT writings is not in the chapter. The chapter covers Eusebius's Vita Constantini and Historia Ecclesiastica but not Preparatio Evangelica. New evidence for the existing argument."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_8",
+    "verdict": "covered",
+    "justification": "Chapter 6's Eusebius section (lines 379-386) and the Eastern Mediterranean Synthesis section already cover the Therapeutae. The chapter explicitly discusses Philo's Therapeutae identified by Eusebius as early Christians and the term monasterion. The finding about Therapeutae as healers/contemplatives organized around Hellenistic philosophical traditions and possibly proto-Christian gnostic communities adds speculative elements but the core data (Therapeutae, Philo, Hellenistic organization) is already covered."
+  },
+  {
+    "finding_id": "4YtI5W0f-_4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Philo's influence and the Eastern Mediterranean Synthesis. The specific evidence that Clement of Alexandria quotes Philo 'hundreds of times' and that Philo's library was preserved by Christians in Alexandria is not in the chapter. This quantitative evidence of direct influence is new."
+  },
+  {
+    "finding_id": "7cB4iUIDqH8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Eusebius and Origen but does not cite the specific evidence of Eusebius quoting Plato's 'noble lie' doctrine or Origen admitting that after death people will have 'infinite time' to be reinstructed on what's actually true. This is new evidence about Church Fathers adopting Greek political philosophy's approach to manipulating doctrine."
+  },
+  {
+    "finding_id": "8lY4OIjocgg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Crossan's role as Luke modeling Peter/Paul on Romulus/Remus. The specific evidence of Luke deliberately structuring Peter and Paul as 'hero twins' of Christianity mirroring Romulus and Remus is not in the chapter. Cross-chapter: Chapter 5 covers Luke as Aegean gospel but not this specific twin-heroes parallel. New evidence."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Gregory of Nazianzus being originally a Sabazius initiate before converting to Christianity, and then becoming the key Trinitarian theologian, is not discussed in Chapter 6 or any cross-chapter inventory. This is a new argument (specific Church Father's pre-Christian mystery cult background directly influencing Trinitarian doctrine) with new evidence."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers operated within Greek religious frameworks. Clement of Alexandria explicitly equating the mysteries of Sabazius/Dionysus with Christian theology of God and the Son is new specific evidence not cited in the chapter."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss the Eleusinian Mysteries being converted to churches. The specific evidence about mystery sites being converted to Christian churches and Orphic figures absorbed into Christian iconography (legend of Demetrius visited by Demeter in a dream told to convert mysteries to a church) is new evidence for the existing argument about institutional continuity."
+  },
+  {
+    "finding_id": "8uG6zzH4CI8_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same finding as 8uG6zzH4CI8_5 about Eleusinian Mysteries converted to churches. New evidence for institutional continuity."
+  },
+  {
+    "finding_id": "9dJTS3s20Zw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity emerged within a Greco-Christian continuum. The specific evidence about Alexander worship (festivals with Alexander/Dionysus/Serapis statues), Serapis cults, and trinitarian patterns across different regions being identified as 'proto-Christianity' is new evidence. The chapter discusses the Eastern Mediterranean Synthesis but not these specific worship patterns."
+  },
+  {
+    "finding_id": "9dJTS3s20Zw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Roman imperial theology but does not cite Vespasian as a messianic figure receiving identification from the Jewish high priest, divine oracles at the Serapeum, and performing healings (blind, sick)—a political-theological model later attached to Jesus. This is new specific evidence for the existing argument about Greco-Roman political theology."
+  },
+  {
+    "finding_id": "BVU5_rau6wI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section discusses Greek philosophical influence on Judaism. The specific evidence about Platonic dialogue structure appearing in rabbinic texts (Mishnah/Gemara) is new evidence supporting the argument about Greek philosophical forms being adopted into Jewish institutional discourse."
+  },
+  {
+    "finding_id": "BqILLv1Dvl0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Gospel literary parallels briefly. The specific evidence about Mark paralleling Homer's Iliad/Odyssey, Luke paralleling Virgil, and John paralleling Euripides' Bacchae (per Dennis McDonald) is not in Chapter 6. Cross-chapter: Chapter 5 covers the four gospels as regional products, and Chapter 4 may discuss literary mimesis. New evidence for ch6's general argument about Hellenistic mediation of Christian theology."
+  },
+  {
+    "finding_id": "CN3A4zUIBFs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis mentions Alexandria as intellectual center. The specific evidence that early Alexandrian Christians (especially those later deemed 'heretical') were all Platonists is new evidence supporting the argument about Christianity's Greek philosophical foundation."
+  },
+  {
+    "finding_id": "CN3A4zUIBFs_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Carpocratians worshiping Jesus alongside statues of Plato and Pythagoras in Alexandria—the first Christians to have statues of Jesus—is not discussed in Chapter 6 or any cross-chapter inventory. This is a new argument (specific early Christian sect's devotional practice integrating Greek philosophers with Jesus worship) with new evidence."
+  },
+  {
+    "finding_id": "CihtoNjttrU_2",
+    "verdict": "covered",
+    "justification": "Chapter 6's Clement of Alexandria section (lines 478-485) covers this: 'Clement organized Christian instruction into catechumens and teleioi (τέλειοι)—pattern drawn from Hellenistic mystery cults.' The Q&A Global decision also addresses mystery cult parallels, noting the institutional parallels are real data but reframing through imperial cult under foreign rule. The finding about Christian churches adopting mystery religion initiation and secrecy protocols is the same argument."
+  },
+  {
+    "finding_id": "FZ6uoYJw7KU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius and the homoousios debate depending on Greek philosophy. Dr. Sledge's specific statement that 'Athanasius is the crown jewel of Greek philosophy because there's no way to get the Trinity off the ground without all of it' and 'the Trinity is the crown jewel of Greek philosophy' is new evidence supporting the existing argument."
+  },
+  {
+    "finding_id": "G29jCvsNO6w_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss repurposing of pagan goddess imagery for the Madonna. The specific evidence about Isis statues being repurposed for Mary, with Christians later covering the breast, is new evidence for the existing argument about continuity of Greco-Roman religious imagery in Christianity."
+  },
+  {
+    "finding_id": "GDinKDicuLQ_3",
+    "verdict": "covered",
+    "justification": "Chapter 6's Clement section covers the two-tier initiation structure (catechumens and teleioi). The Q&A Global decision addresses mystery cult parallels explicitly. The finding about two-tier teaching (exoteric for outsiders, esoteric for initiates) shaping how Gospels depict Jesus's method is covered by the chapter's discussion and Q&A decision. However, the specific application to Gospel narrative structure (parables for outsiders, true meaning for inner circle of 12) is additional. Verdict: covered because the Q&A addresses it and the chapter covers the institutional pattern."
+  },
+  {
+    "finding_id": "GoqosHDB2FY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section discusses shared philosophical assumptions. The specific argument that middle Platonism is the foundational layer underlying ALL early Christian diversity ('christianity is a form of judaism highly influenced by middle platonism') is a new framing. The chapter discusses Stoic logos and Platonic One but not this specific universalizing claim about middle Platonism as the unifying substrate."
+  },
+  {
+    "finding_id": "HTyAZ_BG2NU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 covers ekklesia as civic assembly. The specific evidence about First Timothy institutionalizing the church as a hierarchical Roman household structure ('god on top and then jesus and then the bishops') is new evidence for the existing argument about Christianity adopting Greco-Roman governance models. Not in Chapter 6 text."
+  },
+  {
+    "finding_id": "IFQKSFU6Bi4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity adopted Hellenistic institutional structures. The specific evidence about institutionalized Christianity adopting Egyptian/Mediterranean mystery cult rituals as 'weapons of political power' and claiming sacred places ('you don't want to have a complete break because people want to go to the place they believe is already magical') is new evidence for the existing argument. Q&A Global reframes mystery cult evidence through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "IFQKSFU6Bi4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Related to IFQKSFU6Bi4_2. The specific evidence about Christianity's priesthood hierarchy and exclusive initiation mirroring Mediterranean mystery cult model (Isis cults, Eleusinian mysteries) is new evidence. Q&A Global addresses the reframing."
+  },
+  {
+    "finding_id": "IMcx_2LDh44_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific argument that 2nd-century Nazoraean Christians directly repurposed ancient hymns to Adonis for Jesus is not made in Chapter 6 or any cross-chapter inventory. This is a new argument (specific documented liturgical appropriation) with new evidence. The chapter discusses Hellenistic continuity generally but not this specific hymn appropriation."
+  },
+  {
+    "finding_id": "Ixe0l246JqE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Church Fathers were aware of Hellenistic religious frameworks. Clement of Alexandria explicitly acknowledging similarities between pagan mystery religions and Christianity (attributing them to demons) is new specific evidence. The chapter discusses Clement's mystery-cult organizational patterns but not his explicit acknowledgment of theological parallels."
+  },
+  {
+    "finding_id": "LCNqaEJ4vZk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Ignatius of Antioch as writing in Greek. The specific evidence of Ignatius using terminology from Dionysian associations (christopheroy/temple bearers with -phoros suffix) to describe Christian groups is new evidence for the existing argument about early church terminology borrowing from Hellenistic organizational structures."
+  },
+  {
+    "finding_id": "Lb1tMKRTRjk_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine and Christianity. The specific evidence about Constantine's dual role as pontifex maximus of Sol Invictus and head of the Christian Church, and his summoning the Council of Nicaea, is new evidence not cited in the chapter. Near-duplicate of -Im3LOngUCM_4."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of s-49-SFyaT0_0. Justin Martyr explicitly appropriating Greco-Roman theological categories ('sons of Zeus,' virginal birth, resurrection) without denial. The chapter does not cite this specific apologetic passage. New evidence for existing argument."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Clement of Alexandria's integration of Greek philosophy. The specific evidence about Clement recognizing dual revelation—OT and Greek philosophy as two paths of truth—is not cited in the chapter. The chapter covers Clement's Exhortation to the Greeks and mystery-cult patterns but not this dual-revelation doctrine. New evidence."
+  },
+  {
+    "finding_id": "MaQWOCOxWwg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for Hellenistic theological continuity. The specific evidence about early Christian thinkers integrating Attis mystery religion theology into their Christology is new evidence not cited in the chapter."
+  },
+  {
+    "finding_id": "McH9lrsuINo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of -Im3LOngUCM_4 and Lb1tMKRTRjk_3. Pontifex maximus title transferred from Roman pagan institutions to Christian Church hierarchy. New evidence for existing argument about institutional continuity."
+  },
+  {
+    "finding_id": "NxgctKd27Bg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not cite Clement of Alexandria explicitly identifying Jesus as the 'new Orpheus singing the song of salvation' and quoting Orphic fragments as scriptural authority. This is new specific evidence for the existing argument about Church Fathers interpreting through Greco-mystery religion frameworks."
+  },
+  {
+    "finding_id": "NxgctKd27Bg_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Tacitus recording that the Temple in Jerusalem contained Dionysian imagery (ivy wreaths, golden vine) and that Jewish priests 'chant to the music of flutes and cymbals,' leading some to believe Jews worshipped Bacchus, is not in Chapter 6 or cross-chapter inventories. This is a new argument (Dionysian elements in Jewish temple practice) with new evidence from a named primary source."
+  },
+  {
+    "finding_id": "PYpfLJD1uIg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for Hellenistic institutional continuity in Christianity. The specific evidence about Mithraic mysteries featuring communal meals, revealed doctrine, hierarchical initiation, and divine mediation paralleling Christian structures is new evidence. Q&A Global addresses mystery cult reframing through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "PYpfLJD1uIg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Sunday worship as 'day of the sun,' solar orientation of churches, or Christ depicted as the sun driving a solar chariot (Sol Invictus imagery). These are new specific practices/evidence for the existing argument about Christianity integrating into Greco-Roman religious frameworks."
+  },
+  {
+    "finding_id": "Q1iF3MrY5yI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity adopted existing Hellenistic patterns. The argument that the NT retells sacred stories of the ancient world 'to a new audience under a new empire' is a general restatement of the chapter's thesis. New evidence from this specific source but covering the existing argument."
+  },
+  {
+    "finding_id": "QL8mAVnVXsk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Eusebius but in the context of Constantine and Therapeutae. The specific evidence about Eusebius interpreting pagan dying-rising gods (Saturn/Israel's only begotten son) as Christian prophecies is not in the chapter. The chapter covers Eusebius's Vita Constantini and HE but not this specific Preparatio Evangelica argument. Related to 2sZnADzQ2yo_7."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Epiphanius, a 17-year-old Christian philosopher, being officially deified by his parents with a museum and monthly sacrifices is not discussed in Chapter 6 or any cross-chapter inventory. This is a new argument (early Christians adopting Greco-Roman apotheosis practices for their own members) with new evidence."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_5",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Naassene preacher systematically identifying Jesus with Attis, Osiris, and other Greek deities, arguing that epithets in Greek literature 'unconsciously' referred to Christ, is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (specific early Christian group's systematic theological identification of Jesus with pagan deities) with new evidence."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Pseudo-Dionysius. The specific evidence about Pseudo-Dionysius explicitly appropriating the entire Platonic tradition for Christianity is new evidence for the existing argument about Church Fathers integrating Greek philosophical frameworks."
+  },
+  {
+    "finding_id": "RCR9mJzDRS0_6",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific argument about theurgy (ritualized theology) as a Platonic response to Christian sacramental theology, with both systems requiring correct ritual performance, is not made in Chapter 6 or cross-chapter inventories. This is a new argument about parallel institutionalization of religious authority through ritual practice."
+  },
+  {
+    "finding_id": "RLNQqQTxHvg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of 8uG6zzH4CI8_4. Clement of Alexandria comparing Jesus/Sabazios theology. The chapter does not cite this specific comparison. New evidence for existing argument."
+  },
+  {
+    "finding_id": "ScA56Q_9-Ug_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Pseudo-Dionysius as a potential 'crypto-pagan project' designed to encode Neoplatonic theology into Christianity. This is a more specific and controversial version of the argument in RCR9mJzDRS0_5. New evidence for the existing argument about Greek philosophical theology being embedded in Christian doctrine."
+  },
+  {
+    "finding_id": "ScA56Q_9-Ug_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Eastern Orthodox Hesychast theology or its Neoplatonic mystical doctrines (theosis, uncreated light, anosis). The specific evidence about these practices being 'very neoplatonic sounding' and being defended against heresy charges by Gregory Palamas is new evidence for the existing argument about continuity of Greek philosophical theology in Christian institutions."
+  },
+  {
+    "finding_id": "TOtKGiV7RYI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Platonic philosophy influencing Christianity. The specific evidence that heaven, hell, purgatory, trinity, and logos doctrine all derive from Plato's Timaeus is new evidence (especially the Timaeus as specific source) for the existing argument about Christianity as 'another layer' of Platonic innovation."
+  },
+  {
+    "finding_id": "TW1OvbGoQJw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of M4hDuKt5Pm4_5 and s-49-SFyaT0_0. Justin Martyr acknowledging Christian narrative parallels pagan deities ('nothing different from what you believe regarding sons of jupiter'), attributing to Satan's foresight. New specific quote for existing argument."
+  },
+  {
+    "finding_id": "TXreQXUSU9g_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Irenaeus's millennialist eschatology but not his role in controlling which texts communities could read. The specific evidence about Irenaeus and Hippolytus trying to prevent parishioners from reading apocryphal texts is new evidence about early church institutional authority, supporting the existing argument about hierarchical institutional structures."
+  },
+  {
+    "finding_id": "UGIdC6o0W_Y_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of s-49-SFyaT0_0 and M4hDuKt5Pm4_5. Justin Martyr's Apology positioning Dionysus and Jesus as parallel 'Son of God' deities with death-resurrection narratives. New evidence for existing argument."
+  },
+  {
+    "finding_id": "UGIdC6o0W_Y_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Hippolytus's Refutation of All Heresies documenting Alexandrian Christians identifying Jesus with Osiris, Orpheus, and Adonis through repurposed mystery religion hymns is not in Chapter 6 or cross-chapter inventories. This is a new argument (specific Church Father documenting active theological synthesis between mystery cults and Christianity in early communities) with new primary source evidence."
+  },
+  {
+    "finding_id": "UGIdC6o0W_Y_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine and Christianity. The specific evidence about Constantine minting coins with Sol Invictus on one side and Jesus on the other, maintaining dual worship, is new evidence not cited in the chapter for the existing argument about institutional continuity of Hellenistic solar monotheism."
+  },
+  {
+    "finding_id": "ViEkaBpmbv4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Clement of Alexandria but not his opposition to mystery cult syncretism penetrating Christian practice. The specific evidence about Clement's critique demonstrating that Greek religious elements were indeed infiltrating Christian practice is new evidence for the existing argument about Greco-Christian continuity."
+  },
+  {
+    "finding_id": "W70wK8uifgI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of G29jCvsNO6w_4. Isis nursing Horus becoming Mary nursing Jesus as well-documented iconographic continuity. Chapter 6 does not cite this specific evidence. New evidence for existing argument."
+  },
+  {
+    "finding_id": "Y17Gotuqzj4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis mentions Osiris-Dionysus identification (Herodotus 2.42, Plutarch). But the specific evidence from Tacitus and Plutarch about Jewish worship practices paralleling Greek mystery religions (Plutarch finding golden ivy diadem of Bacchus in Holy of Holies) is not in the chapter. New specific evidence from named primary sources."
+  },
+  {
+    "finding_id": "_XPbTqpdqAw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of QL8mAVnVXsk_0. Eusebius connecting Christian theology to Egyptian/Phoenician dying-rising god myths (Saturn/Israel, only begotten son). New evidence for existing argument."
+  },
+  {
+    "finding_id": "_XPbTqpdqAw_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Plato's design of replacement mythology for governing purposes (noble lie, selective truth-telling by rulers). The specific evidence about Plato as philosophical precedent for Christianity's later adoption as state religion is new evidence for the existing argument. Related to 7cB4iUIDqH8_4."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss the specific structural continuity of the Catholic mass with Hellenistic mystery theology (priest as feminine figure entering mystical union with deity). This is new evidence for the existing argument about Christianity preserving the form of Greek mysteries."
+  },
+  {
+    "finding_id": "a6ulsk50-rY_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was a conscious Greco-Christian synthesis. The specific argument that gospels deliberately synthesized Pauline theology, OT prophecy, and Hellenistic ruler mythology (Alexander, Augustus, Caesar) into an 'ultimate religion' is a restatement of the chapter's thesis with new evidence from this source."
+  },
+  {
+    "finding_id": "aKzURrl_6GY_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of s-49-SFyaT0_0, UGIdC6o0W_Y_2. Justin Martyr and Clement comparing Jesus to Dionysus. Chapter does not cite these specific apologetic passages. New evidence."
+  },
+  {
+    "finding_id": "aKzURrl_6GY_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Saint Demetrius inheriting his priestly/charismatic role from Dionysian mystery cult leaders after the demise of the Eleusinian Mysteries is not in Chapter 6 or cross-chapter inventories. This is a new argument (specific documented transmission of religious office from pagan to Christian institution) with new evidence."
+  },
+  {
+    "finding_id": "avcA-TUJjUg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine's political use of Christianity. The specific evidence about Constantine's promotion of Christianity as unified state religion deliberately synthesizing pagan elements (bread, wine, celebrations) is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "b1H71cSju34_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Byzantine Christian scribes modifying the Alexander Romance by replacing pagan terminology with Christian language. This is new evidence about the mechanism of appropriating Hellenistic royal theological language into Christian discourse."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Hellenistic institutional continuity. The specific evidence about Christian mystery language (mysteria, baptism, Eucharist) deriving from Greek mystery cult terminology and the Christianization of mysteria from 'secret rites' to 'secret doctrines revealed in scripture' is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss the Hilaria festival (March 22-27) with death/mourning/resurrection of Attis/Adonis on March 25. This comparative evidence that resurrection theology functioned as a Greco-Roman political-religious celebration is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "dWQZ1pWcTio_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of LCNqaEJ4vZk_0. Ignatius using Dionysiac association vocabulary (christopheroy, temple bearers) for Christ groups. Chapter mentions Ignatius as Greek writer but does not cite this specific terminology. New evidence."
+  },
+  {
+    "finding_id": "dXrDN_9JuU8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of NxgctKd27Bg_1 and jyMI1tvB5BI_1. Clement of Alexandria stating Jesus is the new Orpheus, depicted as such in catacombs. New evidence for existing argument."
+  },
+  {
+    "finding_id": "dXrDN_9JuU8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Christianity as anti-Roman political theology (Revelation section, martyrdom section). The specific characterization of 'Jesus is the anti-Caesar' who operates from the same Greco-Roman cultural milieu but inverts the political theology is a new framing. The chapter's thesis is similar but frames it as restoration rather than inversion."
+  },
+  {
+    "finding_id": "dhjjbix2KPU_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine's conversion and Christianization. The specific evidence about Constantine converting when Christians were only 5-10% of population, followed by Theodosius banning pagan religions, demonstrating forced institutional adoption, is new evidence. The chapter discusses Constantine's political restoration but not these specific population statistics."
+  },
+  {
+    "finding_id": "eDya-DNHJaA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not cite Ovid's specific portrayal of Augustus including deification, temple worship, cosmic apotheosis, and divine lawgiving. This is new primary source evidence for the existing argument about Hellenistic political-theological institutions."
+  },
+  {
+    "finding_id": "eNX0aCF1HJQ_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Christianity was a Greek intellectual product. The specific evidence about Church Fathers being physically located in regions (Phrygia, Thrace, Northern Macedonia) where Greek mystery religious practices were dominant is new geographic evidence for the existing argument. The chapter mentions these regions in the ekklesia/revolt correlation but not specifically as Church Father locations."
+  },
+  {
+    "finding_id": "h7Ozy2AdJdk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Clement of Alexandria's integration of Greek philosophy. The specific evidence of Clement's Protrepticus connecting Johannine language ('God in the bosom') to Sabazios mystery religion terminology is new evidence not cited in the chapter."
+  },
+  {
+    "finding_id": "hSZzMg3_Ros_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Tertullian but not his specific tracing of Marcionist heresy to Stoic philosophy (Logos doctrine). This is new evidence about how Church Fathers understood heresies as originating from different Greek philosophical traditions."
+  },
+  {
+    "finding_id": "hSZzMg3_Ros_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not cite Augustine's recognition in City of God that Stoicism is 'the closest thing to the Christians.' The chapter discusses Augustine's City of God in the 'revolt is not militaristic' section but regarding empire and divine providence, not this specific philosophical alignment. New evidence."
+  },
+  {
+    "finding_id": "iZrives5jjQ_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for Greco-Christian synthesis. The specific evidence about people from the Greek world 'coming out of a neoplatonic tradition or some sort of middle platonic tradition... reinterpreting the Old Testament in their own likeness' is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "iZrives5jjQ_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Sophia (wisdom) theology shared between Jewish (Proverbs 8) and Greek contexts (Athena born from Zeus's mind). This is new comparative evidence for the existing argument about theological concepts being shared between traditions."
+  },
+  {
+    "finding_id": "isJJiiGqSS4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Eusebius and Justin Martyr. The specific evidence about these Church Fathers deliberately incorporating Greek philosophical and pagan religious frameworks to convert pagan audiences is new evidence about the mechanism of incorporation."
+  },
+  {
+    "finding_id": "jOt8fUFRHOw_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific argument about Valentinus almost becoming Pope and advocating for a modified Trinity including Zoe (divine feminine principle alongside Father and Son) is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (alternative Greco-Christian theological systems that competed with orthodox doctrine) with new evidence."
+  },
+  {
+    "finding_id": "jkpNozPJagE_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of -Im3LOngUCM_4 and McH9lrsuINo_0. Nicene Council as transfer of imperial cult administrative structure to Christianity. New evidence for existing argument about institutional continuity."
+  },
+  {
+    "finding_id": "jmmNY7wdcFI_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Sibylline prophecy books being used across Roman, Jewish, and Christian contexts with identical function and terminology is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (continuity of specific prophetic institutional practice) with new evidence."
+  },
+  {
+    "finding_id": "jyMI1tvB5BI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of NxgctKd27Bg_1 and dXrDN_9JuU8_2. Clement's reinterpretation of Orpheus as prefiguration of Christ, Orpheus depicted next to Jesus in catacombs. New evidence for existing argument."
+  },
+  {
+    "finding_id": "lBRebPG_NK4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius and Nicene Creed depending on Greek philosophy. The specific Nietzsche-attributed quote 'Christianity is Platonism for the masses' and evidence about Augustine and Aquinas adapting Platonic elements is new evidence for the existing argument. The chapter's argument is the same but this adds specific names and the famous characterization."
+  },
+  {
+    "finding_id": "limDa2wNmKg_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Augustus's worship including 82 temples, divine titles ('Savior of Rome'), and integration of religious priesthood (pontifex maximus, augur functions) with political power. This is new specific evidence about Hellenistic political-theological institutional structures."
+  },
+  {
+    "finding_id": "lkmNO0-0SNM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Constantine. The specific argument about Constantine deliberately synthesizing Mithraic rites (December 25th, virgin birth, communion) with Christian scripture is new evidence not cited in the chapter."
+  },
+  {
+    "finding_id": "lkmNO0-0SNM_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The specific identification of the Phrygian cap preserved in episcopal vestments (tall hats of bishops/cardinals) and red Mithraic robes surviving in Catholic hierarchy dress is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (specific vestment continuity from Mithraic to Christian clergy) with new evidence."
+  },
+  {
+    "finding_id": "lkmNO0-0SNM_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Mithraic seven grades of initiation with the third being 'the Soldier,' and Catholic confirmation rites (face-slapping, ashen cross) deriving from these Mithraic military initiations, is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (specific ritual continuity from Mithraic to Christian practice) with new evidence."
+  },
+  {
+    "finding_id": "mNv5JEoBcqI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Greek philosophical influence on Christianity. The specific evidence about Christian apocalypses adopting Greek mythological forms for the underworld (Hades, Charon, rivers of fire) rather than Jewish depictions is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "mScRlWabdSM_1",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly argues in the introduction (lines 13-19) that Church Fathers were ethnically Greek and wrote in Greek: 'Nearly all early Church Fathers wrote in Greek: Clement of Rome, Ignatius of Antioch, Polycarp, Justin Martyr, Irenaeus, Origen. First non-Greek Church Father is Tertullian.' The finding about Church Fathers being 'ethnically Greeks' shaping theology within Greek linguistic frameworks is the same argument and evidence."
+  },
+  {
+    "finding_id": "mScRlWabdSM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss the Sibylline oracle tradition showing direct institutional continuity from pagan to Christian priesthood—same college of pontiffs reading the same oracles. This is new evidence for the existing argument about institutional continuity. Related to jmmNY7wdcFI_4."
+  },
+  {
+    "finding_id": "mScRlWabdSM_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Simonians repurposing a Sabine-Etruscan statue (Simon Sankas) for worship of Simon Magus in Rome (late 1st/early 2nd century) is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (specific documented repurposing of pagan statuary by nascent Christian groups) with new evidence."
+  },
+  {
+    "finding_id": "mvoXRUeTZTI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Byzantine homerochentones (poems retelling Gospel stories using rearranged Homeric lines). This is new evidence for the existing argument about Greek-Christian intellectual continuity. Cross-chapter: Chapter 4/5 may discuss Homeric mimesis but not these specific Byzantine poems."
+  },
+  {
+    "finding_id": "nCHrDf7JDgU_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues for institutional continuity. The specific claim that 'Catholic mass is another version of the Eleusinian mysteries' with priesthood hierarchy derived from mystery religion is new evidence (though Q&A Global reframes mystery cult evidence through imperial cult under foreign rule)."
+  },
+  {
+    "finding_id": "ncQUJEbpZ9k_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Hellenistic political theology. The specific evidence about Julius Caesar and Augustus claiming descent from Venus through Aeneas is new evidence about Roman deification patterns. Not directly cited in the chapter."
+  },
+  {
+    "finding_id": "nyhW4Tlo8N8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Epiphanius (4th century) explicitly connecting Christ's January 6th Epiphany to overlapping Greek Dionysian festival traditions. This is new evidence about Church Fathers' direct engagement with Greek religious theology."
+  },
+  {
+    "finding_id": "o3HAmL3fWg8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Marcus the Valentinian or his use of neo-Pythagorean mathematics as framework for theological systems. This is new evidence about a specific Church Father integrating Greek philosophical methods into Christian theology."
+  },
+  {
+    "finding_id": "o3HAmL3fWg8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Marcus's independent Valentinian church communities in western Turkey and southern France with distinct liturgies. This is new evidence about early Christian institutional diversity and autonomy."
+  },
+  {
+    "finding_id": "o8co7YYxnf8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of BqILLv1Dvl0_2. Dennis McDonald's work showing narrative parallels between Homer's Odyssey and Gospel of Mark (Odysseus/demoniac parallels). Cross-chapter: may be covered in Chapter 4 or 5. New evidence for ch6's general argument about Hellenistic cultural frameworks."
+  },
+  {
+    "finding_id": "oRXJEa1OzCI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss early Christians interpreting the Eve narrative through Greek Pandora mythology. This is new evidence about early Christian use of Greco-Christian interpretive framework. The argument about Greek categories shaping Christian discourse exists in the chapter."
+  },
+  {
+    "finding_id": "olL8gxuKu7c_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Revelation as political restoration theology. The specific evidence about Greek mythological concepts (Apollo, Diana, Pan, Bacchus, Hades, Zeus) being systematically incorporated into Revelation's theology (Great Serpent as 'paganism incarnate') is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "olL8gxuKu7c_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Revelation and Rome. The specific evidence about the Pergamum altar (honoring Zeus Ammon, Isis, Serapis) being identified in Revelation 2 as Satan's throne is new evidence for the existing argument about direct institutional engagement between Greek religious structures and early Christian theology."
+  },
+  {
+    "finding_id": "qL0qP5HoBl8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Artemis as the 'OG version of Mary' with priestesses like nuns. This is new evidence about cultural-theological continuity from pagan Hellenistic religion to Christian theology."
+  },
+  {
+    "finding_id": "rB2r7pWm4yY_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The Hadrian letter documenting early Egyptian Christians explicitly worshiping Serapis, with bishops of Christ participating in Serapis cult, is not discussed in Chapter 6 or cross-chapter inventories. This is a new argument (direct historical evidence of Christian-Serapis dual worship at institutional level) with new primary source evidence."
+  },
+  {
+    "finding_id": "rB2r7pWm4yY_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Near-duplicate of UGIdC6o0W_Y_3 (Naassene hymn equating Jesus with Osiris, Adonis). The specific hymn text ('blessed one born of chronos zeus ora... egypt calls you osiris') is new evidence. Similar to the Hippolytus evidence but from a different source angle. New argument about early Christian liturgical identification of Jesus with multiple Hellenistic deities."
+  },
+  {
+    "finding_id": "rX34KmDyipo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues Alexandria was a center of Christian theological development. A rabbi identifying Alexandria as the birthplace of Trinitarian doctrine, with thinkers there 'advancing Pagan ideas that emerge as Orthodoxy,' is new evidence for the existing argument. The chapter discusses Athanasius of Alexandria and the homoousios debate but not this specific external Jewish perspective."
+  },
+  {
+    "finding_id": "sx_Uul1WB9w_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Valentinus interpreting John's Gospel through Pythagorean-Platonic Triad theology (monad-diad-triad) or Hippolytus charging Valentinus with plagiarizing Pythagoras. This is new evidence about early Christian integration of Greek philosophical mathematics into theology."
+  },
+  {
+    "finding_id": "sx_Uul1WB9w_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Celsus (130-150 CE) describing diverse Christian schools (Valentinians, Marcionites, Carpocratians) as integral to the 'great church' (mangos elesia). This is new evidence about early Christianity reflecting Hellenistic institutional pluralism of competing philosophical schools."
+  },
+  {
+    "finding_id": "tlGWmdKlcE0_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Augustus's establishment of 70+ temples to mystery religions creating institutional infrastructure that prepared the Mediterranean for Christianity. This is new evidence about the institutional soil from which Christianity emerged."
+  },
+  {
+    "finding_id": "tlGWmdKlcE0_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Hellenistic institutional patterns but does not cite the specific Isis mystery cult organizational structure (initiation levels, priestly ranks, membership vows, baptism-like rituals with emergence as 'newly born person' in new robes). This is new detailed evidence for the existing argument. Q&A Global addresses mystery cult reframing."
+  },
+  {
+    "finding_id": "uiOuST-QNdc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of jkpNozPJagE_2 and -Im3LOngUCM_4. Bishops from Roman imperial cult 'switched over' to Christianity under Constantine. New evidence for existing argument about institutional continuity."
+  },
+  {
+    "finding_id": "vBFikbS3_Wg_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Julian the Apostate creating a pagan church structure explicitly modeled on Christian institutional organization. This is new evidence showing the institutional interchangeability of pagan and Christian organizational forms, supporting the argument about Greek political theology shaping Christian institutions."
+  },
+  {
+    "finding_id": "vBFikbS3_Wg_5",
+    "verdict": "covered",
+    "justification": "Chapter 6 explicitly covers Constantine's role in establishing Christian doctrine through imperial authority in the Chi-Rho section and Eusebius section. The chapter discusses 'Christianization of the East and division of the empire presented by Eusebius as single unified event.' The finding about Constantine's council system standardizing doctrine and creed is the same argument already covered."
+  },
+  {
+    "finding_id": "vBFikbS3_Wg_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Greek monumental architecture in the Shepherd of Hermas tower vision. The specific evidence about basilicas as pre-Christian Roman public buildings and monasteries as repurposed Roman country villas is new evidence about architectural institutional continuity."
+  },
+  {
+    "finding_id": "vBFikbS3_Wg_7",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Simon Magus worshipped in Rome as the supreme deity 'Simone' (Zeus equivalent) with a repurposed ancient statue is not discussed in Chapter 6 or cross-chapter inventories. Related to mScRlWabdSM_3 (Simonians). This is a new argument about early Christian figures being elevated within Greco-Roman deification frameworks."
+  },
+  {
+    "finding_id": "wKChK3H5i3Q_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of mvoXRUeTZTI_0. Byzantine homerochentones retelling Gospel stories using Homeric lines. New evidence for existing argument about Greek-Christian intellectual continuity."
+  },
+  {
+    "finding_id": "wsXgyn36mO8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis discusses Greek philosophical influence on Judaism. The specific evidence about post-Temple rabbinic Judaism adopting Platonic dialogue methods (dialectic) in the Talmud is new evidence for the existing argument about Greek intellectual methods infiltrating Jewish institutional discourse."
+  },
+  {
+    "finding_id": "xvjM_sz07CA_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Near-duplicate of s-49-SFyaT0_0 and M4hDuKt5Pm4_5. Justin Martyr comparing Jesus to Hercules, Mithras, Dionysus, Mercury; Epiphanius noting winter solstice celebration parallels. New evidence for existing argument."
+  },
+  {
+    "finding_id": "yzItXqLtYTM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Church Fathers positioning Jesus's birth on December 25th (winter solstice, 'Unconquerable Sun' celebration) as deliberate synchronization. This is new evidence about Church Fathers incorporating Hellenistic cosmological frameworks. Related to PYpfLJD1uIg_2."
+  },
+  {
+    "finding_id": "zADpsFCyhY0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses the geographic concentration of Church Fathers in Greek-speaking regions. The specific listing of Bithynia, Phrygia, Thrace, Northern Macedonia, Pergamum as 'main hot spots for Christian theology' where 'church fathers lived and debated' is new evidence. Near-duplicate of eNX0aCF1HJQ_3."
+  },
+  {
+    "finding_id": "5wCJgJX4I1s_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Irenaeus's millennialist eschatology interpreting Daniel's four kingdoms. The specific evidence about Jerome's typological reading (Antiochus → Caligula → Antichrist) showing continuity of Hellenistic political-theological models in Christian eschatology is new evidence. The chapter discusses Irenaeus's Daniel interpretation but not Jerome's Antiochus typology."
+  },
+  {
+    "finding_id": "5wCJgJX4I1s_4",
+    "verdict": "covered",
+    "justification": "Chapter 6's Eastern Mediterranean Synthesis section argues that the Eastern Mediterranean had converged on shared intellectual assumptions by the 1st century, with Judaism and Hellenism not being separate categories. The finding that 'Judaism is Hellenistic' directly restates this existing argument. The chapter states: 'Jews in Alexandria adopted Greek rhetoric, philosophical vocabulary, and civic structures. Synagogues functioned with Greek-style officials and assemblies.'"
+  },
+  {
+    "finding_id": "7pwV5PyK-jo_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss the Hellenistic king's role as mediator between mortal and divine in performing religious ceremonies. This is new evidence about the political-theological nexus of Hellenistic kingship. Cross-chapter: Chapter 3 covers Hellenistic royal theology extensively."
+  },
+  {
+    "finding_id": "NQz-ZBF-M9k_3",
+    "verdict": "covered",
+    "justification": "Chapter 6's phoenix section (lines 57-61) explicitly discusses Tyrian purple as imperial/royal vestment: 'Pliny records that the bird's body is purple except the tail, and Ezekiel the Tragedian describes its breast as porphyrous (πορφυροῦς), purple, the same adjective used for imperial cloaks and royal textiles.' The finding about Tyrian purple as imperial vestment in Hellenistic practice covers the same evidence."
+  },
+  {
+    "finding_id": "PZZ-7rtA19U_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Hellenistic royal cults briefly. The specific evidence about the Attalid Dynasty maintaining a formal royal cult with festivals (Attaleia, Nikaphoria) as expressions of religious-political authority is new evidence. Cross-chapter: Chapter 3 covers Attalid dynasty (lines 599-609) but may not have this specific festival evidence."
+  },
+  {
+    "finding_id": "U5rNe6JY_T8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss Antiochus III's establishment of a royal cult with organized priesthood structures documented in surviving edicts. This is new evidence about Hellenistic rulers creating formal religious institutional hierarchies. Cross-chapter: Chapter 3 covers Seleucid dynasty (lines 588-598) but may not have this specific priesthood edict evidence."
+  },
+  {
+    "finding_id": "h0py3Cgq0Ik_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 does not discuss specific Seleucid administrative mechanisms (Greek-speaking bureaucracy, patronage systems). This is new evidence about Hellenistic institutional structures the chapter argues the church mirrored. Cross-chapter: Chapter 5 covers ekklesia as civic assembly but not these specific Seleucid mechanisms."
+  },
+  {
+    "finding_id": "vyAcBUaXYRk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses the Eastern Mediterranean Synthesis including Alexandrian scholarship. The specific evidence about Hellenistic rulers controlling cultural institutions (libraries, patronage networks) for propaganda and legitimization is new evidence for the argument about institutional precedent. The chapter mentions Alexandria's scholarly role but not this specific propaganda mechanism."
+  },
+  {
+    "finding_id": "1JKlfamAC1A_1",
+    "verdict": "covered",
+    "justification": "Chapter 6's Athanasius section (lines 388-394) explicitly covers the Trinity as dependent on Greek philosophy: 'Ousia derives from Aristotelian metaphysics, no equivalent in Hebrew biblical language. Nicene Creed depends on Greek philosophical vocabulary for its formulation.' The finding that Trinity doctrine is 'a development of the 2 through fifth century CE reliant directly upon Greek philosophy' is the same argument and evidence."
+  },
+  {
+    "finding_id": "3qIG6Hxl4ws_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius and homoousios but does not specifically cite Gregory of Nyssa adopting Stoic philosophical interpretive lenses. This is new evidence about a specific Church Father (not discussed in the chapter) operating within Greek philosophical frameworks."
+  },
+  {
+    "finding_id": "6eowRLkaD2c_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Greek philosophical influence on Christian theology. The specific detailed evidence about competing Greek philosophical positions on ensoulment (Epicurean, Pythagorean, Aristotelian, Stoic) being adopted by both Greco-Roman Jews and early Christians, with Augustine establishing the Aristotelian view, is new evidence about the mechanism of philosophical influence."
+  },
+  {
+    "finding_id": "ExHMHaRMEhQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 discusses Athanasius but not his use of Revelation to structure ecclesiastical power and doctrinal boundaries. The specific evidence about Athanasius identifying the beast's followers with unfaithful Christians and his 4th-century canon solidifying Revelation's place precisely because it allowed leaders to 'structure power and values and boundaries' is new evidence for the existing argument about Church Fathers as institutional power brokers."
+  }
+]

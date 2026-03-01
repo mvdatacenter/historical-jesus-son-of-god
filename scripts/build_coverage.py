@@ -10,6 +10,7 @@ Step 1 (verdict management):
     python scripts/build_coverage.py --normalize              # Normalize formats
     python scripts/build_coverage.py --redistribute           # Redistribute wrong_chapter
     python scripts/build_coverage.py --redistribute --round 2 # Round 2+
+    python scripts/build_coverage.py --resolve                # Force-assign bouncing findings
 
 Step 2 (embed context assembly):
     python scripts/build_coverage.py --embed-prep --chapter 4 # Step 2 context packages
@@ -28,7 +29,7 @@ SOURCES_DIR = PROJECT_ROOT / "sources"
 YOUTUBE_DIR = SOURCES_DIR / "youtube"
 COVERAGE_DIR = SOURCES_DIR / "coverage"
 
-BATCH_SIZE = 250  # findings per batch — see DD-0002 for calculation
+BATCH_SIZE = 250  # findings per batch
 
 # Import the existing extraction parser
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -333,49 +334,89 @@ def parse_target_chapter(entry: dict, source_ch: int) -> int | None:
 def load_verdict_files(chapter: int, round_num: int) -> list[dict]:
     """Load verdict entries from appropriate files for a given round.
 
-    Round 1: scans ch{N}_verdicts_opus_*.json (main evaluation)
+    Round 1: scans ch{N}_step1_batch_*.json and ch{N}_verdicts_opus_*.json
     Round 2+: scans ch{N}_verdicts_opus_redistrib_r{round-1}.json only
     """
     entries = []
 
     if round_num == 1:
-        # Main evaluation: all opus verdict files (excluding redistrib files)
+        seen = set()
+
+        # Current format: step1 batch verdict files
+        pattern = f"ch{chapter}_step1_batch_*.json"
+        for path in sorted(COVERAGE_DIR.glob(pattern)):
+            data = json.loads(path.read_text())
+            if isinstance(data, list):
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
+
+        # Legacy format: opus verdict files (excluding redistrib files)
         pattern = f"ch{chapter}_verdicts_opus_*.json"
         for path in sorted(COVERAGE_DIR.glob(pattern)):
             if "redistrib" in path.name:
                 continue
             data = json.loads(path.read_text())
             if isinstance(data, list):
-                entries.extend(data)
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
-                    entries.append({"finding_id": fid, **v})
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append({"finding_id": fid, **v})
 
         # Also check consolidated validation_verdicts
         val_path = COVERAGE_DIR / f"ch{chapter}_validation_verdicts.json"
         if val_path.exists():
             data = json.loads(val_path.read_text())
-            seen = {e.get("finding_id") for e in entries}
             if isinstance(data, list):
                 for e in data:
-                    if e.get("finding_id") not in seen:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
                         entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
                     if fid not in seen:
+                        seen.add(fid)
                         entries.append({"finding_id": fid, **v})
     else:
         # Round 2+: only previous round's redistribution verdicts
         prev = round_num - 1
-        pattern = f"ch{chapter}_verdicts_opus_redistrib_r{prev}.json"
-        path = COVERAGE_DIR / pattern
-        if path.exists():
-            data = json.loads(path.read_text())
+        seen = set()
+
+        # Current format: step1 redistrib verdict files
+        step1_path = COVERAGE_DIR / f"ch{chapter}_step1_redistrib_r{prev}.json"
+        if step1_path.exists():
+            data = json.loads(step1_path.read_text())
             if isinstance(data, list):
-                entries.extend(data)
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
+
+        # Legacy format: opus redistrib verdict files
+        legacy_path = COVERAGE_DIR / f"ch{chapter}_verdicts_opus_redistrib_r{prev}.json"
+        if legacy_path.exists():
+            data = json.loads(legacy_path.read_text())
+            if isinstance(data, list):
+                for e in data:
+                    fid = e.get("finding_id", "")
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append(e)
             elif isinstance(data, dict):
                 for fid, v in data.items():
-                    entries.append({"finding_id": fid, **v})
+                    if fid not in seen:
+                        seen.add(fid)
+                        entries.append({"finding_id": fid, **v})
 
     return entries
 
@@ -523,6 +564,152 @@ def cmd_redistribute(args):
         print(f"\n{len(ping_pong)} ping-pong (flagged for manual review):")
         for fid, sch, tgt in ping_pong:
             print(f"  {fid}: ch{sch} → ch{tgt}")
+
+    return 0
+
+
+def cmd_resolve(args):
+    """Generate forced-resolution batch files for unplaceable findings.
+
+    After redistribution rounds, some findings keep bouncing between chapters.
+    This command collects all unresolved findings (ping-pong + still wrong_chapter),
+    groups them by their two candidate chapters, and writes batch files for agents
+    that read BOTH chapters and make a final assignment.
+
+    Usage:
+        python scripts/build_coverage.py --resolve
+    """
+    # Build finding content lookup
+    all_findings = parse_all_extractions()
+    content_by_id = {}
+    for f in all_findings:
+        content_by_id[f.finding_id] = {
+            "text": f.description,
+            "quote": f.quote,
+        }
+
+    # Fallback: alexandria_reextraction.json
+    reextract_path = COVERAGE_DIR / "alexandria_reextraction.json"
+    if reextract_path.exists():
+        reextract = json.loads(reextract_path.read_text())
+        for entry in reextract:
+            fid = entry.get("finding_id", "")
+            if fid and fid not in content_by_id:
+                content_by_id[fid] = {
+                    "text": entry.get("text", ""),
+                    "quote": entry.get("quote", ""),
+                }
+
+    # Collect all redistribution verdict files to find wrong_chapter findings
+    # and trace their routing history
+    r1_input = {}  # finding_id -> {redistrib_to, source_chapter}
+    for path in sorted(COVERAGE_DIR.glob("ch*_findings_redistrib_r1.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            fid = item.get("finding_id", "")
+            r1_input[fid] = {
+                "redistrib_to": ch_num,
+                "source_chapter": item.get("source_chapter", 0),
+            }
+
+    r1_wrong = {}  # finding_id -> {evaluated_in, suggested_target}
+    for path in sorted(COVERAGE_DIR.glob("ch*_step1_redistrib_r1.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            if item.get("verdict") != "wrong_chapter":
+                continue
+            fid = item["finding_id"]
+            just = item.get("justification", "")
+            targets = re.findall(r"[Cc]hapter\s*(\d)", just)
+            targets += re.findall(r"[Cc]h\s*(\d)", just)
+            target_chs = [int(t) for t in targets if int(t) != ch_num and 1 <= int(t) <= 6]
+            r1_wrong[fid] = {
+                "evaluated_in": ch_num,
+                "suggested_target": target_chs[0] if target_chs else None,
+            }
+
+    r2_wrong = {}
+    for path in sorted(COVERAGE_DIR.glob("ch*_step1_redistrib_r2.json")):
+        ch_num = int(path.name.split("_")[0][2])
+        data = json.loads(path.read_text())
+        for item in data:
+            if item.get("verdict") != "wrong_chapter":
+                continue
+            fid = item["finding_id"]
+            just = item.get("justification", "")
+            targets = re.findall(r"[Cc]hapter\s*(\d)", just)
+            targets += re.findall(r"[Cc]h\s*(\d)", just)
+            target_chs = [int(t) for t in targets if int(t) != ch_num and 1 <= int(t) <= 6]
+            r2_wrong[fid] = {
+                "evaluated_in": ch_num,
+                "suggested_target": target_chs[0] if target_chs else None,
+            }
+
+    r2_input_fids = set()
+    for path in sorted(COVERAGE_DIR.glob("ch*_findings_redistrib_r2.json")):
+        data = json.loads(path.read_text())
+        for item in data:
+            r2_input_fids.add(item.get("finding_id", ""))
+
+    # Build unresolved set: r2 wrong_chapter + ping-pong (r1 wrong_chapter not in r2)
+    all_unresolved = {}
+
+    for fid, info in r2_wrong.items():
+        all_unresolved[fid] = (info["evaluated_in"], info["suggested_target"])
+
+    for fid, info in r1_wrong.items():
+        if fid not in r2_input_fids and fid not in r2_wrong:
+            orig = r1_input.get(fid, {})
+            all_unresolved[fid] = (
+                info["evaluated_in"],
+                info["suggested_target"] or orig.get("source_chapter"),
+            )
+
+    if not all_unresolved:
+        print("No unresolved findings. All redistributions converged.")
+        return 0
+
+    # Group by chapter pair
+    by_pair = defaultdict(list)
+    no_pair = []
+    for fid, (a, b) in all_unresolved.items():
+        if a and b and a != b:
+            pair = tuple(sorted([a, b]))
+            c = content_by_id.get(fid, {"text": "", "quote": ""})
+            by_pair[pair].append({
+                "finding_id": fid,
+                "text": c["text"],
+                "quote": c["quote"],
+                "candidate_chapters": list(pair),
+            })
+        else:
+            no_pair.append(fid)
+
+    # Write per-pair batch files
+    files_written = []
+    total = 0
+    for pair in sorted(by_pair.keys()):
+        findings = by_pair[pair]
+        out_path = COVERAGE_DIR / f"pingpong_ch{pair[0]}_ch{pair[1]}.json"
+        out_path.write_text(json.dumps(findings, indent=2, ensure_ascii=False))
+        files_written.append((pair, len(findings), out_path))
+        total += len(findings)
+
+    print(f"Forced Resolution: {total} unresolved findings across {len(files_written)} chapter pairs")
+    print("=" * 55)
+    for pair, count, path in files_written:
+        print(f"  ch{pair[0]} vs ch{pair[1]}: {count} findings → {path.name}")
+
+    if no_pair:
+        print(f"\n{len(no_pair)} findings with no clear pair (need manual assignment):")
+        for fid in no_pair:
+            print(f"  {fid}")
+
+    print(f"\nEach batch must be evaluated by an agent that reads BOTH chapter texts.")
+    print(f"The agent MUST assign every finding — wrong_chapter is forbidden.")
+    print(f"Output: sources/coverage/ch{{A}}_ch{{B}}_resolved.json")
 
     return 0
 
@@ -869,6 +1056,8 @@ def main():
     parser.add_argument("--normalize", action="store_true", help="Normalize formats")
     parser.add_argument("--redistribute", action="store_true",
                         help="Redistribute wrong_chapter findings")
+    parser.add_argument("--resolve", action="store_true",
+                        help="Generate forced-resolution batches for bouncing findings")
     parser.add_argument("--embed-prep", action="store_true",
                         help="Assemble Step 2 embed context packages")
     parser.add_argument("--batch", type=str,
@@ -890,6 +1079,8 @@ def main():
         return cmd_normalize(args)
     elif args.redistribute:
         return cmd_redistribute(args)
+    elif args.resolve:
+        return cmd_resolve(args)
     elif args.embed_prep:
         return cmd_embed_prep(args)
     else:

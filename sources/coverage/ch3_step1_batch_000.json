@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "0nmNr0km-p4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter already argues Jesus's speech distinguishes Father (Greek philosophical categories) from Kyrios/YHWH (inventory item: 'Jesus's speech consistently distinguishes the Father in the heavens from Kyrios', lines 288-322). The specific claim that Jesus *never* used 'Yahweh' and *exclusively* used 'Theos' is new linguistic evidence supporting this existing argument. The chapter discusses the Father vs. Kyrios distinction but does not make the specific point about Theos vs. Yahweh word choice."
+  },
+  {
+    "finding_id": "5_I9TVu36vk_0",
+    "verdict": "wrong_chapter",
+    "justification": "The empty tomb as a literary trope and the Mark introduction as establishing divine status belong to Chapter 4 (Gospels as Historically Reliable Sources), which deals with Gospel literary analysis, authorship, and reliability. Chapter 3 focuses on the titles and political theology, not on Gospel literary conventions for establishing identity."
+  },
+  {
+    "finding_id": "jgb5DhCk9Dk_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'The Logos concept was a central Greek philosophical theme developed by Heraclitus, Stoics, and Middle Platonists before Philo of Alexandria and John's Gospel' (lines 486-504). Chapter explicitly discusses John's Gospel as structured around Logos, Philo's development, and John standing 'squarely within this philosophical trajectory, translating Logos-speculation into royal christology' (line 503). Both the argument (John uses Platonic/Greek philosophical framework) and the evidence (Logos incarnation in John) are already present."
+  },
+  {
+    "finding_id": "jgb5DhCk9Dk_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses Jesus teaching the Greek (Platonic) model of the immortal soul (inventory item, lines 127-144) and Paul's identification with Greek philosophical categories (lines 97-126). However, the specific argument that Paul's *resurrection theology* in 1 Corinthians 15 describes resurrection as transformation into *spiritual* rather than *physical* bodies, reflecting Platonic body/soul dualism, is a new argument. The chapter covers Jesus's soul doctrine but not Paul's resurrection-as-spiritual-transformation theology."
+  },
+  {
+    "finding_id": "zTmiqc2On1A_2",
+    "verdict": "covered",
+    "justification": "Inventory item: 'The Logos concept was a central Greek philosophical theme...' (lines 486-504). Chapter line 502-503 explicitly states John's Gospel mirrors Philo's Logos development and translates it into royal christology. The finding describes the same argument (John uses Platonic philosophical structure) with the same evidence (Logos, incarnation, return to divine source) that the chapter already presents."
+  },
+  {
+    "finding_id": "06uLtNZjlYg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues titles given to Jesus were pre-existing political terms of Greek/Roman kingship (inventory item, lines 22-57) and catalogs ruler deification across Ptolemaic, Seleucid, and other dynasties. However, Mark Antony's systematic deification as 'Neodionysus' (39-34 BCE) across multiple Greek cities is a specific example NOT in the chapter or inventory. The chapter mentions Augustus but not Antony."
+  },
+  {
+    "finding_id": "06uLtNZjlYg_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter catalogs many examples of rulers claiming divine status and their titles. But the specific argument that Greco-Roman divinity was based on a systematic *criteria set* (superhuman power, miraculous benefits, escape from corruption, superhuman wisdom) and that Jesus matched all these criteria is a new analytical framework not articulated in the chapter. The evidence (ruler cults, titles) is already present, but the 'criteria of divinity' argument is new."
+  },
+  {
+    "finding_id": "06uLtNZjlYg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Soter (Savior) as common Hellenistic royal title and mentions 'city-level benefactor cults, where rulers were honored as saviors for providing concrete benefits like grain and peace' (inventory item, lines 546-552). The finding adds the specific mechanism that benefaction-as-theology was the rational basis for deification — rulers who demonstrated miraculous benefits were understood as gods. This adds depth to the existing argument about Soter as political title."
+  },
+  {
+    "finding_id": "5-yNa34Sfx0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Jesus's divine titles were standard Hellenistic royal/divine categories (inventory item, lines 22-57) and mentions several figures (Alexander, Ptolemies, Seleucids, Augustus). Apollonius of Tyana as a 'divine man' (theios aner) parallel is not mentioned in the chapter or inventory. This is new evidence (specific figure) for the existing argument."
+  },
+  {
+    "finding_id": "5GH3ZiYIs3c_0",
+    "verdict": "covered",
+    "justification": "Inventory item explicitly includes: 'Philo described Logos as firstborn son of God (De Confusione Linguarum 146)' and 'Logos in John's Gospel mirrors Philo's development closely' (lines 486-504). Chapter line 500 states this verbatim. Both the argument and evidence are already present."
+  },
+  {
+    "finding_id": "5tLFd3JuZT0_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Augustus as divi filius on coins and civic festivals' (lines 22-57). Chapter explicitly discusses Augustus's divine titles and the father-son divine succession model in the Hellenistic sections (lines 574-619, 625-627). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "6Xzo9fdfsrM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter already covers Justin Martyr's explicit parallel between Jesus and sons of Zeus (inventory item, lines 47-50; First Apology 21-22). Athenagoras making the same type of argument (Christians attribute same titles to Jesus as pagans to their kings) is new evidence (different patristic author, different specific text) for the same existing argument about early Christian apologists explicitly drawing the parallel."
+  },
+  {
+    "finding_id": "6hC7ewU8FDE_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses 'Son of God' as a political title (lines 465-474) and mentions divine conception (Plutarch's account of Plato's conception, Luke 1:35, lines 476-485). However, the specific argument that 'Son of God' was understood as a *literal biological claim* about divine paternity (not just a political title) in Greco-Roman context is a new emphasis. The chapter frames it as political-cosmological; the finding argues for literal biological understanding."
+  },
+  {
+    "finding_id": "6hC7ewU8FDE_1",
+    "verdict": "covered",
+    "justification": "Inventory items cover Augustus as 'divi filius' (lines 22-57), the systematic cataloguing of divine titles across Ptolemaic, Seleucid, and Roman rulers (lines 574-619), and the overall argument that Son of God was a pre-existing political term. The finding's content about emperors adopting 'Son of God' as political/genealogical title from Julius Caesar forward is covered by this material."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Inventory item: 'Jesus's conflicts with Pharisees and Sadducees were confrontations over who held authority to interpret God's will' with evidence including 'Temple action challenging who decides what belongs in God's house' (lines 332-343). The finding adds the specific framing of the Temple Cleansing as an 'overtly political act' asserting sovereign authority with specific scholarly articulation, but the basic argument is already there. The finding adds more explicit political framing."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_2",
+    "verdict": "covered",
+    "justification": "Inventory item: 'King of the Jews as real royal title borne by Herod; charge for Jesus's execution' (lines 445-464). The chapter explicitly discusses 'King of the Jews' as a real political title and the charge for execution. Both argument and evidence match."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Jesus was framed with Hellenistic royal titles and political theology. However, the specific claim that Jesus's triumphal entry into Jerusalem was modeled on Hellenistic royal entry ceremonies (parousia) is not in the inventory or chapter text. This adds a specific Hellenistic parallel (royal entry/parousia) as new evidence for the existing argument."
+  },
+  {
+    "finding_id": "71fOqLomzIk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The inventory lists 'Aegean kingdoms: representative man, human ruler raised above others' and 'Son of Man' as one of Jesus's titles mapping to Alexander's successor kingdoms (lines 422-444). However, the specific evidence from Daniel 7:13-14 where 'Son of Man' is a divine figure given universal sovereignty is not detailed in the chapter. The chapter mentions 'Son of Man' only as a title in the mapping list without discussing the Daniel 7 background."
+  },
+  {
+    "finding_id": "71fOqLomzIk_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Psalm 2:7 functions as a royal investiture formula applied to Jesus at three events (annunciation, baptism, resurrection), not as a statement about eternal essence' (lines 51-53). The chapter discusses the Western text of Luke 3:22 ('You are my Son. Today I have begotten you') as an investiture formula. The finding's argument about adoptionist Christology at baptism is the same argument."
+  },
+  {
+    "finding_id": "71fOqLomzIk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter covers Psalm 2:7 as investiture at resurrection (Acts 13:33) in inventory (lines 51-53). The finding adds the specific framework of 'low to high Christology' — Jesus being exalted to divine status *after* resurrection — citing Romans 1:3-4 ('declared Son of God in power by his resurrection'). Romans 1:3-4 is not cited in the chapter. This is new evidence (specific Pauline text) for the existing investiture argument."
+  },
+  {
+    "finding_id": "C2m7I4WEoso_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Heracles in Justin Martyr's comparison (inventory item, lines 47-50) and the Via Latina catacomb image. This finding provides more specific parallel details (born of divine father and mortal mother, performed labors/miracles, died and was deified). The chapter already has Heracles as a parallel but without this level of biographical detail."
+  },
+  {
+    "finding_id": "C2m7I4WEoso_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Dionysus only through Justin Martyr's brief reference (inventory item, lines 47-50). The finding adds specific parallel details: Dionysus born of Zeus and mortal Semele, death and resurrection narrative, wine associations. While the name appears in the chapter, the specific mythological parallels (divine father + mortal mother, death/resurrection, wine) are not laid out."
+  },
+  {
+    "finding_id": "Ecpn3bkVvv0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Hasmonean royal theology (inventory item, lines 35-42) and mentions Herod in context of 'King of the Jews' title (lines 445-464). However, the specific evidence of Herod the Great practicing Hellenistic ruler cult in a Jewish context (temple building, Augustan-style patronage, divine kingship claims) is new detail that strengthens the argument about the Hellenistic framework being active in Judea itself."
+  },
+  {
+    "finding_id": "F658CFn2aS4_0",
+    "verdict": "covered",
+    "justification": "The chapter extensively covers the Egyptian-Alexandrian pipeline: solar-royal culture from Aten to Amun-Ra to Ptolemaic kingship (inventory items, lines 211-250), Philo of Alexandria and Logos (lines 486-504), and the specific argument that Ptolemaic Egyptian royal theology influenced Christian titles. Both argument and evidence are thoroughly present."
+  },
+  {
+    "finding_id": "F82JssUTYzg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Augustus as 'divi filius' and savior (inventory items), and cities honoring rulers as soter. However, the Priene Calendar Inscription — where Augustus's birthday is called 'euangelion' (gospel/good news) and he is styled as 'savior' — is NOT specifically cited in the chapter or inventory. This is a significant new piece of evidence: the same word 'gospel' used for Augustus that Christians used for Jesus."
+  },
+  {
+    "finding_id": "G6QR0e66erA_0",
+    "verdict": "covered",
+    "justification": "Inventory item explicitly includes 'Heraclitus: Logos as principle of order and knowledge' and 'Stoics: Zeno of Citium, Chrysippus — Logos as rational cosmic principle (Diogenes Laertius 7.134-147)' with 'Logos in John's Gospel mirrors Philo's development closely' (lines 486-504). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "G6QR0e66erA_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Paul quoting Greek poets (Acts 17:28, Aratus) and using Platonic/Stoic philosophical language (inventory item, lines 97-126). However, specific Stoic influence on Paul's letters (natural law theology, universal brotherhood) beyond the Areopagus speech is new evidence. The chapter focuses on Acts 17 but doesn't detail Stoic concepts in the letters themselves."
+  },
+  {
+    "finding_id": "G6QR0e66erA_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter references Plato in several contexts (Republic cave allegory, Statesman shepherd, Platonic soul model). However, the Timaeus specifically and its influence on early Christian cosmology is not mentioned. The argument (Greek philosophy shaped Christianity) exists, but the Timaeus as specific evidence is new."
+  },
+  {
+    "finding_id": "GpPMNVg0zww_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The inventory mentions 4Q246 (Son of God/Son of the Most High, line 46) and Dead Sea Scrolls dual messiah (lines 345-421). However, broader DSS material about angelic and divine figures with christological titles (beyond 4Q246 and the dual messiah) is potentially new evidence. The argument about pre-Christian divine titles exists; additional DSS texts about divine figures would be new evidence."
+  },
+  {
+    "finding_id": "GpPMNVg0zww_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Hebrews 5-7 on merger of Aaronic and Davidic authority (inventory item, lines 345-421) but does NOT cite 11Q13 (Melchizedek scroll) from the Dead Sea Scrolls, which presents Melchizedek as a divine messianic figure. This is new primary source evidence for the pre-Christian existence of divine messianic concepts."
+  },
+  {
+    "finding_id": "PVUq670hGvY_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the 'True Vine' title from John 15 at all. There is no inventory item covering this. The Dionysus-vine parallel is also not in the chapter. Both the argument (Jesus as True Vine parallels Dionysus) and the evidence (John 15, Dionysus vine associations) are new."
+  },
+  {
+    "finding_id": "RQQxRShO3tg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter covers Mary as Queen of Heaven with Hellenistic parallels (inventory item, lines 640-690) and mentions 'Egyptian and Greco-Roman queens, especially Isis and the Cleopatras, were portrayed as divine mothers' (line 680). However, the specific finding about Isis cult *as template* for Marian devotion (specific cultic practices, iconography transfer) adds detail beyond the general mention of Isis in the chapter."
+  },
+  {
+    "finding_id": "RQQxRShO3tg_2",
+    "verdict": "wrong_chapter",
+    "justification": "Baptism and eucharist as institutional practices belong in Chapter 5 (Pauline Epistles) or Chapter 6 (institutional structures), not Chapter 3 which focuses on christological titles and political theology. Per global_qa.md, the book reframes mystery cult parallels as imperial cult under foreign rule (see 'Mystery cult vs imperial cult under foreign rule'), and institutional practices belong in the chapters covering ecclesiology."
+  },
+  {
+    "finding_id": "VLk6sdjAoAo_2",
+    "verdict": "covered",
+    "justification": "Inventory item explicitly includes: 'Josephus proclaims Vespasian as ruler foretold in Jewish prophecy (War 3.8.9)', 'Yohanan ben Zakai greeting Vespasian as king', and 'Suetonius (Vespasian 4-5) and Tacitus (Histories 5.13) confirm Vespasian identified with Jewish oracle' (lines 445-464). Both argument and all three sources match."
+  },
+  {
+    "finding_id": "VfJT9fXmP9k_0",
+    "verdict": "covered",
+    "justification": "Inventory items: 'Augustus as divi filius on coins and civic festivals' (lines 22-57) and the evidence section on inscriptions and coins (lines 610-619) including 'theos sebastos kaisar' on coins. The argument that 'Son of God' appeared on Roman imperial coins and inscriptions is directly covered."
+  },
+  {
+    "finding_id": "VfJT9fXmP9k_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter extensively covers Augustan titles and parallels (lines 22-57, 567, 616-618, 625-627). However, the specific argument about Augustan *propaganda apparatus* (not just titles but the systematic communication structure) shaping early Christian proclamation language is a more specific claim than what the chapter presents. The chapter shows parallel titles; the finding argues for direct influence of the propaganda system."
+  },
+  {
+    "finding_id": "W-11rLwSUHM_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Galilee as cross-cultural borderland on Via Maris, looking toward Tyre/Sidon and Decapolis' and 'Sepphoris and Tiberias as Greek-facing administrative hubs' (lines 1-16, Opening). The chapter explicitly presents Galilee as Hellenized with Greek-facing urban centers."
+  },
+  {
+    "finding_id": "W-11rLwSUHM_1",
+    "verdict": "covered",
+    "justification": "Chapter line 12: 'Its urban centers, Sepphoris and Tiberias, were Greek-facing administrative hubs, and village life traded into those markets.' The evidence of Sepphoris as a Hellenistic city near Nazareth is explicitly present."
+  },
+  {
+    "finding_id": "W-11rLwSUHM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues the movement spoke and wrote Greek (line 9: 'The movement spoke Greek, wrote Greek, and framed Jesus in the political-religious idiom Greeks already used for rulers'). However, the specific evidence that Jesus *personally* spoke Greek (not just the movement) based on his interactions in Hellenized Galilee is a new data point. The chapter discusses the movement's Greek character but doesn't specifically argue Jesus himself was Greek-speaking."
+  },
+  {
+    "finding_id": "WtTJE4l62iw_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Mithraism, December 25, cave birth narratives, or shepherd worship as Mithraic parallels. None of these appear in the inventory. Both the argument (Mithraic parallels to Jesus's birth narrative) and the evidence (December 25, cave, shepherds) are entirely new to this chapter."
+  },
+  {
+    "finding_id": "XYqghYtia6k_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Gnostics denying Father=YHWH (inventory item, lines 119-126). However, specific Nag Hammadi texts showing diverse christological formulations of 'Son of God' are not cited. The argument about Gnostic categories exists; specific Nag Hammadi evidence would be new."
+  },
+  {
+    "finding_id": "XYqghYtia6k_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues for Greek philosophical influence on early Christianity throughout. The Gospel of Thomas as a specific text preserving sayings with Hellenistic philosophical flavor is not cited in the chapter or inventory. This is new evidence (specific text) for the existing broad argument."
+  },
+  {
+    "finding_id": "Ylix2IoiqbY_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Christos (Χριστός): existing Greek word meaning anointed' and 'Hasmoneans as anointed priest-kings' (lines 445-464). Chapter line 278 explicitly makes this point. Both argument and evidence match."
+  },
+  {
+    "finding_id": "YsdRuzPCAWo_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Philo of Alexandria: Jewish aristocrat; brother Alexander the Alabarch...' and 'Philo described Logos as firstborn son of God' (lines 486-504). The chapter devotes substantial text to Philo's bridging role (lines 496-503). Both argument and evidence are thoroughly covered."
+  },
+  {
+    "finding_id": "_ELm1hl24VA_0",
+    "verdict": "covered",
+    "justification": "This is the core argument of the entire chapter: that Jesus's titles and divine status were understood through pre-existing Greco-Roman categories. The inventory contains dozens of items making this exact argument with extensive evidence. Both the argument and the general category of evidence are thoroughly present."
+  },
+  {
+    "finding_id": "_ELm1hl24VA_1",
+    "verdict": "covered",
+    "justification": "Inventory items: 'Plutarch: Plato's conception involved dynamis and pneuma' and 'Luke 1:35 uses same vocabulary (power and spirit) for Jesus's conception' (lines 476-485); 'Apollo conceived Seleucus I' (lines 588-592); 'Suetonius reports... divine conception' of Augustus (lines 620-633). The argument about parallel miraculous conception narratives and the specific evidence (Plutarch, Seleucid, Augustus) are present."
+  },
+  {
+    "finding_id": "_ELm1hl24VA_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter focuses on titles, not on miracles as evidence of divine status. While the chapter uses the Greco-Roman framework extensively, it does not make the specific argument that Jesus's *miracles* follow Greco-Roman divine man patterns (healing, nature miracles, exorcisms matching theios aner traditions). The evidence of the Greco-Roman framework is present, but the miracle-pattern argument is new."
+  },
+  {
+    "finding_id": "_ELm1hl24VA_4",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter mentions the Transfiguration only as evidence for Jesus's soul doctrine (Moses and Elijah alive and conscious, inventory item, lines 127-144). The argument that the Transfiguration scene *itself* parallels Hellenistic divine epiphany scenes is new — the chapter uses the Transfiguration for a different argument (soul doctrine), not as a Hellenistic epiphany parallel."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses divine conception parallels (Plutarch/Plato, Seleucid/Apollo, lines 476-485, 588-592). The specific concept of 'dual paternity' (divine father AND human father simultaneously) as a common Greco-Roman pattern applied to multiple heroes is a more precise articulation with potentially new examples beyond what the chapter presents."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Plutarch: Plato's conception involved dynamis and pneuma' and 'Luke 1:35 uses same vocabulary (power and spirit) for Jesus's conception' (lines 476-485). The chapter explicitly makes this argument about pneuma/dynamis as the mechanism of divine conception."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss resurrection as 'corporeal immortalization' or the pattern of violent death followed by postmortem vindication as a Greco-Roman deification mechanism. This specific pattern (Asclepius, Heracles, Romulus dying violently then being vindicated with immortal bodies) is not in the chapter. The chapter focuses on titles, not on the death-resurrection pattern. Both argument and specific evidence are new."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_3",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses pharaohs receiving 'Son of Ra' (lines 465-474), divine titles across Hellenistic rulers (lines 574-619), and Jesus as Kyrios (lines 553-562). The *evidence* (pharaonic naming, ruler titles, Kyrios) is present. But the specific *argument* that receiving a divine name AT the moment of deification/coronation was a standard cross-cultural practice linking Egypt, Greece, and Christianity is a new analytical synthesis."
+  },
+  {
+    "finding_id": "bKbUxfZD-2U_2",
+    "verdict": "covered",
+    "justification": "The chapter catalogs Hellenistic ruler divine titles extensively: Antiochus IV as 'God Manifest' (line 595), Augustus as 'divi filius' (line 616), and the entire sections on Ptolemaic (lines 581-587), Seleucid (lines 588-598), Attalid (lines 599-603), and other dynasties (lines 604-609). Both argument and evidence are thoroughly present."
+  },
+  {
+    "finding_id": "bKbUxfZD-2U_3",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Alexander claimed divine sonship through Zeus-Ammon at Siwa' with evidence including 'Oracle at Siwa in Egypt (Plutarch, Lives 27)', 'Ram's horns of Ammon on coinage', and 'Cult maintained under Diadochi' (lines 574-580). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "bwWTGEdIf78_0",
+    "verdict": "covered",
+    "justification": "This is the core thesis of Chapter 3. The inventory contains extensive evidence of Roman imperial cult (coins with 'theos sebastos kaisar', lines 610-619; Augustus parallels, lines 22-57; 'Render unto Caesar' exchange, lines 610-619). Both the argument and evidence are the backbone of the chapter."
+  },
+  {
+    "finding_id": "bwWTGEdIf78_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Christians used imperial worship language for Jesus. Pliny's letter to Trajan (c. 112 CE) documenting Christians singing hymns to Christ 'as to a god' (carmen Christo quasi deo) is a famous primary source NOT cited in the chapter or inventory. This is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "cjCRhgD_XIQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues the identification of God the Father with YHWH was not fixed (inventory item, lines 97-126) and discusses the Father in Greek philosophical categories. The finding about Israelite polytheism and YHWH as only one of multiple gods provides new evidence (archaeological/textual evidence of polytheism) for the existing argument that the Father-YHWH identification was not original."
+  },
+  {
+    "finding_id": "cjCRhgD_XIQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses whether God the Father was YHWH or something else (lines 97-126). The specific evidence about El Elyon as supreme deity above YHWH in early Israelite religion (Deut 32:8-9 in DSS version, where Most High allotted nations to his sons and YHWH got Israel) is not in the chapter. This is new primary source evidence for the existing argument."
+  },
+  {
+    "finding_id": "cz201Od_Xe4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions the LXX briefly (line 555: 'YHWH appears as Kyrios in the Greek translation'; line 706: LXX made in Alexandria around 250 BC). But the LXX as a *major vehicle* of Hellenistic influence that reshaped Jewish theological concepts through translation choices is a more developed argument. The chapter mentions the LXX but doesn't develop the argument about its transformative role."
+  },
+  {
+    "finding_id": "dJVkvaCPuIM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter extensively covers Amun-Lord's Prayer parallels (inventory items, lines 146-250) and the 'hidden Father' connection (lines 196-206). The specific claim that Egyptian Amun theology *directly* influenced Jewish monotheism (not just Christian prayer) is a broader historical claim. The chapter has the Amun-Christianity connection but not the Amun-Judaism connection specifically."
+  },
+  {
+    "finding_id": "dQDaJJbRgY8_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the dying-and-rising gods pattern (Osiris, Attis, Adonis) or their parallels to Jesus's death and resurrection. The inventory has no item covering this. Per global_qa.md, mystery cult parallels should be reframed through imperial cult under foreign rule, but the specific pattern is not addressed in chapter 3. Both argument and evidence are new to this chapter."
+  },
+  {
+    "finding_id": "dQDaJJbRgY8_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Same as finding 60 — the chapter does not discuss Osiris's resurrection or its cosmic scope as a parallel to Jesus's universal redemption claim. Both argument and evidence are new. Per global_qa.md, this should be reframed through imperial cult rather than mystery cult."
+  },
+  {
+    "finding_id": "d_dOhg-Fpu0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The inventory includes 'King of the Jews as real royal title borne by Herod; charge for Jesus's execution' (lines 445-464). The finding adds the specific argument from the criterion of embarrassment/dissimilarity: 'King of the Jews' is historically authentic *because* it was not a Christological title early Christians used. This methodological evidence for historicity is new; the basic argument is existing."
+  },
+  {
+    "finding_id": "ezCnRZoKO5I_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Jesus's divine titles were understood through Greek categories. The Council of Nicaea (325 CE) formalizing this with homoousios (consubstantial) using Aristotelian substance theory is not specifically discussed in the chapter. The argument exists; Nicaea as evidence is new."
+  },
+  {
+    "finding_id": "g2GFDG50s90_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Phil 2:11 ('Jesus Christ is Kyrios, to the glory of God the Father') in the Acts/Epistles section (inventory item, lines 324-331). However, the full Christ hymn of Phil 2:6-11 analyzed as mirroring Hellenistic ruler exaltation patterns (pre-existence → humiliation → exaltation → divine name) is a more developed analysis. The verse is cited but not the hymn-as-exaltation-pattern argument."
+  },
+  {
+    "finding_id": "hS4jGA1wZpk_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Justin Martyr, First Apology 21-22: Christians propound nothing different from what you believe regarding those whom you esteem sons of Zeus (Heracles, Asclepius, Dionysus, Perseus)' (lines 47-50). Both argument and evidence are explicitly present."
+  },
+  {
+    "finding_id": "hS4jGA1wZpk_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter discusses Sunday as connected to solar worship (inventory item, lines 252-257) and Christ-as-Helios imagery. However, the specific argument about Christmas date being adapted from Sol Invictus / pagan winter solstice celebration is not in the chapter or inventory. Both argument and this specific evidence are new."
+  },
+  {
+    "finding_id": "i2a1Ekki5fs_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Inscriptions and coins provide hard evidence that god-king was political theology enacted in law, coinage, and liturgy' (lines 610-619). Chapter line 615: 'the language of god-king was not metaphorical but political theology enacted in law, coinage, and liturgy.' Also 'Athens and Rhodes voted cult statues and sacrifices to Hellenistic rulers' (line 614). Both argument and evidence match."
+  },
+  {
+    "finding_id": "i2a1Ekki5fs_2",
+    "verdict": "covered",
+    "justification": "Inventory items include Rosetta Stone (lines 584-585, 610-611), Canopus Decree (lines 583-584, 611), OGIS references (lines 594, 597). Priene inscription is NOT in the chapter (that would be new), but the Rosetta Stone and OGIS entries are covered. Since the finding bundles covered and uncovered items, the main argument and most evidence are present, making this covered for the core claim."
+  },
+  {
+    "finding_id": "j4IWbh1rXO0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter notes the movement 'spoke Greek, wrote Greek' (line 9) and discusses Greek as the language of early Christianity (inventory item, lines 87-96). However, the specific historical mechanism — Alexander's conquest creating koine Greek as lingua franca — is not detailed in the chapter. The chapter assumes Greek usage but doesn't explain its historical origin."
+  },
+  {
+    "finding_id": "j4IWbh1rXO0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses the Eastern Mediterranean synthesis (Egyptian, Greek, Jewish fusion) through specific examples. The finding about Hellenistic syncretism creating a shared religious vocabulary is the broader framework. Per global_qa.md, the 'Eastern Mediterranean synthesis' is the book's framework. The chapter has elements but the *vocabulary creation* mechanism specifically is new evidence."
+  },
+  {
+    "finding_id": "jAynFuA-yYk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Roman imperial titles (lines 610-619) and the 'Render unto Caesar' exchange. However, the specific point that *refusal* to worship the emperor was treasonous — and therefore Christian worship of Jesus as Lord was inherently a political act of treason — is not explicitly made. The chapter implies this but doesn't state it. The evidence about the legal dimension is new."
+  },
+  {
+    "finding_id": "nlf_ULB26cU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Asclepius only through Justin Martyr's brief reference (inventory item, lines 47-50). The finding provides more specific parallel details (Asclepius as divine healer, son of Apollo, healing cult, raised from the dead). While the name appears, the detailed healing parallel is new evidence."
+  },
+  {
+    "finding_id": "nlf_ULB26cU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Epidaurus inscriptions documenting miraculous healings attributed to Asclepius are not in the chapter or inventory. This is new epigraphic evidence for the argument about pre-existing divine healing parallels."
+  },
+  {
+    "finding_id": "nvKt8ohKyvw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Jesus's titles were Hellenistic, but the specific concept of 'theios aner' (divine man) as a formal category is not named in the chapter. The chapter discusses individual examples but doesn't use this scholarly framework. The argument is existing; the 'theios aner' conceptual framework as evidence is new."
+  },
+  {
+    "finding_id": "nvKt8ohKyvw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Pythagoras is not mentioned in the chapter or inventory. He is a new parallel figure (divine man, miracle worker, philosophical teacher) that could strengthen the existing argument about pre-existing Greco-Roman categories for divine figures."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter covers Psalm 2:7 as investiture (lines 51-53) and Paul's statements about Jesus as Kyrios (lines 324-331). However, the developmental trajectory argument — that Paul's Christology evolved from low (human exalted) to high (pre-existent divine being) — is a new analytical argument about the chronological development of christological titles. The chapter presents titles synchronically; this finding argues for diachronic development."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The inventory includes '1 Cor 8:5-6: one God the Father... one Lord Jesus Christ' (lines 324-331). The finding adds the specific argument that this passage *reformulates the Jewish Shema* to include Jesus. The verse is cited in the chapter, but the Shema-reformulation analysis is new interpretive evidence."
+  },
+  {
+    "finding_id": "pLeXpSCLrD8_0",
+    "verdict": "wrong_chapter",
+    "justification": "Pilate's historicity and archaeological confirmation belong to Chapter 4 (Gospels as Historically Reliable Sources) which deals with historical reliability of the Gospel accounts. Chapter 3 focuses on christological titles and political theology."
+  },
+  {
+    "finding_id": "qIOd05_JOKY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Messiah/Christ was a political royal title (inventory item, lines 445-464). Peter's confession ('You are the Christ') as a specific political declaration of kingship is not analyzed in the chapter, though the general argument about Messiah as political title exists. The specific scene is new evidence."
+  },
+  {
+    "finding_id": "qIOd05_JOKY_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses the political nature of Jesus's execution (lines 445-464, 'King of the Jews' charge). The specific trial scene before the Sanhedrin where 'Are you the Christ?' functions as a political charge of insurrection is not detailed. The argument exists; the trial scene evidence is new."
+  },
+  {
+    "finding_id": "zkY0KnO7n-c_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Jesus's execution under Rome and the political charge (lines 445-464). The specific point about crucifixion being reserved for political crimes (sedition, insurrection) rather than religious offenses is new evidence that strengthens the political reading."
+  },
+  {
+    "finding_id": "060X74pRzqM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses divine titles being transferred to Jesus but does not use the specific term 'apotheosis' or discuss the formal Greco-Roman apotheosis tradition as a framework for understanding Jesus's exaltation. The argument about Greco-Roman categories is present; the apotheosis language specifically is new."
+  },
+  {
+    "finding_id": "060X74pRzqM_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Romulus as a parallel to Jesus (murdered founder-king, disappearing body, post-mortem appearances, deification). This is a new specific parallel not in the inventory. Both the Romulus parallel argument and the evidence are new."
+  },
+  {
+    "finding_id": "FR1sfvGWCyQ_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Acts 2:36: God made Jesus both Kyrios and Christ' (lines 324-331). The argument about political enthronement language is the chapter's framework. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "FR1sfvGWCyQ_1",
+    "verdict": "covered",
+    "justification": "The chapter's central argument throughout is that Christian proclamation was political royal language. Inventory items include 'Acts 17:6-7: politarchs of Thessalonica accuse missionaries of proclaiming another king, Jesus' (Opening) and the entire Kingdom of God section (lines 691-728). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "FsIOaR_6hXk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The inventory cites Phil 2:11 but does not analyze the full hymn (2:6-11) as a Hellenistic encomium. The argument about Christian language being Hellenistic royal language exists; the hymn-as-encomium analysis is new evidence."
+  },
+  {
+    "finding_id": "HlLpAw-W1-0_0",
+    "verdict": "covered",
+    "justification": "Inventory item: Psalm 2:7 as 'royal investiture formula' not 'statement about eternal essence' (lines 51-53), and 'Messiah is the authentic Judean royal title for an actual political ruler, not a mythical end-times figure' (lines 445-464). The argument that 'Son of God' in Jewish context meant King, not ontological divinity, is the chapter's position."
+  },
+  {
+    "finding_id": "MNCRHLEyopA_2",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Hebrews 5-7: merger of Aaronic and Davidic authority in single messianic figure after John's death' (lines 345-421). Both the argument and evidence are present."
+  },
+  {
+    "finding_id": "MUw3DclYsB4_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Plutarch: Plato's conception involved dynamis and pneuma' and 'Luke 1:35 uses same vocabulary (power and spirit) for Jesus's conception' (lines 476-485). The argument about pneuma-based conception (not sexual) is present."
+  },
+  {
+    "finding_id": "MUw3DclYsB4_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Jesus as God manifested in the flesh (Epiphanes/Emmanuel) continues the Hellenistic title given to rulers like Antiochus IV and Ptolemy V' (lines 505-512). The chapter explicitly discusses 'epiphanic logic: the ruler's body was the god's appearing' (line 508). The incarnation-before-Christianity argument is present."
+  },
+  {
+    "finding_id": "PJHGILubjns_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Mary's virginity (lines 667-673) and the LXX's influence. However, the specific textual issue — that the LXX translated Hebrew 'almah' (young woman) as Greek 'parthenos' (virgin) in Isaiah 7:14, and this translation choice shaped Christian virgin birth theology — is not discussed in the chapter. This is new evidence for the existing argument about Hellenistic influence through the LXX."
+  },
+  {
+    "finding_id": "PJHGILubjns_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Emmanuel (lines 505-512) and Mary's virginity (lines 667-673) but does not cite Matthew 1:22-23's explicit use of LXX Isaiah. This is new textual evidence connecting the LXX translation to Matthew's birth narrative."
+  },
+  {
+    "finding_id": "XCoJncQYhrk_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter catalogs many examples of rulers with divine titles (lines 574-619). However, the specific argument that deification was a *spectrum* (not binary divine/human) in the Greco-Roman world is a new analytical framework. The chapter implicitly shows this spectrum but doesn't articulate it as a concept."
+  },
+  {
+    "finding_id": "XCoJncQYhrk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Suetonius's report of Senate decrees about Augustus (line 625). However, the specific institutional mechanism — that the Roman Senate *voted* on deification as an institutional political process — is not discussed. This is new evidence about the formal procedure for the existing argument about divine status as political."
+  },
+  {
+    "finding_id": "dlmXzFZ7aEQ_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Jesus's birth represented as a new star fits Greek tradition of celestial signs confirming divine kingship' (lines 620-633). The chapter discusses Alexander, Ptolemy III/Berenice, Augustus, and Seleucid star symbolism as parallels. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "fp_NNoCe2L0_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses multiple christological titles and their Hellenistic background. However, the specific developmental argument — that Jesus went from human prophet to cosmic deity over centuries of theological evolution — is a new diachronic argument. The chapter presents titles largely synchronically. The evidence (various titles at different stages) is present, but the developmental trajectory is new."
+  },
+  {
+    "finding_id": "httpyGCvgC0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions Suetonius reporting post-mortem appearances of Augustus (line 625). The finding adds broader Greco-Roman divine epiphany patterns as context for Jesus's post-mortem appearances. The Augustus parallel exists; the broader epiphany pattern framework is new evidence."
+  },
+  {
+    "finding_id": "iMwSGQh5QH0_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Jesus's ascension or its parallels to Roman consecratio/apotheosis. The inventory has no item on ascension. Both argument (ascension as Greco-Roman apotheosis) and evidence (consecratio tradition) are new."
+  },
+  {
+    "finding_id": "iMwSGQh5QH0_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Following from finding 98, the specific parallel that *witnesses* were required for both Jesus's ascension and Roman imperial apotheosis is not in the chapter. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "kN4v7Wn61fU_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Justin Martyr, First Apology 21-22: Christians propound nothing different from what you believe regarding those whom you esteem sons of Zeus (Heracles, Asclepius, Dionysus, Perseus)' (lines 47-50). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "lj6AtKVjhpk_0",
+    "verdict": "covered",
+    "justification": "The chapter extensively argues that Jesus's mission was political restoration of the Kingdom of God (lines 691-728, 757-835, 871-904). The finding's argument that Jesus was condemned 'for political reasons, not religious reasons' aligns with the 'King of the Jews' charge discussion (lines 445-464). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "tkCnoieMRFY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses divine sonship across civilizations but does not use the specific term 'demigod' or discuss it as a cross-cultural category. The argument about divine-human figures exists; the 'demigod' framing specifically is new evidence/terminology."
+  },
+  {
+    "finding_id": "x1PB8WpPOU8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions the LXX (lines 555, 706) but does not discuss how specific translation choices (Elohim → Theos, etc.) shaped theological concepts. This adds evidence about the LXX's transformative role for the existing argument about Greek influence."
+  },
+  {
+    "finding_id": "2STiabRV8TE_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Psalm 2:7 functions as a royal investiture formula applied to Jesus at three events (annunciation, baptism, resurrection), not as a statement about eternal essence' (lines 51-53). Acts 13:33 at resurrection is explicitly listed. The adoptionist framework is the chapter's own position."
+  },
+  {
+    "finding_id": "2STiabRV8TE_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter presents multiple christological titles but does not explicitly map a developmental chronology from exaltation → incarnation → pre-existence Christology. The evidence (various titles) is present, but the developmental model as an argument is new."
+  },
+  {
+    "finding_id": "2STiabRV8TE_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter covers the investiture argument (lines 51-53) but does not cite Romans 1:3-4. This specific Pauline text is new evidence for the existing adoptionist/investiture argument."
+  },
+  {
+    "finding_id": "C96FPHRTuQU_0",
+    "verdict": "wrong_chapter",
+    "justification": "The institutional infrastructure of Christianity (temples, church buildings) belongs in Chapter 5 (Pauline Epistles) or Chapter 6 (institutional structures). Chapter 3 focuses on christological titles and political theology, not ecclesial architecture."
+  },
+  {
+    "finding_id": "C96FPHRTuQU_1",
+    "verdict": "wrong_chapter",
+    "justification": "Networks of imperial worship centers are institutional infrastructure relevant to Chapter 5 or Chapter 6, not Chapter 3's focus on christological titles."
+  },
+  {
+    "finding_id": "CScHTiimihM_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss angel Christology (Jesus understood as a chief angel). This is a specific christological category not present in the chapter or inventory. Both the argument and evidence are new."
+  },
+  {
+    "finding_id": "CScHTiimihM_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the Angel of the Lord tradition or its connection to christological development. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "CScHTiimihM_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Galatians 4:14 is not cited in the chapter. The angel-Christ identification is a new argument not covered by the chapter's focus on royal/political titles."
+  },
+  {
+    "finding_id": "HIrW5ic1G1I_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter cites Phil 2:11 (inventory item, lines 324-331) but does not analyze the full hymn's incarnation theology (divine being temporarily becoming human). The verse appears but the incarnation-kenosis argument is new evidence for understanding the christological framework."
+  },
+  {
+    "finding_id": "NsYw1X0Nxlo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Jesus's titles and divine claims extensively. However, John 10:34 (Jesus quoting Psalm 82 'I said you are gods') is not cited in the chapter. This is a significant text where Jesus himself appeals to the precedent of humans being called 'gods' — new evidence for the existing argument about 'Son of God' as a political/human title."
+  },
+  {
+    "finding_id": "32-O8TCTvz0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses the Western text of Luke 3:22 at baptism (inventory item, lines 51-53). The finding adds Mark's presentation as the 'lowest Christology' where Jesus becomes Son specifically at baptism. The investiture argument exists; Mark's specific presentation is new evidence."
+  },
+  {
+    "finding_id": "8GVCZ3AvAvA_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Same as findings 96 and 105: the developmental chronology of Christology is a new argument. The chapter presents titles but doesn't argue for gradual elevation over decades."
+  },
+  {
+    "finding_id": "IaESGg8uTow_2",
+    "verdict": "wrong_chapter",
+    "justification": "Tacitus's confirmation of Christ's execution belongs in Chapter 4 (Gospels as Historically Reliable Sources) which discusses historical attestation and reliability."
+  },
+  {
+    "finding_id": "RL9pD803_b4_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses 'Son of God' extensively but treats it as a unified concept across all sources. The argument that different gospels use 'Son of God' with *different meanings* (adoptionist in Mark, incarnation in Matthew/Luke, pre-existence in John) is a new analytical argument. The evidence (various Gospel texts) is available in the chapter, but the differentiation by gospel is new."
+  },
+  {
+    "finding_id": "cKq5MyYp2UA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Evaluator error: confused finding content with Ehrman apocalyptic thesis. The actual finding is Reinhardt analyzing Ephesians as Greek royal political theology — Christ as vice-regent, enthroned like a Hellenistic monarch. Ch3 argues Jesus's titles are pre-existing Hellenistic royal vocabulary (Son of God, Kyrios, Soter). Reinhardt's Ephesians analysis is new evidence for that existing argument — the specific \"language of royal ideology\" in Ephesians is not in the chapter inventory."
+  },
+  {
+    "finding_id": "-o3DO7yL8WU_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'King of the Jews as real royal title borne by Herod; charge for Jesus's execution' (lines 445-464). Chapter discusses this extensively. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "03Aiqz0xA1I_0",
+    "verdict": "covered",
+    "justification": "Inventory items: 'Galilee as cross-cultural borderland on Via Maris', 'Sepphoris and Tiberias as Greek-facing administrative hubs' (Opening, lines 1-16). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "03Aiqz0xA1I_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter describes Galilee's urban centers (Sepphoris, Tiberias) but does not cite Josephus's specific description of Galilee as densely populated with cities. This is new evidence (Josephus on Galilee) for the existing argument."
+  },
+  {
+    "finding_id": "0auExfpE6rw_0",
+    "verdict": "covered",
+    "justification": "Inventory items: 'Kyrios Kaisar — Lord Caesar' and the 'Render unto Caesar' exchange (lines 553-562, 610-619). The chapter's entire framework presents Christian proclamation as competing with imperial claims. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "2T-MYc3QWAs_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Imperial posture transfer: Jesus at well using Prima Porta Augustus stance' (lines 211-223). Both the argument and this specific evidence are present."
+  },
+  {
+    "finding_id": "2T-MYc3QWAs_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Christ flanked by stars mirroring Hadrian's mausoleum Helios imagery' (lines 211-223). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "5hMXeVFnidI_0",
+    "verdict": "covered",
+    "justification": "This is the chapter's central thesis. Inventory contains extensive evidence across Ptolemaic, Seleucid, Roman, and Egyptian traditions. Both the argument and the general evidence are thoroughly present."
+  },
+  {
+    "finding_id": "8UzPOGmMDVs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses baptism as investiture (Psalm 2:7, lines 51-53) and as priestly initiation (lines 345-421). The finding adds the specific Greco-Roman parallel of divine adoption/recognition scenes at baptism. The investiture argument exists; the Greco-Roman adoption scene parallel is new evidence."
+  },
+  {
+    "finding_id": "8UzPOGmMDVs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses the baptism and Psalm 2:7 (lines 51-53) but does not specifically compare the heavenly voice to Greco-Roman divine voice confirmations at ruler investitures. The investiture argument exists; the divine voice parallel is new evidence."
+  },
+  {
+    "finding_id": "9H4Lt9-IIak_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses epiphany through the Epiphanes title (lines 505-512: 'epiphanic logic saturated Hellenistic royal propaganda'). The finding adds the formal genre of divine epiphany as a broader literary/theological category. The chapter has the title; the genre classification is new evidence."
+  },
+  {
+    "finding_id": "9H4Lt9-IIak_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Jesus's walking on water or its parallels to divine epiphany scenes. This specific miracle as a Hellenistic literary parallel is not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "9H4Lt9-IIak_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the feeding of the 5000 or its parallels to Hellenistic royal benefaction. This is not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "BFNU5NeWsMk_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter mentions the Transfiguration but only as evidence for the soul doctrine (Moses and Elijah conscious after death, inventory item lines 127-144). The argument that the Transfiguration is a Greco-Roman *metamorphosis* narrative (divine transformation) is new. The Transfiguration evidence is in the chapter but used for a different argument."
+  },
+  {
+    "finding_id": "BOV4urfzU94_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Inscriptions and coins provide hard evidence that god-king was political theology enacted in law, coinage, and liturgy' (lines 610-619). The chapter discusses Seleucid coins, Augustan coins, 'theos sebastos kaisar' coins. Both argument and evidence type are present."
+  },
+  {
+    "finding_id": "BOV4urfzU94_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Augustus coins and the 'Render unto Caesar' exchange (lines 616-618) but does not specifically cite the Tiberius denarius with 'divi Augusti filius'. This specific coin type — likely the one in the 'Render unto Caesar' scene — is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "BP_j0MtESqI_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter shows parallels between Jesus and Hellenistic divine figures. However, the specific argument about *conscious modeling* (that early Christians deliberately used Greco-Roman divine man templates to construct Jesus's biography) is a new methodological claim. The parallel evidence exists; the intentionality argument is new."
+  },
+  {
+    "finding_id": "GCeMa7XLLUc_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Same as findings 98-99. The chapter does not discuss ascension or celestial apotheosis. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "GD32YcvMv2s_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the empty tomb or disappearing body parallels. This Greco-Roman pattern (body disappearance at deification) is not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "GzjYmpwbHEA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions post-mortem appearances of Augustus via Suetonius (line 625). The finding expands this to a broader pattern of Greco-Roman post-mortem divine epiphanies. The Augustus parallel exists; the broader pattern is new evidence."
+  },
+  {
+    "finding_id": "HmOeYWnXnkM_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses Mary as 'New Eve' (lines 683-689) but does not make the argument about Jesus as 'new Adam' paralleling Greco-Roman founding hero mythology. The New Eve framework is present; the New Adam as founding hero is a new argument."
+  },
+  {
+    "finding_id": "JAOunZnQ77o_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss divine warfare in Revelation or gigantomachy parallels. The inventory mentions Pergamon's Great Altar as 'defenders of cosmic order against the giants' (line 601) but not the Revelation parallel. The argument connecting Revelation's divine warfare to gigantomachy is new."
+  },
+  {
+    "finding_id": "Knktrd_jQkM_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Jesus as cosmic judge or parallels to Zeus/Jupiter as supreme judge. This specific argument is not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "LU76I4Z7v-U_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss exorcisms or their parallels to Greco-Roman divine power demonstrations. This is not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "OVExX2kh3pM_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Jesus's healing miracles or Asclepius healing patterns in detail. Justin Martyr mentions Asclepius briefly (inventory item, lines 47-50) but the healing pattern comparison is not developed. Both the healing-parallel argument and the Asclepius cult evidence are new."
+  },
+  {
+    "finding_id": "PMsvMKsDt4s_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses christological titles but doesn't explicitly argue about the *timing* of high Christology. The argument that high Christology appeared within the first decade (not gradually over centuries) is a new chronological argument. The evidence about early titles exists; the timing claim is new."
+  },
+  {
+    "finding_id": "RtkeNuCwinc_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses 'Son of God' as political title (lines 465-474) and 'sonship as cosmological-political vocation' (line 296). However, the specific argument about *ontological participation* (not just political metaphor but actual divine substance) is a different emphasis from the chapter's political reading. The evidence is present; the ontological argument is new."
+  },
+  {
+    "finding_id": "RtkeNuCwinc_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Inscriptions and coins provide hard evidence that god-king was political theology enacted in law, coinage, and liturgy' with 'Athens and Rhodes voted cult statues and sacrifices to Hellenistic rulers' (lines 610-619). The argument that ruler worship (temples, sacrifices, hymns) parallels Jesus worship is present."
+  },
+  {
+    "finding_id": "RtkeNuCwinc_2",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Plutarch: Plato's conception involved dynamis and pneuma' and 'Luke 1:35 uses same vocabulary (power and spirit)' (lines 476-485). The pneuma-as-divine-substance argument is present."
+  },
+  {
+    "finding_id": "SX07cIkgMX8_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss nature miracles (calming storm, walking on water) or their Greco-Roman parallels. Not in the inventory. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "ScDkQEXdmEU_0",
+    "verdict": "wrong_chapter",
+    "justification": "Gospel literary genres (bios, aretalogy) belong in Chapter 4 (Gospels as Historically Reliable Sources), which deals with Gospel composition, genre, and literary analysis."
+  },
+  {
+    "finding_id": "TX-jlJwxejQ_0",
+    "verdict": "wrong_chapter",
+    "justification": "Table fellowship and symposium traditions are institutional practices relevant to Chapter 5 (Pauline Epistles) where ecclesia and community practices are discussed."
+  },
+  {
+    "finding_id": "VAhw2cVRVsA_0",
+    "verdict": "covered",
+    "justification": "This is the chapter's core thesis. Inventory contains extensive evidence of 'Son of God' applied across Hellenistic rulers. The finding names Hercules (covered via Justin Martyr, lines 47-50), Apollonius (new but tangential), and emperors (covered extensively). The argument and most evidence are present."
+  },
+  {
+    "finding_id": "VAhw2cVRVsA_1",
+    "verdict": "covered",
+    "justification": "This is the chapter's foundational framework. The entire chapter argues that early Christians used Greco-Roman categories. Both argument and evidence type are thoroughly present."
+  },
+  {
+    "finding_id": "VAhw2cVRVsA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Son of God was a royal/political title. However, the specific evidence that the Hebrew Bible calls the king of Israel 'Elohim' (Psalm 45:6-7) is not in the chapter. This is new OT evidence for the existing argument about divine titles being applied to human rulers."
+  },
+  {
+    "finding_id": "WaZ9fI3rLFM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses baptism as investiture (lines 51-53) and as priestly initiation (lines 345-421). The specific Greco-Roman parallel of 'divine commissioning scenes for heroes' adds new comparative evidence. The investiture argument exists; the hero-commissioning parallel is new."
+  },
+  {
+    "finding_id": "XUskxQZZyZI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter covers Good Shepherd as Hermes Criophorus (lines 535-544), Christ as Helios (lines 211-223), and Via Latina catacomb (lines 47-50). Orpheus as an additional iconographic parallel is not in the chapter. The art-as-evidence argument exists; Orpheus specifically is new."
+  },
+  {
+    "finding_id": "XUskxQZZyZI_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Earliest Jesus images: Good Shepherd in pose of Hermes Criophorus (ram-bearing god)' (lines 535-544). Chapter line 542: 'the earliest surviving images of Jesus overwhelmingly portray him as the Good Shepherd in the pose of Hermes Criophorus.' Both argument and evidence are present."
+  },
+  {
+    "finding_id": "YCvv9-mLZxA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Jesus's titles and political theology came from Hellenistic royal tradition. The specific argument about imperial cult providing an *institutional template* for Christian worship (not just titles but worship structures) adds institutional evidence. The chapter focuses on titles and ideology; the institutional template is new evidence."
+  },
+  {
+    "finding_id": "Yte-ad6Y31s_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Jesus's acts of raising the dead or their parallels to Greco-Roman heroes conquering death. The inventory mentions Via Latina catacomb (Heracles/Alcestis, Jesus/Lazarus) as iconographic parallel but not the theological argument about death-conquest. The raising-the-dead theological argument is new."
+  },
+  {
+    "finding_id": "ZyqqJ7-fVbA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses divine conception through pneuma/dynamis (lines 476-485) and mentions Plutarch/Plato and Seleucid/Apollo parallels. The finding adds Danae/Perseus and Romulus as specific virgin birth parallels not in the chapter. The divine conception argument exists; these specific parallels are new."
+  },
+  {
+    "finding_id": "_q6ZRlBH4cw_1",
+    "verdict": "covered",
+    "justification": "Inventory item: 'King of the Jews as real royal title borne by Herod; charge for Jesus's execution' (lines 445-464). Chapter discusses this extensively. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "b8UmAQq6n7A_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'The Logos concept was a central Greek philosophical theme... Logos in John's Gospel mirrors Philo's development closely' (lines 486-504). John's high Christology of pre-existent Logos is the chapter's content. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "b8UmAQq6n7A_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Logos in John through Philo and Greek philosophy (lines 486-504). The addition of Jewish *Wisdom tradition* (Proverbs 8, Wisdom of Solomon) as a co-source for John 1:1-18 is not in the chapter. The Logos argument exists; the Jewish Wisdom tradition as additional background is new evidence."
+  },
+  {
+    "finding_id": "bnrWljdsEsk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter cites Paul's letters (1 Cor 8:5-6, Phil 2:11, etc.) showing Christ worshiped as divine (inventory item, lines 324-331). The finding emphasizes the *chronological* point — within 1-2 decades. The evidence is present; the chronological emphasis is new."
+  },
+  {
+    "finding_id": "cUTIOXChqU4_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses multiple titles and the Gnostic/Marcionite split (lines 119-126). However, the explicit argument that there were *multiple competing Christologies* from the very beginning (not just later divergence) is a new analytical claim. The evidence of diversity is present; the 'competing Christologies' framework is new."
+  },
+  {
+    "finding_id": "cUTIOXChqU4_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter discusses investiture/adoptionist Christology (lines 51-53) but does not discuss angel Christology or the coexistence of these three models. Angel Christology is entirely absent from the chapter. The coexistence argument is new."
+  },
+  {
+    "finding_id": "cUTIOXChqU4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Christian theology required Greek philosophical categories. The homoousios debate at Nicaea as evidence of this is not specifically discussed in the chapter. The argument exists; the Nicaea evidence is new."
+  },
+  {
+    "finding_id": "cUTIOXChqU4_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses 4Q246 (lines 46) and the identification of Father with YHWH not being fixed (lines 97-126). The broader argument about Jewish monotheism not being strict (divine council, divine beings) adds new context. The framework exists; the 'non-strict monotheism' evidence is new."
+  },
+  {
+    "finding_id": "dIcw1Q-R9cQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses epiphany (Epiphanes title, lines 505-512). 'Metamorphosis' as a separate Greco-Roman theological category applied to Jesus is not discussed. The broader argument about Greco-Roman categories exists; metamorphosis specifically is new evidence."
+  },
+  {
+    "finding_id": "fcm-X7g-8p4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses epiphanic logic (lines 505-512) and incarnation parallels. Theophanies (divine beings temporarily taking human form) as a broader pattern adds new context. The incarnation argument exists; the theophany framework is new evidence."
+  },
+  {
+    "finding_id": "fpTCVa0ux30_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses individual statements (Phil 2:11, 1 Cor 8:5-6, Acts 2:36) but does not analyze them as using Hellenistic ruler-cult *formulae* specifically. The evidence (these texts) is present; the ruler-cult formulae analysis is new."
+  },
+  {
+    "finding_id": "hP8BHtlbr7Q_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss 'parousia' (second coming) or its Hellenistic meaning as royal arrival/adventus. This is not in the inventory. Both argument (parousia as royal arrival) and evidence (imperial usage of the term) are new."
+  },
+  {
+    "finding_id": "hP8BHtlbr7Q_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Following from finding 170, the specific institutional practices of parousia (processions, celebrations, sacrifices) are not in the chapter. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "hjm5ZaOMuV0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses the Lamb of God with both Jewish atonement and Egyptian Amun parallels (lines 513-534). The finding adds the broader Greco-Roman sacrificial framework (not just Egyptian). The dual-framework argument exists with Jewish and Egyptian; adding Greco-Roman sacrificial theology is new evidence."
+  },
+  {
+    "finding_id": "i2nhEMPIjwg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter mentions 'doxa' in the doxology (basileia/dynamis/doxa, lines 146-250) and Phil 2:11 ('to the glory of God the Father'). The specific argument that 'doxa' in the NT carries a Hellenistic royal connotation of divine radiance (not just Hebrew kavod) is a new interpretive layer. The word appears; the Hellenistic-royal interpretation of doxa is new evidence."
+  },
+  {
+    "finding_id": "jiTu-AOTvrM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses baptism as investiture (lines 51-53). The specific Roman legal practice of 'adoptio' (heir receiving father's name and status) as a parallel to Jesus's divine adoption at baptism is new evidence. The investiture argument exists; the Roman legal adoption parallel is new."
+  },
+  {
+    "finding_id": "kZL-wLdfRpw_0",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter discusses parables as coded language (line 837: 'he spoke in parables so that hearing they may not understand'). However, Mark's 'messianic secret' as a specific literary motif reflecting the political danger of claiming kingship under Rome is a new argument. The political context evidence is present; the messianic secret interpretation is new."
+  },
+  {
+    "finding_id": "kbLm_Xiqih8_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Two Lords text: Ps 110:1 / Mark 12:36 (Eipen Kyrios tō Kyriō mou)' (lines 288-322). The chapter explicitly discusses this as the 'two Lords' text showing divine enthronement. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "kbLm_Xiqih8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter cites Psalm 110:1 (lines 288-322). The finding adds that Psalm 110 was the *most quoted* OT text in the NT — a frequency claim not made in the chapter. The text is present; its prominence as the most-cited text is new evidence."
+  },
+  {
+    "finding_id": "kbLm_Xiqih8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Hebrews 5-7 on Melchizedek (inventory item, lines 345-421) but does not cite Hebrews 1:3 ('exact imprint of God's nature'). This is new textual evidence for the existing argument about Jesus's divine status."
+  },
+  {
+    "finding_id": "kbLm_Xiqih8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter does not cite Colossians 1:15-20 (the cosmic Christ hymn). This is a major christological text not in the inventory. The argument about Jesus's divine status exists; this specific text is new evidence."
+  },
+  {
+    "finding_id": "lYl24xibc2I_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Christos (Χριστός): existing Greek word meaning anointed' (lines 445-464). Chapter explicitly makes this point. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "mDX_EXb5pT8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter cites several Pauline texts (1 Cor 8:5-6, Phil 2:11) but does not cite Romans 9:5 or the debate about whether it directly calls Jesus 'God'. This is new textual evidence for the existing argument about Jesus's divine status in early Christianity."
+  },
+  {
+    "finding_id": "meHCQWihjCw_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Kyrios Kaisar — Lord Caesar' and the explicit argument about Kyrios as competing royal title (lines 553-562). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "qb_il6AH64E_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Psalm 2:7 functions as a royal investiture formula applied to Jesus' (lines 51-53). The chapter discusses the royal psalm background. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "u4MvGBE01jU_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Soter (Savior) was the most common title for Hellenistic rulers' with evidence including Ptolemy I Soter, Strato II Soter, Antiochus I Soter (lines 546-552). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "xohkrxWCHyE_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss rulers claiming divine healing powers or paralleling Jesus's healing ministry. The chapter focuses on titles and political theology, not on healing as a divine-ruler characteristic. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "yXbJncTsTGw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses baptism as investiture (lines 51-53) and Christos as 'anointed' (lines 445-464). Acts 10:38 ('God anointed Jesus with the Holy Spirit and with power') is not cited in the chapter. This is new textual evidence connecting baptism and anointing for the existing argument."
+  },
+  {
+    "finding_id": "8iXtoOaiG1E_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues Christian theology required Greek philosophical categories (lines 97-126, 486-504). The specific evidence that the Trinity cannot function without Aristotelian substance theory is not discussed. The argument exists; the Trinity-as-Greek-philosophy evidence is new."
+  },
+  {
+    "finding_id": "8iXtoOaiG1E_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as findings 63 and 165 — the homoousios debate as technical Aristotelian philosophy is not in the chapter. The argument about Greek philosophical categories exists; this specific debate is new evidence."
+  },
+  {
+    "finding_id": "CtB_YuPDiVE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Kyrios as imperial title (lines 553-562). The specific evidence that 'Kyrie eleison' (Lord have mercy) was originally an imperial saying adopted into Christian liturgy is not discussed. The Kyrios argument exists; the liturgical adoption evidence is new."
+  },
+  {
+    "finding_id": "I4GHrs5xAIk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues for Greek philosophical influence on early Christianity. The Gospel of Mary as a specific text demonstrating Stoic and Platonic influences in soteriology is not in the chapter. The argument exists; this specific text is new evidence."
+  },
+  {
+    "finding_id": "ZR-paFQ76HY_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Jesus's birth represented as a new star fits Greek tradition of celestial signs confirming divine kingship' (lines 620-633). The chapter discusses star portents for Augustus, Ptolemies, and Seleucids alongside Matthew's star. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "-Im3LOngUCM_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss the Lord Raglan mythic hero pattern or apply it to Jesus. This is a specific comparative mythology framework not in the inventory. Both the argument (Jesus fits the hero archetype) and the evidence (Raglan pattern with specific elements) are new."
+  },
+  {
+    "finding_id": "-Im3LOngUCM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses Good Shepherd as Hermes Criophorus (lines 535-544) and Christ as Helios (lines 211-223). The specific evidence about Apollo's depiction (young, beardless, curly hair) being borrowed for early Jesus imagery is not in the chapter. The art-argument exists; Apollo specifically is new evidence."
+  },
+  {
+    "finding_id": "-Im3LOngUCM_2",
+    "verdict": "wrong_chapter",
+    "justification": "Sacramental system (eucharist, baptism) as institutional practices belong in Chapter 5 or Chapter 6. Per global_qa.md, mystery cult parallels should be reframed through imperial cult under foreign rule. Chapter 3 focuses on christological titles."
+  },
+  {
+    "finding_id": "-qcWZrl18qI_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Philo described Logos as firstborn son of God (De Confusione Linguarum 146)' and 'Logos in John's Gospel mirrors Philo's development closely' (lines 486-504). Both the argument and evidence are present."
+  },
+  {
+    "finding_id": "-qcWZrl18qI_1",
+    "verdict": "covered",
+    "justification": "Inventory items include Stoic Logos (Zeno, Chrysippus, Diogenes Laertius 7.134-147) and Philo's development (lines 486-504). The chapter covers Stoic origins and Philo's synthesis. Both argument and evidence are present."
+  },
+  {
+    "finding_id": "-vRknRysvrY_0",
+    "verdict": "covered",
+    "justification": "Inventory item: 'Augustus as divi filius on coins and civic festivals' (lines 22-57). Both argument and evidence are present."
+  },
+  {
+    "finding_id": "07PKqAfCwOY_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Pantocrator/Pontocrator as a title for Jesus or its connection to Hermes as messenger of Zeus. This title is not in the inventory. Both argument (Pantocrator as Hermes parallel) and evidence (Revelation text, Hermes tradition) are new."
+  },
+  {
+    "finding_id": "07PKqAfCwOY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter discusses 'King of Kings and Lord of Lords' (inventory item, lines 553-562). The specific Revelation 19:16 passage about the title being inscribed/tattooed on Jesus's thigh and its interpretation as Hellenistic royal branding symbolism is not in the chapter. The title argument exists; the Rev 19:16 thigh inscription evidence is new."
+  }
+]

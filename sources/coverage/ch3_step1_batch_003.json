@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "-I5opAIthpc_0",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's baptismal theology of dying and rising with Christ (Romans 6:3-5) and mystery religion parallels belong in Chapter 5 (Pauline Epistles). Ch3 does not discuss Pauline baptismal theology. Ch5 inventory covers Paul's theological vocabulary, cosmology, and Greek religious frameworks (ch5 items 43, 44). Additionally, per global Q&A, 'mystery cult' framing is rejected; the institutional data should be reframed through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "-I5opAIthpc_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's use of mystery-religion vocabulary (mysterion, teleioo, nepios) belongs in Chapter 5, which covers Pauline epistolary language and Greek institutional vocabulary (ch5 items 7-9). Ch3 does not inventory Paul's specific lexical choices."
+  },
+  {
+    "finding_id": "-I5opAIthpc_2",
+    "verdict": "wrong_chapter",
+    "justification": "Theosis as Pauline baptismal theology (being 'reborn' and 'made perfect' via identification with dying-rising god) belongs in Chapter 5 with Paul's theological framework. Per global Q&A, mystery cult framing is rejected; the institutional data is reframed through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "-I5opAIthpc_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 discusses resurrection as political-theological legitimacy claim but does not address the concept of realized eschatology\u2014the argument that resurrection has already occurred through initiation (Gospel of Thomas saying 51/113, Romans 8, Hymenaeus/Philetus heresy). This is a distinct argument (resurrection as present mystical reality vs. future event) with evidence not in the chapter inventory."
+  },
+  {
+    "finding_id": "-a9hxknyxX4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues that Jesus's theology uses Greek/Platonic rather than Hebrew frameworks (inventory item 11: immortal soul; item 9: Father described in Greek philosophical categories). The specific mechanism\u2014Hellenism shifting resurrection from corporate/national to individual/salvific\u2014is new evidence that bolsters the existing argument about Greek frameworks transforming Jewish concepts. The chapter does not present this specific shift."
+  },
+  {
+    "finding_id": "-eA1Uz8LCP8_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 (Justin Martyr First Apology 21-22: Heracles, Asclepius, Dionysus, Perseus as sons of Zeus) and items 25, 35-39 extensively cover Greco-Roman deification patterns and divine sonship. The Romulus apotheosis pattern is part of the argument that Son of God was standard Hellenistic royal titulature. The specific framing of empty tomb + visions + missing body as Roman imperial cult pattern is already in the chapter's framework."
+  },
+  {
+    "finding_id": "-eA1Uz8LCP8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 mentions the Transfiguration as evidence that Moses and Elijah are alive and conscious after death (inventory item 11, soul section). However, the specific argument that Mark 9:1 functions as Mark's proleptic resurrection account\u2014Jesus transformed into a glorious heavenly being sitting enthroned, parallel to Greco-Roman divine transformation\u2014is new evidence for the existing argument about resurrection as political-theological legitimacy claim."
+  },
+  {
+    "finding_id": "-eA1Uz8LCP8_2",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's teaching on the pneumatic/spirit body (1 Cor 15) and its alignment with Hellenistic deification belongs in Chapter 5 (Pauline Epistles). Ch5 inventory item 43 covers Paul's Greek cosmology including Platonic-Stoic metaphysics and ascent logic."
+  },
+  {
+    "finding_id": "-eA1Uz8LCP8_3",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers early Christian apologists explicitly comparing Jesus to Heracles (who ascends after the pyre) and other sons of Zeus. The cenotaph/empty tomb as Greco-Roman trope is structurally embedded in the chapter's framework comparing Jesus's narrative to Hellenistic divine figures. Justin Martyr, Theophilus of Antioch, and Via Latina catacomb evidence are already in the inventory."
+  },
+  {
+    "finding_id": "-xL-QDgiTZ8_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 6 explicitly covers Psalm 2:7 as royal investiture formula applied at three events: annunciation (Luke 1:32-35), baptism (Western text of Luke 3:22), and resurrection (Acts 13:33). The different placement of Son of God adoption across gospels is the core of this inventory item."
+  },
+  {
+    "finding_id": "-yLHxWIezdA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Son of God was pre-existing political title (inventory items 2, 4, 25) and discusses Psalm 2:7 investiture (item 6). However, the specific Q source containing Son of God title with 'all the kingdoms of the world' temptation language is not cited in the inventory as evidence. This is new evidence (Q material) for the existing argument about Son of God as royal/political title."
+  },
+  {
+    "finding_id": "0WEJSsiZIGA_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Babylonian-Assyrian mock king ritual (Frazer's analysis) where a commoner was dressed in purple, crowned, allowed to rule for days, then stripped, scourged, and killed\u2014directly paralleling Jesus's passion narrative. This is both a new argument (passion as mock king ritual) and new evidence (Frazer's comparative data) not in the inventory."
+  },
+  {
+    "finding_id": "0WEJSsiZIGA_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Attis Hilaria festival's dendrophori (sacred tree carriers) or draw any parallel between Simon of Cyrene carrying the cross and this ritual. This is a novel argument with novel evidence not in the inventory or any cross-chapter inventory."
+  },
+  {
+    "finding_id": "0fcYiBDfdzs_0",
+    "verdict": "wrong_chapter",
+    "justification": "MacDonald's mimesis criticism of Mark's gospel belongs in Chapter 4 (Gospels as Historically Reliable Sources). Ch4 inventory items 35 ('Dionysian Gospel' built on Bacchae), 38 (Mark's coronation narrative), and ch4 item 1 (literary evidence) cover this literary-critical framework. Ch3 does not inventory Homeric mimesis as an argument."
+  },
+  {
+    "finding_id": "1CxiaR4Q4-U_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Heracles ascending after pyre and Asclepius struck by thunderbolt (via Justin Martyr and Theophilus of Antioch). Item 2 covers titles as pre-existing political terms of Greek/Roman kingship. The pattern of violent death leading to deification in Greek thought is already embedded in the chapter's comparative framework."
+  },
+  {
+    "finding_id": "1HjimJTgS_Q_0",
+    "verdict": "wrong_chapter",
+    "justification": "The Dionysian characterization of Jesus in John's Gospel belongs in Chapter 4. Ch4 inventory item 35 covers the 'Dionysian Gospel' built on deliberate imitation of Euripides' Bacchae, and item 15 discusses John's omission of the Eucharist as an already-established Dionysian/Greek tradition."
+  },
+  {
+    "finding_id": "1MB27a2Wz3E_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 6 explicitly covers this: 'Psalm 2:7 functions as a royal investiture formula applied to Jesus at three events,' including 'Western text of Luke 3:22 (baptism): You are my Son. Today I have begotten you.' The same textual variant and royal adoption argument are directly in the inventory."
+  },
+  {
+    "finding_id": "1Rp-ERu5gPQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Son of God was standard Hellenistic royal title (items 2, 25, 35-39) and covers Augustus as divi filius (item 2). However, the specific Romulus apotheosis narrative with its close parallel to Romans 1:4 ('declared Son of God by resurrection') is not cited in the inventory. The Romulus-specific evidence is new material for the existing argument."
+  },
+  {
+    "finding_id": "1VPdnUIpgeg_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 lists 'Augustus as divi filius on coins and civic festivals' and 'Cities hailed emperors as soter for grain, protection, peace.' Item 31 covers Soter as common Hellenistic ruler title. Item 32 covers Kyrios as imperial honorific. Augustus's comparative titles are directly in the inventory."
+  },
+  {
+    "finding_id": "1VPdnUIpgeg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues titles were pre-existing political terms (item 2) and lists Augustus's titles. However, the specific argument that Matthew was 'chafing at Augustus' by applying the same titles to Jesus\u2014an intentional counter-narrative\u2014is not stated in the inventory. The competitive framing between Matthew and Augustus is new evidence for the existing title argument."
+  },
+  {
+    "finding_id": "1aYH2YNev3c_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Asclepius and other divine figures in inventory item 5 (Justin Martyr comparison). However, the specific mechanism\u2014that the deity's resurrection becomes the model for initiates' afterlife transformation hopes\u2014is new evidence. Per global Q&A, mystery cult framing is rejected; the data should be reframed through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "1aYH2YNev3c_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 27 covers Philo's Logos as 'firstborn son of God' (De Confusione Linguarum 146). However, the specific examples of Enoch as pre-existent being in 1 Enoch, Moses, and Isaac as Logos in Philo are not cited. These are new examples supporting the existing Logos/pre-existence argument."
+  },
+  {
+    "finding_id": "21OHaFdUAyI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Christological titles extensively (items 2, 4, 23-34, 52). However, the specific 'angel Messiah' concept from Larry Hurtado's scholarship\u2014that early Christology was fundamentally angelic rather than human-messianic\u2014is not in the inventory. This provides a new scholarly framework for the existing arguments about Jesus's divine status."
+  },
+  {
+    "finding_id": "2XxdrmqFRV0_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 covers 'Augustus as divi filius on coins and civic festivals.' Item 40 covers Suetonius Divus Augustus 94 with 'portents, Senate decree, divine conception, post-mortem appearances\u2014same elements as Matthew.' Augustus's divine birth and apotheosis are directly in the inventory."
+  },
+  {
+    "finding_id": "2XxdrmqFRV0_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's 1 Corinthians 15 belongs in Chapter 5 (Pauline Epistles). Ch5 inventory item 43 covers Paul's Greek cosmology including ascent logic. Ch3 does not inventory specific Pauline passages."
+  },
+  {
+    "finding_id": "2dQqv9oQCww_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 25 covers 'Son of God was the standard title for Hellenistic rulers.' Item 4 covers 4Q246 with 'Son of God' pre-dating Christian usage. Item 5 covers Justin Martyr comparing Jesus's divine sonship to sons of Zeus. The parallel between biblical and Greek 'sons of God' is structurally embedded in the chapter."
+  },
+  {
+    "finding_id": "2dQqv9oQCww_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 9 argues the Father was described in Greek philosophical categories (Plato, Stoics, Logos). However, the specific claim that Greek natural philosophers 'invented monotheism' before Persian or Jewish sources is a stronger form of the evidence not in the inventory. This bolsters the existing argument about Greek philosophical categories shaping Christianity."
+  },
+  {
+    "finding_id": "2xrtEKOcyDI_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's spiritualization of Jewish practices belongs in Chapter 5 (Pauline Epistles). Ch5 inventory items 7-9 cover Paul's vocabulary and administrative register, and item 44 covers Paul's justification by faith as Greek civic-forensic language."
+  },
+  {
+    "finding_id": "39xuA36xnPY_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 covers 'Augustus as divi filius on coins and civic festivals' and 'Cities hailed emperors as soter for grain, protection, peace.' The Priene inscription ('gospel of Augustus') is a well-known parallel covered by the chapter's discussion of imperial titles applied to Jesus."
+  },
+  {
+    "finding_id": "3J2jhTdst3g_1",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Ch3 uses the same evidence of Messiah as political title (item 24) and Kingdom of God as political institution (items 41-48). However, the argument that the NT deliberately depoliticized a 'rallying cry of actual rebels' into a 'spiritualized non-political concept' contradicts the book's position that Kingdom language retains its political meaning. This is a different conclusion from the same evidence the book uses."
+  },
+  {
+    "finding_id": "3J2jhTdst3g_2",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 28 covers Jesus as 'God manifested in the flesh' (Epiphanes/Emmanuel) continuing the Hellenistic title. Item 5 covers the explicit argument that Jesus's divine sonship used the same categories as Greek divine sonship. The 'man-god' Messiah as unprecedented in Judaism but standard in Hellenistic religion is directly covered."
+  },
+  {
+    "finding_id": "3KudM3uWquU_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 40 explicitly covers 'Suetonius (Divus Augustus 94): portents, Senate decree, divine conception, post-mortem appearances\u2014same elements as Matthew.' This exact Suetonius passage and its parallels to the Jesus narrative are directly in the inventory."
+  },
+  {
+    "finding_id": "3KudM3uWquU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues divine birth was standard Hellenistic convention (items 25, 40, 50, 51). However, Miller's specific concept of 'trophy system'\u2014retroactive birth narrative as post-mortem honor, like a wrestling trophy\u2014is a new explanatory framework not in the inventory. This provides a new mechanism for the existing argument."
+  },
+  {
+    "finding_id": "3KudM3uWquU_2",
+    "verdict": "wrong_chapter",
+    "justification": "The argument about gospel authors' Greek education belongs in Chapter 4 (Gospels as Historically Reliable Sources). Ch4 inventory items 1 and 27 cover the literary sophistication of gospel authors and Luke's Greek historical writing conventions."
+  },
+  {
+    "finding_id": "3Pibg5caajs_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers the explicit argument via Justin Martyr and Theophilus of Antioch that Jesus's divine sonship used the same categories as Greek divine sonship (Heracles, Asclepius, Dionysus). Item 25 covers Son of God as standard Hellenistic ruler title. Walsh's point about disappearing bodies signaling deification in the Mediterranean world is covered by the framework."
+  },
+  {
+    "finding_id": "3Pibg5caajs_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 6 covers Acts 13:33 where Psalm 2:7 is applied at resurrection, establishing the same point that resurrection confers Son of God status. Romans 1:4 makes the identical argument using different wording but same logic already captured in the investiture formula discussion."
+  },
+  {
+    "finding_id": "3mwsMxsBjWk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues the Father was described in Greek philosophical categories (item 9) and cites Clement of Alexandria. However, the specific point about second-century apologists (Justin Martyr, Athenagoras) systematically using 'Greek philosophical debating techniques to prove Christianity is a superior form of philosophy' is new evidence for the existing argument. While Justin Martyr appears in item 5 for divine sonship, his philosophical methodology is not discussed."
+  },
+  {
+    "finding_id": "3pnR40UZB-4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues for Greek frameworks shaping resurrection theology. However, the specific evidence\u2014Paul's 'supernatural angelic body' concept paralleling Greek heroes with 'unbreakable bodies' on the Isle of the Blessed, and Zoroastrian origins of resurrection belief\u2014is not in the inventory. This provides new comparative evidence for the existing framework argument."
+  },
+  {
+    "finding_id": "44Pafikl0dI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 23 mentions 'Son of Man' as one of Jesus's titles mapping onto successor kingdoms. However, the specific Atwill argument that 'Son of Man' referred to Vespasian/Titus as Flavian Caesar is new evidence not in the inventory. This is a distinct interpretation of a title the chapter already discusses."
+  },
+  {
+    "finding_id": "44Pafikl0dI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Kingdom of God is political institution (items 41-48). However, Matthew 21:43 ('the kingdom will be taken from you and given to a nation producing its fruits') as evidence of literal political power transfer is not cited in the inventory. This is new textual evidence for the existing political-kingdom argument."
+  },
+  {
+    "finding_id": "4AflezmCMqY_2",
+    "verdict": "wrong_chapter",
+    "justification": "Greek literary patterns in biblical narratives (OT composition using Greek models) belongs in Chapter 2, which covers the Greek philosophical and cultural background, or Chapter 4 for gospel composition. Ch2 inventory item 1 covers Greek philosophical thought predating Jesus."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Son of God was political title (item 25) and covers 'Son of Father' (Philopator) as Hellenistic title (item 26). However, the specific Greek linguistic analysis of huios (dignity, authority, character of father, not genetic) and huiothesia (adoption) is not in the inventory. This lexical evidence strengthens the existing title argument with new philological data."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 9 covers 'The identification of God the Father with YHWH was not fixed... Paul and John describe the Father in Greek philosophical categories,' citing Paul's Areopagus speech (Plato/Stoics) and John's Logos. Item 11 covers Jesus teaching Greek (Platonic) model of immortal soul. The Platonic dualism in Jesus's sayings is within the chapter's existing framework."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_2",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Justin Martyr explicitly comparing Jesus to Heracles, Asclepius, Dionysus, Perseus as sons of Zeus. The argument that divine-man Christology required importing pagan concepts is structurally covered by the chapter's framework that titles were pre-existing Greek categories (item 2)."
+  },
+  {
+    "finding_id": "4MJ9Z3U8Lxc_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 27 explicitly covers 'Philo described Logos as firstborn son of God (De Confusione Linguarum 146)' and states 'Logos in John's Gospel mirrors Philo's development closely.' The Paul-Philo vocabulary overlap is covered by this inventory item."
+  },
+  {
+    "finding_id": "4MJ9Z3U8Lxc_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 covers Philo's Logos (item 27) but does not present the specific mechanism of 'wisdom Christology that was historicized'\u2014the explanatory bridge from Philo's abstract Logos theology to the incarnational Christology of Paul and the Gospels. This is a new argument (historicization mechanism) with new evidence (wisdom Christology as bridge) not in the inventory."
+  },
+  {
+    "finding_id": "4MJ9Z3U8Lxc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 27 covers Logos via Heraclitus, Stoics, and Philo. However, the specific evidence that Essenes and other Hellenistic Jewish groups also had Logos terminology (calling it 'the son of man') is not in the inventory. This broadens the evidence base for the existing Logos argument."
+  },
+  {
+    "finding_id": "4rJ6tgjK-NA_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (Augustus as divi filius), 24 (Messiah as political ruler title, with Vespasian identified with Jewish oracle), and 25 (Son of God as standard Hellenistic ruler title) directly cover the competitive use of Son of God between Caesars and Jewish claimants."
+  },
+  {
+    "finding_id": "4rJ6tgjK-NA_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss any 40-year typological structure linking Jesus's Passover crucifixion to Masada's fall. This Atwill argument about systematic OT typology as Greco-Roman theological construction is not in any chapter inventory. The argument itself (numerological typology) differs from the book's framework."
+  },
+  {
+    "finding_id": "4tE3kE1GmYU_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 27 explicitly covers 'Philo described Logos as firstborn son of God (De Confusione Linguarum 146).' The attributes listed (firstborn son of God, creator, high priest of God's Celestial Temple, image of God) are the direct content of Philo's Logos theology already in the inventory."
+  },
+  {
+    "finding_id": "4tE3kE1GmYU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses resurrection as political-theological legitimacy claim (framework throughout). However, the specific framing of resurrection as proof of cosmic military victory over Satan, unlocking an eschatological timeline, is not in the inventory. Per global Q&A, apocalyptic language should be read as political rebellion language, making this new evidence for the existing framework."
+  },
+  {
+    "finding_id": "4vaEnWVzuK4_2",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 explicitly covers Justin Martyr comparing Jesus to sons of Zeus including Dionysus. Item 25 covers Son of God as standard Hellenistic ruler title. Dionysus's divine parentage as context for Jesus's designation is directly in the inventory."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_0",
+    "verdict": "wrong_chapter",
+    "justification": "John's 'ego eimi' divine name language belongs in Chapter 4 (Gospel of John analysis). Ch4 inventory items 5, 18, 31, 33 cover Johannine theology, Logos, and Christological titles in John."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 27 covers 'Logos in John's Gospel mirrors Philo's development closely' and 'Philo described Logos as firstborn son of God.' The alignment of John's prologue with Philo's Platonism is directly covered."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_2",
+    "verdict": "wrong_chapter",
+    "justification": "John's Dionysiac wine imagery at Cana belongs in Chapter 4. Ch4 inventory item 35 covers 'the Dionysian Gospel built on deliberate imitation of Euripides' Bacchae' and item 15 covers John's Eucharist/Dionysian tradition."
+  },
+  {
+    "finding_id": "4zT9pvHZnjY_3",
+    "verdict": "wrong_chapter",
+    "justification": "John's realized eschatology belongs in Chapter 4 (Gospel of John analysis). Ch4 covers John's theological framework extensively. Ch3 does not inventory Johannine eschatology."
+  },
+  {
+    "finding_id": "4zdsjUOZs_I_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 covers Augustus as divi filius, item 5 covers Heracles ascending after pyre. Item 40 covers Suetonius Divus Augustus with divine conception and post-mortem appearances. The apotheosis tradition for Caesars and Romulus is covered by the chapter's framework."
+  },
+  {
+    "finding_id": "57_whToX2iY_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (titles as pre-existing political terms, Augustus as divi filius), 35-39 (Hellenistic dynasties practicing divine kingship), and 40 (Suetonius parallels) directly cover the widespread pattern of emperors presented as divine beings with ascensions."
+  },
+  {
+    "finding_id": "5AQaGS8xjEU_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3's framework treats resurrection as political-theological legitimacy claim. However, the specific argument that Easter reframes a pagan nature/seasonal festival as an 'immortality festival'\u2014the transformation from cyclical seasonal renewal to eternal immortality\u2014is new evidence for the existing resurrection-as-legitimacy argument."
+  },
+  {
+    "finding_id": "5BZlc5IWnLA_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 24 covers 'Messiah is the authentic Judean royal title for an actual political ruler' with 'Christos: existing Greek word meaning anointed.' The title as a designation across multiple frameworks is in the inventory."
+  },
+  {
+    "finding_id": "5BZlc5IWnLA_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss pre-Gospel non-incarnational christologies like the Ascension of Isaiah (where Jesus never visited earth but still has death and resurrection) or Valentinian Gnosticism. These represent a distinct argument\u2014that Hellenistic theological systems with death-and-resurrection theology existed before and alongside the canonical gospels\u2014with evidence not in any chapter inventory."
+  },
+  {
+    "finding_id": "5DBGem5MkOg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Jesus teaches Greek model of immortal soul (item 11) and that titles come from Greek frameworks. However, Collins's specific point that resurrection belief entered Judaism only in the second century BC through Hellenistic influence (via Daniel and Enoch, with Greek parallels) is not cited in the inventory. This is new evidence for the existing argument about Greek frameworks."
+  },
+  {
+    "finding_id": "5DBGem5MkOg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3's framework argues for Greek categories shaping Christian theology. However, Collins's specific argument that apocalypticism itself is 'really more a Hellenistic phenomenon' and that 'the shift was largely due to the Hellenistic age' is a foundational claim not in the inventory. This strengthens the existing argument that the entire conceptual framework was Greek."
+  },
+  {
+    "finding_id": "5DBGem5MkOg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses Dead Sea Scrolls in several inventory items (4, 22, 45). However, the specific hermeneutical method (pesher interpretation: reading verses as referring to current events) is not described as a distinct technique. This is new evidence showing how both Qumran and early Christians reinterpreted texts, bolstering the existing argument about theological frameworks."
+  },
+  {
+    "finding_id": "5NS5CscsrFY_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 covers Augustus as divi filius and imperial titles. Item 33 covers Prince of Peace with Augustus's Pax coinage. The competitive framing of Jesus vs Augustus as rival Sons of God bringing rival peace is covered by the chapter's framework."
+  },
+  {
+    "finding_id": "5WrZnOVYy7U_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 24 covers Josephus proclaiming Vespasian as ruler foretold in Jewish prophecy (War 3.8.9) and Suetonius/Tacitus confirming Vespasian identified with Jewish oracle. The Flavian 'son of God' claim is directly in the inventory."
+  },
+  {
+    "finding_id": "5Z_cSmy3CbI_0",
+    "verdict": "wrong_chapter",
+    "justification": "Middle Platonism's influence on John's Gospel belongs in Chapter 4. Ch4 inventory items 18 (Philo's Logos as pre-existing high Christology) and 33 (Johannine Prologue's Logos theology fitting Greco-Roman bios) cover this territory."
+  },
+  {
+    "finding_id": "5Z_cSmy3CbI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 does not mention Lucian calling Jesus a 'sophist,' though ch2 inventory item 50 covers 'Lucian of Samosata mocked Christians for worshiping the crucified sophist.' For ch3's arguments about Greek frameworks (items 9, 27), the sophist designation is new evidence supporting the existing argument about Jesus operating within Greek philosophical categories. However, since ch2 already covers this, this is partially covered cross-chapter."
+  },
+  {
+    "finding_id": "5tUJl1330TI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Kingdom of God is political institution (items 41-48). The Loisy quote about kingdom-to-church transformation is a famous scholarly observation not cited in the inventory. However, per CLAUDE.md, modern scholar names never appear in manuscript text; only the idea matters. This provides new framing evidence for the existing political-kingdom argument."
+  },
+  {
+    "finding_id": "5wy1hrfAPG4_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 24 covers Josephus proclaiming Vespasian as ruler foretold in Jewish prophecy and Suetonius/Tacitus confirming identification with Jewish oracle. Duplicate of 5WrZnOVYy7U_0 assessment."
+  },
+  {
+    "finding_id": "5wy1hrfAPG4_3",
+    "verdict": "wrong_chapter",
+    "justification": "Mark 13's redactional analysis belongs in Chapter 4. Ch4 inventory item 20 covers 'Mark 13 (Little Apocalypse / Olivet Discourse) shows clear signs of later redactional expansion, meaning the original Mark was written before 70 AD.'"
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_1",
+    "verdict": "wrong_chapter",
+    "justification": "Jewish literary imitation of Greek epic (Judith imitating Iliad 14 and Bacchae) belongs in Chapter 2, which covers the Greek cultural background and literary conventions. Ch2 already establishes Greek influence on Jewish literature."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_2",
+    "verdict": "wrong_chapter",
+    "justification": "Moses as donor deity paralleling Dionysus/Demeter belongs in Chapter 2 (background/context). Ch3 focuses on Jesus's titles and kingdom; Moses's characterization is pre-Jesus background material."
+  },
+  {
+    "finding_id": "6CK1s04dU70_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 does not discuss mysterion as a specific term. Per global Q&A, 'mystery cult' framing is rejected in favor of imperial cult under foreign rule. However, the appropriation of Greek liturgical terminology (mysterion) as institutional vocabulary is new evidence for the existing argument that Christianity inherited Greek institutional structures. The data is valid; the mystery cult interpretation is replaced per Q&A."
+  },
+  {
+    "finding_id": "6Z1pJOTKxHE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Greek divine figures as context for Jesus's titles (items 2, 5, 25). However, Allison's specific point that Corinthian Christians could accept resurrection because they already had Greek hero traditions with missing bodies/ascensions is new evidence. This demonstrates audience reception through Greek categories, bolstering the existing argument."
+  },
+  {
+    "finding_id": "6bqScTN2wRs_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 4 covers '4Q246 applies Son of God and Son of the Most High to an eschatological ruler before any Christian usage.' The DSS evidence that Son of God was royal, not divine, is directly in the inventory."
+  },
+  {
+    "finding_id": "6bqScTN2wRs_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 42 covers 'The NT evidence overwhelmingly points to earthly restoration of sovereignty' with 'Your kingdom come, your will be done, on earth as in heaven' (Matt 6:10). Item 12 covers the Lord's Prayer. The political/earthly kingdom expectation is directly covered."
+  },
+  {
+    "finding_id": "6bqScTN2wRs_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses dual messiah concept in Dead Sea Scrolls (item 22). However, the specific linkage between the Teacher of Righteousness's future resurrection and the coming King's authority\u2014making resurrection the legitimating mechanism\u2014is not in the inventory. This is new evidence for the existing argument about resurrection as political-theological legitimacy claim."
+  },
+  {
+    "finding_id": "6y_voqOVCsE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers divine kingship patterns (items 2, 5, 35-40). However, the specific Livy passage on Romulus's apotheosis (taken up in a cloud, thunderclap, appearance narratives) with its close structural parallel to gospel accounts is not cited in the inventory. This is new primary source evidence for the existing argument."
+  },
+  {
+    "finding_id": "6y_voqOVCsE_2",
+    "verdict": "wrong_chapter",
+    "justification": "The argument about Christianity requiring Roman imperial infrastructure belongs in Chapter 5 (institutional continuity) or Chapter 6 (political restoration). Ch5 inventory item 15 covers geographic distribution matching Alexandrian imperial civic network. Ch6 inventory item 0 covers Christianity as Greek political restoration movement."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 39 covers 'Inscriptions and coins provide hard evidence' including coins in Jesus's lifetime. However, the specific finding that pax, clementia, compassion on Roman coins are the same moral ideals attributed to Jesus (particularly Luke's Nativity) is not cited. This is new numismatic evidence for the existing argument."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 27 covers 'Logos in John's Gospel mirrors Philo's development closely' and the Logos concept as central Greek philosophical theme. Item 9 covers John presenting Jesus as Logos from Greek philosophy. This is directly covered."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_6",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 mentions Vespasian in the context of Jewish oracle prophecy (item 24) but does not present the specific argument that Titus entered Jerusalem at age 33, had humble nativity traditions, or that Vespasian performed healing miracles identical to Jesus's (curing blind man with spittle). These biographical parallels constitute a new argument with new evidence not in the inventory."
+  },
+  {
+    "finding_id": "77QtptGdBo0_0",
+    "verdict": "wrong_chapter",
+    "justification": "Homeric literary parallels in Luke's resurrection narrative belong in Chapter 4 (Gospel literary analysis). Ch4 covers gospel literary composition and Hellenistic literary conventions."
+  },
+  {
+    "finding_id": "77QtptGdBo0_1",
+    "verdict": "wrong_chapter",
+    "justification": "The wound-recognition motif from Homer's Odyssey in resurrection narratives belongs in Chapter 4. Ch4 covers gospel literary composition including Homeric mimesis."
+  },
+  {
+    "finding_id": "77QtptGdBo0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues titles and theological categories are Hellenistic (items 2, 5, 25). The specific Greek term cenotaph (kenotaphion = 'empty tomb') and its established cultural function in Hellenistic memorial practice is new evidence. The chapter does not use this specific Greek term or tradition to frame the empty tomb."
+  },
+  {
+    "finding_id": "77QtptGdBo0_3",
+    "verdict": "wrong_chapter",
+    "justification": "Homeric literary parallels (Joseph of Arimathea = Priam) belong in Chapter 4 (gospel literary analysis). Ch4 covers Homeric mimesis in gospel composition."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 40 covers 'Suetonius (Divus Augustus 94): portents, Senate decree, divine conception, post-mortem appearances\u2014same elements as Matthew.' The rhetorical parallels between Matthew's infancy narrative and imperial panegyric are covered by this direct comparison."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_2",
+    "verdict": "wrong_chapter",
+    "justification": "Mark's passion narrative modeled on Iliad (Hector's death) belongs in Chapter 4 (gospel literary analysis). Ch4 inventory item 38 covers Mark's introduction as coronation narrative."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_3",
+    "verdict": "wrong_chapter",
+    "justification": "Dionysian motifs in John belong in Chapter 4. Ch4 inventory item 35 covers 'Dionysian Gospel built on deliberate imitation of Euripides' Bacchae.'"
+  },
+  {
+    "finding_id": "80tkg8Tk66o_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Jesus framed in Greek political-religious idiom (item 1). However, the specific characterization of Jesus as a 'Hellenistic magician' who 'negotiates the heavenly world'\u2014a distinct Hellenistic institutional category\u2014is not in the inventory. This provides a new institutional context for the existing argument."
+  },
+  {
+    "finding_id": "87AiyeGH-Tc_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (Augustus as divi filius, Alexander claiming Zeus-Ammon), 5 (Justin Martyr comparing Jesus to sons of Zeus), 25 (Son of God as standard Hellenistic ruler title), and 35 (Alexander's divine sonship) directly cover this territory."
+  },
+  {
+    "finding_id": "8AHBLoFdL1g_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Justin Martyr and Theophilus comparing Jesus to Heracles (who ascends) and Asclepius. Items 35-39 cover Hellenistic divine kingship practices. The apotheosis framework is directly in the chapter."
+  },
+  {
+    "finding_id": "8Bd8MU4G6bU_0",
+    "verdict": "wrong_chapter",
+    "justification": "Genesis deriving from Plato's Timaeus belongs in Chapter 2 (Greek philosophical and cultural background). Ch2 inventory item 1 covers Greek philosophical thought predating Jesus."
+  },
+  {
+    "finding_id": "8OKXeqjmKBo_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 35 covers 'Alexander the Great claimed divine sonship through Zeus-Ammon.' Items 36-38 cover Ptolemaic, Seleucid, and other Hellenistic dynasties practicing divine kingship. The pattern of rulers claiming divine descent for legitimacy is directly in the inventory."
+  },
+  {
+    "finding_id": "8OKXeqjmKBo_2",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Justin Martyr comparing Jesus to Heracles, Asclepius, Dionysus, Perseus\u2014all following the pattern of divine birth, suffering, and apotheosis. The chapter's framework (items 2, 25, 35-40) establishes this pattern."
+  },
+  {
+    "finding_id": "8Ulo6LyugEc_1",
+    "verdict": "wrong_chapter",
+    "justification": "The 'Incognito King' motif from Homer's Odyssey explaining Mark's Messianic Secret belongs in Chapter 4 (gospel literary analysis). Ch4 covers Mark's literary composition and narrative structure."
+  },
+  {
+    "finding_id": "8Ulo6LyugEc_2",
+    "verdict": "wrong_chapter",
+    "justification": "Homeric parallel for temple cleansing belongs in Chapter 4 (gospel literary analysis). Ch4 covers Homeric mimesis in gospel composition."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 43 covers 'Apostles (apostoloi) were a common Hellenistic term for royal emissaries sent by Ptolemaic and Seleucid kings.' The political framing of the Twelve as governmental structure is within the chapter's kingdom-as-political-institution argument (items 41-48)."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses Kingdom of God (items 41-48) and mentions the Didache (item 12, in context of Lord's Prayer). However, the specific argument that the Last Supper was a Messianic banquet (not Passover) where bread and wine celebrate 'the kingdom of God and the joy' is not in the inventory. This is new evidence for the existing political-kingdom argument."
+  },
+  {
+    "finding_id": "97LAJHp67TI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Son of God was a broadly accepted title (items 4, 25, 52). However, John 10:34-35 where Jesus uses Psalm 82:6 ('You are gods') as scriptural precedent to defend calling himself God's son is not cited in the inventory. This is new textual evidence for the existing argument."
+  },
+  {
+    "finding_id": "9aD-SrvAONY_2",
+    "verdict": "wrong_chapter",
+    "justification": "Literary analysis of Acts 16 imitating Euripides' Bacchae belongs in Chapter 5 (Acts analysis) or Chapter 4 (gospel/literary analysis). Ch5 inventory item 26 covers key episodes in Acts following patterns of royal enthronement."
+  },
+  {
+    "finding_id": "9f5Hjrk715c_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 35 covers Alexander's divine sonship through Zeus-Ammon, and item 26 covers Plutarch's description of Plato's conception involving dynamis and pneuma. The divine birth attribution for both Alexander and Plato is in the inventory."
+  },
+  {
+    "finding_id": "9iI0sCYe5zQ_1",
+    "verdict": "wrong_chapter",
+    "justification": "Luke's literary modeling of Jesus's death on Socrates belongs in Chapter 4 (gospel literary analysis). Ch4 inventory item 27 covers Luke's Greek historical writing conventions."
+  },
+  {
+    "finding_id": "9vnITYJ4ZQ8_2",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's soteriology of adoption/co-inheritance belongs in Chapter 5 (Pauline Epistles). Ch5 inventory items 43-44 cover Paul's Greek cosmology and justification theology."
+  },
+  {
+    "finding_id": "9xgErBLwXvw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 27 covers the Logos concept from Heraclitus through Philo to John. However, Julian the Apostate's explicit complaint that the Logos was 'stolen' from Hellenic theology by the author of John's Gospel is not in the inventory. This hostile ancient witness provides new evidence for the existing argument about Greek philosophical categories."
+  },
+  {
+    "finding_id": "A6R5spy1uPk_1",
+    "verdict": "wrong_chapter",
+    "justification": "Gospel writers' use of Stoic and philosophical terminology belongs in Chapter 4 (gospel literary analysis). Ch4 covers gospel composition and literary conventions."
+  },
+  {
+    "finding_id": "A732FZm2STo_0",
+    "verdict": "wrong_chapter",
+    "justification": "The Messianic Secret as Homeric/Virgilian literary trope belongs in Chapter 4 (gospel literary analysis). Ch4 covers Mark's narrative structure and literary composition."
+  },
+  {
+    "finding_id": "A732FZm2STo_1",
+    "verdict": "wrong_chapter",
+    "justification": "Greek epic vocabulary in Mark belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "A732FZm2STo_3",
+    "verdict": "wrong_chapter",
+    "justification": "Gospel authors' elite education belongs in Chapter 4. Ch4 inventory items 1 and 27 cover literary sophistication and Greek historical conventions."
+  },
+  {
+    "finding_id": "AJZnGJs4XR0_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (Augustus divi filius), 5 (Justin Martyr comparing to sons of Zeus with ascensions), and 40 (Suetonius parallels) cover the parallel between imperial apotheosis and Jesus's resurrection claims."
+  },
+  {
+    "finding_id": "AJZnGJs4XR0_1",
+    "verdict": "covered",
+    "justification": "Ch3's entire framework (items 2, 5, 25, 35-40) establishes that divine exaltation was standard in the Hellenistic world. This is the chapter's core thesis, not new information."
+  },
+  {
+    "finding_id": "AJZnGJs4XR0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers the empty tomb framework through Justin Martyr's comparisons (item 5). However, Walsh's specific claim of 'over 120 examples' of missing bodies in ancient literature, and Miller's systematic demonstration of this as a persistent literary motif, provides new quantitative evidence not in the inventory."
+  },
+  {
+    "finding_id": "AJZnGJs4XR0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 40 covers Suetonius's account of Augustus with post-mortem appearances. However, the specific argument that eyewitness testimony lists (like 1 Cor 15) follow a standard Roman apotheosis literary convention\u2014not unique Christian evidence\u2014is a new framing not in the inventory. This provides new context for the existing framework."
+  },
+  {
+    "finding_id": "Ae_P81kJ2Pg_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 0 argues Jesus must have been more than a Judean royal claimant because royal pretenders attract only their own nation. Items 1-2 argue the Christian movement spoke Greek and used Greek royal idiom. The fundamental disconnect between Jesus and Jewish messianic expectations is the chapter's opening premise."
+  },
+  {
+    "finding_id": "B3dz9PY1Y10_1",
+    "verdict": "wrong_chapter",
+    "justification": "Mimesis analysis of Mark's parables belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "B5d3ruUp0yE_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's soteriological models and their Greek/Roman origins belong in Chapter 5 (Pauline Epistles). Ch5 inventory items 43-44 cover Paul's Greek cosmology and justification theology."
+  },
+  {
+    "finding_id": "B8GCW2AVAF8_0",
+    "verdict": "wrong_chapter",
+    "justification": "John's gospel in its Asia Minor Dionysian context belongs in Chapter 4. Ch4 inventory item 35 covers 'Dionysian Gospel.'"
+  },
+  {
+    "finding_id": "B8GCW2AVAF8_1",
+    "verdict": "wrong_chapter",
+    "justification": "Hellenistic quotation conventions in gospel composition belong in Chapter 4 (gospel reliability and composition methods)."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Heracles ascending after pyre and Asclepius struck by thunderbolt. The framework (items 2, 25, 35-40) establishes that deification with transformed bodies was standard Hellenistic practice, not uniquely Jewish."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_2",
+    "verdict": "wrong_chapter",
+    "justification": "The Philippians hymn analysis belongs in Chapter 5 (Pauline Epistles). Ch5 covers Paul's theological vocabulary and framework."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_3",
+    "verdict": "wrong_chapter",
+    "justification": "MacDonald's mimesis analysis of gospel writers competing with Roman imperial cult belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "C6mNE4iscUg_0",
+    "verdict": "wrong_chapter",
+    "justification": "The Dionysian origins of eucharistic language belong in Chapter 4. Ch4 inventory item 35 covers the 'Dionysian Gospel' and item 15 covers John's omission of the Eucharist."
+  },
+  {
+    "finding_id": "C7BVVUimK4M_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 23 mentions Son of Man as one of Jesus's four titles. However, Collins's analysis of how Daniel uses heavenly prince/kingdom language (the battle between 'prince of Greece' angel and Michael 'prince of Israel') to interpret political events is not in the inventory. This is new evidence for the existing title argument showing how apocalyptic language encoded political realities."
+  },
+  {
+    "finding_id": "C7BVVUimK4M_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues for Greek frameworks (item 11, immortal soul). However, Collins's specific point about Greek 'astral immortality' parallels\u2014the good would be 'taken up to join the heavenly host'\u2014is not in the inventory. This is new evidence for the existing Greek-framework argument."
+  },
+  {
+    "finding_id": "C80zV5KbY2M_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Son of God title extensively (items 4, 6, 25, 26). However, the specific linguistic evidence that 'beloved son' (agapetos huios) appears 'over and over' in the Odyssey but 'in only two very obscure areas' of the Septuagint is not in the inventory. This is new philological evidence for the existing argument that the title has Greek rather than Hebrew origins."
+  },
+  {
+    "finding_id": "CDv-GWPp_Zs_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (Alexander claimed Zeus-Ammon, Augustus as divi filius), 25 (Son of God as standard Hellenistic ruler title), and 35 (Alexander's divine sonship at Siwa) directly cover this."
+  },
+  {
+    "finding_id": "CDv-GWPp_Zs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Alexander's divine sonship (item 35) and Suetonius's Augustus parallels with Matthew (item 40). However, the specific structural comparison between Matthew's birth narrative and Alexander's birth myth (genealogy, betrothal couple, divine intervention, virginal conception, surrogate father abstention, prophetic dreams, Magi) is not itemized in the inventory. This is new specific evidence for the existing argument."
+  },
+  {
+    "finding_id": "CDv-GWPp_Zs_2",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 25 (Son of God as standard title), 35-39 (Hellenistic dynasties practicing divine kingship), and 40 (Suetonius parallels) establish divine birth as a widespread convention signaling royal status across multiple dynasties."
+  },
+  {
+    "finding_id": "CT189ZTd04g_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3's framework treats resurrection as political-theological legitimacy claim. However, Tabor's specific evidence\u2014that this is a universal pattern where followers of deceased messianic leaders claim vindication through visions/dreams, exemplified by the Dead Sea Scrolls Teacher of Righteousness applying Isaiah 53\u2014is not in the inventory. This provides new comparative evidence."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_1",
+    "verdict": "wrong_chapter",
+    "justification": "Literary modeling of Jesus as 'new Moses' in gospel composition belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "CcrDXW5Q0YQ_2",
+    "verdict": "wrong_chapter",
+    "justification": "Gospel intertextuality with Greco-Roman epic belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "CjsJZ4B4x-U_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 50 covers Mary's royal imagery and item 51 covers Seleucid annunciation parallel (Apollo conceived Seleucus I). However, the specific Heracles parallel (mortal woman betrothed to mortal man, conceives divine son before marital union, emphasis on absence of physical contact) is not in the inventory. This is new evidence from a different mythological tradition for the existing argument."
+  },
+  {
+    "finding_id": "CsovC_zw2sw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 6 discusses Psalm 2:7 investiture and item 11 mentions the Transfiguration. However, the specific theory that the Transfiguration was originally a resurrection appearance in which Jesus explicitly transfers political-religious authority to Peter as 'vice regent on earth' is not in the inventory. This provides new evidence for the existing argument about Son of God as institutional succession mechanism."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 5 mentions Asclepius via Justin Martyr, and item 36 mentions Ptolemy I initiating cult of Serapis. However, the specific syncretism thesis\u2014Asclepius fused into Serapis, providing direct Hellenistic precedent for Jesus's healing miracles and resurrection theology\u2014is new evidence connecting two items already in the inventory in a way the chapter does not."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 mentions Serapis cult under Ptolemy I (item 36). However, the Osiris-Serapis-Asclepius syncretism chain demonstrating resurrection as a pan-Mediterranean theological concept is not articulated in the inventory."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Orion being synchronized with Serapis and Zeus, or water-walking and stellar/constellation resurrection as attributes of syncretic pagan deities. This is a novel argument with novel evidence not in any chapter inventory."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_3",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Justin Martyr comparing Jesus to multiple sons of Zeus (Heracles, Asclepius, Dionysus, Perseus). Items 35-39 cover Hellenistic dynasties with divine kingship. The shared attributes across multiple deities is the chapter's core framework."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 2 (Augustus as divi filius), item 25 (Son of God as Hellenistic ruler title), and item 32 (Kyrios as standard imperial honorific) directly cover this."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 mentions Asclepius via Justin Martyr (item 5) in the context of divine sonship. However, the specific titles given to Asclepius ('divine Savior,' 'loving Lord and Master,' 'the one who gives life') that closely parallel Christian language about Jesus are not in the inventory. This provides new comparative titulature evidence."
+  },
+  {
+    "finding_id": "DO01hCo6GmE_1",
+    "verdict": "wrong_chapter",
+    "justification": "Per global Q&A, mystery cult framing is rejected. The Eucharist's ritual origins belong in Chapter 4 (John's omission of Eucharist, item 15) or Chapter 5 (institutional practices)."
+  },
+  {
+    "finding_id": "DO01hCo6GmE_2",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Ch3 uses evidence of Greco-Roman apotheosis (items 2, 5, 35-40). However, Singer's argument that Christianity is 'alone in having its God resurrecting from the dead rather than ascending'\u2014that physical resurrection distinguishes Christianity from pagan ascension\u2014is a different conclusion from the same evidence. The book argues resurrection parallels apotheosis; Singer argues it differs from apotheosis. This contradicts the book's framing but draws on the same comparative evidence."
+  },
+  {
+    "finding_id": "DSeLK5dPRzg_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Son of God title (items 2, 25). However, Miller's specific point that Mark 1:1 would 'register as a demigod' in the Greco-Roman world, understood through Platonic emanation (not later trinitarian theology), is new evidence with a distinct framing not in the inventory."
+  },
+  {
+    "finding_id": "DSeLK5dPRzg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Justin Martyr's comparisons (item 5). However, Miller's systematic count of approximately 50 missing body legends signaling deification is new quantitative evidence not in the inventory, complementing the earlier Walsh finding of 120+ examples."
+  },
+  {
+    "finding_id": "DSeLK5dPRzg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 11 mentions the Transfiguration in context of soul doctrine. Item 6 covers the baptismal voice. However, the specific framing of the Transfiguration as a Hellenistic epiphany tradition (meeting ascended figures + divine voice = standard epiphany pattern) is not in the inventory. This is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "DSeLK5dPRzg_4",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 27 covers 'Logos in John's Gospel mirrors Philo's development closely' and traces the concept through Heraclitus, Stoics, and Philo. The Platonic emanation framework is covered by the Logos section."
+  },
+  {
+    "finding_id": "Dc330wSTShw_1",
+    "verdict": "wrong_chapter",
+    "justification": "Water-to-wine as Greco-Roman epiphany sign belongs in Chapter 4 (Gospel of John analysis). Ch4 inventory item 35 covers the 'Dionysian Gospel.'"
+  },
+  {
+    "finding_id": "DnMawEgR_F0_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 40 explicitly covers 'Suetonius (Divus Augustus 94): portents, Senate decree, divine conception, post-mortem appearances\u2014same elements as Matthew.'"
+  },
+  {
+    "finding_id": "DnMawEgR_F0_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 5 (Heracles ascending after pyre), 35-39 (Hellenistic divine kingship), and 40 (Augustus's post-mortem appearances) cover apotheosis as standard Greco-Roman practice."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_1",
+    "verdict": "wrong_chapter",
+    "justification": "Greek literary vocabulary in Mark belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "DqPHIZwlSx4_2",
+    "verdict": "wrong_chapter",
+    "justification": "Reinterpretation of the Messianic Secret as Greek literary convention belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "E48DhofWV9U_1",
+    "verdict": "wrong_chapter",
+    "justification": "Gospel literary conventions for establishing divine figures belong in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "EAH71gf4P3M_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 covers Justin Martyr comparing Jesus to sons of Zeus including Dionysus. The Bacchae parallel with Philippians 2 is covered by the framework of Greek divine sonship categories applied to Jesus."
+  },
+  {
+    "finding_id": "EEro_BI3m1s_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Jesus's titles and idiom worked across Greek and Jewish audiences (items 1, 2, 23). However, the specific concept of cross-cultural metonymy\u2014that Greek and Jewish audiences could understand the same names/references through their own cultural frameworks simultaneously\u2014is a new explanatory mechanism not in the inventory."
+  },
+  {
+    "finding_id": "EEro_BI3m1s_3",
+    "verdict": "covered",
+    "justification": "Ch3's entire thesis is that the NT should be understood through a Greco-Christian lens. This is the chapter's foundational argument, not new information. Items 1, 2, 9, 23, 25 all establish the legitimacy of the Greek interpretive framework."
+  },
+  {
+    "finding_id": "EHZuaD6dvtw_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2, 5, and 25 directly cover 'Sons of God' as common Greco-Roman designation for divine figures, with specific examples from Justin Martyr, Alexander, Ptolemies, and Augustus."
+  },
+  {
+    "finding_id": "EbGluHkEXZc_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 39 covers 'Coins in Jesus's lifetime: theos sebastos Kaisar (Augustus Caesar as god).' Item 2 covers 'Augustus as divi filius on coins.' The Tiberius denarius with 'son of God' is within this numismatic framework."
+  },
+  {
+    "finding_id": "EbGluHkEXZc_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 covers Kyrios as imperial title (item 32) and mentions Romulus peripherally. However, the specific argument that both Jesus and Romulus received new divine names (Kyrios/Quirinus) as a mechanism for syncretization with existing deities\u2014and the specific Philippians 2 parallel where Jesus receives Kyrios to solve the soteriological problem\u2014is a new argument with new evidence not in the inventory."
+  },
+  {
+    "finding_id": "EbGluHkEXZc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Hellenistic political theology enacted in law/coinage/liturgy (item 39). However, the specific Romulus institutional mechanisms (senatorial decree, temple construction, ritual festivals, ongoing worship) are not cited. This is new evidence for the existing argument about political theology."
+  },
+  {
+    "finding_id": "EbLcPyjC7gE_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2, 25, and 35-39 extensively cover Son of God as royal-ritual title across cultures including Egyptian (Son of Ra), Ptolemaic, Seleucid, and Roman dynasties."
+  },
+  {
+    "finding_id": "EnKuOcrWHuw_0",
+    "verdict": "wrong_chapter",
+    "justification": "Thomas's role and the Gospel of Thomas material belongs in Chapter 4 (gospel analysis). The book's preface mentions Thomas's 'doubt' in relation to dynastic succession, and ch4 covers gospel reliability."
+  },
+  {
+    "finding_id": "F0tBHqdI_3s_1",
+    "verdict": "wrong_chapter",
+    "justification": "Mark's imitation of Greek literary models belongs in Chapter 4 (gospel literary analysis). Ch4 covers Mark's narrative composition."
+  },
+  {
+    "finding_id": "F4AsWv5EFH4_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 explicitly covers 'Justin Martyr, First Apology 21-22: Christians propound nothing different from what you believe regarding those whom you esteem sons of Zeus (Heracles, Asclepius, Dionysus, Perseus).'"
+  },
+  {
+    "finding_id": "F91V3D--rFM_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's resurrection theology belongs in Chapter 5 (Pauline Epistles). Ch5 inventory item 43 covers Paul's Greek cosmology."
+  },
+  {
+    "finding_id": "FTIum8FFQMo_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 40 covers 'Suetonius (Divus Augustus 94): post-mortem appearances\u2014same elements as Matthew.' The framework of post-mortem divine appearances as imperial propaganda is covered."
+  },
+  {
+    "finding_id": "FTIum8FFQMo_1",
+    "verdict": "not_relevant",
+    "justification": "Per global Q&A, 'mystery cult' framing is rejected. The argument that central mystery cult figures were invented and Jesus may be similarly invented is not relevant to the book's thesis. The book argues Jesus was a historical royal figure, not a mythological invention."
+  },
+  {
+    "finding_id": "FTbibf6tSeU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 9 argues the identification of God the Father with YHWH was not fixed and cites Greek philosophical categories. However, Macrobius's specific identification of Yahweh as the head of the Greek pantheon is not in the inventory. This is new evidence for the existing argument about fluid identity between YHWH and Greek divine concepts."
+  },
+  {
+    "finding_id": "FTbibf6tSeU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues for Greek frameworks shaping Christianity. The argument that yahwism itself was already Hellenized and 'prepared the ground' for Christianity is new evidence for the existing thesis, not directly stated in the inventory."
+  },
+  {
+    "finding_id": "FjdxSILrYG0_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Jesus was framed in Greek political-religious idiom (items 1, 2). However, the specific 'Divine Man' (theios aner) concept as a Hellenistic institutional category, with Apollonius of Tyana as parallel, is not in the inventory. This provides a new Hellenistic category for the existing argument."
+  },
+  {
+    "finding_id": "G-TKAeDh6ns_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Son of God as Hellenistic title (items 2, 5, 25). However, the specific characterization that Greco-Roman sons of gods were harsh/violent/powerful (not gentle sages) is not in the inventory. This provides a new dimension to the existing title argument."
+  },
+  {
+    "finding_id": "G-TKAeDh6ns_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's theology of divine transformation belongs in Chapter 5 (Pauline Epistles). Ch5 covers Paul's theological framework."
+  },
+  {
+    "finding_id": "G0y40K31YvA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Son of God as title (items 2, 5, 25). However, the specific mechanism of becoming 'sons of God' through initiation in mystery religions (Eleusinian, Mithra, Hermetic) is not in the inventory. Per global Q&A, mystery cult framing is rejected; the institutional data (initiation conferring title) should be reframed through imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "G0y40K31YvA_1",
+    "verdict": "wrong_chapter",
+    "justification": "Ritual/liturgical parallels between early Christian and Greek practices belong in Chapter 5 (institutional structures) or Chapter 4 (Eucharist). Per global Q&A, 'mystery cult' framing is rejected."
+  },
+  {
+    "finding_id": "G6n-S4dwq6U_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss 4 Maccabees or the argument that atonement theology derives specifically from Hellenistic Judaism's martyrdom doctrine (rather than purely Jewish sacrificial theology). The identification of 4 Maccabees as 'an astonishing Stoic philosophical tract' is a new argument with new evidence showing Greek philosophy embedded in Jewish theological concepts before Christianity."
+  },
+  {
+    "finding_id": "GH_N4DubZ58_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2 (Augustus divi filius), 5 (Justin Martyr comparison), and 25 (Son of God as standard Hellenistic ruler title) cover the competitive use of Son of God between Caesar and Jesus."
+  },
+  {
+    "finding_id": "GH_N4DubZ58_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Son of God as competitive title (items 2, 5, 25). However, the specific Caesarea Philippi scene (Mark 8:27-29) with its geographical setting among pagan shrines and multiple divine claimants is not cited in the inventory. This is new textual evidence for the existing competitive-title argument."
+  },
+  {
+    "finding_id": "GLBbPMUfiLw_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 5 explicitly covers Justin Martyr, First Apology 21-22: 'Christians propound nothing different from what you believe regarding those whom you esteem sons of Zeus (Mercury, Asclepius, Bacchus, Hercules, Perseus, Bellerophon).' This is a direct quote match."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Kingdom of God is political institution with jurisdictional authority (items 41-48). However, the specific comparison of Jesus and Osiris both functioning as 'King of the afterlife'\u2014with the jurisdiction extending to the afterworld\u2014is not in the inventory. This is new evidence from Egyptian theology for the existing political-kingdom argument."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_4",
+    "verdict": "wrong_chapter",
+    "justification": "Bread/wine identification with Osiris and harvest deity theology belongs in Chapter 4 (John's Eucharist) or Chapter 5 (Pauline Eucharist). Ch4 item 15 covers John's omission of Eucharist as already-established Dionysian tradition."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 50 covers Mary's royal imagery and item 51 covers Seleucid annunciation parallel. However, Cooney's specific Egyptian theological argument\u2014that virgin birth represents divine self-creation, the god 'impregnating himself into a female vessel'\u2014is new evidence from Egyptian theology not in the inventory."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_6",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss Jesus's apparent sexlessness or the Osiris castration parallel. The argument that divine kingship required transcendence of ordinary sexuality\u2014with Osiris's lost/recreated penis and Jesus's gospel sexlessness/eunuch sayings\u2014is a novel argument with novel evidence not in any chapter inventory."
+  },
+  {
+    "finding_id": "GWZQRroXurI_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2, 25, 35-39 extensively cover the Hellenistic practice of attributing divine parentage to rulers across multiple dynasties (Ptolemaic, Seleucid, Macedonian, etc.)."
+  },
+  {
+    "finding_id": "GaE5PG8gbnE_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Hellenistic divine figures (item 5, Justin Martyr: Heracles, Asclepius, Dionysus). However, the specific dying-god parallels with Baal, Osiris, and Adonis\u2014and their respective divine consorts who resurrect them (Anat, Isis, Aphrodite)\u2014are not cited in the inventory. These provide new comparative evidence."
+  },
+  {
+    "finding_id": "GvXDKhP4uck_2",
+    "verdict": "wrong_chapter",
+    "justification": "The scholarly neglect of mimesis in NT studies belongs in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "HTxCDqbc0Zw_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 6 covers Psalm 2:7 as royal investiture formula applied at three events (annunciation, baptism, resurrection), showing the progressive application of the title. The development from adoptionist to higher Christology is structurally embedded in the chapter."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_4",
+    "verdict": "wrong_chapter",
+    "justification": "The literary construction of Jesus as morally superior to Greek heroes belongs in Chapter 4 (gospel literary analysis and mimesis)."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_5",
+    "verdict": "wrong_chapter",
+    "justification": "Homeric recognition patterns in resurrection narratives belong in Chapter 4 (gospel literary analysis)."
+  },
+  {
+    "finding_id": "H_qQVXRfEz8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues Messiah was political ruler title (item 24) and discusses Jesus's kingship. However, the reconstructed Testimonium Flavianum explicitly identifying Jesus as 'believed to be a king' who 'opposed paying the tax to Caesar' is not cited in the inventory. This is new primary source evidence for the existing argument."
+  },
+  {
+    "finding_id": "H_qQVXRfEz8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues for political understanding of Jesus and his movement. However, the convergent independent testimony of Celsus, Tacitus, Lucian, and Suetonius characterizing Christianity as fundamentally seditious is not cited in the inventory. Per global Q&A, hostile traditions preserve real memory; this is new evidence for the existing political framework."
+  },
+  {
+    "finding_id": "H_qQVXRfEz8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses the political nature of Jesus's movement (items 41-49). However, the specific revolutionary associations of disciples (Simon the Zealot/Kananaios, Boanerges/'sons of thunder,' possible Sicarii links) are not cited in the inventory. This is new evidence for the existing political-movement argument."
+  },
+  {
+    "finding_id": "Hn-pZXFv4as_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers Greek divine figures and apotheosis (items 5, 35-40). However, Miller's specific institutional concept of the cenotaph\u2014a site where translated/deified figures would be venerated\u2014as the framework for understanding the empty tomb is not in the inventory."
+  },
+  {
+    "finding_id": "Hn-pZXFv4as_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 2, 5, and 25 establish that 'Son of God' was standard Hellenistic royal/divine terminology. The point that ancient audiences would read it as 'demigod' is implicit in the chapter's entire framework."
+  },
+  {
+    "finding_id": "Hn-pZXFv4as_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 discusses divine kingship (items 35-40). However, Miller's specific point distinguishing translation (which demands worship) from resuscitation (which does not\u2014cf. Lazarus) is a new analytical distinction not in the inventory. This refines the existing argument about resurrection as deification."
+  },
+  {
+    "finding_id": "Hn-pZXFv4as_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the prodigies (earthquake, darkness at crucifixion) as a structured literary pattern associated specifically with Greco-Roman translation narratives. This is a new argument with new evidence linking the passion narrative's natural phenomena to a specific Hellenistic literary convention."
+  },
+  {
+    "finding_id": "Hn-pZXFv4as_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "Ch3 does not discuss the Great Commission (Matthew 28:19-20) or its parallel to Romulus's commission to Julius Proculus. This is a new argument (post-translation mandate as Hellenistic convention) with new evidence (Romulus-Proculus commission) not in any chapter inventory."
+  },
+  {
+    "finding_id": "HyrMTaYivIo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 argues titles were pre-existing political terms (item 2) and covers Hellenistic divine kingship (items 35-40). However, the specific 'sacred king myth' pattern (young warrior god, chaos battle, ritual humiliation/death, annual resurrection for covenant renewal) from Mesopotamian and Levantine cultures is not in the inventory as a structured pattern. This provides new comparative evidence."
+  },
+  {
+    "finding_id": "I4JPa4vV7Is_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 inventory item 9 discusses the identification of God the Father with YHWH as not fixed. However, the specific Platonic-influenced divine hierarchy where Yahweh functions as one of many lesser 'sons of God' under a Supreme Eternal God is not in the inventory. This is new evidence for the existing argument about fluid divine identity."
+  },
+  {
+    "finding_id": "I9pntl2zpaU_0",
+    "verdict": "covered",
+    "justification": "Ch3 inventory item 35 covers 'Alexander the Great claimed divine sonship through Zeus-Ammon at Siwa and received cult during his lifetime' with 'Cities honored him as god during lifetime.'"
+  },
+  {
+    "finding_id": "I9pntl2zpaU_1",
+    "verdict": "covered",
+    "justification": "Ch3 inventory items 35-39 cover divine parentage claims across Ptolemaic (Egyptian), Seleucid (Apollo), Macedonian (Zeus), and other dynasties. The cross-cultural comparison of divine parentage claims is directly in the inventory."
+  },
+  {
+    "finding_id": "ICKWpqzo59E_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch3 covers apotheosis patterns (items 5, 35-40). However, Miller's specific concept of the 'translation fable'\u2014a defined genre where a mortal ascends and undergoes metamorphosis to higher divine status\u2014is a new generic categorization not in the inventory. This provides a specific literary framework for the existing argument."
+  }
+]

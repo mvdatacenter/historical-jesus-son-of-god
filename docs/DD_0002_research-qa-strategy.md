@@ -90,6 +90,28 @@ Not: "Does this chapter mention the same keywords as the finding?" A finding abo
 
 **Output:** `sources/coverage/ch{N}_inventory.json` (inventories), `sources/extraction_review.html` (verdicts displayed in the review UI with justifications visible per finding)
 
+#### Redistribution of `wrong_chapter` findings
+
+After the main Step 1 evaluation, findings marked `wrong_chapter` are redistributed to their target chapters and re-evaluated. This runs in rounds:
+
+**Round 1.** `build_coverage.py --redistribute` collects all `wrong_chapter` verdicts, parses the target chapter from each justification, groups findings by target, and writes redistribution batch files (`ch{N}_findings_redistrib_r1.json`). Each batch is evaluated by an agent reading the target chapter's text, inventory, and Q&A. Output: `ch{N}_step1_redistrib_r1.json`.
+
+**Round 2+.** `build_coverage.py --redistribute --round 2` repeats the process for findings that were marked `wrong_chapter` again in round 1. Ping-pong detection blocks findings that would return to a chapter they already visited. Maximum 3 rounds (`MAX_REDISTRIB_ROUNDS`).
+
+**Forced resolution of unplaceable findings.** If findings are still bouncing after round 2 (including ping-pong findings blocked from re-entry), they are resolved by forced assignment:
+
+1. Group unresolved findings by their two candidate chapters (the chapter pair they've been bouncing between).
+2. For each pair, launch an agent that reads BOTH full chapter texts and the findings.
+3. The agent MUST assign each finding to exactly one of the two chapters — `wrong_chapter` is forbidden. It picks the better home and assigns a standard verdict.
+4. Output: `ch{A}_ch{B}_resolved.json` with `assigned_chapter` field.
+
+**Dropping findings is forbidden.** If the pipeline cannot place a finding, the pipeline has a gap — the finding does not become worthless. Unplaceable findings either reveal a gap in the book's argument structure or were misclassified by evaluators matching on keywords rather than arguments. The forced resolution step exists to make a decision, and if the decision is wrong, Step 2 catches it.
+
+**Output files:**
+- Redistribution inputs: `sources/coverage/ch{N}_findings_redistrib_r{round}.json`
+- Redistribution verdicts: `sources/coverage/ch{N}_step1_redistrib_r{round}.json`
+- Forced resolution: `sources/coverage/ch{A}_ch{B}_resolved.json`
+
 ### Step 2: Embedding Attempt
 
 **Question:** Does the book actually need this? Not every true and new statement belongs in the book.

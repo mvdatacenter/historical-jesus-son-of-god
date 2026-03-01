@@ -1,0 +1,14 @@
+[
+  {
+    "finding_id": "Jor0oevcEK8_5",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues extensively that Hellenistic Greek culture shaped Jewish institutions, including the royal and cultic contexts Jesus was born into. It discusses the birth dating of Jesus, the Magi scene with its astronomical terminology, and the broader Greco-Christian framework. The Migdal stone finding — a Jewish cultic artifact encoding precise planetary positions from April 17, 6 BCE — directly strengthens the chapter 2 argument that Greek astronomical knowledge was embedded in Jewish cultic practice in the period and region of Jesus's birth. The specific date (6 BCE) also bears on the birth-dating discussion in chapter 2. Chapter 4 focuses on gospel authorship and textual reliability; it has no existing argument about Jewish cult artifacts or the astronomical-cultic Hellenization argument this evidence serves."
+  },
+  {
+    "finding_id": "gkBlG7_n0Ng_0",
+    "assigned_chapter": 4,
+    "verdict": "covered",
+    "justification": "Chapter 4 already contains this material verbatim. Lines 409-418 of chapter4.tex quote Luke 8 directly — 'Mary (called Magdalene) from whom seven demons had come out; Joanna the wife of Chuza, the manager of Herod's household; Susanna; and many others. These women were helping to support them out of their own means' — and explicitly analyzes Joanna's court connection and the three women's financial support of Jesus's ministry. The finding adds no new evidence or argument beyond what chapter 4 already presents. Assigning it to chapter 2 would be wrong: chapter 2 covers royal lineage and dynastic background, not the Johannine authorship argument that gives this passage its argumentative weight in chapter 4."
+  }
+]

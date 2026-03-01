@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "G76n_w3MZIE_0",
+    "verdict": "covered",
+    "justification": "Ch3 'Halo' section (lines 272-287) already covers the halo as solar disk with connections to Ra, pharaonic imagery, and Indian prabhamandala. The finding's specific evidence (halos borrowed from Greco-Roman iconography signifying divine glory) is the same argument and evidence the book presents in ch3."
+  },
+  {
+    "finding_id": "GuSjdGhxxrU_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 10 (lines 141-149) argues Eastern Mediterranean convergence including Stoic logos and Platonic One shaping Christian theology. The specific evidence here \u2014 Holy Spirit personification influenced by Greek Sophia \u2014 is a specific example not present in the chapter. The argument (Greek philosophical categories shaped Christian theology) exists; the specific Sophia-Spirit connection does not."
+  },
+  {
+    "finding_id": "HwGBQaafIaU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Tertullian coining trinitas (inventory item 24, lines 372-377) and mentions apologists framing doctrine for pagan audiences. The specific quote about 2nd-century apologists 'philosophizing the gospel for the Greco-Roman Intelligentsia' with the Trinity as an overarching framework is new supporting evidence for the existing argument about Church Fathers embedding Christianity in Hellenistic frameworks."
+  },
+  {
+    "finding_id": "Kde9uUy13uU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 8 (lines 115-129) covers bidirectional cultural exchange between Greeks, Egyptians, and Jews. The specific evidence that demons/Satan/hell derived from 1 Enoch (itself influenced by Greco-Roman thought) and that rabbinical Judaism explicitly rejected these while Christianity retained them is new specific evidence for the existing Greco-Christian framework argument."
+  },
+  {
+    "finding_id": "ON82Wea4qcM_3",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 26 (Athanasius, lines 388-394) explicitly covers theosis doctrine with the quote 'God became man so that we might become god' and the Greek philosophical vocabulary (homoousios) underlying it. The finding's evidence about Eastern Orthodox theosis as continuity of Greco-Roman theological concepts is the same argument and evidence already in the chapter."
+  },
+  {
+    "finding_id": "R8Q4td89VOA_2",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 5 (lines 76-77) explicitly states 'Early Christian catacomb art uses Mediterranean imperial symbols (anchors, fish, dolphins, tridents) identical to Flavian imperial coinage.' The finding about catacomb depictions showing followers 'operating in Greco Roman society and appealing to the Canons of Greco Roman art' is the same argument and same evidence category."
+  },
+  {
+    "finding_id": "S-vCFtKxc9I_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Church Fathers embedding Christianity in Hellenistic frameworks (multiple inventory items). However, the specific evidence about Augustine abandoning corporeal deity conception \u2014 and Judaism not achieving this until Maimonides \u2014 is a specific mechanism/timeline not present in the chapter. The argument exists; this specific Augustine-Maimonides contrast is new evidence."
+  },
+  {
+    "finding_id": "UXdT0A9Sbyo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek philosophical frameworks. The specific evidence here \u2014 Church Fathers debating ensoulment using Aristotelian, Epicurean, Pythagorean frameworks, with Augustine adopting the Aristotelian position \u2014 is a concrete doctrinal example not present in the chapter inventory. Existing argument, new specific evidence."
+  },
+  {
+    "finding_id": "Ut_nc3puB4A_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek philosophy shaped Christian theology (inventory items 10, 22, 24, 26). The specific claim that Greek philosophy was 'the main catalyst' for concepts like omnipresence and immateriality pervading early Christianity is new supporting evidence for this existing argument."
+  },
+  {
+    "finding_id": "VA3gIBVxrTo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 24 covers Tertullian framing doctrine for pagans and item 32 covers Clement's integration. The specific evidence about apologists bringing 'heavy philosophical frameworks' to produce the Trinity as 'a philosophical rationalization for divine image logic' by the 4th century is new supporting evidence for the existing argument."
+  },
+  {
+    "finding_id": "VnP3DXTw41k_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 24 (Tertullian, lines 372-377) covers Tertullian coining trinitas. The specific framing that 'the Trinity is a philosophical innovation of the 2nd through 5th centuries CE' is a concise restatement, but the argument already exists. However, the chapter does not have this specific McClellan quote as evidence, so it qualifies as new evidence for an existing argument."
+  },
+  {
+    "finding_id": "VtXjhBDO4qo_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as UXdT0A9Sbyo_0 \u2014 ensoulment debate using Greek philosophical positions (Aristotelian, Pythagorean, Stoic). Ch6 argues Greek philosophy shaped early Christianity but does not use the ensoulment debate as evidence. New specific evidence for existing argument."
+  },
+  {
+    "finding_id": "bxSbAXPQRlY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 8 covers bidirectional cultural exchange. The specific evidence about the divine council hierarchy transforming into the Christian angelic hierarchy \u2014 patron deities becoming guardian angels \u2014 is a new specific mechanism not in the chapter. Existing argument about Greek theological frameworks carrying into Christianity; new evidence about the angelic hierarchy."
+  },
+  {
+    "finding_id": "cX_N84RU8Hg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Trinity development (item 24) and Constantine's political role (item 20, 25). The specific evidence about imperial enforcement ('sign on the dotted line or you're going to be exiled') as mechanism for Trinity adoption is new evidence. The argument that Church Fathers developed theology within Hellenistic political institutions exists."
+  },
+  {
+    "finding_id": "capFR8VyXFQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity was shaped by Greco-Roman influences (multiple items). The specific evidence about Satan's transformation from Hebrew office-title to Greco-Roman personal name for a malevolent angel is a new specific example not present in ch6. The argument exists; this etymological-theological evolution is new evidence."
+  },
+  {
+    "finding_id": "dN6LMCqEg9o_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Duplicate evidence with VtXjhBDO4qo_0 and UXdT0A9Sbyo_0 \u2014 ensoulment debate using Greek philosophical frameworks. Ch6 argues Greek philosophy shaped Christianity but does not cite ensoulment as evidence. New evidence for existing argument."
+  },
+  {
+    "finding_id": "f4o4hH_7btY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers developed theology through Greek frameworks. The specific evidence about Justin and Irenaeus developing the protoevangelium interpretation of Genesis 3:15 (identifying the serpent with Satan as a post-biblical innovation) is a new specific example. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "gDhhXbw3OUQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 10 covers convergence of Stoic logos and Platonic philosophy. The specific evidence about 2 Peter merging Platonic and Stoic cosmological philosophy with Jewish eschatological theology (destruction by fire) is a new specific textual example not in the chapter."
+  },
+  {
+    "finding_id": "i6sD4Mc2-m8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers developed theology through philosophical innovation. The specific evidence about creation ex nihilo being developed by Christian apologists in the late 2nd century (not inherited from Jewish thought) is a new specific doctrinal example. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "iY4LBoDskoA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 26 covers homoousios debate and Greek philosophical vocabulary. The specific evidence tracing the progressive adoption of prosopon, ousia, hypostasis \u2014 and the move toward middle Platonic notion of multiple hypotheses within a single ousia \u2014 is more granular philosophical detail than the chapter currently provides. New evidence for existing argument."
+  },
+  {
+    "finding_id": "osAPYZywZzk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same ensoulment evidence cluster as VtXjhBDO4qo_0, UXdT0A9Sbyo_0, dN6LMCqEg9o_0. Ch6 does not use ensoulment debate as evidence. New evidence for existing argument."
+  },
+  {
+    "finding_id": "rKyR-KTZu9c_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same ensoulment evidence cluster. Additional specific angle: Christianity retained Greek philosophical commitments while mainstream Judaism abandoned them during Rabbinic period. This Christianity-retained/Judaism-abandoned contrast is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "rMaXRsIgR_4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same ensoulment evidence cluster. Augustine settling on Aristotelian position is new supporting detail. New evidence for existing argument."
+  },
+  {
+    "finding_id": "rs_qMrRIysE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Trinity development (item 24, Tertullian). The specific evidence about the Trinity developing 'between the second and the fifth centuries CE' to 'make the gospel more palatable to the Greco-Roman world' is new supporting evidence for the existing argument."
+  },
+  {
+    "finding_id": "tYNRD2hC4yI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek frameworks. The specific evidence about the Trinity becoming 'a central identity marker, a costly signal, a credibility enhancing display, a way to police and to structure power and values and boundaries' \u2014 the political/institutional dimension of Trinity development \u2014 is new evidence not in the chapter. Existing argument, new institutional-power evidence."
+  },
+  {
+    "finding_id": "u3EeNfu2Ciw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 13 (Celsus testimony) and item 22 (Origen) cover some engagement with pagan critique. The specific evidence about the transformation of Satan as a personal divine being being 'an innovation of Greco Roman period Judaism' further developed in the NT is the same evidence cluster as capFR8VyXFQ_0. New evidence for existing argument."
+  },
+  {
+    "finding_id": "wk656UvZoH0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues early Christianity operated within Greco-Roman frameworks. Pliny's letter describing Christians singing hymns to Jesus 'as if to a god' is a specific primary source not cited in ch6. However, ch5 covers Christianity's visibility to Roman authorities (lines 476-489). The evidence appears in neither chapter's inventory. New evidence for existing ch6 argument."
+  },
+  {
+    "finding_id": "x1f88Qn8y9I_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity was shaped by Hellenistic context. The specific evidence about the concept of hell/eternal divine punishment developing specifically during the Greco-Roman period (with three different NT concepts of divine punishment) is a new specific example not in the chapter. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "ysSWpO9UniU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 10 covers convergence of Stoic logos, Platonic One, and God of Israel. The specific evidence about John adopting 'a philonic notion of the word as an emanation from God' and the shift from corporeal to incorporeal God driven by Platonic philosophy is new specific evidence. Ch3 item on Logos (lines 486-504) covers Logos concept generally but not this specific Platonic transition narrative. New evidence for existing argument."
+  },
+  {
+    "finding_id": "yypZTYYzNgs_0",
+    "verdict": "covered",
+    "justification": "Ch3 'Halo' section (lines 272-287) covers the halo as solar disk borrowed into Christian iconography. This finding's evidence \u2014 halo becoming standard in 4th century CE when borrowed from Greco-Roman artistic conventions \u2014 is the same argument and evidence already in ch3."
+  },
+  {
+    "finding_id": "0Qe68mIeCHY_0",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 20 (Chi-Rho, lines 292-305) and item 25 (Eusebius, lines 379-386) cover Constantine's Christianization and the institutional parallels. Ch5 cross-chapter inventory covers Christianity mirroring Roman institutional structures. The specific evidence about pope-emperor and bishop-governor parallels is covered in ch5 'Why Irenaeus Was Not Wrong' section and ch6's Constantine section."
+  },
+  {
+    "finding_id": "0Qe68mIeCHY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Constantine's political use of Christianity (items 20, 25, 28). The specific argument that Luke-Acts represents 'the first step towards Constantine' by presenting unified Christianity with no Peter-Paul conflict is a new specific literary-political mechanism. Ch5 covers Acts but not this specific 'proto-Constantinian' reading. New evidence for existing argument."
+  },
+  {
+    "finding_id": "0WEJSsiZIGA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted Greco-Roman frameworks. The specific evidence about Jerome documenting Constantine's mother selecting Bethlehem on a site previously sacred to Adonis (with women mourning the god) is a specific primary source not in the chapter. Existing argument about sacred space continuity; new Jerome/Bethlehem/Adonis evidence."
+  },
+  {
+    "finding_id": "1CxiaR4Q4-U_1",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 20 (Chi-Rho and Constantine, lines 292-305) covers Constantine's political use of Christianity. Item 25 (Eusebius, lines 379-386) covers Constantine's rise as fulfillment of God's plan. The specific evidence about Constantine wanting 'something that can unite my people' and the first state-funded conference of bishops is covered by the existing argument about Constantine's political motivation."
+  },
+  {
+    "finding_id": "1P7KJClgwwk_0",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 25 (Eusebius, lines 379-386) explicitly covers 'Eusebius explicitly presented Constantine's rise as fulfillment of God's plan for the empire.' The specific evidence about Eusebius defending 'Hellenistic Christianity' for Constantine is the same argument and same Church Father already in the chapter."
+  },
+  {
+    "finding_id": "1P7KJClgwwk_1",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 20 (lines 292-305) covers Constantine and Christianity. The specific evidence about Constantine being simultaneously Pontifex Maximus of Sol Invictus is already addressed in the chapter's discussion of Constantine's political-theological role. Multiple cross-chapter items also cover this (ch5 inventory)."
+  },
+  {
+    "finding_id": "1P7KJClgwwk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Constantine's role in establishing Christian empire (items 20, 25). The specific evidence about Constantine's tomb design \u2014 12 apostles' relics arranged in a circle with his own at the apex \u2014 is a specific archaeological/architectural detail not present in the chapter. New evidence for existing argument about Constantine's imperial-theological self-presentation."
+  },
+  {
+    "finding_id": "1P7KJClgwwk_3",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 25 (Eusebius, lines 379-386) covers Eusebius's role. The characterization of Eusebius as 'propagandist and press secretary for Constantine' restates the existing argument without adding new specific evidence beyond what the chapter already presents about Eusebius's apologetic function."
+  },
+  {
+    "finding_id": "2XxdrmqFRV0_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers positioned Christianity within Hellenistic frameworks. Justin Martyr is not currently cited in ch6 inventory with the specific evidence of comparing Jesus to 'sons of Jupiter' with eyewitness testimony parallels to Caesar apotheosis traditions. This is new specific evidence for the existing argument."
+  },
+  {
+    "finding_id": "2xrtEKOcyDI_4",
+    "verdict": "not_relevant",
+    "justification": "The finding raises the hypothesis of Roman involvement in NT development as a question worth considering. This is too speculative and vague to bear on any specific argument in the book. No specific evidence is presented \u2014 just a willingness to 'not presuppose' Rome wasn't involved."
+  },
+  {
+    "finding_id": "3mwsMxsBjWk_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 17 (lines 213-248) covers the ekklesia network matching revolting cities. The specific evidence about early Christians being 'extraordinarily entrepreneurial' in exploiting Roman roads and postal networks to create 'advanced international cellular networks' is new supporting evidence for the existing argument about ekklesiai as political infrastructure."
+  },
+  {
+    "finding_id": "44Pafikl0dI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity was a political-theological restoration movement. The specific evidence about Roman policy of redefining conquered peoples' religion (paralleling Persian reconstruction of Temple through Ezra) is a new historical parallel. The argument exists; this imperial religious assimilation precedent is new evidence."
+  },
+  {
+    "finding_id": "4KK4z5fT8xg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement of Alexandria, lines 478-485) covers mystery cult patterns. The specific evidence from Harnack's analysis \u2014 that Catholic Christianity synthesized mystery religions (sacramental initiation), hero cults (narrative patterns), and other popular forms \u2014 is new scholarly framework evidence. Note global Q&A: the mystery cult framing is rejected in favor of imperial cult under foreign rule, but the institutional data is valid. New evidence needing reframing."
+  },
+  {
+    "finding_id": "4onTuAzMwwU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity developed within Hellenistic frameworks. The specific evidence that the NT canon's 27 books were selected based on compatibility with 'emerging Hellenistic Christianity' is a new specific claim about canon formation not present in ch6. Existing argument, new evidence about canon selection criteria."
+  },
+  {
+    "finding_id": "5NS5CscsrFY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement of Alexandria). The specific evidence about the Naassene teacher adapting Homeric hymns to Attis as hymns to Jesus, and creating a syncretic hymn identifying Jesus with Osiris, Attis, Adonis, and Dionysus, is new specific evidence. Existing argument about Hellenistic framework adoption; new Naassene syncretic evidence."
+  },
+  {
+    "finding_id": "5NS5CscsrFY_2",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 26 (Athanasius, lines 388-394) explicitly covers theosis with the quote 'God became man so that we might become god.' The finding's evidence about Ignatius's letters emphasizing dying to attain union with God is a different Church Father expressing the same doctrine. The argument (theosis as Greco-Roman continuity) and the core evidence (deification doctrine in early Christianity) are already covered."
+  },
+  {
+    "finding_id": "5WrZnOVYy7U_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 8 covers bidirectional cultural exchange. The specific evidence about Alexandrian exegesis mapping theos to the ideal divine realm and kyrios to the earthly kingly/imperial realm \u2014 with kyrios as the emperor's title \u2014 is new specific linguistic-theological evidence not in the chapter."
+  },
+  {
+    "finding_id": "5WrZnOVYy7U_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity mirrored Hellenistic institutions. The specific evidence about 1 Timothy structuring Christian communities 'exactly like the patriarchal Roman household' with men-women-children-enslaved hierarchy is a specific textual example not in ch6. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "5Z_cSmy3CbI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Constantine-era Christianity (items 20, 25). The specific evidence about Vestal Virgins becoming nuns and Christians 'still acting like the Roman Imperial cult' is new specific institutional continuity evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "5kI6tecz_yc_2",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about Roman governors repeatedly validating Christians as law-abiding in Acts belongs in chapter 5, which covers Acts extensively (cross-chapter inventory: 'Are Acts a work of fiction?' lines 36-63, and multiple subsections on Acts). Ch5 already discusses Acts as presenting Christianity as compatible with Roman governance."
+  },
+  {
+    "finding_id": "5kI6tecz_yc_3",
+    "verdict": "wrong_chapter",
+    "justification": "This finding about Acts systematically responding to Greco-Roman accusations (atheism, anti-social, secret meetings) belongs in chapter 5, which covers Acts extensively. Ch5 inventory includes 'Christianity was uniquely legible to Roman authorities' (lines 476-489) and 'Minimal resistance to acceptance' (lines 450-459)."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The finding identifies a heretical Christian sect suppressed specifically for studying Greek philosophical texts (Galen, Aristotle, Euclid). This is neither the argument (that some Christian communities valued and studied Greek philosophical learning to the point of being suppressed for it) nor the evidence (a specific sect reference from an unnamed source) present anywhere in the book. Both argument and evidence are new."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_4",
+    "verdict": "not_relevant",
+    "justification": "Manichaeism as a syncretic Christian-Chinese-Greek movement is tangential. Ch6 focuses on the early Christian church's relationship to Hellenistic political institutions, not on later syncretic movements. Manichaeism is too far removed chronologically and geographically from the book's core argument to add value."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 10 covers philosophical convergence. The specific evidence that eclectic philosophy was the normal intellectual practice in the Greco-Roman world \u2014 even Stoics like Seneca recommended drawing from all schools \u2014 is new contextual evidence for the existing argument about Christianity's eclectic philosophical integration."
+  },
+  {
+    "finding_id": "6CK1s04dU70_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement of Alexandria, lines 478-485) covers Clement's integration of Greek philosophy. The specific evidence about Clement, Epiphanius, and Saint Gregory documenting ritual initiatory dances in early Christianity is new evidence not in the chapter. Existing argument about Hellenistic institutional patterns; new evidence about ritual dances."
+  },
+  {
+    "finding_id": "6y_voqOVCsE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity emerged in Greek-speaking cities with established Greco-Roman institutions. The specific evidence about Romulus temples existing 'in most of the major cities where Christianity sprung up' is new specific evidence showing the pervasiveness of imperial cult infrastructure where Christianity emerged."
+  },
+  {
+    "finding_id": "7TjVjfspg4Q_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 24 (Tertullian, lines 372-377) mentions Tertullian but covers trinitas and framing for pagans. The specific evidence that Tertullian formalized physical resurrection doctrine based on his Stoic materialist philosophical commitments \u2014 showing Greek philosophy directly shaping core doctrine \u2014 is new specific evidence. Existing argument, new Tertullian-Stoic-resurrection evidence."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_6",
+    "verdict": "wrong_chapter",
+    "justification": "The Magnificat as a political document about liberation from oppression, and Luke-Acts as epic \u2014 this belongs in chapter 5 which extensively covers Luke-Acts, or chapter 4 which covers gospel analysis. Ch6 does not focus on gospel literary analysis."
+  },
+  {
+    "finding_id": "8AHBLoFdL1g_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. The specific evidence from Richard C. Miller's work showing early Church Fathers explicitly equating Christianity to 'sons of Zeus, Dionysus, Asclepius, Hercules' and their apotheosis traditions is new scholarly evidence. Existing argument, new systematic compilation evidence."
+  },
+  {
+    "finding_id": "Ae_P81kJ2Pg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Hellenistic frameworks. The specific evidence about Christianity absorbing Platonic philosophy and fitting 'right into a pagan nation' where Constantine could make it legal is new supporting evidence, though the argument is covered by items 20, 25, 28."
+  },
+  {
+    "finding_id": "B3dz9PY1Y10_2",
+    "verdict": "wrong_chapter",
+    "justification": "The argument that Mark and Luke-Acts are 'myths of Origins' like Virgil's Aeneid, meant as culturally engaging rather than historical, belongs in chapter 4 (gospel analysis) or chapter 1 (mythical figure model). Ch1 cross-chapter inventory includes 'Jesus' story has dense parallels to pagan myths' (lines 97-114)."
+  },
+  {
+    "finding_id": "B9XDf1YrKqc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement of Alexandria, lines 478-485) covers Clement's integration of Greek philosophy. The specific evidence about Clement reinterpreting Dionysian mystery religion and comparing the Eucharist to Dionysian flesh-eating consumption rites in Protrepticus chapter 2 is new specific textual evidence. Existing argument about Clement; new Dionysian-Eucharist evidence."
+  },
+  {
+    "finding_id": "B9XDf1YrKqc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr acknowledging 'striking parallels between Dionysian and Christian narratives' (virgin birth, resurrection) is new specific evidence. Justin is not currently in ch6 inventory."
+  },
+  {
+    "finding_id": "B9XDf1YrKqc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as 5NS5CscsrFY_1 \u2014 Naassenes identifying Jesus as fulfillment of pre-Christian Greek mystery religions. New specific evidence for existing argument."
+  },
+  {
+    "finding_id": "BQm08MZS5Rs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Irenaeus (item 23, lines 354-370) focusing on millennialist eschatology. The specific evidence about Irenaeus consolidating Orthodox Christianity through canonical decisions aligned with Roman political power \u2014 selecting texts whose 'trajectory headed straight to Rome' \u2014 is a new institutional-political dimension of Irenaeus not in the chapter. Existing argument, new political-canon evidence."
+  },
+  {
+    "finding_id": "BYOuSQgO9vA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues early Christians engaged with Greek mythology. The specific evidence about Kaslovski noting early Christian groups (including Naassenes) were 'not allergic to Greek mythology' and Church Fathers recognizing parallels between the ram in Genesis 22 and Jesus is new specific evidence."
+  },
+  {
+    "finding_id": "C4oocCxJEdg_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers positioned Christianity within Hellenistic frameworks. Justin Martyr's 'nothing new' principle \u2014 claiming Christianity merely applied existing Mediterranean religious frameworks \u2014 is a specific apologetic strategy not detailed in ch6. New evidence for existing argument."
+  },
+  {
+    "finding_id": "C7BVVUimK4M_2",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 21 (Revelation, lines 307-332) explicitly covers Revelation identifying Rome as Babylon/the beast and envisioning replacement of Roman imperium with divine imperium. The specific evidence about Revelation using Nebuchadnezzar's forced worship as template for the Beast is the same textual material. Covered in both argument and evidence."
+  },
+  {
+    "finding_id": "C80zV5KbY2M_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek literary frameworks shaped Christian theology. The specific evidence about Byzantine homerocentones (poems composed of Homeric verses) \u2014 using 13 lines of Polyphemus's introduction for the Garasene demoniac's cave \u2014 is new specific literary evidence. The argument exists in the broad framework; this specific homerocentones evidence is new."
+  },
+  {
+    "finding_id": "CsovC_zw2sw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity mirrored Hellenistic political institutions. The specific evidence about Peter as Jesus's 'vice regent on earth' \u2014 using political-administrative terminology of vice-regency \u2014 is a new specific linguistic example. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 5 (lines 76-77) covers Flavian imperial symbols in Christian catacombs. The specific evidence about Flavian emperors using Ptolemaic Serapis imagery on official coins \u2014 demonstrating continuity from Ptolemies through Flavians \u2014 is new specific numismatic evidence showing the longer chain of political-religious continuity."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 8 covers bidirectional cultural exchange. The specific evidence about intermarriage between Ptolemaic, Herodian, and Philo's families creating unified Greco-Jewish institutional networks is new specific evidence. Ch2 cross-chapter covers Philo connection. New evidence relevant to both ch2 and ch6."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity mirrored Hellenistic political institutions. The specific evidence about the fusion of religious office and political power in Greco-Roman institutions ('to be a priest of a Roman God was an official government position') is new institutional precedent evidence."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity used Greek political vocabulary. The specific evidence about charis (grace) being fundamentally a patron-client relationship term from Greco-Roman political vocabulary is a new specific linguistic example. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity operated within Greco-Roman religious institutions. The specific evidence about early Christianity competing directly against the Asclepius healing cult network across cities is new evidence. Existing argument, new Asclepius competition evidence."
+  },
+  {
+    "finding_id": "EbGluHkEXZc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity was shaped by Roman imperial context. The specific evidence about the 'sustained Imperial propaganda of Imperial deification' in the first century \u2014 which gospel authors would have encountered \u2014 is new contextualizing evidence for the existing argument."
+  },
+  {
+    "finding_id": "EbGluHkEXZc_4",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "Ch6 covers imperial deification context. However, the specific argument of 'counter-cultural subversion' \u2014 gospel authors deliberately modeling Jesus using imperial deification patterns while subverting their meanings \u2014 is a different argument from the book's thesis that Christianity was a continuation of imperial cult. The book argues continuity; this argues deliberate counter-narrative. The evidence (imperial deification parallels) already exists in the book, but the conclusion (subversion, not continuation) is new."
+  },
+  {
+    "finding_id": "FDUQFmWNPoU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity used Greek administrative vocabulary. The specific evidence about 'diatogma' (edict) appearing in both the Nazareth Inscription (attributed to Claudius) and Hebrews 11:23 \u2014 a rare Greek administrative word occurring only 8 times \u2014 is new specific linguistic evidence for administrative continuity."
+  },
+  {
+    "finding_id": "FVDSRPcoQtQ_0",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 20 (Constantine, lines 292-305) and item 25 (Eusebius, lines 379-386) cover bishops gaining institutional power under Constantine. The specific evidence about the bishop of Egypt controlling grain supply and receiving military power to enforce orthodoxy is part of the existing coverage of Constantine-era institutional Christianity."
+  },
+  {
+    "finding_id": "G-TKAeDh6ns_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement, lines 478-485) covers Clement's mystery cult patterns. The specific evidence about early Christian baptism mirroring mystery cult structure \u2014 secrets revealed only after initiation \u2014 is new evidence. Note global Q&A rejects 'mystery cult' framing; the institutional data should be reframed as imperial cult under foreign rule."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_9",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Greco-Roman frameworks. The specific evidence about Christianity appropriating Egyptian institutional frameworks while claiming differentiation \u2014 using the Mexico City cathedral/Aztec temple analogy and shared holiday dates and sacred spaces \u2014 is new evidence for institutional continuity."
+  },
+  {
+    "finding_id": "GSEkSCV4fm0_10",
+    "verdict": "not_relevant",
+    "justification": "The argument that Osiris and Jesus religions are patriarchal agricultural systems for resource and labor control is a modern feminist/sociological interpretation that does not bear on the book's specific arguments about Greek political restoration or Hellenistic institutional continuity."
+  },
+  {
+    "finding_id": "GdYTaTzvypI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Constantine's political use of Christianity (items 20, 25, 28). The specific argument that Constantine's institutionalization was a 'protective measure' against Persian Zoroastrian monotheism threatening to dominate Rome is a new specific geopolitical motivation not in the chapter. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "GdYTaTzvypI_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues institutional continuity. The specific evidence about Catholic Church appropriating Mithraic rituals and symbols (Christmas date, bishops' miters from Phrygian cap, Ash Wednesday cross, communion wafers, color schemes) is new specific evidence. Existing argument, new Mithraic evidence."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek frameworks shaped Christianity. The specific evidence about Byzantine Church Fathers (4th-9th centuries) deliberately retelling gospel narratives using Homer and Euripides \u2014 and John Chrysostom's sermons explicitly equating gospel stories with the Iliad \u2014 is new specific evidence. Existing argument, new Byzantine literary evidence."
+  },
+  {
+    "finding_id": "HVPEiqS_rcM_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The argument that Western scholarship developed 'intentional amnesia' regarding Greek influence on Christianity \u2014 stopping to read Homer and Euripides while Eastern tradition maintained engagement \u2014 is a new argument about scholarly bias. The evidence (East continued reading Homer, West stopped) is not in the book. Both argument and evidence are new. This is relevant to ch1's discussion of scholarly biases (lines 353-359) and ch6."
+  },
+  {
+    "finding_id": "IY4iax6AQq0_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Eusebius (item 25) and Constantine (item 20). The specific evidence about Constantine-era Christian government commissioning redaction of Josephus's book 18 across civic libraries \u2014 state-sponsored control of historical sources \u2014 is a new specific claim. Note: this is a controversial claim that would need verification. New evidence for existing argument about political-religious fusion."
+  },
+  {
+    "finding_id": "J-gXIlSUUVg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek theological constructs. The specific evidence about Justin Martyr's apologetic strategy \u2014 deliberately employing demigod apotheosis narratives and divine ascension traditions to present Christ as comprehensible within Greco-Roman religion \u2014 is new specific evidence. Justin is not in ch6 inventory."
+  },
+  {
+    "finding_id": "JF2Po8SNnoE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues institutional continuity between Greco-Roman and Christian institutions. The specific archaeological evidence about Christian churches built atop pagan temples with cultural memory connections is new evidence. Existing argument, new archaeological/cultural evidence."
+  },
+  {
+    "finding_id": "JOsGRR-vqUw_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek literary frameworks influenced Christianity. The specific evidence about early Church Fathers recognizing connections between Homer's epics (Odyssey, Iliad) and the Gospels is new supporting evidence for the existing argument."
+  },
+  {
+    "finding_id": "Jkr56WZUTkk_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity was a Greek cultural phenomenon. MacDonald's specific argument that early Christians carved their identity by evoking 'not only Jewish scriptures as the canonical past but also the Homeric epics and Athenian tragedy as a canonical past' is a well-articulated version of the existing argument with new specific framing."
+  },
+  {
+    "finding_id": "Jo-z7OQoV4Q_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement, lines 478-485) covers Clement's Greek philosophy integration. The specific evidence about Clement's Protrepticus using Dionysian language, comparing Christ to Osiris, and Christianizing Orphic-Dionysian mystery traditions is new specific textual evidence. Same as B9XDf1YrKqc_1 evidence cluster."
+  },
+  {
+    "finding_id": "Jo-z7OQoV4Q_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Hellenistic religious frameworks carried into Christianity. The specific evidence about Christian mystical terminology (mystical, mysticism, mystagogical) deriving directly from Eleusinian Mystery cults \u2014 with Kevin Clinton's scholarly documentation \u2014 is new etymological evidence. Existing argument, new linguistic-institutional evidence."
+  },
+  {
+    "finding_id": "KGMXVRjfPW8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues NT authors wrote within Hellenistic frameworks. The specific evidence about Luke writing to 'Theophilus' (possibly addressing God-fearers), and Philo and Josephus adapting sacred texts to Hellenistic frameworks, is partially covered (Philo is in ch6 item 8). The Luke-Theophilus angle is new specific evidence."
+  },
+  {
+    "finding_id": "KT-OT1WPp7I_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Hellenistic frameworks shaped Jewish and Christian presentation. The specific evidence about Josephus presenting Judaism in a revised, 'palatable' form for Roman audiences is new supporting evidence. Ch2 cross-chapter covers Josephus (Testimonium Flavianum, lines 813-848) but not this specific framing."
+  },
+  {
+    "finding_id": "KYdAhZZ9ioI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as C80zV5KbY2M_3 \u2014 Byzantine homerocentones retelling Gospel stories using Homer. MacDonald documenting a sustained Church tradition from 4th century onwards of understanding Gospels through Greek literary frameworks. New evidence for existing argument."
+  },
+  {
+    "finding_id": "LUCm1AqnQVw_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr noting 'uncanny similarities between Christ and Asclepius' is a specific Church Father admission not in ch6 inventory. New evidence for existing argument."
+  },
+  {
+    "finding_id": "LUCm1AqnQVw_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Theophilus of Antioch directly addressing pagan syncretism ('you believe that Heracles who burned himself up is alive') is a new specific Church Father testimony not in ch6. New evidence for existing argument."
+  },
+  {
+    "finding_id": "LrxET9ss0Cg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Greco-Roman frameworks. The specific evidence about Epiphanius identifying an Egyptian god Ion celebrated on January 5th with cross symbols \u2014 the same night as Christian nativity celebration \u2014 is new specific evidence for liturgical-calendar continuity."
+  },
+  {
+    "finding_id": "LrxET9ss0Cg_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Greco-Roman frameworks. The specific evidence about Heraclitus criticizing Dionysian blood purification rituals and Christianity later adopting nearly identical 'salvation through the blood of the lamb' theology is new specific evidence for theological continuity."
+  },
+  {
+    "finding_id": "Mqng7eqM05w_0",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 10 (lines 141-149) covers convergence of philosophical traditions. Ch6 inventory item 32 (Clement of Alexandria, lines 478-485) covers Clement's synthesis. The specific evidence about Church Fathers continuing Philo's synthesis of Hebrew Bible with Greek philosophy is covered by the chapter's discussion of Philo and the philosophical convergence."
+  },
+  {
+    "finding_id": "Mxqc6O1gJNc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr's admission of genuine parallels \u2014 'Yeah, Trifo, you're right. They do look similar' \u2014 and his defense strategy ('which one came first') is new specific evidence showing Church Father awareness. Existing argument, new Justin-Trypho evidence."
+  },
+  {
+    "finding_id": "NOIxiGcnZoo_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted Hellenistic institutional structures. Pervo tracing bishops, presbyters, and deacons as foundational to proto-orthodox Christianity through the Pauline Heritage is partially covered in ch5 (cross-chapter: episkopos, diakonos). For ch6, this is new evidence about how these structures 'provided the major underpinnings to early Catholic Christianity.'"
+  },
+  {
+    "finding_id": "NTK1bX4YfJo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted Greco-Roman institutional patterns. Carrier's description of what a 'Jewish mystery religion' would look like (baptism, mythical savior, death/resurrection, sacred meals, brotherhood, salvation) is new evidence. Note global Q&A: reject mystery cult label, extract institutional data. New evidence needing reframing."
+  },
+  {
+    "finding_id": "NTK1bX4YfJo_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 22 (Origen, lines 334-352) covers Origen's apokatastasis. The specific evidence about Origen understanding the Barabbas narrative through Greek allegorical-symbolic interpretation (Jesus Barabbas and Jesus Christ as antitypes representing the Yom Kippur ceremony) is new specific Origenist evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "O1cxMlDgTa8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity operated within Greco-Roman institutional frameworks. The specific evidence about Sol Invictus as an organized imperial religious institution with structured feasts and maximum chariot races is new evidence showing the imperial-religious infrastructure Christianity inherited."
+  },
+  {
+    "finding_id": "O1cxMlDgTa8_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues institutional continuity. Pope Gregory's directive to 'reconsecrate sacred buildings, sacred temples... keep the pagan structure and just replace the icons' is new specific evidence of deliberate institutional integration. Existing argument, new papal directive evidence."
+  },
+  {
+    "finding_id": "OAKhAT74Tno_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek literary frameworks influenced Christianity. The specific evidence about the Testament of Abraham imitating Plato's myth of Er \u2014 showing Greek philosophical sources permeating even Jewish-Christian writings \u2014 is new specific literary evidence."
+  },
+  {
+    "finding_id": "OoHGF6DIo8k_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr comparing Jesus to Dionysus and Asclepius in patristic literature is new specific evidence. Existing argument, new Justin comparative evidence."
+  },
+  {
+    "finding_id": "OoVnEqNRXGY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 5 (lines 76-77) covers Flavian symbols in catacombs. The specific archaeological evidence about the anchor-dolphin/trident combination being a 'distinctive Flavian imperial trademark' otherwise unique to Flavian emperors \u2014 on Christian gravestones and catacombs \u2014 is more specific archaeological detail than the chapter currently provides. New evidence for existing argument."
+  },
+  {
+    "finding_id": "OoVnEqNRXGY_2",
+    "verdict": "wrong_chapter",
+    "justification": "The argument that Mark rewrote the Passion to 'sanitize Jesus in Roman eyes' belongs in chapter 4 (gospel analysis). Ch4 cross-chapter inventory covers gospel literary analysis extensively."
+  },
+  {
+    "finding_id": "OrzmihdGn3w_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Origen (item 22) but focuses on apokatastasis. The specific evidence from Fredriksen about Justin Martyr and Origen applying Platonic/Neoplatonic philosophy to interpret Christ \u2014 'theology depends on philosophy the way physics depends on math' \u2014 is new specific evidence about the mechanism of Greek philosophy entering Christian theology."
+  },
+  {
+    "finding_id": "OxV6XVY6REY_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek philosophical frameworks. Augustine's critique using Greek philosophy to argue against imagining the divine in human form is new specific evidence about the mechanism. Existing argument, new Augustine evidence."
+  },
+  {
+    "finding_id": "OxV6XVY6REY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 8 covers Philo. The specific evidence about Philo representing the shift toward Greek abstract philosophical frameworks \u2014 describing God 'in more abstract terms Beyond physical and emotional human traits' \u2014 is partially covered (Philo is in item 8). However, the specific framing of this as 'a shift' in theological conception is new supporting evidence."
+  },
+  {
+    "finding_id": "PDB75L2F8b4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 13 covers Celsus's testimony (Origen's Contra Celsum). The specific evidence about Celsus linking Jesus to the Bar Kokhba revolt and understanding Christian messianism through imperial-political frameworks is new specific evidence from the same source. Existing argument, new Celsus evidence."
+  },
+  {
+    "finding_id": "PL5ycfD6Izc_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as C80zV5KbY2M_3 and KYdAhZZ9ioI_0 \u2014 homeric centos, Byzantine Church Fathers recognizing Homer parallels. Additionally mentions Justin Martyr comparing Jesus to Asclepius and Dionysus, and Clement depicting Christ appealing to Dionysus. New evidence for existing argument."
+  },
+  {
+    "finding_id": "PrPoP3e-SAo_2",
+    "verdict": "wrong_chapter",
+    "justification": "The discussion of social identity markers shifting across gospel compositions (Q's Jewish focus, Mark's Greco-Roman focus, Matthew's synthesis) belongs in chapter 4 (gospel analysis) or chapter 5 (Synoptic problem). Not directly relevant to ch6's focus on political restoration and Church Fathers."
+  },
+  {
+    "finding_id": "Q4KlFEkCI1Q_1",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 5 (lines 76-77) covers Flavian symbols in Christian catacombs. The specific evidence about anchor, dolphin, and fish imagery \u2014 and Clement of Alexandria's attribution of these symbols to Seleucid precedent \u2014 is the same evidence category already covered. The Clement/Seleucid attribution adds a detail, but the core argument and evidence are covered."
+  },
+  {
+    "finding_id": "QJ4qY_0YXPw_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. The specific argument about 'narcissism of small differences' \u2014 Church Fathers fiercely denouncing mystery religions while adopting their structural forms \u2014 is a new analytical framework for the existing evidence. Existing argument, new interpretive evidence."
+  },
+  {
+    "finding_id": "RC8hwuwp00o_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as DMmr5ixaXbA_5 \u2014 Church Fathers engaging in direct theological competition with Asclepius healing cult. Stanley documenting 2nd-3rd century rivalry at the cult's pinnacle is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "Rspshd_c7P0_4",
+    "verdict": "wrong_chapter",
+    "justification": "The argument that Mark rewrote the Jesus narrative to obscure political-royal dimensions \u2014 denigrating Jesus's family members and transforming 'Judah' into 'Judas' \u2014 belongs in chapter 4 (gospel literary analysis) or chapter 2 (Jesus's family). Ch4 covers gospel analysis; ch2 covers Jesus's family background."
+  },
+  {
+    "finding_id": "Rspshd_c7P0_5",
+    "verdict": "wrong_chapter",
+    "justification": "Paul transforming 'the Old Testament prophesied Hebrew world king the Messiah into a Greco-Roman High Saviour God the Christ' belongs in chapter 5 (Paul's epistles) or chapter 3 (titles of Jesus). Ch5 covers Paul as imperial envoy; ch3 covers christological titles."
+  },
+  {
+    "finding_id": "S06RM4IsNGg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 25 (Eusebius, lines 379-386) covers Eusebius. The specific evidence about Eusebius transforming an original council of elders into a hierarchical monarchical succession chain of bishops is new specific evidence about the mechanism of institutional transformation. Existing argument, new Eusebius evidence."
+  },
+  {
+    "finding_id": "TNjyqRUc4NM_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 25 covers Eusebius. The specific evidence about Eusebius's Preparatio Evangelica systematically integrating Greek, Phoenician, Egyptian, and Babylonian philosophical and mythological frameworks into Christian interpretation is new specific evidence about the scope of Eusebius's synthesis project. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "TNjyqRUc4NM_3",
+    "verdict": "covered",
+    "justification": "Ch6's central thesis (inventory item 0, lines 1-11) is that Christianity was a Greek political restoration movement. The finding that Christianity 'didn't come out of nowhere and start some new thing, they were part of an evolution' restates the chapter's central argument without adding new specific evidence."
+  },
+  {
+    "finding_id": "U28IuAIH34E_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers recognized Greek literary parallels. The specific evidence about Hippolytus, Clement of Alexandria, and the Gospel of Nicodemus explicitly using Homeric parallels \u2014 plus '600 fragments of Homer vs 5 of Septuagint' showing Homer's cultural dominance \u2014 is new specific evidence. Existing argument, new quantitative and patristic evidence."
+  },
+  {
+    "finding_id": "U28IuAIH34E_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity positioned itself within Greek frameworks. The concept of competitive mimesis \u2014 rewriting Greek epics to show Christian figures as superior, as Genesis competes with Babylonian myths \u2014 is new analytical framework evidence. Existing argument, new mimesis framework."
+  },
+  {
+    "finding_id": "UG7QSv8fhBg_5",
+    "verdict": "covered",
+    "justification": "Ch6 inventory items 20 (Constantine/Chi-Rho) and 25 (Eusebius) cover Constantine making Christianity the state religion. The Pope assuming the title Pontifex Maximus is covered by the existing discussion of institutional continuity. Same argument and evidence."
+  },
+  {
+    "finding_id": "URhU2qdculU_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Greco-Roman frameworks. The specific evidence about Eucharist language ('eat and drink his flesh and blood') as a Greco-Roman cultic mechanism for ongoing connection with a deified/translated figure is new evidence. Ch4 cross-chapter covers Eucharist (John omitting it as already-established Dionysian tradition, lines 678-705). For ch6, this is new evidence about Eucharistic theology as Greco-Roman cultic practice."
+  },
+  {
+    "finding_id": "VWHV7xErzWE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity emerged in Greek-speaking cities. The specific evidence about Corinth being organized around dense networks of cultic institutions, temples, and religious precincts \u2014 a 'smorgasbord of different cultic opportunities' \u2014 is new evidence about the institutional environment into which Christianity integrated. Existing argument, new Corinth evidence."
+  },
+  {
+    "finding_id": "WEVrheGzIaQ_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Chrysostom's specific response to pagan parallels \u2014 God 'sent all of those myths as almost Platonic archetypes' \u2014 is new specific Church Father evidence. Existing argument, new Chrysostom evidence."
+  },
+  {
+    "finding_id": "Wu2anuMfOJg_2",
+    "verdict": "wrong_chapter",
+    "justification": "Adoption theology at baptism (Jesus designated Son of God at baptism) becoming 'adoption heresy' by 4th century belongs in chapter 4 (baptism analysis, lines 1014-1098) or chapter 3 (Son of God title). Ch4 cross-chapter inventory covers 'Baptism as coronation' (lines 1014-1098) and adoption Christology."
+  },
+  {
+    "finding_id": "XNygmVlr6kc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement, lines 478-485) covers Clement's synthesis. The specific evidence about Clement's Protrepticus converting maenads into disciples, identifying Orpheus's song with Jesus's teaching, and treating Sabazius as 'counter-sign' to Christian mysteries is new specific textual evidence. Same as Jo-z7OQoV4Q_0 evidence cluster."
+  },
+  {
+    "finding_id": "Xsdh7pPNn_Q_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity operated within Greco-Roman frameworks. The specific evidence about Acts describing Peter's shadow healing people and Paul's aprons/handkerchiefs healing the sick \u2014 functioning as relics/talismans in Greco-Roman magical tradition \u2014 is new evidence. Existing argument, new Acts-based magical practice evidence."
+  },
+  {
+    "finding_id": "YA43Ssteqi8_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 13 covers Origen's Contra Celsum. The specific evidence from Contra Celsum about the God of Hebrews being invoked by practitioners of magic \u2014 and magical papyri making documents 'indistinguishable as Jewish, Pagan, or Christian' \u2014 is new evidence showing collapsed religious boundaries in practice. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "YIBP_K-l1Rk_2",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 20 (Constantine, lines 292-305) and item 25 (Eusebius, lines 379-386) cover Constantine choosing Christianity because it aligned with imperial governance. Crossan's argument that Constantine chose Christianity because it had been 'romanized' through institutional development is the same argument. The mention of Luke-Acts' role adds a detail but the core argument is covered."
+  },
+  {
+    "finding_id": "YjW7Voz6qd4_1",
+    "verdict": "covered",
+    "justification": "Duplicate of 1P7KJClgwwk_1. Ch6 covers Constantine as Pontifex Maximus and Papacy adopting the title. Same argument and evidence already covered."
+  },
+  {
+    "finding_id": "YwUfy26-alA_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Greco-Roman religious practices. The specific evidence about Epiphanius attesting water-to-wine transformations in temple springs (Kibra, Garesa, Egypt) on January 5-6 \u2014 identical to Christian Epiphany celebrations \u2014 is new specific evidence for liturgical-calendar continuity."
+  },
+  {
+    "finding_id": "YwUfy26-alA_8",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity used Hellenistic frameworks. The specific evidence about Christian adoption theology conflating baptism with deified son-becoming, paralleling the Dionysian Epiphany festival structure \u2014 establishing baptism as a Hellenistic succession rite \u2014 is new evidence. Ch4 covers baptism as coronation (lines 1014-1098) but this specific Dionysian-Epiphany parallel is new."
+  },
+  {
+    "finding_id": "Z8zWq6YgvLE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity inherited Hellenistic political strategies. The specific evidence about Ptolemies blending Greek-Egyptian religion, Julii-Claudii using Greek mythology (Virgil's Aeneid), and Flavians using Judaism \u2014 establishing a continuous pattern of using foreign religions as political control instruments \u2014 is new evidence showing the longer pattern. Existing argument, new systematic evidence."
+  },
+  {
+    "finding_id": "ZDJvuu4Ni9U_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr's explicit comparative theology \u2014 arguing Christian claims about Jesus are 'nothing different than what you say about the sons of Zeus' \u2014 is new specific evidence. Same evidence cluster as 2XxdrmqFRV0_2."
+  },
+  {
+    "finding_id": "ZRSlptJbAqM_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 covers Clement of Alexandria. The specific evidence about Clement comparing biblical characters with Greek mythological figures and Justin Martyr comparing Christian apotheosis with Mercury/Logos is new specific evidence. Existing argument, new comparative evidence."
+  },
+  {
+    "finding_id": "ZRSlptJbAqM_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as C80zV5KbY2M_3 \u2014 Byzantine chintones/homerocentones showing post-apostolic recognition of Homeric patterns in gospels. New evidence for existing argument."
+  },
+  {
+    "finding_id": "ZTNYtJ0Pl9Y_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 22 (Origen, lines 334-352) covers Origen's apokatastasis. The specific evidence about Origen adopting Platonic philosophical frameworks and the four cardinal virtues (wisdom, temperance, justice, courage) to defend Jesus's divinity is new specific evidence about Origen's method. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "Zd6A6sNjcTw_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues biblical theology adopted Greek philosophical frameworks. The specific evidence about the Bible 'paying homage to its Inspirations' from Hellenistic era is new evidence, though vague. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "Zee2wqjXG84_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity used Greek political vocabulary. The specific evidence about 'pistis' (faith) inherently encompassing political allegiance and fidelity \u2014 allegiance to emperor/commander \u2014 and Justin Martyr presenting Christianity as a superior Hellenistic philosophy is new specific linguistic evidence. Existing argument, new pistis evidence."
+  },
+  {
+    "finding_id": "_bP2LgciaZk_0",
+    "verdict": "covered",
+    "justification": "Ch6 inventory items 20 (Constantine) and 25 (Eusebius) cover Constantine granting bishops imperial power. The specific evidence about Irenaeus and Athanasius institutionalizing the church as Creed-Canon-Clergy hierarchy after Constantine is partially covered. However, the specific Creed-Canon-Clergy formulation is detailed enough to be covered by the chapter's discussion of post-Constantinian institutional Christianity."
+  },
+  {
+    "finding_id": "a5UWjV1TMzc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. Justin Martyr's acknowledgment that Christian narratives 'landed squarely within that Trope' of Greek demigod theology is new specific evidence. Same evidence cluster as other Justin Martyr findings."
+  },
+  {
+    "finding_id": "b7jA-Ncz12I_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. The specific evidence about MULTIPLE Church Fathers (Justin Martyr, Tertullian, Origen, Theophilus, Minucius Felix, Arnobius) across 400+ years systematically comparing Jesus to dying-and-rising deities \u2014 with the 'demon' excuse to claim primacy \u2014 is new systematic evidence. The pattern across multiple fathers and centuries is new."
+  },
+  {
+    "finding_id": "cMKNw1zNvFo_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as other Justin Martyr findings \u2014 Justin recognizing Asclepius 'imitated the Prophecies of Christ' and attributing this to the devil. New supporting evidence for existing argument."
+  },
+  {
+    "finding_id": "d1UIn3GXF2w_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 23 (Irenaeus, lines 354-370) covers Irenaeus but focuses on millennialist eschatology. The specific evidence about Irenaeus directly paralleling God's heavenly rule with the bishop's earthly rule \u2014 'one God, one bishop, as God rules the heavens I rule God's people' \u2014 is new specific evidence about the political-theological legitimation mechanism."
+  },
+  {
+    "finding_id": "dzK8v8zM4Ns_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as C80zV5KbY2M_3 \u2014 homerocentones using lines from Iliad 22 to narrate Jesus's death. New evidence for existing argument about Greek literary influence on Christian tradition."
+  },
+  {
+    "finding_id": "e4nM4PJkGZo_7",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers positioned Christianity within Hellenistic frameworks. Justin Martyr's explicit acknowledgment (Apology 1:21) that resurrection narratives are indistinguishable from Greek-Roman mythological patterns is new specific evidence. Same evidence cluster as other Justin findings."
+  },
+  {
+    "finding_id": "e4nM4PJkGZo_8",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted imperial frameworks. The systematic parallels between Roman Imperial apotheosis protocols (empty tomb, eyewitness testimony, public declaration, priestly cult, divine status) and Gospel resurrection narratives is new systematic evidence. Existing argument, new structured comparison."
+  },
+  {
+    "finding_id": "e4nM4PJkGZo_9",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. The specific evidence that Justin, Tertullian, and Origen openly categorized resurrection accounts as 'translation fables' without apologetic defense \u2014 indicating this was uncontested \u2014 is new specific evidence about early Christian self-categorization."
+  },
+  {
+    "finding_id": "eVzECSMT3Js_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity shared frameworks with imperial deification. The specific evidence about Roman emperors (Augustus, Drusilla, Claudius) having eyewitness accounts of ascending to heaven \u2014 paralleling Christian deification claims \u2014 is new evidence showing the shared political-theological framework."
+  },
+  {
+    "finding_id": "eVzECSMT3Js_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 covers Tertullian (item 24, lines 372-377). The specific evidence about Tertullian acknowledging competing imperial deification narratives \u2014 'So many Kings reported to have been received in heaven along with Jupiter' \u2014 is new Tertullian evidence not in the chapter."
+  },
+  {
+    "finding_id": "eWFTGKBd6J8_7",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 1 (lines 13-19) explicitly argues that all early Christian literature was written in Greek because Christianity was a Greek-only religion in its literary foundation. The finding that NT writers possessed 'greco-roman cultural background' and wrote in Greek restates the chapter's argument without adding new specific evidence."
+  },
+  {
+    "finding_id": "fyC60YjR1oE_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek literary frameworks influenced Christianity. The specific evidence about second-century Christians directly citing and quoting Homer (Exegesis of the Soul quoting Odyssey 1 and 4, Naassenes citing Odyssey 24) is new specific textual evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "g01GRPgbR70_6",
+    "verdict": "covered",
+    "justification": "Ch6 inventory items 20 and 25 cover Constantine recognizing institutional parallels between church hierarchy and Roman administration. Crossan's description of Constantine seeing 'a religion that looked kind of just like what he was used to' with pope/emperor and bishop/general parallels restates the existing argument. Same evidence, same argument."
+  },
+  {
+    "finding_id": "gDipkJYn2T8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers engaged with Greco-Roman frameworks. The specific evidence about John Chrysostom condemning Christian amulets (with Alexander the Great's image) while prescribing the sign of the cross for the same protective purpose \u2014 showing functional equivalence \u2014 is new specific Church Father evidence."
+  },
+  {
+    "finding_id": "gZ4KXqDyzHg_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as dzK8v8zM4Ns_4 \u2014 medieval Christian authors retelling Jesus's death using Homer's lines. New evidence for existing argument."
+  },
+  {
+    "finding_id": "h2ra1QU3U8s_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as other Justin Martyr findings. Justin acknowledging pagans found Christianity's teachings familiar because they held similar beliefs. New supporting evidence for existing argument."
+  },
+  {
+    "finding_id": "h2ra1QU3U8s_6",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 24 (Tertullian, lines 372-377) explicitly covers 'Tertullian coined term trinitas in Latin Carthage \u2014 first formal designation of God's threefold identity' and 'Framed Christian doctrine in categories familiar to Roman pagans accustomed to ranked divine hierarchies.' The finding restates this same argument and evidence."
+  },
+  {
+    "finding_id": "hG_mXSQ6_fU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted Hellenistic institutional frameworks. Ruck's argument that Christianity is 'fundamentally a Hellenistic mystery religion, not a Jewish one' \u2014 citing agape feasts with mind-altering substances in catacombs and secret rituals \u2014 is new evidence. Note global Q&A: reject mystery cult label, extract institutional data. New evidence needing reframing."
+  },
+  {
+    "finding_id": "hWh7O5CZuTg_1",
+    "verdict": "wrong_chapter",
+    "justification": "Paul's vision of believers as 'joint heirs with the messiah' exalted 'above every rule authority and power' belongs in chapter 5 (Pauline epistles) or chapter 3 (christological titles). Ch5 covers Paul's theology; ch3 covers 'Kingdom of God' (lines 691-728)."
+  },
+  {
+    "finding_id": "hhq8ACt7TwY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as other Justin Martyr findings \u2014 comparing Jesus to 'sons of Zeus.' New supporting evidence for existing argument."
+  },
+  {
+    "finding_id": "hhq8ACt7TwY_3",
+    "verdict": "covered",
+    "justification": "Ch6's central thesis (item 0) and multiple inventory items argue Christianity adapted Greek philosophical and institutional frameworks. The finding that Christianity 'was born in a Greco-Roman World Hellenistic Greco-Roman world with the Hellenistic Judaism' restates the central argument without adding new specific evidence."
+  },
+  {
+    "finding_id": "i3RQqezynLQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity adopted Hellenistic frameworks. The specific evidence that the Eucharist derives from Hellenistic mystery religions (Dionysus and Osiris) with sacramental meals of body and blood \u2014 and 'makes no sense whatever in a Jewish or Christian context' \u2014 is new evidence. Note global Q&A: reject mystery cult label, extract data. Ch4 cross-chapter covers Eucharist/Dionysian parallel (lines 678-705). For ch6, this is supporting evidence."
+  },
+  {
+    "finding_id": "ilF5NIZnoq4_3",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 5 (lines 76-77) covers Flavian symbols in Christian catacombs. The specific evidence about early Christian catacombs adopting Flavian imperial symbols (anchors, fish, dolphins, tridents) identical to Titus's coins \u2014 and Clement of Alexandria bearing the Flavian name 'Titus Flavius Clemens' \u2014 is the same evidence category. The Clement/Flavian name detail adds a small point but core evidence is covered."
+  },
+  {
+    "finding_id": "mnh1hJq-ZNs_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity operated within Greco-Roman civic-religious structures. The specific evidence about patron gods of every city and the empire, civic cult participation requirements, and Christians being 'politically dangerous' for refusing \u2014 is new evidence about the institutional context. Existing argument, new evidence about civic cult requirements."
+  },
+  {
+    "finding_id": "mnh1hJq-ZNs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same as DMmr5ixaXbA_5/RC8hwuwp00o_1 \u2014 Church Fathers accepting Asclepius miracles but attributing them to daimones. This is a specific apologetic strategy (accepting miracles but reattributing them) that is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "nTcMoGQl5Gw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity used Greco-Roman frameworks. The specific evidence about Gentiles accepting Paul's gospel because they already had 'the model of a deity in a dyad or a triad' from polytheistic background is new evidence explaining the mechanism of acceptance. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "nuLs65uWE5U_4",
+    "verdict": "wrong_chapter",
+    "justification": "MacDonald's argument that Luke structures Jesus's narrative using Homer's Iliad model belongs in chapter 4 (gospel literary analysis). Ch4 and ch1 cross-chapter inventories cover Homer-gospel parallels."
+  },
+  {
+    "finding_id": "oELTpZpzbXc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers appropriated Greek philosophy. The specific evidence about Pseudo-Dionysius the Areopagite (5th century) 'literally just taking Proclus and putting Christian stamp over it' is new specific evidence about direct philosophical appropriation. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "oELTpZpzbXc_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek philosophy. Gregory Palamas's energies-essence distinction emerging from debates against Platonists in the final years of Constantinople is new specific evidence. However, this is late medieval (14th century) \u2014 beyond the chapter's primary focus. Still new evidence for the argument about Greek philosophical continuity in Christianity."
+  },
+  {
+    "finding_id": "oom72LtMC5s_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity operated within Greco-Roman institutional frameworks. The Peregrinus case \u2014 mystery cult infrastructure developing around deified figures with temples, priesthoods, ordained mysteries, torch festivals \u2014 provides a contemporary parallel model. Note global Q&A: reject mystery cult label, extract institutional data. New evidence."
+  },
+  {
+    "finding_id": "ouHTk8YjQ5k_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement, lines 478-485) covers Clement's synthesis. The specific evidence about Clement recognizing parallels between John's prologue and Euripides' Bacchae as 'a smoking gun' is new specific textual evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "oyEvNCEtSkI_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as YwUfy26-alA_7 and qaGz4eDqIUA_2 \u2014 Epiphanius discussing Christian and pagan celebrations on same dates. New supporting evidence for existing argument."
+  },
+  {
+    "finding_id": "pMf40mX9w_k_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as C80zV5KbY2M_3 \u2014 Byzantine poets retelling Gerasene demoniac using Homer's Odyssey sequences. New evidence for existing argument."
+  },
+  {
+    "finding_id": "pZ2JnnS9Scw_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers positioned Christianity within Greco-Roman frameworks. Arnobius defending Christian worship by pointing to Rome's worship of Romulus \u2014 who was 'torn to pieces yet deified and ascended' \u2014 is new specific Church Father evidence. Existing argument, new Arnobius evidence."
+  },
+  {
+    "finding_id": "pfXhUJ2fdwE_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues institutional continuity between Greco-Roman and Christian structures. The specific evidence about early Christian saints (Clement/Flavius Clemens, Flavia Domitilla, Achaicus, Achilles) being members of or connected to the Flavian imperial family is new specific prosopographic evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "pfifhBXnht8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 22 (Origen, lines 334-352) covers Origen but focuses on apokatastasis. The specific evidence about Origen deliberately surveying philosophical schools and selecting Platonism as most compatible \u2014 making modern Christianity 'a Platonic Christianity' \u2014 is new specific evidence about Origen's deliberate philosophical choice. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "pkewxq1fDw0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity competed with Roman imperial cult. The specific evidence about early Christians giving Jesus the same titles as Caesar \u2014 'literally competing with the Roman Imperial cult' \u2014 with historical Caesars dressing like mythological heroes is new supporting evidence. Ch3 cross-chapter covers christological titles (Son of God, Lord, Savior), but the specific comparison to Caesars dressing as mythological heroes is new."
+  },
+  {
+    "finding_id": "pmww0L64GIo_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Greek philosophy was integrated into Christianity. The specific evidence about Platonism and Stoicism integration \u2014 'middle Platonism or late Stoicism' being 'very important for Christian identity' \u2014 is new supporting evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "px_dPORDFDQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Church Fathers used Greek philosophical frameworks. The specific evidence about Church Fathers 'stealing an idea, twisting it' from pre-Christian Greek philosophers is a general characterization. New supporting evidence for existing argument."
+  },
+  {
+    "finding_id": "qSgVRjZ_KbU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as other Justin Martyr findings. Justin's First Apology 21 explicitly conceding Christians presented 'nothing new' compared to Greco-Roman precedents is new specific textual evidence. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "qaGz4eDqIUA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as YwUfy26-alA_7 \u2014 Epiphanius describing Christian Epiphany celebration on same date as Dionysian water-to-wine transformations. New specific evidence for existing argument about liturgical-calendar continuity."
+  },
+  {
+    "finding_id": "qaGz4eDqIUA_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues early Christianity operated within Hellenistic frameworks. The specific evidence about early Gnostic Christians seeing Jesus in pagan mystery religions without exclusive claims \u2014 operating within an 'inclusive Hellenistic religious institutional framework' \u2014 is new evidence. Existing argument, new evidence about pre-dogmatic inclusive Christianity."
+  },
+  {
+    "finding_id": "qaGz4eDqIUA_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity developed within Greco-Roman context. The specific evidence about Christianity's dogmatization and exclusive claims developing specifically in opposition to polytheistic religions \u2014 a political-theological choice \u2014 is new evidence about the mechanism of exclusivization."
+  },
+  {
+    "finding_id": "qpX0r--Evew_8",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 32 (Clement, lines 478-485) covers Clement's synthesis. The specific evidence about Clement stating Christian 'God in bosom' inverts Sabazios mystery language \u2014 'a counter sign of the Mysteries of the sabazios' \u2014 is new specific textual evidence. Existing argument, new Clement-Sabazios evidence."
+  },
+  {
+    "finding_id": "sBnRe-cs_TY_1",
+    "verdict": "not_relevant",
+    "justification": "The discussion of Mark as a theatrical performance written within Greco-Roman dramatic conventions is about gospel genre analysis, which belongs in chapter 4. Additionally, the theatrical staging theory is a fringe argument that does not directly bear on ch6's political restoration thesis."
+  },
+  {
+    "finding_id": "sBnRe-cs_TY_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity emerged from Roman imperial contexts. The specific endorsement of the Flavian hypothesis \u2014 that Christianity emerged from Roman imperial contexts \u2014 aligns with but is more specific than the book's Greco-Christian thesis. New supporting evidence."
+  },
+  {
+    "finding_id": "t5XonbYDaUg_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Same evidence cluster as oELTpZpzbXc_3 \u2014 Pseudo-Dionysius copying Neoplatonic philosophy with Christian labels. Adds the Hesychast debates of 14th century. New evidence for existing argument, though chronologically late."
+  },
+  {
+    "finding_id": "t5XonbYDaUg_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 inventory item 26 covers theosis. The specific argument that theosis is 'directly borrowed from neoplatonic apotheosis' \u2014 'they just took the word appo out and called it theosis' \u2014 is new specific evidence about the mechanism of theological borrowing. Existing argument (theosis as Greek concept), new etymological evidence."
+  },
+  {
+    "finding_id": "tONFcpwLHaU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues institutional continuity. The specific evidence about the oldest Christian archaeological site being the catacombs of Domitilla \u2014 tomb of Vespasian's granddaughter \u2014 is new specific archaeological evidence for Flavian-Christian institutional connection. Existing argument, new evidence."
+  },
+  {
+    "finding_id": "uod9ZDfOFLA_2",
+    "verdict": "covered",
+    "justification": "Ch6 inventory item 0 (lines 1-11) covers Christianity as a Greek political restoration movement. The finding that the Jesus movement's political kingdom expectations were translated into Christian adoption of imperial theology is the chapter's central thesis. Same argument, same evidence framework."
+  },
+  {
+    "finding_id": "vXb3iKVVsB4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Ch6 argues Christianity absorbed Hellenistic frameworks. The Eucharist deriving from Greco-Hellenistic mystery religions (Osiris, Dionysus, Demeter) and the Ignatian epistles calling it 'medicine of immortality' is new evidence. Same evidence cluster as i3RQqezynLQ_0 and URhU2qdculU_5. Note global Q&A: reject mystery cult label, extract data."
+  },
+  {
+    "finding_id": "w0ECPnmS7Go_2",
+    "verdict": "covered",
+    "justification": "Ch6's entire thesis presupposes religion and politics as inseparable in antiquity. The chapter explicitly argues Christianity was a political restoration movement (item 0). The finding that 'you cannot separate out religion and politics' 2000 years ago restates a foundational assumption of the chapter."
+  },
+  {
+    "finding_id": "wdplJARssQQ_0",
+    "verdict": "wrong_chapter",
+    "justification": "MacDonald's argument that Luke frames Christianity as a rival kingdom to Rome belongs in chapter 5 (Luke-Acts analysis). Ch5 cross-chapter inventory covers Acts extensively, including 'Acts opens with royal enthronement' (lines 566-604) and Luke's portrayal of Christianity within political frameworks."
+  }
+]

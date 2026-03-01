@@ -1,0 +1,17 @@
+[
+  {
+    "finding_id": "qSgVRjZ_KbU_4",
+    "verdict": "wrong_chapter",
+    "justification": "Chapter 1 discusses Homeric mimesis in the New Testament (Mark mapped to Homeric epics, Gerasenes/Polyphemus, 800+ Homeric fragments) but does NOT address Hellenistic literary influence on the Hebrew Bible itself. This finding's core argument — that Genesis genealogies parallel Deucalion's genealogy, Noah parallels Deucalion as first to plant a vineyard post-flood, and Hebrew Bible narratives structurally mirror Homer — is about pre-Christian Hellenistic influence on Old Testament composition. Chapter 2 already argues that codified Judaism emerged within Hellenistic political and administrative frameworks (Torah in canonical written form first securely attested in post-Alexander era), making it the natural home for evidence about Greek structural influence on Genesis and Hebrew Bible narratives. Target chapter: 2."
+  },
+  {
+    "finding_id": "65Ii0MVe7hA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 1 already makes the argument that Gospel authors engaged in deliberate literary mimesis of Homer (line 111: 'deliberate literary mimesis — Mark mapped to the Homeric epics, John to Euripides' Bacchae') and cites the Gerasenes/Polyphemus parallel as evidence. The chapter also states that Greek epic was the dominant textual culture and literary imitation of Homer was standard curriculum. The ARGUMENT (Homeric mimesis in Mark) is fully present. However, the SPECIFIC EVIDENCE this finding brings — the parallel between Hermes conducting Priam past sleeping guards and open doors in Iliad 24 and Mark's resurrection narrative with guards struck senseless and tomb opened, with identical vocabulary for guards and door — is not in the chapter. This is a new piece of evidence for an existing argument."
+  },
+  {
+    "finding_id": "qaGz4eDqIUA_0",
+    "verdict": "wrong_chapter",
+    "justification": "Chapter 1 does not discuss Egyptian theology of divine kingship in any substantive way. Chapter 3 covers this argument and evidence extensively: the ch3 inventory documents 'Son of God was the standard title for Hellenistic rulers, derived from millennia of Egyptian Son of Ra preceding the pharaoh's name' with specific examples (Son of Ra, Tutankhamun; Son of Ra, Amenhotep; Son of Ra, Ramses) at lines 465-474. Chapter 3 also covers the Lord's Prayer's Egyptian solar-royal reading, the Amun-Ra connection, and the broader argument that 'Son of God' was a political designation derived from Egyptian royal theology. The finding's specific angle — that Egyptians grappled with the king being simultaneously human and divine, and Jesus is part of that discussion — is precisely the argument Chapter 3 makes about sonship as 'cosmological-political vocation: ruler embodies heaven's order.' Target chapter: 3."
+  }
+]

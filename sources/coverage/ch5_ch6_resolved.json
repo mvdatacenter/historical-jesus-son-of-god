@@ -1,0 +1,26 @@
+[
+  {
+    "finding_id": "5kI6tecz_yc_2",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5's Acts section (lines 548-604) argues that Acts is a political-administrative text framing Christianity as a kingdom claim against Roman imperial power, not a religious missionary document. The finding — that Roman governors repeatedly validate Christians as innocent throughout Acts, constituting a systematic reassurance pattern — is new textual evidence for the existing chapter 5 argument that Luke's Acts constructs early Christianity as seeking institutional legitimacy within Greco-Roman political structures. Chapter 6 does discuss accusations against Christians (martyrdom section, Origen's defence in Contra Celsum), but those concern post-Acts church fathers, not Luke's rhetorical strategy inside the Acts narrative itself."
+  },
+  {
+    "finding_id": "5kI6tecz_yc_3",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 makes the sustained argument that Acts is a Greco-Roman political document engaging with imperial institutional concerns, not a missionary religious tract (lines 36-63, 548-604). The finding — that Luke systematically addresses four specific Greco-Roman accusations (atheism, antisocialism, secret meetings, worship of a crucified man) and flips each one — is new textual evidence for that existing argument. Chapter 6's martyrdom section notes Christians were executed for maiestas and Origen defends against accusations, but those are later patristic responses; the finding is about Luke's internal rhetorical architecture inside Acts, which is chapter 5's domain."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_6",
+    "assigned_chapter": 6,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 6 argues that early Christianity is best understood as the literature and institutional infrastructure of an occupied people seeking national liberation and imperial restoration (lines 250-290 on martyrdom literature; lines 1-11 on the mystery of restoration). The finding — that the Magnificat is a political document framing Luke-Acts as an epic of liberation from Greco-Roman oppression, not a praise of motherhood — directly supports chapter 6's occupied-people thesis by showing that Luke-Acts opens with the rhetoric of national liberation. Chapter 5 covers the Lukan-Pauline corpus as Greek administrative text, but its argument is about institutional form (ekklesiai, circulars, envoys), not the liberation-from-oppression theme that the Magnificat embodies and that chapter 6 develops."
+  },
+  {
+    "finding_id": "wdplJARssQQ_0",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5's Acts section (lines 548-564) explicitly argues that Acts frames βασιλεία as real sovereignty and jurisdiction, that Acts 1:6 frames the narrative as restoration of a kingdom, and that the final scene of Paul in Rome proclaiming the kingdom of God functions as a regime proclamation at the imperial center — a contest of sovereignties, not a religious conversion story. The finding — that Luke deliberately frames the Christian movement as a rival kingdom to Rome with a different kind of king and rule — is new evidence from MacDonald's reading that directly reinforces this existing chapter 5 argument. Chapter 6 discusses the eventual Constantinian fulfilment of this rival-kingdom claim, but the finding is about Luke's compositional intent, which belongs in chapter 5's treatment of Acts as a political text."
+  }
+]

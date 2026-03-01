@@ -1,0 +1,20 @@
+[
+  {
+    "finding_id": "GSEkSCV4fm0_8",
+    "assigned_chapter": 4,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 already contains an extended argument that Peter vs. Mary Magdalene rivalry (visible in Gospel of Thomas, Gospel of Mary, and Pistis Sophia) supports Mary as the Beloved Disciple. The GoT saying that women must 'become male' to enter the Kingdom, anchored here in Egyptian funerary gender-transformation practices (feminine-to-masculine rebirth for Osiris-identification), provides new textual and cultural evidence for the gender dynamics chapter 4 is already arguing. Specifically, it deepens the Peter/Mary conflict section: Peter's demand that Mary 'leave' because 'women are not worthy of life' is the exact saying analyzed here, and the Egyptian funerary parallel illuminates why masculine rebirth imagery was available to the author of GoT. Chapter 3 does not address the Gospel of Thomas gender saying or Egyptian funerary gender transformation at all. The evidence most directly serves chapter 4's existing argument about gender, Peter vs. Mary, and the GoT's treatment of female disciples."
+  },
+  {
+    "finding_id": "FEKkQgR5t14_2",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 argues extensively that titles like 'Messiah,' 'Christ,' and 'King of the Jews' were recognized Greco-Roman political claims, not merely Jewish theological categories. It already uses the Vespasian example (line 457) to show that messianic language was a transferable imperial title. The Caesarea Philippi finding — that Peter's confession of Jesus as Messiah/Christ occurs precisely at the site of Augustus temples where Vespasian had been feted as a future ruler — provides new geographic and contextual evidence that the Markan confession scene is framed as a deliberate political counterclaim in a Greco-Roman imperial setting, not a theological abstraction. This directly reinforces chapter 3's thesis about the political-theological meaning of royal titles and the Greco-Roman register in which those claims were understood. Chapter 4 covers Gospel reliability and authorship and has no section on Peter's confession, Caesarea Philippi, or the political geography of messianic claims."
+  },
+  {
+    "finding_id": "gxXlVV8oW8U_1",
+    "assigned_chapter": 4,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 4 already contains the argument that the Gospel of John consistently presents Jesus with Greek imperial terminology (Christos) rather than Jewish terminology (Messiah), and that John immediately translates 'Messiah' into 'Christos' for readers who would not naturally recognize the Jewish title (lines 590-594). Chapter 4 also notes that Josephus knew Jesus as 'the Christ' (line 113 references Josephus on Caiaphas/Annas, and ch3 line 80 cites Josephus on James/Christ). Zinner's argument that Josephus uses 'Christ' as a personal name — the way 'Buddha' shifted from title to personal name — provides new comparative evidence for how the Greek-facing audience received the term Christos: not as a messianic claim they would parse theologically, but as a proper name that had already fused title and identity. This directly supports chapter 4's argument about how the Gospel of John operates in a Greek imperial framework where Christos functions as a name, not a title requiring translation. Chapter 3 covers the political theology of 'Christ' as a royal title but does not address the title-to-personal-name shift or Josephus's audience-specific usage; that mechanism belongs to chapter 4's discussion of Gospel language for a Greek audience."
+  }
+]

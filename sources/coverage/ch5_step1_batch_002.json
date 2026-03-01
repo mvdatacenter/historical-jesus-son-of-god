@@ -1,0 +1,102 @@
+[
+  {
+    "finding_id": "yEYzMFzr2Ts_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 5 argues James the Just was a dynastic successor to Jesus (section 'James the Just', lines 605-623) and the chapter text mentions James's authority within Judean legal structures (Josephus Ant. 20.200-203). However, the specific evidence here — James's formal decision-making authority in Acts 15 (the Apostolic Council scene where James says 'my decision is') and Acts 21 (Paul reports to James first upon returning to Jerusalem) — is not cited in the chapter. The chapter discusses James's Greek rhetorical style and dynastic titulature but does not present Acts 15 or Acts 21 as evidence of James's institutional governance authority over the movement."
+  },
+  {
+    "finding_id": "yoD9JePzlFQ_3",
+    "verdict": "new_argument_existing_evidence",
+    "justification": "The chapter already presents Paul's focus on the office of Christos rather than Jesus's daily teachings (section 'Paul barely mentions the life of Jesus', lines 519-527) and discusses the ekklesia's evolution. However, the specific argument here — that Paul TRANSFORMED the movement from a kingdom-focused, Torah-observant community INTO a gentile church centered on salvation through divine Jesus (the 'proclaimer became the proclaimed' discontinuity thesis) — is an argument the book does NOT make. The book's thesis is that Christianity was a continuation of Greek imperial institutions, not that Paul transformed a Jewish movement into something different. This finding's framing (discontinuity, Paul as transformer) contradicts the continuity thesis. The evidence about Paul's silence on Jesus's teachings IS in the book, but the conclusion drawn (Paul created a discontinuity) is different from the book's conclusion (Paul was restoring the office of Christos)."
+  },
+  {
+    "finding_id": "zBdJa2K8e4Y_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues James was a dynastic successor with formal authority (section 'James the Just', lines 605-623). However, the specific evidence — Paul naming James FIRST among 'the three pillars' (before Peter and John) in Galatians, 14 years after his conversion, seeking authorization for his Gentile mission, and the order of names indicating established institutional authority — is not presented in the chapter. The chapter discusses James's Hellenistic titulature and rhetorical skill but does not cite Galatians on the three pillars or the significance of the name ordering."
+  },
+  {
+    "finding_id": "9h6inD-wc04_0",
+    "verdict": "covered",
+    "justification": "The chapter explicitly argues that ekklesia was the Greek popular assembly of the polis adopted by Christian communities (section 'Ekklesia --- the civic assembly continued', lines 149-168). The inventory item states: 'Ekklesia was the sovereign body of citizens that passed laws, heard proclamations, received official dispatches.' The chapter also discusses ekklesia as civic assembly in section 'Are Acts a work of fiction?' (lines 36-63), which lists 'Ekklesia was the civic assembly of the city, local government.' The Q&A records the decision: 'Paul's ekklesia were not new institutions created from scratch. They were existing Greek civic assemblies converted to a new political allegiance.' This finding's argument (ekklesia = Greek popular assembly adopted by Christians as 'a new kind of polis') and evidence (the term ekklesia meaning popular assembly) are both present in the chapter."
+  },
+  {
+    "finding_id": "9h6inD-wc04_1",
+    "verdict": "covered",
+    "justification": "The chapter explicitly cites Phil 3:20 politeuma ('Our politeuma is in heaven declares citizenship in a capital city with its own law') in section 'Paul's Letters as Executive Correspondence' (lines 136-148). The finding's argument — that Paul used political language (politeuma/citizenship) to frame the Christian community as a polis — is the chapter's central thesis. The specific evidence (Phil 3:20, political vocabulary describing heavenly citizenship) is directly present in the inventory. Both argument and evidence are covered."
+  },
+  {
+    "finding_id": "9h6inD-wc04_2",
+    "verdict": "covered",
+    "justification": "The chapter explicitly presents this evidence. Section 'What is quite striking...' (lines 64-79) argues: 'Churches appear immediately in every major city of the former Greek empire' and lists that 'No churches appear anywhere outside the former Greek empire' with 'All correspondence and scripture written exclusively in Greek.' The geographic mapping section (lines 344-445) provides exhaustive tables of every city in Acts and Epistles (Rome, Corinth, Philippi, Thessalonica, Ephesus, Colossae, etc.), which are the same cities this finding mentions. Both the argument (NT letters addressed to major Greek cities) and the evidence (the specific city list) are fully present."
+  },
+  {
+    "finding_id": "FEKkQgR5t14_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that Christianity was a universal movement across the Greek oikoumene. The 'panta ta ethne' section (lines 12-34) discusses 'all the nations' as referring to the nations of the Greek world. However, the specific evidence here — Mark 13:10 and 14:9, where Mark explicitly frames the gospel as to be preached to 'alle Nationen' (all nations) — is NOT cited in the chapter. The chapter cites Matthew 28:19 (Great Commission) for the 'all nations' language, but does not cite Mark 13:10 or Mark 14:9. Mark's universalist framing is a new piece of textual evidence supporting the existing argument about universal scope."
+  },
+  {
+    "finding_id": "FybfRW6g_ws_0",
+    "verdict": "covered",
+    "justification": "The chapter explicitly argues that ekklesia was Greek institutional terminology for civic assembly adopted by Christian communities (section 'Ekklesia --- the civic assembly continued', lines 149-168) and discusses it in the Thessalonian context within the geographic mapping section (lines 344-445, where Thessalonica appears in the exhaustive city tables). The Q&A also records the decision that ekklesia = existing civic assemblies. Both the argument (Greek institutional terminology adopted by Christians) and the evidence (ekklesia as Greek civic term used in early Christian assembly contexts) are present."
+  },
+  {
+    "finding_id": "FybfRW6g_ws_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does NOT discuss Parousia or compare Christ's return to Roman imperial ceremonies (adventus/arrival of emperor or general). A search for 'parousia' and 'Parousia' in the chapter text returns zero results. The chapter discusses Paul's political vocabulary extensively but focuses on terms like politeuma, episkopoi, diakonoi, archai, exousiai, thronoi, kyriotetes — not Parousia. The argument that the Parousia concept was borrowed from Roman imperial arrival ceremonies ('politische Inszenierung') is absent. The specific evidence — Parousia as a term used for arrival of a general or emperor, reframed for Christ's return — does not appear anywhere in the chapter inventory or text."
+  },
+  {
+    "finding_id": "N30T4fG1oO0_0",
+    "verdict": "covered",
+    "justification": "The chapter explicitly argues that Paul established communities in major Hellenistic cities and the geographic mapping section (lines 344-445) provides exhaustive tables listing Antioch, Corinth, Ephesus, Philippi, and Thessalonica among the cities in Acts and Epistles. Section 'What is quite striking...' (lines 64-79) argues churches appear in every major city of the former Greek empire. The chapter also mentions Antioch as a major Greek metropolis (line ~158, 'Nicolas identified as a convert from Antioch, a major Greek metropolis'). Both the argument (Paul strategically established communities in major Hellenistic cities) and the evidence (the specific cities listed) are present. The detail about Antioch being the third-largest city is not explicitly stated, but the argument and core evidence are covered."
+  },
+  {
+    "finding_id": "N30T4fG1oO0_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does NOT discuss God-fearers (Gottesfürchtige) or Paul's deliberate missionary strategy of targeting non-Jewish polytheists attracted to monotheism. A search for 'God-fearer' and 'Gottesfürchtig' returns zero results in the chapter text. The chapter's thesis is that ekklesia were pre-existing civic assemblies, not that Paul strategically targeted a specific demographic (God-fearers) for conversion. The finding introduces both a new argument (Paul deliberately targeted God-fearers as a missionary strategy) and new evidence (the mechanism of monotheistically-inclined polytheists as early converts). This argument is actually somewhat in tension with the book's thesis that these were existing civic assemblies, not newly founded missionary congregations."
+  },
+  {
+    "finding_id": "N30T4fG1oO0_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does NOT mention the school of Tyrannus or Paul using Greco-Roman rhetorical educational institutions for Christian proclamation. A search for 'Tyrannus' returns zero results. The chapter discusses Paul's letters as executive correspondence and his political vocabulary, but does not address Paul employing the specific institutional form of a Greek rhetorical school (lecture hall) for teaching. Both the argument (Paul adopted Greek educational-institutional frameworks for proclamation) and the evidence (the school of Tyrannus episode in Acts 19) are absent from the chapter."
+  },
+  {
+    "finding_id": "N30T4fG1oO0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that Paul's letters function as executive correspondence with delegated composition (section 'Paul's Letters as Executive Correspondence', lines 87-107). The inventory states: 'Named associates carry letters, manage funds, arbitrate disputes, represent Paul in person.' However, the specific evidence here — Paul's collegial team structure with named co-authors sharing authority (Silas, Timothy, Titus, Priscilla, Aquila), and the parallel to Greek political assembly governance models rather than hierarchical authority — adds the specific framing of collegial/team governance mirroring Greek assembly models. The chapter presents associates as operational staff; this finding reframes them as co-governing partners in a collegial model. The associates are mentioned but the collegial governance framing is new."
+  },
+  {
+    "finding_id": "O7rndRGehnY_0",
+    "verdict": "covered",
+    "justification": "The chapter explicitly presents this evidence. Section 'Paul's Letters as Executive Correspondence' (lines 108-116) states: 'He appeals to Caesar as a Roman citizen.' The inventory item for Paul's political profile includes: 'Paul appeals to Caesar as a Roman citizen' and 'He travels through the network of Greek poleis that formed Alexander's empire.' The finding's argument (Paul's Roman citizenship protected him and enabled mobility) and the core evidence (appeal to Caesar as Roman citizen, institutional access enabling travel) are both present in the chapter. The specific detail about protection from torture is not stated, but the key claim — Roman citizenship as institutional access — is covered."
+  },
+  {
+    "finding_id": "ZxrxaFuPZhA_0",
+    "verdict": "covered",
+    "justification": "The chapter argues this extensively. Section 'What is quite striking...' (lines 64-79) states: 'All correspondence and scripture written exclusively in Greek' and 'Greek was not lingua franca in Roman territories outside the former Greek empire; Latin was.' The geographic mapping section demonstrates that all NT cities were in Greek-speaking territories. The inventory explicitly lists: 'All letters are to Greek assemblies in Greek.' The finding's argument (Koine Greek was the institutional language of Eastern provinces including in Roman administration) and its evidence (Greek used in administration, not just everyday life) are covered — the chapter makes an even stronger version of this claim."
+  },
+  {
+    "finding_id": "ZxrxaFuPZhA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that Paul's letters function as imperial chancery correspondence (section 'Paul's Letters as Executive Correspondence', lines 80-86) and discusses delegated composition with ancient letter-writing conventions (lines 87-107). However, the specific evidence here — Paul's mastery of Greek letter-writing CONVENTIONS (knowledge of formulae, deliberate rhetorical strategies matching reader expectations) — is presented as evidence of institutional competence within Greek cultural frameworks. The chapter discusses Tertius as scribe, autograph formulas, and co-signatories, but does not explicitly present Paul's mastery of Greek epistolary conventions as a specific piece of evidence. The administrative model is covered; the specific rhetorical competence evidence adds a new data point."
+  },
+  {
+    "finding_id": "ayuwPvqo_0I_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that early Christian assemblies functioned as civic institutions within Hellenistic cities (section 'Ekklesia --- the civic assembly continued', lines 149-168, and 'Sociological continuity', lines 217-246). However, the specific evidence here — that early Christianity functioned as a 'Bildungsreligion' (educational religion) attracting educated individuals by transcending social hierarchies (Jew/Greek, rich/poor, male/female, slave/free, referencing Gal 3:28 implicitly) — introduces new evidence. The chapter discusses status display and factions (rich vs poor at communal meals, 1 Cor 11:17-34) but does not present the argument about social hierarchy transcendence as an attraction mechanism, nor the characterization of Christianity as an 'educational religion.' The sociological argument about civic institutions is existing; the specific evidence about social-barrier transcendence attracting converts is new."
+  },
+  {
+    "finding_id": "b_8uws7oHnA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that ekklesia were pre-existing civic assemblies with officers and procedures (sections on ekklesia, diakonoi/episkopoi, civic governance). The Q&A explicitly addresses and rebuts the 'voluntary association' (guild/collegium) argument: 'Associations were small, local, apolitical - doesn't explain scale' and 'Associations didn't use ekklesia terminology - that's polis language.' However, the specific evidence in this finding — detailed institutional PARALLELS between Roman trade guilds (Vereine) and early Christian communities (officers/presidents/prostates, treasurers, regular meal assemblies with designated seating, membership contributions, moral codes, mutual financial support), with the explicit conclusion that Paul applied these civic structures to organize Christian assemblies — provides granular institutional comparison data that the chapter does not present at this level of detail. The chapter mentions guilds once ('professional guilds' in the P.Oxy. 8.1138 reference) but does not provide the detailed structural parallels. The argument (civic institutional forms applied to Christian assemblies) is existing; the specific guild-parallel evidence is new."
+  },
+  {
+    "finding_id": "b_8uws7oHnA_1",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter mentions Paul as a Roman citizen who appeals to Caesar (section 'Paul's Letters as Executive Correspondence', lines 108-116) but does NOT discuss Paul's trade as a weaver/tentmaker, his status as a skilled craftsman from Tarsus, his access to trade networks through his craft, or his use of professional and civic knowledge from guild apprenticeships to structure early churches. The argument that Paul's PROFESSIONAL identity (weaver/tentmaker) gave him institutional access to Greco-Roman trade networks and that he deliberately used organizational models from guild apprenticeships — this is a new argument and new evidence entirely absent from the chapter."
+  },
+  {
+    "finding_id": "g1QZnOqn2Nw_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The chapter argues that Paul's vocabulary is drawn from court hierarchy and administrative register (section 'Paul's Letters as Executive Correspondence', lines 117-134) and that Paul's civic vocabulary maps believers into a political order (lines 136-148). However, the specific evidence here — pistis as the Latin fides, the institutional bond holding the Roman empire together through patronage networks; Paul's redirection of pistis toward Christ creating a 'necessarily political' (zwangsläufig politisch) community set apart from imperial structures — is NOT in the chapter. A search for 'pistis' and 'fides' in the chapter text returns zero results. The chapter discusses politeuma, episkopoi, diakonoi, archai, exousiai, thronoi, kyriotetes, stigmata, and panoplia but does not analyze pistis/fides as political loyalty terminology. The argument (Paul's vocabulary is political/administrative) exists; the specific pistis-as-fides evidence is new."
+  }
+]

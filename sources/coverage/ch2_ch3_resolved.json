@@ -1,0 +1,38 @@
+[
+  {
+    "finding_id": "Jor0oevcEK8_8",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues extensively that Judaism formed within Hellenistic frameworks and that Galilee was deeply Hellenized by the time of Jesus. The zodiac mosaic evidence — that Jewish synagogues explicitly incorporated Hellenistic astrological ascent symbolism — directly strengthens Chapter 2's argument that Greek institutional-theological language had penetrated Jewish worship and civic life. Chapter 3 does not discuss the internal Hellenization of Jewish religious institutions; its focus is on royal titles and political theology applied to Jesus, not on the background context of Jewish-Hellenistic synthesis."
+  },
+  {
+    "finding_id": "VfJT9fXmP9k_2",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 argues that Hellenistic royal grammar — divine titles, dynastic theology, visual authority — was the framework through which Jesus was understood by his contemporaries. The finding about Augustus temples using elevated placement, mandatory ascent, and visual hierarchy as a physical enactment of dynastic authority directly illustrates the 'Hellenistic royal grammar and court protocols' that Chapter 3's sections on Titles of Jesus and Kingdom of God describe. It shows how royal-divine authority was spatially and ritually communicated in the world Jesus inhabited, supporting Chapter 3's claim that Jesus's divine titles belonged to an existing political-theological vocabulary."
+  },
+  {
+    "finding_id": "z9gvRY3yQL4_3",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues that the Judaism Jesus was born into was shaped decisively within Hellenistic political and administrative frameworks, not in isolation, and that Greco-Roman culture penetrated every aspect of life in the region. The finding that monogamy became standard 'under Greek and Roman influence' rather than from Judean tradition is a concrete example of exactly this dynamic — Greco-Roman institutional norms reshaping Jewish social practice. Chapter 3 does not address marriage customs or social norms; its focus is on royal titles and political theology."
+  },
+  {
+    "finding_id": "rXUmjzDH8lw_3",
+    "assigned_chapter": 2,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 2 argues that Galilee and Judea were deeply Hellenized and that Herodian architecture followed Greco-Roman conventions. The finding that the Temple Mount was Herod's statement of power in Greco-Roman style — 'the largest temple and compound in all of the ancient world' — directly supports Chapter 2's argument about the Hellenistic character of Jewish monumental building in Jesus's time. Chapter 2 already cites Herodian building at Sepphoris (theater, forum, colonnaded streets, mosaics); the Temple Mount as Greco-Roman architecture is the same argument applied to the Jerusalem sanctuary. Chapter 3 mentions the Temple only in passing, in the context of Jewish archives and John the Baptist's challenge to the Temple establishment."
+  },
+  {
+    "finding_id": "fTjva6UwLE4_7",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_and_argument",
+    "justification": "Chapter 3 argues that Jesus's titles — Son of God, Savior, Lord — were drawn from existing Hellenistic royal vocabulary, and it demonstrates at length how the birth and life of Jesus paralleled Hellenistic royal narrative conventions (star at birth, divine conception, royal genealogy). The finding that empty tomb narratives directly parallel Greco-Roman divine-hero traditions (Alcmena/Heracles, Romulus) extends this argument into the resurrection itself: it shows that the post-mortem trajectory of Jesus — body absent, ascended to heaven — follows the same literary and theological pattern used for Greco-Roman heroes and deified rulers. This is a new argument for Chapter 3 (the existing text does not treat the empty tomb as a Hellenistic royal narrative element), supported by specific new evidence."
+  },
+  {
+    "finding_id": "2sZnADzQ2yo_4",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "Chapter 3 has a dedicated section on Mary (Holy Mary, Mother of God, Perpetual Virgin, Queen of Heaven) arguing that Mary fits the Hellenistic queen-mother archetype — carrying divine titles, dynastic legitimacy, and royal imagery drawn from Ptolemaic and Egyptian traditions. The finding that 6th-century Syrian Christian authors (Jacob of Serugh, Romanos the Melodus) explicitly adapted Ishtar's ancient lamentations over Tamuz into the Virgin Mary's mourning at the crucifixion directly strengthens Chapter 3's argument: it shows that Mary's role as divine mourning mother was consciously fused with pre-Christian Near Eastern goddess traditions, extending the Hellenistic queen-mother framework into Mesopotamian cultic territory."
+  }
+]

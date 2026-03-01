@@ -1,0 +1,50 @@
+[
+  {
+    "finding_id": "VzWdFgWH3Xs_3",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding introduces Dead Sea Scrolls mysticism (Teacher Hymns) as background for Paul's language of exaltation and cosmic transformation ('sitting among the gods'). Chapter 5 treats Paul's theology as the vehicle for restoring Greek imperial order and discusses his vocabulary extensively. The 'exaltation' language from Qumran parallels Paul's framework of cosmic hierarchy (thronoi, kyriotetes, archai, exousiai in Col 1:16; Eph 1:21) — the same register Chapter 5 analyzes. Chapter 3 focuses on Jesus's titles and divine identity; Chapter 5 focuses on Paul's theological-administrative framework. The finding belongs with Paul."
+  },
+  {
+    "finding_id": "ezCnRZoKO5I_1",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding cites Philippians 2 ('form of a god' / 'form of a slave') as evidence that Jesus's divine status was expressed in Hellenistic theological categories rather than purely Jewish messianic ones. Chapter 3 argues throughout that Jesus's divine titles — Son of God, Epiphanes, Soter — were pre-existing Hellenistic royal vocabulary. Justin Martyr's parallel (line 47, citing Heracles, Asclepius, Dionysus as comparanda) and the explicit 'Son of God' section (line 465) show that Chapter 3 is specifically about Jesus's Hellenistic divine identity. The Philippians 2 passage, read as evidence for Hellenistic framing of Jesus's divine status, directly serves Chapter 3's central argument."
+  },
+  {
+    "finding_id": "XUskxQZZyZI_1",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding notes that Paul prioritized the heavenly 'Son of God' Messiah identity over Davidic descent. Chapter 3 has a dedicated section 'Jesus is the Son of God' (line 465) arguing that this title was the dominant royal vocabulary of the Hellenistic world (Ptolemies, Alexander, etc.) and frames the chapter's conclusion: 'Jesus truly was the Son of God. But the title was not a supernatural claim, but a broadly accepted term for the rightful ruler of a kingdom under God.' The finding that Paul's dominant christological title was 'Son of God' rather than Davidic king directly supports Chapter 3's argument that the Hellenistic divine sonship title won out over Jewish dynastic framing."
+  },
+  {
+    "finding_id": "kbLm_Xiqih8_1",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The Philippians Hymn depicts Christ as a pre-existent divine being who 'emptied himself' and was 'highly exalted' — demonstrating early Christian conceptualization within Greco-Roman frameworks of divine beings assuming human form and being exalted. Chapter 3 argues that Jesus's divine identity was expressed through Hellenistic royal ideology. The Epiphanes section (line 505) covers the same template: 'the ruler is the god manifested in the flesh.' The humiliation-exaltation pattern in the hymn maps precisely onto the Epiphanes-and-apotheosis template that Chapter 3 uses to explain Jesus's divine titles. This is direct supporting evidence for Chapter 3's existing argument."
+  },
+  {
+    "finding_id": "YBA1eNo04PU_0",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding argues Philippians 2 reflects the Greco-Jewish 'name-bearing angel' conceptual template applied to Jesus. Chapter 3 (line 432-434) already notes the ichthus acrostic encodes 'Iesous Christos Theou Huios Soter' — Greek royal titles — and argues throughout that Jesus's divine identity was articulated through pre-existing Greco-Jewish frameworks. The name-bearing angel template is a specific Greco-Jewish mechanism for expressing divine mediation and investiture, which fits Chapter 3's argument that 'Son of God' and related titles carried Hellenistic divine-royal meaning. Chapter 5 does not discuss Jesus's metaphysical identity; it focuses on the institutional and administrative structure of Paul's mission."
+  },
+  {
+    "finding_id": "lpq4bdisHRU_1",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding reports scholarly agreement that Philippians 2's 'form of God' means functional role or divine appearance, not shared essence. Chapter 3's conclusion (line 907-909) states explicitly: 'Jesus truly was the Son of God. But the title was not a supernatural claim, but a broadly accepted term for the rightful ruler of a kingdom under God.' This functional, role-based understanding of divine titles is the chapter's central thesis. The scholarly consensus on Philippians 2 as functional (not ontological) divine status is precisely the kind of evidence Chapter 3 needs to support its argument that divine titles were political-functional rather than metaphysical."
+  },
+  {
+    "finding_id": "bpkFRaQVb4M_5",
+    "assigned_chapter": 5,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding presents John's universal kingdom message ('all nations come to Jerusalem') as evidence of an inclusive, institutionally expansive vision rather than tribal or sectarian nature. Chapter 5 opens with the section 'Who were the gentiles?' (line 12) arguing that panta ta ethnē referred to the nations of the Greek world, not all peoples universally — and that 'all the nations' in Matthew's Great Commission was imperial language for the oikoumene. John's universal kingdom framing is direct evidence for Chapter 5's argument about the Greek imperial scope of the early Christian movement. Chapter 3 does not address the 'all nations' question; it focuses on Jesus's divine titles and identity."
+  },
+  {
+    "finding_id": "DMmr5ixaXbA_1",
+    "assigned_chapter": 3,
+    "verdict": "new_evidence_existing_argument",
+    "justification": "The finding documents that Asclepius received titles virtually identical to early Christian language about Jesus: 'divine Savior,' 'loving Lord and Master,' 'the one who gives life.' Chapter 3 has an explicit section 'Jesus is the Savior of the World' (line 546) on Soter as a pre-existing Hellenistic royal title, and line 47 already cites Justin Martyr naming Heracles, Asclepius, Dionysus, and Perseus as parallels to Jesus's divine sonship. The Asclepius title parallels are direct additional evidence for Chapter 3's existing argument that Jesus's divine titles — Soter, Kyrios, 'gives life' — were Hellenistic divine-royal vocabulary applied before Christianity. This is a stronger match for Chapter 3 than Chapter 5, which focuses on institutional structures rather than divine title parallels."
+  }
+]

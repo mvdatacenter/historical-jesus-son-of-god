@@ -1,0 +1,1002 @@
+[
+  {
+    "finding_id": "0nmNr0km-p4_1",
+    "verdict": "covered",
+    "justification": "Chapter 5 INV[6] (lines 108-116) explicitly states Paul's political profile includes 'Athens speech (Acts 17) is a philosophical-diplomatic speech pitched at elites' and INV[43] (lines 1124-1197) discusses Paul employing Greek cosmology (Platonic-Stoic metaphysics). The claim that Paul knew Greek philosophy deeply is directly present in the chapter's framing of Paul as operating within Hellenistic intellectual frameworks."
+  },
+  {
+    "finding_id": "Z-5i9qvfF8A_0",
+    "verdict": "covered",
+    "justification": "INV[2] (lines 36-63) lists 'Paul's speech in Athens about the unknown god exploits existing Greek highest god discourse' and INV[6] (lines 108-116) states 'Athens speech (Acts 17) is a philosophical-diplomatic speech pitched at elites.' The specific Acts 17 content about Paul defining Theos in Greek terms is addressed in the chapter."
+  },
+  {
+    "finding_id": "zTmiqc2On1A_1",
+    "verdict": "covered",
+    "justification": "INV[6] and INV[43] cover Paul's Greek philosophical background. The claim about Origen and Clement of Alexandria continuing Paul's tradition is implicit in the chapter's framework but the specific patristic-chain claim (Clement/Origen continuing Paul's Greek philosophical tradition) is not presented as evidence. However, the core argument (Paul deeply versed in Greek philosophy) is fully covered in INV[43] with Platonic-Stoic metaphysics."
+  },
+  {
+    "finding_id": "1BTUFjlg4KI_3",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues ekklesia was the civic assembly governing Greek cities. INV[4] (lines 80-86) describes Paul's letters as correspondence to civic assemblies with courier circulation and inter-city dissemination. INV[14] (lines 247-274) describes the institutional complexity including inter-city coordination. The 'networked political assemblies' concept is the core argument of the chapter."
+  },
+  {
+    "finding_id": "3V8NeoY2qB4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[3] (lines 64-79) argues all Paul's churches appear in Greek empire cities and INV[28] rejects the Judaic Sect Model. The chapter makes the argument that Paul's communities were Gentile/Greek. However, the specific evidence from 1 Thessalonians ('no mention of Jews anywhere') as proof of all-Gentile composition is not cited in the inventory. This is new evidence for the existing argument."
+  },
+  {
+    "finding_id": "3V8NeoY2qB4_1",
+    "verdict": "covered",
+    "justification": "INV[21] (lines 476-489) discusses Christians persecuted for refusing imperial cult while insisting Christ was king. INV[19] (lines 450-459) notes Thessalonian authorities worried about sedition. The specific Acts 17:7 passage ('another king named Jesus', 'decrees of the emperor') is covered by INV[19] which lists 'Thessalonian authorities worry about sedition' as evidence."
+  },
+  {
+    "finding_id": "6tvGlAog1Jo_0",
+    "verdict": "covered",
+    "justification": "INV[11] (lines 169-190) argues diakonoi and episkopoi were pre-existing civic offices. INV[16] (lines 315-324) discusses hybrid institutions with civic assembly and diaspora synagogue logics. The finding's claim that church governance mimicked secular provincial administration is the core argument of the ekklesia sections (INV[10-17])."
+  },
+  {
+    "finding_id": "C2m7I4WEoso_3",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues ekklesia was the civic assembly. INV[4] (lines 80-86) describes Paul addressing ekklesiai as civic assemblies. INV[14] (lines 247-274) describes institutional complexity. The finding that Paul's communities were 'small political assemblies distributed throughout the empire's cities' is the central thesis of the chapter's ekklesia sections."
+  },
+  {
+    "finding_id": "Ecpn3bkVvv0_0",
+    "verdict": "covered",
+    "justification": "INV[16] (lines 315-324) explicitly discusses hybrid institutions where 'civic assembly, diaspora synagogue, and voluntary association logics overlap, but civic practice dominates.' INV[14] (lines 247-274) notes 'References to house meetings appear in later epistles (Rom 16:5, Phlm 1:2, Col 4:15), suggesting shift to covert locations under Roman surveillance.' The Q&A also extensively discusses house church objections and frames house gatherings as evidence of Roman crackdown forcing assemblies underground."
+  },
+  {
+    "finding_id": "Ecpn3bkVvv0_1",
+    "verdict": "covered",
+    "justification": "INV[13] (lines 217-246) explicitly discusses patron-client factionalism as inherited from Greek civic assembly, citing '1 Cor 1:10-17: factions (I follow Paul/Apollos/Cephas) mirror Greek civic patronage-line faction politics.' The Q&A section also discusses patron-client blocs as standard Greek political sociology."
+  },
+  {
+    "finding_id": "F658CFn2aS4_1",
+    "verdict": "covered",
+    "justification": "INV[7] (lines 117-124) discusses Paul's vocabulary drawn from court hierarchy and administrative register. INV[49] (lines 1269-1290) discusses Kyrios as Seleucid sovereignty term. INV[9] (lines 136-148) lists politeuma, episkopoi, diakonoi as political vocabulary. The argument that Paul's titles for Jesus are imperial theological language is thoroughly covered."
+  },
+  {
+    "finding_id": "F658CFn2aS4_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] argue Paul's vocabulary is drawn from court hierarchy and imperial register. The chapter makes the argument that Paul's language is imperial. However, the specific recommendation to read Virgil's Aeneid as foundational context for understanding Paul, and the specific connection to Roman Imperial theology through Virgil, is not cited as evidence in the inventory."
+  },
+  {
+    "finding_id": "F82JssUTYzg_1",
+    "verdict": "wrong_chapter",
+    "justification": "Johannine Christianity's institutional divisions and Christological schisms belong in Chapter 4 (Gospels as Historically Reliable Sources), which covers gospel authorship and the Johannine tradition, or Chapter 6 which covers institutional development. Chapter 5 focuses on Paul's epistles and ekklesia structure, not Johannine community evolution."
+  },
+  {
+    "finding_id": "G6QR0e66erA_1",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) explicitly argues 'Ekklesia was not a new religious club but the same civic assembly that governed the Greek city before Roman conquest.' The finding's point that ekklesia pre-existed as a Greek political term for citizen associations, not a Christian invention, is the exact argument of INV[10]."
+  },
+  {
+    "finding_id": "G6QR0e66erA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] (lines 217-246) discusses patron-client factionalism and status display. INV[9] mentions greetings from Caesar's household. The chapter makes the argument about elite patronage networks. However, the specific framing of Romans as a 'spiritual CV' to secure sponsorship from wealthy Roman contacts is not in the inventory as evidence."
+  },
+  {
+    "finding_id": "G6QR0e66erA_3",
+    "verdict": "covered",
+    "justification": "INV[43] (lines 1124-1197) discusses Paul employing Greek cosmology (Platonic-Stoic metaphysics). INV[6] (lines 108-116) establishes Paul's political profile including philosophical speeches. The chapter thoroughly covers Paul's Greek philosophical training."
+  },
+  {
+    "finding_id": "GpPMNVg0zww_2",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues ekklesia was civic assembly now recognizing Christ instead of Rome. INV[21] (lines 476-489) discusses persecution for refusing imperial cult while insisting Christ was king. INV[8] (lines 125-134) lists 'Jesus is Lord as oath of allegiance (Rom 10:9).' The Jesus-as-Lord vs Caesar framing is core to the chapter."
+  },
+  {
+    "finding_id": "POBWvaKn2AA_0",
+    "verdict": "covered",
+    "justification": "INV[6] (lines 108-116) states 'Paul appeals to Caesar as a Roman citizen' and 'He travels through the network of Greek poleis that formed Alexander's empire.' Paul's Roman citizenship and Hellenistic background providing institutional access is explicitly covered."
+  },
+  {
+    "finding_id": "PmE7ZMpWjRw_1",
+    "verdict": "covered",
+    "justification": "INV[0] (Introduction) frames early Christianity as continuation of Greek imperial tradition. INV[15] and INV[18] discuss the geographic alignment of Christianity with former Greek empire territories. The unified Hellenized Mediterranean culture is the foundational premise of the chapter."
+  },
+  {
+    "finding_id": "RQQxRShO3tg_3",
+    "verdict": "covered",
+    "justification": "INV[21] (lines 476-489) discusses Christians persecuted for refusing imperial cult while insisting Christ was king. INV[53] discusses Revelation as imperial restoration document. INV[8] discusses 'Jesus is Lord' as oath of allegiance. The competitive dynamic with Roman imperial power is covered throughout the chapter."
+  },
+  {
+    "finding_id": "VfJT9fXmP9k_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[19] (lines 450-459) discusses colonial coins in Syria bearing Jupiter/Aries/crescent as emblems of imperial rule, and ekklesiai redirecting imperial vocabulary toward Christ. The chapter argues Paul preached against imperial theology. However, the specific evidence that Acts of Divine Augustus inscriptions cluster in Galatia, the precise province Paul addressed, is not in the inventory."
+  },
+  {
+    "finding_id": "W-11rLwSUHM_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[19] discusses imperial cult elements and INV[16] mentions Julia Severa as simultaneously priestess of Imperial cult and synagogue benefactor. The chapter argues Christianity operated within imperial cult frameworks. However, the specific evidence about imperial cult priesthoods functioning as a career ladder in provinces is not cited in the inventory."
+  },
+  {
+    "finding_id": "XYqghYtia6k_4",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues 'Ekklesia was not a new religious club but the same civic assembly that governed the Greek city before Roman conquest, now recognizing Christ instead of Rome.' This is the same argument with the same evidence \u2014 ekklesia as pre-existing Greek institutional form."
+  },
+  {
+    "finding_id": "XYqghYtia6k_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] covers patron-client faction politics. The argument about elite patronage is present. However, the specific framing of Romans as strategically targeted at wealthy patrons able to sponsor and lead ekklesia is not in the inventory as evidence."
+  },
+  {
+    "finding_id": "_ELm1hl24VA_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[41] (lines 1090-1105) discusses 'Key teaching at elite dinner tables matching Greek symposium (Luke 7:36-50, 14:1-24)' and INV[13] discusses communal meal stratification. The chapter makes the argument about Greek institutional forms in Christian practice. However, the specific parallel of Jesus replacing Dionysus as honoree at symposium, and the detailed symposium structure (reclining, wine, sermons, mixed participation) mapped onto Corinthian gatherings, is not in the inventory."
+  },
+  {
+    "finding_id": "anOOhsAjtzA_7",
+    "verdict": "covered",
+    "justification": "INV[2] (lines 36-63) lists 'Paul's speech in Athens about the unknown god exploits existing Greek highest god discourse.' INV[6] states 'Athens speech (Acts 17) is a philosophical-diplomatic speech pitched at elites.' Paul quoting Greek poets in Acts 17 is covered by the chapter's treatment of the Athens speech."
+  },
+  {
+    "finding_id": "dQDaJJbRgY8_2",
+    "verdict": "covered",
+    "justification": "INV[43] (lines 1124-1197) discusses Paul employing Greek cosmology. INV[20] (lines 460-474) discusses initiatory practices. The Global Q&A explicitly addresses mystery cult findings: 'extract the institutional data and reframe through imperial cult under foreign rule.' The chapter covers Paul using Hellenistic religious terminology as part of his imperial framework."
+  },
+  {
+    "finding_id": "dQDaJJbRgY8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[15] and INV[18] argue Christianity mapped onto Greek empire cities. The argument about Christianity spreading through Hellenistic urban centers is present. However, the specific archaeological evidence from Dura Europos showing 15 different religious traditions coexisting (including a Christian church) is not in the inventory."
+  },
+  {
+    "finding_id": "ezCnRZoKO5I_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[53] discusses Revelation as imperial restoration. INV[43] discusses Greek cosmology in Paul. The chapter argues Paul's theology involves political sovereignty claims. However, the specific argument from Fredriksen that Christ 'needs to be fighting something when he comes back' and 'will fight the pagan gods' \u2014 framing resurrection eschatology as assertion of divine authority within the Mediterranean polytheistic hierarchy \u2014 is not in the inventory."
+  },
+  {
+    "finding_id": "ezCnRZoKO5I_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10] argues ekklesia was the civic assembly. The chapter makes the argument about ekklesia as Greek political institution. However, Fredriksen's specific mechanism \u2014 that 'claiming to have an epiphany of a god is a standard Mediterranean way of establishing an assembly' and that ekklesia 'gets translated as church but that's not what it means in Paul's lifetime' \u2014 provides a specific institutional mechanism not cited in the inventory."
+  },
+  {
+    "finding_id": "i_eJqsnPknM_0",
+    "verdict": "covered",
+    "justification": "INV[18] (lines 344-445) includes exhaustive mapping of cities in Acts including Caesarea. INV[15] discusses the geographic alignment with former Greek empire. The chapter covers Caesarea as part of the Greek institutional network."
+  },
+  {
+    "finding_id": "nlf_ULB26cU_2",
+    "verdict": "covered",
+    "justification": "INV[14] (lines 247-274) discusses institutional complexity including inter-city coordination. INV[4] describes inter-city dissemination. INV[12] lists inter-city financial coordination. The trans-local unified community under ekklesia is the core argument of the chapter."
+  },
+  {
+    "finding_id": "nlf_ULB26cU_3",
+    "verdict": "covered",
+    "justification": "INV[6] (lines 108-116) states Paul's political profile matches an authorized representative within the Greek cities. INV[43] discusses Paul employing Greek cosmology. The chapter's central thesis is that Paul operated within Greek/Roman institutional worlds."
+  },
+  {
+    "finding_id": "nvKt8ohKyvw_2",
+    "verdict": "covered",
+    "justification": "INV[7-9] argue Paul's vocabulary is drawn from court hierarchy, military language, and civic registers. INV[0] frames Christianity as continuation of Greek imperial tradition. The methodological insight that imperial theology makes Paul's theology coherent is the foundational premise of the chapter."
+  },
+  {
+    "finding_id": "oVPOvq6OzqU_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] mentions Paul's political profile and Acts episodes. INV[41] discusses divine-son birth pattern matching Plutarch's pattern for Romulus. The chapter argues Paul's narrative is framed through Greek categories. However, the specific parallel of Paul's Damascus Road encounter with the Romulan translation tradition (road encounters and great commissions) and Julius Proculus is not in the inventory."
+  },
+  {
+    "finding_id": "zrrQPZ4Psj0_0",
+    "verdict": "covered",
+    "justification": "INV[25] (lines 548-564) discusses Acts as Greco-Roman historiography about power and regime formation. INV[26] discusses Acts episodes including final scene of Paul in Rome proclaiming the kingdom. INV[11] discusses episkopoi as pre-existing civic offices. The finding's points about Acts as Jerusalem-to-Rome narrative and bishops organized like imperial administration are covered."
+  },
+  {
+    "finding_id": "MRJ41u7OwPY_0",
+    "verdict": "covered",
+    "justification": "INV[0] frames Christianity as continuation of Greek imperial tradition. INV[28] rejects the Judaic Sect Model. INV[23] discusses Paul's focus on resurrecting the office of Christos. The transformation from Jewish messianism to universal Hellenistic Christianity through Paul is covered in the chapter's framework."
+  },
+  {
+    "finding_id": "PPlLmc4OxjA_1",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) explicitly lists as evidence: 'Acts 6:5 lists the Seven with all Greek names: Stephen, Philip, Prochorus, Nicanor, Timon, Parmenas, Nicolas of Antioch.' This exact evidence is in the inventory."
+  },
+  {
+    "finding_id": "fp_NNoCe2L0_1",
+    "verdict": "covered",
+    "justification": "INV[23] (lines 519-527) discusses Paul's focus on restoring the kingdom through Christos. INV[28] explicitly rejects the Judaic Sect Model which predicts synagogue-based diffusion. The Peter-Paul conflict and Paul's Hellenistic theological systematization enabling spread beyond Jerusalem is covered by the chapter's framework of Paul as imperial envoy to existing Greek assemblies."
+  },
+  {
+    "finding_id": "lj6AtKVjhpk_1",
+    "verdict": "covered",
+    "justification": "INV[0] and INV[28] cover Christianity as continuation of Greek imperial tradition and reject missionary diffusion model. INV[23] covers Paul's focus on Christos office. The claim that Paul reworked Jesus's figure for universal Hellenistic value is the chapter's central thesis."
+  },
+  {
+    "finding_id": "pp-5ijQZIS4_0",
+    "verdict": "covered",
+    "justification": "INV[6] (lines 108-116) explicitly states 'Paul appeals to Caesar as a Roman citizen.' The strategic use of Roman citizenship to navigate institutional channels is directly covered."
+  },
+  {
+    "finding_id": "pp-5ijQZIS4_1",
+    "verdict": "covered",
+    "justification": "INV[28] discusses the failure of the Judaic Sect Model and the dominance of Greek Christianity. INV[23] discusses Paul's focus on the Christos office rather than Jesus's life. The institutional dominance of Paul's Hellenistic Christianity over the Jerusalem community is covered in the chapter's framework."
+  },
+  {
+    "finding_id": "0CIhmccb02c_0",
+    "verdict": "covered",
+    "justification": "INV[43] (lines 1124-1197) explicitly discusses 'Pneuma as Stoic material substance (fine, active element permeating cosmos), not later metaphysical person of Trinity.' Paul's engagement with Greek philosophy and pneuma as philosophical term is directly in the inventory."
+  },
+  {
+    "finding_id": "2scp2vqtFF0_1",
+    "verdict": "covered",
+    "justification": "INV[43] explicitly lists 'Pneuma as Stoic material substance (fine, active element permeating cosmos), not later metaphysical person of Trinity.' This exact evidence is in the inventory."
+  },
+  {
+    "finding_id": "3Q1JtYqn2Lw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[11] (lines 169-190) discusses diakonoi as pre-existing civic offices and cites 'Romans 16:1 commends Phoebe as diakonos of the assembly at Cenchreae.' The chapter makes the argument about civic offices. However, the broader evidence of women as apostles and co-workers (beyond Phoebe) is not enumerated in the inventory, though Phoebe is. The additional named women add new evidence to the existing argument about institutional offices."
+  },
+  {
+    "finding_id": "O4bU5OmrREs_0",
+    "verdict": "covered",
+    "justification": "INV[40] (lines 1065-1089) extensively discusses Luke's polished historiographic Greek, formal patron dedication, and matching proem structure of Herodotus/Thucydides/Polybius. INV[41] covers Greek literary culture in Luke. The educated Greek authorship of Luke is thoroughly covered."
+  },
+  {
+    "finding_id": "RFzoVAVierk_0",
+    "verdict": "covered",
+    "justification": "INV[31] (lines 690-739) argues the four gospels correspond to four post-Alexandrian cultural worlds, all in Greek-speaking regions. INV[51] discusses gospel localization in regional environments. The geographic dispersal of gospel authors across Greek-speaking urban centers is the core of the four-pole thesis."
+  },
+  {
+    "finding_id": "dvRgTh1d0GA_0",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Platonic-Stoic metaphysics. INV[6] discusses Paul's philosophical profile. The chapter explicitly argues Paul operated within Greek philosophical frameworks. The specific claim that this is 'overlooked by scholars' adds rhetorical force but not new evidence beyond what the chapter already argues."
+  },
+  {
+    "finding_id": "eESV148kHZY_0",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues 'Ekklesia was not a new religious club but the same civic assembly that governed the Greek city before Roman conquest.' INV[11] cites the Erythrai decree (5th century BC) naming episkopoi as civic magistrates. The pre-Christian existence of ekklesia terminology is explicitly covered with inscriptional evidence."
+  },
+  {
+    "finding_id": "jJi1mxbvQOM_0",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul's soma pneumatikon as Platonic-Stoic and pneuma as Stoic material substance. INV[44] discusses Paul's justification language as Greek civic-forensic. The chapter covers Paul's philosophical terminology extensively. The specific mention of 'tripartite soul' is not in the inventory but the broader Platonic-Stoic terminology claim is."
+  },
+  {
+    "finding_id": "jJi1mxbvQOM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] establishes Paul's political profile within Greek cities. The chapter argues Paul was embedded in Hellenistic intellectual life. However, the specific evidence about Tarsus having philosophical schools rivaling Rome and Athens (citing scholar Elizabeth Rosson) is not in the inventory."
+  },
+  {
+    "finding_id": "oEoouKCTTOw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[8] discusses Paul's military language as constitutional. INV[43] covers Greek cultural frameworks in Paul. The chapter argues Paul's language is Greco-Roman. However, the specific agon motif (athletic contest language, victory wreath) and ancient iconography depicting Paul as a naked athlete are not in the inventory."
+  },
+  {
+    "finding_id": "s2Cuufnjffs_2",
+    "verdict": "covered",
+    "justification": "INV[27] (lines 605-623) discusses James the Just as dynastic successor to Jesus, with the honorific 'the Just' functioning within Hellenistic titulature. The finding about James as institutional leader ('bishop or shepherd of the entire community') to whom Paul and Peter defer is covered by INV[27]'s treatment of James as next in dynastic line."
+  },
+  {
+    "finding_id": "scWs1tT4uiY_0",
+    "verdict": "covered",
+    "justification": "INV[5] (lines 87-107) discusses Paul's letter-writing within administrative model. INV[6] establishes Paul's philosophical profile. INV[43] covers Platonic-Stoic frameworks. Paul's rhetorical training and philosophical education are covered."
+  },
+  {
+    "finding_id": "y17p-TeRStQ_1",
+    "verdict": "covered",
+    "justification": "INV[3] (lines 64-79) argues all correspondence in Greek to Greek assemblies. INV[28] rejects the Judaic Sect Model. INV[43] discusses Greek cosmology in Paul's converts' thinking (perishable vs imperishable as Platonic-Stoic). The chapter establishes Paul's communities as Gentile and Greek-thinking."
+  },
+  {
+    "finding_id": "zea4vOxJeTs_0",
+    "verdict": "covered",
+    "justification": "INV[43] explicitly discusses Paul employing Platonic-Stoic metaphysics. Paul as a middle platonist combining Greek and Roman philosophical systems is directly addressed."
+  },
+  {
+    "finding_id": "-C-jDLJ9ey0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] covers Paul's Greek philosophical background. The chapter argues Paul was highly educated. However, the specific claim about proto-Merkabah mysticism influencing Paul, and the explicit comparison of Paul being 'much much more educated than Jesus,' are not in the inventory. The Merkabah mysticism angle is a specific mechanism not discussed."
+  },
+  {
+    "finding_id": "CtB_YuPDiVE_1",
+    "verdict": "covered",
+    "justification": "INV[0] (Introduction) frames Christianity as continuation of Greek imperial tradition. INV[28] argues all standard models fail and only Greek empire continuation fits. The characterization of early Christianity as fundamentally a Greco-Roman religion is the chapter's central thesis."
+  },
+  {
+    "finding_id": "07PKqAfCwOY_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10] argues ekklesia was civic assembly. INV[16] discusses hybrid institutions including voluntary associations. The Q&A discusses Kloppenborg's voluntary association model. However, the specific evidence of ecclesiae organized as labor unions (stonemasons in Corinth, carpenters in Alexandria) by city and profession is not in the inventory. The Q&A acknowledges Kloppenborg's work but frames associations as an objection to address rather than as evidence to incorporate."
+  },
+  {
+    "finding_id": "1nFge-jKLWU_1",
+    "verdict": "covered",
+    "justification": "INV[45] (lines 1198-1221) discusses Mark as the Seleucid gospel with Petrine/Antiochene origin. INV[10] mentions Nicolas as convert from Antioch. INV[18] includes Antioch in the city mapping. The role of Antioch as a center for Greek Christian development is covered."
+  },
+  {
+    "finding_id": "5ac8F8rzD9E_1",
+    "verdict": "wrong_chapter",
+    "justification": "The finding about Paul's silence on the virgin birth relates to Jesus's birth narratives, which belong in Chapter 2 (Jesus Christ, Son of Joseph and Mary Christ) which covers birth narratives and dynastic lineage. Chapter 5 focuses on Paul's epistles as political correspondence and ekklesia structure."
+  },
+  {
+    "finding_id": "7cB4iUIDqH8_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[9] (lines 136-148) discusses rank ordering in Paul's assemblies: 'God has appointed, first apostles, second prophets, third teachers' (1 Cor 12:28). The chapter argues about hierarchical institutional structures. However, the specific evidence of gnosis-holders as a ranked tier ('highest ranking people short of apostles') is not in the inventory."
+  },
+  {
+    "finding_id": "8SVYWooMWGI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's vocabulary as court hierarchy and administrative register. INV[49] discusses Kyrios as sovereignty term. The chapter argues Paul's language is imperial. However, the specific parousia mechanism \u2014 citizens going out to meet an arriving king and escorting him back into the city \u2014 is not in the inventory. This is a specific institutional parallel not cited."
+  },
+  {
+    "finding_id": "95_tIT8t0cI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses initiatory practices and secret symbols. INV[43] covers Greek cosmology in Paul. The Global Q&A instructs: reframe mystery cult data through imperial cult under foreign rule. The chapter makes arguments about secret/initiatory practices. However, the specific verse 1 Cor 11:34 as containing 'special initiation instructions' for house church meetings is not cited in the inventory."
+  },
+  {
+    "finding_id": "9oDivUJSfWU_0",
+    "verdict": "covered",
+    "justification": "INV[40] (lines 1065-1089) argues Luke is the Aegean gospel with polished historiographic Greek matching Pauline network cities. INV[41-42] discuss Greek literary culture in Luke. The argument that Luke must be understood within Greco-Roman context is extensively covered."
+  },
+  {
+    "finding_id": "9oSQIAxXsAY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10-11] argue ekklesia was a pre-existing civic institution. The chapter makes the argument about ekklesia as Greek institutional form. However, the specific parallels to named pagan temple assemblies (Assembly of Apollo, Temple of Dionysus, Temple of Hipsistos Zeus) from Kloppenborg's work are not in the inventory."
+  },
+  {
+    "finding_id": "BVU5_rau6wI_2",
+    "verdict": "covered",
+    "justification": "INV[4-5] discuss Paul's letters as imperial chancery correspondence following administrative protocols. INV[3] notes all correspondence written exclusively in Greek. The Hellenistic nature of the epistle form is covered by the chapter's treatment of Paul's letters as Greek administrative documents."
+  },
+  {
+    "finding_id": "BqILLv1Dvl0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[0] frames Christianity as Greek imperial continuation. The chapter argues Hellenistic context. However, the specific evidence of Plutarch actively identifying parallel gods across cultures (Osiris = another god) as part of Hellenistic cosmopolitanism contextualizing Paul is not in the inventory."
+  },
+  {
+    "finding_id": "C2IokcQUcrQ_0",
+    "verdict": "covered",
+    "justification": "INV[6] establishes Paul's Hellenistic profile. INV[43] covers Platonic-Stoic frameworks. Global Q&A addresses mystery cult data: reframe through imperial cult under foreign rule. Paul as Hellenized Jew employing Greek cultural motifs is covered."
+  },
+  {
+    "finding_id": "ESGm8ZEARHA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10] argues ekklesia was civic assembly. INV[17] cites P.Oxy. evidence of Roman administration treating ekklesia as corporate body. The chapter argues about the institutional nature of ekklesia. However, the specific evidence from Candida Moss about ecclesias as public associations comparable to trade unions \u2014 significant enough for Roman authorities to regulate \u2014 adds the dimension of publicness (not hiding) that is not directly in the inventory. INV[20] actually argues the opposite (secret symbols, conspiratorial methods)."
+  },
+  {
+    "finding_id": "EaNNLRKAcYc_2",
+    "verdict": "not_relevant",
+    "justification": "This finding is about a methodological approach (social identity criticism) applied to the Acts of Andrew, an apocryphal text. It does not provide specific evidence or make a specific argument relevant to any chapter's thesis. The methodological observation is too general to bear on any specific argument."
+  },
+  {
+    "finding_id": "G29jCvsNO6w_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[19] discusses opposition in Greek cities. INV[43] covers Paul's engagement with Hellenistic religious context. The chapter argues Paul operated within Greco-Roman religious landscapes. However, the specific evidence of Paul addressing castration practices related to the Attis cult in Galatia is not in the inventory."
+  },
+  {
+    "finding_id": "I2b2tVLp80I_2",
+    "verdict": "covered",
+    "justification": "INV[4] discusses Paul's letters as administrative directives including 'directives on discipline, finance, and adjudication.' INV[12] covers civic governance procedures. Paul as institutional systematizer is the chapter's argument throughout the ekklesia sections."
+  },
+  {
+    "finding_id": "KuSibmeXsTg_0",
+    "verdict": "covered",
+    "justification": "INV[0] frames Christianity as Greek imperial continuation. INV[28] rejects the Judaic Sect Model. INV[43] argues Paul employs Greek cosmology rather than Jewish eschatology. The methodological claim that Paul must be understood through Hellenistic rather than Jewish frameworks is the chapter's central thesis."
+  },
+  {
+    "finding_id": "LSpAmwwlSaI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions Paul's Athens speech exploiting 'existing Greek highest god discourse.' INV[10] argues ekklesia was pre-existing civic assembly. The chapter argues assemblies pre-existed Paul. However, the specific hypothesis that Paul's Asia Minor churches were pre-existing Hypsistarian ('God Most High') worshipper communities already free from Jewish law is not in the inventory as a specific mechanism."
+  },
+  {
+    "finding_id": "LSpAmwwlSaI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions 'highest god discourse.' The chapter argues about Paul's engagement with Greek religious concepts. However, the specific identification of Acts 16:17 as a possible reference to the Hypsistarian sect is not in the inventory."
+  },
+  {
+    "finding_id": "LSpAmwwlSaI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[14-15] argue institutional complexity appears instantly and geographic distribution matches Greek empire. The chapter argues about the mechanism of rapid spread (pre-existing civic assemblies). The Hypsistarian hypothesis as an additional mechanism for rapid spread provides new evidence for the existing argument about why Christianity spread so quickly in Greek cities."
+  },
+  {
+    "finding_id": "M16MHb6WqIg_1",
+    "verdict": "covered",
+    "justification": "INV[0] argues Christianity as continuation of Greek tradition. INV[15] discusses geographic distribution matching Greek empire. The observation that Greek religious influences appeared as Christianity spread to Hellenistic cities (Egypt, Syria, Anatolia) is the foundational premise of the chapter."
+  },
+  {
+    "finding_id": "M4hDuKt5Pm4_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] discusses Acts as record of maintaining Greek civic order. INV[6] discusses Paul's profile within Greek cities. The chapter argues early Christians were positioned within Mediterranean religious-institutional contexts. However, the specific Acts 14 Lystra episode (Paul/Barnabas identified as Zeus/Hermes, paralleling Ovid's Metamorphoses) is not cited in the inventory."
+  },
+  {
+    "finding_id": "P2UwFwSH1RM_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[16] discusses hybrid institutions where civic, synagogue, and association logics overlap. The chapter argues Greek and Jewish institutions shared frameworks. However, the specific evidence about the Temple of Athena in Corinth having the same purity rules as the Jewish Temple regarding sexual impurity is not in the inventory."
+  },
+  {
+    "finding_id": "Q1iF3MrY5yI_2",
+    "verdict": "covered",
+    "justification": "INV[0] frames Christianity as continuation of Greek tradition. INV[28] rejects alternative models. The chapter's central argument is that Christianity adopted and continued Greek institutional and cultural patterns."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not make the argument that individual early Christians were deified through Greco-Roman apotheosis practices. No inventory item discusses individual Christian deification. The evidence (Epiphanius deified with museum, monthly sacrifices) is also not in any chapter. This is both a new argument (early Christian communities adopted Greco-Roman apotheosis for their own members) and new evidence."
+  },
+  {
+    "finding_id": "Q_1MmYlXNUU_5",
+    "verdict": "new_evidence_and_argument",
+    "justification": "The chapter does not discuss Naassene theology or the specific hermeneutical method of systematically identifying Jesus with other deities (Attis, Osiris). No inventory item covers early Christian groups arguing that other gods' epithets 'unconsciously' referred to Christ as universal deity. This is a new argument and new evidence not present in any chapter."
+  },
+  {
+    "finding_id": "TOtKGiV7RYI_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[16] discusses hybrid institutions where civic and synagogue logics overlap. The Q&A discusses Phoenician/Levantine civic parallels showing Near Eastern city-state governance predating Christianity. The chapter argues Greek institutional forms were templates for Christian organization. However, the specific evidence from Gmirkin about Jewish governance directly imitating Plato's Laws (nocturnal council, high priests, theological experts) in the 270s BC is not in the inventory."
+  },
+  {
+    "finding_id": "UG7qpuCXZZk_2",
+    "verdict": "not_relevant",
+    "justification": "The finding about Simonians as a separate Christian movement spreading from Samaria to Rome does not directly bear on any argument in Chapter 5 or the broader book. The book focuses on Paul's ekklesia, gospel localization, and Greek institutional frameworks. Simonian Christianity is a tangential sectarian movement not addressed in the book's arguments."
+  },
+  {
+    "finding_id": "UeOqggxeN_U_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions Paul exploiting 'highest god' discourse. INV[19] discusses minimal resistance. Global Q&A: reframe mystery cult data through imperial cult under foreign rule. The chapter argues Paul operated within Hellenistic religious contexts. However, the specific evidence about Phrygian Sabazios worshippers ('they're looking at Jesus as the new Attis') and the 'clash of worlds' between Jewish and Greek monotheistic Phrygians is not in the inventory."
+  },
+  {
+    "finding_id": "V6shchstY9k_3",
+    "verdict": "new_evidence_and_argument",
+    "justification": "No inventory item discusses Paul's father's profession as connecting him to Roman military institutions, or Paul's possible initiation into Mithraism. The argument that Paul had direct institutional access to Roman military structures through his father's tent-making business is neither the argument nor the evidence present in the chapter."
+  },
+  {
+    "finding_id": "XkYRvyGYPiA_0",
+    "verdict": "covered",
+    "justification": "INV[18] (lines 344-445) includes Pergamum in the complete table of cities in Acts. INV[54] (lines 1424-1434) discusses Pergamum as 'former Attalid capital' in the seven messages of Revelation. The chapter covers Pergamum as part of the Greek institutional network."
+  },
+  {
+    "finding_id": "aKzURrl_6GY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10-11] argue ekklesia was pre-existing civic assembly with civic offices. The chapter argues about Greek institutional forms in Christian assemblies. However, the specific evidence of Dionysian Baptist groups with titles like 'torchbearer, temple bearer, Christ bearer' matching early Christian assembly titles is not in the inventory."
+  },
+  {
+    "finding_id": "avcA-TUJjUg_3",
+    "verdict": "covered",
+    "justification": "INV[36] discusses John's Logos theology as Alexandrian. INV[43] discusses Paul employing Greek cosmology. INV[40] discusses the Septuagint as interpretive medium. The application of Greek philosophical concepts to Jewish texts is covered throughout the chapter."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses initiatory practices and secret symbols. INV[43] covers Greek cosmology in Paul. Global Q&A instructs: reframe mystery cult data through imperial cult. The chapter argues about Greek institutional forms. However, the specific etymological chain (Greek word musterion from muein 'to initiate into religious rites') and the specific terms (mysteria, telios, nipios) as institutional vocabulary are not enumerated in the inventory."
+  },
+  {
+    "finding_id": "bHkIpXlwOhU_3",
+    "verdict": "wrong_chapter",
+    "justification": "The finding about the Hilaria festival and resurrection celebration of Attis/Adonis belongs in Chapter 3 (He Truly was the Son of God) which discusses resurrection parallels and divine son themes, or Chapter 6 which covers the Purple Phoenix rising. Chapter 5 focuses on Paul's epistles and ekklesia structure, not resurrection mythology comparisons."
+  },
+  {
+    "finding_id": "dWQZ1pWcTio_0",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) explicitly argues ekklesia was 'the sovereign body of citizens that passed laws, heard proclamations, received official dispatches.' INV[11] cites the Erythrai decree (5th century BC) with episkopoi as civic magistrates. The pre-Christian Greek usage of ekklesia as civic term is directly covered."
+  },
+  {
+    "finding_id": "eNX0aCF1HJQ_2",
+    "verdict": "covered",
+    "justification": "INV[10] argues ekklesia was pre-existing civic assembly. INV[14] argues institutional complexity appears instantly. INV[15] discusses geographic alignment with Greek empire. The chapter's central argument is that Christianity formed within pre-existing Hellenistic institutional structures."
+  },
+  {
+    "finding_id": "gX36iMeJI54_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10-16] cover the ekklesia argument extensively. The Q&A discusses Kloppenborg's association model as an alternative template. However, the specific evidence about Paul connecting with Thessalonians through trade networks (tent/awning makers) and trades organizing by neighborhood is not in the inventory."
+  },
+  {
+    "finding_id": "gX36iMeJI54_1",
+    "verdict": "covered",
+    "justification": "INV[13] (lines 217-246) extensively discusses communal meal behavior including '1 Cor 11:17-34: rich arrive early, consume food/wine, leave poor with nothing at communal meal.' The Q&A discusses Greek civic banquets (syssitia) as well-documented parallels. Communal meals as civic institutional practice is covered."
+  },
+  {
+    "finding_id": "gX36iMeJI54_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] discusses sociological behavior in epistles. INV[11] mentions Phoebe as diakonos. The chapter argues about adaptation to local institutional patterns. However, the specific geographic variation evidence (Thessalonica as all-male occupational guild, Corinth and Philippi with prominent female members) reflecting adaptation to local Hellenistic institutional patterns is not in the inventory."
+  },
+  {
+    "finding_id": "hrfnmmxUqY8_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] discusses Paul's soma pneumatikon as Platonic-Stoic rather than Jewish. INV[20] discusses initiatory practices. Global Q&A: reframe through imperial cult. The chapter argues Paul's theology is Greek rather than Jewish. However, the specific argument that baptism-as-death-and-resurrection is mystery religion ritual mimesis (devotees repeating the saving action of the deity) with no Jewish precedent is not in the inventory."
+  },
+  {
+    "finding_id": "jVXQNHYb-yo_0",
+    "verdict": "covered",
+    "justification": "INV[28] rejects the Judaic Sect Model and notes 'hostility to Mosaic law.' INV[0] frames Christianity as Greek continuation. The chapter covers Paul's removal of Jewish requirements (circumcision, dietary laws) to create a universalist Hellenistic movement."
+  },
+  {
+    "finding_id": "jVXQNHYb-yo_1",
+    "verdict": "covered",
+    "justification": "INV[4-6] establish Paul as imperial envoy. INV[27] discusses James as dynastic successor. INV[25-26] discuss Acts as political historiography. The argument that Christianity's success depended on the political positioning of its leaders is the chapter's thesis."
+  },
+  {
+    "finding_id": "jmmNY7wdcFI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] discusses Acts as record of Greek civic order. INV[6] covers Paul's profile in Greek cities. The chapter argues Paul operated within Hellenistic religious contexts. However, the specific Acts episode with the Pythian priestess (Apollo priestess) following Paul is not cited in the inventory."
+  },
+  {
+    "finding_id": "m7oTr1Wm2A0_0",
+    "verdict": "covered",
+    "justification": "INV[9] (lines 136-148) explicitly lists 'Our politeuma is in heaven declares citizenship in a capital city with its own law (Phil 3:20).' INV[12] also lists 'Politeuma (Phil 3:20) is civic enrollment in a political community with jurisdiction.' This exact evidence is in the inventory."
+  },
+  {
+    "finding_id": "o3HAmL3fWg8_2",
+    "verdict": "not_relevant",
+    "justification": "Valentinian church movements in western Turkey and southern France are 2nd-century sectarian developments unrelated to the chapter's arguments about Paul's 1st-century ekklesia, gospel localization, or institutional origins. The finding does not bear on any argument in any chapter."
+  },
+  {
+    "finding_id": "o8co7YYxnf8_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10] argues ekklesia was civic assembly. The chapter makes the ekklesia-as-political-institution argument. However, the specific connection of ekklesia to temenos (sacred grove) and the mystery cult institutional parallels drawn by Hillman are not in the inventory."
+  },
+  {
+    "finding_id": "qL0qP5HoBl8_1",
+    "verdict": "covered",
+    "justification": "INV[2] (lines 36-63) explicitly lists 'In Ephesus Paul attacks physical idols of Artemis directly rather than finding commonalities.' INV[19] lists 'Ephesian silversmiths riot over lost business.' The Acts 19 Ephesus/Artemis episode is directly in the inventory."
+  },
+  {
+    "finding_id": "r-_woQXpbXg_3",
+    "verdict": "covered",
+    "justification": "INV[3] (lines 64-79) argues churches appear in every major city of the former Greek empire with all correspondence in Greek. INV[16] discusses diaspora synagogues with civic-administrative features. INV[18] lists the complete table of cities. Paul's mission to Hellenized diaspora communities in Greek cities is covered."
+  },
+  {
+    "finding_id": "rX34KmDyipo_2",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Greek cosmology (Platonic-Stoic metaphysics). INV[0] frames Christianity through Greek lens. The characterization of Paul as fundamentally Hellenistic rather than Jewish is the chapter's core argument."
+  },
+  {
+    "finding_id": "s1P6w4hbNt8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[16] discusses hybrid institutions. The Q&A discusses Phoenician/Levantine civic parallels. The chapter argues Greek institutional frameworks influenced Jewish institutions. However, the specific statistic (85% overlap between OT law codes and Athenian/Plato/Roman laws) from Gmirkin's research is not in the inventory."
+  },
+  {
+    "finding_id": "s1P6w4hbNt8_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] covers Paul's profile including speeches. INV[41] discusses Greek literary culture. The chapter argues about Greek institutional frameworks. However, the specific evidence about Greek theater as institutional venue for public narrative transmission, and Paul's Galatians passage about seeing 'performed before your own eyes' being theatrical rhetoric, is not in the inventory."
+  },
+  {
+    "finding_id": "sky6u0ntu24_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10-11] argue ekklesia was pre-existing civic assembly with civic offices. The chapter argues about Greek institutional forms. However, the specific evidence about rotational democratic leadership, health care systems, egalitarian social networks, and titles like 'torchbearer' and 'Christ-bearer' matching Dionysian associations is not in the inventory."
+  },
+  {
+    "finding_id": "sky6u0ntu24_6",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions Paul's Athens speech exploiting 'highest god' discourse. The chapter argues about the mechanism of Christianity's spread. However, the specific argument about God-fearers/Theos Hypsos worshippers as the primary demographic for early Christian conversion, explaining rapid expansion to major Greek cities, is not enumerated in the inventory."
+  },
+  {
+    "finding_id": "sky6u0ntu24_7",
+    "verdict": "covered",
+    "justification": "INV[35] (lines 900-931) explicitly states 'Marcion (c. 140) circulated Aegean canon: edited Luke and Pauline Apostolikon.' INV[52] also lists 'Marcion (c. 140): Aegean canon (edited Luke + Pauline Apostolikon).' Marcion's possession of Paul's epistles is in the inventory."
+  },
+  {
+    "finding_id": "t7CJmPnZqtA_3",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Greek cosmology directed at Greek-thinking converts. INV[0] frames Christianity as Greek continuation. Global Q&A: reframe mystery cult data through imperial cult. The chapter covers Paul's audiences being steeped in Greco-Roman religious culture."
+  },
+  {
+    "finding_id": "u4QBfZd-iPI_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions 'highest god' discourse. INV[10] argues ekklesia was pre-existing assembly. The chapter argues assemblies pre-existed. However, the specific evidence that pre-existing Hellenistic law-ignoring Jewish communities (Hypsistarians/'worshippers of God most high') already existed in Paul's target cities is not enumerated in the inventory."
+  },
+  {
+    "finding_id": "u6TuZjr8WR4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses initiatory practices. INV[43] covers Greek cosmology. Global Q&A: reframe through imperial cult. The chapter argues Paul's practices were Hellenistic. However, the specific mechanism of Paul taking Jewish rites and endowing them with mystery religion significance (Eucharist as partaking flesh/blood, baptism as mystical identification with death/rebirth) is not detailed in the inventory."
+  },
+  {
+    "finding_id": "u6TuZjr8WR4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's vocabulary as court/administrative register. INV[43] covers philosophical terminology. The chapter argues Paul's language is Greek institutional. However, the specific mystery religion terms (mysterion as hidden secret, telios as perfected, nipios as babe/uninitiated) are not enumerated in the inventory."
+  },
+  {
+    "finding_id": "uiOuST-QNdc_0",
+    "verdict": "covered",
+    "justification": "INV[2] lists 'Paul's speech in Athens about the unknown god.' INV[6] lists 'Athens speech (Acts 17) is a philosophical-diplomatic speech pitched at elites.' INV[9] mentions Roman citizenship providing institutional access. Paul's Acts 17 engagement with Stoics and Epicureans is covered."
+  },
+  {
+    "finding_id": "vjJ1YPsy4lI_0",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Platonic-Stoic metaphysics. Paul as Middle Platonist incorporating Greek philosophy into his theology is directly covered."
+  },
+  {
+    "finding_id": "wsXgyn36mO8_3",
+    "verdict": "covered",
+    "justification": "INV[24] (lines 532-547) discusses Alexandria as center of the movement, hosting the largest Jewish community, producing the Septuagint, Wisdom literature, Philo's corpus, and John's vocabulary. Alexandria as a convergence of multiple traditions is covered."
+  },
+  {
+    "finding_id": "x6xLDLJaBaY_0",
+    "verdict": "covered",
+    "justification": "INV[10] explicitly argues ekklesia was civic assembly. INV[15] argues geographic distribution matches Greek empire. INV[24] discusses Alexandria. The finding's two points \u2014 ekklesia as political group and Christianity developing outside Judea in Hellenistic cities \u2014 are both in the inventory."
+  },
+  {
+    "finding_id": "xvjM_sz07CA_2",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Platonic-Stoic metaphysics rather than Jewish eschatology. INV[28] rejects the Judaic Sect Model. The characterization of Paul as a middle platonist operating outside Jewish frameworks is the chapter's argument."
+  },
+  {
+    "finding_id": "ydOBgbIyIVs_0",
+    "verdict": "new_evidence_and_argument",
+    "justification": "No inventory item discusses the Peter-Paul parallel to Romulus-Remus as hero twins of Rome. This is a distinct argument (Luke-Acts deliberately frames Peter and Paul as replacing Rome's founding twins) with specific evidence (Saint Peter's Basilica placement, symmetric treatment in Acts). Neither the argument nor this evidence appears in any chapter."
+  },
+  {
+    "finding_id": "ydOBgbIyIVs_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] mentions Paul's Roman citizenship and travel through Greek poleis. INV[13] discusses patron-client relationships. The chapter argues about Paul's Roman institutional connections. However, the specific argument that Paul's name change reflects adoption of Governor Paulus's name through a patron-client relationship on Cyprus is not in the inventory."
+  },
+  {
+    "finding_id": "ydOBgbIyIVs_2",
+    "verdict": "covered",
+    "justification": "INV[25] (lines 548-564) discusses Acts as pragmatic historiography. INV[26] states 'Acts ends in Rome with Paul preaching the kingdom of God.' INV[18] notes 'Trip to Rome was substantially different in nature to other trips.' The Jerusalem-to-Rome arc of Acts is explicitly covered."
+  },
+  {
+    "finding_id": "yj83eFKm_FE_0",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) explicitly argues 'Ekklesia was not a new religious club but the same civic assembly that governed the Greek city.' INV[2] lists 'Ekklesia was the civic assembly of the city, local government.' This is the exact argument with the exact evidence."
+  },
+  {
+    "finding_id": "zADpsFCyhY0_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions 'highest god' discourse. INV[10] argues ekklesia was pre-existing assembly. The chapter argues assemblies pre-existed Paul. However, the specific hypothesis about Theos Hipsistos cult blending Greek and Jewish elements in Anatolia/Thrace as Paul's audience, with the cult forming from Zeus Sabazios with Jewish ideals, is not in the inventory."
+  },
+  {
+    "finding_id": "4mi-nBfxLjk_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[9] mentions politeuma (Phil 3:20) and INV[12] lists it as civic enrollment. The chapter references politeuma as political terminology. However, the specific historical evidence from the Hellenistic Age podcast about politeumata as pseudogovernmental bodies where members could vote on motions and contribute to local projects/temples provides concrete institutional detail not in the inventory."
+  },
+  {
+    "finding_id": "5cqruE4LYyY_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[15] argues geographic distribution matches former Alexandrian imperial network. INV[31] discusses four post-Alexandrian cultural worlds including Seleucid Syria. The chapter argues about Greek institutional infrastructure. However, the specific evidence about Seleucid cities with divided quarters (Macedonians, Greek communities, indigenous peoples) and institutional infrastructure is not detailed in the inventory."
+  },
+  {
+    "finding_id": "W58wLeX8rfw_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10-12] argue ekklesia was civic assembly with governance procedures. The chapter argues about Greek institutional forms. However, the specific evidence about the Hellenistic Symmachy (hegemon elected in perpetuity, councils of war with voting, allied military forces) as a concrete institutional model is not in the inventory."
+  },
+  {
+    "finding_id": "aoRA4W-9QBI_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[15] argues geographic distribution matches Greek empire. INV[31] discusses four cultural worlds. The chapter argues about Greek institutional dominance. However, the specific evidence from Greco-Bactria showing hierarchical Hellenistic administration with Greek as dominant language and local populations in subordinated roles is not in the inventory."
+  },
+  {
+    "finding_id": "kNZmBbcu3GQ_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[9] and INV[12] reference politeuma as civic terminology. The chapter uses politeuma as evidence. However, the specific detail about politeumata established on ethnic lines (Jews, Greeks, Thracians) concentrated at strategically valuable locations/fortresses provides additional institutional context not in the inventory."
+  },
+  {
+    "finding_id": "wkq751dlDB0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[16] discusses hybrid institutions where civic assembly and diaspora synagogue logics overlap. The chapter argues about Greek institutional influence on Jewish governance. However, the specific evidence that the Sanhedrin was referred to in Greek sources as boule or gerousia, 'functionally similar to those counterparts in a Greek polis,' is not in the inventory."
+  },
+  {
+    "finding_id": "3qIG6Hxl4ws_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] discusses Paul employing Greek cosmology. The chapter argues Paul thought in Greek categories. However, the specific evidence about Paul viewing sexuality through a Greek philosophical lens (sexual desire as baser urge of flesh to overcome) is not in the inventory."
+  },
+  {
+    "finding_id": "6Xp3wYxccis_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] covers Greek cosmology in Paul. The chapter argues Paul's framework was Hellenistic. However, the specific evidence about Greco-Roman/Stoic thought directly shaping Paul's sexual ethics (celibacy, monogamy) rather than Jewish tradition is not in the inventory."
+  },
+  {
+    "finding_id": "8URUw_ovY9I_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[3] notes all correspondence in Greek. INV[10] discusses ekklesia as Greek institution. The chapter argues early Christian institutions were Greek. However, the specific evidence that the Jerusalem Council narrative only makes sense in Greek (James's Amos citation via LXX creates meaning that disappears in Hebrew/Aramaic) is not in the inventory. This is a powerful piece of evidence for the existing argument."
+  },
+  {
+    "finding_id": "96eITp--jbc_0",
+    "verdict": "covered",
+    "justification": "INV[3] (lines 64-79) argues all correspondence in Greek to Greek assemblies. INV[15] discusses geographic distribution matching Greek empire. INV[28] rejects models predicting multilingual documents. The development of early Christian communities in Hellenistic cities using Greek is thoroughly covered."
+  },
+  {
+    "finding_id": "GUvazSjoKEw_3",
+    "verdict": "covered",
+    "justification": "INV[13] (lines 217-246) explicitly lists '1 Cor 11:2-16: debate over head coverings and appearance (civic stage presentation)' as evidence of sociological behavior inherited from Greek civic assembly. The head covering discussion is in the inventory."
+  },
+  {
+    "finding_id": "Wtk0GIA7O20_0",
+    "verdict": "covered",
+    "justification": "INV[24] mentions Alexandria produced the Septuagint. INV[40] ties Luke to Septuagint-based interpretation. INV[1] cites Gen 22:18 LXX and Ps 148 LXX. The Septuagint's role as the Jewish scriptures for early Christianity is covered across the chapter."
+  },
+  {
+    "finding_id": "aZGuUDeEkLA_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's vocabulary as imperial/administrative. INV[43] covers Greek cosmology. The chapter argues Paul's language is imperial. However, the specific mechanism of the parousia in 1 Thessalonians 4:17 as a Greco-Roman political convention (inhabitants filing outside city walls to meet triumphant ruler and usher him in) is not in the inventory."
+  },
+  {
+    "finding_id": "haYS2Dkl2ME_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] covers Paul's Greek cosmology. The chapter argues Paul thought in Greek categories. However, the specific evidence about Paul's sexual ethics being shaped by Stoic philosophy (overabundance of passion as bad) rather than Jewish law is not in the inventory."
+  },
+  {
+    "finding_id": "i524u4ScPzg_1",
+    "verdict": "covered",
+    "justification": "INV[0] frames Christianity as continuation of Greek tradition. INV[28] rejects the Judaic Sect Model showing Christianity had to expand beyond Jewish boundaries. The argument that survival required expansion into the Greco-Roman world is covered by the chapter's framework."
+  },
+  {
+    "finding_id": "kKQraczEG84_0",
+    "verdict": "covered",
+    "justification": "INV[10] (lines 149-168) argues ekklesia was 'the sovereign body of citizens that passed laws, heard proclamations, received official dispatches.' The etymological analysis confirming ekklesia as officially summoned public meeting is the exact argument of INV[10]."
+  },
+  {
+    "finding_id": "kT8iuYh0woQ_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] discusses sociological behavior inherited from Greek civic assembly. INV[16] discusses hybrid institutions. The chapter argues Christian institutional forms were Greek. However, the specific evidence about household codes in Titus reflecting 'broader Greco Roman notion of the ideal household' with prescribed roles and patriarch hierarchy is not detailed in the inventory."
+  },
+  {
+    "finding_id": "obw7lo63cCU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's imperial vocabulary. The chapter argues Paul's language is political. However, the specific mechanism from 1 Thess 4:15-17 (inhabitants meeting arriving sovereign outside city, reoriented vertically for Jesus's descent) is not in the inventory."
+  },
+  {
+    "finding_id": "tp9l8Q7niC4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's imperial vocabulary. The chapter argues Paul's language is political. However, the specific evidence that early interpreters themselves understood Paul to be using traditional Greco-Roman triumphal procession imagery is not in the inventory. This patristic interpretive tradition provides new evidence."
+  },
+  {
+    "finding_id": "-3smeQwnhzY_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] lists '1 Cor 11:2-16: debate over head coverings' as civic stage presentation. The chapter argues about Greek civic assembly norms. However, the specific argument that the prohibition on women speaking derives from Hellenistic custom and Roman law going back to Aristotle, not Jewish law, is not in the inventory."
+  },
+  {
+    "finding_id": "-5_ordgxPso_1",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Greek cosmology. INV[0] frames the Hellenistic context. The argument that Paul's Greek education shaped his thought and Hellenism penetrated even traditionally Jewish communities is covered by the chapter's framework."
+  },
+  {
+    "finding_id": "-I5opAIthpc_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] covers Greek cosmology in Paul. INV[20] covers initiatory practices. Global Q&A: reframe through imperial cult. The chapter argues Paul's practices were Hellenistic. However, the specific characterization of Christianity as a 'Greco-Judaic hybrid' with Jewish rituals given entirely new mystical significance is a specific framing not directly in the inventory."
+  },
+  {
+    "finding_id": "-rwHxeHVyXE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[43] discusses Paul's Greek cosmology. INV[28] rejects the Judaic Sect Model. The chapter argues Paul's theology was Hellenistic. However, the specific quantification (5-6 salvific ideas, only one from Judaism/animal sacrifice, rest from mystery cult traditions) is not in the inventory."
+  },
+  {
+    "finding_id": "-rwHxeHVyXE_2",
+    "verdict": "covered",
+    "justification": "INV[12] (lines 191-216) explicitly lists 'Romans 13 commands submission to Roman governing authorities during Jewish unrest.' The argument that Paul functioned within Roman political structures and Romans 13 addressed Jewish political tension is directly in the inventory."
+  },
+  {
+    "finding_id": "1HjimJTgS_Q_1",
+    "verdict": "covered",
+    "justification": "INV[6] (lines 108-116) explicitly lists 'Acts 16: Paul and Silas sing in prison until earthquake opens doors, echoing Euripides Bacchae (imprisoned Dionysus).' INV[41] also lists 'Acts 16:19-26: Paul/Silas arrested, offer no resistance, physical reversal opens doors \u2014 echoes Euripides Bacchae 434-518.' This exact evidence is in the inventory."
+  },
+  {
+    "finding_id": "1HjimJTgS_Q_2",
+    "verdict": "covered",
+    "justification": "INV[6] (lines 108-116) explicitly lists 'Acts 17: Paul debates in the Areopagus like Socrates before the Athenian elite.' The dual characterization (Dionysus in Acts 16, Socrates in Acts 17) is covered by INV[6] which lists both episodes sequentially."
+  },
+  {
+    "finding_id": "2xrtEKOcyDI_2",
+    "verdict": "covered",
+    "justification": "INV[3] argues all correspondence in Greek to Greek assemblies. INV[28] rejects the Judaic Sect Model. The chapter establishes Paul's audiences as Gentile pagans familiar only with Greek culture, not Hebrew tradition."
+  },
+  {
+    "finding_id": "2xrtEKOcyDI_3",
+    "verdict": "covered",
+    "justification": "INV[23] discusses Paul's focus on resurrecting the office of Christos versus Jesus's daily teachings. INV[27] discusses James operating within the same Hellenistic tradition but as dynastic successor. INV[28] rejects the Judaic Sect Model. The institutional and theological divergence between Paul and the Jerusalem apostles is covered."
+  },
+  {
+    "finding_id": "3EnLgob-FFM_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[13] discusses sociological behavior in epistles. INV[19] discusses minimal theological resistance. The chapter argues Christians were embedded in Greek civic life. However, the specific evidence of 1 Corinthians 8 (believers attending idol temple banquets) showing Christians deeply embedded in Greek religious institutions is not cited in the inventory."
+  },
+  {
+    "finding_id": "3J2jhTdst3g_0",
+    "verdict": "covered",
+    "justification": "INV[9] (lines 136-148) explicitly lists 'Greetings from those of Caesar's household (Phil 4:22)', 'Praetorian Guard aware of his case (Phil 1:13)', and 'Associate Epaphroditus shares the name of Nero's powerful secretary.' This exact evidence is in the inventory."
+  },
+  {
+    "finding_id": "3t1OD2q81yg_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] and INV[41] establish Acts uses Greek literary models (Bacchae, Socrates). The chapter argues Acts employs Greek narrative frameworks. However, the specific Acts 27-28 / Odyssey parallel (Paul's shipwreck journey mirroring Odysseus's voyage, with Paul saving all companions vs Odysseus saving only himself) is not in the inventory."
+  },
+  {
+    "finding_id": "3xDXM5iMctU_0",
+    "verdict": "not_relevant",
+    "justification": "This finding is about a methodological complaint (fundamentalists lack Classics PhD training) rather than providing specific evidence or argument. It does not add new evidence, a new argument, or bear specifically on any chapter's thesis."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_4",
+    "verdict": "covered",
+    "justification": "INV[12] explicitly lists 'Romans 13 commands submission to Roman governing authorities during Jewish unrest.' INV[6] lists 'Paul appeals to Caesar as a Roman citizen.' The argument about Paul's alignment with Roman institutional interests is directly covered."
+  },
+  {
+    "finding_id": "4I5IazzlLo8_5",
+    "verdict": "wrong_chapter",
+    "justification": "The Beatitudes analysis belongs in Chapter 3 (He Truly was the Son of God) which discusses Jesus's teachings and their meaning, or Chapter 1 which covers Jesus's identity. Chapter 5 focuses on Paul's epistles and ekklesia structure, not the Sermon on the Mount."
+  },
+  {
+    "finding_id": "4OTQthcPVOc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's vocabulary as court hierarchy. INV[44] discusses justification as Greek civic-forensic language. The chapter argues Paul's language is Greco-Roman legal terminology. However, the specific term hyothesia (adoption) as novel among Jewish authors and borrowed from Roman imperial succession practice is not in the inventory."
+  },
+  {
+    "finding_id": "4lqQshEzE0o_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[11] cites Phoebe as diakonos. The chapter makes the argument about civic offices. However, the additional evidence from Pagels about Mary as 'hard evangelist' and a couple (man and woman) who were 'apostles before me' adds named examples beyond Phoebe that are not in the inventory."
+  },
+  {
+    "finding_id": "4rGWBNc4zOE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses initiatory practices. INV[43] covers Greek cosmology. Global Q&A: reframe through imperial cult. The chapter argues Paul's practices were Hellenistic. However, the specific evidence of 'baptizing on behalf of the Dead' as found in other cults is not in the inventory."
+  },
+  {
+    "finding_id": "4vaEnWVzuK4_4",
+    "verdict": "covered",
+    "justification": "INV[18] includes Ephesus in the complete city tables. INV[2] discusses Paul in Ephesus attacking idols of Artemis. INV[19] lists Ephesian silversmiths riot. Paul's ministry in Ephesus is covered."
+  },
+  {
+    "finding_id": "5BZlc5IWnLA_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[10] argues ekklesia was pre-existing civic assembly. INV[14] argues institutional complexity appears instantly. The chapter argues assemblies pre-existed. However, the specific evidence that proto-christologies existed among gentiles in these cities before Paul (pre-existing theological frameworks) is not in the inventory."
+  },
+  {
+    "finding_id": "5BZlc5IWnLA_3",
+    "verdict": "covered",
+    "justification": "INV[10] argues 'Ekklesia was not a new religious club but the same civic assembly that governed the Greek city before Roman conquest.' INV[14] argues institutional complexity appears fully formed. The argument that Paul addressed pre-existing assemblies rather than creating new ones is the chapter's core thesis."
+  },
+  {
+    "finding_id": "5WrZnOVYy7U_3",
+    "verdict": "covered",
+    "justification": "INV[4-6] establish Paul as imperial envoy adapting correspondence to different assemblies. INV[43] discusses Paul's mystical framework including 'third heaven' (2 Cor 12). Paul as sophisticated operator adapting to Hellenistic urban contexts is covered."
+  },
+  {
+    "finding_id": "5kI6tecz_yc_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] discusses Paul's political profile including Roman citizenship and travel through Greek poleis. INV[25] discusses Acts as Greco-Roman historiography. The chapter argues Paul is portrayed through Greek categories. However, the specific argument that Pharisaic identity and Tarsus citizenship are mutually exclusive (Tarsus citizenship requires pagan civic ceremonies like wearing purple robes and sacrificing to Artemis) is not in the inventory."
+  },
+  {
+    "finding_id": "5kI6tecz_yc_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] discusses Paul debating in Areopagus. INV[25] discusses Acts as Greco-Roman historiography. The chapter argues Paul is framed through Greek categories. However, the specific argument about oratory as 'calisthenics of manhood' in Roman context and Paul portrayed as supreme orator to construct masculine authority is not in the inventory."
+  },
+  {
+    "finding_id": "5tUJl1330TI_0",
+    "verdict": "covered",
+    "justification": "INV[10] discusses ekklesia as civic assembly. INV[4] discusses Paul addressing ekklesiai with inter-city dissemination. The dual usage (local assembly and universal body) is implicit in the chapter's treatment of Paul addressing both individual city assemblies and the broader Christian polity."
+  },
+  {
+    "finding_id": "5wy1hrfAPG4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses initiatory practices. INV[43] covers Greek terminology. Global Q&A: reframe through imperial cult. The chapter argues Paul's language was Hellenistic. However, the specific claim about Mithraic elements entering Christianity through pagan converts is not in the inventory."
+  },
+  {
+    "finding_id": "5zZchadJDM0_3",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] and INV[41] cover Acts 16 Bacchae parallels (prison earthquake). The chapter argues Paul's narrative uses Greek literary models. However, the specific parallel between Paul's entire conversion arc (persecutor becomes believer, must suffer 'for my name') and Pentheus's arc in Bacchae (opponent of Dionysus converts and must learn through suffering) is not in the inventory. INV[6] only covers the prison episode, not the conversion narrative."
+  },
+  {
+    "finding_id": "6CK1s04dU70_2",
+    "verdict": "new_evidence_and_argument",
+    "justification": "No inventory item discusses the Acts of John or circle dance rituals. The argument that apocryphal texts reveal early Christian gatherings operating as formal institutionalized assemblies with prescribed ritual protocols is neither present as argument nor as evidence in any chapter."
+  },
+  {
+    "finding_id": "6y_voqOVCsE_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[41] mentions Plutarch's pattern for Romulus as parallel for divine-son birth. INV[15] discusses geographic alignment. The chapter argues Christianity operated within Greco-Roman institutional contexts. However, the specific evidence that Romulus temples existed in most major cities where Christianity emerged is not in the inventory."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_3",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Greek cosmology. INV[28] rejects the Judaic Sect Model. The chapter's argument throughout is that Paul synthesized Greek philosophy with the Jesus movement."
+  },
+  {
+    "finding_id": "72ajm2y4h6Y_4",
+    "verdict": "covered",
+    "justification": "INV[28] explicitly notes 'hostility to Mosaic law' and 'no Aramaic/Hebrew letters.' INV[0] frames Christianity as Greek continuation. Paul's break with Torah observance and welcoming of Gentiles is covered."
+  },
+  {
+    "finding_id": "7CwBIkOS6Ew_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[23] discusses Paul's focus on Christos office. INV[43] discusses Greek cosmology. The chapter argues Paul's theology was Hellenistic rather than Jewish. However, the specific Tabor argument about Paul's baptism as fundamentally different from anything James or the Jerusalem community knew about ('cosmic salvation' vs Jewish messianic theology) is a specific scholarly claim not in the inventory."
+  },
+  {
+    "finding_id": "7_K6KDyCud4_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[20] discusses secret symbols and initiatory practices. INV[43] covers Greek cosmology. The chapter argues about esoteric practices. However, the specific evidence of Paul saying 'we speak wisdom among the initiates' and 'divine wisdom which is hidden' and 'spirit speaking to spirit' as specific mystery religion language is not directly cited in the inventory."
+  },
+  {
+    "finding_id": "7_K6KDyCud4_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7] discusses Paul's vocabulary including archai and exousiai. INV[12] lists 'Archai and exousiai (Rom 13:1, Col 1:16) are magistracies and jurisdictions.' The chapter argues Paul's terminology is political. However, the specific interpretation that archons are 'spiritual powers energizing the rulers of the world who are Romans' \u2014 combining spiritual and political meaning \u2014 is not the framing in the inventory."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_4",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[25-26] discuss Acts as Greco-Roman historiography with Jerusalem-to-Rome arc. The chapter argues Acts is political historiography. However, the specific parallel with the Aeneid (Luke-Acts employing epic structure mirroring Virgil's presentation of political founding) is not in the inventory."
+  },
+  {
+    "finding_id": "7lXx9Fl3MA0_5",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[25-26] discuss Acts as political historiography. INV[41] discusses Greek literary culture in Luke. The chapter argues Luke reflects Greek models. However, the specific parallel between Acts' description of early church communal life (having all things in common) and Plato's Republic is not in the inventory."
+  },
+  {
+    "finding_id": "8OKXeqjmKBo_0",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul employing Greek cosmology. INV[20] discusses initiatory practices. INV[0] frames Christianity as continuation of Greek tradition. The argument that Paul's theology of a resurrected divine figure was standard Greco-Roman religious language is covered by the chapter's framework."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_3",
+    "verdict": "covered",
+    "justification": "INV[43] (lines 1124-1197) extensively discusses Paul employing Greek cosmology: 'Paul's soma pneumatikon (1 Cor 15): ascent logic, perishable vs imperishable, earthly vs heavenly \u2014 Platonic-Stoic, not Pharisaic.' Paul as a Hellenistic religious thinker is directly covered."
+  },
+  {
+    "finding_id": "8hq2xQiv_ec_4",
+    "verdict": "covered",
+    "justification": "INV[43] explicitly discusses 'Paul's soma pneumatikon (1 Cor 15): ascent logic, perishable vs imperishable, earthly vs heavenly \u2014 Platonic-Stoic, not Pharisaic' and 'Model aligns with heroes translated to Olympus, not Danielic graves opening.' The body/spirit dualism and resurrection as transformation is covered."
+  },
+  {
+    "finding_id": "8jorbNsGWKU_0",
+    "verdict": "covered",
+    "justification": "INV[28] discusses three failed models including the Judaic Sect Model. INV[31] discusses four cultural worlds. INV[52] maps epistles to imperial poles. The institutional separation between Pauline and Palestinian Christianity is covered."
+  },
+  {
+    "finding_id": "9aD-SrvAONY_1",
+    "verdict": "covered",
+    "justification": "INV[6] explicitly lists both 'Acts 16: Paul and Silas sing in prison until earthquake opens doors, echoing Euripides Bacchae' and 'Acts 17: Paul debates in the Areopagus like Socrates.' The dual Dionysian-Apollonian characterization is directly in the inventory."
+  },
+  {
+    "finding_id": "9vnITYJ4ZQ8_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's political vocabulary. INV[44] discusses justification as civic-forensic language. The chapter argues Paul used Greco-Roman legal concepts. However, the specific evidence from Carrier about Roman adoption creating real legal family status (not ceremonial) and its parallel to Pauline adoption theology is not in the inventory."
+  },
+  {
+    "finding_id": "A732FZm2STo_2",
+    "verdict": "covered",
+    "justification": "INV[43] discusses Paul's Platonic-Stoic framework applied to theological concepts. INV[0] frames Christianity as Greek continuation. Paul synthesizing Jewish scripture with Greek philosophy is covered."
+  },
+  {
+    "finding_id": "B5d3ruUp0yE_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[2] mentions Paul in Ephesus attacking idols of Artemis. INV[19] lists Ephesian silversmiths riot. The chapter covers Paul in Ephesus. However, the specific evidence about Isis as second most important deity with temple in the political sector, and the observation that religious language from these cults was used for Christian death/resurrection/community concepts, is not in the inventory."
+  },
+  {
+    "finding_id": "BEri6l4MgqQ_0",
+    "verdict": "covered",
+    "justification": "INV[43] covers Paul's Greek cosmology. INV[6] establishes Paul's Hellenistic profile. Paul as Hellenized figure fusing Greek and Jewish ideas is the chapter's central thesis."
+  },
+  {
+    "finding_id": "BVaVCa8rZLA_2",
+    "verdict": "covered",
+    "justification": "INV[28] rejects the Judaic Sect Model and notes 'hostility to Mosaic law.' INV[0] frames Christianity as Greek continuation. Paul's transformation of the movement into a Gentile-dominated one is covered."
+  },
+  {
+    "finding_id": "BYOuSQgO9vA_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] and INV[41] establish Paul/Acts using Greek literary models (Bacchae for Acts 16). The chapter argues Paul's narrative uses Greek literary frameworks. However, the specific peer-reviewed evidence from Harvard Theological Review (Culver 2018) showing Paul's Carmen Christi (Philippians 2:6-8) contains philological echoes of Euripides' Bacchae is not in the inventory. This extends the Bacchae connection from Acts to Paul's own writings."
+  },
+  {
+    "finding_id": "CDv-GWPp_Zs_3",
+    "verdict": "wrong_chapter",
+    "justification": "The finding about the Magi in Matthew's birth narrative belongs in Chapter 2 (Jesus Christ, Son of Joseph and Mary Christ) which covers birth narratives and the Magi, or Chapter 1. Chapter 5 focuses on Paul's epistles and ekklesia structure."
+  },
+  {
+    "finding_id": "CDv-GWPp_Zs_4",
+    "verdict": "wrong_chapter",
+    "justification": "Proskinesis in Matthew's Magi narrative belongs in Chapter 2 or Chapter 3 which cover Jesus's birth narratives and divine sonship. Chapter 5 focuses on Paul's epistles and ekklesia."
+  },
+  {
+    "finding_id": "CeVs7ua_3GU_0",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[7-9] discuss Paul's vocabulary as imperial register. INV[44] discusses justification as Greek civic-forensic language. The chapter argues Paul's terminology was Greco-Roman. However, the specific evidence that huiothesia (adoption terminology) appeared in Jewish writings only in the Roman period, reflecting Roman imperial succession practice, is not in the inventory."
+  },
+  {
+    "finding_id": "CeVs7ua_3GU_1",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] mentions Paul as Roman citizen. INV[9] discusses politeuma as citizenship. The chapter argues about civic-political frameworks. However, the specific argument about Roman citizenship being disconnected from ancestry and based on legal pathways, paralleling ekklesia membership based on faith rather than descent, is not in the inventory."
+  },
+  {
+    "finding_id": "CeVs7ua_3GU_2",
+    "verdict": "new_evidence_existing_argument",
+    "justification": "INV[6] mentions Paul as Roman citizen. INV[44] discusses justification. The chapter argues Paul's citizenship and political position shaped his theology. However, the specific mechanism \u2014 Roman citizenship enabling Paul to use adoption language to argue believers integrate into Abraham's lineage through faith rather than genealogy \u2014 is not detailed in the inventory."
+  },
+  {
+    "finding_id": "CvRhTYmirEA_0",
+    "verdict": "covered",
+    "justification": "INV[5-6] discuss Paul's letters and political profile. INV[43] discusses philosophical frameworks. INV[40] discusses polished Greek. Paul's native Greek proficiency and philosophical training are thoroughly covered."
+  },
+  {
+    "finding_id": "D6JakKqaFaQ_0",
+    "verdict": "covered",
+    "justification": "INV[43] explicitly discusses 'Pneuma as Stoic material substance (fine, active element permeating cosmos).' INV[44] discusses Greek philosophical concepts in Paul. Stoic influence on Paul is directly covered."
+  },
+  {
+    "finding_id": "DF6c9W7uK-Y_4",
+    "verdict": "new_evidence_and_argument",
+    "justification": "No inventory item argues that the number twelve in apostolic structure derives from Greek (Twelve Olympians) or Egyptian (priestly colleges of twelve) institutional number-symbolism. The chapter does not make this argument about the structural parallel of the twelve. This is both a new argument and new evidence."
+  }
+]
