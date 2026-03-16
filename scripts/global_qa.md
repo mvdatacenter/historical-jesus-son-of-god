@@ -21,6 +21,8 @@ The institutional parallels are real data. The "mystery cult" label is the wrong
 
 **Action:** When evaluating mystery cult findings in any chapter, extract the institutional data and reframe through imperial cult under foreign rule. The data is almost always good; reject the mystery cult conclusion, embed the data with the book's framing.
 
+**EXCEPTION:** Phoenician religion (Eshmun, Melqart, Baal, Astarte, Adonis as Phoenician deity) is NOT a mystery cult — it is one of the four foundational regional religions mapped to the four gospels (Mark = Phoenician-Syrian). See "Gospel localization" section below. Phoenician religious data must be evaluated through the four-religion framework, not dismissed as mystery cult.
+
 ## Royal-exile framework
 
 **Decision:** If Jesus was a Hasmonean-Herodian heir taken to Egypt (as Matthew preserves), Alexandria is the inevitable refuge. Philo's family — priestly lineage, Herodian intermarriage, Roman political access — represents precisely the aristocratic network that would protect a royal child.
@@ -61,18 +63,20 @@ Three nested rings of betrayal: Judas → Jesus (central king), disciples → st
 
 **Details:** See `scripts/ch4_qa.md` — "15 Female Authorship Tests."
 
-## Gospel localization (regional products)
+## Gospel localization (regional products) and four founding religions
 
-**Decision:** Each gospel is a regional product, not a failed harmonization:
+**Decision:** Each gospel is a regional product written for a specific religious tradition, not a failed harmonization. The four gospels correspond to four foundational regional religions of the Eastern Mediterranean:
 
-- Matthew (Judea) — prophecy, law, royal genealogy, anti-Pharisee polemic = intra-Judean elite conflict
-- Luke (Aegean) — order, chronology, census, named officials = Aegean historiographic conventions
-- John (Alexandria) — Logos, dualism, long discourses = Alexandrian Jewish philosophy
-- Mark (Antioch) — Aramaic, exorcism, chaotic geography, heroic narrative = Syrian Hellenistic culture
+- Matthew (Judea) — **Judean religion**: prophecy, law, royal genealogy, anti-Pharisee polemic = intra-Judean elite conflict. Symbol: lion.
+- Luke (Aegean) — **Greek/Anatolian religion**: order, chronology, census, named officials = Aegean historiographic conventions. Symbol: human hero.
+- John (Alexandria) — **Egyptian religion**: Logos, dualism, long discourses = Alexandrian Jewish philosophy. Symbol: eagle/falcon (Ptolemaic).
+- Mark (Antioch) — **Phoenician-Syrian religion**: Aramaic, exorcism, chaotic geography, heroic narrative, Baal/κύριος ("lord"), spirit control, power and command = Phoenician-Syrian Hellenistic culture. Symbol: bull. See ch5 `\subsection{Phoenician-Syrian Religion in Mark}`.
 
-Contradictions between gospels are fingerprints of regional origin, not errors to harmonize.
+Contradictions between gospels are fingerprints of regional origin, not errors to harmonize. The fourfold scheme (Ezekiel's four creatures, Irenaeus's four winds) represents an imposed canonical ideology over these previously independent regional traditions.
 
-**Action:** When evaluating findings about gospel contradictions, dating, or provenance in any chapter, apply the regional-product framework. Do not harmonize; explain through localization.
+**CRITICAL:** Phoenician religion (Eshmun, Melqart, Baal, Astarte, Adonis as Phoenician deity) is NOT a mystery cult. It is one of the four foundational traditions. Findings about Phoenician religious practices, deities, temples, or their parallels with Mark's gospel are core material for the book's thesis, not tangential mystery cult parallels to be dismissed. The "reject mystery cult framing" rule (above) does NOT apply to Phoenician religious data — that data belongs to the four-religion framework.
+
+**Action:** When evaluating findings about gospel contradictions, dating, or provenance in any chapter, apply the regional-product framework. Do not harmonize; explain through localization. When evaluating findings about Phoenician religion (Eshmun, Melqart, Baal, Astarte, anointing, healing, dying-rising within Phoenician context), treat them as core evidence for the Mark/Phoenician-Syrian tradition, not as mystery cult material.
 
 **Details:** See `scripts/ch5_qa.md` — "Gospel Localization - Puzzles Solved by Regional Placement."
 
@@ -107,3 +111,75 @@ The pattern is definitive: where Greek civic assemblies existed, Christianity ap
 **Action:** When evaluating findings about post-70 Christianity, the "origins" of Christianity, or claims that Christianity was a fragile sect, apply the synthesis framework. The movement inherited 300 years of deliberate cultural fusion, not a single event.
 
 **Details:** See `scripts/ch6_qa.md` — "The Eastern Mediterranean Synthesis."
+
+## Gospel dating and theological development
+
+**Decision:** The book treats the Gospels as early or fairly early compositions and strongly opposes — as most modern scholars do with ample evidence — the claim that core Christian theology developed late or that the Gospels went through very late editorial stages. Findings that treat high Christology, Trinitarian structure, or other theological concepts as post-apostolic developments contradict the book's position — these are already present in the earliest texts.
+
+**Action:** Reject findings whose argument depends on late theological development or very late Gospel editions. The data may still be useful, but the chronological framework is wrong.
+
+---
+
+## Trinity origins: John's Gospel and Egyptian religion, not late philosophy
+
+**Decision:** The Trinity is not a 2nd-3rd century philosophical invention built on Aristotelian substance theory. It is already present in John's Gospel (Father, Logos, Spirit) and has direct precedent in Egyptian religion: Amun-Ra as the sun god (Father), Osiris/Seth as the Logos (Plutarch explicitly describes Osiris as the "logos" of heaven and the lower world), and the Holy Spirit. Trinitarian structure was common in Egyptian religion and predates Christianity by millennia. Papyrus Leiden I 350 preserves the explicit unity formula: "Three are all the gods: Amun, Re, and Ptah, there is none like them. Hidden is his name as Amun, he is Re in face, his body is Ptah." The structural parallel to John is precise: Amun = hidden essence (Father), Re = visible manifestation (Logos), Ptah = embodied operative presence creating through heart and tongue (Spirit). This is metaphysical triadic monism predating Christianity by over a millennium. Findings that frame the Trinity as a late development dependent on Greek philosophical machinery contradict the book's thesis.
+
+**Research needed:** Track transmission of this hymn into Ptolemaic priestly theology. Verify whether Alexandrian Jews would have encountered it. Compare John's triadic logic to Egyptian structure vs Jewish wisdom theology.
+
+**Action:** Reject findings that treat the Trinity as a post-apostolic philosophical development. The book's position is that Trinitarian structure predates Christianity in Egyptian religious tradition and is already fully articulated in John. Greek philosophy is the language, not the origin.
+
+---
+
+## QA: "Not Jewish therefore Greek" arguments — topic saturated
+
+**Decision:** The book already establishes that the NT represents four regional religious traditions (see Gospel localization above). We do not need more evidence that something in the NT is "not Jewish" or "contrasts with the Hebrew Bible." That framing accepts the Judeo-Christian default and then argues against it — which is the wrong direction. The book's premise is that multiple traditions coexist in the NT from the start. Findings that contrast NT concepts with the Hebrew Bible to prove Greek influence are restating a premise we already hold.
+
+**Action:** QA verdict for "this NT concept contradicts Judaism therefore it must be Greek" findings. Only findings that identify the specific non-Jewish tradition and its specific institutional mechanism earn EMBED or RESEARCH.
+
+---
+
+## QA: Hellenization of the Levant — topic saturated
+
+**Decision:** The book already establishes extensively that the Levant was deeply Hellenized. General Hellenization evidence (contested within Jewish communities, cultural pressure, adoption of Greek customs, circumcision reversal, gymnasium attendance, Greek language adoption) is important background but the topic is saturated across multiple chapters. Additional findings on general Hellenization do not add to the argument beyond what is already there.
+
+**Action:** QA verdict for any finding that provides general Hellenization background without exceeding the strength of what is already in the book. Only findings with a new specific institution, a new primary source not already cited, or a new structural parallel stronger than the existing treatment earn EMBED.
+
+## QA: Empty tomb / resurrection parallels — topic saturated
+
+**Decision:** The book's position is that Jesus surviving is more probable than the empty tomb being a literary trope borrowed from Mediterranean divine-translation conventions. Findings that frame the empty tomb purely as a literary device or Greco-Roman trope are operating from the wrong premise. The topic of resurrection parallels is also already covered.
+
+**Action:** QA verdict for generic empty tomb / divine translation / resurrection parallel findings. We do not spend more research trying to substantiate empty tomb stories — the survival premise makes them secondary. Only findings with specific new evidence bearing on the survival question earn EMBED or RESEARCH.
+
+---
+
+## QA: Virgin birth parallels — topic saturated
+
+**Decision:** The book already establishes that virgin birth claims were standard for rulers like Alexander. The mechanism is understood — this is queen mother honoring, a standard dynastic practice. We do not need elaborate stories or background for that, nor more reasons why Mary was considered a virgin, nor additional virgin birth parallels from other traditions.
+
+**Action:** QA verdict for generic virgin birth parallel findings. Topic is closed unless a finding provides specific new evidence that changes the argument, not just another example.
+
+---
+
+## QA: Pro-Roman political theology in the Gospels — topic saturated
+
+**Decision:** The book already covers that the Gospels contain pro-Roman political theology (Jesus praising Rome, render unto Caesar, dismissing earthly political resistance, contrast with Jewish rebel messianism). Additional findings restating this pattern do not add to the argument.
+
+**Action:** QA verdict for generic pro-Roman theology findings. Only findings with a specific new primary source, a new structural mechanism, or a new institutional parallel not already in the book earn EMBED or RESEARCH.
+
+---
+
+## QA: Communal meals / Last Supper parallels — topic saturated
+
+**Decision:** The book already mentions communal meals as mass. Communal meals are universal across religions and cultures — drawing a parallel between any tradition's sacred meal and the Last Supper proves nothing on its own. Dionysus parallels, mystery cult meals, etc. are too generic.
+
+**Action:** QA verdict. Only findings with a specific institutional mechanism (e.g. a specific liturgical formula shared verbatim, a specific organizational structure tied to the meal) earn EMBED or RESEARCH.
+
+---
+
+## QA: Homeric parallels in the Gospels — topic saturated
+
+**Decision:** Copying from Homeric Greek literature for Gospel composition is trivial and saturated — the book already establishes this. General observations about Homeric echoes, mimesis, or literary borrowing do not strengthen the argument.
+
+**Exception:** Specific parables or episodes that are fully explained by a Greek text — where the Greek source unlocks the meaning of an otherwise puzzling Gospel passage — should still be included in the book.
+
+**Action:** QA verdict for generic Homeric parallel findings. EMBED or RESEARCH only for findings where a specific Greek text fully explains a specific Gospel passage.
