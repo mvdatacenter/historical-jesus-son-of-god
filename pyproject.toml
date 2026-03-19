@@ -10,6 +10,9 @@ authors = [
     { name = "Your Name", email = "your.email@example.com" }
 ]
 
+[tool.poetry]
+package-mode = false
+
 [tool.poetry.dependencies]
 python = "^3.12.2"
 folium = "^0.19.5"
@@ -19,6 +22,7 @@ python-dotenv = "^1.2.1"
 requests = "^2.31"
 beautifulsoup4 = "^4.12"
 pymupdf = "^1.27.1"
+tychicus = {git = "ssh://git@github.com/mvdatacenter/tychicus.git", tag = "v0.2.0"}
 
 [tool.poetry.scripts]
 map = "map:main"

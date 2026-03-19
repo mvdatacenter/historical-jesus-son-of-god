@@ -515,27 +515,27 @@ Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **stre
 
 **2. Filter for hard evidence:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "From your arguments, which 2-3 are direct textual evidence or structural facts that can't be disputed?"
+chatgpt send "From your arguments, which 2-3 are direct textual evidence or structural facts that can't be disputed?"
 ```
 
 **3. Challenge:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "Play devil's advocate. For each argument, what's the strongest counter-argument?"
+chatgpt send "Play devil's advocate. For each argument, what's the strongest counter-argument?"
 ```
 
 **4. Rank:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "Pick ONE piece of evidence a skeptical scholar would have hardest time dismissing."
+chatgpt send "Pick ONE piece of evidence a skeptical scholar would have hardest time dismissing."
 ```
 
 **5. Get sources:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "Where does this appear? Give specific primary sources."
+chatgpt send "Where does this appear? Give specific primary sources."
 ```
 
 **6. Style review after adding:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "I added new text. Here's EXISTING style: [PASTE]
+chatgpt send "I added new text. Here's EXISTING style: [PASTE]
 Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 ```
 
@@ -765,14 +765,16 @@ Uses macOS Desktop App automation via Accessibility API.
 - ChatGPT Desktop App running
 - Terminal/IDE has Accessibility permissions
 
-**Basic usage:**
+**Usage:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "Your query"
+chatgpt read                  # Read latest ChatGPT response (safe, passive)
+chatgpt send "Your query"     # Send a query (guarded — destructive operation)
+chatgpt scrape --limit N      # Scrape conversation history (guarded — destructive operation)
 ```
 
 **With bias-aware template:**
 ```bash
-poetry run python scripts/ask_chatgpt.py "$(cat <<'EOF'
+chatgpt send "$(cat <<'EOF'
 Use a broad, multi-tradition mode.
 [See template in WORKING WITH CHATGPT section]
 EOF
@@ -813,8 +815,7 @@ manuscript.tex
 
 | Script | Purpose |
 |--------|---------|
-| `scripts/ask_chatgpt.py` | Send queries to ChatGPT Desktop App via macOS Accessibility API; read previous conversation turns |
-| `scripts/chatgpt_desktop.py` | Low-level ChatGPT Desktop App automation (used by `ask_chatgpt.py`) |
+| `chatgpt` | CLI for ChatGPT Desktop App — `chatgpt read` (safe), `chatgpt send` (guarded), `chatgpt scrape` (guarded). See PM-0004. |
 | `scripts/source_registry.py` | Central registry mapping bibliography keys to public-domain download URLs |
 | `scripts/download_sources.py` | Fetch public-domain source texts to `sources/` directory |
 | `scripts/verify_citations.py` | Extract `\cite` commands from chapters, locate passages, generate verification reports |
