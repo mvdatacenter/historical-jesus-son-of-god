@@ -651,7 +651,7 @@ Tasks:
 # CITATION VERIFICATION
 
 For full technical specification, see `docs/DD_0001_citation-review-report.md`.
-For why keyword extraction is forbidden, see `docs/PM_0001_keyword-extraction-fake-verification.md`.
+For why keyword extraction is forbidden, see `docs/PM_0001_citation-verification-locate-and-present-not-score.md`.
 
 ## Three-Step Pipeline
 
