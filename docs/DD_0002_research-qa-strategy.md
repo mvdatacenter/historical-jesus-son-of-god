@@ -189,7 +189,7 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 
 ## Forbidden Approaches
 
-- **Keyword extraction** for any matching or verification. See `docs/PM_0001_keyword-extraction-fake-verification.md` and `docs/PM_0002_keyword-extraction-in-embed-prep.md`. Step 2's context injection design is the structural prevent for this failure class.
+- **Keyword extraction** for any matching or verification. See `docs/PM_0001_citation-verification-locate-and-present-not-score.md` and `docs/PM_0002_embed-prep-no-keyword-extraction-under-any-name.md`. Step 2's context injection design is the structural prevent for this failure class.
 - **Topic-level matching** for coverage evaluation. Same domain = no filtering. Evidence-level only.
 - **Keyword chasing** for `wrong_chapter` verdicts. The evaluator must ask "does this finding strengthen any argument this chapter makes?" — not "does this chapter mention the same keywords as the finding?" A finding about Dionysian body-and-blood rituals belongs in the chapter arguing Christian liturgy inherited Greek religious practices, even if that chapter never mentions "Dionysus." A finding about Seleucid institutions belongs in the chapter arguing Greek institutional infrastructure predated Christianity, even if the finding's own framing says "precedent for Paul." Route by argument, not by keyword.
 - **Sub-frontier models** for step 1. They silently degrade to topic-matching.
@@ -211,4 +211,4 @@ Only after confirming the finding is relevant and adds value do we invest in ver
 | Per-chapter research Q&A | `scripts/chN_qa.md` |
 | Open research questions | `scripts/research_gaps.md` |
 | Citation verification pipeline spec | `docs/DD_0001_citation-review-report.md` |
-| Keyword extraction post-mortems | `docs/PM_0001_keyword-extraction-fake-verification.md`, `docs/PM_0002_keyword-extraction-in-embed-prep.md` |
+| Keyword extraction post-mortems | `docs/PM_0001_citation-verification-locate-and-present-not-score.md`, `docs/PM_0002_embed-prep-no-keyword-extraction-under-any-name.md` |

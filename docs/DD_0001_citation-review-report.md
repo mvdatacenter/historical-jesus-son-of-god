@@ -4,7 +4,7 @@
 
 The manuscript cites ~257 ancient and modern sources. The citation pipeline can download public-domain texts and locate referenced passages by section number. But locating a passage is not the same as verifying it. The question "does the manuscript accurately represent what this source says?" requires semantic judgment that no string-matching algorithm can provide.
 
-Previous attempts at automated verification (keyword extraction, similarity scoring) produced false confidence. See `docs/PM_0001_keyword-extraction-fake-verification.md`.
+Previous attempts at automated verification (keyword extraction, similarity scoring) produced false confidence. See `docs/PM_0001_citation-verification-locate-and-present-not-score.md`.
 
 ## Three-Step Process
 
