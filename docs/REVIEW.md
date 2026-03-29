@@ -106,6 +106,18 @@ This is the exact position the book argues against. The book argues John is a Gr
 
 **New text must be consistent with surrounding chapter context.** Read 20 lines before and after the insertion point. If the surrounding text argues X, the new text cannot assume not-X.
 
+## Temporal Relevance of Sources
+
+Sources must be from the correct historical period. Citing a 7th century BCE amulet to explain a 1st century CE Antiochene text is not evidence unless the chain of transmission across those 700 years is demonstrated. Some traditions do carry across centuries — the Bill of Rights traces to Magna Carta, Egyptian funerary theology spans millennia with documented continuity. The question is not "is the source old?" but "is the continuity shown or assumed?"
+
+Each gospel has a specific time and place. When citing a source from a different period as a parallel, the text must either show intermediate evidence of transmission or explicitly state that continuity is assumed and why.
+
+**Do not apply opposite standards to the same problem.** A 700-year-old source is not automatically invalid and a 100-year-old source is not automatically a "gap." Both require the same treatment: state the source, state its date, argue the connection explicitly. If a distant source is relevant, explain why the pattern persisted. If a close source matches, use it without hedging. Do not dismiss sources from distant periods without argument, and do not apologize for sources that are obviously close in time and place. The book makes arguments — it does not present evidence and say "you decide."
+
+Religious grammar, ritual structure, and regional practices often survive centuries of political upheaval. Political boundaries change; cult practice is more persistent. A 7th century BCE Syrian protective text may genuinely reflect patterns that survived into the 1st century — but that continuity must be argued, not assumed. A 2nd century CE author describing Syrian practices is straightforward evidence for the region's religious culture — no apology or hedging needed.
+
+**Check:** For every non-biblical source cited as a parallel, verify: is the date stated? Is the relationship to the target text argued or just assumed? ChatGPT systematically cites the oldest and most famous texts in a tradition (Bronze Age Ugarit, Iron Age inscriptions) when period-appropriate sources exist. Catch this and demand the right period first — but do not then dismiss the older sources entirely without considering what may have persisted.
+
 ## Ch1 Spirit Rule
 
 Chapter 1 is an overview of scholarly models. It surveys frameworks; it does not deep-dive into specific scholars' arguments.
