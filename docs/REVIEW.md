@@ -60,18 +60,32 @@ All foreign words must follow the project's language rules (see README.md "Greek
 
 ## Writing Standards Checklist
 
+This is a book. Write like a high-class author. Obey the basic rules of good writing: text must flow, paragraphs must connect, nothing is repeated, no unnecessary conclusions, no filler, no seams visible to the reader. Read what you wrote in context before committing. If it reads like AI output pasted into a chapter, rewrite it until it doesn't.
+
 Before accepting any new or rewritten text, check for:
 
-1. **AI garbage** — Does removing any sentence reduce factual content? If not, delete it.
-2. **Name-dropping** — Any modern scholar named in running text? Remove; keep `\cite{}`.
-3. **Consensus laundering** — Vague appeals to authority without specifics? Rewrite with evidence.
-4. **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
-5. **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
-6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
-7. **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
-8. **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
-9. **GPT default framing** — Does the new text treat "Jewish" as the default category? Does it frame Egyptian/Greek elements as additions to a Jewish base? If yes, the framing contradicts the book's thesis. See "GPT Default Framing" section.
-10. **Consistency with surrounding text** — Read 20 lines before and after the insertion point. Does the new text match the argument being made? If the surrounding text argues X, the new text cannot assume not-X.
+### Logic
+
+- **Logical coherence** — Can this sentence be written in simpler, clearer logic without losing any meaning? If yes, propose a simpler version to ChatGPT. AI slop survives by sounding complex. It never survives simplification.
+- **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
+
+### Content
+
+- **AI garbage** — Does removing any sentence reduce factual content? If not, delete it.
+- **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
+- **GPT default framing** — Does the new text treat "Jewish" as the default category? Does it frame Egyptian/Greek elements as additions to a Jewish base? If yes, the framing contradicts the book's thesis. See "GPT Default Framing" section.
+
+### Style
+
+- **Name-dropping** — Any modern scholar named in running text? Remove; keep `\cite{}`.
+- **Consensus laundering** — Vague appeals to authority without specifics? Rewrite with evidence.
+- **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
+- **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
+- **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
+
+### Context
+
+- **Read the chapter after editing.** Read 20 lines before and after the insertion point. Does the new text match the argument being made? If the surrounding text argues X, the new text cannot assume not-X. Does each paragraph connect to the next? Is there a conclusion where there shouldn't be one? Does the new text repeat what the chapter already said? Would a reader notice where the insertion starts and ends?
 
 ## No Presupposed Outcomes
 
