@@ -454,10 +454,14 @@ Specific gaps identified:
    - **Still needs:** Draft paragraph for chapter 5 using this argument. Citation verification for Fox, Shupak, Schaper (modern works — verify via Google Books / citation pipeline).
 2. Egyptian reception dossier - earliest Egyptian patristic/liturgical usage of John
 
-**Mark → Syrian Exorcism (locks authority grammar)**
-- Syrian magical/exorcism traditions in Hellenistic period
-- Aramaic incantation bowls, Greek magical papyri with Syrian provenance
-- Command formulas, named spirits, territorial demons
+**Mark → Syrian Spirit Authority (locks authority grammar)** — **PARTIALLY RESEARCHED (2026-03-29)**
+- MISLABELED as "exorcism" — Mark's material is broader: Syrian religious grammar of divine command over spirits, not formal exorcism ritual
+- Best period-appropriate source: **Lucian, Philopseudes 16 (2nd century CE)** — "Syrian from Palestine" confronts demons through direct dialogue and verbal domination, no ritual tools. Structurally matches Mark 5.
+- **Josephus, Antiquities 8.45-49 (1st century CE)** — Useful as CONTRAST: Jewish-Solomonic exorcism uses ring, root, incantations. Mark's Jesus uses none of this. Mark's style is NOT the Jewish type.
+- **Baal-Shamin cult (Palmyra, 1st century)** — Syrian divine authority through performative speech, gods as lords of regions. Right period, right pattern.
+- **PGM XX / Philinna Papyrus (1st century BCE/CE)** — Charm attributed to "Syrian woman from Gadara." Weak but shows Syrian magical reputation in the period.
+- **Key evidence:** Lucian, Philopseudes 16 — Syrian practitioner uses direct dialogue and verbal command over spirits. Josephus (Antiquities 8.45-49) as contrast: Jewish-Solomonic style uses ritual tools, Mark's does not.
+- **Still needs:** Draft paragraph for chapter 5 anchoring Mark's spirit-authority style in Lucian and the Syrian lordship pattern. Focus on the authority grammar (command, dialogue, territorial lordship) not narrow exorcism.
 
 **Luke → Greek Civic Religion (locks social form)**
 - Greek civic religion in 1AD Aegean cities (Ephesus, Corinth, Philippi)
