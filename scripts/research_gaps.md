@@ -448,7 +448,10 @@ By the time the reader reaches Ezekiel 1, Ezekiel has already taught the vocabul
 **John → Egyptian Logos (locks ontology)**
 
 Specific gaps identified:
-1. Why Egypt not Jewish Wisdom - control against Wisdom/Sophia traditions
+1. Why Egypt not Jewish Wisdom — **RESEARCHED (2026-03-28)**. The "Jewish Wisdom vs Egyptian" framing is a false dichotomy. Key argument: Proverbs 22:17–24:22 directly reworks Instruction of Amenemope (Fox, Shupak — mainstream consensus). Wisdom of Solomon composed in Alexandria as "amalgam of Platonic, Stoic and Egyptian elements" (Schaper, Cambridge). Sirach translated in Egypt (prologue: 38th year of Euergetes). No scholar states the full synthesis ("Jewish Wisdom vs Egyptian is a false dichotomy, therefore John's Logos should not be opposed to Egypt") — this is an original argument.
+   - **Strongest counter:** John draws from Jewish texts already available, not directly from Egypt. **Rebuttal:** In Alexandria, that mediation IS the point — Jewish texts written in Greek in Alexandria carrying Egyptian metaphysics are evidence FOR Egyptian theology naturalized inside Jewish discourse.
+   - **Tightening needed:** Don't claim "Wisdom theology was central to Egyptian religion for millennia" — claim instead "the religious and intellectual structures later expressed in Jewish Wisdom texts had deep Egyptian precedents in the far older traditions of maʿat, divine order, instruction, and creative-mediatory theology."
+   - **Still needs:** Draft paragraph for chapter 5 using this argument. Citation verification for Fox, Shupak, Schaper (modern works — verify via Google Books / citation pipeline).
 2. Egyptian reception dossier - earliest Egyptian patristic/liturgical usage of John
 
 **Mark → Syrian Exorcism (locks authority grammar)**

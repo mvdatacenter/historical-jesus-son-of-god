@@ -632,6 +632,18 @@ See `scripts/global_qa.md` — "Gospel localization (regional products)" for the
 - (chatgpt says...) High Christology = Alexandrian Judaism already used exalted transcendental categories for divine intermediaries
 - **CONCLUSION:** John is the most regionally coherent gospel when placed in Alexandria
 
+**JOHN → Control argument: "Jewish Wisdom vs Egyptian" is false dichotomy (ChatGPT 2026-03-28)**
+
+- The standard scholarly objection is: John's Logos comes from Jewish Wisdom (Proverbs 8, Wisdom of Solomon, Sirach), not Egyptian theology
+- Rebuttal: "Jewish Wisdom" is already Egyptian-Jewish hybrid tradition, not a sealed indigenous category
+- Proverbs 22:17–24:22 directly reworks Instruction of Amenemope — mainstream consensus (Fox, Shupak)
+- Wisdom of Solomon composed in Alexandria = "amalgam of Platonic, Stoic and Egyptian elements" (Schaper, Cambridge)
+- Sirach translated in Egypt (prologue: 38th year of Euergetes) = Jewish wisdom operating inside Egyptian space
+- Strongest counter: John draws from Jewish texts, not directly Egypt. Rebuttal: in Alexandria, mediation IS the point — Jewish text in Greek carrying Egyptian metaphysics = Egyptian theology naturalized inside Jewish discourse
+- No scholar states the full synthesis in this form — this is an original argument of the book
+- Tightening: don't say "Wisdom theology central to Egypt for millennia" — say "structures later expressed in Jewish Wisdom texts had deep Egyptian precedents in maʿat, divine order, instruction, and creative-mediatory theology"
+- **STATUS:** Researched. Needs draft paragraph for ch5 and citation verification for Fox, Shupak, Schaper
+
 **MARK (Antioch): Aramaic puzzle + additional issues solved**
 
 - (chatgpt says...) Mark's Aramaic = Antiochene bilingualism, NOT Jesus's Aramaic (already established)
