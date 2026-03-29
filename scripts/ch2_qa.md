@@ -167,3 +167,29 @@ Hostile Egypt traditions do not undermine royal-exile picture — they reinforce
 - (verify Pantera tradition sources - Origen citation + later Jewish texts?)
 - (look up Toledot Yeshu for "Egyptian spells" claim)
 
+---
+
+## REJECTED: "Hypocrite" (ὑποκριτής) as evidence of Greek theater familiarity
+
+**Findings:** 561NmUuqJ4g_1, e7Dx31v8r6U_1, rXUmjzDH8lw_1, and any finding arguing Jesus's use of "hypocrite" proves immersion in Greek theatrical culture.
+
+**Decision:** REJECTED. The argument is logically invalid. A word entering common usage says nothing about the speaker's relationship to the word's original domain. "Hypocrite" had been a common Greek word for centuries by Jesus's time — using it no more proves theater attendance than calling someone a "clown" proves circus attendance. The word proves Greek was spoken (which is already established far more strongly by other evidence). It does not prove familiarity with Greek theater as an institution.
+
+**Action:** SKIP any finding that uses "hypocrite" etymology as evidence of Jesus's Greek cultural immersion. The Sepphoris theater is already cited in the chapter (line 274) on independent grounds; this argument adds nothing.
+
+---
+
+## REJECTED: Indian delegation to Augustus as "three wise men" precedent
+
+**Findings:** limDa2wNmKg_3 and any finding arguing that Indian delegations bringing gifts to Augustus is a precedent for the Gospel Magi.
+
+**Decision:** REJECTED. Three foreigners bringing gifts to a ruler is a generic event that happens constantly throughout history. The existence of any delegation of three men from abroad is not evidence of literary dependence or a specific motif. The number three, the act of gift-giving, and the direction "from the east" are all trivially common. This is pattern-matching on surface features without any structural, textual, or institutional connection.
+
+**Action:** SKIP. The Magi section (lines 722-783) already has strong arguments based on specific titular and institutional parallels; this adds nothing.
+
+---
+
+## QA: Hellenization of Judea — topic saturated
+
+See `scripts/global_qa.md` — "Hellenization of the Levant — topic saturated."
+

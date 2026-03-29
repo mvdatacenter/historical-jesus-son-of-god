@@ -4448,7 +4448,7 @@ telegram = ["requests"]
 
 [[package]]
 name = "tychicus"
-version = "0.1.0"
+version = "0.3.0"
 description = "Desktop app messaging bridge — delivers epistles to ChatGPT and other apps via macOS Accessibility API"
 optional = false
 python-versions = "^3.12"
@@ -4462,8 +4462,8 @@ pyobjc = ">=12.0"
 [package.source]
 type = "git"
 url = "ssh://git@github.com/mvdatacenter/tychicus.git"
-reference = "v0.2.0"
-resolved_reference = "906cd07379e2f589d77ee5bab7591f1864c69eb2"
+reference = "v0.3.0"
+resolved_reference = "b0da555eae4c319918c1af79b2c37ad0b9867574"
 
 [[package]]
 name = "typing-extensions"
@@ -4525,4 +4525,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12.2"
-content-hash = "19ca60046b95994eb6b98366b39d899bae47cd16438c5d0cfd3e4893bfffcf09"
+content-hash = "5e5d5e9146c06e88ef44a64a1e7cb8a9cf477ce9af3b10932b71d931aca983c3"

@@ -545,4 +545,38 @@ Source: `sources/youtube/` — 159 extracted files across 10 channels (tabor:50,
 
 **Status:** Unverified YouTube-sourced claim. Cannot embed or reject until the count is confirmed or refuted against primary texts.
 
-*Last updated: 2026-02-26*
+---
+
+## Egyptian Religious Continuity into Christianity (2026-03-02)
+
+### Osiris 3-Day Death and Rising Celebrated on New Moon
+
+**Claim:** Osiris's death and resurrection was ritually celebrated over a three-day period tied to the new moon cycle.
+
+**Source needed:** Plutarch, *De Iside et Osiride* for the narrative structure. Egyptian festival calendars for the Khoiak festival (month of Khoiak, attested at Dendera temple reliefs and Ptolemaic texts) — check Žabkar, *Hymns to Isis in Her Temple at Philae*, and Chassinat's Dendera publications for specific ritual timetables. Look for: three-day ritual sequence, lunar timing, death-burial-rising structure.
+
+**Why it matters:** If the three-day death-and-rising pattern was already a fixed ritual calendar event in Egyptian religion, the Christian "three days" is not a theological innovation but an inherited liturgical structure.
+
+**Status:** PIPELINE — needs primary source consultation.
+
+### Amun-Ra-Ptah Trinity as Father, Logos, Holy Spirit
+
+**Claim:** The Leiden Papyrus I 350 (Ramesside period, ~1200 BCE) contains the formula: "Three are all the gods: Amun, Re, and Ptah, there is none like them." This maps structurally to the Christian Trinity: Amun (the hidden one) = the Father in heaven; Ra (the visible creative word/light) = the Logos; Ptah (the craftsman-spirit who creates by speaking) = the Holy Spirit/Paraclete.
+
+**Source needed:** Leiden Papyrus I 350, chapter 300 (hymn to Amun). Critical edition: Zandee, *De Hymnen aan Amon van Papyrus Leiden I 350* (1947). Also Assmann, *Egyptian Solar Religion in the New Kingdom* for theological analysis of the Amun-Ra-Ptah triad.
+
+**Why it matters:** The book argues high Christology (including Trinitarian structure) was not a late invention but inherited from pre-existing theological frameworks. If the Amun-Ra-Ptah triad was already formulated as "three are all the gods... there is none like them" — a unity-in-trinity statement — this is a direct structural precedent for the Johannine Comma and Trinitarian theology. The claim is not that Christians copied Egypt, but that the theological grammar was already available in the Eastern Mediterranean synthesis.
+
+**Status:** PIPELINE — needs primary source consultation. The Leiden Papyrus text is well-attested; the interpretive mapping to the Trinity needs careful argument.
+
+### Ptolemaic Egyptian Pilgrimages Continuing into Christianity
+
+**Claim:** Pilgrimage practices established in Ptolemaic Egypt (temple circuits, healing shrines, festival processions, votive offerings) continued into Christian pilgrimage without structural break.
+
+**Source needed:** Foertmeyer, "Tourism in Graeco-Roman Egypt" (PhD Diss., 1989) — already in research gaps for the Philae inscription. Also: Frankfurt, *Pilgrimage in Graeco-Roman and Early Christian Antiquity* (OUP); Dietz, *Wandering in Ancient Greek Culture*. For Christian continuity: Wilkinson, *Egeria's Travels* (4th-century Christian pilgrim account). Look for: same sites repurposed (Philae → Christian, Abydos → Christian), same votive practices, same healing-shrine structure.
+
+**Why it matters:** If Christian pilgrimage inherited Egyptian institutional infrastructure (routes, sites, practices) rather than inventing it, this strengthens the book's argument about institutional continuity — the same pattern as ekklesia inheriting Greek civic assemblies.
+
+**Status:** PIPELINE — needs primary source consultation.
+
+*Last updated: 2026-03-02*
