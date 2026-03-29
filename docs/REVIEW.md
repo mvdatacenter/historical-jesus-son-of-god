@@ -70,6 +70,8 @@ Before accepting any new or rewritten text, check for:
 6. **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
 7. **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
 8. **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
+9. **GPT default framing** — Does the new text treat "Jewish" as the default category? Does it frame Egyptian/Greek elements as additions to a Jewish base? If yes, the framing contradicts the book's thesis. See "GPT Default Framing" section.
+10. **Consistency with surrounding text** — Read 20 lines before and after the insertion point. Does the new text match the argument being made? If the surrounding text argues X, the new text cannot assume not-X.
 
 ## No Presupposed Outcomes
 
@@ -83,6 +85,26 @@ Arbitrary numbers, percentages, thresholds, and success criteria are all forms o
 **Good:** Describe the mechanism. Define success in terms of quality ("verdicts have specific justifications"), not quantity. Let actual results supply the numbers.
 
 **Rule:** If a number or threshold did not come from a measurement, a calculation, or a cited source, it must be removed. "I don't know yet" is always better than a fabricated target.
+
+## GPT Default Framing
+
+ChatGPT's training data overrepresents one strand of modern scholarship that treats everything in the biblical tradition as Jewish in origin, Christianity as emerging from Judaism, and Greek/Egyptian/institutional foundations as secondary influences requiring special justification. This default is not representative of the full range of Christian tradition, historical evidence, or global scholarship.
+
+This is the exact position the book argues against. The book argues John is a Greek text, early Christianity has Greek institutional foundations, and the dominant modern scholarly consensus reflects narrow assumptions, not the weight of historical evidence.
+
+**The mistake:** ChatGPT produces text that starts from the mainstream scholarly frame and tries to "add" Egyptian or Greek elements to it. The result reads as if the Egyptian/Greek argument is a minority opinion being cautiously proposed against an established Jewish baseline. This is backwards — the evidence presented in the chapter IS the baseline. The mainstream frame is what needs defending, not the book's argument.
+
+**Example:** The chapter spends 30 lines proving John's theology matches Egyptian structures (Amun/Ra, creation-by-word, Memphite Theology, descent-ascent, judgment, eternal life). ChatGPT then drafts a follow-up paragraph that calls the same Wisdom texts "Jewish" and argues they are an "Egyptian-Jewish hybrid." This walks back the chapter's own argument by reimporting the mainstream frame the chapter just dismantled.
+
+**Check:** When reviewing ChatGPT output, ask: does this text accept the mainstream US Protestant scholarly consensus as its starting point? Does it treat "Jewish" as the default category for anything in the biblical canon? Does it frame Egyptian/Greek origins as needing extra justification? Phrases like "Egyptian-Jewish hybrid," "Jewish Wisdom tradition with Egyptian influence," or "bridge between Jewish and Egyptian thought" are markers of this default.
+
+**Rule:** Claude must catch this and push back on ChatGPT BEFORE presenting the draft to the user. If ChatGPT returns text with mainstream-default framing, Claude sends it back with a correction prompt explaining the book's thesis and the specific chapter context. The user should never see a draft that contradicts the book's argument — that is Claude's job to filter.
+
+**Equal terminology for all traditions.** Do not use different registers for Jerusalem and Alexandria. If Jerusalem has "religion," Alexandria has "religion" — not "intellectual environment" or "philosophical tradition." If Jerusalem has "theology," Alexandria has "theology." Using softer or more academic language for Alexandria (e.g., "intellectual milieu," "philosophical system") while calling Jerusalem's output "religion" or "theology" implicitly downgrades Alexandria to a secondary, merely academic phenomenon. They are the same kind of thing: religion. Use the same words.
+
+**Inform the reader, not just the scholar.** The target reader is an educated general reader, not a specialist. When the text builds on established scholarly findings, it must tell the reader those findings exist. Do not assume the reader already knows what scholars have found. If we argue "X is actually Egyptian," the reader first needs to know X exists and what has been said about it. A paragraph that refutes a scholarly position the reader has never heard of is incoherent. The rule: establish the known finding, then make the move.
+
+**New text must be consistent with surrounding chapter context.** Read 20 lines before and after the insertion point. If the surrounding text argues X, the new text cannot assume not-X.
 
 ## Ch1 Spirit Rule
 
