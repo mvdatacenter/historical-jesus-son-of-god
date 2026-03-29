@@ -767,9 +767,9 @@ Uses macOS Desktop App automation via Accessibility API.
 
 **Usage:**
 ```bash
-chatgpt read                  # Read latest ChatGPT response (safe, passive)
+chatgpt read_latest            # Read latest ChatGPT response (safe, passive)
 chatgpt send "Your query"     # Send a query (guarded — destructive operation)
-chatgpt scrape --limit N      # Scrape conversation history (guarded — destructive operation)
+chatgpt extensive_scrape_history --limit N  # Scrape conversation history (guarded — takes over phone)
 ```
 
 **With bias-aware template:**
@@ -815,7 +815,7 @@ manuscript.tex
 
 | Script | Purpose |
 |--------|---------|
-| `chatgpt` | CLI for ChatGPT Desktop App — `chatgpt read` (safe), `chatgpt send` (guarded), `chatgpt scrape` (guarded). See PM-0004. |
+| `chatgpt` | CLI for ChatGPT App — `chatgpt read_latest` (safe), `chatgpt send` (guarded), `chatgpt extensive_scrape_history` (guarded). See PM-0004. |
 | `scripts/source_registry.py` | Central registry mapping bibliography keys to public-domain download URLs |
 | `scripts/download_sources.py` | Fetch public-domain source texts to `sources/` directory |
 | `scripts/verify_citations.py` | Extract `\cite` commands from chapters, locate passages, generate verification reports |
