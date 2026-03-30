@@ -445,23 +445,13 @@ By the time the reader reaches Ezekiel 1, Ezekiel has already taught the vocabul
 
 ### Tier 1 - Structural Evidence (highest priority)
 
-**John → Egyptian Logos (locks ontology)**
-
-Specific gaps identified:
-1. Why Egypt not Jewish Wisdom — **RESEARCHED (2026-03-28)**. The "Jewish Wisdom vs Egyptian" framing is a false dichotomy. Key argument: Proverbs 22:17–24:22 directly reworks Instruction of Amenemope (Fox, Shupak — mainstream consensus). Wisdom of Solomon composed in Alexandria as "amalgam of Platonic, Stoic and Egyptian elements" (Schaper, Cambridge). Sirach translated in Egypt (prologue: 38th year of Euergetes). No scholar states the full synthesis ("Jewish Wisdom vs Egyptian is a false dichotomy, therefore John's Logos should not be opposed to Egypt") — this is an original argument.
-   - **Strongest counter:** John draws from Jewish texts already available, not directly from Egypt. **Rebuttal:** In Alexandria, that mediation IS the point — Jewish texts written in Greek in Alexandria carrying Egyptian metaphysics are evidence FOR Egyptian theology naturalized inside Jewish discourse.
-   - **Tightening needed:** Don't claim "Wisdom theology was central to Egyptian religion for millennia" — claim instead "the religious and intellectual structures later expressed in Jewish Wisdom texts had deep Egyptian precedents in the far older traditions of maʿat, divine order, instruction, and creative-mediatory theology."
-   - **Still needs:** Draft paragraph for chapter 5 using this argument. Citation verification for Fox, Shupak, Schaper (modern works — verify via Google Books / citation pipeline).
-2. Egyptian reception dossier - earliest Egyptian patristic/liturgical usage of John
-
-**Mark → Syrian Spirit Authority (locks authority grammar)** — **PARTIALLY RESEARCHED (2026-03-29)**
-- MISLABELED as "exorcism" — Mark's material is broader: Syrian religious grammar of divine command over spirits, not formal exorcism ritual
-- Best period-appropriate source: **Lucian, Philopseudes 16 (2nd century CE)** — "Syrian from Palestine" confronts demons through direct dialogue and verbal domination, no ritual tools. Structurally matches Mark 5.
-- **Josephus, Antiquities 8.45-49 (1st century CE)** — Useful as CONTRAST: Jewish-Solomonic exorcism uses ring, root, incantations. Mark's Jesus uses none of this. Mark's style is NOT the Jewish type.
-- **Baal-Shamin cult (Palmyra, 1st century)** — Syrian divine authority through performative speech, gods as lords of regions. Right period, right pattern.
-- **PGM XX / Philinna Papyrus (1st century BCE/CE)** — Charm attributed to "Syrian woman from Gadara." Weak but shows Syrian magical reputation in the period.
-- **Key evidence:** Lucian, Philopseudes 16 — Syrian practitioner uses direct dialogue and verbal command over spirits. Josephus (Antiquities 8.45-49) as contrast: Jewish-Solomonic style uses ritual tools, Mark's does not.
-- **Still needs:** Draft paragraph for chapter 5 anchoring Mark's spirit-authority style in Lucian and the Syrian lordship pattern. Focus on the authority grammar (command, dialogue, territorial lordship) not narrow exorcism.
+**John → Egyptian reception dossier** — **RESEARCHED (2026-03-30)**
+- Basilides (~120-140 CE): earliest Egyptian theological use of John (1:9, 2:4)
+- Clement: 335 citations, 78 from Prologue, called it "spiritual Gospel"
+- Origen: 32 books of commentary, John is "first fruits of the Gospels"
+- Unbroken chain: Basilides → Valentinians → Clement → Origen → Didymus
+- Other regions also used John early (Theophilus in Antioch, Irenaeus in Gaul, Heracleon in Rome) — Egypt doesn't have monopoly on early use, but has the most continuous and central Johannine tradition
+- **Still needs:** draft for chapter 5
 
 **Luke → Greek Civic Religion (locks social form)**
 - Greek civic religion in 1AD Aegean cities (Ephesus, Corinth, Philippi)
@@ -532,6 +522,8 @@ Source: `sources/youtube/` — 159 extracted files across 10 channels (tabor:50,
 - Ch5: Julia Severa inscription from Acmonia — needs inscription reference
 - Ch5: Syrian colonial coins with Jupiter/Aries/crescent — needs specific mint or catalog reference
 - Ch6: Flavian catacomb symbols (anchors, fish, dolphins, tridents) — needs specific catacomb names and Flavian coin series references
+- Ch5: Fox, Shupak, Schaper — modern works cited in Wisdom-as-Egyptian argument, need verification via Google Books / citation pipeline
+- Ch5: Baal-Shamin at Palmyra — need a specific inscription or dedication showing divine authority through performative speech
 
 ### Book of the Dead — Osiris "drink my blood and eat my flesh" (DD-0002 finding `__k29FidXyk_0`)
 
