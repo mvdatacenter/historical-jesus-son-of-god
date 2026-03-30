@@ -453,10 +453,7 @@ By the time the reader reaches Ezekiel 1, Ezekiel has already taught the vocabul
 - Other regions also used John early (Theophilus in Antioch, Irenaeus in Gaul, Heracleon in Rome) — Egypt doesn't have monopoly on early use, but has the most continuous and central Johannine tradition
 - **Still needs:** draft for chapter 5
 
-**Luke → Greek Civic Religion (locks social form)**
-- Greek civic religion in 1AD Aegean cities (Ephesus, Corinth, Philippi)
-- Inscriptions: politarchs, asiarchs, proconsuls
-- Acts as imperial travel narrative, not Jewish sect history
+**Luke → Greek Civic Religion** — **DONE**
 
 ### Tier 2 - Integrative Evidence
 
