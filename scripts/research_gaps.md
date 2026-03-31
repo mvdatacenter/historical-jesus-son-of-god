@@ -574,3 +574,89 @@ Source: `sources/youtube/` — 159 extracted files across 10 channels (tabor:50,
 **Status:** PIPELINE — needs primary source consultation.
 
 *Last updated: 2026-03-02*
+
+---
+
+## Alexandria Step 2 Research Groups (2026-04-01)
+
+Source: 236 RESEARCH findings from Step 2 rerun (March 17, 2026). Grouped by tight topical overlap — findings within each group share the same verification needs and primary sources.
+
+### Philo's Logos Theology → Johannine Christology (9 findings)
+
+IDs: 5kIjGzdlKfI_0, 4MJ9Z3U8Lxc_1, 4MJ9Z3U8Lxc_2, 1aYH2YNev3c_3, 6hC7ewU8FDE_0, vBFikbS3_Wg_1, sx_Uul1WB9w_1, Nf4GV3z-z6o_4, RCR9mJzDRS0_1
+
+Philo's pre-Christian Logos theology — Platonic triadic structure, consubstantiality, divine intermediary figures — as the framework that directly shaped John's Logos prologue and early Christological formulations.
+
+**Sources needed:** Philo, *De Opificio Mundi*; *De Vita Mosis*; *Legum Allegoriae*. Cross-reference with John 1:1-18. Porphyry and Neoplatonic triadic theology for the intelligible triad (being, life, intellect).
+
+**Chapters:** ch3, ch4, ch5
+
+### Christos/Anointed as Pre-Christian Greco-Roman Title (6 findings)
+
+IDs: 89b3Y6R_eHo_0, a6ulsk50-rY_0, a6ulsk50-rY_1, iAlk-bLreT4_0, ngOxRGUO1Dg_1, 2sZnADzQ2yo_2
+
+"Christos" (anointed one) functioned as a divine title in Greek religion before Christianity — traced through Demeter mysteries, Jason/Medea anointing, Roman imperial anointing, and the Eshmon oil/anointing cult in Phoenicia near Galilee.
+
+**Sources needed:** Plutarch on Roman imperial anointing rituals. Apollonius Rhodius, *Argonautica* (Medea anointing Jason). Eshmon temple inscriptions from Sidon/Bostan esh-Sheikh. Homeric Hymn to Demeter for anointing in Eleusinian context.
+
+**Chapters:** ch2, ch3
+
+### Eleusinian/Sabazius/Dionysian Mysteries → Church Fathers (6 findings)
+
+IDs: 8uG6zzH4CI8_3, 8uG6zzH4CI8_4, 6CK1s04dU70_0, Jo-z7OQoV4Q_1, aKzURrl_6GY_4, 8uG6zzH4CI8_6
+
+Direct personal and institutional transmission from Greek mystery cults to Christian theology — Gregory of Nazianzus as a Sabazius initiate before converting, Clement equating Sabazius/Dionysus mysteries with Christian theology, Eleusinian sites converted to churches, Saint Demetrius inheriting Dionysian priestly roles.
+
+**Sources needed:** Gregory of Nazianzus, *Orationes* (for references to his pre-conversion religious background). Clement of Alexandria, *Protrepticus* and *Stromateis*. Archaeological reports on Eleusinian site conversion. Thessalonian hagiographical tradition for Demetrius/Dionysus continuity.
+
+**Chapters:** ch3, ch5, ch6
+
+### Dionysian Parallels to Jesus (5 findings)
+
+IDs: peNQQnJ_pJc_2, 07PKqAfCwOY_2, 8uG6zzH4CI8_0, 5zZchadJDM0_1, YwUfy26-alA_8
+
+Specific Dionysian motifs in the Gospels — water-to-wine at Cana paralleling Dionysus's January 5-6 epiphany, Jesus replacing Dionysus as the vine, shared purple and wine-press imagery, and John's earliest compositional layer identified as the "Dionysian Gospel."
+
+**Sources needed:** Plutarch, *Quaestiones Convivales* 6.7 (Dionysus and wine). Pausanias on Dionysian January 5-6 festival. Euripides, *Bacchae* (for vine/wine theology). MacDonald's published argument on John's "Dionysian layer."
+
+**Chapters:** ch3, ch4, ch5
+
+### Mary Magdalene as Dionysian/Isis Figure (5 findings)
+
+IDs: OFna6qHSt_c_3, a6ulsk50-rY_5, hUW8ZZhIIOk_0, xB7xrES4fgY_0, hrfnmmxUqY8_5
+
+Mary Magdalene reconstructed through Greco-Roman parallels — "seven demons" reframed as maenad-like ecstatic possession, "seven divine powers" in the Gospel of Mary, feast day inheriting Isis's July 22 date, name's etymological connection to Egyptian Isis via Philo.
+
+**Sources needed:** Gospel of Mary (Berlin Codex 8502). Philo on Isis/Migdal etymology. Roman calendar for July 22 Isis festival attestation. Plutarch, *De Iside et Osiride* for Isis mourning parallels. Apuleius, *Metamorphoses* 11 for Isis cult practices.
+
+**Chapters:** ch3, ch4
+
+### MacDonald's Mimesis — Gospels Imitating Homer/Virgil (5 findings)
+
+IDs: SZn-ns58cfA_0, --MKyxX907k_1, F0tBHqdI_3s_0, BqILLv1Dvl0_2, U28IuAIH34E_0
+
+Mark parallels Homer's Iliad/Odyssey (Jesus's death modeled on Hector's), Luke-Acts imitates Virgil, and the Judas betrayal is a literary creation from Paul's paradidomi in 1 Cor 11:23 rather than historical memory.
+
+**Sources needed:** MacDonald, *The Homeric Epics and the Gospel of Mark* (Yale, 2000). MacDonald, *Luke and Vergil* (Rowman & Littlefield, 2015). 1 Cor 11:23 Greek text for paradidomi analysis.
+
+**Chapters:** ch1, ch3, ch5
+
+### Paul's Soteriological Vocabulary from Greek Mystery Religions (5 findings)
+
+IDs: -I5opAIthpc_1, B5d3ruUp0yE_1, -rwHxeHVyXE_1, h2ra1QU3U8s_3, f6TDkzMLoDQ_2
+
+Paul's pervasive use of mystery-religion terminology — mysterion (21 times), teleioo, nepios — and his salvation models deriving from Isis, Mithras, and Artemis cults rather than Jewish precedents. "Christ in you" identified as having no Hebrew Scripture equivalent.
+
+**Sources needed:** Paul's letters (concordance search for mysterion, teleioo, nepios, morphe). Apuleius, *Metamorphoses* 11 (Isis initiation). Mithraic inscriptions (CIMRM corpus). Ephesian Artemision inscriptions for cult vocabulary overlap.
+
+**Chapters:** ch5
+
+### Sibylline Oracles as Greco-Jewish-Christian Continuity (5 findings)
+
+IDs: n7UWPkWAbXs_1, sky6u0ntu24_2, lX-TvMDoDP4_0, jmmNY7wdcFI_4, mScRlWabdSM_2
+
+The Sibylline Oracle tradition as a centuries-long pagan-Jewish-Christian textual continuum — the same prophetic genre and institutional structure (college of pontiffs) serving Roman, Jewish, and Christian religious authority in unbroken succession.
+
+**Sources needed:** Sibylline Oracles Books 3-5 (Jewish, 2nd century BCE – 1st century CE). Lactantius, *Divinae Institutiones* (Christian use of Sibyllines). Varro on Roman Sibylline Books and pontifical custody. Collins, *The Sibylline Oracles of Egyptian Judaism* (1974).
+
+**Chapters:** ch1, ch3, ch5, ch6
