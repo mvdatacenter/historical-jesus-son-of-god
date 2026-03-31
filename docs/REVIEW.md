@@ -62,26 +62,31 @@ All foreign words must follow the project's language rules (see README.md "Greek
 
 This is a book. Write like a high-class author. Obey the basic rules of good writing: text must flow, paragraphs must connect, nothing is repeated, no unnecessary conclusions, no filler, no seams visible to the reader. Read what you wrote in context before committing. If it reads like AI output pasted into a chapter, rewrite it until it doesn't.
 
+When the review finds a concern — weak logic, irrelevant information, bad placement — do not silently fix it or pass it. Send the concern back to ChatGPT with the specific problem and the surrounding chapter context, and work on a better version. ChatGPT may not have the full scope of the book in its memory, so include enough context for it to understand what the paragraph needs to do and where it sits in the argument.
+
 Before accepting any new or rewritten text, check for:
 
 ### Logic
 
 - **Logical coherence** — Can this sentence be written in simpler, clearer logic without losing any meaning? If yes, propose a simpler version to ChatGPT. AI slop survives by sounding complex. It never survives simplification.
-- **Logical completeness** — Read each concluding sentence in the diff. Does it follow from the evidence presented, or does it skip inferential steps? If a sentence claims "A therefore C," check whether B is stated. A sentence like "these parallels indicate an eyewitness" is incomplete unless the text explains WHY parallels imply eyewitness rather than literary invention. When fixing text that "isn't clear" or "isn't developed enough," diagnose whether the problem is style (formatting, word choice, register) or logic (missing inferential steps, unsupported leaps) before sending to ChatGPT. A logic problem sent as a style request produces polished nonsense.
+- **Logical completeness** — Every "therefore," "thus," "this means," "this confirms" must be traced back. What specific sentence does it follow from? If you cannot point to the sentence, the connector is false. "The inscription confirms accuracy... therefore the accusation is civic" fails because accuracy and civic nature are different claims — one does not produce the other. Read the paragraph as a chain: does each sentence follow from the one before it, or does the text jump between unrelated points connected by false connectors? A logic problem sent as a style request to ChatGPT produces polished nonsense.
 
 ### Content
 
-- **AI garbage** — Does removing any sentence reduce factual content? If not, delete it.
+- **AI garbage** — Three tests, all must pass. First: does removing this sentence reduce factual content? If no, delete it. Second: does the reader need this information HERE to follow the argument? A sentence can contain true information and still be garbage if the reader doesn't need it at this point. "Thessalonica was founded by Cassander" is true but useless if the argument is about civic authority, not city founding dates. Third: would this information be more valuable in an earlier section as background? If yes, move it there or cut it — don't bury important context in the wrong place.
+- **Distribution of findings** — Do not dump all findings into one paragraph at one insertion point. Each finding belongs where it is most relevant in the book. Background facts (like "Rome governed through Greek institutions") may belong in chapter 2 or 3 where ecclesia is first described, not in chapter 5 where it's buried. When ChatGPT returns multiple findings, distribute each to its natural location across the book.
 - **Evidence anchoring** — Read each new factual sentence in the diff. Does it name a specific source (manuscript, ancient author + work, inscription, verse)? "The oldest manuscripts" is not anchored. "Codex Vaticanus and Codex Sinaiticus" is. If unverified through the citation pipeline, the claim does not get committed as final text.
 - **GPT default framing** — Does the new text treat "Jewish" as the default category? Does it frame Egyptian/Greek elements as additions to a Jewish base? If yes, the framing contradicts the book's thesis. See "GPT Default Framing" section.
 
 ### Style
 
+The Writing Style Rules in README.md apply to all text: direct ("this is X" not "this can be understood as X"), confident, evidence-first, simple language. One sentence per line is formatting only — sentences should be normal scholarly length.
+
 - **Name-dropping** — Any modern scholar named in running text? Remove; keep `\cite{}`.
 - **Consensus laundering** — Vague appeals to authority without specifics? Rewrite with evidence.
 - **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
 - **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
-- **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
+- **Jargon decoration** — Replace words that sound technical but do not add specific meaning with plain language. Test: if swapping the term for a simple word (like "real," "active," "working," "formal steps") keeps the meaning unchanged, replace it; if the term adds a precise distinction you would lose, keep it. Read the sentence aloud: if it sounds like a lecture instead of a clear explanation to a smart friend, simplify the wording without removing the idea.
 
 ### Context
 
