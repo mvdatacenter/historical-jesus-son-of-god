@@ -462,10 +462,11 @@ By the time the reader reaches Ezekiel 1, Ezekiel has already taught the vocabul
 - Melqart = Heracles equations in inscriptions
 - Power-hero narrative structures
 
-**Luke → Greek mystery cults (supporting, not spine)**
-- Eleusinian initiation texts, Samothracian inscriptions
-- Afterlife geography (Hades, judgment, heroes)
-- Contrast mystery secrecy with Luke's openness
+**Luke → Secrecy and staged disclosure as political conspiracy**
+- Luke has staged revelation, insider/outsider boundaries, controlled disclosure (Luke 8:10 μυστήρια, Acts 2 Pentecost, Luke 24 progressive opening of scriptures)
+- Scholars labeled these "mystery cult" features. The book's thesis offers a better explanation: these are the operational features of a political conspiracy to maintain Greek civic independence under Roman rule
+- Secrecy, initiation, levels of access — standard features of any political movement operating under an occupying power
+- Research needed: how well do the secrecy/disclosure patterns in Luke-Acts match political conspiracy structures vs religious initiation structures
 
 ---
 
