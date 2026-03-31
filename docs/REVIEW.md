@@ -78,6 +78,8 @@ Before accepting any new or rewritten text, check for:
 
 ### Style
 
+The Writing Style Rules in README.md apply to all text: direct ("this is X" not "this can be understood as X"), confident, evidence-first, simple language. One sentence per line is formatting only — sentences should be normal scholarly length.
+
 - **Name-dropping** — Any modern scholar named in running text? Remove; keep `\cite{}`.
 - **Consensus laundering** — Vague appeals to authority without specifics? Rewrite with evidence.
 - **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
