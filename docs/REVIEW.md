@@ -62,6 +62,8 @@ All foreign words must follow the project's language rules (see README.md "Greek
 
 This is a book. Write like a high-class author. Obey the basic rules of good writing: text must flow, paragraphs must connect, nothing is repeated, no unnecessary conclusions, no filler, no seams visible to the reader. Read what you wrote in context before committing. If it reads like AI output pasted into a chapter, rewrite it until it doesn't.
 
+When the review finds a concern — weak logic, irrelevant information, bad placement — do not silently fix it or pass it. Send the concern back to ChatGPT with the specific problem and the surrounding chapter context, and work on a better version. ChatGPT may not have the full scope of the book in its memory, so include enough context for it to understand what the paragraph needs to do and where it sits in the argument.
+
 Before accepting any new or rewritten text, check for:
 
 ### Logic
