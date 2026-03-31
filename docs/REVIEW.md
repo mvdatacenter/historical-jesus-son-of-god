@@ -86,7 +86,7 @@ The Writing Style Rules in README.md apply to all text: direct ("this is X" not 
 - **Consensus laundering** — Vague appeals to authority without specifics? Rewrite with evidence.
 - **Clause stacking** — Multiple dependent clauses where one declarative sentence suffices? Simplify.
 - **Audience simulation** — "This shows that..." / "It is important to note..."? Delete.
-- **Jargon decoration** — Academic vocabulary used for show rather than precision? Replace with simpler word.
+- **Jargon decoration** — Replace words that sound technical but do not add specific meaning with plain language. Test: if swapping the term for a simple word (like "real," "active," "working," "formal steps") keeps the meaning unchanged, replace it; if the term adds a precise distinction you would lose, keep it. Read the sentence aloud: if it sounds like a lecture instead of a clear explanation to a smart friend, simplify the wording without removing the idea.
 
 ### Context
 
