@@ -36,27 +36,14 @@ GPT is also the biggest liar known to humanity and has been fired from every res
 
 ## Root Cause
 
-Claude does not understand what research means in this project.
+The research process has no structural mechanism to prevent Claude from asking GPT for verdicts and adopting them. Four rules prohibit this behavior in prose, but all four are discipline-based — they rely on Claude reading and following them. No guard, no artifact, no automation enforces them.
 
-Claude thinks research = "determine if a claim is true." Research in this project = "find the primary source text so it can be read and evaluated by humans against the book's arguments." The output of research is a source — not a verdict.
+The Evidence Filtering Commands (CLAUDE.md) describe a 5-step process for working with GPT output. Claude skipped all 5 steps and substituted a single question: "GPT, is this true?" Nothing in the system prevented or detected this substitution.
 
-Claude conflates three separate jobs:
-1. **GPT's job:** discuss, enrich, find sources, write drafts
-2. **Claude's job:** verify GPT's citations aren't hallucinated, evaluate findings against the book's arguments, catch bias
-3. **The user's job:** decide what goes in the book
-
-Claude did GPT's job (relay verdicts) instead of its own (evaluate against the book's arguments).
-
-Four existing rules already prohibit this:
-1. DD-0002: "No KEEP/SKIP decision may rest on ChatGPT's word alone."
-2. CLAUDE.md: "ChatGPT's inability to find a source means nothing."
-3. CLAUDE.md: "No finding may be rejected because ChatGPT cannot verify it."
-4. DD-0002: "There is no 'weak' verdict."
-
-All four were broken simultaneously. The rules existed. They were not followed.
+Same class as PM-0001: Claude's default for any evaluation task is automated scoring. PM-0001 was keyword extraction scores. PM-0004 is GPT confidence scores. Both substitute a mechanical shortcut for human judgment. The mechanism is different; the pattern is identical.
 
 ## Action Items
 
-- [x] [detect] This PM documents the failure pattern so it can be recognized in future sessions.
-- [x] [prevent] Rules already exist (4 listed above). The problem was not missing rules — it was not following them.
-- [x] [punish] If Claude presents findings filtered by GPT's confidence, the entire batch is discarded. Claude redoes from scratch: reread the full chapter, resend to GPT correctly, reevaluate against the book's arguments. The shortcut costs 3x the honest work.
+- [x] [detect] This PM documents the failure pattern. Same class as PM-0001 (automated scoring replacing human judgment).
+- [ ] [prevent] The research query prompt to ChatGPT must be assembled by a script (like `build_coverage.py --embed-prep` assembles Step 2 context). The script injects anti-pattern rules and the correct query structure into the prompt, preventing Claude from composing ad-hoc prompts that ask for verdicts. (#104)
+- [ ] [prevent] After receiving GPT output, Claude must produce a research evaluation artifact mapping each finding to a specific chapter argument before presenting to the user. Like pr-review.json forces review before push, a research-eval artifact forces evaluation before presentation. (#105)
