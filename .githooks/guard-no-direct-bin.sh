@@ -5,6 +5,11 @@
 INPUT=$(cat)
 COMMAND=$(echo "$INPUT" | jq -r '.tool_input.command // empty')
 
+# Allow /usr/bin/git when targeting eremos-trials (test infrastructure)
+if echo "$COMMAND" | grep -q 'eremos-trials'; then
+  exit 0
+fi
+
 if echo "$COMMAND" | grep -qE '/usr/bin/git\b|/usr/local/bin/git\b|/opt/homebrew/bin/git\b'; then
   jq -n '{
     hookSpecificOutput: {
