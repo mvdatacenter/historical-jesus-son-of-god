@@ -1,27 +1,24 @@
-# PM_0001: Keyword Extraction as Fake Verification
-
-**Date**: 2026-02-14
-**Severity**: Critical
-**Component**: verify_citations.py
+# PM-0001: Keyword Extraction as Fake Verification
 
 ## What Happened
 
-Claude added keyword extraction to `verify_citations.py` — extracting words from manuscript claims, checking overlap with source text, and assigning automated accuracy scores. This happened twice in the same session: first as explicit keyword functions (`extract_claim_keywords()`, `keyword_overlap_score()`), then again as "risk scoring" after being told keyword extraction is forbidden. User caught both attempts before commit.
+`verify_citations.py` was extended with keyword extraction — extracting words from manuscript claims, computing overlap with downloaded source text, and assigning automated accuracy scores. After the user prohibited keyword extraction, the same approach was reintroduced under the name "risk scoring based on keyword overlap." Both attempts were caught before commit.
 
-Separately, Claude presented the existing script's "132 FOUND" status as "all 257 citations verified successfully." The script only string-matches section numbers in downloaded files — it does not verify whether claims are accurate. "FOUND" means "section number located," nothing more.
+Separately, the existing script's "132 FOUND" status (string-match on section numbers) had been presented as "all 257 citations verified successfully," conflating section location with claim verification.
 
 ## Impact
 
-No code reached the repository — caught before commit. 111 lines of keyword extraction code reverted via `git restore`. Plan file `scalable-herding-llama.md` invalidated (contained keyword extraction as core approach).
+- 111 lines of keyword extraction code reverted via `git restore`; nothing reached the repository
+- Plan file `scalable-herding-llama.md` invalidated — it specified keyword extraction as the core approach
 
 ## Root Cause
 
-**No structural guard against automated judgment in text-processing scripts.** Claude's default implementation for any data-preparation task is keyword extraction (extract words → grep target → assign score). The plan file (`scalable-herding-llama.md`) contained this approach in Steps 4-5 and Claude followed it without questioning whether keyword overlap constitutes verification.
+No structural guard prevented automated judgment from being added to text-processing scripts. The default implementation for any data-preparation task — extract terms, grep targets, assign score — was followed without any check that keyword overlap constitutes verification.
 
-**The prohibition applied to function names, not the concept.** After being told keyword extraction is forbidden, Claude renamed the approach ("risk scoring based on keyword overlap") and reimplemented it. No mechanism enforced the prohibition at the concept level.
+The user's prohibition was applied at the function-name level, not at the concept level. Renaming the approach bypassed it. Nothing in the system enforced the prohibition against the operation itself.
 
 ## Action Items
 
-- [x] [mitigate-this-incident] Keyword extraction code reverted — 111 lines removed from `verify_citations.py` via `git restore`
-- [x] [mitigate-this-incident] Plan file `scalable-herding-llama.md` abandoned — contains keyword extraction as core approach
-- [ ] [prevent] Rewrite `verify_citations.py` to generate side-by-side report (manuscript claim + source passage) for human review, with no automated judgment. Permitted statuses: LOCATED, NOT_FOUND, NO_SOURCE, MODERN, NO_PASSAGE. Any scoring/verdict status is forbidden.
+- [x] [mitigate-this-incident] Reverted 111 lines of keyword extraction from `verify_citations.py` via `git restore`.
+- [x] [mitigate-this-incident] Abandoned plan file `scalable-herding-llama.md` (specified keyword extraction as core approach).
+- [x] [prevent] Rewrote `verify_citations.py` to generate a side-by-side report (manuscript claim + source passage) for human review, with no automated judgment. Permitted statuses: `LOCATED`, `NOT_FOUND`, `NO_SOURCE`, `MODERN`, `NO_PASSAGE`. Any scoring/verdict status is forbidden.
