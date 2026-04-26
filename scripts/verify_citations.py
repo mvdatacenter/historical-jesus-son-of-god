@@ -727,7 +727,7 @@ HTML_REPORT_HEAD = """\
 <strong>Why not automate step 3?</strong> Keyword overlap and string similarity give false confidence.
 A passage can share every keyword with a claim and still misrepresent it, or share no keywords and
 accurately convey the meaning. Semantic accuracy requires judgment, not string matching.
-See <code>docs/PM_0001_keyword-extraction-fake-verification.md</code>.
+See <code>docs/PM_0001_citation-verification-locate-and-present-not-score.md</code>.
 </div>
 </div>
 """
