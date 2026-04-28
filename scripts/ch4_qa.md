@@ -942,3 +942,25 @@ Three classes of argument oppose the Johannine thesis. All addressed below.
 **Status:** The female authorship evidence is specific to the BD's narrative presence. Alternative identifications must account for all 15 convergent tests, not just one line of reasoning.
 
 ---
+
+## John 19:34 Blood and Water — Eyewitness Observation, Not Egyptian Iconography (2026-04-29)
+
+**Finding under consideration (from "John as Egyptian ghost-narrative" research thread):**
+The blood-and-water scene was floated as Osirian regenerative-fluid iconography (Plutarch *De Iside* 33–36 pairs Nile-as-Osiris's-blood with regenerative water; the Egyptian funerary frame pairs blood and water as twin substances of post-mortem regeneration).
+
+**Why noted, not researched further:**
+
+The lance event itself reads as eyewitness reporting, not literary composition. Markers:
+
+- Medically realistic. A dying or freshly-dead crucifixion victim accumulates pericardial and pleural fluid from cardiac strain and respiratory failure; a spear thrust into the side releases serous fluid and blood. Inventors invent clean blood, not the off-message clinical mixture.
+- Roman *crurifragium* / lance-confirmation of crucifixion deaths is standard procedure (cf. Quintilian *Decl.* 6.9; the Yehohanan ossuary from Givʿat ha-Mivtar shows lance-period bone trauma). The lance happening is the expected event, not the anomaly.
+- The detail is slightly squeamish, slightly extraneous — the signature of report, not composition.
+- Fits the chapter's Johannine eyewitness thesis directly: a female author at the cross watching the killing-confirmation, recording what she saw.
+
+**The interesting structural question:** Mark, Matthew, Luke do not include this medical detail. John keeps it. Selection asks for explanation, not the event. An Alexandrian-trained eye familiar with Osirian regenerative-fluid iconography would recognize the detail as theologically loaded and preserve it where another author would file it as a clinical note and drop it. So the Egyptian framework still has explanatory power for *why John foregrounded this detail*, but not for *the detail itself*.
+
+**Decision:** No manuscript change. The book's existing chapter 2 prose around the lance/death narrative ("every later narrative attempt to 'prove' Jesus' death reveals anxiety about a tradition that remembered something more ambiguous") already does the work needed. Adding "John selected this detail because Egyptian framework" would over-argue. The selection-by-Egyptian-eye observation is logged here for the record; not pursued.
+
+**Resolution:** Documented; will not resurface in the pipeline as a novel claim.
+
+---
