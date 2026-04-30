@@ -125,6 +125,28 @@ This is the exact position the book argues against. The book argues John is a Gr
 
 **New text must be consistent with surrounding chapter context.** Read 20 lines before and after the insertion point. If the surrounding text argues X, the new text cannot assume not-X.
 
+## Universal Tropes Are Not Evidence
+
+Parallels between the manuscript and ancient sources need *specific anchors* that resist the coincidence explanation. A parallel that reduces to a universal literary trope --- *identity revealed at the end*, *mistaken-identity-then-recognition*, *separated lovers reunited*, *hero descends to the underworld*, *recognition through name* --- is not evidence even when both authors plausibly drew from the same trope-pool. Shared use of a universal trope is the null hypothesis; you need anchor-grade specifics to overturn it.
+
+This rule applies even within an already-established cultural context. If the book has independently established (through papyrology, manuscript distribution, philological evidence, etc.) that a Gospel comes from a specific milieu, a per-scene parallel that reduces to a universal trope still does not function as evidence for that milieu --- it reduces to decoration. Universal tropes do not become specific because the surrounding argument is specific.
+
+**Two forms of acceptable anchor:**
+
+1. **Anomaly-demanding-explanation** --- a textual feature that is incoherent or unexplained on the standard reading and that the proposed parallel makes coherent. Example: *Noli me tangere* (John 20:17) is incoherent in Pharisaic resurrection theology, which has no transitional-vulnerability concept; the line demands an explanatory framework, and Egyptian transition-window theology supplies one.
+
+2. **Rare specific detail in combination** --- a multi-element structural pattern that is genre-specific. Example: *call dead by name* → *dead emerges bound* → *unbinding command* is a three-step sequence shared with PGM necromancy, Apuleius's Zatchlas, Lucian's Hyperborean, and the Egyptian opening-of-the-mouth ritual. The combination is genre-specific even though no single step is unique.
+
+**Forms that fail:**
+
+- **Universal physical activity** --- mourning, washing, processions, communal meals. (Distinguish from regionally-specific transmitted customs and transmitted doctrines that look universal at a glance but are not. Two canonical contrasts: *anointing as royal proclamation* is a specific ancient Near Eastern / Mediterranean tradition, not naturally-emergent. And *breath as the vehicle of an immortal soul* is a specific theological doctrine: every culture associates breath with vitality as a natural symbol, but breath-as-carrier-of-deathless-soul-or-indwelling-divine-presence is transmitted, not natural. The rule rejects naturally-emergent behaviour and natural symbolic association; it does not reject transmitted custom or transmitted doctrine, even when they involve a substrate that is itself naturally universal.)
+- **Universal literary trope** --- recognition-at-the-end, mistaken-identity-then-recognition, search-and-find, separated-then-reunited.
+- **Shared theme without shared form** --- both texts being *about* resurrection, both being *about* divine self-revelation, both being *about* afterlife judgment.
+
+This rule complements **Evidence Anchoring**: an anchor to a primary source is necessary but not sufficient. The anchor must be specific-by-form, not just specific-by-citation. A primary source that establishes only a shared trope is decoration with a footnote.
+
+**Check:** For every cross-cultural parallel claimed in new manuscript text, name the specific anchor --- which anomaly is being explained, or which rare combination of details is being matched. If the parallel reduces to a shared universal trope or shared topical theme, log it to Q&A and do not present it as evidence.
+
 ## Temporal Relevance of Sources
 
 Sources must be from the correct historical period. Citing a 7th century BCE amulet to explain a 1st century CE Antiochene text is not evidence unless the chain of transmission across those 700 years is demonstrated. Some traditions do carry across centuries — the Bill of Rights traces to Magna Carta, Egyptian funerary theology spans millennia with documented continuity. The question is not "is the source old?" but "is the continuity shown or assumed?"

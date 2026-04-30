@@ -964,3 +964,56 @@ The lance event itself reads as eyewitness reporting, not literary composition. 
 **Resolution:** Documented; will not resurface in the pipeline as a novel claim.
 
 ---
+
+## Khoiak Festival as Frame for Magdalene-Gardener Recognition — REJECTED, universal trope (2026-05-01)
+
+**Idea considered:**
+The annual Khoiak festival (Plutarch *De Iside* 39, 42, 65–66) reenacts Isis searching for Osiris's body at dawn over days 22–28. Could the Magdalene-at-the-tomb scene (John 20:1–17) be read as Khoiak in narrative form?
+
+**Why rejected:**
+The rare Khoiak-specific details (calendar dates, *djed*-pillar raising, wheat-Osiris bed, ritual reassembly) are not in John 20. The parallel collapses to "woman searching for the dead lord's body at dawn" — universal mourning behaviour elaborated through a generic literary recognition trope. Even within John's already-argued Alexandrian-Egyptian provenance, a parallel that reduces to a universal trope is decoration, not evidence.
+
+**Discipline:** shared literary tropes are not evidence of connection. *Identity-revealed-at-the-end* is a millennia-old cliffhanger used across all cultures. Two writers using the same trope independently is the null hypothesis. Parallels need anchor by anomaly or by rare specific detail in combination, not by shared trope.
+
+---
+
+## Magdalene-Gardener as Isis-Osiris Recognition (Pillar 2 of the merged ch4 subsection) — Decoration, not anchor (2026-05-01)
+
+**In the merged subsection:**
+Pillar 2 of `\subsection{Egyptian Transformation-Theology in the Resurrection Scenes}` (PR #111, merge `de9ecfb`) reads the Magdalene-gardener recognition (John 20:1–17) as Isis-Osiris recognition with Osiris-Khentamenti as the gardener of the necropolis garden, citing Plutarch *De Iside* 65–66.
+
+**Why this is decoration, not anchor:**
+Search → mistaken identity → recognition-by-name is a universal literary trope. Greek romance, Song of Songs, Egyptian myth, and Middle Eastern oral tradition all share it. The chapter already cites Greek romance (line 216) and Song of Songs (lines 327–333) as the recognition templates. For the Egyptian reading to be evidence rather than decoration, John 20:1–17 would need a detail characteristically Khentamenti or Khoiak that distinguishes it from the universal recognition-at-end trope — there isn't one.
+
+**Status of the other three pillars (for the record):**
+Pillar 1 (Lazarus / necromantic call), Pillar 3 (*noli me tangere*), and Pillar 4 (pneuma-blowing) all pass the strict discipline. Pillar 1 and Pillar 3 are anchor-grade — three-step necromantic structure with documented genre precedents, and an anomaly-demanding-explanation respectively. Pillar 4 is also anchor-grade once the substrate-versus-doctrine distinction is applied: *breath as symbol of life* is naturally-emergent and universal, but *breath as the vehicle of an indwelling immortal pneuma / Holy Spirit* is a specific transmitted theological doctrine. John 20:22 (*enephusēsen* + "Receive ye the Holy Spirit") is the latter, not the former; the gesture + explicit-pneumatic-transmission combination is what Egyptian opening-of-the-mouth + *ankh*-breath iconography supplies as ritual form. The discipline is in `docs/REVIEW.md` § *Universal Tropes Are Not Evidence* — the rule rejects naturally-emergent behaviour and natural symbolic association, not transmitted custom or transmitted doctrine, even when the substrate (breath, eating, mourning) is itself naturally universal.
+
+**Resolution:** Logged. A follow-up PR may revise the merged subsection to weaken or pull pillar 2 (PM-0005 mitigate-this-incident pattern); no further pursuit of this angle as a standalone argument.
+
+---
+
+## Johannine "I am" Sayings as Isis Aretalogy Form — REJECTED, broadly distributed (2026-05-01)
+
+**Idea considered:**
+The seven predicate "I am" statements in John (bread of life 6:35; light of the world 8:12; door 10:9; good shepherd 10:11; resurrection and life 11:25; way-truth-life 14:6; true vine 15:1) plus the four absolute *ἐγώ εἰμι* (8:24, 8:28, 8:58, 13:19, 18:5–8) might form a Hellenistic-Egyptian Isis aretalogy parallel: first-person predicate divine self-proclamation, cosmic-scope claims, the form attested in the Cyme, Maroneia, Andros aretalogies and the Isidorus hymns from Medinet Madi.
+
+**Why rejected:**
+The bare *ἐγώ εἰμι* + predicate self-identification is grammatical, not transmitted-doctrine-specific. The form is broadly distributed across Hebrew Bible (*"I am the Lord"* throughout Exodus and Isaiah; *ehyeh asher ehyeh* at Exodus 3:14), Mesopotamian royal proclamations, Greek philosophical-religious self-identification (Empedocles), and Roman imperial inscriptions. Shared use of a broadly-distributed grammatical form is the null hypothesis, not evidence of cultural connection.
+
+The actual Johannine predicates have *stronger* Hebrew Bible / wisdom-literature parallels than Egyptian Isis aretalogy parallels: *bread of life* → Pentateuchal manna; *light of the world* → Genesis 1, Isaiah 60; *good shepherd* → Psalm 23, Ezekiel 34; *true vine* → Isaiah 5, Ezekiel 17, Psalm 80; *way-truth-life* → wisdom-literature triad. The absolute *ἐγώ εἰμι* at 8:58 (*"before Abraham was, I am"*) is an Exodus 3:14 LXX echo — pre-existence-claim language from the Hebrew Bible, not from Memphite religious literature.
+
+**One narrow case integrates elsewhere:** *"I am the resurrection and the life"* (John 11:25) is spoken immediately before the necromantic call to Lazarus. The "I am" framing is rhetorical setup; the anchor is the necromantic act. This integrates into Pillar 1 (Lazarus / necromantic call) of the merged ch4 subsection, not as a standalone "I am" thread.
+
+**Discipline:** the rule in `docs/REVIEW.md` § *Universal Tropes Are Not Evidence* applies. A grammatical/rhetorical form distributed across many traditions is not a transmitted doctrine; the substrate-versus-doctrine distinction puts the bare "I am" form on the substrate side.
+
+**Two further refinements of the discipline (worth keeping for future application):**
+
+1. *Shared rhetorical register is not transmission.* The high divine-self-revelation tone, the cosmic-scope claim, the first-person majesty — what one might call the "godly feeling" — sounds the same across many religions because that's what divine self-disclosure register sounds like in any tradition that has it. Shared register is on the substrate side, not the doctrine side. Two texts feeling alike in their religious tone is not evidence one borrowed from the other.
+
+2. *Awareness of a source is not borrowing from it.* Even confirmation that John's author was aware of Isis cult — and any educated Alexandrian Jew in the 1st century would have been — is not evidence that the "I am" sayings derive from Isis. Proximity and awareness do not establish transmission. The test is whether a specific feature in the target text *requires* the source to explain it, not whether the author *could have known* the source. Mere familiarity is mood, not evidence.
+
+**Reopen conditions:** this rejection is on the available evidence and is not permanent. If primary-source work surfaces *specific predicate matches* between Isis material and the Johannine "I am" sayings — Isis self-proclaimed as bread, as light, as life specifically (not just generic cosmic claims) — the parallel moves from "broadly distributed grammatical form" to "specific predicate match," which is harder to contest. P. Oxy. 1380 (Hymns to Isis, 2nd c. CE), the Isidorus hymns from Medinet Madi, demotic Isis hymnography, and the broader Isiac aretalogical corpus are the places to look. Reopen if and only if the predicates themselves match.
+
+**Resolution:** No Thread B as a standalone argument under current evidence. Reopenable on specific predicate matches.
+
+---
