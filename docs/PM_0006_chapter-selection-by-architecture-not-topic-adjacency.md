@@ -1,0 +1,15 @@
+# PM-0006: Chapter Selection by Architecture, Not Topic-Adjacency
+
+## What Happened
+
+Two recent PRs placed manuscript content in the wrong chapter (PR #111 merged, PR #112 closed). Both placements were architecturally obvious mistakes — recognizable on a glance to anyone who knows each chapter's argumentative job. Neither was off-the-cuff. The AI executed the prescribed chapter-selection step at full thoroughness — *read full chapter + grep keywords → find where topic already exists* — and the thoroughness produced confidence in the wrong answer. The prescribed step, run correctly, fails at its main task.
+
+## Root Cause
+
+Step 1 of `CLAUDE.md` "Core Workflow for Adding Content to Chapters" is supposed to select the right chapter. It actually finds a local topical hook in whichever chapter happens to have one. These are different tasks, and the workflow conflates them. The step has no input that distinguishes *"this chapter's argumentative job is X"* from *"this chapter happens to mention X once"* — so an AI executing the step correctly cannot help but pick the chapter with the local hook, even when it is architecturally wrong. There is no canonical artifact stating each chapter's argumentative job, no required cross-chapter comparison, and no wrapper enforcement at the chapter-selection step. Maximum effort at the prescribed step does not produce correct placement.
+
+## Action Items
+
+- [ ] [prevent] Replace Step 1 of the chapter-edit pipeline (`CLAUDE.md` "Core Workflow for Adding Content to Chapters") with architecture-first selection: read `docs/book_structure.md` (authored in this PR — states each chapter's argumentative job, names the topic-adjacency traps that drew the AI to the wrong chapter, lists material types that do not belong in the chapter, and cross-references where misplaced topics actually go; a one-sentence-per-chapter summary is itself a bad action item, because the same summary-vs-artifact failure that drove this PM would lose the detail that distinguishes correct placement from misplaced) and justify the target chapter against every other chapter's job before any local-hook search. (https://github.com/mvdatacenter/claude-instructions/issues/141)
+- [ ] [prevent] Extend the review stage of the chapter-edit pipeline so that before approving the edit the AI re-reads the target chapter in full and verifies the new content against the topic-adjacency traps named in `docs/book_structure.md`; a review-stage re-read without the named-traps check is itself a bad action item, because the same topic-adjacency anchoring that produced the misplacement at selection time persists during re-read and the re-read alone catches nothing. (https://github.com/mvdatacenter/claude-instructions/issues/141)
+- [ ] [detect] Scenario `chapter-misplacement-via-topic-adjacency` in `claude-instructions/scenarios/`: AI given a topic with misleading local hooks in the wrong chapter; pass-criterion is a `placement_justification` enumerating all chapters and rejecting the topic-adjacent-but-misplaced one. (https://github.com/mvdatacenter/claude-instructions/issues/144)
