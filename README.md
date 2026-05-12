@@ -96,9 +96,9 @@ The sin is keeping Claude's draft. The necessity is writing it so GPT has someth
 
 ### Step-by-Step Process
 
-**Step 1:** Read full chapter + grep for keywords → Find where topic already exists
+**Step 1 — Identify candidate chapters and read each in full.** From the proposed material's argument-type, identify the chapters that could plausibly host it. Read each candidate chapter in full and read each candidate's Q&A file (`scripts/chN_qa.md`) in full. Pick the target chapter from this comparison of actual content. (See PM-0006: PR #111 and PR #112 picked chapters from local mentions alone, skipping the cross-chapter read.)
 
-**Step 2:** If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
+**Step 2 — Local-hook search within the chosen chapter.** Grep for keywords within the chosen chapter (already read in full at Step 1) and find where the topic already exists. If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
 
 **Step 3:** Have ChatGPT draft text:
 
@@ -122,7 +122,9 @@ Rewrite the OLD text AND add [NEW POINTS]. Keep what's good, improve what's weak
 
 **Step 5:** Present to user: ANALYSIS + PLAN + DRAFT
 
-**Step 6:** After approval: add and commit
+**Step 6 — Pre-commit re-read.** Re-read the target chapter in full and re-read the chapter's Q&A file in full. Confirm the new content fits the chapter's argumentative job and respects what the Q&A records about prior decisions.
+
+**Step 7:** After approval: add and commit
 
 ## When to Use ChatGPT
 
