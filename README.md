@@ -87,6 +87,8 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
 Follow it for any new content added to a chapter — new arguments, new evidence, new sections.
 
+When Claude review surfaces a concern, send the concern back to ChatGPT with surrounding chapter context; ChatGPT does not retain the full manuscript in memory and produces drift-free revisions only when the surrounding text travels with the prompt.
+
 ## When to Use ChatGPT
 
 - **Research** - Fact-check claims, find sources, identify arguments
