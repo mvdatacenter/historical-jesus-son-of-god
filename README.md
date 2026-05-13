@@ -81,48 +81,11 @@ When user says "stop", "STOP", or any variation:
 
 This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
-## Core Workflow for Adding Content to Chapters
+## Adding Content to Chapters
 
-**BEFORE ANY CHAPTER EDIT: Read `scripts/CHAPTER_EDIT_TASK.md` and follow its checklist.**
+[`docs/DD_0002_research-qa-strategy.md`](docs/DD_0002_research-qa-strategy.md) specifies the pipeline for adding manuscript content — chapter routing by argument structure, embedding decisions, primary-source verification, with the model and anti-pattern requirements stated.
 
-1. **Read the chapter FIRST** - You cannot improve text you haven't read
-2. **Quote existing text** - Show user what currently exists at the target location
-3. **Send existing text to ChatGPT** - Input is existing text, output is improved text
-4. **Get approval before editing** - Present old vs new to user
-
-**CRITICAL RULE**: Claude drafts are scaffolding only and must never be committed as final prose.
-
-The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
-
-### Step-by-Step Process
-
-**Step 1:** Read full chapter + grep for keywords → Find where topic already exists
-
-**Step 2:** If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
-
-**Step 3:** Have ChatGPT draft text:
-
-**For NEW content:** Give style example + points to cover
-```
-"Here's existing style: [PASTE 2-3 PARAGRAPHS FROM CHAPTER]
-Write ~N sentences covering [POINTS A,B,C]."
-```
-
-**For ENHANCING existing content:** Give OLD text to rewrite + surrounding context + new points
-```
-"BEFORE this section: [1-2 SENTENCES OF CONTEXT]
-OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
-AFTER this section: [1-2 SENTENCES OF CONTEXT]
-Rewrite the OLD text AND add [NEW POINTS]. Keep what's good, improve what's weak."
-```
-
-**Include surrounding context** so GPT knows what comes before/after and writes text that flows.
-
-**Step 4:** Review draft (accuracy, bias, style match) + cut any AI padding
-
-**Step 5:** Present to user: ANALYSIS + PLAN + DRAFT
-
-**Step 6:** After approval: add and commit
+Follow it for any new content added to a chapter — new arguments, new evidence, new sections.
 
 ## When to Use ChatGPT
 
