@@ -15,12 +15,6 @@ Ancient authors (Josephus, Eusebius, Philo, Jerome, Justin Martyr, Clement of Al
 
 **Anglophone bias warning:** AI models systematically catch English-language scholar names (MacDonald, Walsh, Whitmarsh) while missing non-English names (Schrader Polczer, de Boer, van Kooten, Tal Ilan, Young-Ho Park). Do NOT rely on "feels like a name-drop" — grep mechanically for all names appearing before `\cite{}` or with attribution verbs (argues, notes, shows, demonstrates, identifies, proposes, concludes).
 
-## Alexandria Pipeline is Internal Research Data
-
-The Alexandria extraction pipeline (`alexandria-pipelines` repo) is an internal research tool.
-References to specific data sources (e.g., "YouTube") must not appear in documentation, guidelines, or manuscript text.
-Findings from the pipeline are treated as research leads that enter the standard three-gate pipeline (ChatGPT drafting, Claude review, citation verification).
-
 ## Evidence Anchoring
 
 Every factual claim in the manuscript must be anchored to a specific primary source, inscription, or archaeological datum.
