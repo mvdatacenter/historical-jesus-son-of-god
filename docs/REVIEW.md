@@ -10,13 +10,14 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 ## Evidence
 
-- **Every factual claim cites a specific source on the line that makes the claim.** Manuscript, ancient author + work, inscription, verse, archaeological datum — name it. "The oldest manuscripts" is not anchored; "Codex Vaticanus and Codex Sinaiticus" is. Vague appeals to authority ("most scholars agree," "it is generally accepted," "the consensus view") are rewritten with the specific who, where, and when. For sources from a different period than the target text, state the date and argue transmission or persistence — both 700-year-old and 100-year-old sources require the same treatment. ChatGPT systematically reaches for the oldest and most famous texts when period-appropriate sources exist; catch this and demand the right period first. Claims unverified through the citation pipeline do not get committed as final text.
+- **Every factual claim cites a specific source on the line that makes the claim.** Manuscript, ancient author + work, inscription, verse, archaeological datum — name it. "The oldest manuscripts" is not anchored; "Codex Vaticanus and Codex Sinaiticus" is. Vague appeals to authority ("most scholars agree," "it is generally accepted," "the consensus view") are rewritten with the specific who, where, and when. For sources from a different period than the target text, state the date and argue transmission or persistence — both 700-year-old and 100-year-old sources require the same treatment. Cult practice, ritual structure, and regional religious grammar persist through political upheaval — a 2nd-century CE source on Syrian religion is straightforward evidence for the region's earlier cult unless a specific rupture is shown. ChatGPT systematically reaches for the oldest and most famous texts when period-appropriate sources exist; catch this and demand the right period first. Claims unverified through the citation pipeline do not get committed as final text.
 
 ## Foreign Language Formatting
 
 - **First mention of a foreign term gives transliteration with original script in parentheses.** Example: `\emph{homoousios} (ὁμοούσιος)`.
 - **Subsequent mentions use original script only.** Example: `ὁμοούσιος`.
 - **Longer fragments give original script first, then English translation.** Example: `τὸ πορφυροῦν αἷμα, "the purple of blood"`.
+- **Reviewers grep `chapter*.tex` for common formatting violations.** Catch: bare transliteration without original script on first mention (e.g., plain `homoousios`), original script dumped without transliteration on first mention, transliterated words missing `\emph{}`, and second-mention text still re-stating the transliteration when original script alone is required.
 
 ## Logic
 
