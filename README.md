@@ -191,13 +191,6 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 
 ## Writing Style Rules
 
-✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Confident:** State claims without hedging when evidence has been presented
-✅ **Evidence-first:** Show data, minimal interpretation
-✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
-✅ **References are graceful:** Every mention of another section, chapter, or claim is woven into the surrounding paragraph — reference is minimal and explains why it is being made. "Much like, X say Y, Z also seems to be saying Y" "As discussed before, ..., and indeed ... too".
-✅ **Ensure the prose remains centered on the core request:** The original request and intention from the user is the central emphasis of the text. Yes, you should absolutely add and expand and improve wording, but the core of the original idea must remain the core of the final outcome. If the main request or source material asked you to add claim X, you can add claims Y and Z if you find them, but claim X must remain claim X and must remain at least as central to the argument as claim Y and Z unless the user very explicitly asks you to change the direction.
-
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
 ## Inline Citations: What's Allowed
