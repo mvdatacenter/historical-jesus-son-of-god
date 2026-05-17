@@ -189,13 +189,6 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 
 # WRITING STANDARDS
 
-## Writing Style Rules
-
-✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Confident:** State claims without hedging when evidence has been presented
-✅ **Evidence-first:** Show data, minimal interpretation
-✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
-
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
 ## Inline Citations: What's Allowed
