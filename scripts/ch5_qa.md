@@ -669,3 +669,18 @@ Each gospel = product of its region's language, politics, education, literary ex
 This material would strengthen the four-gospel regional architecture by showing explanatory power beyond just linguistic markers. Could add as "What Gospel Localization Explains" subsection after the linguistic evidence sections.
 
 ---
+
+## Atum / Alpha-Omega Boundary (2026-05-28)
+
+**Decision:** Do not state that Revelation translates Atum's name into Greek, or that Coptic ⲁⲧⲟⲩⲙ is built from alpha and omega, unless a lexical source is added.
+
+**Verified evidence:**
+- Book of the Dead Spell 17 begins with a divine close-open formula, and the translation note compares the formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
+- The same note records a later form of Spell 17 where Atum identifies himself as the creator of heaven and everything that came into being (`sources/ancient/bookofthedead/full.txt:4251`).
+- Book of the Dead Spell 175 has Atum's decree place him as remaining when the earth returns to primal water (`sources/ancient/bookofthedead/full.txt:22892`).
+- Coffin Texts Spell 80 and Spell 335 support Atum's creator and self-originating role (`sources/ancient/coffintexts/vol1.txt:8481`, `sources/ancient/coffintexts/vol1.txt:19344`).
+
+**Action:** Use the material only as a limited Revelation restoration parallel for now.
+Keep it out of the Gospel-of-John Egyptian Theology section because that section explicitly does not bundle Revelation.
+
+---
