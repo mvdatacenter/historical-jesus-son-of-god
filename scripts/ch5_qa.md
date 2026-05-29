@@ -683,5 +683,6 @@ This material would strengthen the four-gospel regional architecture by showing 
 **Action:** Use the material only as a limited Revelation restoration parallel for now.
 Keep it out of the Gospel-of-John Egyptian Theology section because that section explicitly does not bundle Revelation.
 In manuscript prose, cite the content rather than leading with modern editorial labels such as "Book of the Dead Spell 17"; Bible verse numbers are different because readers expect them.
+Do not remove compact source quotations while doing this cleanup: "I know the name of that god" is the evidence, not clutter.
 
 ---
