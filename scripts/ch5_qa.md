@@ -672,7 +672,7 @@ This material would strengthen the four-gospel regional architecture by showing 
 
 ## Atum / Alpha-Omega Boundary (2026-05-28)
 
-**Decision:** Do not state that Revelation translates Atum's name into Greek, or that Coptic ⲁⲧⲟⲩⲙ is built from alpha and omega, unless a lexical source is added.
+**Decision:** State the Revelation/Atum relation only as a limited restoration parallel until a lexical source supports a stronger claim.
 
 **Verified evidence:**
 - The Book of the Dead passage begins with a divine close-open formula, and the translation note compares the formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
@@ -680,9 +680,9 @@ This material would strengthen the four-gospel regional architecture by showing 
 - An Atum decree places him as remaining when the earth returns to primal water (`sources/ancient/bookofthedead/full.txt:22892`).
 - Coffin Texts Spell 80 and Spell 335 support Atum's creator and self-originating role (`sources/ancient/coffintexts/vol1.txt:8481`, `sources/ancient/coffintexts/vol1.txt:19344`).
 
-**Action:** Use the material only as a limited Revelation restoration parallel for now.
-Keep it out of the Gospel-of-John Egyptian Theology section because that section explicitly does not bundle Revelation.
+**Action:** Use the material as a limited Revelation restoration parallel for now.
+The Gospel-of-John Egyptian Theology section stays focused on John rather than bundling Revelation.
 In manuscript prose, cite the content rather than leading with modern editorial labels such as "Book of the Dead Spell 17"; Bible verse numbers are different because readers expect them.
-Do not remove compact source quotations while doing this cleanup: "I know the name of that god" is the evidence, not clutter.
+Preserve compact source quotations while doing this cleanup: "I know the name of that god" is the evidence, not clutter.
 
 ---
