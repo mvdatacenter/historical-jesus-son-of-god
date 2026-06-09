@@ -11,6 +11,7 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 ## Evidence
 
 - **Every factual claim cites a specific source on the line that makes the claim.** Manuscript, ancient author + work, inscription, verse, archaeological datum — name it. "The oldest manuscripts" is not anchored; "Codex Vaticanus and Codex Sinaiticus" is. Vague appeals to authority ("most scholars agree," "it is generally accepted," "the consensus view") are rewritten with the specific who, where, and when. For sources from a different period than the target text, state the date and argue transmission or persistence — both 700-year-old and 100-year-old sources require the same treatment. Cult practice, ritual structure, and regional religious grammar persist through political upheaval — a 2nd-century CE source on Syrian religion is straightforward evidence for the region's earlier cult unless a specific rupture is shown. ChatGPT systematically reaches for the oldest and most famous texts when period-appropriate sources exist; catch this and demand the right period first. Claims unverified through the citation pipeline do not get committed as final text.
+- **Modern source labels stay in citations; clear source names stay in prose.** Bible verse numbers are acceptable because readers expect that convention, and manuscript shelfmarks may be necessary when identifying a witness. Modern editorial unit labels for ancient corpora, such as `Spell 17`, usually move to the citation while the prose keeps the source name and the concrete evidence. If the text says `Book of the Dead`, a revision keeps `Book of the Dead` in the sentence. Compact quotations such as "I know the name of that god" stay when they are accurate and relevant.
 
 ## Foreign Language Formatting
 
@@ -33,7 +34,7 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 - **Clauses stack only when they each add distinct information.** Multiple dependent clauses where one declarative sentence suffices: simplify.
 - **The text does not address the reader directly.** Phrases like "this shows that...," "it is important to note...," and "we can see" are removed; present data and let the reader draw the conclusion.
-- **Jargon stays only when it carries a precise distinction.** Test: swap the term for a simple alternative ("real," "active," "working," "formal steps"). If meaning is unchanged, replace. If a precise distinction is lost, keep the jargon.
+- **Use the clearest accurate wording.** A less common or more specialized word stays only when it adds meaning the ordinary word would lose. Reviewers compare the old and new sentence: if the revision replaces a clear word with a less common word that says the same thing, ask for the ordinary word. Examples: `use` instead of `utilize`; `title` for ordinary use and `epithet` when the technical term matters; `Book of the Dead` rather than a broader category label when the source name is the clearest wording.
 
 ## GPT Default Framing
 
