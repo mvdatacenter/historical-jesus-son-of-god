@@ -675,7 +675,7 @@ This material would strengthen the four-gospel regional architecture by showing 
 **Decision:** Do not state that Revelation translates Atum's name into Greek, or that Coptic ⲁⲧⲟⲩⲙ is built from alpha and omega, unless a lexical source is added.
 
 **Verified evidence:**
-- An Egyptian funerary spell begins with a divine close-open formula, and the translation note compares the formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
+- The Book of the Dead passage begins with a divine close-open formula, and the translation note compares the formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
 - The same note records a later form of that spell where Atum identifies himself as the creator of heaven and everything that came into being (`sources/ancient/bookofthedead/full.txt:4251`).
 - An Atum decree places him as remaining when the earth returns to primal water (`sources/ancient/bookofthedead/full.txt:22892`).
 - Coffin Texts Spell 80 and Spell 335 support Atum's creator and self-originating role (`sources/ancient/coffintexts/vol1.txt:8481`, `sources/ancient/coffintexts/vol1.txt:19344`).
