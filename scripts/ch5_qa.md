@@ -675,14 +675,14 @@ This material would strengthen the four-gospel regional architecture by showing 
 **Decision:** State the Revelation/Atum relation only as a limited restoration parallel until a lexical source supports a stronger claim.
 
 **Verified evidence:**
-- The Book of the Dead passage begins with a divine close-open formula, and the translation note compares the formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
-- The same note records a later form of that spell where Atum identifies himself as the creator of heaven and everything that came into being (`sources/ancient/bookofthedead/full.txt:4251`).
-- An Atum decree places him as remaining when the earth returns to primal water (`sources/ancient/bookofthedead/full.txt:22892`).
-- Coffin Texts Spell 80 and Spell 335 support Atum's creator and self-originating role (`sources/ancient/coffintexts/vol1.txt:8481`, `sources/ancient/coffintexts/vol1.txt:19344`).
+- The Book of the Dead begins one cited passage with a divine close-open formula, and the translation note compares that formula with Revelation 1:8 (`sources/ancient/bookofthedead/full.txt:3741`, `sources/ancient/bookofthedead/full.txt:3753`).
+- The same note records a later form where Atum identifies himself as the creator of heaven and everything that came into being (`sources/ancient/bookofthedead/full.txt:4251`).
+- A Book of the Dead Atum decree places him as remaining when the earth returns to primal water (`sources/ancient/bookofthedead/full.txt:22892`).
+- The Coffin Texts support Atum's creator and self-originating role (`sources/ancient/coffintexts/vol1.txt:8481`, `sources/ancient/coffintexts/vol1.txt:19344`).
 
 **Action:** Use the material as a limited Revelation restoration parallel for now.
 The Gospel-of-John Egyptian Theology section stays focused on John rather than bundling Revelation.
-In manuscript prose, cite the content rather than leading with modern editorial labels such as "Book of the Dead Spell 17"; Bible verse numbers are different because readers expect them.
+In manuscript prose, cite the content rather than leading with modern editorial labels; Bible verse numbers are different because readers expect them.
 Preserve compact source quotations while doing this cleanup: "I know the name of that god" is the evidence, not clutter.
 
 ---
