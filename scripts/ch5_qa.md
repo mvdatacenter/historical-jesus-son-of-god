@@ -614,6 +614,7 @@ See `scripts/global_qa.md` — "Gospel localization (regional products)" for the
 - (chatgpt says...) Double genealogy (Joseph vs Mary) = normal in Herodian/Jewish royal documentation requiring parallel legal and biological lineages
 - (chatgpt says...) Sermon on the Mount's legal form = Judean halakhic discourse in Greek, matches Judean legal pedagogy
 - (chatgpt says...) Anti-Pharisee polemic = intra-Judean elite conflict, not random rural hostility
+- **Research needed; likelihood analysis required:** Check whether the Matthew/Levi call tradition supports a Jerusalem-priestly reading: Matthew 9:9 names Matthew at the tax booth, Mark 2:14 and Luke 5:27 name Levi in the same call scene, and the question is whether ``Levi'' signals Levitical/priestly lineage tied to Jerusalem or only a second name.
 - **CONCLUSION:** Matthew writes Judean political-genealogical case for Jesus's legitimacy
 
 **LUKE (Aegean): Order, chronology, census, empire obsession explained**
