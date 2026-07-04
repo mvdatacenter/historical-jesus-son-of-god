@@ -553,7 +553,7 @@ All pipeline steps must consult Q&A files before making decisions; without them 
 
 `scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
 
-Candidate additions with triage status (KEEP / WEAK / WITHDRAW) live in the private `historical-jesus-son-of-god-research` repo until they are ready to become public-safe Q&A notes or manuscript changes.
+Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become public-safe Q&A notes or manuscript changes.
 
 Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Findings are filtered through the Alexandria pipeline (see `docs/DD_0002_research-qa-strategy.md`) before entering the standard workflow (ChatGPT drafting → Claude review → citation verification).
 
@@ -791,7 +791,6 @@ manuscript.tex
 |------|---------|
 | `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
 | `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
-| `historical-jesus-son-of-god-research/research-notes/` | Private candidate additions with triage status (KEEP / WEAK / WITHDRAW) before public export |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
 | `docs/PM_NNNN_*.md` | Post-mortems (sequential numbering, descriptive title) |
