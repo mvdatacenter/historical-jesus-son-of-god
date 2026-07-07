@@ -34,6 +34,12 @@ While not every question has a certain answer, this project ultimately aims to s
 
 > At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still a work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
+# Research Boundary
+
+Exploratory research belongs in the private internal repository `historical-jesus-son-of-god-research`.
+Do not commit research work here unless it is a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included in this public repository.
+Solar-eclipse investigations, Pauline-location maps, generated findings, and similar exploratory artifacts stay in the research repository until they become verified citation material or reproducible result-building code.
+
 # Table of Contents
 
 - [Preface](preface.tex)
