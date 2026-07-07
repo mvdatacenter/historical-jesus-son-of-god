@@ -2,6 +2,10 @@
 
 Repo-specific review checklist for manuscript changes. Rules are enforced rule-by-rule via `.pr-review.json`.
 
+## Repository Boundary
+
+- **Keep exploratory research outside the public repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Keep research leads, source dumps, generated findings, one-off investigations, exploratory maps, and cache-backed artifacts outside this repository until they are promoted as verified citation material or result-building code.
+
 ## Modern Scholars
 
 - **Modern scholar names do not appear in manuscript text outside `\cite{}`.** Ideas stand on their own; reference works via `\cite{}` only. Ancient authors (Josephus, Eusebius, Philo, Jerome, Justin Martyr, Clement of Alexandria, and so on) are primary sources and are named in text. The exception is eponymous academic standards (e.g., "Rank-Raglan scale," "Bechdel test," "Richter scale") — the name identifies the tool rather than the scholar's authority; test by whether removing the name leaves the reader unable to look up the concept.

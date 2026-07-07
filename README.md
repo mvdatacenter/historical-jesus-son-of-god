@@ -34,6 +34,12 @@ While not every question has a certain answer, this project ultimately aims to s
 
 > At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still a work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
+# Research Boundary
+
+Exploratory research belongs outside this public repository until it is ready for publication.
+This public repository should receive research work only after it becomes a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included here.
+Solar-eclipse investigations, Pauline-location maps, generated findings, and similar exploratory artifacts stay outside this repository until they become verified citation material or reproducible result-building code.
+
 # Table of Contents
 
 - [Preface](preface.tex)
