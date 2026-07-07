@@ -406,7 +406,7 @@ Instead:
 1. Record the question in research tracking outside this public repository, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
 
-**If likelihood has not been analyzed, record the question in research tracking and move on; do not write prose for it.**
+**If likelihood has not been analyzed, record the question in research tracking and write prose only after the analysis is complete.**
 
 This preserves momentum without laundering ignorance into text.
 
@@ -544,7 +544,7 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record what source is needed and where to look in research tracking outside this public repository — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look in research tracking outside this public repository so it can be fed through the pipeline. Claims move forward or stay out because verification supports that decision, not because ChatGPT said yes or no.
 
 ## Research Tracking
 
@@ -557,7 +557,7 @@ Research tracking lives outside this public repository until material is promote
 
 All pipeline steps consult those research records before making decisions; without them the LLM will repeatedly resurface the same arguments.
 
-The research-gap list is the pipeline's todo list. Claims that need investigation go there. Every item exits one of two ways: into the book, or rejected with a note explaining why. Nothing stays in research gaps permanently.
+The research-gap list is the pipeline's todo list. Claims that need investigation go there. Every item exits one of two ways: into the book, or rejected with a note explaining why. Each item eventually exits the research-gap list.
 
 Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become manuscript, citation, bibliography, source-verification, or result-building artifacts.
 
