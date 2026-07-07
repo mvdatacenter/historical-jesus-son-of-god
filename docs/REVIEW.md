@@ -4,7 +4,7 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 ## Repository Boundary
 
-- **Keep exploratory research in the private research repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Keep research leads, source dumps, generated findings, one-off investigations, exploratory maps, and cache-backed artifacts in `historical-jesus-son-of-god-research` until they are promoted as verified citation material or result-building code.
+- **Keep exploratory research outside the public repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Keep research leads, source dumps, generated findings, one-off investigations, exploratory maps, and cache-backed artifacts outside this repository until they are promoted as verified citation material or result-building code.
 
 ## Modern Scholars
 
