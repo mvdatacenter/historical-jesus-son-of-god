@@ -83,9 +83,8 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
 ## Adding Content to Chapters
 
-[`docs/DD_0002_research-qa-strategy.md`](docs/DD_0002_research-qa-strategy.md) specifies the pipeline for adding manuscript content — chapter routing by argument structure, embedding decisions, primary-source verification, with the model and anti-pattern requirements stated.
-
-Follow it for any new content added to a chapter — new arguments, new evidence, new sections.
+Extended Alexandria findings are reviewed in the private `historical-jesus-son-of-god-research` repo before they become public manuscript work.
+For public chapter edits, verify claims against primary sources, keep the chapter's existing argument structure central, and use the citation verification pipeline before accepting new factual claims.
 
 When Claude review surfaces a concern, send the concern back to ChatGPT with surrounding chapter context; ChatGPT does not retain the full manuscript in memory and produces drift-free revisions only when the surrounding text travels with the prompt.
 
@@ -542,20 +541,9 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 
 ## Research Tracking
 
-Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
-
-- ChatGPT research findings and key texts
-- Fact-checking notes and doubts
-- User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
-- Status of whether findings have been added to the chapter
-
-All pipeline steps must consult Q&A files before making decisions; without them the LLM will repeatedly resurface the same arguments.
-
-`scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
-
-Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become public-safe Q&A notes or manuscript changes.
-
-Extended research materials stay outside this public repo until they are filtered into public-safe Q&A notes, manuscript changes, or citation-pipeline inputs. Findings enter through the workflow in `docs/DD_0002_research-qa-strategy.md` before the standard drafting, review, and citation-verification steps.
+Detailed research history, per-chapter Q&A, open research gaps, and Alexandria findings triage live in the private `historical-jesus-son-of-god-research` repo.
+Public files receive only manuscript-ready prose, citation-pipeline inputs, and public-safe summaries.
+Before a research finding enters this repo, it must be filtered through the private findings workflow and then verified through the public citation verification pipeline.
 
 **Public repository note:** This repo accepts external contributions. Keep proprietary data sources and extraction targets in internal materials; public-facing files use public-safe research summaries.
 
@@ -789,8 +777,6 @@ manuscript.tex
 
 | Path | Purpose |
 |------|---------|
-| `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
-| `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
 | `docs/PM_NNNN_*.md` | Post-mortems (sequential numbering, descriptive title) |

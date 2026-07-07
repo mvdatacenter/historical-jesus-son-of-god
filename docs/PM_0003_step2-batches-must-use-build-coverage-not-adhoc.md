@@ -2,7 +2,7 @@
 
 ## What Happened
 
-Step 2 evaluation of ~676 ch3 findings was run using ad-hoc batch files assembled inline by agents, bypassing `build_coverage.py --embed-prep`. The ad-hoc batches used wrong key names and contained empty values for all critical context fields:
+Step 2 evaluation of ~676 ch3 findings was run using ad-hoc batch files assembled inline by agents, bypassing the private research repo's `build_coverage.py --embed-prep`. The ad-hoc batches used wrong key names and contained empty values for all critical context fields:
 
 | Field | Script output (correct) | Ad-hoc output (broken) |
 |-------|------------------------|----------------------|
@@ -23,12 +23,12 @@ All 13 ad-hoc batches (batch2–batch18) were affected. Only `pilot` and `top80`
 
 ## Root Cause
 
-`build_coverage.py --embed-prep` exists and assembles context packages correctly, but nothing prevented agents from constructing batch dicts inline with arbitrary key names. The agent assembled JSON objects directly in its prompt, guessing at field names, and never validated that the fields contained data.
+The private research repo's `build_coverage.py --embed-prep` exists and assembles context packages correctly, but nothing prevented agents from constructing batch dicts inline with arbitrary key names. The agent assembled JSON objects directly in its prompt, guessing at field names, and never validated that the fields contained data.
 
 The pipeline had a build step but no validation step. Any JSON object that looked like a batch was evaluated, even if it was missing every piece of context the evaluator needed.
 
 ## Action Items
 
-- [x] [mitigate-this-incident] Discarded all ad-hoc Step 2 verdicts (batch2–batch18, cleanup) and re-ran via `build_coverage.py --embed-prep`.
-- [x] [prevent] Added `validate_step2_batch()` to `build_coverage.py` — checks required keys exist and are non-empty (`qa_history`, `anti_pattern_rules`, `chapter_inventory` ≥1 entry, `cross_chapter_inventories`, `chapter_text` ≥100 chars, `step2_rules`, `findings` non-empty). Exposed as `--validate` for batch directories or single files.
+- [x] [mitigate-this-incident] Discarded all ad-hoc Step 2 verdicts (batch2–batch18, cleanup) and re-ran via the private research repo's `build_coverage.py --embed-prep`.
+- [x] [prevent] Added `validate_step2_batch()` to the private research repo's `build_coverage.py` — checks required keys exist and are non-empty (`qa_history`, `anti_pattern_rules`, `chapter_inventory` ≥1 entry, `cross_chapter_inventories`, `chapter_text` ≥100 chars, `step2_rules`, `findings` non-empty). Exposed as `--validate` for batch directories or single files.
 - [x] [prevent] `--embed-prep` self-validates each generated batch and fails the run if validation fails. Invalid batches cannot be produced through the supported path; ad-hoc batches fail validation by construction.

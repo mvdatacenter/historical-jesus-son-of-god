@@ -19,4 +19,4 @@ Discipline-based prohibitions do not generalize across contexts. When the same o
 
 - [x] [mitigate-this-incident] Reverted code; deleted the JSON report.
 - [x] [prevent] Push-to-main block and PR review gate ensure every change is reviewed against PMs before it ships. Direct pushes to `main` are hard-blocked; pushes to PR branches require self-review against PMs. *(implemented in `git-wrapper.sh`)*
-- [x] [prevent] Redesigned DD-0002 Step 2 so the script injects PM-0001/PM-0002 anti-pattern rules into the AI's context as part of the embed workflow. The AI does not have to remember to read the rules — the tool puts them in front of the AI at the point of decision. *(design spec updated in DD-0002; implementation: `build_coverage.py --embed-prep`)*
+- [x] [prevent] Redesigned DD-0002 Step 2 so the script injects PM-0001/PM-0002 anti-pattern rules into the AI's context as part of the embed workflow. The AI does not have to remember to read the rules — the tool puts them in front of the AI at the point of decision. *(design spec and `build_coverage.py --embed-prep` now live in the private research repo)*
