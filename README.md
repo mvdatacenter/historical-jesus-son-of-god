@@ -89,7 +89,7 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
 ## Adding Content to Chapters
 
-[`docs/DD_0002_research-qa-strategy.md`](docs/DD_0002_research-qa-strategy.md) specifies the pipeline for adding manuscript content — chapter routing by argument structure, embedding decisions, primary-source verification, with the model and anti-pattern requirements stated.
+[`docs/DD_0002_research-qa-strategy.md`](docs/DD_0002_research-qa-strategy.md) specifies the public boundary for research findings and the contract for promoting them into manuscript content.
 
 Follow it for any new content added to a chapter — new arguments, new evidence, new sections.
 
@@ -403,10 +403,10 @@ When likelihood has not been analyzed:
 - Do not substitute "uncertain" language.
 
 Instead:
-1. Add the question to the research Q&A list, marked "likelihood analysis required".
+1. Record the question in research tracking outside this public repository, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
 
-**If likelihood has not been analyzed, add the question to the research list and move on; do not write prose for it.**
+**If likelihood has not been analyzed, record the question in research tracking and move on; do not write prose for it.**
 
 This preserves momentum without laundering ignorance into text.
 
@@ -525,7 +525,7 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
 
-**Instead:** Add to Q&A file (`scripts/chN_qa.md`):
+**Instead:** Record in research tracking outside this public repository:
 ```markdown
 - (chatgpt says needs sources for 1600-ton claim, only found English blogs)
 ```
@@ -544,24 +544,24 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record in Q&A what source is needed and where to look — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record what source is needed and where to look in research tracking outside this public repository — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
 
 ## Research Tracking
 
-Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
+Research tracking lives outside this public repository until material is promoted into public-safe manuscript, citation, bibliography, source-verification, or result-building artifacts. The research records preserve what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
 
 - ChatGPT research findings and key texts
 - Fact-checking notes and doubts
 - User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
 - Status of whether findings have been added to the chapter
 
-All pipeline steps must consult Q&A files before making decisions; without them the LLM will repeatedly resurface the same arguments.
+All pipeline steps consult those research records before making decisions; without them the LLM will repeatedly resurface the same arguments.
 
-`scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
+The research-gap list is the pipeline's todo list. Claims that need investigation go there. Every item exits one of two ways: into the book, or rejected with a note explaining why. Nothing stays in research gaps permanently.
 
-Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become public-safe Q&A notes or manuscript changes.
+Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become manuscript, citation, bibliography, source-verification, or result-building artifacts.
 
-Extended research materials stay outside this public repo until they are filtered into public-safe Q&A notes, manuscript changes, or citation-pipeline inputs. Findings enter through the workflow in `docs/DD_0002_research-qa-strategy.md` before the standard drafting, review, and citation-verification steps.
+Extended research materials stay outside this public repo until they are filtered into manuscript changes, citation-pipeline inputs, bibliography records, source-verification material, or code/data directly used to construct a result included here. Findings follow the public boundary in `docs/DD_0002_research-qa-strategy.md` before the standard drafting, review, and citation-verification steps.
 
 **Public repository note:** This repo accepts external contributions. Keep proprietary data sources and extraction targets in internal materials; public-facing files use public-safe research summaries.
 
@@ -768,8 +768,8 @@ manuscript.tex
 ├── fonts/                  # SBL Hebrew
 ├── assets/                 # Images
 ├── out/                    # Build output (PDF, aux files)
-├── scripts/                # Research, verification, and automation tools
-├── sources/                # Downloaded source texts and generated reports
+├── scripts/                # Citation verification, translation, and automation tools
+├── sources/                # Downloaded public source texts and generated citation reports
 ├── docs/                   # Design documents and post-mortems
 ├── map.py                  # Historical cities map generator
 └── .github/workflows/ci.yml
@@ -795,8 +795,6 @@ manuscript.tex
 
 | Path | Purpose |
 |------|---------|
-| `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
-| `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
 | `docs/PM_NNNN_*.md` | Post-mortems (sequential numbering, descriptive title) |
