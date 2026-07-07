@@ -168,3 +168,55 @@ Second, and decisive: Tabor's binary (gospel-style bodily-walk-out vs. Pauline-t
 **Suggested manuscript home:** chapter 2, after the existing Talpiot section (around line 986), as a one-paragraph corroborative addition. Frame it as: ~60m from the Jesus family tomb sits a contemporary 1st-century burial (the "Patio Tomb") with an unusual cluster of resurrection-themed features — a Greek prayer to YHWH for resurrection, a Jonah deliverance image, and a cross-mark on the publicly visible face of one ossuary. Whether this burial party was Christian is not decisively established by these features individually (each is Jewishly explicable; the combined message is essentially "may God raise this person up"), but the cluster is unusual within the contemporary Jewish ossuary corpus and is consistent with — and economically explained by — early Christian use. *If* the burial was Christian, the burial party evidently knew the location of Jesus's family tomb and chose interment alongside it; that aligns precisely with chapter 2's reconstruction of Jesus's survival, ~50-day post-cross life, and natural death followed by family-tomb burial. Pending photo sourcing for the cross.
 
 ---
+
+## SETTLED — Atum attribution for the Alpha-Omega / water-of-life cluster (do not re-litigate)
+
+**Status:** researched and settled by the author. Recorded here so the pipeline stops
+resurfacing it.
+
+**Decision:** The whole Rev 21:6 cluster maps to **Atum** of Heliopolis, one god:
+- "the beginning and the end / first and last" = the name **Atum** itself — self-created
+  first god (beginning) + root *tm* "to complete/finish/totality" (the completer, the end).
+- "the water of life / whoever drinks will live forever" = **Atum**, god of the primeval
+  waters (Nun) from which he self-creates and to which the world returns.
+- Onomastic reading Α(lpha) + Ω(mega) → **At-om / Atoum** is the author's reading, retained.
+
+**Do NOT** reassign any part of this cluster to Osiris, Nut/Hathor, or "Nun as a separate
+deity," and do NOT re-run verification to "correct" the attribution toward mainstream
+funerary-god assignments. Atum is Atum. A verification pass that splits the cluster across
+deities was made in error and reverted. Tracked in research_gaps.md RG-025.
+
+---
+
+## Egyptian-god mappings for Jesus's/God's TITLES (title-cluster research thread)
+
+Extends the Amun cluster the chapter already argues (Hidden Father = Amun "the Hidden
+One"; Father in heaven = Aten/Amun-Ra; Lamb of God = Amun as ram; Amen = Amun; solar
+halo = sun-disk) and the SETTLED Atum note above. The Lord's Prayer is already read as
+Amun/Aten liturgy, but the same test was never run across Jesus's TITLES. Candidates
+below pair a specific NT phrase with a specific Egyptian source. High-risk; run each
+through the citation pipeline before any manuscript use.
+
+- "Living water" / "spring welling up to eternal life" (John 4:14, 7:38; Rev 21:6,
+  22:17) → the "Baptism of Pharaoh": Horus and Thoth pour water over the king at
+  coronation, drawn as streams of ankh (life) + was (dominion) signs (coronation-
+  purification reliefs). Ties baptism-as-coronation. [verify]
+- "Bread of life / eat my flesh and live forever" (John 6:35, 6:51–58) → Osiris, the
+  grain-god who dies and rises as sprouting barley. Completes the Eucharist pair with
+  the Dionysus/wine layer already in the book: bread = Osiris, wine = Dionysus. [verify]
+- "I am the resurrection and the life" (John 11:25) → Osiris/Wennefer, "Lord of Life."
+  [verify]
+- "I am the light of the world" (John 8:12) → Ra/Aten. The chapter currently gives this
+  a Platonic-cave reading only; the direct solar reading fits the solar-royal thread.
+  [verify]
+- Self-genealogy cluster (Rev 22:13,16: "first and last / beginning and end" + "root
+  AND offspring of David") → the Heliopolitan Bennu/phoenix, the self-created bird that
+  is "its own father and its own heir" (Lactantius, De Ave Phoenice: "ipsa sibi proles,
+  suus est pater et suus heres"). Do NOT lean on "bright morning star" alone (generic
+  Venus). Lands on the ch6 phoenix / imperium renovatum thread. Caveat: the phoenix
+  source is 4th c. and may itself Christianize the topos. [verify]
+
+Method note: a title match carries weight only as a CLUSTER of specific shared features
+against the candidate pool, never as a category name. Each candidate needs the specific
+Egyptian instance plus a locatable primary source before drafting; keep survivors,
+reject the rest here.

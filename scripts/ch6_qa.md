@@ -128,3 +128,40 @@ In that grammar, the fall of Jerusalem is absorbed into larger narrative that ha
 **Resolution:** Line 180 rewritten to reflect what sources actually say: False Nero pretender (Tacitus, Histories 2.8), eastern armies switching allegiances during civil war (Tacitus, Histories 2.6, 2.81). Fabricated Dio Cassius 66.4 removed entirely.
 
 ---
+
+---
+
+## Revelation 12's woman = Isis (Isis–Horus–Seth/Typhon combat myth)
+
+The strongest Isis footprint in Revelation — stronger than the Rev 1:8 "who is / who
+was / who is to come" formula, which is a generic Greek oracular tricolon (Hesiod,
+Theogony 31–32; Iliad 1.70, Calchas "what is, will be, and was before") and low-weight
+alone. Rev 12 (woman clothed with the sun, moon under her feet, crown of 12 stars,
+bearing the male child who "will rule all nations with a rod of iron" and is caught up
+to the throne, pursued by the great red dragon, fleeing to a hidden place) maps onto
+Isis–Horus–Seth through a stack of Isis-SPECIFIC features (the point is the multiplication):
+
+- Red dragon = Seth. The dragon is πυρρός, "fiery red" (Rev 12:3); Seth is "the Red God"
+  of chaos/desert, identified by Plutarch (De Iside) with Typhon. The standard Greek
+  comparandum (Leto–Apollo–Python) has a serpent, but not a red one.
+- Sun/moon/stars woman = Isis's own aretalogy. Rev 12:1 matches the Kyme aretalogy of
+  Isis (1st c. CE, Asia Minor — the region of the seven churches): "I ordered the course
+  of the sun and the moon… I appointed the paths of the stars."
+- Ruler-child enthroned = Horus, the royal heir who defeats Seth and becomes the
+  enthroned king (Rev 12:5). Apollo never becomes a ruling king; Horus is kingship.
+- Mother of the sun-child = Proclus's fuller Sais inscription: "the fruit I have brought
+  forth is the sun."
+- Flight to hiding = Isis hiding the infant Horus in the Delta marshes of Chemmis to
+  protect him from Seth (Plutarch, De Iside 18). Partial: flight-to-hiding matches;
+  terrain differs (marsh vs. wilderness).
+
+Weight: the bare combat-myth skeleton (goddess + threatened child + dragon + flight) is
+generic (Leto–Apollo–Python shares it). The lift is the four Isis-specific discriminators
+the Greek comparandum does not supply. Caveats to keep in any prose: mainstream reads
+Rev 12 as Leto–Apollo–Python or Israel/Mary — the Isis layer is argued from the specific
+discriminators, not asserted over those; and "rod of iron" is a direct quote of Ps 2:9,
+so the child is overdetermined (Davidic messiah AND Horus) — name the layering.
+
+Status: verify the red-dragon=Seth and Isis-aretalogy anchors via the citation pipeline
+before drafting; candidate ch6 section. The same goddess appears in her Osiris-mourner
+role at the tomb (see ch4_qa, "Mary Magdalene = Isis in the Osiris role").

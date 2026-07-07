@@ -964,3 +964,67 @@ The lance event itself reads as eyewitness reporting, not literary composition. 
 **Resolution:** Documented; will not resurface in the pipeline as a novel claim.
 
 ---
+
+---
+
+## Joanna, wife of Chuza = Junia — the Herodian-insider female-apostle candidate
+
+Complements the existing Junia entry (Rom 16:7 as female-erasure precedent) and the
+Mary-Magdalene authorship thread by adding a SECOND named woman not to be dismissed —
+distinct from Mary Magdalene, not to be merged with her.
+
+- Luke 8:3: Joanna, wife of Chuza, Herod Antipas's epitropos (household steward), funds
+  Jesus "out of her means"; Luke 24:10: among the women at the empty tomb.
+- Identification (Bauckham, Gospel Women): Joanna = Junia of Rom 16:7 ("prominent among
+  the apostles"). Joanna = Hebrew/Hellenized name; Junia = her Latin/Roman name (near
+  sound-equivalents; standard Jewish double-naming). Her Herodian-court status explains
+  the Roman name and Roman formation.
+- Why she matters doubly: a woman inside the Herodian administration (elite, literate,
+  mobile) who is ALSO an empty-tomb eyewitness AND possibly a named apostle — feeds the
+  female-eyewitness thread AND the book's Herodian-institutional-foundations thread at once.
+
+Status: verify Rom 16:7 + Luke 8:3 / 24:10 wording. The Joanna=Junia identification is
+an argument (the name-equivalence and court status are the data), not a certainty.
+
+---
+
+## Mary Magdalene = Isis in the Osiris role (extends the "John as Egyptian ghost-narrative" thread)
+
+The women at the tomb read as Isis + Nephthys, the "two Kites" — the two mourning women
+at either end of Osiris's bier who search for the body, gather it, anoint it, keep vigil,
+and summon him back to life (Lamentations of Isis and Nephthys; P. Bremner-Rhind, BM
+10188). Role ledger:
+
+- Two women at the tomb — "Mary Magdalene and the other Mary" (Matt 27:61; 28:1) = the
+  two Kites at the two ends of the bier.
+- Come to anoint the body with spices (Mark 16:1; Luke 24:1) = Isis anointing Osiris.
+- Keep vigil, "sitting opposite the tomb" (Matt 27:61) = the sisters' vigil over the
+  mummy against Seth.
+- Weeping at the tomb (John 20:11) = the Lamentations.
+- Seeking the missing body — "they have taken away my Lord and I do not know where they
+  have laid him" (John 20:13,15) = Isis searching for Osiris's body. Near-verbatim.
+- First to see / be addressed by the risen one — "Rabbouni" (John 20:14–16) = Isis first
+  meeting the risen Osiris.
+
+Weight: bare "women prepare/mourn the body" is generic Jewish burial custom, low-weight
+alone; the lift is the cluster (TWO women, the search for the MISSING body, the vigil,
+first-witness-of-revival). Same goddess as Rev 12 (see ch6_qa) — Horus's mother there,
+Osiris's mourner-reviver here.
+
+Egypt link in the patristic/traditional record (provenance, not biography): the texts
+that make Mary Magdalene the pre-eminent apostle survive overwhelmingly in Coptic
+Egyptian manuscripts — Pistis Sophia (she is the dominant interlocutor), Gospel of Philip
+(koinonos; already cited above), Gospel of Mary (Coptic Berlin + Greek Oxyrhynchus).
+Egypt is where "Magdalene-as-apostle" was preserved while the Latin West demoted her to
+penitent — which is exactly what the Isis role-reading would predict.
+
+Conflation to flag, NOT lean on: Gregory the Great (Homily 33, 591) fused Magdalene +
+Mary of Bethany + Luke's sinful woman; later legend further conflated her with Mary OF
+Egypt, a distinct 5th-c. desert saint. A literal "Mary + Egypt" strand exists, but it is
+a Western-medieval conflation of separate figures — not evidence about the historical
+Magdalene.
+
+Status: verify the Lamentations / Bremner-Rhind and Kyme-aretalogy anchors via the
+citation pipeline; candidate for the resurrection-narrative discussion, tied to the
+existing Egyptian-John thread. Per manuscript rules, carry the data (the two-women /
+seeking / anointing parallels), not modern scholar names.
