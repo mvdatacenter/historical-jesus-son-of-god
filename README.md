@@ -37,7 +37,7 @@ While not every question has a certain answer, this project ultimately aims to s
 # Research Boundary
 
 Exploratory research belongs in the private internal repository `historical-jesus-son-of-god-research`.
-Do not commit research work here unless it is a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included in this public repository.
+This public repository should receive research work only after it becomes a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included here.
 Solar-eclipse investigations, Pauline-location maps, generated findings, and similar exploratory artifacts stay in the research repository until they become verified citation material or reproducible result-building code.
 
 # Table of Contents
