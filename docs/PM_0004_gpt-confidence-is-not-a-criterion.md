@@ -21,4 +21,4 @@ Same class as PM-0001/PM-0002: the default for any evaluation task is to substit
 
 ## Action Items
 
-- [x] [prevent] The enforced public boundary rule in `docs/REVIEW.md` keeps generated findings and exploratory outputs outside this repo until they become manuscript prose, citation material, or result-building code/data.
+- [x] [prevent] The enforced evidence and boundary rules in `docs/REVIEW.md` keep generated findings outside this repo until they become source-backed manuscript prose, citation material, or result-building code/data, making source-backed public promotion the acceptance criterion.
