@@ -9,12 +9,7 @@ Six research findings about Greek mystery cult transmission to Church Fathers we
 - `UNVERIFIED` → "weakest, skip"
 
 The proposal was to "drill deeper on the strongest claims" — pursue only what GPT verified, skip the rest. Chapter 6's arguments were never read; no finding was mapped to a chapter argument before sorting. The only question asked was "did GPT verify it?"
-
-## Impact
-
-- 6 findings sorted by an irrelevant criterion (GPT confidence) instead of fit with the book's arguments
-- Findings GPT marked `UNVERIFIED` or `FALSE` proposed for skipping — exactly the bucket where the book's most valuable evidence lives, since GPT's training data is mainstream scholarship and the book exists to challenge it
-- User correction required to surface the failure pattern
+This sorted 6 findings by GPT confidence instead of fit with the book's arguments, and findings marked `UNVERIFIED` or `FALSE` were proposed for skipping even though that bucket can contain the book's most valuable evidence.
 
 ## Root Cause
 
@@ -26,5 +21,4 @@ Same class as PM-0001/PM-0002: the default for any evaluation task is to substit
 
 ## Action Items
 
-- [x] [prevent] The private research repo's `build_coverage.py --research-prep` assembles the ChatGPT research prompt (mirrors `--embed-prep` for Step 2). The assembled prompt carries an anti-verdict header, the anti-pattern rules block, the chapter argument inventory, and a required output structure with no verdict field. The builder self-validates the assembled text and refuses to write if banned phrases (e.g. `TRUE / FALSE`, `rate confidence`) appear outside the negative-example block.
-- [x] [prevent] The private research repo's `build_coverage.py --research-validate --batch-id NAME` validates a `research-eval.json` artifact mapping every batch finding to a `chapter_argument_id` resolvable in the chapter inventory, with a verdict drawn from the closed set `{embed, research, qa, skip_redundant, skip_tangential}` and a non-empty `what_finding_adds` and `verdict_justification`. The validator refuses to emit a presentable summary unless every finding has a real argument mapping; this is the only sanctioned path from GPT output to user-facing findings.
+- [x] [prevent] The enforced evidence and boundary rules in `docs/REVIEW.md` keep generated findings outside this repo until they become source-backed manuscript prose, citation material, or result-building code/data, making source-backed public promotion the acceptance criterion.

@@ -10,5 +10,5 @@ Two recent PRs placed manuscript content in the wrong chapter (PR #111 merged, P
 
 ## Action Items
 
-- [x] [prevent] Replace `README.md` "Core Workflow for Adding Content to Chapters" with a pointer to DD-0002, removing the parallel enumerated workflow. DD-0002 becomes the single source of truth; README has no procedural surface for future edits to degrade. Done in this PR. DD-0002 later moved to the private research repo with the Alexandria findings pipeline it governs.
-- [x] [prevent] Update the section to instruct following DD-0002 for any new content added to a chapter (new arguments, new evidence, new sections), so the scope of the pipeline is clear without re-enumerating it in README. Done in this PR.
+- [x] [prevent] Replace `README.md` "Core Workflow for Adding Content to Chapters" with a short chapter-edit boundary that makes the governing design the single source of chapter-routing guidance; implemented in #115 and updated after the public research-boundary split in #131.
+- [x] [prevent] Keep the README section scoped to new chapter content through a short boundary pointer to the governing design; implemented in #115 and preserved after the public research-boundary split in #131.
