@@ -402,10 +402,10 @@ When likelihood has not been analyzed:
 - Do not substitute "uncertain" language.
 
 Instead:
-1. Record the question in the private research repo, marked "likelihood analysis required".
+1. Record the question outside this public repo, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
 
-**If likelihood has not been analyzed, record the question in the private research repo and write prose only after the analysis is complete.**
+**If likelihood has not been analyzed, record the question outside this public repo and write prose only after the analysis is complete.**
 
 This preserves momentum without laundering ignorance into text.
 
@@ -524,7 +524,7 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
 
-**Instead:** Record the note in the private research repo:
+**Instead:** Record the note outside this public repo:
 ```markdown
 - (chatgpt says needs sources for 1600-ton claim, only found English blogs)
 ```
@@ -543,7 +543,7 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look in the private research repo so it can be fed through the pipeline. Claims move forward or stay out because verification supports that decision, not because ChatGPT said yes or no.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look outside this public repo so it can be fed through the pipeline. Claims move forward only when verification supports them; otherwise they stay out.
 
 ## Research Tracking
 

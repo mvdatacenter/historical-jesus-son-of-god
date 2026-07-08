@@ -21,5 +21,5 @@ Same class as PM-0001/PM-0002: the default for any evaluation task is to substit
 
 ## Action Items
 
-- [x] [prevent] The private research repo's `build_coverage.py --research-prep` assembles the ChatGPT research prompt with an anti-verdict header, the anti-pattern rules block, the chapter argument inventory, and a required output structure with no verdict field; implemented in mvdatacenter/historical-jesus-son-of-god-research#6.
-- [x] [prevent] The private research repo's `build_coverage.py --research-validate --batch-id NAME` validates every batch finding against a real `chapter_argument_id`, closed-set verdict, non-empty `what_finding_adds`, and `verdict_justification`; implemented in mvdatacenter/historical-jesus-son-of-god-research#6.
+- [x] [prevent] `README.md` states that claims move forward only when verification supports them; otherwise they stay out.
+- [x] [prevent] The public boundary rule in `docs/REVIEW.md` keeps generated findings and exploratory outputs outside this repo until they become manuscript prose, citation material, or result-building code/data.

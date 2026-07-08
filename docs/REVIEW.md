@@ -4,7 +4,7 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 ## Repository Boundary
 
-- **Keep exploratory research outside the public repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Public additions arrive as manuscript prose, verified citation material, bibliography data, source-verification material, or result-building code/data. Research leads, source dumps, generated findings, research Q&A, open research gaps, extraction-review outputs, one-off investigations, exploratory maps, and cache-backed artifacts stay in the private research repo until promoted into one of those public forms.
+- **Keep exploratory research outside the public repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Exploratory work stays outside this repository because public readers need finished arguments and reproducible support rather than working notes or cache output. Move it here only after it becomes manuscript prose, verified citation or bibliography data, source-verification material, or result-building code/data.
 
 ## Modern Scholars
 
