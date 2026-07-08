@@ -10,5 +10,5 @@ Two recent PRs placed manuscript content in the wrong chapter (PR #111 merged, P
 
 ## Action Items
 
-- [x] [prevent] Replace `README.md` "Core Workflow for Adding Content to Chapters" with a short chapter-edit boundary, removing the parallel enumerated workflow; implemented in #115 and updated when DD-0002 moved private in #131.
-- [x] [prevent] Keep the README section scoped to new chapter content without re-enumerating routing steps; implemented in #115 and preserved after the public/private research split in #131.
+- [x] [prevent] Replace `README.md` "Core Workflow for Adding Content to Chapters" with a short chapter-edit boundary that makes the governing design the single source of chapter-routing guidance; implemented in #115 and updated after the public research-boundary split in #131.
+- [x] [prevent] Keep the README section scoped to new chapter content through a short boundary pointer to the governing design; implemented in #115 and preserved after the public research-boundary split in #131.
