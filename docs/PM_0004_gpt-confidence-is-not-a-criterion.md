@@ -21,5 +21,4 @@ Same class as PM-0001/PM-0002: the default for any evaluation task is to substit
 
 ## Action Items
 
-- [x] [prevent] `README.md` states that claims move forward only when verification supports them; otherwise they stay out.
-- [x] [prevent] The public boundary rule in `docs/REVIEW.md` keeps generated findings and exploratory outputs outside this repo until they become manuscript prose, citation material, or result-building code/data.
+- [x] [prevent] The enforced public boundary rule in `docs/REVIEW.md` keeps generated findings and exploratory outputs outside this repo until they become manuscript prose, citation material, or result-building code/data.
