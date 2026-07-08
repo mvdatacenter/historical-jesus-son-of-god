@@ -89,9 +89,8 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
 ## Adding Content to Chapters
 
-[`docs/DD_0002_research-qa-strategy.md`](docs/DD_0002_research-qa-strategy.md) specifies the public boundary for research findings and the contract for promoting them into manuscript content.
-
-Follow it for any new content added to a chapter — new arguments, new evidence, new sections.
+Extended Alexandria findings are reviewed in the private `historical-jesus-son-of-god-research` repo before they become public manuscript work.
+For public chapter edits, verify claims against primary sources, keep the chapter's existing argument structure central, and use the citation verification pipeline before accepting new factual claims.
 
 When Claude review surfaces a concern, send the concern back to ChatGPT with surrounding chapter context; ChatGPT does not retain the full manuscript in memory and produces drift-free revisions only when the surrounding text travels with the prompt.
 
@@ -403,10 +402,10 @@ When likelihood has not been analyzed:
 - Do not substitute "uncertain" language.
 
 Instead:
-1. Record the question in research tracking outside this public repository, marked "likelihood analysis required".
+1. Record the question in the private research repo, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
 
-**If likelihood has not been analyzed, record the question in research tracking and write prose only after the analysis is complete.**
+**If likelihood has not been analyzed, record the question in the private research repo and write prose only after the analysis is complete.**
 
 This preserves momentum without laundering ignorance into text.
 
@@ -525,7 +524,7 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
 
-**Instead:** Record in research tracking outside this public repository:
+**Instead:** Record the note in the private research repo:
 ```markdown
 - (chatgpt says needs sources for 1600-ton claim, only found English blogs)
 ```
@@ -544,24 +543,13 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look in research tracking outside this public repository so it can be fed through the pipeline. Claims move forward or stay out because verification supports that decision, not because ChatGPT said yes or no.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look in the private research repo so it can be fed through the pipeline. Claims move forward or stay out because verification supports that decision, not because ChatGPT said yes or no.
 
 ## Research Tracking
 
-Research tracking lives outside this public repository until material is promoted into public-safe manuscript, citation, bibliography, source-verification, or result-building artifacts. The research records preserve what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
-
-- ChatGPT research findings and key texts
-- Fact-checking notes and doubts
-- User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
-- Status of whether findings have been added to the chapter
-
-All pipeline steps consult those research records before making decisions; without them the LLM will repeatedly resurface the same arguments.
-
-The research-gap list is the pipeline's todo list. Claims that need investigation go there. Every item exits one of two ways: into the book, or rejected with a note explaining why. Each item eventually exits the research-gap list.
-
-Candidate additions with triage status (KEEP / WEAK / WITHDRAW) stay outside this public repo until they are ready to become manuscript, citation, bibliography, source-verification, or result-building artifacts.
-
-Extended research materials stay outside this public repo until they are filtered into manuscript changes, citation-pipeline inputs, bibliography records, source-verification material, or code/data directly used to construct a result included here. Findings follow the public boundary in `docs/DD_0002_research-qa-strategy.md` before the standard drafting, review, and citation-verification steps.
+Detailed research history, per-chapter Q&A, open research gaps, and Alexandria findings triage live in the private `historical-jesus-son-of-god-research` repo.
+Public files receive only manuscript-ready prose, citation-pipeline inputs, and public-safe summaries.
+Before a research finding enters this repo, it must be filtered through the private findings workflow and then verified through the public citation verification pipeline.
 
 **Public repository note:** This repo accepts external contributions. Keep proprietary data sources and extraction targets in internal materials; public-facing files use public-safe research summaries.
 
