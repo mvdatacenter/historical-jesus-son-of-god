@@ -34,6 +34,12 @@ While not every question has a certain answer, this project ultimately aims to s
 
 > At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still a work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
+# Research Boundary
+
+Exploratory research belongs outside this public repository until it is ready for publication.
+This public repository should receive research work only after it becomes a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included here.
+Solar-eclipse investigations, Pauline-location maps, generated findings, and similar exploratory artifacts stay outside this repository until they become verified citation material or reproducible result-building code.
+
 # Table of Contents
 
 - [Preface](preface.tex)
@@ -81,48 +87,12 @@ When user says "stop", "STOP", or any variation:
 
 This is not negotiable. User sees something you don't. STOP MEANS STOP.
 
-## Core Workflow for Adding Content to Chapters
+## Adding Content to Chapters
 
-**BEFORE ANY CHAPTER EDIT: Read `scripts/CHAPTER_EDIT_TASK.md` and follow its checklist.**
+Extended Alexandria findings are reviewed in the private `historical-jesus-son-of-god-research` repo before they become public manuscript work.
+For public chapter edits, verify claims against primary sources, keep the chapter's existing argument structure central, and use the citation verification pipeline before accepting new factual claims.
 
-1. **Read the chapter FIRST** - You cannot improve text you haven't read
-2. **Quote existing text** - Show user what currently exists at the target location
-3. **Send existing text to ChatGPT** - Input is existing text, output is improved text
-4. **Get approval before editing** - Present old vs new to user
-
-**CRITICAL RULE**: Claude drafts are scaffolding only and must never be committed as final prose.
-
-The sin is keeping Claude's draft. The necessity is writing it so GPT has something to improve.
-
-### Step-by-Step Process
-
-**Step 1:** Read full chapter + grep for keywords → Find where topic already exists
-
-**Step 2:** If exists: plan to ENHANCE that section. If not: verify by searching synonyms.
-
-**Step 3:** Have ChatGPT draft text:
-
-**For NEW content:** Give style example + points to cover
-```
-"Here's existing style: [PASTE 2-3 PARAGRAPHS FROM CHAPTER]
-Write ~N sentences covering [POINTS A,B,C]."
-```
-
-**For ENHANCING existing content:** Give OLD text to rewrite + surrounding context + new points
-```
-"BEFORE this section: [1-2 SENTENCES OF CONTEXT]
-OLD text to rewrite: [PASTE THE ACTUAL TEXT TO IMPROVE]
-AFTER this section: [1-2 SENTENCES OF CONTEXT]
-Rewrite the OLD text AND add [NEW POINTS]. Keep what's good, improve what's weak."
-```
-
-**Include surrounding context** so GPT knows what comes before/after and writes text that flows.
-
-**Step 4:** Review draft (accuracy, bias, style match) + cut any AI padding
-
-**Step 5:** Present to user: ANALYSIS + PLAN + DRAFT
-
-**Step 6:** After approval: add and commit
+When Claude review surfaces a concern, send the concern back to ChatGPT with surrounding chapter context; ChatGPT does not retain the full manuscript in memory and produces drift-free revisions only when the surrounding text travels with the prompt.
 
 ## When to Use ChatGPT
 
@@ -223,13 +193,6 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 ---
 
 # WRITING STANDARDS
-
-## Writing Style Rules
-
-✅ **Direct:** "This is X" not "This can be understood as X"
-✅ **Confident:** State claims without hedging when evidence has been presented
-✅ **Evidence-first:** Show data, minimal interpretation
-✅ **Simple language:** Opt for simple sentence structure and vocabulary when possible, but do not be shy to use difficult vocabulary when it is genuinely providing more clarity.
 
 **FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
 
@@ -439,10 +402,10 @@ When likelihood has not been analyzed:
 - Do not substitute "uncertain" language.
 
 Instead:
-1. Add the question to the research Q&A list, marked "likelihood analysis required".
+1. Record the question outside this public repo, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
 
-**If likelihood has not been analyzed, add the question to the research list and move on; do not write prose for it.**
+**If likelihood has not been analyzed, record the question outside this public repo and write prose only after the analysis is complete.**
 
 This preserves momentum without laundering ignorance into text.
 
@@ -561,7 +524,7 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
 
-**Instead:** Add to Q&A file (`scripts/chN_qa.md`):
+**Instead:** Record the note outside this public repo:
 ```markdown
 - (chatgpt says needs sources for 1600-ton claim, only found English blogs)
 ```
@@ -580,26 +543,15 @@ ChatGPT also lies often, especially due to bias. It halluccinates sources, fabri
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. If the source isn't in the registry yet, add it. If the source can't be downloaded, record in Q&A what source is needed and where to look — so it can be acquired and fed through the pipeline. No claim gets auto-kept because ChatGPT said yes, or auto-skipped because ChatGPT said no.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look outside this public repo so it can be fed through the pipeline. Claims move forward only when verification supports them; otherwise they stay out.
 
 ## Research Tracking
 
-Research is tracked in per-chapter Q&A files (`scripts/chN_qa.md`, ch2 through ch6). These record what was already researched — decisions, rejections, and feedback that is not in the book. They contain:
+Detailed research history, per-chapter Q&A, open research gaps, and Alexandria findings triage live in the private `historical-jesus-son-of-god-research` repo.
+Public files receive only manuscript-ready prose, citation-pipeline inputs, and public-safe summaries.
+Before a research finding enters this repo, it must be filtered through the private findings workflow and then verified through the public citation verification pipeline.
 
-- ChatGPT research findings and key texts
-- Fact-checking notes and doubts
-- User comments marking items as "bogus" (Western bias, ignore) or "needs research" (investigate further)
-- Status of whether findings have been added to the chapter
-
-All pipeline steps must consult Q&A files before making decisions; without them the LLM will repeatedly resurface the same arguments.
-
-`scripts/research_gaps.md` is the pipeline's todo list. Claims that need investigation go here. Every item exits one of two ways: into the book, or rejected with a note in Q&A explaining why. Nothing stays in research gaps permanently.
-
-Candidate additions with triage status (KEEP / WEAK / WITHDRAW) are tracked in `scripts/research-notes-substantial-additions.md`.
-
-Extended research materials live in the `alexandria-pipelines` repo (`~/Desktop/AppDevelopment/alexandria-pipelines/`). Alexandria extracts scholarly insights from unstructured sources not well-represented in LLM training data. Its materials should be scanned for arguments, evidence, counter-arguments, and primary source references relevant to the book. Findings are filtered through the Alexandria pipeline (see `docs/DD_0002_research-qa-strategy.md`) before entering the standard workflow (ChatGPT drafting → Claude review → citation verification).
-
-**Note:** This is a public repo and external contributions are welcome. Do not disclose specific Alexandria data sources or extraction targets in public-facing files — those are proprietary.
+**Public repository note:** This repo accepts external contributions. Keep proprietary data sources and extraction targets in internal materials; public-facing files use public-safe research summaries.
 
 ## Bias Detection Reference
 
@@ -804,8 +756,8 @@ manuscript.tex
 ├── fonts/                  # SBL Hebrew
 ├── assets/                 # Images
 ├── out/                    # Build output (PDF, aux files)
-├── scripts/                # Research, verification, and automation tools
-├── sources/                # Downloaded source texts and generated reports
+├── scripts/                # Citation verification, translation, and automation tools
+├── sources/                # Downloaded public source texts and generated citation reports
 ├── docs/                   # Design documents and post-mortems
 ├── map.py                  # Historical cities map generator
 └── .github/workflows/ci.yml
@@ -831,9 +783,6 @@ manuscript.tex
 
 | Path | Purpose |
 |------|---------|
-| `scripts/chN_qa.md` | Per-chapter research history — decisions, rejections, feedback not in the book (ch2 through ch6) |
-| `scripts/research_gaps.md` | Pipeline todo list — items exit to book or rejected to Q&A; nothing stays permanently |
-| `scripts/research-notes-substantial-additions.md` | Candidate additions with triage status (KEEP / WEAK / WITHDRAW) |
 | `scripts/CHAPTER_EDIT_TASK.md` | Checklist to follow before any chapter edit |
 | `docs/DD_NNNN_*.md` | Design documents (sequential numbering, descriptive title) |
 | `docs/PM_NNNN_*.md` | Post-mortems (sequential numbering, descriptive title) |
