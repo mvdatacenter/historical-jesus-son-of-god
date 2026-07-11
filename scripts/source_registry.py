@@ -169,6 +169,32 @@ SOURCES = {
         "section_pattern": r"\b(\d+)\.\s",
     },
 
+    "plutarch:deiside": {
+        "title": "Isis and Osiris (De Iside et Osiride)",
+        "author": "Plutarch",
+        "category": ANCIENT,
+        "translation": "Frank Cole Babbitt (Loeb, 1936)",
+        "urls": {
+            "partA": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/A.html",
+            "partB": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/B.html",
+            "partC": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/C.html",
+            "partD": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/D.html",
+        },
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "proclus:intimaeum": {
+        "title": "The Commentaries of Proclus on the Timaeus of Plato",
+        "author": "Proclus",
+        "category": ANCIENT,
+        "translation": "Thomas Taylor (1820)",
+        "urls": {
+            "vol1": "https://archive.org/download/proclusontimaeus01procuoft/"
+                    "proclusontimaeus01procuoft_djvu.txt",
+        },
+        "section_pattern": r"\b(\d+)\b",
+    },
+
     "cassiusdio:romanhistory": {
         "title": "Roman History",
         "author": "Cassius Dio",
