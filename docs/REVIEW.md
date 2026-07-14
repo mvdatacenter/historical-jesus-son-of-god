@@ -39,6 +39,7 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 - **Clauses stack only when they each add distinct information.** Multiple dependent clauses where one declarative sentence suffices: simplify.
 - **The text does not address the reader directly.** Phrases like "this shows that...," "it is important to note...," and "we can see" are removed; present data and let the reader draw the conclusion.
 - **Use the clearest accurate wording.** A less common or more specialized word stays only when it adds meaning the ordinary word would lose. Reviewers compare the old and new sentence: if the revision replaces a clear word with a less common word that says the same thing, ask for the ordinary word. Examples: `use` instead of `utilize`; `title` for ordinary use and `epithet` when the technical term matters; `Book of the Dead` rather than a broader category label when the source name is the clearest wording.
+- **A summarizing sentence earns its place by retrieval: most of what it gathers lives in other chapters or in cited works.** A sentence that enumerates items already present in the immediately preceding sentences restates what the reader just read and treats them as unable to hold one passage. Review check: for each summarizing sentence in the diff, locate every item it names; when the items sit in the same passage, delete the sentence.
 
 ## GPT Default Framing
 
