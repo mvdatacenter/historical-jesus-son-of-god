@@ -52,4 +52,4 @@ ChatGPT defaults to one strand of modern scholarship that treats everything in t
 ## Method
 
 - **Numbers, percentages, thresholds, and success criteria come from a measurement, calculation, or cited source.** "Step 1 reduces the set by ~50-70%" or "Success criteria: at least 40% filtered out" without a derivation are invented anchors. "I don't know yet" is better than a fabricated target.
-- **Chapter 1 stays at survey register.** Chapter 1 surveys scholarly models; it does not deep-dive into specific scholars' arguments. Any addition to ch1 is one overview-appropriate sentence, not a multi-sentence argument summary.
+- **Chapter 1 stays at survey register.** Chapter 1 surveys scholarly models rather than presenting any one model in full. Keep each example brief, but use as many sentences as clarity requires.
