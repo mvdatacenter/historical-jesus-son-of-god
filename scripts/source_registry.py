@@ -1688,6 +1688,67 @@ SOURCES = {
         "publisher": "Israel Exploration Society",
         "obtain": "Academic libraries. Published by IES, Jerusalem.",
     },
+
+    "henten:dragon-myth": {
+        "title": "Dragon Myth and Imperial Ideology in Revelation 12-13",
+        "author": "Jan Willem van Henten",
+        "category": MODERN,
+        "year": 2006,
+        "publisher": "The Reality of Apocalypse, pp. 181-203, Society of Biblical Literature",
+        "urls": {
+            "full": "https://dare.uva.nl/search?identifier=72eab9e8-576a-4cfb-9299-5b632caf3029",
+        },
+    },
+
+    "engelmann:kyme": {
+        "title": "Die Inschriften von Kyme",
+        "author": "Helmut Engelmann (ed.)",
+        "category": MODERN,
+        "year": 1976,
+        "publisher": "Rudolf Habelt, Inschriften griechischer Stadte aus Kleinasien 5",
+        "obtain": "Academic libraries. The Isis aretalogy is inscription 41.",
+    },
+
+    "higgins:divine-mothers": {
+        "title": "Divine Mothers: The Influence of Isis on the Virgin Mary in Egyptian Lactans-Iconography",
+        "author": "Sabrina Higgins",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Journal of the Canadian Society for Coptic Studies 3-4, pp. 71-90",
+        "urls": {
+            "abstract": "https://www.lockwoodonlinejournals.com/index.php/jcscs/article/view/99/0",
+        },
+    },
+
+    "met:isis-horus": {
+        "title": "Isis and Horus",
+        "author": "The Metropolitan Museum of Art",
+        "category": MODERN,
+        "publisher": "Collection object 23.6.9",
+        "urls": {
+            "record": "https://www.metmuseum.org/art/collection/search/570700",
+        },
+    },
+
+    "bm:isis-horus": {
+        "title": "Figure of Isis Nursing Horus",
+        "author": "The British Museum",
+        "category": MODERN,
+        "publisher": "Collection object EA60750",
+        "urls": {
+            "record": "https://www.britishmuseum.org/collection/object/Y_EA60750",
+        },
+    },
+
+    "bm:typhon": {
+        "title": "Black-Figure Situla Depicting Typhon",
+        "author": "The British Museum",
+        "category": MODERN,
+        "publisher": "Collection object 1888,0208.1",
+        "urls": {
+            "record": "https://www.britishmuseum.org/collection/object/G_1888-0208-1",
+        },
+    },
 }
 
 
