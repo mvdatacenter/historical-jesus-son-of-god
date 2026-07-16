@@ -51,13 +51,13 @@ They retained their human senses.
         ),
     ],
 )
-def test_bacchae_fingerprints_find_unnumbered_passages(passage, text, expected):
+def test_bacchae_registry_hints_find_unnumbered_passages(passage, text, expected):
     snippet = search_passage_in_text(text, passage, "euripides:bacchae")
 
     assert expected in snippet
 
 
-def test_registered_fingerprint_falls_back_to_generic_section_search():
+def test_registered_hint_falls_back_to_generic_section_search():
     text = """Earlier material.
 443. The numbered fallback passage begins here.
 Further context.

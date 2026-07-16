@@ -146,6 +146,9 @@ SOURCES = {
             "book10": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0139%3Abook%3D10",
         },
         "section_pattern": r"(?:Letter\s+\d+|\b(\d+)\.\s)",
+        "passage_hints": {
+            96: [r"Cognitionibus", r"Christianis\s+interfui"],
+        },
     },
 
     "plutarch:lives": {
@@ -447,6 +450,10 @@ SOURCES = {
         },
         "note": "Project Gutenberg. Butler prose translation. All 24 books.",
         "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\.\s)",
+        "passage_hints": {
+            9: [r"my name is Noman", r"Noman is killing me"],
+            10: [r"turned them into pigs", r"turning all my men into pigs"],
+        },
     },
 
     "aeschylus:prometheus": {
@@ -483,6 +490,17 @@ SOURCES = {
         },
         "note": "Project Gutenberg. Gilbert Murray verse translation.",
         "section_pattern": r"\b(\d+)\b",
+        "passage_hints": {
+            434: [
+                r"never flinched, nor thought to flee",
+                r"bind me not.*reason addressing madness",
+            ],
+            443: [r"fetter and manacle", r"bars slid back untouched"],
+            576: [
+                r"Spirit of the Chained Earthquake",
+                r"Earthquake suddenly shakes",
+            ],
+        },
     },
 
     "plato:apology": {
@@ -507,6 +525,12 @@ SOURCES = {
         },
         "note": "Project Gutenberg. Jowett translation. All 10 books. Citation [514a-520a] = Book VII (Cave allegory).",
         "section_pattern": r"\b(\d+)[a-e]?\b",
+        "passage_hints": {
+            514: [
+                r"underground den.*open towards the light",
+                r"BOOK VII.*enlightenment",
+            ],
+        },
     },
 
     "plato:statesman": {
@@ -519,6 +543,9 @@ SOURCES = {
         },
         "note": "MIT Internet Classics Archive. Note: MIT spells it 'stateman'.",
         "section_pattern": r"\b(\d+)[a-e]?\b",
+        "passage_hints": {
+            275: [r"God himself was their shepherd"],
+        },
     },
 
     "aristotle:poetics": {
@@ -533,6 +560,9 @@ SOURCES = {
         },
         "note": "MIT Internet Classics Archive.",
         "section_pattern": r"\b(\d+)[a-b]?\b",
+        "passage_hints": {
+            1453: [r"error or frailty"],
+        },
     },
 
     "aristotle:ethics": {
@@ -1200,6 +1230,9 @@ SOURCES = {
         },
         "note": "Akhmim fragment. Passion and resurrection narrative.",
         "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            24: [r"Garden of Joseph"],
+        },
     },
 
     "actascillitanorum": {
