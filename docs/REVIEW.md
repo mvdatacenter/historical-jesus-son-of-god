@@ -56,5 +56,5 @@ ChatGPT defaults to one strand of modern scholarship that treats everything in t
 ## Method
 
 - **Numbers, percentages, thresholds, and success criteria come from a measurement, calculation, or cited source.** "Step 1 reduces the set by ~50-70%" or "Success criteria: at least 40% filtered out" without a derivation are invented anchors. "I don't know yet" is better than a fabricated target.
-- **Chapter 1 stays at survey register.** Each scholarly model receives a brief account of its strongest evidence, using the number of sentences clarity requires, so the chapter remains comparative without reducing the evidence to a label. <!--applies: paths=chapter1.tex-->
+- **Chapter 1 stays at survey register.** Each scholarly model receives a brief, concrete account of its strongest evidence, using the number of sentences clarity requires, so the chapter remains comparative and the evidence remains legible. <!--applies: paths=chapter1.tex-->
 - **Similarity arguments distinguish sequence from evidentiary weight.** The full sequence appears in the passage, while unusual names, actions, objects, or unexplained details are identified as carrying more weight against coincidence than plausible shared events.
