@@ -247,13 +247,23 @@ def search_passage_in_text(text, passage, key, deep=False):
     lines = text.split("\n")
     total_text = text
 
-    # Strategy 1: Search for section numbers in common patterns
     section = ref.get("section")
     chapter = ref.get("chapter")
     book = ref.get("book")
     keyword = ref.get("keyword")
     number = ref.get("number")
 
+    # Strategy 1: Translation-specific hints from the source registry. These
+    # avoid false matches in front matter when downloaded texts omit the
+    # pagination used by the citation.
+    source_info = SOURCES.get(key, {})
+    passage_hints = source_info.get("passage_hints", {})
+    hint_patterns = passage_hints.get(section, []) if section else []
+    hint_line = _find_pattern_line(lines, hint_patterns)
+    if hint_line is not None:
+        return _extract_snippet(lines, hint_line, max_snippet, deep)
+
+    # Strategy 2: Search for section numbers in common patterns
     search_patterns = []
 
     if keyword and number:
@@ -300,75 +310,51 @@ def search_passage_in_text(text, passage, key, deep=False):
     if chapter and section:
         search_patterns.append(rf"Chapter\s+{chapter}")
 
-    # Try each pattern
-    for pattern in search_patterns:
-        for i, line in enumerate(lines):
-            if re.search(pattern, line, re.IGNORECASE):
-                # Found! Extract context around match
-                if deep:
-                    # In deep mode, extract more lines for analysis
-                    start = max(0, i - 5)
-                    end = min(len(lines), i + 40)
-                else:
-                    start = max(0, i - 2)
-                    end = min(len(lines), i + 5)
-                snippet = "\n".join(lines[start:end])
-                if len(snippet) > max_snippet:
-                    snippet = snippet[:max_snippet] + "..."
-                return snippet
-
-    # Strategy 2: Source-specific fingerprints for known difficult passages
-    # Used when standard section-number search fails (e.g., Stephanus/Bekker
-    # pagination not embedded in plain-text downloads, or unusual numbering).
-    fingerprints = {
-        ("pliny:letters", 96): [r"Cognitionibus", r"Christianis\s+interfui"],
-        # Gospel of Peter — verse numbers are inline, "24 he did" near "Garden of Joseph"
-        ("gospelpeter", 24): [r"Garden of Joseph"],
-        # Plato Statesman 275b-c — Stephanus pagination absent; shepherd passage
-        ("plato:statesman", 275): [r"God himself was their shepherd"],
-        # Plato Republic 514a-520a — Stephanus pagination absent; Cave allegory (Book VII)
-        ("plato:republic", 514): [r"underground den.*open towards the light",
-                                   r"BOOK VII.*enlightenment"],
-        # Aristotle Poetics 1453a — Bekker pagination absent; hamartia passage
-        ("aristotle:poetics", 1453): [r"error or frailty"],
-        # Euripides Bacchae 434-518 — line numbers not embedded; arrest scene
-        ("euripides:bacchae", 434): [r"bind me not.*reason addressing madness"],
-    }
-    fp_key = (key, section) if section else None
-    if fp_key and fp_key in fingerprints:
-        for fp_pattern in fingerprints[fp_key]:
-            for i, line in enumerate(lines):
-                if re.search(fp_pattern, line, re.IGNORECASE):
-                    if deep:
-                        start = max(0, i - 5)
-                        end = min(len(lines), i + 40)
-                    else:
-                        start = max(0, i - 2)
-                        end = min(len(lines), i + 5)
-                    snippet = "\n".join(lines[start:end])
-                    if len(snippet) > max_snippet:
-                        snippet = snippet[:max_snippet] + "..."
-                    return snippet
+    match_line = _find_pattern_line(lines, search_patterns)
+    if match_line is not None:
+        return _extract_snippet(lines, match_line, max_snippet, deep)
 
     # Strategy 3: Broad keyword search for distinctive terms
     # e.g., for Josephus war 4.618, search for "Vespasian" near "618"
     if section and section > 100:
         # For large section numbers, just search for the number
         pattern = rf"\b{section}\b"
-        for i, line in enumerate(lines):
-            if re.search(pattern, line):
-                if deep:
-                    start = max(0, i - 3)
-                    end = min(len(lines), i + 20)
-                else:
-                    start = max(0, i - 1)
-                    end = min(len(lines), i + 3)
-                snippet = "\n".join(lines[start:end])
-                if len(snippet) > max_snippet:
-                    snippet = snippet[:max_snippet] + "..."
-                return snippet
+        match_line = _find_pattern_line(lines, [pattern], flags=0)
+        if match_line is not None:
+            before, after = (3, 20) if deep else (1, 3)
+            return _extract_snippet(
+                lines,
+                match_line,
+                max_snippet,
+                deep,
+                before=before,
+                after=after,
+            )
 
     return ""
+
+
+def _find_pattern_line(lines, patterns, flags=re.IGNORECASE):
+    """Return the first line index matching the first applicable pattern."""
+    for pattern in patterns:
+        for index, line in enumerate(lines):
+            if re.search(pattern, line, flags):
+                return index
+    return None
+
+
+def _extract_snippet(lines, index, max_snippet, deep, before=None, after=None):
+    """Extract a bounded block around a matched source line."""
+    if before is None:
+        before = 5 if deep else 2
+    if after is None:
+        after = 40 if deep else 5
+    start = max(0, index - before)
+    end = min(len(lines), index + after)
+    snippet = "\n".join(lines[start:end])
+    if len(snippet) > max_snippet:
+        return snippet[:max_snippet] + "..."
+    return snippet
 
 
 def _roman(n):
