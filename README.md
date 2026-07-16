@@ -92,18 +92,6 @@ This is not negotiable. User sees something you don't. STOP MEANS STOP.
 Extended Alexandria findings are reviewed in the private `historical-jesus-son-of-god-research` repo before they become public manuscript work.
 For public chapter edits, verify claims against primary sources, keep the chapter's existing argument structure central, and use the citation verification pipeline before accepting new factual claims.
 
-Before drafting a non-trivial manuscript change, use the PR body as the current editorial specification for the passage's role, central claim, required evidence, claim strength, and scope.
-Separate the passage into distinct substantive claims, then record the evidence and probability band for each claim in the PR body under `EVIDENCE STANDARDS`.
-Store this classification in the PR body and review artifacts.
-Write the reader-facing passage naturally at the agreed strength; the PR body carries band labels and editorial assessment.
-Keep it current as those decisions change, then review the finished passage against `docs/REVIEW.md`.
-
-For reader-facing prose, present the proposed replacement in chat and receive the user's acceptance before editing chapter files.
-Treat revision requests and rejected drafts as requests for a new proposal.
-Edit the manuscript after the user accepts the wording, then reread the surrounding passage and integrate the approved text.
-
-An introductory survey may briefly present evidence developed later when the two passages perform different jobs; `docs/REVIEW.md` governs that distinction.
-
 When Claude review surfaces a concern, send the concern back to ChatGPT with surrounding chapter context; ChatGPT does not retain the full manuscript in memory and produces drift-free revisions only when the surrounding text travels with the prompt.
 
 ## When to Use ChatGPT
