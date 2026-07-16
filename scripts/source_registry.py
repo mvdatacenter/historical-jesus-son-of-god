@@ -477,11 +477,11 @@ SOURCES = {
         "title": "The Bacchae",
         "author": "Euripides",
         "category": ANCIENT,
-        "translation": "E. P. Coleridge (1891)",
+        "translation": "Gilbert Murray (1906)",
         "urls": {
-            "full": "http://classics.mit.edu/Euripides/bacchan.html",
+            "full": "https://www.gutenberg.org/cache/epub/35173/pg35173-images.html",
         },
-        "note": "MIT Internet Classics Archive.",
+        "note": "Project Gutenberg. Gilbert Murray verse translation.",
         "section_pattern": r"\b(\d+)\b",
     },
 
@@ -1302,6 +1302,60 @@ SOURCES = {
     # =========================================================================
     #  MODERN SCHOLARSHIP — Instructions only (copyrighted)
     # =========================================================================
+
+    "lichtheim:ael3": {
+        "title": "Ancient Egyptian Literature, Volume III: The Late Period",
+        "author": "Miriam Lichtheim",
+        "category": MODERN,
+        "year": 1980,
+        "publisher": "University of California Press",
+        "obtain": "Academic libraries or University of California Press. ISBN 978-0-520-04020-5.",
+    },
+
+    "assmann:death-salvation": {
+        "title": "Death and Salvation in Ancient Egypt",
+        "author": "Jan Assmann",
+        "category": MODERN,
+        "year": 2005,
+        "publisher": "Cornell University Press",
+        "obtain": "Academic libraries, Cornell University Press, or JSTOR. ISBN 978-0-8014-4241-4.",
+    },
+
+    "macdonald:homeric-mark": {
+        "title": "The Homeric Epics and the Gospel of Mark",
+        "author": "Dennis R. MacDonald",
+        "category": MODERN,
+        "year": 2000,
+        "publisher": "Yale University Press",
+        "obtain": "Academic libraries or Yale University Press. ISBN 978-0-300-08012-4.",
+    },
+
+    "macdonald:nt-homer": {
+        "title": "Does the New Testament Imitate Homer? Four Cases from the Acts of the Apostles",
+        "author": "Dennis R. MacDonald",
+        "category": MODERN,
+        "year": 2003,
+        "publisher": "Yale University Press",
+        "obtain": "Academic libraries or Yale University Press. ISBN 978-0-300-09770-2.",
+    },
+
+    "moles:jesus-dionysus": {
+        "title": "Jesus and Dionysus in The Acts of the Apostles and Early Christianity",
+        "author": "John Moles",
+        "category": MODERN,
+        "year": 2006,
+        "publisher": "Hermathena 180",
+        "obtain": "Academic libraries or JSTOR. Stable article identifier 23041662.",
+    },
+
+    "sandnes:imitatio-homeri": {
+        "title": "Imitatio Homeri? An Appraisal of Dennis R. MacDonald's Mimesis Criticism",
+        "author": "Karl Olav Sandnes",
+        "category": MODERN,
+        "year": 2005,
+        "publisher": "Journal of Biblical Literature 124.4",
+        "obtain": "Academic libraries or JSTOR. DOI 10.2307/30041066.",
+    },
 
     "brandon:zealots": {
         "title": "Jesus and the Zealots: A Study of the Political Factor in Primitive Christianity",

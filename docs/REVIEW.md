@@ -33,6 +33,9 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 - **Each sentence adds factual content the reader needs at this point in the argument.** Three tests, all must pass: does removing the sentence reduce factual content; does the reader need this information here to follow the argument; would the information be more valuable earlier as background?
 - **Each finding lives where it is most relevant in the book, not where it is convenient.** Background facts (like "Rome governed through Greek institutions") may belong in chapter 2 or 3 where ecclesia is first described, not in chapter 5 where they would be buried. When ChatGPT returns multiple findings, distribute each to its natural location across the book.
+- **The manuscript diff satisfies the PR body's current editorial specification.** For a non-trivial prose change, the body states the passage's role, central claim, required evidence or examples, claim strength, and scope limits. Update the body when those requirements change, then review each item against the diff. A review concern that conflicts with a required item returns to the specification for resolution before the manuscript changes.
+- **Editorial review preserves requested substance while improving its presentation.** Rewrite weak diction, unsupported inference, poor structure, or misplaced detail while retaining the agreed claims and examples. Required items remain until the user changes the editorial specification or source verification disproves them.
+- **Introductory previews and later detailed treatments perform different jobs.** An introduction may identify a scholarly model and briefly present selected evidence that a later chapter develops fully. Treat the second passage as duplication only when it repeats the same wording, inference, and argumentative work rather than changing the level and purpose of presentation.
 
 ## Style
 
@@ -53,4 +56,5 @@ ChatGPT defaults to one strand of modern scholarship that treats everything in t
 ## Method
 
 - **Numbers, percentages, thresholds, and success criteria come from a measurement, calculation, or cited source.** "Step 1 reduces the set by ~50-70%" or "Success criteria: at least 40% filtered out" without a derivation are invented anchors. "I don't know yet" is better than a fabricated target.
-- **Chapter 1 stays at survey register.** Give each scholarly model a brief account of its strongest evidence, using as many sentences as clarity requires. This keeps the chapter comparative while allowing the evidence to be stated in plain language.
+- **Chapter 1 stays at survey register.** Give each scholarly model a brief account of its strongest evidence, using as many sentences as clarity requires. This keeps the chapter comparative while allowing the evidence to be stated in plain language. <!--applies: paths=chapter1.tex-->
+- **Similarity arguments distinguish sequence from evidentiary weight.** Plausible shared events may establish the order of a proposed source relationship, while unusual names, actions, objects, or unexplained details carry more weight against coincidence. State the full sequence and identify which details carry the inference.

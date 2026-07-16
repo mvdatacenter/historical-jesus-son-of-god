@@ -247,13 +247,54 @@ def search_passage_in_text(text, passage, key, deep=False):
     lines = text.split("\n")
     total_text = text
 
-    # Strategy 1: Search for section numbers in common patterns
     section = ref.get("section")
     chapter = ref.get("chapter")
     book = ref.get("book")
     keyword = ref.get("keyword")
     number = ref.get("number")
 
+    # Strategy 1: Source-specific fingerprints for known difficult passages.
+    # Prefer these over generic section numbers, which may occur in front matter
+    # or licensing text before the cited passage.
+    fingerprints = {
+        ("pliny:letters", 96): [r"Cognitionibus", r"Christianis\s+interfui"],
+        # Gospel of Peter — verse numbers are inline, "24 he did" near "Garden of Joseph"
+        ("gospelpeter", 24): [r"Garden of Joseph"],
+        # Plato Statesman 275b-c — Stephanus pagination absent; shepherd passage
+        ("plato:statesman", 275): [r"God himself was their shepherd"],
+        # Plato Republic 514a-520a — Stephanus pagination absent; Cave allegory (Book VII)
+        ("plato:republic", 514): [r"underground den.*open towards the light",
+                                   r"BOOK VII.*enlightenment"],
+        # Aristotle Poetics 1453a — Bekker pagination absent; hamartia passage
+        ("aristotle:poetics", 1453): [r"error or frailty"],
+        # Homer's Odyssey — Project Gutenberg front matter contains generic numbers
+        ("homer:odyssey", 9): [r"my name is Noman", r"Noman is killing me"],
+        ("homer:odyssey", 10): [r"turned them into pigs", r"turning all my men into pigs"],
+        # Euripides Bacchae — line numbers not embedded in the downloaded translation
+        ("euripides:bacchae", 434): [r"never flinched, nor thought to flee",
+                                      r"bind me not.*reason addressing madness"],
+        ("euripides:bacchae", 443): [r"fetter and manacle",
+                                      r"bars slid back untouched"],
+        ("euripides:bacchae", 576): [r"Spirit of the Chained Earthquake",
+                                      r"Earthquake suddenly shakes"],
+    }
+    fp_key = (key, section) if section else None
+    if fp_key and fp_key in fingerprints:
+        for fp_pattern in fingerprints[fp_key]:
+            for i, line in enumerate(lines):
+                if re.search(fp_pattern, line, re.IGNORECASE):
+                    if deep:
+                        start = max(0, i - 5)
+                        end = min(len(lines), i + 40)
+                    else:
+                        start = max(0, i - 2)
+                        end = min(len(lines), i + 5)
+                    snippet = "\n".join(lines[start:end])
+                    if len(snippet) > max_snippet:
+                        snippet = snippet[:max_snippet] + "..."
+                    return snippet
+
+    # Strategy 2: Search for section numbers in common patterns
     search_patterns = []
 
     if keyword and number:
@@ -316,39 +357,6 @@ def search_passage_in_text(text, passage, key, deep=False):
                 if len(snippet) > max_snippet:
                     snippet = snippet[:max_snippet] + "..."
                 return snippet
-
-    # Strategy 2: Source-specific fingerprints for known difficult passages
-    # Used when standard section-number search fails (e.g., Stephanus/Bekker
-    # pagination not embedded in plain-text downloads, or unusual numbering).
-    fingerprints = {
-        ("pliny:letters", 96): [r"Cognitionibus", r"Christianis\s+interfui"],
-        # Gospel of Peter — verse numbers are inline, "24 he did" near "Garden of Joseph"
-        ("gospelpeter", 24): [r"Garden of Joseph"],
-        # Plato Statesman 275b-c — Stephanus pagination absent; shepherd passage
-        ("plato:statesman", 275): [r"God himself was their shepherd"],
-        # Plato Republic 514a-520a — Stephanus pagination absent; Cave allegory (Book VII)
-        ("plato:republic", 514): [r"underground den.*open towards the light",
-                                   r"BOOK VII.*enlightenment"],
-        # Aristotle Poetics 1453a — Bekker pagination absent; hamartia passage
-        ("aristotle:poetics", 1453): [r"error or frailty"],
-        # Euripides Bacchae 434-518 — line numbers not embedded; arrest scene
-        ("euripides:bacchae", 434): [r"bind me not.*reason addressing madness"],
-    }
-    fp_key = (key, section) if section else None
-    if fp_key and fp_key in fingerprints:
-        for fp_pattern in fingerprints[fp_key]:
-            for i, line in enumerate(lines):
-                if re.search(fp_pattern, line, re.IGNORECASE):
-                    if deep:
-                        start = max(0, i - 5)
-                        end = min(len(lines), i + 40)
-                    else:
-                        start = max(0, i - 2)
-                        end = min(len(lines), i + 5)
-                    snippet = "\n".join(lines[start:end])
-                    if len(snippet) > max_snippet:
-                        snippet = snippet[:max_snippet] + "..."
-                    return snippet
 
     # Strategy 3: Broad keyword search for distinctive terms
     # e.g., for Josephus war 4.618, search for "Vespasian" near "618"
