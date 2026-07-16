@@ -33,10 +33,9 @@ Repo-specific review checklist for manuscript changes. Rules are enforced rule-b
 
 - **Each sentence adds factual content the reader needs at this point in the argument.** Three tests, all must pass: does removing the sentence reduce factual content; does the reader need this information here to follow the argument; would the information be more valuable earlier as background?
 - **Each finding lives where it is most relevant in the book, not where it is convenient.** Background facts (like "Rome governed through Greek institutions") may belong in chapter 2 or 3 where ecclesia is first described, not in chapter 5 where they would be buried. When ChatGPT returns multiple findings, distribute each to its natural location across the book.
-- **The manuscript diff satisfies the PR body's current editorial specification.** The passage's role, central claim, required evidence or examples, claim strength, and scope limits all appear in the diff, preserving the agreed purpose through wording revisions.
+- **The manuscript diff satisfies the PR body's current editorial specification.** The passage's role, central claim, required evidence or examples, and scope limits all appear in the diff, preserving the agreed substance through wording revisions.
 - **The PR body owns claim calibration and the manuscript reflects it.** The body separates substantive claims and records the evidence and probability band for each under the README evidence standards. The manuscript expresses each claim at that strength, with each qualifier applying only to the claim it qualifies.
-- **Editorial revisions preserve requested substance while improving its presentation.** Agreed claims and examples remain while weak diction, unsupported inference, poor structure, and misplaced detail are corrected, preventing stylistic revision from deleting required content.
-- **Introductory previews and later detailed treatments perform different jobs.** A preview identifies a scholarly model and selected evidence; a detailed treatment develops the full case. The passages are distinct when their wording, inference, and argumentative work match those different purposes. <!--applies: paths=chapter1.tex-->
+- **Introductory previews and later detailed treatments perform different jobs.** The PR body names the later chapter, and the two passages differ in depth, inference, and argumentative work: the introduction identifies the model and selected evidence while the later chapter develops the full case. <!--applies: paths=chapter1.tex-->
 
 ## Style
 
@@ -57,5 +56,5 @@ ChatGPT defaults to one strand of modern scholarship that treats everything in t
 ## Method
 
 - **Numbers, percentages, thresholds, and success criteria come from a measurement, calculation, or cited source.** "Step 1 reduces the set by ~50-70%" or "Success criteria: at least 40% filtered out" without a derivation are invented anchors. "I don't know yet" is better than a fabricated target.
-- **Chapter 1 stays at survey register.** Give each scholarly model a brief account of its strongest evidence, using as many sentences as clarity requires. This keeps the chapter comparative while allowing the evidence to be stated in plain language. <!--applies: paths=chapter1.tex-->
-- **Similarity arguments distinguish sequence from evidentiary weight.** Plausible shared events may establish the order of a proposed source relationship, while unusual names, actions, objects, or unexplained details carry more weight against coincidence. State the full sequence and identify which details carry the inference.
+- **Chapter 1 stays at survey register.** Each scholarly model receives a brief account of its strongest evidence, using the number of sentences clarity requires, so the chapter remains comparative without reducing the evidence to a label. <!--applies: paths=chapter1.tex-->
+- **Similarity arguments distinguish sequence from evidentiary weight.** The full sequence appears in the passage, while unusual names, actions, objects, or unexplained details are identified as carrying more weight against coincidence than plausible shared events.
