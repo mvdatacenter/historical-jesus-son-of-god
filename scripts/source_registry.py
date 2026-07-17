@@ -1494,11 +1494,13 @@ SOURCES = {
         "category": MODERN,
         "year": 2012,
         "publisher": "New Testament Studies 58(4), pp. 522-548",
+        "doi": "10.1017/S002868851200015X",
+        "obtain": "Cambridge Core.",
         "urls": {
             "full": "https://pure.rug.nl/ws/portalfiles/portal/14258854/"
                     "2012_-_Ekklhsia_tou_theou.pdf",
         },
-        "note": "Author manuscript from the University of Groningen research portal. DOI: 10.1017/S002868851200015X.",
+        "note": "Author manuscript from the University of Groningen research portal.",
         "passage_hints": {
             547: [r"characterize the Christian.*alternative organization"],
         },
