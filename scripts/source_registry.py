@@ -1520,7 +1520,29 @@ SOURCES = {
         "category": MODERN,
         "year": 2012,
         "publisher": "New Testament Studies 58(4), pp. 522-548",
-        "obtain": "Cambridge Core. DOI: 10.1017/S0028688512000148.",
+        "doi": "10.1017/S002868851200015X",
+        "obtain": "Cambridge Core.",
+        "urls": {
+            "full": "https://pure.rug.nl/ws/portalfiles/portal/14258854/"
+                    "2012_-_Ekklhsia_tou_theou.pdf",
+        },
+        "note": "Author manuscript from the University of Groningen research portal.",
+        "passage_hints": {
+            547: [r"characterize the Christian.*alternative organization"],
+        },
+    },
+
+    "zuiderhoek:political-sociology": {
+        "title": "On the Political Sociology of the Imperial Greek City",
+        "author": "Andries Johan Zuiderhoek",
+        "category": MODERN,
+        "year": 2008,
+        "publisher": "Greek, Roman and Byzantine Studies 48(4), pp. 417-445",
+        "urls": {
+            "full": "https://docslib.org/doc/4009/"
+                    "on-the-political-sociology-of-the-imperial-greek-city-arjan-zuiderhoek",
+        },
+        "note": "Full-text mirror; official record: http://hdl.handle.net/1854/LU-445655.",
     },
 
     "bauckham:eyewitnesses": {
