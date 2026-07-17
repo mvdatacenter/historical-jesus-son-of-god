@@ -172,6 +172,32 @@ SOURCES = {
         "section_pattern": r"\b(\d+)\.\s",
     },
 
+    "plutarch:deiside": {
+        "title": "Isis and Osiris (De Iside et Osiride)",
+        "author": "Plutarch",
+        "category": ANCIENT,
+        "translation": "Frank Cole Babbitt (Loeb, 1936)",
+        "urls": {
+            "partA": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/A.html",
+            "partB": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/B.html",
+            "partC": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/C.html",
+            "partD": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/D.html",
+        },
+        "section_pattern": r"\b(\d+)\b",
+    },
+
+    "proclus:intimaeum": {
+        "title": "The Commentaries of Proclus on the Timaeus of Plato",
+        "author": "Proclus",
+        "category": ANCIENT,
+        "translation": "Thomas Taylor (1820)",
+        "urls": {
+            "vol1": "https://archive.org/download/proclusontimaeus01procuoft/"
+                    "proclusontimaeus01procuoft_djvu.txt",
+        },
+        "section_pattern": r"\b(\d+)\b",
+    },
+
     "cassiusdio:romanhistory": {
         "title": "Roman History",
         "author": "Cassius Dio",
@@ -1770,6 +1796,67 @@ SOURCES = {
         "year": 2000,
         "publisher": "Israel Exploration Society",
         "obtain": "Academic libraries. Published by IES, Jerusalem.",
+    },
+
+    "henten:dragon-myth": {
+        "title": "Dragon Myth and Imperial Ideology in Revelation 12-13",
+        "author": "Jan Willem van Henten",
+        "category": MODERN,
+        "year": 2006,
+        "publisher": "The Reality of Apocalypse, pp. 181-203, Society of Biblical Literature",
+        "urls": {
+            "full": "https://dare.uva.nl/search?identifier=72eab9e8-576a-4cfb-9299-5b632caf3029",
+        },
+    },
+
+    "engelmann:kyme": {
+        "title": "Die Inschriften von Kyme",
+        "author": "Helmut Engelmann (ed.)",
+        "category": MODERN,
+        "year": 1976,
+        "publisher": "Rudolf Habelt, Inschriften griechischer Stadte aus Kleinasien 5",
+        "obtain": "Academic libraries. The Isis aretalogy is inscription 41.",
+    },
+
+    "higgins:divine-mothers": {
+        "title": "Divine Mothers: The Influence of Isis on the Virgin Mary in Egyptian Lactans-Iconography",
+        "author": "Sabrina Higgins",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Journal of the Canadian Society for Coptic Studies 3-4, pp. 71-90",
+        "urls": {
+            "abstract": "https://www.lockwoodonlinejournals.com/index.php/jcscs/article/view/99/0",
+        },
+    },
+
+    "met:isis-horus": {
+        "title": "Isis and Horus",
+        "author": "The Metropolitan Museum of Art",
+        "category": MODERN,
+        "publisher": "Collection object 23.6.9",
+        "urls": {
+            "record": "https://www.metmuseum.org/art/collection/search/570700",
+        },
+    },
+
+    "bm:isis-horus": {
+        "title": "Figure of Isis Nursing Horus",
+        "author": "The British Museum",
+        "category": MODERN,
+        "publisher": "Collection object EA60750",
+        "urls": {
+            "record": "https://www.britishmuseum.org/collection/object/Y_EA60750",
+        },
+    },
+
+    "bm:typhon": {
+        "title": "Black-Figure Situla Depicting Typhon",
+        "author": "The British Museum",
+        "category": MODERN,
+        "publisher": "Collection object 1888,0208.1",
+        "urls": {
+            "record": "https://www.britishmuseum.org/collection/object/G_1888-0208-1",
+        },
     },
 }
 
