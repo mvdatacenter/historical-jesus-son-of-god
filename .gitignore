@@ -1,7 +1,8 @@
 # Auto-generated AI instruction files
 .claude-shared/
 CLAUDE.md
-.claude/
+.claude/*
+!.claude/.public
 
 eclipse.txt
 auxil
