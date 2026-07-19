@@ -159,6 +159,15 @@ def find_source_files(key, ref=None):
         rest = [f for f in files if f not in priority]
         return priority + rest
 
+    # A reference without a book number targets the work as a whole, so
+    # general files (full.txt, english.txt, ...) are searched before
+    # book-specific volumes; otherwise a bookN volume that sorts first can
+    # shadow the general file with a wrong-file section-number match.
+    if ref:
+        general = [f for f in files if not re.match(r"book\d+", f.name)]
+        books = [f for f in files if f not in general]
+        return general + books
+
     return files
 
 
