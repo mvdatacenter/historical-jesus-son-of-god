@@ -1179,13 +1179,25 @@ SOURCES = {
         "title": "Panarion (Adversus Haereses)",
         "author": "Epiphanius of Salamis",
         "category": PATRISTIC,
-        "translation": "Frank Williams (Brill, 1987/2009)",
+        "translation": "Frank Williams (Brill, 1987/2009); Greek: Karl Holl (GCS, 1915/1922/1933)",
         "urls": {
             "full": "https://gnosis.study/library/%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/ENG/Epiphanius%20of%20Salamis%20-%20The%20Panarion,%20Book%20I%20(Sects%201-46).pdf",
+            "book51": "https://archive.org/download/epiphanius-panarion-and-ancoratus-greek-critical-edition-3-vols-in-1-holl-1915-1922-1933/Epiphanius%2C%20Panarion%20and%20Ancoratus%2C%20Greek%20critical%20edition%203%20vols%20in%201%20%28Holl%201915%2C%201922%2C%201933%29_djvu.txt",
         },
         "note": "Williams/Brill 2009 2nd edition, Book I (Sects 1-46). Section 42 = Marcion. "
-                "PDF from gnosis.study, extracted to text via pymupdf.",
+                "PDF from gnosis.study, extracted to text via pymupdf. "
+                "book51 = public-domain Holl Greek critical edition (all three GCS volumes, OCR), "
+                "covering haer. 47-80 absent from the Williams Book I file; named book51 so the "
+                "book-priority locator searches it first for 51.x citations (Koreion passage 51.22 "
+                "confirmed present at the line beginning 'τῇ ὥρᾳ σήμερον ἡ Κόρη').",
         "section_pattern": r"(?:Heresy\s+\d+|\b(\d+)\.\s)",
+        "passage_hints": {
+            22: [
+                r"Κόρη\s*\(τουτέστιν\s*ἡ\s*παρθένος",
+                r"ἐν\s*τῷ\s*Κορείῳ",
+                r"ἐγέννησε\s*τ.ν\s*.ἰῶνα",
+            ],
+        },
     },
 
     "epiphanius:mensuris": {
