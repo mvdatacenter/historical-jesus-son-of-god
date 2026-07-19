@@ -139,7 +139,8 @@ def _git(repo: pathlib.Path, *args: str) -> str:
 def test_script_reports_a_removal_from_a_real_repository(tmp_path) -> None:
     repo = tmp_path / "repo"
     repo.mkdir()
-    # A feature branch, not master: commit guards reject the default branch.
+    # Name the branch explicitly so the fixture does not depend on whatever
+    # init.defaultBranch the surrounding environment happens to configure.
     _git(repo, "init", "-q", "-b", "feat/fixture", ".")
     _git(repo, "config", "user.email", "test@example.com")
     _git(repo, "config", "user.name", "Test")
