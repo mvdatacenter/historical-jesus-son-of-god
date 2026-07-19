@@ -1002,9 +1002,31 @@ SOURCES = {
         "category": PATRISTIC,
         "translation": "William Wilson (ANF Vol. 2, 1885)",
         "urls": {
-            "full": "https://www.newadvent.org/fathers/0208.htm",
+            "chapter1": "https://www.newadvent.org/fathers/020801.htm",
+            "chapter2": "https://www.newadvent.org/fathers/020802.htm",
+            "chapter3": "https://www.newadvent.org/fathers/020803.htm",
+            "chapter4": "https://www.newadvent.org/fathers/020804.htm",
+            "chapter5": "https://www.newadvent.org/fathers/020805.htm",
+            "chapter6": "https://www.newadvent.org/fathers/020806.htm",
+            "chapter7": "https://www.newadvent.org/fathers/020807.htm",
+            "chapter8": "https://www.newadvent.org/fathers/020808.htm",
+            "chapter9": "https://www.newadvent.org/fathers/020809.htm",
+            "chapter10": "https://www.newadvent.org/fathers/020810.htm",
+            "chapter11": "https://www.newadvent.org/fathers/020811.htm",
+            "chapter12": "https://www.newadvent.org/fathers/020812.htm",
         },
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "athanasius:deincarnatione": {
+        "title": "On the Incarnation of the Word (De Incarnatione Verbi)",
+        "author": "Athanasius of Alexandria",
+        "category": PATRISTIC,
+        "translation": "Archibald Robertson (NPNF Ser. 2, Vol. 4, 1892)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/2802.htm",
+        },
+        "section_pattern": r"(?:\b(\d+)\.\s)",
     },
 
     "augustine:civdei": {
