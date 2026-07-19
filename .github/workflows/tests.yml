@@ -1,9 +1,27 @@
 name: Tests
 
+# The suite covers scripts/ plus the citation invariants, which read the manuscript
+# files scanned by test_source_registry.py and the bibliography they cite. Changes
+# elsewhere — docs, assets, manuscript.tex, README — cannot affect the result.
 on:
   push:
     branches: [ main, html ]
+    # Repeated under pull_request below: GitHub Actions does not expand YAML anchors.
+    paths:
+      - 'scripts/**'
+      - 'preface.tex'
+      - 'chapter*.tex'
+      - 'epilogue.tex'
+      - 'references.bib'
+      - '.github/workflows/tests.yml'
   pull_request:
+    paths:
+      - 'scripts/**'
+      - 'preface.tex'
+      - 'chapter*.tex'
+      - 'epilogue.tex'
+      - 'references.bib'
+      - '.github/workflows/tests.yml'
   workflow_dispatch:
 
 # Read-only: this workflow runs on pull requests, including those from forks.
