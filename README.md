@@ -791,11 +791,17 @@ manuscript.tex
 
 ## CI/CD
 
-GitHub Actions on `main`/`html` branches:
+Build and publish (`.github/workflows/ci.yml`), on `main`/`html` branches:
 1. Build PDF (LuaLaTeX)
 2. Build HTML (Pandoc + MathJax)
 3. Deploy to GitHub Pages
 4. Create release with PDF
+
+Tests (`.github/workflows/tests.yml`), on `main`/`html` and on every pull request:
+runs `pytest` over `scripts/`. It installs pytest directly and holds read-only
+permissions, since it runs on pull requests from forks. Installing pytest directly
+also keeps the job independent of Poetry, whose `tychicus` pin resolves over a
+private SSH remote that requires org credentials.
 
 ## Content Focus
 
