@@ -944,6 +944,17 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "tertullian:praxean": {
+        "title": "Adversus Praxean (Against Praxeas)",
+        "author": "Tertullian",
+        "category": PATRISTIC,
+        "translation": "Peter Holmes (ANF Vol. 3, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0317.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     "origen:contracels": {
         "title": "Contra Celsum (Against Celsus)",
         "author": "Origen of Alexandria",
@@ -1512,6 +1523,32 @@ SOURCES = {
         },
     },
 
+    "tabor:patio2012": {
+        "title": "A Preliminary Report of a Robotic Camera Exploration of a Sealed "
+                 "1st Century Tomb in East Talpiot, Jerusalem",
+        "author": "James D. Tabor",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Bible and Interpretation (online report)",
+        "urls": {
+            "full": "https://web.archive.org/web/20190909213207id_/"
+                    "http://www.bibleinterp.com/PDFs/Tabor2.pdf",
+        },
+        "note": "Freely published report. Original bibleinterp.com page is gone; "
+                "the live bibleinterp.arizona.edu article page renders empty, so the "
+                "URL is a Wayback Machine capture of the full PDF (47 pages). "
+                "Later captures of the same PDF are truncated at 1 MB.",
+    },
+
+    "taborjacobovici:discovery2012": {
+        "title": "The Jesus Discovery: The New Archaeological Find That Reveals the Birth of Christianity",
+        "author": "James D. Tabor and Simcha Jacobovici",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Simon & Schuster",
+        "obtain": "Libraries, bookstores. Internet Archive borrowing (jesusdiscoveryne0000tabo).",
+    },
+
     "eisenman:james": {
         "title": "James the Brother of Jesus: The Key to Unlocking the Secrets of Early Christianity and the Dead Sea Scrolls",
         "author": "Robert Eisenman",
@@ -1735,6 +1772,15 @@ SOURCES = {
             "full": "https://waynenorthey.com/wp-content/uploads/2022/08/Schrader-18.May_.2016.pdf",
         },
         "note": "Pre-print PDF. Published version: HTR 110:3 (2017).",
+    },
+
+    "ilan:lexicon": {
+        "title": "Lexicon of Jewish Names in Late Antiquity, Part I: Palestine 330 BCE–200 CE",
+        "author": "Tal Ilan",
+        "category": MODERN,
+        "year": 2002,
+        "publisher": "Mohr Siebeck",
+        "obtain": "Academic libraries. Mohr Siebeck, Tübingen 2002.",
     },
 
     "deboer:magdalene": {
