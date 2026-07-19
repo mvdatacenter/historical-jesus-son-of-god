@@ -798,9 +798,10 @@ Build and publish (`.github/workflows/ci.yml`), on `main`/`html` branches:
 4. Create release with PDF
 
 Tests (`.github/workflows/tests.yml`), on `main`/`html` and on every pull request:
-runs `pytest` over `scripts/`. It installs only pytest and holds read-only
-permissions, because it runs on pull requests from forks. Poetry is not used
-there: `pyproject.toml` pins `tychicus` to a private SSH remote CI cannot reach.
+runs `pytest` over `scripts/`. It installs pytest directly and holds read-only
+permissions, since it runs on pull requests from forks. Installing pytest directly
+also keeps the job independent of Poetry, whose `tychicus` pin resolves over a
+private SSH remote that requires org credentials.
 
 ## Content Focus
 
