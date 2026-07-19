@@ -2,12 +2,16 @@
 
 from __future__ import annotations
 
+import pathlib
 import subprocess
+import sys
 
 import pytest
 
 import check_prose_deletions
 from check_prose_deletions import parse_removals, removed_prose_lines
+
+SCRIPT = pathlib.Path(__file__).resolve().parent / "check_prose_deletions.py"
 
 PURE_ADDITION = """\
 diff --git a/chapter2.tex b/chapter2.tex
@@ -121,3 +125,46 @@ def test_removed_prose_lines_surfaces_a_git_failure(monkeypatch) -> None:
 
     with pytest.raises(subprocess.CalledProcessError):
         removed_prose_lines("no-such-ref")
+
+
+def _git(repo: pathlib.Path, *args: str) -> str:
+    return subprocess.run(
+        ["git", "-C", str(repo), *args],
+        check=True,
+        capture_output=True,
+        text=True,
+    ).stdout.strip()
+
+
+def test_script_reports_a_removal_from_a_real_repository(tmp_path) -> None:
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    # A feature branch, not master: commit guards reject the default branch.
+    _git(repo, "init", "-q", "-b", "feat/fixture", ".")
+    _git(repo, "config", "user.email", "test@example.com")
+    _git(repo, "config", "user.name", "Test")
+
+    chapter = repo / "chapter2.tex"
+    chapter.write_text("The guard carried myrrh.\nGold belongs to the treasury.\n")
+    _git(repo, "add", "chapter2.tex")
+    _git(repo, "commit", "-qm", "base")
+    base = _git(repo, "rev-parse", "HEAD")
+
+    # Net-positive rework: one line removed, two added, so the diffstat grows.
+    chapter.write_text(
+        "Gold belongs to the treasury.\n"
+        "Incense belongs to the altar.\n"
+        "Myrrh anoints the king.\n"
+    )
+    _git(repo, "add", "chapter2.tex")
+    _git(repo, "commit", "-qm", "rework")
+
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT), base],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+    )
+
+    assert result.returncode == 1
+    assert "chapter2.tex: The guard carried myrrh." in result.stdout
