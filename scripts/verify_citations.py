@@ -395,6 +395,24 @@ def _ordinal(n):
     return _ORDINALS.get(n, "")
 
 
+def modern_acquisition_note(source_info):
+    """Describe how to obtain a modern work whose text is not downloaded.
+
+    Registry entries carry either acquisition instructions or a download URL.
+    Reporting whichever is present tells the reviewer whether to visit a library
+    or to run the downloader.
+    """
+    obtain = source_info.get("obtain")
+    if obtain:
+        return f"See sources/modern/README.md — {obtain}"
+    if source_info.get("urls"):
+        return (
+            "See sources/modern/README.md — a download URL is registered; "
+            "run scripts/download_sources.py to fetch the text."
+        )
+    return "See sources/modern/README.md"
+
+
 def verify_citation(citation, deep=False):
     """Verify a single citation against downloaded sources."""
     key = citation.key
@@ -412,7 +430,7 @@ def verify_citation(citation, deep=False):
         source_files = find_source_files(key, ref=ref)
         if not source_files:
             citation.status = "MODERN"
-            citation.snippet = f"See sources/modern/README.md — {source_info.get('obtain', '')}"
+            citation.snippet = modern_acquisition_note(source_info)
             return
         # Has downloaded text — fall through to normal verification
 

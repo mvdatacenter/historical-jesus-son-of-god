@@ -4,7 +4,12 @@
 import pytest
 
 import verify_citations
-from verify_citations import find_source_files, normalize_ref, search_passage_in_text
+from verify_citations import (
+    find_source_files,
+    modern_acquisition_note,
+    normalize_ref,
+    search_passage_in_text,
+)
 
 
 def test_odyssey_book_nine_ignores_gutenberg_license_number():
@@ -114,3 +119,20 @@ def test_reference_with_a_book_number_searches_that_book_first(tmp_path, monkeyp
 
 def test_citation_without_a_passage_keeps_alphabetical_order(tmp_path, monkeypatch):
     assert selected_file_names(tmp_path, None, monkeypatch) == ["book51.txt", "full.txt"]
+
+
+def test_acquisition_note_reports_obtain_instructions_when_present():
+    note = modern_acquisition_note({"obtain": "Academic libraries. ISBN 978-0-567-08265-0."})
+
+    assert note.endswith("— Academic libraries. ISBN 978-0-567-08265-0.")
+
+
+def test_acquisition_note_points_to_the_downloader_when_only_a_url_is_registered():
+    note = modern_acquisition_note({"urls": {"full": "https://example.org/work.pdf"}})
+
+    assert "download_sources.py" in note
+    assert note.rstrip().endswith(".")
+
+
+def test_acquisition_note_omits_the_dash_when_no_acquisition_detail_exists():
+    assert modern_acquisition_note({}) == "See sources/modern/README.md"
