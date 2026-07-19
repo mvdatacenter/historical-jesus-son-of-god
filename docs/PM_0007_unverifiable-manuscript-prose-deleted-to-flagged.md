@@ -1,4 +1,4 @@
-# PM-0007: Unverifiable Manuscript Prose Is Flagged, Not Deleted
+# PM-0007: Unverifiable Manuscript Prose Goes From Deleted to Flagged
 
 ## What Happened
 
@@ -46,5 +46,5 @@ This is the exact inference the project's own evidence standard forbids. `README
 
 ## Action Items
 
-- [x] [prevent] Added two rules to the head of the Evidence section of `docs/REVIEW.md` closing both directions of the inversion: an unverifiable claim in existing manuscript prose is flagged for research and never deleted, with removal requiring the user's prior agreement on that specific passage; and user-supplied research is mined for its observation and run through the citation pipeline for primary attestation, never dismissed on the venue of its link or measured against the model's training set.
+- [x] [prevent] Added two rules to the head of the Evidence section of `docs/REVIEW.md` closing both directions of the inversion: an unverifiable claim in existing manuscript prose stays in the book and is flagged for research, with removal requiring the user's prior agreement on that specific passage; and user-supplied research is judged on the observation it reports and run through the citation pipeline for primary attestation.
 - [x] [prevent] Added `scripts/check_prose_deletions.py`, which reports every prose line removed from `chapter*.tex`, `preface.tex`, or `epilogue.tex` against the base and exits nonzero so the author must account for each one in the PR body; `scripts/test_check_prose_deletions.py` covers the concealment case from the evidence fence above, where a net-positive rework hid the loss of the section's thesis, and the check is cited by the enumeration rule in `docs/REVIEW.md`.
