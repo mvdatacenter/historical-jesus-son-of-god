@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, html ]
+  pull_request:
+  workflow_dispatch:
+
+# Read-only: this workflow runs on pull requests, including those from forks.
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The test modules import only source_registry and verify_citations, both
+      # stdlib-only. Poetry is deliberately not used: pyproject pins tychicus to a
+      # private SSH git remote that CI cannot reach.
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        working-directory: scripts
+        run: python -m pytest -v
