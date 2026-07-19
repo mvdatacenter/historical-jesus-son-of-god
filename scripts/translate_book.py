@@ -27,9 +27,6 @@ from typing import List, Tuple, Optional
 import json
 import shutil
 
-# Import send_prompt from the chatgpt module
-from chatgpt_desktop import send_prompt
-
 
 def extract_fingerprints(text: str) -> dict:
     """Extract structural fingerprints from LaTeX text.
@@ -739,6 +736,10 @@ def fix_section_label_formatting(text: str) -> str:
 
 def translate_fragment(fragment: str, target_lang: str, fragment_num: int, total: int) -> str:
     """Send a fragment to ChatGPT for translation."""
+    # chatgpt_desktop drives the macOS ChatGPT app and lives outside this repo, so it
+    # is imported at call time to keep the rest of this module importable elsewhere.
+    from chatgpt_desktop import send_prompt
+
     prompt = create_translation_prompt(fragment, target_lang, fragment_num, total)
 
     print(f"  Translating fragment {fragment_num}/{total} ({len(fragment)} chars)...", file=sys.stderr)
