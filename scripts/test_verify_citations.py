@@ -3,7 +3,8 @@
 
 import pytest
 
-from verify_citations import search_passage_in_text
+import verify_citations
+from verify_citations import find_source_files, normalize_ref, search_passage_in_text
 
 
 def test_odyssey_book_nine_ignores_gutenberg_license_number():
@@ -87,3 +88,29 @@ def test_search_returns_empty_string_when_no_passage_matches():
     )
 
     assert snippet == ""
+
+
+def epiphanius_sources_dir(tmp_path):
+    source_dir = tmp_path / "patristic" / "epiphanius_panarion"
+    source_dir.mkdir(parents=True)
+    for name in ("book51.txt", "full.txt"):
+        (source_dir / name).write_text("placeholder", encoding="utf-8")
+    return tmp_path
+
+
+def selected_file_names(tmp_path, passage, monkeypatch):
+    monkeypatch.setattr(verify_citations, "SOURCES_DIR", epiphanius_sources_dir(tmp_path))
+    ref = normalize_ref(passage) if passage is not None else None
+    return [f.name for f in find_source_files("epiphanius:panarion", ref=ref)]
+
+
+def test_reference_without_a_book_number_searches_general_files_first(tmp_path, monkeypatch):
+    assert selected_file_names(tmp_path, "42", monkeypatch) == ["full.txt", "book51.txt"]
+
+
+def test_reference_with_a_book_number_searches_that_book_first(tmp_path, monkeypatch):
+    assert selected_file_names(tmp_path, "51.22", monkeypatch) == ["book51.txt", "full.txt"]
+
+
+def test_citation_without_a_passage_keeps_alphabetical_order(tmp_path, monkeypatch):
+    assert selected_file_names(tmp_path, None, monkeypatch) == ["book51.txt", "full.txt"]

@@ -198,6 +198,38 @@ SOURCES = {
         "section_pattern": r"\b(\d+)\b",
     },
 
+    "apuleius:metamorphoses": {
+        "title": "The Golden Asse (Metamorphoses)",
+        "author": "Apuleius",
+        "category": ANCIENT,
+        "translation": "William Adlington (1566)",
+        "urls": {
+            "full": "https://www.gutenberg.org/cache/epub/1666/pg1666.txt",
+        },
+        "section_pattern": r"\b(\d+)\b",
+        "passage_hints": {
+            3: [r"resembling the light of the Moone"],
+            5: [r"call mee Queene Isis", r"naturall mother of all things"],
+        },
+    },
+
+    "diodorus:library": {
+        "title": "Library of History",
+        "author": "Diodorus Siculus",
+        "category": ANCIENT,
+        "translation": "C. H. Oldfather (Loeb, 1933)",
+        "urls": {
+            "book1A": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1A*.html",
+            "book1B": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1B*.html",
+        },
+        "section_pattern": r"\b(\d+)\b",
+        "passage_hints": {
+            11: [r"horns on her head", r"the moon is crescent-shaped"],
+            22: [r"vow never to marry another man"],
+            27: [r"queen of every land", r"mother of Horus the king"],
+        },
+    },
+
     "cassiusdio:romanhistory": {
         "title": "Roman History",
         "author": "Cassius Dio",
@@ -912,6 +944,17 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "tertullian:praxean": {
+        "title": "Adversus Praxean (Against Praxeas)",
+        "author": "Tertullian",
+        "category": PATRISTIC,
+        "translation": "Peter Holmes (ANF Vol. 3, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0317.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     "origen:contracels": {
         "title": "Contra Celsum (Against Celsus)",
         "author": "Origen of Alexandria",
@@ -1002,9 +1045,31 @@ SOURCES = {
         "category": PATRISTIC,
         "translation": "William Wilson (ANF Vol. 2, 1885)",
         "urls": {
-            "full": "https://www.newadvent.org/fathers/0208.htm",
+            "chapter1": "https://www.newadvent.org/fathers/020801.htm",
+            "chapter2": "https://www.newadvent.org/fathers/020802.htm",
+            "chapter3": "https://www.newadvent.org/fathers/020803.htm",
+            "chapter4": "https://www.newadvent.org/fathers/020804.htm",
+            "chapter5": "https://www.newadvent.org/fathers/020805.htm",
+            "chapter6": "https://www.newadvent.org/fathers/020806.htm",
+            "chapter7": "https://www.newadvent.org/fathers/020807.htm",
+            "chapter8": "https://www.newadvent.org/fathers/020808.htm",
+            "chapter9": "https://www.newadvent.org/fathers/020809.htm",
+            "chapter10": "https://www.newadvent.org/fathers/020810.htm",
+            "chapter11": "https://www.newadvent.org/fathers/020811.htm",
+            "chapter12": "https://www.newadvent.org/fathers/020812.htm",
         },
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "athanasius:deincarnatione": {
+        "title": "On the Incarnation of the Word (De Incarnatione Verbi)",
+        "author": "Athanasius of Alexandria",
+        "category": PATRISTIC,
+        "translation": "Archibald Robertson (NPNF Ser. 2, Vol. 4, 1892)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/2802.htm",
+        },
+        "section_pattern": r"(?:\b(\d+)\.\s)",
     },
 
     "augustine:civdei": {
@@ -1125,13 +1190,25 @@ SOURCES = {
         "title": "Panarion (Adversus Haereses)",
         "author": "Epiphanius of Salamis",
         "category": PATRISTIC,
-        "translation": "Frank Williams (Brill, 1987/2009)",
+        "translation": "Frank Williams (Brill, 1987/2009); Greek: Karl Holl (GCS, 1915/1922/1933)",
         "urls": {
             "full": "https://gnosis.study/library/%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D0%BA%D0%B0/ENG/Epiphanius%20of%20Salamis%20-%20The%20Panarion,%20Book%20I%20(Sects%201-46).pdf",
+            "book51": "https://archive.org/download/epiphanius-panarion-and-ancoratus-greek-critical-edition-3-vols-in-1-holl-1915-1922-1933/Epiphanius%2C%20Panarion%20and%20Ancoratus%2C%20Greek%20critical%20edition%203%20vols%20in%201%20%28Holl%201915%2C%201922%2C%201933%29_djvu.txt",
         },
         "note": "Williams/Brill 2009 2nd edition, Book I (Sects 1-46). Section 42 = Marcion. "
-                "PDF from gnosis.study, extracted to text via pymupdf.",
+                "PDF from gnosis.study, extracted to text via pymupdf. "
+                "book51 = public-domain Holl Greek critical edition (all three GCS volumes, OCR), "
+                "covering haer. 47-80 absent from the Williams Book I file; named book51 so the "
+                "book-priority locator searches it first for 51.x citations (Koreion passage 51.22 "
+                "confirmed present at the line beginning 'τῇ ὥρᾳ σήμερον ἡ Κόρη').",
         "section_pattern": r"(?:Heresy\s+\d+|\b(\d+)\.\s)",
+        "passage_hints": {
+            22: [
+                r"Κόρη\s*\(τουτέστιν\s*ἡ\s*παρθένος",
+                r"ἐν\s*τῷ\s*Κορείῳ",
+                r"ἐγέννησε\s*τ.ν\s*.ἰῶνα",
+            ],
+        },
     },
 
     "epiphanius:mensuris": {
@@ -1446,6 +1523,32 @@ SOURCES = {
         },
     },
 
+    "tabor:patio2012": {
+        "title": "A Preliminary Report of a Robotic Camera Exploration of a Sealed "
+                 "1st Century Tomb in East Talpiot, Jerusalem",
+        "author": "James D. Tabor",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Bible and Interpretation (online report)",
+        "urls": {
+            "full": "https://web.archive.org/web/20190909213207id_/"
+                    "http://www.bibleinterp.com/PDFs/Tabor2.pdf",
+        },
+        "note": "Freely published report. Original bibleinterp.com page is gone; "
+                "the live bibleinterp.arizona.edu article page renders empty, so the "
+                "URL is a Wayback Machine capture of the full PDF (47 pages). "
+                "Later captures of the same PDF are truncated at 1 MB.",
+    },
+
+    "taborjacobovici:discovery2012": {
+        "title": "The Jesus Discovery: The New Archaeological Find That Reveals the Birth of Christianity",
+        "author": "James D. Tabor and Simcha Jacobovici",
+        "category": MODERN,
+        "year": 2012,
+        "publisher": "Simon & Schuster",
+        "obtain": "Libraries, bookstores. Internet Archive borrowing (jesusdiscoveryne0000tabo).",
+    },
+
     "eisenman:james": {
         "title": "James the Brother of Jesus: The Key to Unlocking the Secrets of Early Christianity and the Dead Sea Scrolls",
         "author": "Robert Eisenman",
@@ -1669,6 +1772,15 @@ SOURCES = {
             "full": "https://waynenorthey.com/wp-content/uploads/2022/08/Schrader-18.May_.2016.pdf",
         },
         "note": "Pre-print PDF. Published version: HTR 110:3 (2017).",
+    },
+
+    "ilan:lexicon": {
+        "title": "Lexicon of Jewish Names in Late Antiquity, Part I: Palestine 330 BCE–200 CE",
+        "author": "Tal Ilan",
+        "category": MODERN,
+        "year": 2002,
+        "publisher": "Mohr Siebeck",
+        "obtain": "Academic libraries. Mohr Siebeck, Tübingen 2002.",
     },
 
     "deboer:magdalene": {

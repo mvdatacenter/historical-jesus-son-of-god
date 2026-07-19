@@ -159,6 +159,15 @@ def find_source_files(key, ref=None):
         rest = [f for f in files if f not in priority]
         return priority + rest
 
+    # A reference without a book number targets the work as a whole, so
+    # general files (full.txt, english.txt, ...) are searched before
+    # book-specific volumes; otherwise a bookN volume that sorts first can
+    # shadow the general file with a wrong-file section-number match.
+    if ref:
+        general = [f for f in files if not re.match(r"book\d+", f.name)]
+        books = [f for f in files if f not in general]
+        return general + books
+
     return files
 
 
@@ -375,7 +384,9 @@ def _roman(n):
 _ORDINALS = {
     1: "First", 2: "Second", 3: "Third", 4: "Fourth", 5: "Fifth",
     6: "Sixth", 7: "Seventh", 8: "Eighth", 9: "Ninth", 10: "Tenth",
-    11: "Eleventh", 12: "Twelfth",
+    11: "Eleventh", 12: "Twelfth", 13: "Thirteenth", 14: "Fourteenth",
+    15: "Fifteenth", 16: "Sixteenth", 17: "Seventeenth", 18: "Eighteenth",
+    19: "Nineteenth", 20: "Twentieth", 21: "Twenty-First", 22: "Twenty-Second",
 }
 
 
