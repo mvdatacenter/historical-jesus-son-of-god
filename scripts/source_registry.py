@@ -198,6 +198,38 @@ SOURCES = {
         "section_pattern": r"\b(\d+)\b",
     },
 
+    "apuleius:metamorphoses": {
+        "title": "The Golden Asse (Metamorphoses)",
+        "author": "Apuleius",
+        "category": ANCIENT,
+        "translation": "William Adlington (1566)",
+        "urls": {
+            "full": "https://www.gutenberg.org/cache/epub/1666/pg1666.txt",
+        },
+        "section_pattern": r"\b(\d+)\b",
+        "passage_hints": {
+            3: [r"resembling the light of the Moone"],
+            5: [r"call mee Queene Isis", r"naturall mother of all things"],
+        },
+    },
+
+    "diodorus:library": {
+        "title": "Library of History",
+        "author": "Diodorus Siculus",
+        "category": ANCIENT,
+        "translation": "C. H. Oldfather (Loeb, 1933)",
+        "urls": {
+            "book1A": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1A*.html",
+            "book1B": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1B*.html",
+        },
+        "section_pattern": r"\b(\d+)\b",
+        "passage_hints": {
+            11: [r"horns on her head", r"the moon is crescent-shaped"],
+            22: [r"vow never to marry another man"],
+            27: [r"queen of every land", r"mother of Horus the king"],
+        },
+    },
+
     "cassiusdio:romanhistory": {
         "title": "Roman History",
         "author": "Cassius Dio",
