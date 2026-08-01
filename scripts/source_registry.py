@@ -1435,9 +1435,52 @@ SOURCES = {
         "note": "Public domain. Loomis 1916 translation covers through Gregory I (590-604 CE).",
     },
 
+    "excerpta:barbari": {
+        "title": "Excerpta Latina Barbari",
+        "author": "Unknown Alexandrian chronicler",
+        "category": PATRISTIC,
+        "translation": "Andrew Smith (attalus.org)",
+        "urls": {
+            "full": "https://www.attalus.org/translate/barbari.html",
+        },
+        "note": (
+            "Public domain. Latin translation of a lost Greek chronicle composed by an "
+            "Alexandrian Christian in the sixth century. Section 52A/86 carries the earliest "
+            "literary attestation of the Magi's names: Bithisarea, Melichior, Gathaspa."
+        ),
+    },
+
+    "pseudobede:excerpta": {
+        "title": "Excerpta et Collectanea (Pseudo-Bede)",
+        "author": "Pseudo-Bede",
+        "category": PATRISTIC,
+        "translation": "Latin text, Migne PL 94",
+        "urls": {
+            "pl94": "https://archive.org/stream/patrologiaecurs94unkngoog/patrologiaecurs94unkngoog_djvu.txt",
+        },
+        "note": (
+            "Public domain. Transmitted among Bede's works but not by him. Describes each "
+            "Magus's age, complexion, dress, and gift; assigns the gold to Melchior and the "
+            "frankincense to Caspar."
+        ),
+    },
+
     # =========================================================================
     #  MODERN SCHOLARSHIP — Instructions only (copyrighted)
     # =========================================================================
+
+    "stefanski:coptic-ostraca": {
+        "title": "Coptic Ostraca from Medinet Habu",
+        "author": "Elizabeth Stefanski and Miriam Lichtheim",
+        "category": MODERN,
+        "year": 1952,
+        "publisher": "University of Chicago Press",
+        "obtain": (
+            "Oriental Institute Publications vol. 71. Free PDF from the ISAC/Oriental Institute "
+            "publications catalogue, or academic libraries. The Magi ostracon (gold to Bathezora, "
+            "frankincense to Melchior, myrrh to Thaddias) is at p. 7."
+        ),
+    },
 
     "lichtheim:ael3": {
         "title": "Ancient Egyptian Literature, Volume III: The Late Period",
