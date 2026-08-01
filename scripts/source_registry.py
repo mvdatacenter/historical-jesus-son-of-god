@@ -1465,6 +1465,21 @@ SOURCES = {
         ),
     },
 
+    "pseudokodinos:offices": {
+        "title": "De Officialibus Palatii Constantinopolitani",
+        "author": "pseudo-Kodinos",
+        "category": ANCIENT,
+        "translation": "Greek text with Latin, ed. Immanuel Bekker (CSHB, Bonn, 1839)",
+        "urls": {
+            "bonn": "https://archive.org/stream/deofficialibusp01bekkgoog/deofficialibusp01bekkgoog_djvu.txt",
+        },
+        "note": (
+            "Public domain. Fourteenth-century Byzantine court manual; its coronation "
+            "protocol has the patriarch anoint the new emperor's head with myron. OCR of "
+            "the 1839 Greek type is rough; use the scan itself for semantic review."
+        ),
+    },
+
     # =========================================================================
     #  MODERN SCHOLARSHIP — Instructions only (copyrighted)
     # =========================================================================
@@ -1479,6 +1494,35 @@ SOURCES = {
             "Oriental Institute Publications vol. 71. Free PDF from the ISAC/Oriental Institute "
             "publications catalogue, or academic libraries. The Magi ostracon (gold to Bathezora, "
             "frankincense to Melchior, myrrh to Thaddias) is at p. 7."
+        ),
+    },
+
+    "ordo:petrini": {
+        "title": "Rito per l'Inizio del Ministero Petrino del Vescovo di Roma",
+        "author": "Office of the Liturgical Celebrations of the Supreme Pontiff",
+        "category": MODERN,
+        "year": 2025,
+        "publisher": "Typis Vaticanis",
+        "obtain": (
+            "Freely published rite booklet for the inauguration Mass of 18 May 2025 at "
+            "https://www.vatican.va/news_services/liturgy/2025/documents/"
+            "ucepo-pubblicazioni_inizio-ministero-petrino_it.html . The conferral of the "
+            "Fisherman's Ring and the incensations appear in the order of celebration."
+        ),
+    },
+
+    "royal:chrism2023": {
+        "title": "The Consecration of the Coronation Oil",
+        "author": "The Royal Household",
+        "category": MODERN,
+        "year": 2023,
+        "publisher": "royal.uk",
+        "obtain": (
+            "Official announcement of 3 March 2023 at "
+            "https://www.royal.uk/news-and-activity/2023-03-03/"
+            "the-consecration-of-the-coronation-oil . Names the oil 'Chrism oil' and "
+            "records its consecration at the Church of the Holy Sepulchre in Jerusalem by "
+            "Patriarch Theophilos III and Archbishop Hosam Naoum."
         ),
     },
 
