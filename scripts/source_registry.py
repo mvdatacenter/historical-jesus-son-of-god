@@ -955,6 +955,30 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "tertullian:oratione": {
+        "title": "De Oratione (On Prayer)",
+        "author": "Tertullian",
+        "category": PATRISTIC,
+        "translation": "S. Thelwall (ANF Vol. 3, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0322.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "chrysostom:hommatt": {
+        "title": "Homilies on the Gospel of Matthew",
+        "author": "John Chrysostom",
+        "category": PATRISTIC,
+        "translation": "George Prevost, rev. M. B. Riddle (NPNF1 Vol. 10, 1888)",
+        "urls": {
+            "homily19": "https://www.newadvent.org/fathers/200119.htm",
+        },
+        "note": "Only Homily 19 (on Matthew 6, including the Lord's Prayer "
+                "doxology) is registered; the full series is ninety homilies.",
+        "section_pattern": r"(?:Homily\s+[IVXLC]+|\b(\d+)\.\s)",
+    },
+
     "origen:contracels": {
         "title": "Contra Celsum (Against Celsus)",
         "author": "Origen of Alexandria",
@@ -1286,6 +1310,17 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "cyprian:oratione": {
+        "title": "De Dominica Oratione (On the Lord's Prayer)",
+        "author": "Cyprian of Carthage",
+        "category": PATRISTIC,
+        "translation": "Robert Ernest Wallis (ANF Vol. 5, 1886)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/050704.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     # --- Additional Patristic & Apocryphal Sources ---
 
     "barnabas:epistle": {
@@ -1596,6 +1631,22 @@ SOURCES = {
         "year": 1951,
         "publisher": "SPCK",
         "obtain": "Library / used bookstores. Available on Internet Archive for borrowing.",
+    },
+
+    "westcotthort:appendix": {
+        "title": "The New Testament in the Original Greek: Introduction and Appendix",
+        "author": "Brooke Foss Westcott and Fenton John Anthony Hort",
+        "category": MODERN,
+        "year": 1882,
+        "publisher": "Macmillan",
+        "urls": {
+            "full": "https://archive.org/download/newtestamentinor82west/"
+                    "newtestamentinor82west_djvu.txt",
+        },
+        "note": "Public domain. The Appendix section 'Notes on Select Readings' "
+                "discusses the Matt 6:13 doxology: witnesses omitting it, the "
+                "partial forms in k, the Sahidic, and the Old Syriac, and the "
+                "full Syrian/Byzantine reading. OCR of the Greek is rough.",
     },
 
     "tabor:dynasty": {
