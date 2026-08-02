@@ -114,3 +114,48 @@ def test_reference_with_a_book_number_searches_that_book_first(tmp_path, monkeyp
 
 def test_citation_without_a_passage_keeps_alphabetical_order(tmp_path, monkeypatch):
     assert selected_file_names(tmp_path, None, monkeypatch) == ["book51.txt", "full.txt"]
+
+
+def test_hints_only_search_suppresses_the_section_number_fallback():
+    text = "7. A same-numbered section in the wrong file.\n"
+
+    snippet = search_passage_in_text(text, "16.2.7", "example:source", hints_only=True)
+
+    assert snippet == ""
+
+
+def test_registered_hint_in_a_later_file_beats_an_earlier_section_match(tmp_path, monkeypatch):
+    """The hinted passage sits in book16ch2.txt, but book16ch1.txt sorts first
+    and contains a bare section-number match. The hint must win."""
+    source_dir = tmp_path / "ancient" / "example_source"
+    source_dir.mkdir(parents=True)
+    (source_dir / "book16ch1.txt").write_text(
+        "7. A same-numbered section in the wrong chapter file.\n",
+        encoding="utf-8",
+    )
+    (source_dir / "book16ch2.txt").write_text(
+        "The hinted passage about the dragon begins here.\n",
+        encoding="utf-8",
+    )
+    monkeypatch.setattr(verify_citations, "SOURCES_DIR", tmp_path)
+    monkeypatch.setitem(
+        verify_citations.SOURCES,
+        "example:source",
+        {
+            "category": "ancient",
+            "urls": {},
+            "passage_hints": {7: [r"hinted passage about the dragon"]},
+        },
+    )
+    citation = verify_citations.Citation(
+        file="chapter5.tex",
+        line_num=1,
+        key="example:source",
+        passage="16.2.7",
+        context="",
+    )
+
+    verify_citations.verify_citation(citation)
+
+    assert citation.status == "LOCATED"
+    assert citation.snippet.startswith("[book16ch2.txt]")
