@@ -133,8 +133,12 @@ SOURCES = {
         "urls": {
             "book5": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D5",
             "book10": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D10",
+            "book37": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D37",
         },
         "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            60: [r"reckoned among the most sacred gems", r"HAMMONIS CORNU"],
+        },
     },
 
     "pliny:letters": {
@@ -236,6 +240,7 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "Earnest Cary (Loeb, 1914-1927)",
         "urls": {
+            "book37": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/37*.html",
             "book51": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/51*.html",
             "book60": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/60*.html",
             "book66": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/66*.html",
@@ -249,13 +254,19 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "Evelyn S. Shuckburgh (1889)",
         "urls": {
-            f"book{i}": f"https://penelope.uchicago.edu/Thayer/e/roman/texts/polybius/{i}*.html"
-            for i in range(1, 7)
+            **{
+                f"book{i}": f"https://penelope.uchicago.edu/Thayer/e/roman/texts/polybius/{i}*.html"
+                for i in range(1, 7)
+            },
+            "book39": "https://penelope.uchicago.edu/Thayer/e/roman/texts/polybius/39*.html",
         },
         "alt_urls": {
             "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0234",
         },
         "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            2: [r"capture of Corinth"],
+        },
     },
 
     "cicero:philippics": {
@@ -352,6 +363,13 @@ SOURCES = {
             "book16ch3": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/16C*.html",
             "book17ch1a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A1*.html",
             "book17ch1b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/17A2*.html",
+        },
+        # The three book-16 files split by chapter, but the locator searches them
+        # in name order, so a bare section number can match in the wrong chapter
+        # file. The hints pin the two cited passages to their actual text.
+        "passage_hints": {
+            7: [r"Typhon \(who, they add, was a dragon\)", r"formerly called Typhon"],
+            16: [r"The lake is called Gennesaritis"],
         },
         "note": "Only downloading books 16-17 (Near East, Egypt) as most relevant to manuscript.",
         "section_pattern": r"\b(\d+)\.\s",
