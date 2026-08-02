@@ -3,7 +3,22 @@ name: Tests
 on:
   push:
     branches: [ main, html ]
+    # Repeated under pull_request below: GitHub Actions does not expand YAML anchors.
+    paths:
+      - 'scripts/**'
+      - 'preface.tex'
+      - 'chapter*.tex'
+      - 'epilogue.tex'
+      - 'references.bib'
+      - '.github/workflows/tests.yml'
   pull_request:
+    paths:
+      - 'scripts/**'
+      - 'preface.tex'
+      - 'chapter*.tex'
+      - 'epilogue.tex'
+      - 'references.bib'
+      - '.github/workflows/tests.yml'
   workflow_dispatch:
 
 # Read-only: this workflow runs on pull requests, including those from forks.
