@@ -243,9 +243,16 @@ SOURCES = {
             "book37": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/37*.html",
             "book51": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/51*.html",
             "book60": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/60*.html",
+            # Thayer's page split does not follow Cary's book numbering here:
+            # the passage Cary prints as 66.15 (Berenice in the palace) sits on
+            # the "65" page, while the "66" page begins at Cary 66.17.
+            "book65": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/65*.html",
             "book66": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Cassius_Dio/66*.html",
         },
         "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            15: [r"Berenice was at the very height of her power"],
+        },
     },
 
     "polybius:histories": {
@@ -486,6 +493,8 @@ SOURCES = {
         "urls": {
             "julius": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Julius*.html",
             "augustus": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
+            "vespasian": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Vespasian*.html",
+            "titus": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Titus*.html",
         },
         "section_pattern": r"\b(\d+)\.\s",
     },
