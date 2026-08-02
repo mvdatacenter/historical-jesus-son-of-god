@@ -2,7 +2,7 @@
 
 Read this before writing or reviewing any manuscript prose. When asking ChatGPT to draft manuscript text, paste this file into the prompt (see `docs/ai-governance.md`).
 
-**FORMATTING NOTE:** One sentence per line. This is FORMATTING only, NOT a style guide. Sentences should be normal scholarly length, not artificially short or choppy.
+**FORMATTING NOTE:** One sentence per line. This governs formatting only. Keep sentences at normal scholarly length.
 
 ## Inline Citations: What's Allowed
 
@@ -12,32 +12,31 @@ Read this before writing or reviewing any manuscript prose. When asking ChatGPT 
 - Inscription corpora: CIS II 86, IGLS IV 1264, SEG 28.1235
 - Ancient authors with work: Eusebius, Historia Ecclesiastica 3.39
 
-**NOT OK inline:**
-- Lazy scholar name-drops: "Assmann (2001)", "Sterling (2023)", "Peters (2022)"
-- These look scholarly but convey nothing to the reader
+**Everything else goes through `\cite{}` or becomes content:**
+- Scholar name-drops like "Assmann (2001)", "Sterling (2023)", "Peters (2022)" look scholarly but convey nothing to the reader
 
-**Rule:** If a scholarly work matters, convey the idea it establishes. Try to keep it short, but don't make it too short when the idea needs more explanation or background. Don't name-drop without content.
+**Rule:** If a scholarly work matters, convey the idea it establishes. Keep it as short as the idea allows, expanding when the idea needs more explanation or background. Every reference arrives with the content behind it.
 
 **Example - Bad:** "as summarized by Assmann (2001)"
 **Example - Good:** "Egyptian hymns describe Amun as hidden in name and essence"
 
 The reader learns nothing from "Assmann (2001)" but learns the actual content from the second version.
 
-## Modern Scholars: No Name-Dropping
+## Modern Scholars: Ideas Stand on Their Own
 
-Modern scholar names NEVER appear in manuscript text.
-Ideas stand on their own. Cite works via `\cite{}` only.
+Modern scholar names appear only inside `\cite{}`.
+Ideas stand on their own.
 
 Ancient authors (Josephus, Eusebius, Philo, Jerome, Justin Martyr, etc.) are primary sources and ARE named in text.
 
 **Bad:** "MacDonald argues that the evangelists composed their narratives through deliberate mimesis."
-**Also bad:** "The evangelists composed their narratives through deliberate mimesis of Greek models `\cite{macdonald:mimesis}`." — This is still a bare claim. Removing the name but keeping only a conclusion with a cite is not enough.
+**Also bad:** "The evangelists composed their narratives through deliberate mimesis of Greek models `\cite{macdonald:mimesis}`." — This is still a bare claim. Removing the name but keeping only a conclusion with a cite still leaves a bare claim.
 **Good:** "The number of proper names in Luke that map to Odyssey characters, combined with shared narrative structures, indicates deliberate literary mimesis rather than coincidence." — The evidence carries the argument; the reader sees *why*.
 
 **Bad:** "Walsh situates Paul within this educated Greco-Roman intellectual world."
 **Good:** "Paul operated within an educated Greco-Roman intellectual world where pneuma functioned as substance rather than later metaphysical personification."
 
-**Rule:** If a claim is not widely accepted, the text must present the evidence. A `\cite{}` alone is not an argument. Extract the data points, not just the conclusion.
+**Rule:** When a claim lacks wide acceptance, the text presents the evidence; the argument lives in the data, with `\cite{}` marking its source. Extract the data points together with the conclusion.
 
 ## AI Garbage: Formal Definition
 
@@ -53,9 +52,9 @@ A sentence or clause qualifies as AI garbage if it meets any of the following co
 6. **Audience simulation** - The sentence addresses an imagined reader ("this shows," "it is important to note," "we can see") instead of presenting data.
 
 **Enforcement Rule:**
-- If removing a sentence does not reduce factual content, it must be deleted.
+- Delete every sentence whose removal leaves the factual content unchanged.
 - If a sentence can be reduced to one declarative clause without loss of information, it must be rewritten.
-- AI garbage is never patched; it is removed or rewritten entirely.
+- AI garbage is removed or rewritten entirely.
 
 **Example - Good:** "The triplet βασιλεία/δύναμις/δόξα appears in Hellenistic royal cult inscriptions."
 
@@ -66,7 +65,7 @@ A sentence or clause qualifies as AI garbage if it meets any of the following co
 - Inflates scope without evidence
 - Stacks clauses without increasing precision
 
-**Blacklisted Phrases (Non-Exhaustive):**
+**Phrases that mark AI garbage (non-exhaustive):**
 - "It is important to note..."
 - "This shows that..."
 - "Preserved in X and repeated for centuries..."

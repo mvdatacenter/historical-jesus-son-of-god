@@ -58,19 +58,19 @@ This repo accepts external contributions; keep proprietary data sources and extr
 
 ## Critical Rules
 
-AVOID LYING AT ALL COST.
-NEVER BE LAZY.
+TELL THE TRUTH AT ALL COST.
+DO THE COMPLETE WORK EVERY TIME.
 FOLLOW THE INSTRUCTIONS CLOSELY.
 
-**When the user says "stop", "STOP", or any variation: stop immediately.** Do not finish the current action, do not send another tool call, do not "just finish this one thing". Wait for instructions. The user sees something you don't. STOP MEANS STOP.
+**When the user says "stop", "STOP", or any variation: stop immediately.** Halt mid-action: leave the current action unfinished — even "just this one thing" — hold every further tool call, and wait for instructions. The user sees something you don't. STOP MEANS STOP.
 
 ## Detailed Guidance (read before the matching work)
 
 | Doc | Read before |
 |-----|-------------|
 | [docs/ai-governance.md](docs/ai-governance.md) | Any ChatGPT use: governance model, mandatory Claude review, bias handling, prompt templates, the ChatGPT CLI, and engineering-safety conduct |
-| [docs/writing-standards.md](docs/writing-standards.md) | Writing or reviewing manuscript prose: citation style, no scholar name-drops, AI-garbage definition, jargon, Greek/Hebrew formatting |
-| [docs/evidence-standards.md](docs/evidence-standards.md) | Adding or judging factual claims: probability bands, evidence vs proof, forbidden consensus phrasing |
+| [docs/writing-standards.md](docs/writing-standards.md) | Writing or reviewing manuscript prose: citation style, scholar-name rules, the AI-garbage definition, jargon, Greek/Hebrew formatting |
+| [docs/evidence-standards.md](docs/evidence-standards.md) | Adding or judging factual claims: probability bands, evidence vs proof, attribution rules for consensus phrasing |
 | [docs/DD_0001_citation-review-report.md](docs/DD_0001_citation-review-report.md) | Accepting any new factual claim: the download → locate → semantic-review pipeline |
 | [docs/REVIEW.md](docs/REVIEW.md) | Reviewing a PR that changes the manuscript |
 
@@ -83,7 +83,7 @@ Extended Alexandria findings are reviewed in the private `historical-jesus-son-o
 ## Build System
 
 ```bash
-latexmk -lualatex manuscript.tex   # PDF → out/manuscript.pdf (LuaLaTeX or XeLaTeX; NOT pdflatex)
+latexmk -lualatex manuscript.tex   # PDF → out/manuscript.pdf (LuaLaTeX or XeLaTeX only)
 pandoc manuscript.tex -s --mathjax -o public/index.html   # HTML
 python map.py                      # Historical cities map → historical_cities_map.html
 ```
@@ -115,7 +115,7 @@ private SSH remote that requires org credentials.
 ## Branch Strategy
 
 - `main`: Primary development
-- **Never commit to main directly** - create PRs, don't merge unless instructed
+- **Every change reaches `main` through a PR** - create PRs, and merge only when instructed
 
 ## Docs Folder
 

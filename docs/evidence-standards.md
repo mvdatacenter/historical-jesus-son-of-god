@@ -25,7 +25,7 @@ Proof is reasoning about evidence.
 
 All claims must be placed into one probability band.
 
-**Verbal likelihood terms are forbidden.**
+**State likelihood only with the numeric bands.**
 
 Bands:
 - **Band A:** <0.1%
@@ -55,20 +55,20 @@ Only these bands permit absolute language.
 
 Probability updates are multiplicative, not additive.
 
-It is forbidden to:
-- describe updates as small percentage nudges,
-- smooth large updates into rhetorical moderation,
-- assign numbers without justification.
+State every update honestly:
+- give each update its true order of magnitude,
+- keep large updates at full strength in the prose,
+- justify every number you assign.
 
 Updates must be expressed as:
 - order-of-magnitude shifts,
 - elimination of alternative spaces,
 - or dominance of background structure.
 
-## Three Distinct States (Never Conflate)
+## Three Distinct States (Keep Separate)
 
 1. **Well-analyzed claim** → Probability can be placed on the scale.
-2. **Ill-analyzed claim (analysis not yet done)** → No probability placement allowed. No prose allowed.
+2. **Ill-analyzed claim (analysis not yet done)** → Probability placement and prose wait for the completed analysis.
 3. **Genuinely underdetermined claim (after analysis)** → Mid-band placement is permitted.
 
 The critical mistake is treating (2) as (3).
@@ -81,14 +81,11 @@ These are not the same and must be distinguished explicitly.
 
 ## Procedural Fix: Analysis Before Prose
 
-When likelihood has not been analyzed:
-- Do not write prose.
-- Do not assign a probability band.
-- Do not substitute "uncertain" language.
-
-Instead:
+When likelihood has not been analyzed, take exactly two actions:
 1. Record the question outside this public repo, marked "likelihood analysis required".
 2. Move on immediately to the next task or section.
+
+Prose, probability bands, and "uncertain" language all wait until the analysis is complete.
 
 **If likelihood has not been analyzed, record the question outside this public repo and write prose only after the analysis is complete.**
 
@@ -117,9 +114,9 @@ This example enforces the rule:
 
 Silence fails to update probability but does not reset it.
 
-## Forbidden Without Attribution
+## Allowed Only With Attribution
 
-The following are forbidden unless immediately followed by who, where, and when:
+Use the following only when immediately followed by who, where, and when:
 - "Most scholars agree"
 - "The consensus view"
 - "Traditionally understood"
@@ -127,7 +124,7 @@ The following are forbidden unless immediately followed by who, where, and when:
 
 ## Evidence Filtering Principles
 
-Do not dump AI output. Have a discussion:
+Filter AI output through a discussion:
 1. Ask a broad, bias-aware question.
 2. **Filter:** does this add or detract from reader value?
 3. **Challenge:** what is the strongest counter-argument?

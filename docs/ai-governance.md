@@ -34,17 +34,17 @@ Every non-trivial ChatGPT output must be reviewed by Claude before acceptance.
 - paragraphs > 6 sentences or > 120 words
 - core thesis material
 
-Claude review is not optional and not ceremonial.
+Claude review is mandatory and substantive.
 
 **Claude acceptance gate:**
-- No factual claims without anchors (see `docs/evidence-standards.md`)
-- No "consensus" phrasing without names
-- No sudden grammar collapse or filler
+- Every factual claim carries an anchor (see `docs/evidence-standards.md`)
+- Every "consensus" phrasing carries names
+- Grammar stays coherent and every sentence carries information
 - Any flagged paragraph triggers Rewrite-Not-Patch
 
 ## Risk Levels
 
-**Low-risk tasks (no escalation):**
+**Low-risk tasks (standard review):**
 - single-sentence additions
 - pure stylistic polishing
 - formatting or grammar fixes
@@ -73,7 +73,7 @@ It is a control mechanism, not a default behavior.
 
 If Claude detects hallucination, coherence collapse, or sudden loss of linguistic quality:
 - the affected paragraph must be fully regenerated
-- line-by-line patching is forbidden
+- full regeneration is the only accepted repair
 
 ---
 
@@ -84,7 +84,7 @@ If Claude detects hallucination, coherence collapse, or sudden loss of linguisti
 
 Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **strengthen** user's argument.
 
-**CRITICAL:** ChatGPT's lack of sources ≠ claim is wrong. Don't weaken arguments based on ChatGPT's ignorance.
+**CRITICAL:** ChatGPT's lack of sources ≠ claim is wrong. Keep arguments at full strength when ChatGPT merely lacks sources.
 
 ## When to Use ChatGPT
 
@@ -92,7 +92,7 @@ Claude's job: **interrogate** ChatGPT's critique, **correct** for biases, **stre
 - **Drafting** - Write manuscript content (Claude reviews/edits minimally)
 - **Style review** - Check if additions match existing text
 
-**Don't use ChatGPT for:** Code, commits, plans, instruction files
+**Keep with Claude:** Code, commits, plans, instruction files
 
 **IMPORTANT: ChatGPT has NO access to the manuscript files.** It cannot see line numbers, chapter content, or any text unless you paste it into the prompt. When asking ChatGPT to review or compare sections, you MUST paste the actual text. References like "lines 595-644" mean nothing to ChatGPT.
 
@@ -135,20 +135,20 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 **For MINOR topics:** Use top 2-3 strongest arguments only
 
 **For CENTRAL thesis:** Use ALL strong non-redundant arguments ChatGPT provides, and audit every citation
-- Read FULL response (don't stop at first 2-3)
+- Read FULL response, through to the last argument
 - Check book for redundancy
 - Incorporate all NEW strong arguments
-- Keep or reject every response section explicitly; never silently ignore citations
-- Never paste everything mindlessly; review everything
+- Keep or reject every response section explicitly, so each citation gets a recorded decision
+- Review everything, then paste only what passed review
 - Example: "Was Gospel of John written by a woman?" = central → use all 9 arguments ChatGPT provides
 
-## Do Not Dilute Arguments
+## Dilute Arguments Only on Hard Evidence
 
 **DO dilute if:**
 - ChatGPT provides specific contradictory data from named source
 - Multiple independent sources with hard data contradict
 
-**DO NOT dilute if:**
+**Keep full strength if:**
 - ChatGPT says "I can't find peer-reviewed sources"
 - ChatGPT lacks sources in training data (absence of evidence)
 
@@ -158,20 +158,20 @@ Here's NEW text: [PASTE]. Does it match? Any awkward transitions?"
 ```
 User will review and mark "bogus" (Western bias) or "needs research" (legitimate).
 
-## ChatGPT: Listen But Never Trust (CRITICAL)
+## ChatGPT: Listen, Then Verify (CRITICAL)
 
 ChatGPT is a very helpful research resource. It finds sources, points to scholarly debates, identifies parallels, and suggests directions that would take hours to discover manually. Use it freely for research.
 
 ChatGPT also lies often, especially due to bias. It halluccinates sources, fabricates verse references, invents scholarly consensus, and presents its gaps as fact. It is helpful but unreliable.
 
-**The rule: listen to ChatGPT, but never trust it.**
+**The rule: listen to ChatGPT, then verify everything it says independently.**
 
 - ChatGPT says a verse contains X → useful lead, now read the actual verse
 - ChatGPT says an ancient text has a passage → useful lead, now find the text
 - ChatGPT can't find something → that means nothing, the source may exist outside its training data
 - ChatGPT confirms something → that also means nothing, it may be hallucinating
 
-**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is the starting point of verification, never the endpoint. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look outside this public repo so it can be fed through the pipeline. Claims move forward only when verification supports them; otherwise they stay out.
+**Every factual claim that enters the book must be independently verified against a primary source.** ChatGPT's answer is only ever the starting point of verification. When ChatGPT points to a source, the next step is the citation verification pipeline: download the source, search the text, present side-by-side for review. When the source is missing from the registry, add it. When the source needs to be acquired, record what source is needed and where to look outside this public repo so it can be fed through the pipeline. Claims move forward only when verification supports them; otherwise they stay out.
 
 ## Bias Detection Reference
 
@@ -213,7 +213,7 @@ Tasks:
 1. Fact-check specific claims.
 2. Identify real weaknesses or gaps.
 3. ALSO suggest alternate perspectives (Catholic, Orthodox, Arab, Slavic, Continental, Near Eastern).
-4. Do not weaken non-US achievements by default.
+4. Present non-US achievements at full strength by default.
 5. If the source or idea is unconventional, extract valid observations separately from speculative conclusions.
 6. Provide links to multiple scholarly or serious sources.
 ```
@@ -251,27 +251,27 @@ The assistant has a disgusting tendency to hide bugs. When code breaks or produc
 **Example of bad behavior:** Translation script only reads half the text due to a bug. Claude proceeds with translation anyway, delivers half-translated output, and when user catches it, Claude ignores the accusation and keeps polishing the garbage output.
 
 **Required behavior when something breaks:**
-1. **STOP immediately** - Do not proceed with broken output
+1. **STOP immediately** - halt everything built on the broken output
 2. **Say explicitly:** "The code is broken. It's doing X instead of Y."
-3. **Fix the actual bug** - Not a hack, not a workaround, the actual bug
+3. **Fix the actual bug** - the root cause itself
 4. **Re-run from scratch** - With the fixed code
-5. **Never proceed with partial/wrong data** - Even if "most of it" looks ok
+5. **Proceed only with complete, correct data** - "most of it looks ok" still means stop and fix
 
 **If user says "you broke it" or "this is wrong":**
 1. STOP what you're doing
 2. Acknowledge the specific problem
 3. Find and fix the root cause
-4. Do NOT keep iterating on broken output
+4. Resume iterating only after the root cause is fixed
 
-## Never Commit Broken Code
+## Commit Only Working Code
 
-**NEVER attempt to commit code that:**
-1. You haven't tested
-2. Doesn't work
-3. Is "work in progress"
-4. You're not sure about
+**Commit code only when all of these hold:**
+1. You have tested it
+2. It works
+3. It is complete
+4. You are sure about it
 
-If you wrote code and it doesn't work, **revert it**. Don't commit garbage hoping to fix it later.
+If you wrote code and it doesn't work, **revert it**; commit again once it actually works.
 
 ## Tone Note
 
