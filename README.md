@@ -71,7 +71,7 @@ FOLLOW THE INSTRUCTIONS CLOSELY.
 | [docs/ai-governance.md](docs/ai-governance.md) | Any ChatGPT use: governance model, mandatory Claude review, bias handling, prompt templates, the ChatGPT CLI, and engineering-safety conduct |
 | [docs/writing-standards.md](docs/writing-standards.md) | Writing or reviewing manuscript prose: citation style, no scholar name-drops, AI-garbage definition, jargon, Greek/Hebrew formatting |
 | [docs/evidence-standards.md](docs/evidence-standards.md) | Adding or judging factual claims: probability bands, evidence vs proof, forbidden consensus phrasing |
-| [docs/citation-verification.md](docs/citation-verification.md) | Accepting any new factual claim: the download → locate → semantic-review pipeline |
+| [docs/DD_0001_citation-review-report.md](docs/DD_0001_citation-review-report.md) | Accepting any new factual claim: the download → locate → semantic-review pipeline |
 | [docs/REVIEW.md](docs/REVIEW.md) | Reviewing a PR that changes the manuscript |
 
 ## Adding Content to Chapters
@@ -106,14 +106,11 @@ Build and publish (`.github/workflows/ci.yml`), on `main`/`html` branches:
 3. Deploy to GitHub Pages
 4. Create release with PDF
 
-Tests (`.github/workflows/tests.yml`), on `main`/`html` and on pull requests:
-runs `pytest` over `scripts/`. It triggers on changes to `scripts/`, to the
-manuscript files the citation invariants scan (`preface.tex`, `chapter*.tex`,
-`epilogue.tex`), to `references.bib`, and to the workflow itself, so it runs exactly
-when its result can change. It installs pytest directly and
-holds read-only permissions, since it runs on pull requests from forks. Installing
-pytest directly also keeps the job independent of Poetry, whose `tychicus` pin
-resolves over a private SSH remote that requires org credentials.
+Tests (`.github/workflows/tests.yml`), on `main`/`html` and on every pull request:
+runs `pytest` over `scripts/`. It installs pytest directly and holds read-only
+permissions, since it runs on pull requests from forks. Installing pytest directly
+also keeps the job independent of Poetry, whose `tychicus` pin resolves over a
+private SSH remote that requires org credentials.
 
 ## Branch Strategy
 
