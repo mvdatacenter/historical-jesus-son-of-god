@@ -52,3 +52,7 @@ sources/modern_verification_report.md
 sources/modern/
 .pr-review.json
 .test-results/
+*.egg-info/
+.venv/
+.pytest_cache/
+
