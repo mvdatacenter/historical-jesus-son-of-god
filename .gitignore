@@ -1,4 +1,9 @@
 # Auto-generated AI instruction files
+# The .githooks wrappers cache the central hook scripts here, and a checkout that has not
+# run them yet holds a hundred untracked files without this rule.
+.ai-shared/
+# The pre-rename cache path. Nothing writes it any more; it stays ignored so a checkout
+# that still carries one is not turned into an untracked-file failure by this rename.
 .claude-shared/
 CLAUDE.md
 .claude/*
