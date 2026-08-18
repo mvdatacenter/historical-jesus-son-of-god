@@ -94,7 +94,7 @@ Fonts: EB Garamond (main/Greek), SBL Hebrew, Garamond-Math; languages via `polyg
 
 ## Scripts
 
-`scripts/` holds the citation pipeline (`source_registry.py`, `download_sources.py`, `verify_citations.py`, `review_citations.py`, `manual_review.py`, `verify_modern_works.py`, `add_llm_evaluations.py`), the translation pipeline (`translate_book.py`, output under `translations/`), and LaTeX fixers (`fix_quotes.py`, `fix_latex.py`). The `chatgpt` CLI is documented in `docs/ai-governance.md`.
+`scripts/` holds the citation pipeline (`source_registry.py`, `download_sources.py`, `verify_citations.py`, `review_citations.py`, `manual_review.py`, `verify_modern_works.py`, `add_llm_evaluations.py`), the translation pipeline (`translate_book.py`, output under `translations/`), and the audiobook pipeline (`tts_openai.py`, `audiobook_release.py`). The `chatgpt` CLI is documented in `docs/ai-governance.md`.
 
 Generated reports: `sources/citation_review.html` (gitignored) and `sources/verification_report.md`.
 
