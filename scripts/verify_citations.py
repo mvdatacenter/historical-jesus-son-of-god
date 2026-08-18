@@ -246,7 +246,7 @@ def normalize_ref(passage):
     return result
 
 
-def search_passage_in_text(text, passage, key, deep=False):
+def search_passage_in_text(text, passage, key, deep=False, hints_only=False):
     """Search for a passage reference within downloaded text. Returns snippet or empty string."""
     ref = normalize_ref(passage)
     if not ref:
@@ -271,6 +271,8 @@ def search_passage_in_text(text, passage, key, deep=False):
     hint_line = _find_pattern_line(lines, hint_patterns)
     if hint_line is not None:
         return _extract_snippet(lines, hint_line, max_snippet, deep)
+    if hints_only:
+        return ""
 
     # Strategy 2: Search for section numbers in common patterns
     search_patterns = []
@@ -429,14 +431,20 @@ def verify_citation(citation, deep=False):
         citation.snippet = f"Source downloaded ({len(source_files)} files). No specific passage to verify."
         return
 
-    # Search for passage in downloaded texts
-    for fpath in source_files:
-        text = fpath.read_text(encoding="utf-8", errors="replace")
-        snippet = search_passage_in_text(text, citation.passage, key, deep=deep)
-        if snippet:
-            citation.status = "LOCATED"
-            citation.snippet = f"[{fpath.name}] {snippet}"
-            return
+    # Search for passage in downloaded texts. Registered hints pin the exact
+    # passage, so try them across every file before falling back to section
+    # numbers; otherwise a bare number matching in an earlier file wins over
+    # the hinted passage in a later one.
+    for hints_only in (True, False):
+        for fpath in source_files:
+            text = fpath.read_text(encoding="utf-8", errors="replace")
+            snippet = search_passage_in_text(
+                text, citation.passage, key, deep=deep, hints_only=hints_only
+            )
+            if snippet:
+                citation.status = "LOCATED"
+                citation.snippet = f"[{fpath.name}] {snippet}"
+                return
 
     citation.status = "NOT_FOUND"
     citation.snippet = f"Searched {len(source_files)} file(s). Passage '{citation.passage}' not located."
