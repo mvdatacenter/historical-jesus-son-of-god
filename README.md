@@ -111,10 +111,11 @@ runs `pytest` over `scripts/`. It triggers on changes to `scripts/`, to the
 manuscript files the citation invariants scan (`preface.tex`, `chapter*.tex`,
 `epilogue.tex`), to `references.bib`, to `.githooks/` and `.gitignore` because
 `scripts/test_githooks.py` asserts on those, and to the workflow itself, so it
-runs exactly when its result can change. It installs pytest directly and holds read-only
-permissions, since it runs on pull requests from forks. Installing pytest directly
-also keeps the job independent of Poetry, whose `tychicus` pin resolves over a
-private SSH remote that requires org credentials.
+runs exactly when its result can change. It pip-installs pytest, `requests`, and
+`beautifulsoup4` directly and holds read-only permissions, since it runs on
+pull requests from forks. Installing directly keeps the job independent of
+Poetry, whose `tychicus` pin resolves over a private SSH remote that requires
+org credentials.
 
 ## Branch Strategy
 

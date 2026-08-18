@@ -42,11 +42,12 @@ jobs:
         with:
           python-version: "3.12"
 
-      # The test modules import only source_registry and verify_citations, both
-      # stdlib-only. Poetry is deliberately not used: pyproject pins tychicus to a
-      # private SSH git remote that CI cannot reach.
+      # test_download_sources.py imports download_sources, which needs requests
+      # and beautifulsoup4; the other test modules are stdlib-only. Poetry is
+      # deliberately not used: pyproject pins tychicus to a private SSH git
+      # remote that CI cannot reach.
       - name: Install pytest
-        run: pip install pytest
+        run: pip install pytest requests beautifulsoup4
 
       - name: Run tests
         working-directory: scripts
