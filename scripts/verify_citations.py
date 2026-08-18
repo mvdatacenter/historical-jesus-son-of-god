@@ -152,12 +152,14 @@ def find_source_files(key, ref=None):
 
     files = sorted(source_dir.glob("*.txt"))
 
-    # Prioritize book file matching the reference
+    # Restrict to the book file matching the reference, plus general files.
+    # A file for a different book can only present the wrong passage: a
+    # [497] marker in book3.txt located a josephus:war 2.497--507 citation.
     if ref and ref.get("book"):
         book_num = ref["book"]
-        priority = [f for f in files if f"book{book_num}" in f.name]
-        rest = [f for f in files if f not in priority]
-        return priority + rest
+        matching = [f for f in files if re.match(rf"book{book_num}(?!\d)", f.name)]
+        general = [f for f in files if not re.match(r"book\d+", f.name)]
+        return matching + general
 
     # A reference without a book number targets the work as a whole, so
     # general files (full.txt, english.txt, ...) are searched before
@@ -226,6 +228,12 @@ def normalize_ref(passage):
         return result
 
     # Handle numeric references: "5.19.4", "18.1--10", "4.618", "83--84"
+    # Keep the range end: a chunked text may mark a later section of the
+    # range when the start falls mid-chunk (josephus:war 2.497--507 carries
+    # a [507] marker but no [497]).
+    range_match = re.search(r"(\d+)--?(\d+)\s*$", passage)
+    if range_match and int(range_match.group(2)) > int(range_match.group(1)):
+        result["section_end"] = int(range_match.group(2))
     # Remove range suffixes: "1--10" -> "1"
     clean = re.sub(r"--?\d+", "", passage)
     # Remove semicolons (multiple refs): "1.81; 4.123--125" -> take first
@@ -302,21 +310,27 @@ def search_passage_in_text(text, passage, key, deep=False, hints_only=False):
                 search_patterns.append(rf"{ord_word}\s+{ek}")
 
     if section:
-        # Common section numbering patterns
-        search_patterns.extend([
-            rf"\b{section}\.\s",           # "618. " (Whiston-style numbering)
-            rf"\b{section}\.$",            # "14." at end of line
-            rf"^\s*{section}\s*$",         # "14" on its own line
-            rf"\b{section}\)",             # "618)" numbered paragraphs
-            rf"\[{section}\]",             # "[27]" bracket style
-            rf"§\s*{section}\b",           # "§14"
-            rf"Chapter\s+{section}\b",     # "Chapter 39"
-            rf"Section\s+{section}\b",     # "Section 14"
-        ])
+        # Common section numbering patterns, tried for the range start first
+        # and then for each later section in the cited range: a chunked text
+        # may only mark a later section of the range.
+        section_end = ref.get("section_end", section)
+        candidates = range(section, min(section_end, section + 50) + 1)
+        for number in candidates:
+            search_patterns.extend([
+                rf"\b{number}\.\s",           # "618. " (Whiston-style numbering)
+                rf"\b{number}\.$",            # "14." at end of line
+                rf"^\s*{number}\s*$",         # "14" on its own line
+                rf"\b{number}\)",             # "618)" numbered paragraphs
+                rf"\[{number}\]",             # "[27]" bracket style
+                rf"§\s*{number}\b",           # "§14"
+                rf"Chapter\s+{number}\b",     # "Chapter 39"
+                rf"Section\s+{number}\b",     # "Section 14"
+            ])
 
-    if book and section:
-        # Try "Book X ... Chapter/Section Y" proximity
-        search_patterns.append(rf"(?:Book|BOOK)\s+(?:{book}|{_roman(book)})")
+    # A bare "Book X" heading match is deliberately not in the pattern list:
+    # it says nothing about the cited section, and a truncated or wrong file
+    # would still report LOCATED on its heading alone (found on josephus:war
+    # 2.497--507 against a book2.txt that ended at section 65).
 
     if chapter and section:
         search_patterns.append(rf"Chapter\s+{chapter}")
@@ -342,7 +356,59 @@ def search_passage_in_text(text, passage, key, deep=False, hints_only=False):
                 after=after,
             )
 
+    # Strategy 4: nearest preceding chunk marker. Perseus renders one
+    # marker per chunk, so a cited section usually sits inside a chunk
+    # whose start marker precedes it (War book 4 carries 77 markers for
+    # its ~650 sections; 4.317 falls in the chunk marked [314]). Anchor
+    # at the closest marker at or before the cited section and name the
+    # anchor, so the review reads from a stated nearby point rather than
+    # taking the snippet as the section itself.
+    if section:
+        anchor = _nearest_preceding_marker(lines, section)
+        if anchor is not None:
+            marker, index = anchor
+            snippet = _extract_snippet(
+                lines, index, max_snippet, deep, after=40 if deep else 12
+            )
+            return f"(from the chunk marked [{marker}]) {snippet}"
+
     return ""
+
+
+# A chunk marker more than this far before the cited section is treated as
+# unrelated numbering rather than the containing chunk (the largest gap
+# between consecutive markers in the rebuilt Josephus caches is 34).
+MAX_MARKER_DISTANCE = 40
+
+
+def _nearest_preceding_marker(lines, section):
+    """Return (marker, line_index) for the closest section marker at or
+    before the cited section, or None. Chunk markers increase through the
+    file, so only markers larger than every earlier marker count: numbers
+    that reset (per-chapter subsection numbering, page numbers) never form
+    such a record and must not anchor a citation. Fewer than three record
+    markers means the file has no chunk structure to anchor against."""
+    records = []
+    highest = 0
+    for index, line in enumerate(lines):
+        numbers = [int(m.group(1)) for m in re.finditer(r"\[\s*(\d+)\s*\]", line)]
+        m = re.match(r"^\s*(\d+)\s*$", line)
+        if m:
+            numbers.append(int(m.group(1)))
+        for number in numbers:
+            if number > highest:
+                highest = number
+                records.append((number, index))
+    if len(records) < 3:
+        return None
+    candidates = [
+        (marker, index)
+        for marker, index in records
+        if marker <= section and section - marker <= MAX_MARKER_DISTANCE
+    ]
+    if not candidates:
+        return None
+    return max(candidates)
 
 
 def _find_pattern_line(lines, patterns, flags=re.IGNORECASE):
@@ -432,11 +498,14 @@ def verify_citation(citation, deep=False):
         return
 
     # Search for passage in downloaded texts. Registered hints pin the exact
-    # passage, so try them across every file before falling back to section
-    # numbers; otherwise a bare number matching in an earlier file wins over
-    # the hinted passage in a later one.
-    for hints_only in (True, False):
-        for fpath in source_files:
+    # passage, so try them across every file of the source before falling
+    # back to section numbers: a bare number matching in an earlier file
+    # must not win over the hinted passage in a later one, and a hinted
+    # passage may sit in a file outside the cited book's number when the
+    # source's page split does not follow the citation's edition numbering
+    # (cassiusdio 66.15 sits on the "65" page).
+    for hints_only, files in ((True, find_source_files(key)), (False, source_files)):
+        for fpath in files:
             text = fpath.read_text(encoding="utf-8", errors="replace")
             snippet = search_passage_in_text(
                 text, citation.passage, key, deep=deep, hints_only=hints_only
