@@ -1553,6 +1553,20 @@ SOURCES = {
         ),
     },
 
+    "royal:epiphany": {
+        "title": "The Chapel Royal",
+        "author": "The Royal Household",
+        "category": MODERN,
+        "year": 2026,
+        "publisher": "royal.uk",
+        "obtain": (
+            "Official page at https://www.royal.uk/chapelroyal (accessed 18 August 2026). "
+            "States that on 6 January each year the Epiphany ceremony of the offering of "
+            "gold, frankincense and myrrh on behalf of the Sovereign takes place during "
+            "the service of Choral Holy Communion at the Chapel Royal, St James's Palace."
+        ),
+    },
+
     "lichtheim:ael3": {
         "title": "Ancient Egyptian Literature, Volume III: The Late Period",
         "author": "Miriam Lichtheim",
