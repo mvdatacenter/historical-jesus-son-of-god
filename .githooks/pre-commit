@@ -1,13 +1,30 @@
 #!/bin/bash
 # Thin wrapper. Fetches and caches pre-commit.sh from central repo, then runs it.
 
-SCRIPT=".claude-shared/pre-commit.sh"
-RAW="https://raw.githubusercontent.com/mvdatacenter/claude-instructions/main/hooks/pre-commit.sh"
+SCRIPT=".ai-shared/pre-commit.sh"
+RAW="https://raw.githubusercontent.com/mvdatacenter/ai-instructions/main/hooks/pre-commit.sh"
 
 if [ ! -f "$SCRIPT" ]; then
-    mkdir -p .claude-shared
+    mkdir -p .ai-shared
     TOKEN=$(gh auth token 2>/dev/null)
-    curl -sf -H "Authorization: token $TOKEN" "$RAW" -o "$SCRIPT"
+    # Land the download on a side path first: a transfer that dies mid-stream
+    # still writes what it received, and under -o "$SCRIPT" that half-file
+    # becomes the cache every later commit runs and no later fetch replaces.
+    PARTIAL="$SCRIPT.fetching.$$"
+    if curl -sf -H "Authorization: token $TOKEN" "$RAW" -o "$PARTIAL"; then
+        mv -f "$PARTIAL" "$SCRIPT"
+    else
+        rm -f "$PARTIAL"
+    fi
 fi
 
-[ -f "$SCRIPT" ] && bash "$SCRIPT"
+if [ ! -f "$SCRIPT" ]; then
+    echo "pre-commit: $SCRIPT is missing and could not be fetched from" >&2
+    echo "$RAW, so the central pre-commit logic never ran." >&2
+    echo "The commit is blocked rather than allowed through unchecked, because that" >&2
+    echo "script carries the staged-diff credential scan and the generated agent" >&2
+    echo "surfaces. Check network access and 'gh auth status', then commit again." >&2
+    exit 1
+fi
+
+bash "$SCRIPT"
