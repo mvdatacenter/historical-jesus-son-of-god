@@ -18,6 +18,7 @@ import re
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlparse
 
 try:
     import requests
@@ -207,6 +208,89 @@ def _get_min_size(url):
     return MIN_TEXT_SIZE["default"]
 
 
+# Section markers as they appear in extracted Perseus text: "[261]" bracket
+# style or a bare number on its own line. Numbers above this bound are years,
+# Stephanus pages, or other numerals, not section markers.
+MAX_SECTION_MARKER = 2000
+
+
+def _present_sections(text):
+    """Return the set of section numbers whose markers appear in text."""
+    sections = set()
+    for match in re.finditer(r"\[\s*(\d+)\s*\]", text):
+        number = int(match.group(1))
+        if number <= MAX_SECTION_MARKER:
+            sections.add(number)
+    for match in re.finditer(r"^\s*(\d+)\s*$", text, re.MULTILINE):
+        number = int(match.group(1))
+        if number <= MAX_SECTION_MARKER:
+            sections.add(number)
+    return sections
+
+
+def perseus_section_links(html, doc):
+    """Return the section numbers the page's navigation offers for this doc."""
+    pattern = rf"href=\"\?doc={re.escape(doc)}%3Asection%3D(\d+)\""
+    return sorted({int(s) for s in re.findall(pattern, html)})
+
+
+def complete_perseus_book(url, html, text):
+    """Build a chunked Perseus book from its section chunks.
+
+    Perseus renders only the first chunk of a large book at its book URL
+    (War book 2 came back as chapters 1–4 of 22), and a book it renders in
+    full carries a section marker only where a chunk happens to start, so
+    most cited sections have no marker to locate. The page's navigation
+    lists a link per section of the requested book; each section link
+    renders the whole chunk containing it, with the chunk's markers. Walk
+    those links in order, skipping sections whose markers fetched chunks
+    already carry, and build the book from the chunks alone. Raises
+    requests.RequestException on a failed chunk fetch so the caller's
+    retry loop sees the failure instead of caching a partial book.
+    """
+    doc_match = re.search(r"doc=([^&]+)", url)
+    if not doc_match:
+        return text
+    doc = doc_match.group(1)
+    sections = perseus_section_links(html, doc)
+    if not sections:
+        return text
+
+    covered = set()
+    pieces = []
+    fetches = 0
+    for section in sections:
+        if section in covered:
+            continue
+        chunk_url = (
+            f"https://www.perseus.tufts.edu/hopper/text?doc={doc}"
+            f"%3Asection%3D{section}"
+        )
+        # Perseus returns intermittent 503s; retry the chunk itself so one
+        # transient failure does not restart the whole book.
+        for attempt in range(1, MAX_RETRIES + 1):
+            time.sleep(REQUEST_DELAY * attempt)
+            try:
+                resp = requests.get(
+                    chunk_url, headers=HEADERS, timeout=REQUEST_TIMEOUT
+                )
+                resp.raise_for_status()
+                break
+            except requests.RequestException:
+                if attempt == MAX_RETRIES:
+                    raise
+        chunk_text = clean_html_to_text(resp.text, chunk_url)
+        fetches += 1
+        new_sections = _present_sections(chunk_text) - covered
+        if not new_sections and pieces:
+            continue
+        covered |= new_sections
+        pieces.append(chunk_text)
+    if fetches:
+        print(f"  Perseus: fetched {fetches} more chunk(s) to complete the book")
+    return "\n".join(pieces)
+
+
 def download_url(url, dest_path, dry_run=False):
     """Download a single URL and save as plain text. Returns True on success."""
     min_size = _get_min_size(url)
@@ -239,6 +323,15 @@ def download_url(url, dest_path, dry_run=False):
             resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
             resp.raise_for_status()
 
+            # A dead page that redirects to the site root returns 200 with
+            # the homepage, which then poisons the cache (classics.mit.edu
+            # did this for every http:// URL). Treat the dropped path as a
+            # failed download, not a page.
+            if urlparse(url).path not in ("", "/") and urlparse(resp.url).path in ("", "/"):
+                raise requests.RequestException(
+                    f"redirected to site root ({resp.url}); the requested page is gone"
+                )
+
             if is_pdf:
                 doc = pymupdf.open(stream=resp.content, filetype="pdf")
                 pages = [page.get_text() for page in doc]
@@ -248,6 +341,8 @@ def download_url(url, dest_path, dry_run=False):
                 text = resp.text.strip()
             else:
                 text = clean_html_to_text(resp.text, url)
+                if "perseus.tufts.edu" in url:
+                    text = complete_perseus_book(url, resp.text, text)
 
             if len(text) < min_size:
                 print(f"  WARNING: Very short text ({len(text)} chars) — "
