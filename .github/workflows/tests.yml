@@ -6,9 +6,6 @@ on:
     # Repeated under pull_request below: GitHub Actions does not expand YAML anchors.
     paths:
       - 'scripts/**'
-      # test_githooks.py asserts on these two, so a change to either has to run it.
-      - '.githooks/**'
-      - '.gitignore'
       - 'preface.tex'
       - 'chapter*.tex'
       - 'epilogue.tex'
@@ -17,8 +14,6 @@ on:
   pull_request:
     paths:
       - 'scripts/**'
-      - '.githooks/**'
-      - '.gitignore'
       - 'preface.tex'
       - 'chapter*.tex'
       - 'epilogue.tex'
