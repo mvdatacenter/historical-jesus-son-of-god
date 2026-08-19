@@ -33,6 +33,11 @@ SOURCES = {
             "book6": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D6",
             "book7": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D7",
         },
+        # book6.txt carries only sparse section markers; the world-ruler
+        # oracle (6.312--313) is located by its Whiston wording.
+        "passage_hints": {
+            312: [r"governor of the habitable earth"],
+        },
         "section_pattern": r"(?:BOOK\s+[IVXLC]+|Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
@@ -96,14 +101,24 @@ SOURCES = {
         "title": "Histories",
         "author": "Cornelius Tacitus",
         "category": ANCIENT,
-        "translation": "Alfred John Church and William Jackson Brodribb (1876)",
+        "translation": "Clifford H. Moore (Loeb, 1925–1931)",
         "urls": {
-            "book1": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/1A*.html",
+            # LacusCurtius splits each book across lettered pages; every
+            # page is listed so no chapter range is silently missing
+            # (4A alone covers only chapters 1-37 of book 4's 86).
+            "book1a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/1A*.html",
+            "book1b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/1B*.html",
             "book2a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/2A*.html",
             "book2b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/2B*.html",
-            "book3": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3A*.html",
-            "book4": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/4A*.html",
-            "book5": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/5A*.html",
+            "book3a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3A*.html",
+            "book3b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3B*.html",
+            "book3c": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/3C*.html",
+            "book4a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/4A*.html",
+            "book4b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/4B*.html",
+            "book4c": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/4C*.html",
+            "book4d": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/4D*.html",
+            "book5a": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/5A*.html",
+            "book5b": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/5B*.html",
         },
         "alt_urls": {
             "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0080",
@@ -346,6 +361,11 @@ SOURCES = {
         },
         "note": "Project Gutenberg. Macaulay translation. All 9 books on single page.",
         "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            # A bare "55." matches book 1's chapter 55 (Croesus) first;
+            # the cited 2.55 is the Dodona doves account.
+            55: [r"heard from the priests at Thebes"],
+        },
     },
 
     "epictetus:discourses": {
@@ -517,12 +537,18 @@ SOURCES = {
         "title": "Iliad",
         "author": "Homer",
         "category": ANCIENT,
-        "translation": "Samuel Butler (1898)",
+        "translation": "Edward, Earl of Derby (1864)",
         "urls": {
             "full": "https://www.gutenberg.org/files/6150/6150-h/6150-h.htm",
         },
-        "note": "Project Gutenberg. Butler prose translation. All 24 books.",
+        "note": "Project Gutenberg #6150, Derby blank-verse translation. All "
+                "24 books, no line-number markers.",
         "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\.\s)",
+        "passage_hints": {
+            # Derby's verse carries no line numbers; 16.233 is Achilles'
+            # prayer to Zeus of Dodona.
+            233: [r"Dodona.s Lord, Pelasgian"],
+        },
     },
 
     "homer:odyssey": {
@@ -547,7 +573,7 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "E. D. A. Morshead (1908)",
         "urls": {
-            "full": "http://classics.mit.edu/Aeschylus/prometheus.html",
+            "full": "https://classics.mit.edu/Aeschylus/prometheus.html",
         },
         "note": "MIT Internet Classics Archive.",
         "section_pattern": r"\b(\d+)\b",
@@ -559,7 +585,7 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "Robert Potter (1882)",
         "urls": {
-            "full": "http://classics.mit.edu/Aeschylus/persians.html",
+            "full": "https://classics.mit.edu/Aeschylus/persians.html",
         },
         "note": "MIT Internet Classics Archive.",
         "section_pattern": r"\b(\d+)\b",
@@ -594,7 +620,7 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "Benjamin Jowett (1871)",
         "urls": {
-            "full": "http://classics.mit.edu/Plato/apology.html",
+            "full": "https://classics.mit.edu/Plato/apology.html",
         },
         "note": "MIT Internet Classics Archive.",
         "section_pattern": r"\b(\d+)[a-e]?\b",
@@ -624,7 +650,7 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "Benjamin Jowett (1871)",
         "urls": {
-            "full": "http://classics.mit.edu/Plato/stateman.html",
+            "full": "https://classics.mit.edu/Plato/stateman.html",
         },
         "note": "MIT Internet Classics Archive. Note: MIT spells it 'stateman'.",
         "section_pattern": r"\b(\d+)[a-e]?\b",
@@ -639,9 +665,9 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "S. H. Butcher (1895)",
         "urls": {
-            "part1": "http://classics.mit.edu/Aristotle/poetics.1.1.html",
-            "part2": "http://classics.mit.edu/Aristotle/poetics.2.2.html",
-            "part3": "http://classics.mit.edu/Aristotle/poetics.3.3.html",
+            "part1": "https://classics.mit.edu/Aristotle/poetics.1.1.html",
+            "part2": "https://classics.mit.edu/Aristotle/poetics.2.2.html",
+            "part3": "https://classics.mit.edu/Aristotle/poetics.3.3.html",
         },
         "note": "MIT Internet Classics Archive.",
         "section_pattern": r"\b(\d+)[a-b]?\b",
@@ -656,16 +682,16 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "W. D. Ross (1908)",
         "urls": {
-            "book1": "http://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
-            "book2": "http://classics.mit.edu/Aristotle/nicomachaen.2.ii.html",
-            "book3": "http://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
-            "book4": "http://classics.mit.edu/Aristotle/nicomachaen.4.iv.html",
-            "book5": "http://classics.mit.edu/Aristotle/nicomachaen.5.v.html",
-            "book6": "http://classics.mit.edu/Aristotle/nicomachaen.6.vi.html",
-            "book7": "http://classics.mit.edu/Aristotle/nicomachaen.7.vii.html",
-            "book8": "http://classics.mit.edu/Aristotle/nicomachaen.8.viii.html",
-            "book9": "http://classics.mit.edu/Aristotle/nicomachaen.9.ix.html",
-            "book10": "http://classics.mit.edu/Aristotle/nicomachaen.10.x.html",
+            "book1": "https://classics.mit.edu/Aristotle/nicomachaen.1.i.html",
+            "book2": "https://classics.mit.edu/Aristotle/nicomachaen.2.ii.html",
+            "book3": "https://classics.mit.edu/Aristotle/nicomachaen.3.iii.html",
+            "book4": "https://classics.mit.edu/Aristotle/nicomachaen.4.iv.html",
+            "book5": "https://classics.mit.edu/Aristotle/nicomachaen.5.v.html",
+            "book6": "https://classics.mit.edu/Aristotle/nicomachaen.6.vi.html",
+            "book7": "https://classics.mit.edu/Aristotle/nicomachaen.7.vii.html",
+            "book8": "https://classics.mit.edu/Aristotle/nicomachaen.8.viii.html",
+            "book9": "https://classics.mit.edu/Aristotle/nicomachaen.9.ix.html",
+            "book10": "https://classics.mit.edu/Aristotle/nicomachaen.10.x.html",
         },
         "note": "MIT Internet Classics Archive. All 10 books on single page.",
         "section_pattern": r"(?:BOOK\s+[IVXLC]+|\b(\d+)\b)",
@@ -677,10 +703,17 @@ SOURCES = {
         "category": ANCIENT,
         "translation": "G. R. Mair (Loeb, 1921)",
         "urls": {
-            "full": "https://www.attalus.org/old/aratus1.html",
+            "full": "https://www.theoi.com/Text/AratusPhaenomena.html",
         },
-        "note": "Attalus.org. Verse astronomical poem. Line 5 cited in Acts 17:28.",
+        "note": "Theoi.com, Mair's Loeb translation. Verse astronomical poem; "
+                "line 5 cited in Acts 17:28. The old attalus.org/old/aratus1.html "
+                "URL serves Plutarch's Life of Aratus of Sicyon, a different work.",
         "section_pattern": r"\b(\d+)\b",
+        # Theoi groups verses as [1], [10], ...; line 5 sits inside the [1]
+        # block, so the locator needs the passage itself.
+        "passage_hints": {
+            5: [r"his offspring"],
+        },
     },
 
     "thucydides:peloponnesian": {
@@ -1550,20 +1583,6 @@ SOURCES = {
             "the-consecration-of-the-coronation-oil . Names the oil 'Chrism oil' and "
             "records its consecration at the Church of the Holy Sepulchre in Jerusalem by "
             "Patriarch Theophilos III and Archbishop Hosam Naoum."
-        ),
-    },
-
-    "royal:epiphany": {
-        "title": "The Chapel Royal",
-        "author": "The Royal Household",
-        "category": MODERN,
-        "year": 2026,
-        "publisher": "royal.uk",
-        "obtain": (
-            "Official page at https://www.royal.uk/chapelroyal (accessed 18 August 2026). "
-            "States that on 6 January each year the Epiphany ceremony of the offering of "
-            "gold, frankincense and myrrh on behalf of the Sovereign takes place during "
-            "the service of Choral Holy Communion at the Chapel Royal, St James's Palace."
         ),
     },
 
