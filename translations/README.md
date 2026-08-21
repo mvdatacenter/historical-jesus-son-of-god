@@ -53,15 +53,6 @@ Rerunning the pipeline against the current English chapters is what closes that 
 `scripts/test_source_registry.py` holds every cited key in a translated edition to the
 same `references.bib` and registry entries the English edition uses (#175).
 
-Five lines of `polish/chapter5_po.tex`, from `Reprezentatywne głosy` on, are
-attribution and nothing else. The English edition carries their content as the single
-cited sentence at `chapter5.tex:1485`, so matching it collapses five Polish sentences
-into one, which is a rewrite rather than an attribution moved into a citation and needs
-the operator's agreement first. `AWAITING_OPERATOR_AGREEMENT` in
-`scripts/test_source_registry.py` exempts those exact lines from the surname sweep
-until that agreement is given, and a second test fails if an exemption stops matching
-the prose it names.
-
 ---
 
 ## Polish (polish/)

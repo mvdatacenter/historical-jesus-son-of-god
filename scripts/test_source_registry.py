@@ -121,17 +121,6 @@ OPTIONAL_POLISH_CASE_ENDING = r"(?:owie|ami|ach|iem|ego|emu|owi|owa|ów|ie|em|im
 
 MOUNTAIN_BEFORE_TABOR = re.compile(r"(?:Mount|Mt\.|G[oó]r(?:a|y|ę|ą|ze|e))\s+$")
 
-AWAITING_OPERATOR_AGREEMENT = {
-    "translations/polish/chapter5_po.tex": (
-        "Reprezentatywne głosy: R.~Bauckham o fundamencie naocznych świadków.",
-        "M.~Hengel o wczesnej, ustalonej czterokrotnej Ewangelii.",
-        "R.~E.~Brown o wspólnocie Janowej.",
-        "L.~T.~Johnson i J.~M.~G.~Barclay o miejskich zgromadzeniach Pawłowych.",
-        "L.~W.~Hurtado o wczesnej królewskiej/„dewocyjnej” chrystologii.",
-    ),
-}
-
-
 def modern_scholar_surnames():
     """Surnames of the modern scholars the bibliography carries, read from the
     keywords={modern} entries of references.bib. Ancient authors and eponymous
@@ -161,9 +150,8 @@ def scholars_named_in_prose():
     named = []
     for tex_path in ALL_TEX_FILES:
         name = tex_path.relative_to(PROJECT_ROOT).as_posix()
-        exempt = AWAITING_OPERATOR_AGREEMENT.get(name, ())
         for number, line in enumerate(tex_path.read_text(encoding="utf-8").split("\n"), 1):
-            if line.lstrip().startswith("%") or line.strip() in exempt:
+            if line.lstrip().startswith("%"):
                 continue
             prose = CITE_COMMAND_PATTERN.sub(" ", line)
             for surname, pattern in patterns.items():
@@ -183,22 +171,6 @@ def test_no_modern_scholar_is_named_in_prose():
     named = scholars_named_in_prose()
     assert named == [], (
         "Modern scholars named outside a citation:\n" + "\n".join(named)
-    )
-
-
-def test_pending_attribution_exemptions_still_match_their_prose():
-    """Each exemption above names a line awaiting an operator decision. When
-    the passage is rewritten the exemption goes with it, so a stale entry fails
-    here rather than quietly covering a future violation."""
-    stale = []
-    for name, lines in AWAITING_OPERATOR_AGREEMENT.items():
-        present = {
-            line.strip()
-            for line in (PROJECT_ROOT / name).read_text(encoding="utf-8").split("\n")
-        }
-        stale.extend(f"{name}: {line}" for line in lines if line not in present)
-    assert stale == [], (
-        "Exemptions no longer matching any line:\n" + "\n".join(stale)
     )
 
 
