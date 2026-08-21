@@ -33,6 +33,35 @@
 
 5. **Common fixes by language** - see below.
 
+## What a rerun writes, and what it never touches
+
+`translate_book.py --all` writes one file per English source it translates:
+`preface_XX.tex`, `chapter1_XX.tex` through `chapter6_XX.tex`, and `epilogue_XX.tex`,
+where `XX` is the first two letters of the language. `.gitattributes` marks those as
+generated, which records where they come from rather than putting them off limits —
+steps 3 to 5 above are hand work applied after every run.
+
+The master is not among them. `polish/manuscript_po.tex` carries the Polish chapter
+titles, `\setmainlanguage{polish}`, the font path, and the
+`\addbibresource{../../references.bib}` and `\printbibliography` calls that print the
+same three-part reference list as the English edition. No run of the pipeline writes
+it, so no rerun can fix it; edit it directly.
+
+The Polish chapters were translated from an English draft that predated the
+manuscript's citations, so they carry few of the 341 the English edition now holds.
+Rerunning the pipeline against the current English chapters is what closes that gap;
+`scripts/test_source_registry.py` holds every cited key in a translated edition to the
+same `references.bib` and registry entries the English edition uses (#175).
+
+Five lines of `polish/chapter5_po.tex`, from `Reprezentatywne głosy` on, are
+attribution and nothing else. The English edition carries their content as the single
+cited sentence at `chapter5.tex:1485`, so matching it collapses five Polish sentences
+into one, which is a rewrite rather than an attribution moved into a citation and needs
+the operator's agreement first. `AWAITING_OPERATOR_AGREEMENT` in
+`scripts/test_source_registry.py` exempts those exact lines from the surname sweep
+until that agreement is given, and a second test fails if an exemption stops matching
+the prose it names.
+
 ---
 
 ## Polish (polish/)
