@@ -2,12 +2,12 @@
 # preface.tex, chapter1.tex-chapter6.tex and epilogue.tex — as
 # <stem>_<language code>.tex under translations/<language>/ (#175). Marking
 # those records where they come from, so GitHub collapses them in diffs and
-# leaves them out of the language statistics. It does not put them off limits:
-# translations/README.md documents the fixes each run needs by hand afterwards.
+# leaves them out of the language statistics. They stay open to hand work:
+# translations/README.md documents the fixes each run needs afterwards.
 #
 # Everything else under translations/ is authored and stays authored. The Polish
-# master, translations/polish/manuscript_po.tex, is the case that matters: no run
-# of the pipeline writes it, so a run cannot fix it either.
+# master, translations/polish/manuscript_po.tex, is the case that matters: it is
+# hand-maintained, so a fix to it belongs in the file itself.
 translations/*/preface_*.tex linguist-generated=true
 translations/*/chapter*_*.tex linguist-generated=true
 translations/*/epilogue_*.tex linguist-generated=true

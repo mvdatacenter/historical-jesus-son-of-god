@@ -33,19 +33,19 @@
 
 5. **Common fixes by language** - see below.
 
-## What a rerun writes, and what it never touches
+## What a rerun writes, and what stays hand-authored
 
 `translate_book.py --all` writes one file per English source it translates:
 `preface_XX.tex`, `chapter1_XX.tex` through `chapter6_XX.tex`, and `epilogue_XX.tex`,
 where `XX` is the first two letters of the language. `.gitattributes` marks those as
-generated, which records where they come from rather than putting them off limits —
-steps 3 to 5 above are hand work applied after every run.
+generated, which records where they come from while leaving them open to hand work:
+steps 3 to 5 above are applied after every run.
 
-The master is not among them. `polish/manuscript_po.tex` carries the Polish chapter
+The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the
 `\addbibresource{../../references.bib}` and `\printbibliography` calls that print the
-same three-part reference list as the English edition. No run of the pipeline writes
-it, so no rerun can fix it; edit it directly.
+same three-part reference list as the English edition. The pipeline leaves it alone,
+so edit it directly.
 
 The Polish chapters were translated from an English draft that predated the
 manuscript's citations, so they carry few of the 341 the English edition now holds.
