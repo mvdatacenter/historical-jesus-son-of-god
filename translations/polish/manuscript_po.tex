@@ -29,6 +29,18 @@
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{graphicx}
+
+% ----- Bibliography -----
+% Same references.bib as the English edition, at the repository root; the CI
+% Polish build runs latexmk from this directory, so the path is relative to it.
+\usepackage[
+  backend=biber,
+  style=authortitle,
+  sorting=nyt,
+  abbreviate=false
+]{biblatex}
+\addbibresource{../../references.bib}
+
 \usepackage[hidelinks]{hyperref}
 
 % Pandoc list helper
@@ -68,5 +80,11 @@
 \input{chapter6_po}
 
 \input{epilogue_po}
+
+\backmatter
+\nocite{*}
+\printbibliography[keyword=ancient,title={Starożytne źródła pierwotne}]
+\printbibliography[keyword=patristic,title={Ojcowie Kościoła i wczesna literatura chrześcijańska}]
+\printbibliography[keyword=modern,title={Opracowania współczesne}]
 
 \end{document}
