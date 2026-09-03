@@ -1,13 +1,34 @@
 #!/bin/bash
 # Thin wrapper. Fetches and caches post-checkout.sh from central repo, then runs it.
 
-SCRIPT=".claude-shared/post-checkout.sh"
-RAW="https://raw.githubusercontent.com/mvdatacenter/claude-instructions/main/hooks/post-checkout.sh"
+SCRIPT=".ai-shared/post-checkout.sh"
+RAW="https://raw.githubusercontent.com/mvdatacenter/ai-instructions/main/hooks/post-checkout.sh"
+
+PRECOMMIT_SCRIPT=".ai-shared/pre-commit.sh"
+PRECOMMIT_RAW="https://raw.githubusercontent.com/mvdatacenter/ai-instructions/main/hooks/pre-commit.sh"
+
+if [ ! -f "$PRECOMMIT_SCRIPT" ]; then
+    mkdir -p .ai-shared
+    TOKEN=$(gh auth token 2>/dev/null)
+    curl -sf -H "Authorization: token $TOKEN" "$PRECOMMIT_RAW" -o "$PRECOMMIT_SCRIPT"
+fi
 
 if [ ! -f "$SCRIPT" ]; then
-    mkdir -p .claude-shared
+    mkdir -p .ai-shared
     TOKEN=$(gh auth token 2>/dev/null)
     curl -sf -H "Authorization: token $TOKEN" "$RAW" -o "$SCRIPT"
 fi
 
-[ -f "$SCRIPT" ] && bash "$SCRIPT" "$@"
+if [ -f "$SCRIPT" ]; then
+    bash "$SCRIPT" "$@"
+else
+    echo "post-checkout: $SCRIPT is missing and could not be fetched; this" >&2
+    echo "checkout is unprovisioned. Run 'bash .githooks/pre-commit' once network" >&2
+    echo "or 'gh auth' is available. Session launches refuse an unprovisioned" >&2
+    echo "checkout (PM-0064), and commit and push run the same provisioning." >&2
+fi
+
+# The checkout has already happened; this hook's status is the status Git gives
+# back for it, so a provisioning problem is reported rather than turned into a
+# failed checkout, switch, or clone (#1964).
+exit 0

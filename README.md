@@ -94,7 +94,7 @@ Fonts: EB Garamond (main/Greek), SBL Hebrew, Garamond-Math; languages via `polyg
 
 ## Scripts
 
-`scripts/` holds the citation pipeline (`source_registry.py`, `download_sources.py`, `verify_citations.py`, `review_citations.py`, `manual_review.py`, `verify_modern_works.py`, `add_llm_evaluations.py`), the translation pipeline (`translate_book.py`, output under `translations/`), and LaTeX fixers (`fix_quotes.py`, `fix_latex.py`). The `chatgpt` CLI is documented in `docs/ai-governance.md`.
+`scripts/` holds the citation pipeline (`source_registry.py`, `download_sources.py`, `verify_citations.py`, `review_citations.py`, `manual_review.py`, `verify_modern_works.py`, `add_llm_evaluations.py`), the translation pipeline (`translate_book.py`, output under `translations/`), and the audiobook pipeline (`tts_openai.py`, `audiobook_release.py`). The `chatgpt` CLI is documented in `docs/ai-governance.md`.
 
 Generated reports: `sources/citation_review.html` (gitignored) and `sources/verification_report.md`.
 
@@ -107,13 +107,14 @@ Build and publish (`.github/workflows/ci.yml`), on `main`/`html` branches:
 4. Create release with PDF
 
 Tests (`.github/workflows/tests.yml`), on `main`/`html` and on pull requests:
-runs `pytest` over `scripts/`. It triggers on changes to `scripts/`, to the
-manuscript files the citation invariants scan (`preface.tex`, `chapter*.tex`,
-`epilogue.tex`), to `references.bib`, and to the workflow itself, so it runs exactly
-when its result can change. It installs pytest directly and holds read-only
-permissions, since it runs on pull requests from forks. Installing pytest directly
-also keeps the job independent of Poetry, whose `tychicus` pin resolves over a
-private SSH remote that requires org credentials.
+runs `pytest` over `scripts/`. It triggers on changes to `scripts/`, the files
+the citation invariants scan (`preface.tex`, `chapter*.tex`, `epilogue.tex`,
+`translations/`), `references.bib`, and the workflow itself, so it runs exactly
+when its result can change. It pip-installs pytest, `requests`, and
+`beautifulsoup4` directly and holds read-only permissions, since it runs on
+pull requests from forks. Installing directly keeps the job independent of
+Poetry, whose `tychicus` pin resolves over a private SSH remote that requires
+org credentials.
 
 ## Branch Strategy
 
