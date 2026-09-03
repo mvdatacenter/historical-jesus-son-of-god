@@ -2090,6 +2090,15 @@ SOURCES = {
         "obtain": "Academic libraries. ISBN 978-0-8006-3609-6.",
     },
 
+    "zias:crucified": {
+        "title": "The Crucified Man from Giv'at ha-Mivtar: A Reappraisal",
+        "author": "Joseph Zias and Eliezer Sekeles",
+        "category": MODERN,
+        "year": 1985,
+        "publisher": "Israel Exploration Journal 35, pp. 22-27",
+        "obtain": "JSTOR (Israel Exploration Journal 35.1) or academic libraries.",
+    },
+
     "pelegbarkat:herodian": {
         "title": "The Temple Mount Excavations in Jerusalem 1968-1978 Directed by Benjamin Mazar. Final Reports, Volume V: Herodian Architectural Decoration and King Herod's Royal Portico",
         "author": "Orit Peleg-Barkat",

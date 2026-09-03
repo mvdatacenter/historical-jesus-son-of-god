@@ -154,6 +154,12 @@ then check the cited passage manually.
   - Cited in: chapter5.tex
   - Access: **Full text on ResearchGate** — https://www.researchgate.net/publication/248672000_The_Use_and_Abuse_of_P52_Papyrological_Pitfalls_in_the_Dating_of_the_Fourth_Gospel
 
+### Zias, Joseph and Sekeles, Eliezer
+
+- **"The Crucified Man from Giv'at ha-Mivtar: A Reappraisal"** (1985), Israel Exploration Journal 35, pp. 22-27
+  - Cited in: chapter2.tex
+  - Access: **Paywalled** — Israel Exploration Journal 35.1 (1985), via JSTOR or academic libraries.
+
 ---
 
 ## Not Cited but in Bibliography
