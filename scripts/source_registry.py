@@ -1015,6 +1015,30 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "tertullian:oratione": {
+        "title": "De Oratione (On Prayer)",
+        "author": "Tertullian",
+        "category": PATRISTIC,
+        "translation": "S. Thelwall (ANF Vol. 3, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0322.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "chrysostom:hommatt": {
+        "title": "Homilies on the Gospel of Matthew",
+        "author": "John Chrysostom",
+        "category": PATRISTIC,
+        "translation": "George Prevost, rev. M. B. Riddle (NPNF1 Vol. 10, 1888)",
+        "urls": {
+            "homily19": "https://www.newadvent.org/fathers/200119.htm",
+        },
+        "note": "Only Homily 19 (on Matthew 6, including the Lord's Prayer "
+                "doxology) is registered; the full series is ninety homilies.",
+        "section_pattern": r"(?:Homily\s+[IVXLC]+|\b(\d+)\.\s)",
+    },
+
     "origen:contracels": {
         "title": "Contra Celsum (Against Celsus)",
         "author": "Origen of Alexandria",
@@ -1346,6 +1370,17 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "cyprian:oratione": {
+        "title": "De Dominica Oratione (On the Lord's Prayer)",
+        "author": "Cyprian of Carthage",
+        "category": PATRISTIC,
+        "translation": "Robert Ernest Wallis (ANF Vol. 5, 1886)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/050704.htm",
+        },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     # --- Additional Patristic & Apocryphal Sources ---
 
     "barnabas:epistle": {
@@ -1656,6 +1691,67 @@ SOURCES = {
         "year": 1951,
         "publisher": "SPCK",
         "obtain": "Library / used bookstores. Available on Internet Archive for borrowing.",
+    },
+
+    "westcotthort:appendix": {
+        "title": "The New Testament in the Original Greek: Introduction and Appendix",
+        "author": "Brooke Foss Westcott and Fenton John Anthony Hort",
+        "category": MODERN,
+        "year": 1882,
+        "publisher": "Macmillan",
+        "urls": {
+            "full": "https://archive.org/download/newtestamentinor82west/"
+                    "newtestamentinor82west_djvu.txt",
+        },
+        "note": "Public domain. The Appendix section 'Notes on Select Readings' "
+                "discusses the Matt 6:13 doxology: witnesses omitting it, the "
+                "partial forms in k, the Sahidic, and the Old Syriac, and the "
+                "full Syrian/Byzantine reading. OCR of the Greek is rough.",
+    },
+
+    "metzger:textual": {
+        "title": "A Textual Commentary on the Greek New Testament",
+        "author": "Bruce M. Metzger",
+        "category": MODERN,
+        "year": 1994,
+        "publisher": "Deutsche Bibelgesellschaft / United Bible Societies",
+        "obtain": (
+            "Second edition, Stuttgart 1994, the companion volume to the UBS Greek "
+            "New Testament, fourth edition. Library or used bookstores; available "
+            "on Internet Archive for borrowing. The Matt 6:13 entry, pp. 13-14, lists "
+            "the witnesses lacking the closing ascription and concludes it was "
+            "composed, perhaps on the basis of 1 Chr 29:11-13, to adapt the prayer "
+            "for liturgical use."
+        ),
+    },
+
+    "nrsv:ue": {
+        "title": "New Revised Standard Version Updated Edition",
+        "author": "National Council of the Churches of Christ in the USA",
+        "category": MODERN,
+        "year": 2021,
+        "publisher": "Friendship Press",
+        "urls": {
+            "matt6": "https://www.biblegateway.com/passage/"
+                     "?search=Matthew%206%3A13&version=NRSVUE",
+        },
+        "note": "Matthew 6:13 ends at 'rescue us from the evil one'; the footnote "
+                "reads 'Other ancient authorities add, in some form, For the kingdom "
+                "and the power and the glory are yours forever. Amen'.",
+    },
+
+    "ccc": {
+        "title": "Catechism of the Catholic Church",
+        "author": "Catholic Church",
+        "category": MODERN,
+        "year": 1997,
+        "publisher": "Libreria Editrice Vaticana",
+        "urls": {
+            "lordsprayer": "https://www.vatican.va/archive/ENG0015/__P9V.HTM",
+        },
+        "note": "Second edition. Paragraph 2760, in the article on the Lord's Prayer, "
+                "states that liturgical usage concluded the prayer with a doxology "
+                "very early, citing Didache 8.2 and Apostolic Constitutions 7.24.1.",
     },
 
     "tabor:dynasty": {
