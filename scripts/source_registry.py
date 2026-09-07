@@ -1709,6 +1709,51 @@ SOURCES = {
                 "full Syrian/Byzantine reading. OCR of the Greek is rough.",
     },
 
+    "metzger:textual": {
+        "title": "A Textual Commentary on the Greek New Testament",
+        "author": "Bruce M. Metzger",
+        "category": MODERN,
+        "year": 1994,
+        "publisher": "Deutsche Bibelgesellschaft / United Bible Societies",
+        "obtain": (
+            "Second edition, Stuttgart 1994, the companion volume to the UBS Greek "
+            "New Testament, fourth edition. Library or used bookstores; available "
+            "on Internet Archive for borrowing. The Matt 6:13 entry, pp. 13-14, lists "
+            "the witnesses lacking the closing ascription and concludes it was "
+            "composed, perhaps on the basis of 1 Chr 29:11-13, to adapt the prayer "
+            "for liturgical use."
+        ),
+    },
+
+    "nrsv:ue": {
+        "title": "New Revised Standard Version Updated Edition",
+        "author": "National Council of the Churches of Christ in the USA",
+        "category": MODERN,
+        "year": 2021,
+        "publisher": "Friendship Press",
+        "urls": {
+            "matt6": "https://www.biblegateway.com/passage/"
+                     "?search=Matthew%206%3A13&version=NRSVUE",
+        },
+        "note": "Matthew 6:13 ends at 'rescue us from the evil one'; the footnote "
+                "reads 'Other ancient authorities add, in some form, For the kingdom "
+                "and the power and the glory are yours forever. Amen'.",
+    },
+
+    "ccc": {
+        "title": "Catechism of the Catholic Church",
+        "author": "Catholic Church",
+        "category": MODERN,
+        "year": 1997,
+        "publisher": "Libreria Editrice Vaticana",
+        "urls": {
+            "lordsprayer": "https://www.vatican.va/archive/ENG0015/__P9V.HTM",
+        },
+        "note": "Second edition. Paragraph 2760, in the article on the Lord's Prayer, "
+                "states that liturgical usage concluded the prayer with a doxology "
+                "very early, citing Didache 8.2 and Apostolic Constitutions 7.24.1.",
+    },
+
     "tabor:dynasty": {
         "title": "The Jesus Dynasty: The Hidden History of Jesus, His Royal Family, and the Birth of Christianity",
         "author": "James D. Tabor",
