@@ -148,6 +148,8 @@ SOURCES = {
         "urls": {
             "book5": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D5",
             "book10": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D10",
+            "book16": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D16",
+            "book36": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D36",
             "book37": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D37",
         },
         "section_pattern": r"\b(\d+)\.\s",
@@ -515,6 +517,7 @@ SOURCES = {
             "augustus": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Augustus*.html",
             "vespasian": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Vespasian*.html",
             "titus": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Titus*.html",
+            "nero": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Nero*.html",
         },
         "section_pattern": r"\b(\d+)\.\s",
     },
@@ -1012,6 +1015,18 @@ SOURCES = {
         "urls": {
             "full": "https://www.newadvent.org/fathers/0317.htm",
         },
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "tertullian:spectaculis": {
+        "title": "De Spectaculis (On the Shows)",
+        "author": "Tertullian",
+        "category": PATRISTIC,
+        "translation": "S. Thelwall (ANF Vol. 3, 1885)",
+        "urls": {
+            "full": "https://www.newadvent.org/fathers/0303.htm",
+        },
+        "note": "Chapter 8: the circus consecrated to the Sun, the obelisk set out for the Sun, de Aegypto superstitio est.",
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
@@ -2221,6 +2236,42 @@ SOURCES = {
         "urls": {
             "record": "https://www.britishmuseum.org/collection/object/G_1888-0208-1",
         },
+    },
+
+    "iversen:obelisks-in-exile": {
+        "title": "Obelisks in Exile, Volume 1: The Obelisks of Rome",
+        "author": "Erik Iversen",
+        "category": MODERN,
+        "year": 1968,
+        "publisher": "G. E. C. Gad, Copenhagen",
+        "obtain": "Academic libraries. The standard history of each obelisk in Rome; the Vatican obelisk chapter covers the Alexandrian dedication, Caligula's transport, the circus, and the 1586 move.",
+    },
+
+    "toynbee:shrine-of-st-peter": {
+        "title": "The Shrine of St. Peter and the Vatican Excavations",
+        "author": "Jocelyn M. C. Toynbee and John B. Ward-Perkins",
+        "category": MODERN,
+        "year": 1956,
+        "publisher": "Longmans, Green, London",
+        "obtain": "Academic libraries or Internet Archive. The standard account of the 1940-1949 excavations under St Peter's, the necropolis, the circus, and the shrine beneath the high altar.",
+    },
+
+    "weitzmann:age-of-spirituality": {
+        "title": "Age of Spirituality: Late Antique and Early Christian Art, Third to Seventh Century",
+        "author": "Kurt Weitzmann (ed.)",
+        "category": MODERN,
+        "year": 1979,
+        "publisher": "Metropolitan Museum of Art, New York",
+        "obtain": "Free PDF from the Metropolitan Museum of Art (MetPublications); pages 531-532 on the Christ-Helios mosaic of the tomb of the Julii.",
+    },
+
+    "kantorowicz:laudes-regiae": {
+        "title": "Laudes Regiae: A Study in Liturgical Acclamations and Mediaeval Ruler Worship",
+        "author": "Ernst H. Kantorowicz",
+        "category": MODERN,
+        "year": 1946,
+        "publisher": "University of California Press, Berkeley",
+        "obtain": "Academic libraries. The study of the Christus vincit acclamation as a royal and imperial acclamation.",
     },
 }
 
