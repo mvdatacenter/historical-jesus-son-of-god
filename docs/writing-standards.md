@@ -78,6 +78,8 @@ A sentence or clause qualifies as AI garbage if it meets any of the following co
 No theology degree required.
 Comfortable with evidence, footnotes, and sustained argument.
 
+**What this reader already knows.** Before a passage is finished, ask of each fact it states: is this standard in the field, and does the educated general reader know it? This book re-derives settled findings from primary sources, so a finding the field reached long ago comes out reading like the book's own discovery, and a reader who meets a fact almost none of them know, stated as the book's conclusion, takes the book for fringe and discounts the argument built on it. Tell the reader in the passage that the finding is standard, and name a work they can open: a standard reference, a common Bible note, a catechism. Name the work; "most scholars agree" names nothing. Example: that Matthew's text of the Lord's Prayer gained its ending from liturgical use is standard, so the passage that traces it says the addition is not a finding of this book and points to the textual commentary on the Greek New Testament, the Bible footnote at Matt 6:13, and the Catechism at 2760.
+
 ## Jargon: When to Use vs. Replace
 
 ✅ **KEEP jargon when:**
