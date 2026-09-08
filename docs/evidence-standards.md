@@ -21,6 +21,28 @@ Silence does not reset base rates.
 Evidence is not proof.
 Proof is reasoning about evidence.
 
+## Valid Forms of Reasoning
+
+The question every passage answers is what most probably happened. Logical reasoning is the standard, and any of its forms may establish the answer, provided the conclusion follows from the premises and the evidence. The scientific method is one of them. Beside it stand, among others:
+
+- **Explanatory power.** The reading under which more of the record needs no special explanation is the more probable one. Count what each reading must explain away; the shorter ledger wins, by the margin between the ledgers. Counterfeit: calling the rival absurd instead of listing what it must explain away.
+- **Scientific method.** State what the reading predicts before looking, then look. A prediction found updates in proportion to how unlikely it was otherwise; a prediction missing counts against, in proportion to how surely it would have shown. Counterfeit: predicting after looking.
+- **Proof by contradiction.** Assume the rival reading and derive from the sources something they rule out; one of the premises must go. Counterfeit: deriving the contradiction from a premise the rival does not hold.
+- **Elimination.** List every reading the evidence allows and strike each that a source contradicts; what remains stands without positive proof. Counterfeit: a list that omits the reading the writer dislikes.
+- **Modus tollens.** If the reading were true, a thing would follow; the thing is absent; the reading is false. Valid only when the thing would have to be present.
+- **Argument from silence.** Valid only when the source would have mentioned the thing had it existed, and the writer shows that it would. Counterfeit: silence from a source that had no occasion to speak, or silence claimed where the source speaks.
+- **Independent agreement.** Two witnesses who share no path agree; the agreement is evidence in proportion to their independence. Counterfeit: two copies of one source counted as two.
+- **Base rates.** How often does the feature appear by chance in the candidate pool? One shared feature among many candidates proves little; several independent ones multiply. Counterfeit: naming the category instead of counting the instances.
+- **Analogy from a documented case.** A known case treated the same way carries the inference in proportion to the closeness of the cases. Counterfeit: an analogy resting on a shared word.
+- **Chain of custody.** A text reached its witness by a path that can be traced; a witness whose path runs through the source it attests is not independent of it.
+- **Dating by terminus.** A thing named in a dated source existed by that date.
+- **Identity across descriptions.** Two descriptions under two names with the same marks describe one thing, in proportion to how rare the marks are.
+- **Background structure.** When direct evidence is silent, what was normal for the class dominates; the Pilate example below is this form.
+
+None of these is required, all may be combined, and every one is bound by the same rule: the conclusion follows from the premises, or the passage is wrong. A conclusion carried by rhetoric, a source made to say what it does not, a projection printed as a count, or an observation that both readings predict equally is not reasoning in any of these forms, however many citations stand beside it.
+
+A language model writing for this book has a specific failure here, and it is named so that it can be caught. The model treats any information contrary to the current consensus as fringe, and fringe carries poor logical argumentation with it by association, because the writing the model learned the fringe register from argues badly. The result is that the model reasons worst exactly where the book needs it to reason best: the heterodox passage gets the assertion, the non sequitur, the argument from silence, and the source bent to the thesis, while the same model on a consensus subject commits none of them. The book's claims run against the consensus by design, so every passage is exposed to this. The standard does not move with the claim: a claim against the reader's prior needs its reasoning checked harder than one with it, and a passage that reads as advocacy is refused for its reasoning, never softened for its thesis.
+
 ## Probability Scale (Log-Aware, Numeric Only)
 
 All claims must be placed into one probability band.
