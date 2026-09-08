@@ -1534,6 +1534,21 @@ SOURCES = {
         "note": "Archive.org community text upload (freely downloadable). Scheck/CUA Press 2008.",
     },
 
+    "jerome:epistulae": {
+        "title": "Epistulae (Letters)",
+        "author": "Jerome (Hieronymus)",
+        "category": PATRISTIC,
+        "translation": "W. H. Fremantle (NPNF2 6, 1893)",
+        "urls": {
+            "letter127": "https://www.newadvent.org/fathers/3001127.htm",
+        },
+        "section_pattern": r"^(\d+)\.\s",
+        "passage_hints": {
+            5: [r"tower", r"earnestness"],
+        },
+        "note": "Letter 127 to Principia (412 AD), on Marcella; the Latin is Hilberg's CSEL 56. Chapter 2 cites 127.5 for the reading of Magdalene as a title (turritae nomen accepit).",
+    },
+
     "liberpontificalis": {
         "title": "Liber Pontificalis (Book of the Popes)",
         "author": "Various",
@@ -2290,6 +2305,15 @@ SOURCES = {
         "year": 2017,
         "publisher": "New Testament Studies 63(1), pp. 146-152",
         "obtain": "Cambridge Core. Replies that Chrestiani was already in Latin use and a Christian community of some size was in Rome in the 60s.",
+    },
+
+    "intf:liste": {
+        "title": "Kurzgefasste Liste der griechischen Handschriften des Neuen Testaments",
+        "author": "Institut für Neutestamentliche Textforschung, Universität Münster",
+        "category": MODERN,
+        "year": 2026,
+        "publisher": "New Testament Virtual Manuscript Room, https://ntvmr.uni-muenster.de/liste",
+        "obtain": "Online database, open access. Chapter 4 cites it for the dates of the Oxyrhynchus papyri P1-P142, read from the manuscript records on 2026-09-08.",
     },
 }
 
