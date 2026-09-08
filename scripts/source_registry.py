@@ -168,6 +168,7 @@ SOURCES = {
         "section_pattern": r"(?:Letter\s+\d+|\b(\d+)\.\s)",
         "passage_hints": {
             96: [r"Cognitionibus", r"Christianis\s+interfui"],
+            97: [r"Conquirendi"],
         },
     },
 
@@ -2271,6 +2272,24 @@ SOURCES = {
         "year": 1946,
         "publisher": "University of California Press, Berkeley",
         "obtain": "Academic libraries. The study of the Christus vincit acclamation as a royal and imperial acclamation.",
+    },
+
+    "shaw:myth-neronian-persecution": {
+        "title": "The Myth of the Neronian Persecution",
+        "author": "Brent D. Shaw",
+        "category": MODERN,
+        "year": 2015,
+        "publisher": "Journal of Roman Studies 105, pp. 73-100",
+        "obtain": "Cambridge Core or JSTOR. Argues that Tacitus Annals 15.44 reflects the time of writing rather than the realities of the 60s.",
+    },
+
+    "jones:historicity-neronian-persecution": {
+        "title": "The Historicity of the Neronian Persecution: A Response to Brent Shaw",
+        "author": "Christopher P. Jones",
+        "category": MODERN,
+        "year": 2017,
+        "publisher": "New Testament Studies 63(1), pp. 146-152",
+        "obtain": "Cambridge Core. Replies that Chrestiani was already in Latin use and a Christian community of some size was in Rome in the 60s.",
     },
 }
 
