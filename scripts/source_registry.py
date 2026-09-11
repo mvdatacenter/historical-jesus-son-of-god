@@ -1257,6 +1257,18 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "infancy:thomas": {
+        "title": "Infancy Gospel of Thomas (Greek text A)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "Roberts-Donaldson (ANF Vol. 8, 1886)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/infancythomas-a-roberts.html",
+        },
+        "note": "Early Christian Writings, Greek text A. Same Roberts-Donaldson ANF translation.",
+        "section_pattern": r"(?:\b(\d+)\.\s)",
+    },
+
     "shepherd:hermas": {
         "title": "The Shepherd of Hermas",
         "author": "Hermas",
