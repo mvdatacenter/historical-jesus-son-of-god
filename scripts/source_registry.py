@@ -2056,15 +2056,6 @@ SOURCES = {
         "obtain": "Academic libraries. Mohr Siebeck, Tübingen 2002.",
     },
 
-    "janz:evmar": {
-        "title": "Evangelium der Maria (WiBiLex article, version of 4 April 2020)",
-        "author": "Stephanie Janz",
-        "category": MODERN,
-        "year": 2020,
-        "publisher": "Deutsche Bibelgesellschaft, WiBiLex",
-        "obtain": "Open access: https://www.die-bibel.de/ressourcen/wibilex/neues-testament/evangelium-der-maria (section 2.1 for the dating survey, 4.1 for the conflict).",
-    },
-
     "grenfell:logia": {
         "title": "Logia Iesou: Sayings of Our Lord from an Early Greek Papyrus",
         "author": "Bernard P. Grenfell and Arthur S. Hunt",
