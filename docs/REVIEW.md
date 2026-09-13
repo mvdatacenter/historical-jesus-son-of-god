@@ -2,6 +2,14 @@
 
 Repo-specific review checklist for manuscript changes. Rules are enforced rule-by-rule via `.pr-review.json`.
 
+## Three Readers
+
+Every sentence a PR adds to or changes in a chapter is read three times before the PR opens, by one call that holds the whole manuscript, the research Q&A and the sentence (`scripts/sceptic_check.py` in the research repo runs it). The PR body carries the call's output per sentence, and the judge reads that output against the diff instead of answering from its own reading. The three rules below are the readers; the fixtures that prove a call reads are named on PM-0010 in the research repo.
+
+- **A hard sceptic reads the sentence against everything: the rest of the book, the Q&A, the source it cites, and what an informed reader knows.** The PR body states, per sentence, the strongest objection that reader raises and where the book or the Q&A answers it, quoting the place. An objection nothing answers stops the sentence and goes into the chapter Q&A as an open question. An objection the Q&A lists as weak is named and left there.
+- **The sentence keeps apart what the source says, the reading the sentence takes of it, and how settled that reading is.** The source's words stay the source's, in quotation or close paraphrase. The reading is marked as the book's claim, the most common reading, or a disputed one, and where the book argues for it the sentence points there. A reading stated in the source's voice fails; a disputed reading stated as settled fails.
+- **The strongest proponent of the claim the sentence serves reads it and asks whether the full case was made.** The PR body names the evidence an informed proponent expects to see for that claim and says where the book carries it. Evidence the book carries elsewhere and the passage neither makes nor points to fails the sentence, and so does an argument step or piece of evidence the passage carried before the change and the changed text drops. Evidence the book lacks is named as a research gap, not a fault.
+
 ## Repository Boundary
 
 - **Keep exploratory research outside the public repo.** This public repo contains manuscript text, citations and bibliography, source-verification material, and code or data directly used to construct public results. Exploratory work stays outside this repository because public readers need finished arguments and reproducible support rather than working notes or cache output. Move it here only after it becomes manuscript prose, verified citation or bibliography data, source-verification material, or result-building code/data.
