@@ -1445,6 +1445,18 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "hippolytus:refutatio": {
+        "title": "Refutation of All Heresies (Refutatio omnium haeresium)",
+        "author": "Hippolytus of Rome",
+        "category": PATRISTIC,
+        "translation": "J. H. MacMahon (ANF Vol. 5, 1886)",
+        "urls": {
+            "book7": "https://www.newadvent.org/fathers/050107.htm",
+        },
+        "note": "Cited by the book and chapter numbers of the Wendland and Marcovich editions. The ANF page numbers the chapters of book 7 differently: 7.22 (Basilides on John 1:9, 'He was the true light') is ANF chapter 10 and 7.27 (Basilides on John 2:4, 'Mine hour is not yet come') is ANF chapter 15.",
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
     "gospelpeter": {
         "title": "Gospel of Peter (Fragment)",
         "author": "Anonymous",
