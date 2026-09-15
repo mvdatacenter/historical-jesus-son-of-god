@@ -1257,6 +1257,18 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "infancy:thomas": {
+        "title": "Infancy Gospel of Thomas (Greek text A)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "Roberts-Donaldson (ANF Vol. 8, 1886)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/infancythomas-a-roberts.html",
+        },
+        "note": "Early Christian Writings, Greek text A. Same Roberts-Donaldson ANF translation.",
+        "section_pattern": r"(?:\b(\d+)\.\s)",
+    },
+
     "shepherd:hermas": {
         "title": "The Shepherd of Hermas",
         "author": "Hermas",
@@ -1430,6 +1442,18 @@ SOURCES = {
             "full": "https://www.newadvent.org/fathers/0520.htm",
         },
         "note": "ANF has fragments/scholia on Daniel. Full commentary only in T. C. Schmidt (2017, copyrighted).",
+        "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "hippolytus:refutatio": {
+        "title": "Refutation of All Heresies (Refutatio omnium haeresium)",
+        "author": "Hippolytus of Rome",
+        "category": PATRISTIC,
+        "translation": "J. H. MacMahon (ANF Vol. 5, 1886)",
+        "urls": {
+            "book7": "https://www.newadvent.org/fathers/050107.htm",
+        },
+        "note": "Cited by the book and chapter numbers of the Wendland and Marcovich editions. The ANF page numbers the chapters of book 7 differently: 7.22 (Basilides on John 1:9, 'He was the true light') is ANF chapter 10 and 7.27 (Basilides on John 2:4, 'Mine hour is not yet come') is ANF chapter 15.",
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
@@ -2054,6 +2078,15 @@ SOURCES = {
         "year": 2002,
         "publisher": "Mohr Siebeck",
         "obtain": "Academic libraries. Mohr Siebeck, Tübingen 2002.",
+    },
+
+    "grenfell:logia": {
+        "title": "Logia Iesou: Sayings of Our Lord from an Early Greek Papyrus",
+        "author": "Bernard P. Grenfell and Arthur S. Hunt",
+        "category": MODERN,
+        "year": 1897,
+        "publisher": "Henry Frowde for the Egypt Exploration Fund",
+        "obtain": "Public domain; Internet Archive and HathiTrust. Editio princeps of P.Oxy. I 1 (Gospel of Thomas, Greek).",
     },
 
     "deboer:magdalene": {
