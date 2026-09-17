@@ -33,6 +33,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # The prose-deletion step diffs the pull request against its base.
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -49,3 +52,17 @@ jobs:
       - name: Run tests
         working-directory: scripts
         run: python -m pytest -v
+
+      # The rule this enforces is in docs/REVIEW.md under Evidence. The body
+      # reaches the script through an environment variable and a file, never
+      # through the shell, so a body containing backticks or quotes cannot run
+      # as a command.
+      - name: Removed manuscript lines are quoted in the PR body
+        if: github.event_name == 'pull_request'
+        env:
+          PR_BODY: ${{ github.event.pull_request.body }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch --no-tags origin "$BASE_REF"
+          python -c 'import os, pathlib; pathlib.Path("pr-body.md").write_text(os.environ.get("PR_BODY") or "", encoding="utf-8")'
+          python scripts/check_prose_deletions.py "origin/$BASE_REF" --body-file pr-body.md

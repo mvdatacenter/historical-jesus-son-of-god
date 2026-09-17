@@ -9,7 +9,12 @@ import sys
 import pytest
 
 import check_prose_deletions
-from check_prose_deletions import parse_removals, removed_prose_lines
+from check_prose_deletions import (
+    normalize,
+    parse_removals,
+    removed_prose_lines,
+    unaccounted_lines,
+)
 
 SCRIPT = pathlib.Path(__file__).resolve().parent / "check_prose_deletions.py"
 
@@ -169,3 +174,85 @@ def test_script_reports_a_removal_from_a_real_repository(tmp_path) -> None:
 
     assert result.returncode == 1
     assert "chapter2.tex: The guard carried myrrh." in result.stdout
+
+
+REMOVED_WITH_CITE = (
+    "chapter4.tex",
+    "Although the oldest mention of Marcion is from Tertullian "
+    "\\cite{tertullian:marcionem}, Tertullian himself gives credible "
+    "attestation of Marcion in 140AD.",
+)
+
+
+def test_normalize_drops_citations_punctuation_and_case() -> None:
+    assert normalize(REMOVED_WITH_CITE[1]) == (
+        "although the oldest mention of marcion is from tertullian tertullian "
+        "himself gives credible attestation of marcion in 140ad"
+    )
+
+
+def test_body_quoting_a_line_without_its_citation_accounts_for_it() -> None:
+    body = (
+        "Removed lines: (3) 'Although the oldest mention of Marcion is from "
+        "Tertullian, Tertullian himself gives credible attestation of Marcion "
+        "in 140AD.' carried at line 45.\n"
+    )
+    assert unaccounted_lines([REMOVED_WITH_CITE], body) == []
+
+
+def test_body_naming_only_the_topic_leaves_the_line_unaccounted() -> None:
+    body = "The Marcion sentence was folded into the reference column.\n"
+    assert unaccounted_lines([REMOVED_WITH_CITE], body) == [REMOVED_WITH_CITE]
+
+
+def test_a_quoted_prefix_does_not_account_for_the_whole_line() -> None:
+    body = "'Although the oldest mention of Marcion is from Tertullian' went.\n"
+    assert unaccounted_lines([REMOVED_WITH_CITE], body) == [REMOVED_WITH_CITE]
+
+
+def test_script_with_body_file_refuses_only_unquoted_removals(tmp_path) -> None:
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    _git(repo, "init", "-q", "-b", "feat/fixture", ".")
+    _git(repo, "config", "user.email", "test@example.com")
+    _git(repo, "config", "user.name", "Test")
+
+    chapter = repo / "chapter2.tex"
+    chapter.write_text(
+        "The guard carried myrrh.\nGold belongs to the treasury.\n"
+        "The king was anointed at Hebron.\n"
+    )
+    _git(repo, "add", "chapter2.tex")
+    _git(repo, "commit", "-qm", "base")
+    base = _git(repo, "rev-parse", "HEAD")
+
+    chapter.write_text("Gold belongs to the treasury.\nMyrrh anoints the king.\n")
+    _git(repo, "add", "chapter2.tex")
+    _git(repo, "commit", "-qm", "rework")
+
+    partial = tmp_path / "partial.md"
+    partial.write_text("Removed: 'The guard carried myrrh.' folded into the myrrh line.\n")
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT), base, "--body-file", str(partial)],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 1
+    assert "1 of 2 prose line(s)" in result.stdout
+    assert "chapter2.tex: The king was anointed at Hebron." in result.stdout
+    assert "The guard carried myrrh." not in result.stdout.split("PR body.")[-1]
+
+    complete = tmp_path / "complete.md"
+    complete.write_text(
+        "Removed: 'The guard carried myrrh.' folded into the myrrh line; "
+        "'The king was anointed at Hebron.' moved to chapter 3 in this PR.\n"
+    )
+    result = subprocess.run(
+        [sys.executable, str(SCRIPT), base, "--body-file", str(complete)],
+        cwd=repo,
+        capture_output=True,
+        text=True,
+    )
+    assert result.returncode == 0
+    assert "2 prose line(s) removed" in result.stdout
