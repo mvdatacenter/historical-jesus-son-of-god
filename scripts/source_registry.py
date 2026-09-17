@@ -150,10 +150,19 @@ SOURCES = {
             "book10": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D10",
             "book36": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D36",
             "book37": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D37",
+            # Book 2 at its book URL returns only Bostock's first chunk, so the
+            # chapter that carries 2.231 (Bostock 2.106, wonders of springs) is fetched.
+            "book2": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D2%3Achapter%3D106",
+            "book31": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D31",
         },
         "section_pattern": r"\b(\d+)\.\s",
+        # Bostock numbers chapters, not Loeb sections, so the Loeb section a
+        # cite carries is located by its wording: 2.231 and 31.16 are the
+        # Andros wine spring (Bostock 2.106 and 31.13).
         "passage_hints": {
             60: [r"reckoned among the most sacred gems", r"HAMMONIS CORNU"],
+            231: [r"In the island of Andros,"],
+            16: [r"Andros, consecrated to Father Liber, from which wine flows"],
         },
     },
 
@@ -186,6 +195,7 @@ SOURCES = {
             "alexander_4": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/6-7.html",
             "alexander_5": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Alexander*/8.html",
             "pompey": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Pompey*.html",
+            "lysander": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Lives/Lysander*.html",
         },
         "alt_urls": {
             "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0002",
@@ -242,9 +252,11 @@ SOURCES = {
         "urls": {
             "book1A": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1A*.html",
             "book1B": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/1B*.html",
+            "book3E": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/3E*.html",
         },
         "section_pattern": r"\b(\d+)\b",
         "passage_hints": {
+            2: [r"a fountain of wine, of unusually sweet fragrance"],
             11: [r"horns on her head", r"the moon is crescent-shaped"],
             22: [r"vow never to marry another man"],
             27: [r"queen of every land", r"mother of Horus the king"],
@@ -771,6 +783,50 @@ SOURCES = {
         },
         "note": "Archive.org DjVu text. Conybeare translation. All 8 books.",
         "section_pattern": r"\b(\d+)\.\s",
+    },
+
+    "pausanias:description": {
+        "title": "Description of Greece",
+        "author": "Pausanias",
+        "category": ANCIENT,
+        "translation": "W. H. S. Jones and H. A. Ormerod (Loeb, 1918)",
+        "urls": {
+            "book6": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0160%3Abook%3D6",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            1: [r"they assert that the god attends their festival, the Thyia"],
+        },
+    },
+
+    "athenaeus:deipnosophistae": {
+        "title": "Deipnosophistae",
+        "author": "Athenaeus",
+        "category": ANCIENT,
+        "translation": "C. B. Gulick (Loeb, 1927)",
+        "urls": {
+            # LacusCurtius splits book 1 across lettered pages; 1c carries 24B-34E.
+            "book1": "https://penelope.uchicago.edu/Thayer/e/roman/texts/athenaeus/1c*.html",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            34: [r"Theopompus of Chios relates that the vine was discovered"],
+        },
+    },
+
+    "paulus:sententiae": {
+        "title": "Sententiae receptae Paulo tributae",
+        "author": "Pseudo-Paulus",
+        "category": ANCIENT,
+        "translation": "Latin text (Wikisource)",
+        "urls": {
+            "book5": "https://la.wikisource.org/wiki/Sententiae_receptae_Paulo_tributae/5",
+        },
+        "section_pattern": r"\b(\d+)\.\s",
+        "passage_hints": {
+            1: [r"Auctores seditionis et tumultus"],
+        },
+        "note": "5.22.1 = Digest 48.19.38.2, where Justinian's compilers replace crux with furca.",
     },
 
     # --- Additional Philo ---
@@ -1937,6 +1993,25 @@ SOURCES = {
         "year": 2000,
         "publisher": "SCM Press",
         "obtain": "Libraries. ISBN 978-0-334-02826-7.",
+    },
+
+    "raglan:hero": {
+        "title": "The Hero: A Study in Tradition, Myth, and Drama",
+        "author": "Lord Raglan",
+        "category": MODERN,
+        "year": 1936,
+        "publisher": "Methuen",
+        "obtain": "Libraries; reprinted in Segal (ed.), In Quest of the Hero, Princeton 1990. "
+                  "Scans on archive.org (identifiers herostudyintradi00ragl, in.ernet.dli.2015.101509) are lending copies without OCR text.",
+    },
+
+    "schweitzer:quest": {
+        "title": "The Quest of the Historical Jesus",
+        "author": "Albert Schweitzer",
+        "category": MODERN,
+        "year": 1910,
+        "publisher": "Adam and Charles Black",
+        "obtain": "Public domain (Montgomery translation, 1910). Scans on archive.org (identifier in.ernet.dli.2015.114136).",
     },
 
     "brown:johannine": {
