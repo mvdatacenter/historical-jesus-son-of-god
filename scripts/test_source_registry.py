@@ -121,6 +121,10 @@ OPTIONAL_POLISH_CASE_ENDING = r"(?:owie|ami|ach|iem|ego|emu|owi|owa|ów|ie|em|im
 
 MOUNTAIN_BEFORE_TABOR = re.compile(r"(?:Mount|Mt\.|G[oó]r(?:a|y|ę|ą|ze|e))\s+$")
 
+RANK_BEFORE_RAGLAN = re.compile(r"Rank-{1,2}$")
+
+NAME_IS_A_PLACE_OR_STANDARD = (MOUNTAIN_BEFORE_TABOR, RANK_BEFORE_RAGLAN)
+
 def modern_scholar_surnames():
     """Surnames of the modern scholars the bibliography carries, read from the
     keywords={modern} entries of references.bib. Ancient authors and eponymous
@@ -156,7 +160,8 @@ def scholars_named_in_prose():
             prose = CITE_COMMAND_PATTERN.sub(" ", line)
             for surname, pattern in patterns.items():
                 for match in pattern.finditer(prose):
-                    if MOUNTAIN_BEFORE_TABOR.search(prose[:match.start()]):
+                    before = prose[:match.start()]
+                    if any(rule.search(before) for rule in NAME_IS_A_PLACE_OR_STANDARD):
                         continue
                     named.append(f"{name}:{number}: {surname}")
     return sorted(named)
