@@ -125,6 +125,22 @@ RANK_BEFORE_RAGLAN = re.compile(r"Rank-{1,2}$")
 
 NAME_IS_A_PLACE_OR_STANDARD = (MOUNTAIN_BEFORE_TABOR, RANK_BEFORE_RAGLAN)
 
+
+def names_a_place_or_standard(before):
+    """Whether the prose right before a surname match makes it a place or an
+    eponymous standard (Mount Tabor, the Rank--Raglan scale) rather than the
+    scholar: only the immediately preceding token exempts the match."""
+    return any(rule.search(before) for rule in NAME_IS_A_PLACE_OR_STANDARD)
+
+
+def test_only_the_named_place_or_standard_exempts_a_surname():
+    exempt = ["Mount ", "Mt. ", "Góra ", "Rank-", "Rank--", "the Rank--"]
+    for before in exempt:
+        assert names_a_place_or_standard(before), before
+    caught = ["", "the folklorist ", "Rank ", "Rank--Raglan and ", "Mount Tabor and ", "Lord "]
+    for before in caught:
+        assert not names_a_place_or_standard(before), before
+
 def modern_scholar_surnames():
     """Surnames of the modern scholars the bibliography carries, read from the
     keywords={modern} entries of references.bib. Ancient authors and eponymous
@@ -161,7 +177,7 @@ def scholars_named_in_prose():
             for surname, pattern in patterns.items():
                 for match in pattern.finditer(prose):
                     before = prose[:match.start()]
-                    if any(rule.search(before) for rule in NAME_IS_A_PLACE_OR_STANDARD):
+                    if names_a_place_or_standard(before):
                         continue
                     named.append(f"{name}:{number}: {surname}")
     return sorted(named)
