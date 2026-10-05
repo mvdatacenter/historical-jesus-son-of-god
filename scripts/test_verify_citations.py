@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Tests for verify_citations.py."""
 
+import ast
+from pathlib import Path
+
 import pytest
 
 import verify_citations
@@ -336,3 +339,52 @@ def test_registered_hint_in_a_later_file_beats_an_earlier_section_match(tmp_path
 
     assert citation.status == "LOCATED"
     assert citation.snippet.startswith("[book16ch2.txt]")
+
+
+def _status_assignments():
+    """Every `<name>.status = ...` assignment in verify_citations.py, as
+    (line number, value node)."""
+    source = Path(verify_citations.__file__).read_text(encoding="utf-8")
+    found = []
+    for node in ast.walk(ast.parse(source)):
+        if isinstance(node, ast.Assign):
+            targets = node.targets
+        elif isinstance(node, ast.AnnAssign) and node.value is not None:
+            targets = [node.target]
+        else:
+            continue
+        for target in targets:
+            if isinstance(target, ast.Attribute) and target.attr == "status":
+                found.append((node.lineno, node.value))
+    return found
+
+
+def test_the_declared_statuses_are_the_six_location_statuses():
+    """The script locates passages and presents them; the reviewer judges.
+    A status naming a verdict or a score fails here at the commit that adds it."""
+    assert verify_citations.STATUSES == (
+        "LOCATED",
+        "NO_PASSAGE",
+        "MODERN",
+        "NOT_FOUND",
+        "NO_SOURCE",
+        "UNKNOWN_KEY",
+    )
+
+
+def test_every_assigned_status_is_declared_and_every_declared_status_is_assigned():
+    assignments = _status_assignments()
+    assert assignments, "no `.status =` assignment found in verify_citations.py"
+
+    computed = [
+        lineno
+        for lineno, value in assignments
+        if not (isinstance(value, ast.Constant) and isinstance(value.value, str))
+    ]
+    assert computed == [], (
+        f"status assigned from a non-literal at line(s) {computed}; "
+        "a status is one of the STATUSES literals, never computed"
+    )
+
+    assigned = {value.value for _, value in assignments}
+    assert assigned == set(verify_citations.STATUSES)
