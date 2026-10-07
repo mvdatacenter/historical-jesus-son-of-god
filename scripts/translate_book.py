@@ -24,7 +24,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from typing import List, Tuple, Optional
+from typing import List, NamedTuple, Tuple, Optional
 import json
 import shutil
 
@@ -384,21 +384,30 @@ def missing_identifiers(source_text: str, translated_text: str) -> List[str]:
     return errors
 
 
-def check_generated_translations(repo_root: Path) -> List[str]:
+class GeneratedCheck(NamedTuple):
+    problems: List[str]
+    unverified: List[str]
+
+
+def check_generated_translations(repo_root: Path) -> GeneratedCheck:
     """Hold every committed generated translation to its manifest.
 
-    Returns one line per problem, empty when every file passes:
+    Returns the problems, one line each, and the files whose identifier
+    comparison it could not run. A problem is one of:
     - a generated file with no manifest entry;
     - a generated file whose sha256 differs from the one recorded when the
       script wrote it, which is what a hand edit produces;
     - a manifest entry whose file is gone;
     - a file whose recorded source sha256 still matches the English source and
       which lacks one of that source's labels, refs, cites, urls or images.
-    A source that changed after the translation was written is not compared,
-    since the translation was made from the earlier source.
+    An unverified line names a file whose entry records no source sha256,
+    whose source is gone, or whose source changed after the translation was
+    written, since the translation was made from the earlier source; the caller
+    prints those, and a rerun of the script gives each a comparable record.
     """
     repo_root = Path(repo_root)
     problems = []
+    unverified = []
     manifests = {}
     translations = repo_root / "translations"
     if translations.is_dir():
@@ -427,7 +436,19 @@ def check_generated_translations(repo_root: Path) -> List[str]:
         source_name = entry.get("source") or ""
         source = repo_root / source_name
         source_sha256 = entry.get("source_sha256")
-        if source_sha256 and source.is_file() and sha256_of(source) == source_sha256:
+        if not source_sha256:
+            unverified.append(
+                f"{rel}: identifiers against {source_name} unverified; the entry in {manifest_rel} "
+                "records no source sha256, so a rerun of scripts/translate_book.py makes the comparison possible"
+            )
+        elif not source.is_file():
+            unverified.append(f"{rel}: identifiers against {source_name} unverified; the source is not in the checkout")
+        elif sha256_of(source) != source_sha256:
+            unverified.append(
+                f"{rel}: identifiers against {source_name} unverified; the source changed after the translation "
+                "was written, so the comparison waits for a rerun of scripts/translate_book.py"
+            )
+        else:
             source_text = source.read_text(encoding="utf-8")
             translated_text = path.read_text(encoding="utf-8")
             for error in missing_identifiers(source_text, translated_text):
@@ -438,7 +459,7 @@ def check_generated_translations(repo_root: Path) -> List[str]:
             if not (directory / name).is_file():
                 gone = (directory / name).relative_to(repo_root).as_posix()
                 problems.append(f"{gone}: recorded in {GENERATED_MANIFEST} but not present")
-    return problems
+    return GeneratedCheck(problems, unverified)
 
 
 # Fragment size in characters (~500 lines, ChatGPT handles large context well)

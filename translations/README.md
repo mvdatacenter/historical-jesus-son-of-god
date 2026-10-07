@@ -50,9 +50,10 @@ file they select. It fails a file with no entry, a file whose sha256 differs fro
 recorded one, which is what a hand edit produces, and an entry whose file is gone.
 While the recorded source sha256 still matches the English file, it also fails a
 translation missing one of that source's `\label{}`, `\ref{}`, `\cite{}`, `\href{}`
-URLs or `\includegraphics{}` paths; once the English is edited after the translation
-was written, that comparison waits for a rerun, since the translation was made from
-the earlier source.
+URLs or `\includegraphics{}` paths. Once the English is edited after the translation
+was written, or when the entry records no source sha256, the test reports that file
+as unverified in its run output, since the translation was made from an earlier
+source, and a rerun gives it a record the comparison can use.
 
 The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the

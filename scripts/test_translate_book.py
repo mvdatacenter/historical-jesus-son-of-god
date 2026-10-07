@@ -4,6 +4,7 @@ Tests for translate_book.py
 """
 
 import json
+import warnings
 
 import pytest
 from pathlib import Path
@@ -192,7 +193,10 @@ def _written_by_the_script(tmp_path):
 
 class TestGeneratedTranslationsAreHeldToTheirManifest:
     def test_the_committed_generated_translations_match_their_manifest(self):
-        assert check_generated_translations(REPO_ROOT) == []
+        result = check_generated_translations(REPO_ROOT)
+        assert result.problems == []
+        for line in result.unverified:
+            warnings.warn(line)
 
     def test_the_gitattributes_patterns_select_the_generated_files_and_leave_the_master_out(self):
         rel = [p.relative_to(REPO_ROOT).as_posix() for p in generated_translation_files(REPO_ROOT)]
@@ -208,12 +212,12 @@ class TestGeneratedTranslationsAreHeldToTheirManifest:
         entry = json.loads((out / GENERATED_MANIFEST).read_text(encoding="utf-8"))["chapter1_po.tex"]
         assert entry["source"] == "chapter1.tex"
         assert entry["written_by"] == "scripts/translate_book.py"
-        assert check_generated_translations(root) == []
+        assert check_generated_translations(root) == ([], [])
 
     def test_a_line_changed_by_hand_after_the_script_wrote_the_file_fails(self, tmp_path):
         root, out, target = _written_by_the_script(tmp_path)
         target.write_text(TRANSLATION.replace("Tekst", "Inny tekst"), encoding="utf-8")
-        problems = check_generated_translations(root)
+        problems = check_generated_translations(root).problems
         assert len(problems) == 1
         assert problems[0].startswith("translations/polish/chapter1_po.tex: sha256 ")
         assert "rerun the script instead of editing the file" in problems[0]
@@ -221,7 +225,7 @@ class TestGeneratedTranslationsAreHeldToTheirManifest:
     def test_a_generated_file_with_no_manifest_entry_fails(self, tmp_path):
         root, out = _repo(tmp_path)
         (out / "chapter1_po.tex").write_text(TRANSLATION, encoding="utf-8")
-        problems = check_generated_translations(root)
+        problems = check_generated_translations(root).problems
         assert problems == [
             "translations/polish/chapter1_po.tex: no entry in translations/polish/" + GENERATED_MANIFEST
             + "; a generated translation is written by scripts/translate_book.py, which records it"
@@ -230,7 +234,7 @@ class TestGeneratedTranslationsAreHeldToTheirManifest:
     def test_a_manifest_entry_whose_file_is_gone_fails(self, tmp_path):
         root, out, target = _written_by_the_script(tmp_path)
         target.unlink()
-        assert check_generated_translations(root) == [
+        assert check_generated_translations(root).problems == [
             "translations/polish/chapter1_po.tex: recorded in " + GENERATED_MANIFEST + " but not present"
         ]
 
@@ -239,19 +243,36 @@ class TestGeneratedTranslationsAreHeldToTheirManifest:
         target = out / "chapter1_po.tex"
         target.write_text(TRANSLATION.replace(" \\cite{key:a}", ""), encoding="utf-8")
         record_generated_translation(target, root / "chapter1.tex")
-        assert check_generated_translations(root) == [
+        assert check_generated_translations(root).problems == [
             "translations/polish/chapter1_po.tex: cites: missing ['key:a'] against chapter1.tex"
         ]
 
-    def test_a_source_changed_after_the_translation_was_written_is_not_compared(self, tmp_path):
+    def test_a_source_changed_after_the_translation_was_written_is_reported_unverified(self, tmp_path):
         root, out, target = _written_by_the_script(tmp_path)
         (root / "chapter1.tex").write_text(SOURCE + "New sentence \\cite{key:b}.\n", encoding="utf-8")
-        assert check_generated_translations(root) == []
+        assert check_generated_translations(root) == ([], [
+            "translations/polish/chapter1_po.tex: identifiers against chapter1.tex unverified; the source changed "
+            "after the translation was written, so the comparison waits for a rerun of scripts/translate_book.py"
+        ])
+
+    def test_an_entry_with_no_source_sha256_is_reported_unverified(self, tmp_path):
+        root, out = _repo(tmp_path)
+        target = out / "chapter1_po.tex"
+        target.write_text(TRANSLATION.replace(" \\cite{key:a}", ""), encoding="utf-8")
+        record_generated_translation(target, root / "chapter1.tex")
+        manifest = json.loads((out / GENERATED_MANIFEST).read_text(encoding="utf-8"))
+        manifest["chapter1_po.tex"]["source_sha256"] = None
+        (out / GENERATED_MANIFEST).write_text(json.dumps(manifest), encoding="utf-8")
+        assert check_generated_translations(root) == ([], [
+            "translations/polish/chapter1_po.tex: identifiers against chapter1.tex unverified; the entry in "
+            "translations/polish/" + GENERATED_MANIFEST + " records no source sha256, so a rerun of "
+            "scripts/translate_book.py makes the comparison possible"
+        ])
 
     def test_the_hand_authored_master_is_outside_the_check(self, tmp_path):
         root, out, target = _written_by_the_script(tmp_path)
         (out / "manuscript_po.tex").write_text("edited master\n", encoding="utf-8")
-        assert check_generated_translations(root) == []
+        assert check_generated_translations(root) == ([], [])
 
 
 if __name__ == "__main__":

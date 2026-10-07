@@ -2,10 +2,9 @@
 # preface.tex, chapter1.tex-chapter6.tex and epilogue.tex — as
 # <stem>_<language code>.tex under translations/<language>/ (#175). Marking
 # those records where they come from, so GitHub collapses them in diffs and
-# leaves them out of the language statistics. The marking is held by
-# scripts/test_translate_book.py, which fails a file these patterns select when
-# its sha256 differs from the one the script recorded in
-# translations/<language>/generated.json; translations/README.md has the process.
+# leaves them out of the language statistics. translations/README.md describes
+# the record in translations/<language>/generated.json that holds the marking,
+# and the test that reads it.
 #
 # Everything else under translations/ is authored and stays authored. The Polish
 # master, translations/polish/manuscript_po.tex, is the case that matters: it is
