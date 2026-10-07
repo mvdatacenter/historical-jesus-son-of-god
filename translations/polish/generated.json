@@ -1,0 +1,50 @@
+{
+  "chapter1_po.tex": {
+    "sha256": "a56221d3a32bc99269597acd4f9f2281decef136f9af378710ae7136b9e1f19a",
+    "source": "chapter1.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "chapter2_po.tex": {
+    "sha256": "ca00d919c76179af226dff4708049d03a89350c59f9ea1f8bd89934e83fd9685",
+    "source": "chapter2.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "chapter3_po.tex": {
+    "sha256": "da29f46eed253d38e523714472413424ce8732b26943eb910e5e77b7683c5437",
+    "source": "chapter3.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "chapter4_po.tex": {
+    "sha256": "248a4a0459ad86776be9e25c8325227084813feda1badfa0c4e8977ea13ca0c6",
+    "source": "chapter4.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "chapter5_po.tex": {
+    "sha256": "d45bfac294cece5eb4c91329327eb057fcc5c2de7c95ab9c7939d1900f00b899",
+    "source": "chapter5.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "chapter6_po.tex": {
+    "sha256": "c02b51a2b3f2a90cc9856aca2d33535f7c87f5f554f2632ec6d0c0913654ec5e",
+    "source": "chapter6.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "epilogue_po.tex": {
+    "sha256": "4984f0340bb5b59fd319f83af4422c53fdb63d435a9b499df271b2f450d448ce",
+    "source": "epilogue.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  },
+  "preface_po.tex": {
+    "sha256": "5279e1e27adcc218d8718ddf8b821a1f5716bf3ef90d7b6eb2553d68ac2de4a5",
+    "source": "preface.tex",
+    "source_sha256": null,
+    "written_by": "the committed file at d15f488, recorded on 2026-10-07; not a run of scripts/translate_book.py, so the English source it was translated from is not known"
+  }
+}
