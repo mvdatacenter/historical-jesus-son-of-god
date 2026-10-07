@@ -32,12 +32,12 @@
 4. **Read the grammar report** - LanguageTool flags many false positives (LaTeX, proper nouns), so review each.
 
 5. **Fix in the script, then rerun** - A fix to a generated file goes into the script
-   or the prompt, and the chapter is rerun: the tests workflow holds each generated
-   file to the bytes the script recorded (next section), so the rerun is what carries
-   the fix. A stitching artifact is fixed in `translate_book.py`, where
-   `fix_section_label_formatting()` fixes the split label; a wording or grammar
-   pattern is fixed in the language's prompt in `create_translation_prompt()`. The
-   per-language tables below list the patterns to read for.
+   or the prompt, and the chapter is rerun; the next section says what the rerun
+   writes and what holds the file to it. A stitching artifact is fixed in
+   `translate_book.py`, where `fix_section_label_formatting()` fixes the split label;
+   a wording or grammar pattern is fixed in the language's prompt in
+   `create_translation_prompt()`. The per-language tables below list the patterns to
+   read for.
 
 ## What a rerun writes, and what stays hand-authored
 
@@ -50,12 +50,12 @@ of the English source it was translated from, and `written_by`. On every pull re
 `scripts/test_translate_book.py` reads the `.gitattributes` patterns and checks each
 file they select. It fails a file with no entry, a file whose sha256 differs from the
 recorded one, which is what a hand edit produces, and an entry whose file is gone.
-When the recorded source sha256 still matches the English file, it also fails a
+While the recorded source sha256 still matches the English file, it also fails a
 translation missing one of that source's `\label{}`, `\ref{}`, `\cite{}`, `\href{}`
-URLs or `\includegraphics{}` paths. A source edited after the translation was written
-is not compared, since the translation answers the source it was written from. The
-record is itself a file a hand can edit, so review reads a `generated.json` change
-beside the file change it accompanies.
+URLs or `\includegraphics{}` paths; once the English is edited after the translation
+was written, the translation answers the earlier source and that comparison waits for
+a rerun. The record is itself a file a hand can edit, so review reads a
+`generated.json` change beside the file change it accompanies.
 
 The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the
