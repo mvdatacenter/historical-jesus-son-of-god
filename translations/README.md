@@ -32,8 +32,7 @@
 4. **Read the grammar report** - LanguageTool flags many false positives (LaTeX, proper nouns), so review each.
 
 5. **Fix in the script, then rerun** - A fix to a generated file goes into the script
-   or the prompt, and the chapter is rerun; the next section says what the rerun
-   writes and what holds the file to it. A stitching artifact is fixed in
+   or the prompt, and the chapter is rerun. A stitching artifact is fixed in
    `translate_book.py`, where `fix_section_label_formatting()` fixes the split label;
    a wording or grammar pattern is fixed in the language's prompt in
    `create_translation_prompt()`. The per-language tables below list the patterns to
@@ -54,8 +53,7 @@ While the recorded source sha256 still matches the English file, it also fails a
 translation missing one of that source's `\label{}`, `\ref{}`, `\cite{}`, `\href{}`
 URLs or `\includegraphics{}` paths; once the English is edited after the translation
 was written, the translation answers the earlier source and that comparison waits for
-a rerun. The record is itself a file a hand can edit, so review reads a
-`generated.json` change beside the file change it accompanies.
+a rerun.
 
 The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the
