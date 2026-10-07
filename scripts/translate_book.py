@@ -310,7 +310,7 @@ def record_generated_translation(output_path: Path, source_path: Path) -> None:
 
     The entry carries the sha256 of the written file and of the English source it
     was translated from, so a later edit to the file is detectable and the source
-    it answered is known.
+    it was translated from is known.
     """
     output_path = Path(output_path)
     source_path = Path(source_path)
