@@ -21,25 +21,45 @@
    "
    ```
 
-3. **Fix stitching artifacts** - The script splits chapters into fragments. Check for:
+3. **Read the output for stitching artifacts** - The script splits chapters into fragments. Read for:
    - Duplicate `\section{}` or `\subsection{}` headers at fragment boundaries
    - Stray ` ```latex` or ` ``` ` markers from ChatGPT formatting
    - Incomplete sentences at fragment joins
    - Missing or doubled text where fragments overlap
-   - Check `\href{}` links - URL must stay intact, display text can be translated
-   - Fix `\includegraphics{}` paths - add `../../` prefix (e.g., `assets/map` → `../../assets/map`)
+   - `\href{}` links - URL must stay intact, display text can be translated
+   - `\includegraphics{}` paths - need the `../../` prefix (e.g., `assets/map` → `../../assets/map`)
 
-4. **Fix grammar errors** - LanguageTool flags many false positives (LaTeX, proper nouns), so review each.
+4. **Read the grammar report** - LanguageTool flags many false positives (LaTeX, proper nouns), so review each.
 
-5. **Common fixes by language** - see below.
+5. **Fix in the script, then rerun** - A generated file is not edited by hand: the
+   tests workflow fails one whose bytes differ from what the script recorded (next
+   section). A stitching artifact is fixed where `fix_section_label_formatting()`
+   fixes the split label, in `translate_book.py`; a wording or grammar pattern is
+   fixed in the language's prompt in `create_translation_prompt()`; then the chapter
+   is rerun. The per-language tables below list the patterns to read for.
 
 ## What a rerun writes, and what stays hand-authored
 
 `translate_book.py --all` writes one file per English source it translates:
 `preface_XX.tex`, `chapter1_XX.tex` through `chapter6_XX.tex`, and `epilogue_XX.tex`,
 where `XX` is the first two letters of the language. `.gitattributes` marks those as
-generated, which records where they come from while leaving them open to hand work:
-steps 3 to 5 above are applied after every run.
+generated, and `translations/<language>/generated.json` is the record that makes the
+marking hold: after writing a file the script records its sha256, the name and
+sha256 of the English source it was translated from, and `written_by`. On every pull
+request `scripts/test_translate_book.py` reads the `.gitattributes` patterns, and for
+each file they select it fails when the file has no entry, when its sha256 differs
+from the recorded one, which is what a hand edit produces, or when an entry's file is
+gone; when the recorded source sha256 still matches the English file, it also fails a
+translation missing one of that source's `\label{}`, `\ref{}`, `\cite{}`, `\href{}`
+URLs or `\includegraphics{}` paths. A source edited after the translation was written
+is not compared, since the translation answers the source it was written from. The
+record can itself be edited by hand, so review reads a `generated.json` change beside
+the file change it accompanies.
+
+The eight Polish entries carry `"source_sha256": null` and a `written_by` naming the
+commit they were recorded from: they were translated from an English draft that
+predated the current chapters and edited by hand afterwards, so the source they answer
+is not known. A rerun replaces each entry with the script's own record.
 
 The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the

@@ -18,6 +18,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import os
 import re
 import sys
@@ -284,6 +285,160 @@ def match_translations_to_sources(
         matches.append((src_idx, t_text, score))
 
     return sorted(matches, key=lambda x: x[0])
+
+
+# Written beside the files translate_chapter() produces and read by
+# test_translate_book.py; translations/README.md describes the record.
+GENERATED_MANIFEST = "generated.json"
+GENERATED_IDENTIFIER_KEYS = ("labels", "refs", "cites", "urls", "images")
+
+
+def sha256_of(path: Path) -> str:
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def load_manifest(directory: Path) -> dict:
+    path = Path(directory) / GENERATED_MANIFEST
+    if not path.exists():
+        return {}
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def record_generated_translation(output_path: Path, source_path: Path) -> None:
+    """Record a translation this script wrote in its directory's manifest.
+
+    The entry carries the sha256 of the written file and of the English source it
+    was translated from, so a later edit to the file is detectable and the source
+    it answered is known.
+    """
+    output_path = Path(output_path)
+    source_path = Path(source_path)
+    manifest = load_manifest(output_path.parent)
+    manifest[output_path.name] = {
+        "source": source_path.name,
+        "source_sha256": sha256_of(source_path),
+        "sha256": sha256_of(output_path),
+        "written_by": "scripts/translate_book.py",
+    }
+    with open(output_path.parent / GENERATED_MANIFEST, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, indent=2, sort_keys=True, ensure_ascii=False)
+        f.write("\n")
+
+
+def generated_patterns(repo_root: Path) -> List[str]:
+    """The .gitattributes patterns marked linguist-generated=true."""
+    patterns = []
+    attributes = Path(repo_root) / ".gitattributes"
+    if not attributes.exists():
+        return patterns
+    for line in attributes.read_text(encoding="utf-8").splitlines():
+        parts = line.strip().split()
+        if not parts or parts[0].startswith("#"):
+            continue
+        if "linguist-generated=true" in parts[1:]:
+            patterns.append(parts[0])
+    return patterns
+
+
+def _gitattributes_regex(pattern: str) -> "re.Pattern":
+    # gitattributes globbing: * and ? stop at a directory separator.
+    out = ""
+    for ch in pattern:
+        if ch == "*":
+            out += "[^/]*"
+        elif ch == "?":
+            out += "[^/]"
+        else:
+            out += re.escape(ch)
+    return re.compile("^" + out + "$")
+
+
+def generated_translation_files(repo_root: Path) -> List[Path]:
+    """Every file under translations/ that .gitattributes declares generated."""
+    repo_root = Path(repo_root)
+    regexes = [_gitattributes_regex(p) for p in generated_patterns(repo_root)]
+    files = []
+    translations = repo_root / "translations"
+    if not translations.is_dir():
+        return files
+    for path in sorted(translations.rglob("*")):
+        if not path.is_file():
+            continue
+        rel = path.relative_to(repo_root).as_posix()
+        if any(regex.match(rel) for regex in regexes):
+            files.append(path)
+    return files
+
+
+def missing_identifiers(source_text: str, translated_text: str) -> List[str]:
+    """The labels, refs, cites, urls and image paths of the source that the
+    translation lacks; each is carried over verbatim, so none may be missing."""
+    source_fp = extract_fingerprints(source_text)
+    translated_fp = extract_fingerprints(translated_text)
+    errors = []
+    for key in GENERATED_IDENTIFIER_KEYS:
+        missing = sorted(source_fp[key] - translated_fp[key])
+        if missing:
+            errors.append(f"{key}: missing {missing}")
+    return errors
+
+
+def check_generated_translations(repo_root: Path) -> List[str]:
+    """Hold every committed generated translation to its manifest.
+
+    Returns one line per problem, empty when every file passes:
+    - a generated file with no manifest entry;
+    - a generated file whose sha256 differs from the one recorded when the
+      script wrote it, which is what a hand edit produces;
+    - a manifest entry whose file is gone;
+    - a file whose recorded source sha256 still matches the English source and
+      which lacks one of that source's labels, refs, cites, urls or images.
+    A source that changed after the translation was written is not compared,
+    since the translation answers the source it was written from.
+    """
+    repo_root = Path(repo_root)
+    problems = []
+    manifests = {}
+    translations = repo_root / "translations"
+    if translations.is_dir():
+        for manifest_file in sorted(translations.rglob(GENERATED_MANIFEST)):
+            manifests[manifest_file.parent] = load_manifest(manifest_file.parent)
+
+    for path in generated_translation_files(repo_root):
+        rel = path.relative_to(repo_root).as_posix()
+        directory = path.parent
+        manifest_rel = (directory / GENERATED_MANIFEST).relative_to(repo_root).as_posix()
+        entry = manifests.setdefault(directory, load_manifest(directory)).get(path.name)
+        if entry is None:
+            problems.append(
+                f"{rel}: no entry in {manifest_rel}; "
+                "a generated translation is written by scripts/translate_book.py, which records it"
+            )
+            continue
+        actual = sha256_of(path)
+        recorded = str(entry.get("sha256"))
+        if actual != recorded:
+            problems.append(
+                f"{rel}: sha256 {actual[:12]} differs from the {recorded[:12]} recorded in {manifest_rel}; "
+                "the file changed after scripts/translate_book.py wrote it, so rerun the script instead of editing the file"
+            )
+            continue
+        source_name = entry.get("source") or ""
+        source = repo_root / source_name
+        source_sha256 = entry.get("source_sha256")
+        if source_sha256 and source.is_file() and sha256_of(source) == source_sha256:
+            source_text = source.read_text(encoding="utf-8")
+            translated_text = path.read_text(encoding="utf-8")
+            for error in missing_identifiers(source_text, translated_text):
+                problems.append(f"{rel}: {error} against {source_name}")
+
+    for directory, manifest in sorted(manifests.items()):
+        for name in sorted(manifest):
+            if not (directory / name).is_file():
+                gone = (directory / name).relative_to(repo_root).as_posix()
+                problems.append(f"{gone}: recorded in {GENERATED_MANIFEST} but not present")
+    return problems
 
 
 # Fragment size in characters (~500 lines, ChatGPT handles large context well)
@@ -873,8 +1028,10 @@ def translate_chapter(input_file: str, target_lang: str, output_dir: str,
     # Write translated content
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(translated_content)
+    record_generated_translation(output_path, input_path)
 
     print(f"  Written to: {output_path}", file=sys.stderr)
+    print(f"  Recorded in: {output_path.parent / GENERATED_MANIFEST}", file=sys.stderr)
     print(f"  Translated size: {len(translated_content)} characters", file=sys.stderr)
 
     # Clean up cache on success
