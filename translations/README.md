@@ -35,8 +35,7 @@
    or the prompt, and the chapter is rerun. A stitching artifact is fixed in
    `translate_book.py`, where `fix_section_label_formatting()` fixes the split label;
    a wording or grammar pattern is fixed in the language's prompt in
-   `create_translation_prompt()`. The per-language tables below list the patterns to
-   read for.
+   `create_translation_prompt()`.
 
 ## What a rerun writes, and what stays hand-authored
 
@@ -52,8 +51,8 @@ recorded one, which is what a hand edit produces, and an entry whose file is gon
 While the recorded source sha256 still matches the English file, it also fails a
 translation missing one of that source's `\label{}`, `\ref{}`, `\cite{}`, `\href{}`
 URLs or `\includegraphics{}` paths; once the English is edited after the translation
-was written, the translation answers the earlier source and that comparison waits for
-a rerun.
+was written, that comparison waits for a rerun, since the translation was made from
+the earlier source.
 
 The master stays hand-authored. `polish/manuscript_po.tex` carries the Polish chapter
 titles, `\setmainlanguage{polish}`, the font path, and the
@@ -65,11 +64,11 @@ The Polish chapters were translated from an English draft that predated the
 manuscript's citations, so they carry few of the 341 the English edition now holds,
 and they were edited by hand afterwards. Their eight entries in `polish/generated.json`
 therefore carry `"source_sha256": null` and a `written_by` naming the commit they were
-recorded from, since the English they answer is not known. Rerunning the pipeline
-against the current English chapters closes the citation gap and replaces each entry
-with the script's own record; `scripts/test_source_registry.py` holds every cited key
-in a translated edition to the same `references.bib` and registry entries the English
-edition uses (#175).
+recorded from, since the English they were translated from is not known. Rerunning
+the pipeline against the current English chapters closes the citation gap and
+replaces each entry with the script's own record; `scripts/test_source_registry.py`
+holds every cited key in a translated edition to the same `references.bib` and
+registry entries the English edition uses (#175).
 
 ---
 
