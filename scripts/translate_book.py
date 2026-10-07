@@ -395,7 +395,7 @@ def check_generated_translations(repo_root: Path) -> List[str]:
     - a file whose recorded source sha256 still matches the English source and
       which lacks one of that source's labels, refs, cites, urls or images.
     A source that changed after the translation was written is not compared,
-    since the translation answers the source it was written from.
+    since the translation was made from the earlier source.
     """
     repo_root = Path(repo_root)
     problems = []
