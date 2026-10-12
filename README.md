@@ -81,10 +81,6 @@ The project treats ChatGPT as the generator and Claude as the reviewer; any non-
 For public chapter edits: verify claims against primary sources, keep the chapter's existing argument structure central, and run the citation verification pipeline before accepting new factual claims.
 Extended Alexandria findings are reviewed in the private `historical-jesus-son-of-god-research` repo before they become public manuscript work.
 
-## Build, Scripts and CI
-
-The build commands, fonts, the `scripts/` pipelines and the GitHub workflows are described in [docs/build-and-ci.md](docs/build-and-ci.md).
-
 ## Branch Strategy
 
 - `main`: Primary development
