@@ -31,6 +31,16 @@ REPORT_PATH = SOURCES_DIR / "verification_report.md"
 SNIPPET_LENGTH = 300
 DEEP_SNIPPET_LENGTH = 2000
 
+# The location-only status vocabulary of docs/DD_0001, pinned by test_verify_citations.py.
+STATUSES = (
+    "LOCATED",
+    "NO_PASSAGE",
+    "MODERN",
+    "NOT_FOUND",
+    "NO_SOURCE",
+    "UNKNOWN_KEY",
+)
+
 # Regex to match \cite[optional]{key} and \cite{key1,key2}
 CITE_PATTERN = re.compile(
     r"\\cite"
@@ -47,7 +57,7 @@ class Citation:
     key: str
     passage: str  # "" if no passage specified
     context: str  # surrounding text from the .tex file
-    status: str = "PENDING"  # LOCATED / NOT_FOUND / NO_SOURCE / MODERN / NO_PASSAGE
+    status: str = "PENDING"  # one of STATUSES once verify_citation() has run
     snippet: str = ""  # extracted text snippet if found
     claim_text: str = ""  # cleaned claim from .tex
 
@@ -544,8 +554,7 @@ def generate_report(citations, output_path):
         f"|--------|-------|",
     ]
 
-    status_order = ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]
-    for status in status_order:
+    for status in STATUSES:
         count = len(by_status.get(status, []))
         if count > 0:
             lines.append(f"| {status} | {count} |")
@@ -688,7 +697,7 @@ def generate_review_report(citations, output_path):
         "NO_SOURCE": "Source not yet downloaded",
         "UNKNOWN_KEY": "Bibliography key not in source_registry.py",
     }
-    for status in ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]:
+    for status in STATUSES:
         count = status_counts.get(status, 0)
         if count > 0:
             html_parts.append(
@@ -887,7 +896,7 @@ def main():
     for c in all_citations:
         by_status.setdefault(c.status, []).append(c)
 
-    for status in ["LOCATED", "NO_PASSAGE", "MODERN", "NOT_FOUND", "NO_SOURCE", "UNKNOWN_KEY"]:
+    for status in STATUSES:
         count = len(by_status.get(status, []))
         if count > 0:
             print(f"  {status:15s}: {count}")
