@@ -251,9 +251,9 @@ def _present_sections(text, kind="section"):
 
 def perseus_section_links(html, doc):
     """Return (kind, numbers) for the section or chapter links the page's
-    navigation offers for this doc. Perseus splits most books by section
-    and some (Bostock and Riley's Pliny) by chapter; section links win when
-    a page carries both. Returns (None, []) when it carries neither."""
+    navigation offers for this doc. Perseus splits Josephus's War by section
+    and Bostock and Riley's Pliny by chapter; section links win when a page
+    carries both. Returns (None, []) when it carries neither."""
     for kind in ("section", "chapter"):
         pattern = rf"href=\"\?doc={re.escape(doc)}%3A{kind}%3D(\d+)\""
         numbers = sorted({int(s) for s in re.findall(pattern, html)})
