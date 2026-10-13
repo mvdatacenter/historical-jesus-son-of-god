@@ -263,7 +263,7 @@ def perseus_section_links(html, doc):
 
 
 def complete_perseus_book(url, html, text):
-    """Build a chunked Perseus book from its section chunks.
+    """Build a chunked Perseus book from its section or chapter chunks.
 
     Perseus renders only the first chunk of a large book at its book URL
     (War book 2 came back as chapters 1–4 of 22), and a book it renders in
@@ -271,9 +271,9 @@ def complete_perseus_book(url, html, text):
     most cited sections have no marker to locate. The page's navigation
     lists a link per section (or, for chapter-split texts, per chapter) of
     the requested book; each link renders the whole chunk containing it,
-    with the chunk's markers. Walk
-    those links in order, skipping sections whose markers fetched chunks
-    already carry, and build the book from the chunks alone. Raises
+    with the chunk's markers. Walk those links in order, skipping numbers
+    whose markers fetched chunks already carry, and build the book from the
+    chunks alone. Raises
     requests.RequestException on a failed chunk fetch so the caller's
     retry loop sees the failure instead of caching a partial book.
     """
