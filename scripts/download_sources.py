@@ -214,8 +214,29 @@ def _get_min_size(url):
 MAX_SECTION_MARKER = 2000
 
 
-def _present_sections(text):
-    """Return the set of section numbers whose markers appear in text."""
+ROMAN_VALUES = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100}
+
+
+def _roman_to_int(numeral):
+    values = [ROMAN_VALUES[c] for c in numeral]
+    return sum(
+        -value if value < following else value
+        for value, following in zip(values, values[1:] + [0])
+    )
+
+
+def _present_sections(text, kind="section"):
+    """Return the set of section or chapter numbers whose markers appear in text.
+
+    Chapter-split Perseus texts (Bostock and Riley's Pliny) head each chapter
+    "CHAP. 76.—" or "CHAP. I.—" and print footnote numbers as bare lines, so
+    for chapters only the heading counts as a marker.
+    """
+    if kind == "chapter":
+        return {
+            int(n) if n.isdigit() else _roman_to_int(n)
+            for n in re.findall(r"^\s*CHAP\.\s*(\d+|[IVXLC]+)\.", text, re.MULTILINE)
+        }
     sections = set()
     for match in re.finditer(r"\[\s*(\d+)\s*\]", text):
         number = int(match.group(1))
@@ -229,9 +250,16 @@ def _present_sections(text):
 
 
 def perseus_section_links(html, doc):
-    """Return the section numbers the page's navigation offers for this doc."""
-    pattern = rf"href=\"\?doc={re.escape(doc)}%3Asection%3D(\d+)\""
-    return sorted({int(s) for s in re.findall(pattern, html)})
+    """Return (kind, numbers) for the section or chapter links the page's
+    navigation offers for this doc. Perseus splits most books by section
+    and some (Bostock and Riley's Pliny) by chapter; section links win when
+    a page carries both. Returns (None, []) when it carries neither."""
+    for kind in ("section", "chapter"):
+        pattern = rf"href=\"\?doc={re.escape(doc)}%3A{kind}%3D(\d+)\""
+        numbers = sorted({int(s) for s in re.findall(pattern, html)})
+        if numbers:
+            return kind, numbers
+    return None, []
 
 
 def complete_perseus_book(url, html, text):
@@ -241,8 +269,9 @@ def complete_perseus_book(url, html, text):
     (War book 2 came back as chapters 1–4 of 22), and a book it renders in
     full carries a section marker only where a chunk happens to start, so
     most cited sections have no marker to locate. The page's navigation
-    lists a link per section of the requested book; each section link
-    renders the whole chunk containing it, with the chunk's markers. Walk
+    lists a link per section (or, for chapter-split texts, per chapter) of
+    the requested book; each link renders the whole chunk containing it,
+    with the chunk's markers. Walk
     those links in order, skipping sections whose markers fetched chunks
     already carry, and build the book from the chunks alone. Raises
     requests.RequestException on a failed chunk fetch so the caller's
@@ -252,7 +281,7 @@ def complete_perseus_book(url, html, text):
     if not doc_match:
         return text
     doc = doc_match.group(1)
-    sections = perseus_section_links(html, doc)
+    kind, sections = perseus_section_links(html, doc)
     if not sections:
         return text
 
@@ -264,7 +293,7 @@ def complete_perseus_book(url, html, text):
             continue
         chunk_url = (
             f"https://www.perseus.tufts.edu/hopper/text?doc={doc}"
-            f"%3Asection%3D{section}"
+            f"%3A{kind}%3D{section}"
         )
         # Perseus returns intermittent 503s; retry the chunk itself so one
         # transient failure does not restart the whole book.
@@ -281,7 +310,7 @@ def complete_perseus_book(url, html, text):
                     raise
         chunk_text = clean_html_to_text(resp.text, chunk_url)
         fetches += 1
-        new_sections = _present_sections(chunk_text) - covered
+        new_sections = _present_sections(chunk_text, kind) - covered
         if not new_sections and pieces:
             continue
         covered |= new_sections
