@@ -3,14 +3,14 @@
 
 import download_sources
 from download_sources import (
-    _present_sections,
+    _present_markers,
     complete_perseus_book,
     download_url,
-    perseus_section_links,
+    perseus_chunk_links,
 )
 
 
-def test_present_sections_reads_bracket_and_bare_line_markers():
+def test_present_markers_reads_bracket_and_bare_line_markers():
     text = """Book II
 1
 2
@@ -20,7 +20,7 @@ More text after a bracketed marker, and an inline [261] marker too.
 In the year 4004 nothing is marked.
 """
 
-    sections = _present_sections(text)
+    sections = _present_markers(text)
 
     assert {1, 2, 250, 261} <= sections
     assert 4004 not in sections
@@ -50,7 +50,7 @@ def test_redirect_to_site_root_is_a_failed_download(tmp_path, monkeypatch):
     assert not dest.exists()
 
 
-def test_perseus_section_links_reads_only_the_requested_doc():
+def test_perseus_chunk_links_reads_only_the_requested_doc():
     doc = "Perseus%3Atext%3A1999.01.0148%3Abook%3D2"
     html = (
         '<a href="?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D2%3Asection%3D1">1</a>'
@@ -58,10 +58,10 @@ def test_perseus_section_links_reads_only_the_requested_doc():
         '<a href="?doc=Perseus%3Atext%3A1999.01.0148%3Abook%3D1%3Asection%3D99">99</a>'
     )
 
-    assert perseus_section_links(html, doc) == ("section", [1, 117])
+    assert perseus_chunk_links(html, doc) == ("section", [1, 117])
 
 
-def test_perseus_section_links_reads_chapter_links():
+def test_perseus_chunk_links_reads_chapter_links():
     """Perseus splits Bostock and Riley's Pliny by chapter: the book 16 page
     carries only ...book%3D16%3Achapter%3D<n> links, which the section-only
     pattern missed, saving chapters 1-10 of 95 as the whole book (#187)."""
@@ -72,10 +72,10 @@ def test_perseus_section_links_reads_chapter_links():
         '<a href="?doc=Perseus%3Atext%3A1999.02.0137%3Abook%3D17%3Achapter%3D3">3</a>'
     )
 
-    assert perseus_section_links(html, doc) == ("chapter", [1, 76])
+    assert perseus_chunk_links(html, doc) == ("chapter", [1, 76])
 
 
-def test_present_sections_reads_chapter_headings_not_footnote_numbers():
+def test_present_markers_reads_chapter_headings_not_footnote_numbers():
     """Bostock heads chapters "CHAP. I.—" or "CHAP. 3. (4.)—" and prints
     footnote numbers as bare lines; for chapters only the heading counts."""
     text = """BOOK XVI. THE NATURAL HISTORY OF THE FOREST TREES.
@@ -87,7 +87,7 @@ It is with the leaves of this class of trees
 CHAP. XIV.—A ROMAN NUMERAL HEADING.
 """
 
-    assert _present_sections(text, "chapter") == {1, 3, 14}
+    assert _present_markers(text, "chapter") == {1, 3, 14}
 
 
 def _complete_with_fake_chunks(monkeypatch, url, html, page_text, chunks):

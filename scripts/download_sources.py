@@ -225,7 +225,7 @@ def _roman_to_int(numeral):
     )
 
 
-def _present_sections(text, kind="section"):
+def _present_markers(text, kind="section"):
     """Return the set of section or chapter numbers whose markers appear in text.
 
     Chapter-split Perseus texts (Bostock and Riley's Pliny) head each chapter
@@ -249,7 +249,7 @@ def _present_sections(text, kind="section"):
     return sections
 
 
-def perseus_section_links(html, doc):
+def perseus_chunk_links(html, doc):
     """Return (kind, numbers) for the section or chapter links the page's
     navigation offers for this doc. Perseus splits Josephus's War by section
     and Bostock and Riley's Pliny by chapter; section links win when a page
@@ -281,19 +281,19 @@ def complete_perseus_book(url, html, text):
     if not doc_match:
         return text
     doc = doc_match.group(1)
-    kind, sections = perseus_section_links(html, doc)
-    if not sections:
+    kind, numbers = perseus_chunk_links(html, doc)
+    if not numbers:
         return text
 
     covered = set()
     pieces = []
     fetches = 0
-    for section in sections:
-        if section in covered:
+    for number in numbers:
+        if number in covered:
             continue
         chunk_url = (
             f"https://www.perseus.tufts.edu/hopper/text?doc={doc}"
-            f"%3A{kind}%3D{section}"
+            f"%3A{kind}%3D{number}"
         )
         # Perseus returns intermittent 503s; retry the chunk itself so one
         # transient failure does not restart the whole book.
@@ -310,10 +310,10 @@ def complete_perseus_book(url, html, text):
                     raise
         chunk_text = clean_html_to_text(resp.text, chunk_url)
         fetches += 1
-        new_sections = _present_sections(chunk_text, kind) - covered
-        if not new_sections and pieces:
+        new_numbers = _present_markers(chunk_text, kind) - covered
+        if not new_numbers and pieces:
             continue
-        covered |= new_sections
+        covered |= new_numbers
         pieces.append(chunk_text)
     if fetches:
         print(f"  Perseus: fetched {fetches} more chunk(s) to complete the book")
