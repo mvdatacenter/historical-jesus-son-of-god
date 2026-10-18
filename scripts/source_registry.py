@@ -201,6 +201,12 @@ SOURCES = {
             "full": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0002",
         },
         "section_pattern": r"\b(\d+)\.\s",
+        # Thayer pages print Loeb page numbers beside the chapter numbers, so
+        # a bare chapter number lands on the wrong passage. Every bare [27]
+        # cite is to the Life of Alexander.
+        "passage_hints": {
+            27: [r"salutation from the god as from a father"],
+        },
     },
 
     "plutarch:deiside": {
@@ -215,6 +221,10 @@ SOURCES = {
             "partD": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Plutarch/Moralia/Isis_and_Osiris*/D.html",
         },
         "section_pattern": r"\b(\d+)\b",
+        # Loeb page numbers share the bare-number pattern with the chapters.
+        "passage_hints": {
+            54: [r"that is to say Reason, testifies"],
+        },
     },
 
     "proclus:intimaeum": {
@@ -731,6 +741,56 @@ SOURCES = {
         },
     },
 
+    "demosthenes:olynthiac2": {
+        "title": "Second Olynthiac",
+        "author": "Demosthenes",
+        "category": ANCIENT,
+        "translation": "A. W. Pickard-Cambridge (1912)",
+        "urls": {
+            "full": "https://www.gutenberg.org/cache/epub/9060/pg9060.txt",
+        },
+        "note": "Gutenberg #9060 holds several speeches with sections marked {N}; "
+                "the numbers repeat from speech to speech, so the locator needs "
+                "the passage itself.",
+        "section_pattern": r"\{(\d+)\}",
+        "passage_hints": {
+            10: [r"the foundations that"],
+        },
+    },
+
+    "demosthenes:philippic1": {
+        "title": "First Philippic",
+        "author": "Demosthenes",
+        "category": ANCIENT,
+        "translation": "A. W. Pickard-Cambridge (1912)",
+        "urls": {
+            "full": "https://www.gutenberg.org/cache/epub/9060/pg9060.txt",
+        },
+        "note": "Same Gutenberg volume as demosthenes:olynthiac2; section numbers "
+                "repeat across its speeches, so the locator needs the passage itself.",
+        "section_pattern": r"\{(\d+)\}",
+        "passage_hints": {
+            40: [r"barbarians in a"],
+        },
+    },
+
+    "dittenberger:ogis": {
+        "title": "Orientis Graeci Inscriptiones Selectae",
+        "author": "Wilhelm Dittenberger (ed.)",
+        "category": ANCIENT,
+        "translation": "Greek text with Latin commentary (1903-1905)",
+        "urls": {
+            "vol1": "https://archive.org/download/orientisgraeciin01dittuoft/orientisgraeciin01dittuoft_djvu.txt",
+            "vol2": "https://archive.org/download/orientisgraeciin02dittuoft/orientisgraeciin02dittuoft_djvu.txt",
+        },
+        "note": "Archive.org OCR text. Vol. 1 holds nos. 1-434, vol. 2 nos. 435-772. "
+                "No. 458 is the Priene calendar decree for Augustus (I.Priene 105).",
+        "section_pattern": r"^\s*(\d{1,3})\s",
+        "passage_hints": {
+            458: [r"εὐανγελ"],
+        },
+    },
+
     "thucydides:peloponnesian": {
         "title": "History of the Peloponnesian War",
         "author": "Thucydides",
@@ -1176,6 +1236,22 @@ SOURCES = {
         "section_pattern": r"(?:Book\s+[IVXLC]+|Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "hildesheim:trium": {
+        "title": "The Three Kings of Cologne (Historia trium regum)",
+        "author": "John of Hildesheim",
+        "category": PATRISTIC,
+        "translation": "Middle English translation, ed. Carl Horstmann (EETS O.S. 85, 1886)",
+        "urls": {
+            "full": "https://archive.org/download/threekingsofcolo00joanuoft/threekingsofcolo00joanuoft_djvu.txt",
+        },
+        "note": "Cambridge and Royal manuscripts printed in parallel; the Nazareth "
+                "church closes chapter 35 (pp. 128-129).",
+        "section_pattern": r"Capitulum\s+[xvjl]+",
+        "passage_hints": {
+            35: [r"fayre\s+Cytee\s+of\s+Nazareth"],
+        },
+    },
+
     "clement:stromata": {
         "title": "Stromata (Miscellanies)",
         "author": "Clement of Alexandria",
@@ -1487,6 +1563,22 @@ SOURCES = {
         },
         "note": "ANF has fragments/scholia on Daniel. Full commentary only in T. C. Schmidt (2017, copyrighted).",
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
+    },
+
+    "hippolytus:refutatio": {
+        "title": "Refutation of All Heresies (Refutatio Omnium Haeresium)",
+        "author": "Hippolytus of Rome",
+        "category": PATRISTIC,
+        "translation": "J. H. MacMahon (ANF Vol. 5, 1886)",
+        "urls": {
+            "book9": "https://www.newadvent.org/fathers/050109.htm",
+        },
+        "note": "Greek 9.9 (Heraclitus fragments B1, B50) is ANF Book IX, chapter 4; "
+                "ANF renders logos as 'Reason'.",
+        "section_pattern": r"Chapter\s+(\d+)",
+        "passage_hints": {
+            9: [r"which always exists"],
+        },
     },
 
     "gospelpeter": {
