@@ -34,14 +34,6 @@ While not every question has a certain answer, this project ultimately aims to s
 
 > At this stage, our goal is to list and briefly comment on these questions and discrepancies. The overall narrative flow is still a work in progress, and we will continue to refine it as we gather more insights from the AI and from our own research.
 
-# Research Boundary
-
-Exploratory research belongs outside this public repository until it is ready for publication.
-This public repository should receive research work only after it becomes a citation record, bibliography entry, verified source passage, or code or data directly used to construct a result included here.
-Solar-eclipse investigations, Pauline-location maps, generated findings, and similar exploratory artifacts stay outside this repository until they become verified citation material or reproducible result-building code.
-Detailed research history, per-chapter Q&A, open research gaps, and Alexandria findings triage live in the private `historical-jesus-son-of-god-research` repo; findings pass through its review workflow, then through the public citation verification pipeline, before entering manuscript prose.
-This repo accepts external contributions; keep proprietary data sources and extraction targets in internal materials, and use public-safe research summaries in public-facing files.
-
 # Table of Contents
 
 - [Preface](preface.tex)
@@ -74,6 +66,7 @@ FOLLOW THE INSTRUCTIONS CLOSELY.
 | [docs/DD_0001_citation-review-report.md](docs/DD_0001_citation-review-report.md) | Accepting any new factual claim: the download → locate → semantic-review pipeline |
 | [docs/REVIEW.md](docs/REVIEW.md) | Reviewing a PR that changes the manuscript |
 | [docs/build-and-ci.md](docs/build-and-ci.md) | Building the book, changing `scripts/`, or changing a workflow: build commands, fonts, the pipelines, CI triggers |
+| [docs/research-boundary.md](docs/research-boundary.md) | Adding research, findings, or source material: what may enter this public repository and what stays private |
 
 ## Adding Content to Chapters
 
