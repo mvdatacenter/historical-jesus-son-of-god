@@ -109,6 +109,37 @@ diff --git a/chapter2.tex b/chapter2.tex
 """
 
 
+FILE_DELETED = """\
+diff --git a/epilogue.tex b/epilogue.tex
+deleted file mode 100644
+--- a/epilogue.tex
++++ /dev/null
+@@ -1 +0,0 @@
+-The guard carried myrrh.
+"""
+
+DASH_LEADING_LINES = """\
+diff --git a/chapter2.tex b/chapter2.tex
+--- a/chapter2.tex
++++ b/chapter2.tex
+@@ -2,2 +2 @@ context
+--- the guard carried myrrh.
+-++ a second line.
++Gold belongs to the treasury.
+"""
+
+
+def test_a_deleted_file_reports_its_lines_under_its_own_name() -> None:
+    assert parse_removals(FILE_DELETED) == [("epilogue.tex", "The guard carried myrrh.")]
+
+
+def test_a_removed_line_starting_with_dashes_is_not_read_as_a_header() -> None:
+    assert parse_removals(DASH_LEADING_LINES) == [
+        ("chapter2.tex", "-- the guard carried myrrh."),
+        ("chapter2.tex", "++ a second line."),
+    ]
+
+
 def test_adding_a_citation_to_a_line_removes_no_prose() -> None:
     assert parse_removals(CITE_ADDED) == []
 

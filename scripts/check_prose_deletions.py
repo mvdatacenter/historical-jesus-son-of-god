@@ -64,16 +64,26 @@ def parse_removals(diff: str) -> list[tuple[str, str]]:
     file lost no prose: only a citation, punctuation or case changed. Each added
     line answers for one removed line, so a sentence that is duplicated and then
     deleted once is still reported.
+
+    The `---`/`+++` file names are read only in a file's header, before its
+    first hunk, so a prose line starting with dashes is not taken for one. A
+    deleted file keeps the name from its `--- a/` line.
     """
     removals: list[tuple[str, str]] = []
     added: dict[str, Counter[str]] = {}
     current = ""
+    in_header = False
     for line in diff.splitlines():
-        if line.startswith("+++ "):
-            current = line[6:] if line.startswith("+++ b/") else ""
+        if line.startswith("diff --git "):
+            in_header = True
+        elif line.startswith("@@"):
+            in_header = False
+        elif in_header:
+            if line.startswith("--- a/") or line.startswith("+++ b/"):
+                current = line[6:]
         elif line.startswith("+"):
             added.setdefault(current, Counter())[normalize(line[1:])] += 1
-        elif line.startswith("-") and not line.startswith("---"):
+        elif line.startswith("-"):
             text = line[1:].strip()
             if text:
                 removals.append((current, text))
