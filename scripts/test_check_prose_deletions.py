@@ -67,6 +67,70 @@ diff --git a/chapter2.tex b/chapter2.tex
 """
 
 
+CITE_ADDED = """\
+diff --git a/chapter2.tex b/chapter2.tex
+--- a/chapter2.tex
++++ b/chapter2.tex
+@@ -2 +2 @@ context
+-Demosthenes employed them in political speeches.
++Demosthenes employed them in political speeches \\cite[2.10]{demosthenes:olynthiac2}.
+"""
+
+CITE_ADDED_WORD_DROPPED = """\
+diff --git a/chapter2.tex b/chapter2.tex
+--- a/chapter2.tex
++++ b/chapter2.tex
+@@ -2 +2 @@ context
+-Demosthenes employed them in political speeches.
++Demosthenes employed them in speeches \\cite[2.10]{demosthenes:olynthiac2}.
+"""
+
+SAME_WORDS_IN_ANOTHER_FILE = """\
+diff --git a/chapter2.tex b/chapter2.tex
+--- a/chapter2.tex
++++ b/chapter2.tex
+@@ -2 +1,0 @@ context
+-The guard carried myrrh.
+diff --git a/chapter3.tex b/chapter3.tex
+--- a/chapter3.tex
++++ b/chapter3.tex
+@@ -3,0 +4 @@ context
++The guard carried myrrh.
+"""
+
+DUPLICATE_DELETED_TWICE = """\
+diff --git a/chapter2.tex b/chapter2.tex
+--- a/chapter2.tex
++++ b/chapter2.tex
+@@ -2,2 +2 @@ context
+-The guard carried myrrh.
+-The guard carried myrrh.
++The guard carried myrrh \\cite{matthew}.
+"""
+
+
+def test_adding_a_citation_to_a_line_removes_no_prose() -> None:
+    assert parse_removals(CITE_ADDED) == []
+
+
+def test_a_word_dropped_beside_an_added_citation_is_reported() -> None:
+    assert parse_removals(CITE_ADDED_WORD_DROPPED) == [
+        ("chapter2.tex", "Demosthenes employed them in political speeches.")
+    ]
+
+
+def test_a_line_returning_in_another_file_is_still_reported() -> None:
+    assert parse_removals(SAME_WORDS_IN_ANOTHER_FILE) == [
+        ("chapter2.tex", "The guard carried myrrh.")
+    ]
+
+
+def test_one_added_line_answers_for_one_removed_line() -> None:
+    assert parse_removals(DUPLICATE_DELETED_TWICE) == [
+        ("chapter2.tex", "The guard carried myrrh.")
+    ]
+
+
 def test_pure_addition_reports_nothing() -> None:
     assert parse_removals(PURE_ADDITION) == []
 

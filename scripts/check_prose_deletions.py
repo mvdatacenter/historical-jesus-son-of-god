@@ -6,7 +6,9 @@ research question (see docs/PM_0007). The failure that motivated this check was
 not a deliberate removal but a concealed one: deletions interleaved with
 insertions inside a large rework left the diffstat reading as growth while a
 section's thesis paragraph was gone. This prints every removed prose line so the
-author must account for each one in the PR body.
+author must account for each one in the PR body. A line whose words return in
+an added line of the same file, as when a citation is added to it, lost no prose
+and is not printed.
 
 Usage:
     python3 scripts/check_prose_deletions.py [base] [--body-file PATH]
@@ -25,6 +27,7 @@ import argparse
 import re
 import subprocess
 import sys
+from collections import Counter
 
 MANUSCRIPT_GLOBS = ["chapter*.tex", "preface.tex", "epilogue.tex"]
 
@@ -55,17 +58,34 @@ def unaccounted_lines(
 
 
 def parse_removals(diff: str) -> list[tuple[str, str]]:
-    """Return (file, text) for each removed line in `diff` that carries prose."""
+    """Return (file, text) for each removed line in `diff` that carries prose.
+
+    A removed line whose words come back unchanged in an added line of the same
+    file lost no prose: only a citation, punctuation or case changed. Each added
+    line answers for one removed line, so a sentence that is duplicated and then
+    deleted once is still reported.
+    """
     removals: list[tuple[str, str]] = []
+    added: dict[str, Counter[str]] = {}
     current = ""
     for line in diff.splitlines():
-        if line.startswith("+++ b/"):
-            current = line[6:]
+        if line.startswith("+++ "):
+            current = line[6:] if line.startswith("+++ b/") else ""
+        elif line.startswith("+"):
+            added.setdefault(current, Counter())[normalize(line[1:])] += 1
         elif line.startswith("-") and not line.startswith("---"):
             text = line[1:].strip()
             if text:
                 removals.append((current, text))
-    return removals
+    kept: list[tuple[str, str]] = []
+    for path, text in removals:
+        words = normalize(text)
+        returned = added.get(path, Counter())
+        if words and returned[words] > 0:
+            returned[words] -= 1
+        else:
+            kept.append((path, text))
+    return kept
 
 
 def removed_prose_lines(base: str) -> list[tuple[str, str]]:
