@@ -36,6 +36,39 @@ They retained their human senses.
 
 
 @pytest.mark.parametrize(
+    ("key", "passage", "page", "chapter_text"),
+    [
+        (
+            "plutarch:lives",
+            "27--28",
+            "27",
+            "the prophet gave him salutation from the god as from a father.",
+        ),
+        (
+            "plutarch:deiside",
+            "54--55",
+            "54",
+            "the Word, that is to say Reason, testifies to the order of the world.",
+        ),
+    ],
+)
+def test_plutarch_chapter_ignores_the_same_numbered_loeb_page(key, passage, page, chapter_text):
+    """Thayer's Plutarch prints Loeb page numbers as bare numbers beside the
+    chapter numbers, so a bare-number match lands on the page, not the chapter."""
+    text = f"""{page}
+Loeb page text from a different chapter.
+More of that page.
+
+{chapter_text}
+"""
+
+    snippet = search_passage_in_text(text, passage, key)
+
+    assert chapter_text in snippet
+    assert "Loeb page text" not in snippet
+
+
+@pytest.mark.parametrize(
     ("passage", "text", "expected"),
     [
         (
