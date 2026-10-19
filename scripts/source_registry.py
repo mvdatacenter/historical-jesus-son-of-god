@@ -1389,6 +1389,18 @@ SOURCES = {
         "section_pattern": r"(?:Chapter\s+\d+|\b(\d+)\.\s)",
     },
 
+    "infancy:thomas": {
+        "title": "Infancy Gospel of Thomas (Greek text A)",
+        "author": "Anonymous",
+        "category": PATRISTIC,
+        "translation": "Roberts-Donaldson (ANF Vol. 8, 1886)",
+        "urls": {
+            "full": "https://www.earlychristianwritings.com/text/infancythomas-a-roberts.html",
+        },
+        "note": "Early Christian Writings, Greek text A. Same Roberts-Donaldson ANF translation.",
+        "section_pattern": r"(?:\b(\d+)\.\s)",
+    },
+
     "shepherd:hermas": {
         "title": "The Shepherd of Hermas",
         "author": "Hermas",
@@ -1571,11 +1583,15 @@ SOURCES = {
         "category": PATRISTIC,
         "translation": "J. H. MacMahon (ANF Vol. 5, 1886)",
         "urls": {
+            "book7": "https://www.newadvent.org/fathers/050107.htm",
             "book9": "https://www.newadvent.org/fathers/050109.htm",
         },
-        "note": "Greek 9.9 (Heraclitus fragments B1, B50) is ANF Book IX, chapter 4; "
-                "ANF renders logos as 'Reason'.",
-        "section_pattern": r"Chapter\s+(\d+)",
+        "note": "Cited by the book and chapter numbers of the Wendland and Marcovich editions. "
+                "The ANF page numbers the chapters differently: 7.22 (Basilides on John 1:9, "
+                "'He was the true light') is ANF Book VII, chapter 10; 7.27 (Basilides on John 2:4, "
+                "'Mine hour is not yet come') is ANF Book VII, chapter 15; 9.9 (Heraclitus "
+                "fragments B1, B50) is ANF Book IX, chapter 4. ANF renders logos as 'Reason'.",
+        "section_pattern": r"(?:Chapter\s+(\d+)|\b(\d+)\.\s)",
         "passage_hints": {
             9: [r"which always exists"],
         },
@@ -2221,6 +2237,15 @@ SOURCES = {
         "year": 2002,
         "publisher": "Mohr Siebeck",
         "obtain": "Academic libraries. Mohr Siebeck, Tübingen 2002.",
+    },
+
+    "grenfell:logia": {
+        "title": "Logia Iesou: Sayings of Our Lord from an Early Greek Papyrus",
+        "author": "Bernard P. Grenfell and Arthur S. Hunt",
+        "category": MODERN,
+        "year": 1897,
+        "publisher": "Henry Frowde for the Egypt Exploration Fund",
+        "obtain": "Public domain; Internet Archive and HathiTrust. Editio princeps of P.Oxy. I 1 (Gospel of Thomas, Greek).",
     },
 
     "deboer:magdalene": {
