@@ -18,7 +18,7 @@ python = "^3.12.2"
 folium = "^0.20.0"
 pyobjc = {version = "^12.1", markers = "sys_platform == 'darwin'"}
 openai = "^2.11.0"
-python-dotenv = "^1.2.1"
+python-dotenv = "^1.2.4"
 requests = "^2.34"
 beautifulsoup4 = "^4.15"
 pymupdf = "^1.27.1"
