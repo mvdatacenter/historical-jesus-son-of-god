@@ -28,5 +28,5 @@ tychicus = {git = "ssh://git@github.com/mvdatacenter/tychicus.git", tag = "v0.5.
 map = "map:main"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^9.0.2"
+pytest = "^9.1.1"
 
