@@ -20,7 +20,7 @@ pyobjc = {version = "^12.1", markers = "sys_platform == 'darwin'"}
 openai = "^2.11.0"
 python-dotenv = "^1.2.1"
 requests = "^2.31"
-beautifulsoup4 = "^4.12"
+beautifulsoup4 = "^4.15"
 pymupdf = "^1.27.1"
 tychicus = {git = "ssh://git@github.com/mvdatacenter/tychicus.git", tag = "v0.5.0"}
 
