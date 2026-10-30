@@ -17,7 +17,7 @@ package-mode = false
 python = "^3.12.2"
 folium = "^0.20.0"
 pyobjc = {version = "^12.1", markers = "sys_platform == 'darwin'"}
-openai = "^2.11.0"
+openai = "^3.22.1"
 python-dotenv = "^1.2.4"
 requests = "^2.34"
 beautifulsoup4 = "^4.15"
