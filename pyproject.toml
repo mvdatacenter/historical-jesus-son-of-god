@@ -16,7 +16,7 @@ package-mode = false
 [tool.poetry.dependencies]
 python = "^3.12.2"
 folium = "^0.20.0"
-pyobjc = {version = "^12.1", markers = "sys_platform == 'darwin'"}
+pyobjc = {version = "^12.2", markers = "sys_platform == 'darwin'"}
 openai = "^3.22.1"
 python-dotenv = "^1.2.4"
 requests = "^2.34"
