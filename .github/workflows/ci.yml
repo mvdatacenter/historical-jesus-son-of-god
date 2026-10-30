@@ -108,7 +108,7 @@ jobs:
         run: mv translations/polish/manuscript_po.pdf manuscript_polish.pdf || true
 
       - name: Create/Update Release and upload PDFs
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           tag_name: auto-${{ github.run_number }}
           name: "Book PDF build #${{ github.run_number }}"
