@@ -68,6 +68,32 @@ More of that page.
     assert "Loeb page text" not in snippet
 
 
+def test_refutation_greek_section_ignores_the_same_numbered_translation_chapter():
+    """The Refutation is cited by its Greek numbering. Greek 7.22, where
+    Basilides quotes John 1:9, is chapter 10 of Book VII in the ANF translation,
+    whose own chapter 22 is the Ebionites, so a chapter-number match lands there."""
+    text = """Chapter 10. Origin of the World; Basilides' Account of the
+Sonship.
+And this, he says, is that which has been stated in the
+Gospels
+:
+He was the
+true
+light, which lights every man that comes into the world.
+He derives his originating principles from that Seed.
+More of chapter 10.
+More of chapter 10.
+More of chapter 10.
+More of chapter 10.
+Chapter 22. Doctrine of the Ebionaeans.
+"""
+
+    snippet = search_passage_in_text(text, "7.22", "hippolytus:refutatio")
+
+    assert "which lights every man" in snippet
+    assert "Ebionaeans" not in snippet
+
+
 @pytest.mark.parametrize(
     ("passage", "text", "expected"),
     [
