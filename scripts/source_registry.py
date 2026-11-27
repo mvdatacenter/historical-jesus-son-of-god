@@ -1571,13 +1571,16 @@ SOURCES = {
         "category": PATRISTIC,
         "translation": "J. H. MacMahon (ANF Vol. 5, 1886)",
         "urls": {
+            "book7": "https://www.newadvent.org/fathers/050107.htm",
             "book9": "https://www.newadvent.org/fathers/050109.htm",
         },
-        "note": "Greek 9.9 (Heraclitus fragments B1, B50) is ANF Book IX, chapter 4; "
+        "note": "Greek 7.22 (Basilides quoting John 1:9) is ANF Book VII, chapter 10. "
+                "Greek 9.9 (Heraclitus fragments B1, B50) is ANF Book IX, chapter 4; "
                 "ANF renders logos as 'Reason'.",
         "section_pattern": r"Chapter\s+(\d+)",
         "passage_hints": {
             9: [r"which always exists"],
+            22: [r"which lights every man that comes into the world"],
         },
     },
 
